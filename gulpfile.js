@@ -181,13 +181,20 @@ gulp.task( 'copy-assets', function() {
 ////////////////// End Bootstrap 4 Assets /////////////////////////
 
 // Copy all Font Awesome Fonts
-    gulp.src( paths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eot,svg}' )
-        .pipe( gulp.dest( './fonts' ) );
+    gulp.src( paths.node + '@fortawesome/fontawesome-free/webfonts/**/*.{ttf,woff,woff2,eot,svg}' )
+        .pipe( gulp.dest( './webfonts' ) );
 
 // Copy all Font Awesome SCSS files
-    gulp.src( paths.node + 'font-awesome/scss/*.scss' )
+    gulp.src( paths.node + '@fortawesome/fontawesome-free/scss/*.scss' )
         .pipe( gulp.dest( paths.dev + '/sass/fontawesome' ) );
 
+// // Copy all Font Awesome Fonts
+//     gulp.src( paths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eot,svg}' )
+//         .pipe( gulp.dest( './fonts' ) );
+
+// // Copy all Font Awesome SCSS files
+//     gulp.src( paths.node + 'font-awesome/scss/*.scss' )
+//         .pipe( gulp.dest( paths.dev + '/sass/fontawesome' ) );
 
 // _s SCSS files
     gulp.src( paths.node + 'undescores-for-npm/sass/media/*.scss' )

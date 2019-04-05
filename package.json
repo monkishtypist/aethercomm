@@ -24,7 +24,7 @@
   },
   "homepage": "https://understrap.com",
   "dependencies": {
-    "bootstrap": "4.3.1",
+    "bootstrap": "^4.3.1",
     "browser-sync": "^2.23.6",
     "del": "^3.0.0",
     "font-awesome": "^4.7.0",
@@ -51,5 +51,8 @@
     "run-sequence": "^2.2.1",
     "understrap": "^0.9.1",
     "undescores-for-npm": "^1.0.0"
+  },
+  "devDependencies": {
+    "@fortawesome/fontawesome-free": "^5.8.1"
   }
 }
