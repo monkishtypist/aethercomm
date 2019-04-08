@@ -1,5 +1,5 @@
 {
-  "name": "understrap-child",
+  "name": "aethercomm",
   "version": "0.5.5",
   "description": "Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap",
   "main": "index.js",
@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/holger1411/understrap-child.git"
+    "url": "https://github.com/monkishtypist/aethercomm.git"
   },
   "keywords": [
     "wordpress",
@@ -20,7 +20,7 @@
   "author": "Holger Koenemann",
   "license": "GPL-2.0",
   "bugs": {
-    "url": "https://github.com/holger1411/understrap-child/issues"
+    "url": "https://github.com/monkishtypist/aethercomm/issues"
   },
   "homepage": "https://understrap.com",
   "dependencies": {
