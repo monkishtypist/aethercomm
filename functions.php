@@ -18,7 +18,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 
 /* 0. Requires... */
-require get_template_directory() . '/inc/class-team-members.php';
+require get_stylesheet_directory_uri() . '/inc/class-team-members.php';
 
 /* 1. Child theme Scripts and Styles */
 add_action( 'wp_enqueue_scripts', 'aethercomm_remove_parent_scripts', 20 );
