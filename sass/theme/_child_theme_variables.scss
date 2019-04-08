@@ -16,11 +16,11 @@ $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
 $gray-300: #dee2e6 !default;
 $gray-400: #ced4da !default;
-$gray-500: #adb5bd !default;
-$gray-600: #6c757d !default;
-$gray-700: #495057 !default;
-$gray-800: #343a40 !default;
-$gray-900: #212529 !default;
+$gray-500: #A8A8A8 !default; // #adb5bd !default;
+$gray-600: #707070 !default; // #6c757d !default;
+$gray-700: #676767 !default; // #495057 !default;
+$gray-800: #222222 !default; // #343a40 !default;
+$gray-900: #010101 !default; // #212529 !default;
 $black:    #000 !default;
 
 $grays: () !default;
@@ -40,13 +40,13 @@ $grays: map-merge(
   $grays
 );
 
-$blue:    #007bff !default;
+$blue:    #4A63AE !default; // #007bff !default;
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;
-$red:     #dc3545 !default;
+$red:     #FF5800 !default; // #dc3545 !default;
 $orange:  #fd7e14 !default;
-$yellow:  #ffc107 !default;
+$yellow:  #FFCE00 !default; // #ffc107 !default;
 $green:   #28a745 !default;
 $teal:    #20c997 !default;
 $cyan:    #17a2b8 !default;
@@ -66,19 +66,20 @@ $colors: map-merge(
     "teal":       $teal,
     "cyan":       $cyan,
     "white":      $white,
-    "gray":       $gray-600,
+    "gray":       $gray-700, // $gray-600,
     "gray-dark":  $gray-800
   ),
   $colors
 );
 
-$primary:       $blue !default;
-$secondary:     $gray-600 !default;
+$primary:       $red !default; // $blue !default;
+$secondary:     $blue !default; // $gray-600 !default;
 $success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
 $danger:        $red !default;
-$light:         $gray-100 !default;
+$light:         $gray-500 !default; // $gray-100 !default;
+$gray:          $gray-700 !default; // NEW !!!
 $dark:          $gray-800 !default;
 
 $theme-colors: () !default;
@@ -168,14 +169,14 @@ $spacers: map-merge(
 // Settings for the `<body>` element.
 
 $body-bg:                   $white !default;
-$body-color:                $gray-900 !default;
+$body-color:                $dark !default; // $gray-900 !default;
 
 
 // Links
 //
 // Style anchor elements.
 
-// $link-color:                              theme-color("primary") !default;
+$link-color:                              $yellow !default; // theme-color("primary") !default;
 $link-decoration:                         none !default;
 // $link-hover-color:                        darken($link-color, 15%) !default;
 $link-hover-decoration:                   underline !default;
