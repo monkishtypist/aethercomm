@@ -6,6 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Table of contents
  *
+ * 0. Requires...
  * 1. Child theme Scripts and Styles
  * 2. After Setup Theme
  *      Textdomain
@@ -15,6 +16,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 5. Excerpts
  * 6. Hooks
  */
+
+/* 0. Requires... */
+require get_template_directory() . '/inc/class-team-members.php';
 
 /* 1. Child theme Scripts and Styles */
 add_action( 'wp_enqueue_scripts', 'aethercomm_remove_parent_scripts', 20 );
