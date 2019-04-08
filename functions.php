@@ -275,7 +275,7 @@ if ( ! function_exists( 'aethercomm_product_cats_tax_init' ) ) {
             'rewrite'                    => $rewrite
         );
 
-        register_taxonomy( 'products', 'product-categories', $args );
+        register_taxonomy( 'product-categories', 'products', $args );
     }
 }
 
