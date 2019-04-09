@@ -146,17 +146,21 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	// Adds a custom read more link to all excerpts, manually or automatically generated
 	function understrap_all_excerpts_get_more_link( $post_excerpt ) {
 		if ( ! is_admin() ) {
-			$post_excerpt = $post_excerpt . '<p class=""><a class="btn-link understrap-read-more-link read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read More', 'understrap' ) . '</a></p>';
+			$post_excerpt = $post_excerpt . '<p class=""><a class="btn-link aethercomm-read-more-link read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read More', 'understrap' ) . '</a></p>';
 		}
 		return $post_excerpt;
 	}
 }
 
 /* 6. Hooks */
-add_action( 'understrap_site_info', 'understrap_add_site_info' );
-if ( ! function_exists( 'understrap_add_site_info' ) ) {
-	// Add site info content. Overwrites parent 'understrap_add_site_info' function.
-	function understrap_add_site_info() {
+if ( ! function_exists( 'aethercomm_site_info' ) ) {
+	function aethercomm_site_info() {
+		do_action( 'aethercomm_site_info' );
+	}
+}
+add_action( 'aethercomm_site_info', 'aethercomm_add_site_info' );
+if ( ! function_exists( 'aethercomm_add_site_info' ) ) {
+	function aethercomm_add_site_info() {
 		$site_info = sprintf(
             '%1$s &copy; %2$d %3$s. %4$s.',
             esc_html__( 'Copyright', 'aethercomm' ),
@@ -164,7 +168,7 @@ if ( ! function_exists( 'understrap_add_site_info' ) ) {
             esc_html__( 'Aethercomm', 'aethercomm' ),
             esc_html__( 'All Rights Reserved', 'aethercomm' )
 		);
-		echo apply_filters( 'understrap_site_info_content', $site_info ); // WPCS: XSS ok.
+		echo apply_filters( 'aethercomm_site_info_content', $site_info ); // WPCS: XSS ok.
 	}
 }
 
