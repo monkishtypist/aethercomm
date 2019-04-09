@@ -1,0 +1,39 @@
+/**
+ * Typography
+ * Buttons
+ * Custom Graphics
+ */
+
+/* Custom Graphics */
+@mixin crosshairs($color) {
+    display: block;
+    position: relative;
+    height: #{$spacer * 1.375};
+    width: #{$spacer * 1.375};
+    &:after,
+    &:before {
+        content: " ";
+        box-sizing: border-box;
+        display: block;
+        position: absolute;
+    }
+    &:after {
+        border-right: 1px solid $color;
+        height: 100%;
+        width: 50%;
+        left: 0;
+    }
+    &:before {
+        border-bottom: 1px solid $color;
+        height: 50%;
+        width: 100%;
+        top: 0;
+    }
+}
+
+@each $color, $value in $colors {
+    .crosshair-#{$color} { @include crosshairs($value); }
+}
+@each $color, $value in $theme-colors {
+    .crosshair-#{$color} { @include crosshairs($value); }
+}
