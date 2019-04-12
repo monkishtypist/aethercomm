@@ -31,8 +31,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 					array(
 						'theme_location'  => 'footer',
 						'container_class' => '',
-						'container_id'    => 'footer-menu-container',
-						'menu_class'      => 'navbar-nav',
+						'container_id'    => 'footer-menu-wrapper',
+						'menu_class'      => 'nav',
 						'fallback_cb'     => '',
 						'menu_id'         => 'footer-menu',
 						'depth'           => 2,
