@@ -17,6 +17,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 6. Hooks
  * 7. Custom Post Types
  * 8. Modify the Query
+ * Widgets
  */
 
 /* 0. Requires... */
@@ -418,3 +419,35 @@ if ( ! function_exists( 'aethercomm_modify_query' ) ) {
         }
     }
 }
+
+/* Widgets */
+remove_action( 'widgets_init', 'understrap_widgets_init' );
+add_action( 'widgets_init', 'aethercomm_widgets_init' );
+if ( ! function_exists( 'aethercomm_widgets_init' ) ) {
+	function aethercomm_widgets_init() {
+		register_sidebar(
+			array(
+				'name'          => __( 'Blog Sidebar', 'aethercomm' ),
+				'id'            => 'blog-sidebar',
+				'description'   => __( 'Blog left sidebar widget area', 'aethercomm' ),
+				'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+				'after_widget'  => '</aside>',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+		register_sidebar(
+			array(
+				'name'          => __( 'Footer Content', 'aethercomm' ),
+				'id'            => 'footer-content',
+				'description'   => __( 'Content below footer menu', 'aethercomm' ),
+				'before_widget' => '<div id="%1$s" class="footer-widget %2$s">',
+				'after_widget'  => '</div><!-- .footer-widget -->',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+	}
+} // endif function_exists( 'aethercomm_widgets_init' ).
