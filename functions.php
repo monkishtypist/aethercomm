@@ -8,9 +8,10 @@ if ( ! defined( 'ABSPATH' ) ) {
  *
  * 0. Requires...
  * 1. Child theme Scripts and Styles
- * 2. After Setup Theme
+ * 2. Theme Setup
  *      Textdomain
  *      Nav Menu Location(s)
+ *      Remove Understrap Widgets
  * 3. Bootstrap Image classes
  * 4. Advanced Custom Fields setup
  * 5. Excerpts
@@ -46,16 +47,25 @@ function aethercomm_theme_enqueue_styles() {
     }
 }
 
-/* 2. After Setup Theme */
-add_action( 'after_setup_theme', 'aethercomm_add_child_theme_textdomain' );
-function aethercomm_add_child_theme_textdomain() {
-    // Load child theme text-domain
-    load_child_theme_textdomain( 'aethercomm', get_stylesheet_directory() . '/languages' );
-    // Add custom wp_nav_menu() locations.
-    register_nav_menus( array(
-        'footer' => __( 'Footer Menu', 'aethercomm' ),
-        'legal' => __( 'Legal Menu', 'aethercomm' ),
-    ) );
+/* 2. Theme Setup */
+add_action( 'after_setup_theme', 'aethercomm_after_setup_theme' );
+if ( ! function_exists( 'aethercomm_after_setup_theme' ) ) {
+    function aethercomm_after_setup_theme() {
+        // Load child theme text-domain
+        load_child_theme_textdomain( 'aethercomm', get_stylesheet_directory() . '/languages' );
+        // Add custom wp_nav_menu() locations.
+        register_nav_menus( array(
+            'footer' => __( 'Footer Menu', 'aethercomm' ),
+            'legal' => __( 'Legal Menu', 'aethercomm' ),
+        ) );
+    }
+}
+add_action( 'wp_loaded', 'aethercomm_wp_loaded' );
+if ( ! function_exists( 'aethercomm_wp_loaded' ) ) {
+    function aethercomm_wp_loaded() {
+        // Remove Understrap widgets
+        remove_action( 'widgets_init', 'understrap_widgets_init' );
+    }
 }
 
 /* 3. Bootstrap Image classes */
@@ -421,7 +431,6 @@ if ( ! function_exists( 'aethercomm_modify_query' ) ) {
 }
 
 /* Widgets */
-remove_action( 'widgets_init', 'understrap_widgets_init' );
 add_action( 'widgets_init', 'aethercomm_widgets_init' );
 if ( ! function_exists( 'aethercomm_widgets_init' ) ) {
 	function aethercomm_widgets_init() {
@@ -450,4 +459,4 @@ if ( ! function_exists( 'aethercomm_widgets_init' ) ) {
 		);
 
 	}
-} // endif function_exists( 'aethercomm_widgets_init' ).
+}
