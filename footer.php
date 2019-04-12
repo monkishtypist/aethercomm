@@ -48,8 +48,11 @@ $container = get_theme_mod( 'understrap_container_type' );
          */
         ?>
 		<div class="row justify-content-between">
-			<div class="col">
-            </div>
+            <?php if ( is_active_sidebar( 'footer-content' ) ) : ?>
+			    <div class="col">
+                    <?php dynamic_sidebar( 'footer-content' ); ?>
+                </div>
+            <?php endif; ?>
             <div class="col">
                 <div id="footer-social"></div>
             </div>
