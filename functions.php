@@ -60,11 +60,9 @@ if ( ! function_exists( 'aethercomm_after_setup_theme' ) ) {
         ) );
     }
 }
-add_action( 'wp_loaded', 'aethercomm_wp_loaded' );
+// add_action( 'wp_loaded', 'aethercomm_wp_loaded' );
 if ( ! function_exists( 'aethercomm_wp_loaded' ) ) {
     function aethercomm_wp_loaded() {
-        // Remove Understrap widgets
-        remove_action( 'widgets_init', 'understrap_widgets_init' );
     }
 }
 
@@ -431,9 +429,10 @@ if ( ! function_exists( 'aethercomm_modify_query' ) ) {
 }
 
 /* Widgets */
-add_action( 'widgets_init', 'aethercomm_widgets_init' );
-if ( ! function_exists( 'aethercomm_widgets_init' ) ) {
-	function aethercomm_widgets_init() {
+add_action( 'widgets_init', 'understrap_widgets_init' );
+if ( ! function_exists( 'understrap_widgets_init' ) ) {
+    // Overwrite parent theme widgets function
+	function understrap_widgets_init() {
 		register_sidebar(
 			array(
 				'name'          => __( 'Blog Sidebar', 'aethercomm' ),
