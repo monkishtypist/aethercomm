@@ -109,3 +109,14 @@
         }
     }
 }
+#legal-menu { // <ul>
+    justify-content: space-between;
+    > .nav-item { // <li>
+        @extend .col;
+        > .nav-link { // <a>
+            color: $white;
+            font-size: $font-size-sm;
+            padding: 0;
+        }
+    }
+}

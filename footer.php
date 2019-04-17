@@ -66,7 +66,7 @@ $container = get_theme_mod( 'understrap_container_type' );
          * FOOTER: Colophon and Legal Menu
          */
         ?>
-        <div class="row">
+        <div class="row align-items-center">
             <div class="col-12 col-lg-auto">
                 <div id="colophon">
                     <?php aethercomm_site_info(); ?>
