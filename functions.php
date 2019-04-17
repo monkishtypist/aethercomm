@@ -474,10 +474,9 @@ if ( ! function_exists( 'aethercomm_social_link') ) {
                     $link = '//linkedin.com';
                     $fa = 'fab fa-linkedin-in';
                     break;
-                case default:
+                default:
                     $link = false;
                     $fa = false;
-                    break;
             }
             if ( $link ) {
                 echo sprintf( '<a href="%1$s"><i class="%2$s"></i></a>',
