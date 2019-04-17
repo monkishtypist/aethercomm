@@ -12363,6 +12363,7 @@ body {
   text-decoration: underline; }
 
 #footer-social > i {
+  color: #fff;
   font-size: 1.5rem;
   margin-right: 2em; }
   #footer-social > i:last-of-type {

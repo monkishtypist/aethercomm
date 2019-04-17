@@ -468,13 +468,22 @@ if ( ! function_exists( 'aethercomm_social_link') ) {
             switch ( $site ) {
                 case 'facebook':
                     $link = '//facebook.com';
+                    $fa = 'fab fa-facebook-f';
                     break;
                 case 'linkedin':
-                    $link = '//facebook.com';
+                    $link = '//linkedin.com';
+                    $fa = 'fab fa-linkedin-in';
+                    break;
+                case default:
+                    $link = false;
+                    $fa = false;
                     break;
             }
             if ( $link ) {
-                echo $link;
+                echo sprintf( '<a href="%1$s"><i class="%2$s"></i></a>',
+                    $link,
+                    $fa
+                );
             }
         }
     }

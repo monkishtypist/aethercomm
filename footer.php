@@ -55,8 +55,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             <?php endif; ?>
             <div class="col-12 col-lg-auto">
                 <div id="footer-social">
-                    <a href="<?php aethercomm_social_link( 'facebook' ); ?>"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="<?php aethercomm_social_link( 'linkedin' ); ?>"><i class="fab fa-facebook-f"></i></a>
+                    <?php aethercomm_social_link( 'facebook' ); ?>
+                    <?php aethercomm_social_link( 'linkedin' ); ?>
                 </div>
             </div>
         </div>
