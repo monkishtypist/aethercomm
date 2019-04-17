@@ -84,6 +84,11 @@
         > .nav-link { // <a>
             color: $white;
             padding: 0;
+            &.dropdown-toggle {
+                &::after {
+                    display: none;
+                }
+            }
         }
         &.dropdown { // <li>
             > .dropdown-menu { // <ul>
@@ -103,9 +108,6 @@
                         &:hover {
                             background-color: transparent;
                             color: $gray-600;
-                        }
-                        &::after {
-                            display: none;
                         }
                     }
                 }
