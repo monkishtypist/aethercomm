@@ -49,12 +49,15 @@ $container = get_theme_mod( 'understrap_container_type' );
         ?>
 		<div class="row justify-content-between">
             <?php if ( is_active_sidebar( 'footer-content' ) ) : ?>
-			    <div class="col">
+			    <div class="col-12 col-md-6">
                     <?php dynamic_sidebar( 'footer-content' ); ?>
                 </div>
             <?php endif; ?>
-            <div class="col">
-                <div id="footer-social"></div>
+            <div class="col-12 col-md">
+                <div id="footer-social">
+                    <i class="fab fa-linkedin-in"></i>
+                    <i class="fab fa-facebook-f"></i>
+                </div>
             </div>
         </div>
 
