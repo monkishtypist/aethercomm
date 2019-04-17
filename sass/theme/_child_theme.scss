@@ -65,15 +65,16 @@
     margin-left: -#{$grid-gutter-width / 2};
     margin-right: -#{$grid-gutter-width / 2};
 }
-#footer-menu {
+#footer-menu { // <ul>
     justify-content: space-between;
-    .nav-item {
-        > .nav-link {
+    .nav-item { // <li>
+        > .nav-link { // <a>
             color: $white;
             padding: 0;
         }
-        &.dropdown {
+        &.dropdown { // <li>
             > .dropdown-menu { // <ul>
+                display: block !important;
                 padding: 0;
                 position: relative !important;
                 display: block !important;

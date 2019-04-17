@@ -13859,17 +13859,20 @@ readers do not read off random characters that represent icons */
   #footer-menu .nav-item > .nav-link {
     color: #fff;
     padding: 0; }
-  #footer-menu .nav-item.dropdown {
+  #footer-menu .nav-item.dropdown > .dropdown-menu {
+    display: block !important;
+    padding: 0;
     position: relative !important;
     display: block !important;
     -webkit-transform: inherit !important;
             transform: inherit !important; }
-    #footer-menu .nav-item.dropdown > .nav-item > .dropdown-item {
+    #footer-menu .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item {
       background-color: transparent;
       color: #707070;
       padding: 0; }
-      #footer-menu .nav-item.dropdown > .nav-item > .dropdown-item:active, #footer-menu .nav-item.dropdown > .nav-item > .dropdown-item:hover {
-        background-color: transparent; }
+      #footer-menu .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:active, #footer-menu .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:hover {
+        background-color: transparent;
+        color: #707070; }
 
 /*
 * Use existing Bootstrap 4 classes and
