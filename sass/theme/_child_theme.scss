@@ -67,17 +67,20 @@
 }
 #footer-menu { // <ul>
     justify-content: space-between;
-    .nav-item { // <li>
+    > .nav-item { // <li>
+        @extend .col;
         > .nav-link { // <a>
             color: $white;
             padding: 0;
         }
         &.dropdown { // <li>
             > .dropdown-menu { // <ul>
+                background-color: transparent;
                 display: block !important;
+                margin: 0;
                 padding: 0;
                 position: relative !important;
-                display: block !important;
+                top: 0;
                 transform: inherit !important;
                 > .nav-item { // <li>
                     > .dropdown-item { // <a>

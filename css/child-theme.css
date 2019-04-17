@@ -483,12 +483,12 @@ pre {
 .no-gutters {
   margin-right: 0;
   margin-left: 0; }
-  .no-gutters > .col,
+  .no-gutters > .col, #footer-menu.no-gutters > .nav-item,
   .no-gutters > [class*="col-"] {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, #footer-menu > .nav-item,
 .col-auto, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -499,7 +499,7 @@ pre {
   padding-right: 15px;
   padding-left: 15px; }
 
-.col {
+.col, #footer-menu > .nav-item {
   -ms-flex-preferred-size: 0;
       flex-basis: 0;
   -webkit-box-flex: 1;
@@ -1864,7 +1864,7 @@ textarea.form-control,
       flex-wrap: wrap;
   margin-right: -5px;
   margin-left: -5px; }
-  .form-row > .col,
+  .form-row > .col, #footer-menu.form-row > .nav-item,
   .form-row > [class*="col-"] {
     padding-right: 5px;
     padding-left: 5px; }
@@ -13856,21 +13856,23 @@ readers do not read off random characters that represent icons */
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
-  #footer-menu .nav-item > .nav-link {
+  #footer-menu > .nav-item > .nav-link {
     color: #fff;
     padding: 0; }
-  #footer-menu .nav-item.dropdown > .dropdown-menu {
+  #footer-menu > .nav-item.dropdown > .dropdown-menu {
+    background-color: transparent;
     display: block !important;
+    margin: 0;
     padding: 0;
     position: relative !important;
-    display: block !important;
+    top: 0;
     -webkit-transform: inherit !important;
             transform: inherit !important; }
-    #footer-menu .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item {
+    #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item {
       background-color: transparent;
       color: #707070;
       padding: 0; }
-      #footer-menu .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:active, #footer-menu .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:hover {
+      #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:active, #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:hover {
         background-color: transparent;
         color: #707070; }
 
