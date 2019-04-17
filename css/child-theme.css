@@ -12864,6 +12864,7 @@ readers do not read off random characters that represent icons */
   #footer-menu > .nav-item > .nav-link {
     color: #fff;
     font-size: 0.875rem;
+    font-weight: 700;
     padding: 0;
     text-transform: uppercase; }
     #footer-menu > .nav-item > .nav-link.dropdown-toggle::after {

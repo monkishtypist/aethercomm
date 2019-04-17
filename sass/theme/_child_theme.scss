@@ -103,6 +103,7 @@
         > .nav-link { // <a>
             color: $white;
             font-size: #{$font-size-base * .875};
+            font-weight: $font-weight-bold;
             padding: 0;
             text-transform: uppercase;
             &.dropdown-toggle {
