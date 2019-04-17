@@ -8,6 +8,9 @@
  */
 
 /* Typography */
+.footer-widget p:last-of-type {
+    margin-bottom: 0;
+}
 #footer-social > i {
     font-size: #{$font-size-base * 1.5};
     margin-right: 2em;
