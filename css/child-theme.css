@@ -12353,6 +12353,9 @@ readers do not read off random characters that represent icons */
  * Navs
  */
 /* Typography */
+body {
+  letter-spacing: .025em; }
+
 .footer-widget p:last-of-type {
   margin-bottom: 0; }
 

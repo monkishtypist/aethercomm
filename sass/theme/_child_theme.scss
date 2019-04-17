@@ -8,6 +8,9 @@
  */
 
 /* Typography */
+body {
+    letter-spacing: .025em;
+}
 .footer-widget {
     p {
         &:last-of-type {
