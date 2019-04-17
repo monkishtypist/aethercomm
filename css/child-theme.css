@@ -12365,10 +12365,19 @@ readers do not read off random characters that represent icons */
 #colophon {
   font-size: 0.75rem; }
 
-/* Wrappers */
+/**
+ * Wrappers
+ *
+ * Used to wrap distinct page elements
+ */
 #wrapper-footer {
   background-color: #222222;
-  color: #fff; }
+  color: #fff;
+  padding: 4.125rem 0; }
+  #wrapper-footer .container > .row {
+    margin-bottom: 2.625rem; }
+    #wrapper-footer .container > .row:last-of-type {
+      margin-bottom: 0; }
 
 /**
  * Sections

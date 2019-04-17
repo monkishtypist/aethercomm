@@ -22,10 +22,23 @@
     font-size: $font-size-sm;
 }
 
-/* Wrappers */
+/**
+ * Wrappers
+ *
+ * Used to wrap distinct page elements
+ */
 #wrapper-footer {
     background-color: $dark;
     color: $white;
+    padding: #{$spacer * 4.125} 0;
+    .container {
+        > .row {
+            margin-bottom: #{$spacer * 2.625};
+            &:last-of-type {
+                margin-bottom: 0;
+            }
+        }
+    }
 }
 
 /**
