@@ -92,6 +92,9 @@
                             background-color: transparent;
                             color: $gray-600;
                         }
+                        &::after {
+                            display: none;
+                        }
                     }
                 }
             }
