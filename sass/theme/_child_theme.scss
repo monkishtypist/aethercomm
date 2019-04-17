@@ -21,12 +21,14 @@ body {
         text-decoration: underline;
     }
 }
-#footer-social > i {
-    color: $white;
-    font-size: #{$font-size-base * 1.5};
-    margin-right: 2em;
-    &:last-of-type {
-        margin-right: 0;
+#footer-social {
+    a {
+        color: $white;
+        font-size: #{$font-size-base * 1.5};
+        margin-right: 2em;
+        &:last-of-type {
+            margin-right: 0;
+        }
     }
 }
 #colophon {
