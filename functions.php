@@ -459,3 +459,23 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 
 	}
 }
+
+/* Social Media Links */
+if ( ! function_exists( 'aethercomm_social_link') ) {
+    function aethercomm_social_link( $site = false ) {
+        if ( $site ) {
+            $link = false;
+            switch ( $site ) {
+                case 'facebook':
+                    $link = '//facebook.com';
+                    break;
+                case 'linkedin':
+                    $link = '//facebook.com';
+                    break;
+            }
+            if ( $link ) {
+                echo $link;
+            }
+        }
+    }
+}
