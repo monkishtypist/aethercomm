@@ -73,17 +73,21 @@
             padding: 0;
         }
         &.dropdown {
-            position: relative !important;
-            display: block !important;
-            transform: inherit !important;
-            > .nav-item {
-                > .dropdown-item {
-                    background-color: transparent;
-                    color: $gray-600;
-                    padding: 0;
-                    &:active,
-                    &:hover {
+            > .dropdown-menu { // <ul>
+                padding: 0;
+                position: relative !important;
+                display: block !important;
+                transform: inherit !important;
+                > .nav-item { // <li>
+                    > .dropdown-item { // <a>
                         background-color: transparent;
+                        color: $gray-600;
+                        padding: 0;
+                        &:active,
+                        &:hover {
+                            background-color: transparent;
+                            color: $gray-600;
+                        }
                     }
                 }
             }
