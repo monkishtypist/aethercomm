@@ -9,7 +9,7 @@
   --blue: #4A63AE;
   --indigo: #6610f2;
   --purple: #6f42c1;
-  --pink: #e83e8c;
+  --pink: #FF00B1;
   --red: #FF5800;
   --orange: #fd7e14;
   --yellow: #FFCE00;
@@ -417,7 +417,7 @@ mark,
 
 code {
   font-size: 87.5%;
-  color: #e83e8c;
+  color: #FF00B1;
   word-break: break-word; }
   a > code {
     color: inherit; }
@@ -13363,16 +13363,35 @@ readers do not read off random characters that represent icons */
 /**
  * Typography
  * Buttons
- * Custom Graphics
+ * Wrappers
+ * Sections
+ * Crosshairs
+ * Navs
  */
-/* Custom Graphics */
+/* Wrappers */
+#wrapper-footer {
+  background-color: #222222;
+  color: #fff; }
+
+/**
+ * Sections
+ *
+ * These are the rows with defined backgrounds
+ */
+.section-black {
+  background-color: #000; }
+
+.section-blue {
+  background-color: rgba(74, 99, 174, 0.9); }
+
+/* Crosshairs */
 .crosshair-blue {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-blue:after, .crosshair-blue:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13394,7 +13413,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-indigo:after, .crosshair-indigo:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13416,7 +13435,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-purple:after, .crosshair-purple:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13438,18 +13457,18 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-pink:after, .crosshair-pink:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
   .crosshair-pink:after {
-    border-right: 1px solid #e83e8c;
+    border-right: 1px solid #FF00B1;
     height: 100%;
     width: 50%;
     left: 0; }
   .crosshair-pink:before {
-    border-bottom: 1px solid #e83e8c;
+    border-bottom: 1px solid #FF00B1;
     height: 50%;
     width: 100%;
     top: 0; }
@@ -13460,7 +13479,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-red:after, .crosshair-red:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13482,7 +13501,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-orange:after, .crosshair-orange:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13504,7 +13523,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-yellow:after, .crosshair-yellow:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13526,7 +13545,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-green:after, .crosshair-green:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13548,7 +13567,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-teal:after, .crosshair-teal:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13570,7 +13589,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-cyan:after, .crosshair-cyan:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13592,7 +13611,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-white:after, .crosshair-white:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13614,7 +13633,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-gray:after, .crosshair-gray:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13636,7 +13655,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-gray-dark:after, .crosshair-gray-dark:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13658,7 +13677,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-primary:after, .crosshair-primary:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13680,7 +13699,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-secondary:after, .crosshair-secondary:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13702,7 +13721,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-success:after, .crosshair-success:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13724,7 +13743,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-info:after, .crosshair-info:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13746,7 +13765,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-warning:after, .crosshair-warning:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13768,7 +13787,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-danger:after, .crosshair-danger:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13790,7 +13809,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-light:after, .crosshair-light:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13812,7 +13831,7 @@ readers do not read off random characters that represent icons */
   height: 1.375rem;
   width: 1.375rem; }
   .crosshair-dark:after, .crosshair-dark:before {
-    content: "";
+    content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
@@ -13827,6 +13846,30 @@ readers do not read off random characters that represent icons */
     height: 50%;
     width: 100%;
     top: 0; }
+
+/* Navs */
+#footer-menu-wrapper {
+  margin-left: -15px;
+  margin-right: -15px; }
+
+#footer-menu {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #footer-menu .nav-item > .nav-link {
+    color: #fff;
+    padding: 0; }
+  #footer-menu .nav-item.dropdown {
+    position: relative !important;
+    display: block !important;
+    -webkit-transform: inherit !important;
+            transform: inherit !important; }
+    #footer-menu .nav-item.dropdown > .nav-item > .dropdown-item {
+      background-color: transparent;
+      color: #707070;
+      padding: 0; }
+      #footer-menu .nav-item.dropdown > .nav-item > .dropdown-item:active, #footer-menu .nav-item.dropdown > .nav-item > .dropdown-item:hover {
+        background-color: transparent; }
 
 /*
 * Use existing Bootstrap 4 classes and
