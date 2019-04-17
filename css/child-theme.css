@@ -12354,6 +12354,7 @@ readers do not read off random characters that represent icons */
  */
 /* Typography */
 #footer-social > i {
+  font-size: 1.5rem;
   margin-right: 2em; }
   #footer-social > i:last-of-type {
     margin-right: 0; }
