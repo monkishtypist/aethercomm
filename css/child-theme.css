@@ -12352,6 +12352,12 @@ readers do not read off random characters that represent icons */
  * Crosshairs
  * Navs
  */
+/* Typography */
+#footer-social > i {
+  margin-right: 2em; }
+  #footer-social > i:last-of-type {
+    margin-right: 0; }
+
 /* Wrappers */
 #wrapper-footer {
   background-color: #222222;

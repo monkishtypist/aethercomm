@@ -47,13 +47,13 @@ $container = get_theme_mod( 'understrap_container_type' );
          * FOOTER: Footer Widgets and Social
          */
         ?>
-		<div class="row justify-content-between">
+		<div class="row justify-content-between align-items-center">
             <?php if ( is_active_sidebar( 'footer-content' ) ) : ?>
-			    <div class="col-12 col-md-6">
+			    <div class="col-12 col-lg-auto">
                     <?php dynamic_sidebar( 'footer-content' ); ?>
                 </div>
             <?php endif; ?>
-            <div class="col-12 col-md">
+            <div class="col-12 col-lg-auto">
                 <div id="footer-social">
                     <i class="fab fa-linkedin-in"></i>
                     <i class="fab fa-facebook-f"></i>

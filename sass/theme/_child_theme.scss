@@ -7,6 +7,14 @@
  * Navs
  */
 
+/* Typography */
+#footer-social > i {
+    margin-right: 2em;
+    &:last-of-type {
+        margin-right: 0;
+    }
+}
+
 /* Wrappers */
 #wrapper-footer {
     background-color: $dark;
