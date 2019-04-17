@@ -67,13 +67,25 @@ $container = get_theme_mod( 'understrap_container_type' );
          */
         ?>
         <div class="row">
-            <div class="col">
+            <div class="col-12 col-lg-auto">
                 <div id="colophon">
                     <?php aethercomm_site_info(); ?>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-lg">
                 <!-- legal menu -->
+                <?php wp_nav_menu(
+					array(
+						'theme_location'  => 'legal',
+						'container_class' => '',
+						'container_id'    => 'legal-menu-wrapper',
+						'menu_class'      => 'nav',
+						'fallback_cb'     => '',
+						'menu_id'         => 'legal-menu',
+						'depth'           => 2,
+						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+					)
+				); ?>
             </div>
         </div>
 
