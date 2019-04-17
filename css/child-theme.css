@@ -12358,6 +12358,9 @@ readers do not read off random characters that represent icons */
   #footer-social > i:last-of-type {
     margin-right: 0; }
 
+#colophon {
+  font-size: 0.75rem; }
+
 /* Wrappers */
 #wrapper-footer {
   background-color: #222222;
