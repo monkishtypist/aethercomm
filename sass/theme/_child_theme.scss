@@ -73,10 +73,6 @@
 }
 
 /* Navs */
-#footer-menu-wrapper {
-    margin-left: -#{$grid-gutter-width / 2};
-    margin-right: -#{$grid-gutter-width / 2};
-}
 #footer-menu { // <ul>
     justify-content: space-between;
     > .nav-item { // <li>
