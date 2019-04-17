@@ -72,7 +72,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <?php aethercomm_site_info(); ?>
                 </div>
             </div>
-            <div class="col-12 col-lg">
+            <div class="col-12 col-lg-8">
                 <!-- legal menu -->
                 <?php wp_nav_menu(
 					array(
