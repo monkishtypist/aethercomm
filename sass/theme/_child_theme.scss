@@ -198,6 +198,10 @@ span.pipe {
     }
     .footer-siteinfo {
         @extend .row;
+        @include media-breakpoint-up('lg') {
+            flex-direction: row-reverse;
+            justify-content: space-between;
+        }
         #colophon {
             @extend .col-12;
             @extend .col-lg-auto;
@@ -205,10 +209,7 @@ span.pipe {
         }
         #legal-menu-wrapper {
             @extend .col-12;
-            @extend .col-lg-auto;
-            @include media-breakpoint-up('lg') {
-
-            }
+            @extend .col-lg;
         }
     }
 }
