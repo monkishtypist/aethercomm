@@ -22,7 +22,6 @@ if ( ! defined( 'ABSPATH' ) ) {
  */
 
 /* 0. Requires... */
-// require get_stylesheet_directory_uri() . '/inc/class-team-members.php';
 
 /* 1. Child theme Scripts and Styles */
 add_action( 'wp_enqueue_scripts', 'aethercomm_remove_parent_scripts', 20 );
@@ -105,7 +104,6 @@ if ( ! function_exists( 'disable_acf_on_frontend' ) ) {
 		return $plugins;
 	}
 }
-
 if ( ! function_exists( 'get_acf_field' ) ) {
     // Accesses ACF fields with WP core functions
 	function get_acf_field( $field, $bool = false, $esc = false ) {
@@ -129,7 +127,6 @@ if ( ! function_exists( 'get_acf_field' ) ) {
 		return false;
 	}
 }
-
 if ( ! function_exists( 'acf_field' ) ) {
 	function acf_field( $field, $bool = false, $esc = false ) {
 		$value = get_acf_field( $field, $bool, $esc );
@@ -458,32 +455,4 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 		);
 
 	}
-}
-
-/* Social Media Links */
-if ( ! function_exists( 'aethercomm_social_link') ) {
-    function aethercomm_social_link( $site = false ) {
-        if ( $site ) {
-            $link = false;
-            switch ( $site ) {
-                case 'facebook':
-                    $link = '//facebook.com';
-                    $fa = 'fab fa-facebook-f';
-                    break;
-                case 'linkedin':
-                    $link = '//linkedin.com';
-                    $fa = 'fab fa-linkedin-in';
-                    break;
-                default:
-                    $link = false;
-                    $fa = false;
-            }
-            if ( $link ) {
-                echo sprintf( '<a href="%1$s"><i class="%2$s"></i></a>',
-                    $link,
-                    $fa
-                );
-            }
-        }
-    }
 }
