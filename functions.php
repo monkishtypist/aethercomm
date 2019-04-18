@@ -57,6 +57,8 @@ if ( ! function_exists( 'aethercomm_after_setup_theme' ) ) {
             'footer' => __( 'Footer Menu', 'aethercomm' ),
             'legal' => __( 'Legal Menu', 'aethercomm' ),
         ) );
+        // custom image sizes
+        add_image_size( 'card-img-top', 400, 300, true );
     }
 }
 // add_action( 'wp_loaded', 'aethercomm_wp_loaded' );
