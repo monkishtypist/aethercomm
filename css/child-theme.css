@@ -12874,15 +12874,15 @@ span.pipe::after {
       -ms-flex-pack: justify;
           justify-content: space-between; }
   @media (max-width: 575.98px) {
-    #footer-menu > .nav-item:nth-last-child(0) {
+    #footer-menu > .nav-item:nth-last-child(1) {
       margin-bottom: 0; } }
   @media (max-width: 767.98px) {
-    #footer-menu > .nav-item:nth-last-child(0), #footer-menu > .nav-item:nth-last-child(1) {
+    #footer-menu > .nav-item:nth-last-child(1), #footer-menu > .nav-item:nth-last-child(2) {
       margin-bottom: 0; } }
   @media (max-width: 991.98px) {
     #footer-menu > .nav-item {
       margin-bottom: 1rem; }
-      #footer-menu > .nav-item:nth-last-child(0), #footer-menu > .nav-item:nth-last-child(1), #footer-menu > .nav-item:nth-last-child(2) {
+      #footer-menu > .nav-item:nth-last-child(1), #footer-menu > .nav-item:nth-last-child(2), #footer-menu > .nav-item:nth-last-child(3) {
         margin-bottom: 0; } }
   #footer-menu > .nav-item > .nav-link {
     color: #fff;
