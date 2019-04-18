@@ -202,6 +202,12 @@ span.pipe {
         .footer-widget {
             @extend .col-12;
             @extend .col-lg-auto;
+            @include media-breakpoint-down('md') {
+                margin-bottom: #{$spacer};
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+            }
             p {
                 &:last-of-type {
                     margin-bottom: 0;

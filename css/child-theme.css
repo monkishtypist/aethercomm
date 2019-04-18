@@ -12940,6 +12940,11 @@ span.pipe::after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between; }
+  @media (max-width: 991.98px) {
+    #wrapper-footer .footer-widgets .footer-widget {
+      margin-bottom: 1rem; }
+      #wrapper-footer .footer-widgets .footer-widget:last-of-type {
+        margin-bottom: 0; } }
   #wrapper-footer .footer-widgets .footer-widget p:last-of-type {
     margin-bottom: 0; }
   #wrapper-footer .footer-widgets .footer-widget p a {
