@@ -85,6 +85,7 @@ body {
  * Styles for navigation bars
  */
 #footer-menu { // <ul>
+    @extend .row;
     justify-content: space-between;
     > .nav-item { // <li>
         @extend .col-12;

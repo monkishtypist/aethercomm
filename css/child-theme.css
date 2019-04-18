@@ -471,7 +471,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row, #wrapper-footer .footer-widgets {
+.row, #footer-menu, #wrapper-footer .footer-widgets {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -12366,9 +12366,9 @@ body {
   background-color: #222222;
   color: #fff;
   padding: 4.125rem 0; }
-  #wrapper-footer .container > .row, #wrapper-footer .container > .footer-widgets {
+  #wrapper-footer .container > .row, #wrapper-footer .container > #footer-menu, #wrapper-footer .container > .footer-widgets {
     margin-bottom: 2.625rem; }
-    #wrapper-footer .container > .row:last-of-type, #wrapper-footer .container > .footer-widgets:last-of-type {
+    #wrapper-footer .container > .row:last-of-type, #wrapper-footer .container > #footer-menu:last-of-type, #wrapper-footer .container > .footer-widgets:last-of-type {
       margin-bottom: 0; }
 
 /**
