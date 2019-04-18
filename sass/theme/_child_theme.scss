@@ -101,11 +101,17 @@ body {
     .crosshair-#{$color} { @include crosshairs($value); }
 }
 
-/* Navs */
+/**
+ * Navs
+ *
+ * Styles for navigation bars
+ */
 #footer-menu { // <ul>
     justify-content: space-between;
     > .nav-item { // <li>
-        // @extend .col;
+        @extend .col-6;
+        // @extend .col-sm-4;
+        @extend .col-md-auto;
         > .nav-link { // <a>
             color: $white;
             font-size: #{$font-size-base * .875};
