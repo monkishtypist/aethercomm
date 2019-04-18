@@ -130,7 +130,10 @@ if ( ! function_exists( 'acf_field' ) ) {
 	function acf_field( $field, $single = true, $esc = false ) {
 		$value = get_acf_field( $field, $single, $esc );
 		if ( $value ) {
-			echo $value;
+            echo ( $single
+                ? wpautop( $value )
+                : $value
+            );
 		}
 	}
 }
