@@ -59,9 +59,6 @@ $container = get_theme_mod( 'understrap_container_type' );
          */
         ?>
         <div class="footer-siteinfo">
-            <div id="colophon">
-                <?php aethercomm_site_info(); ?>
-            </div>
             <!-- legal menu -->
             <?php wp_nav_menu(
                 array(
@@ -73,8 +70,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                     'menu_id'         => 'legal-menu',
                     'depth'           => 2,
                     'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-                )
-            ); ?>
+                    )
+                ); ?>
+            <div id="colophon">
+                <?php aethercomm_site_info(); ?>
+            </div>
         </div>
 
 	</div><!-- container end -->

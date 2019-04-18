@@ -197,8 +197,18 @@ span.pipe {
         }
     }
     .footer-siteinfo {
+        @extend .row;
         #colophon {
+            @extend .col-12;
+            @extend .col-lg-auto;
             font-size: $font-size-sm;
+        }
+        #legal-menu-wrapper {
+            @extend .col-12;
+            @extend .col-lg-auto;
+            @include media-breakpoint-up('lg') {
+
+            }
         }
     }
 }
