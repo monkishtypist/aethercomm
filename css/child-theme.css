@@ -308,13 +308,13 @@ h1, h2, h3, h4, h5, h6,
   line-height: 1.2; }
 
 h1, .h1 {
-  font-size: 2.5rem; }
+  font-size: 3.75rem; }
 
 h2, .h2 {
-  font-size: 2rem; }
+  font-size: 2.5rem; }
 
 h3, .h3 {
-  font-size: 1.75rem; }
+  font-size: 1.875rem; }
 
 h4, .h4 {
   font-size: 1.5rem; }
@@ -447,8 +447,8 @@ pre {
 
 .container {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto; }
   @media (min-width: 576px) {
@@ -466,8 +466,8 @@ pre {
 
 .container-fluid {
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px;
+  padding-right: 10px;
+  padding-left: 10px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -477,8 +477,8 @@ pre {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -15px;
-  margin-left: -15px; }
+  margin-right: -10px;
+  margin-left: -10px; }
 
 .no-gutters {
   margin-right: 0;
@@ -496,8 +496,8 @@ pre {
 .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 15px;
-  padding-left: 15px; }
+  padding-right: 10px;
+  padding-left: 10px; }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -3754,15 +3754,15 @@ input[type="button"].btn-block {
       -ms-flex-direction: column;
           flex-direction: column; }
   .card-deck .card {
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   @media (min-width: 576px) {
     .card-deck {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row wrap;
               flex-flow: row wrap;
-      margin-right: -15px;
-      margin-left: -15px; }
+      margin-right: -10px;
+      margin-left: -10px; }
       .card-deck .card {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3774,9 +3774,9 @@ input[type="button"].btn-block {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin-right: 15px;
+        margin-right: 10px;
         margin-bottom: 0;
-        margin-left: 15px; } }
+        margin-left: 10px; } }
 
 .card-group {
   display: -webkit-box;
@@ -3787,7 +3787,7 @@ input[type="button"].btn-block {
       -ms-flex-direction: column;
           flex-direction: column; }
   .card-group > .card {
-    margin-bottom: 15px; }
+    margin-bottom: 10px; }
   @media (min-width: 576px) {
     .card-group {
       -webkit-box-orient: horizontal;
@@ -7872,7 +7872,7 @@ a.text-dark:hover, a.text-dark:focus {
     border-color: #dee2e6; } }
 
 .wrapper {
-  padding: 30px 0; }
+  padding: 20px 0; }
 
 #wrapper-hero {
   padding: 0px !important; }
@@ -12394,9 +12394,13 @@ p:last-of-type {
  * These are the rows with defined backgrounds
  */
 section {
-  padding: 3.75rem 0; }
+  padding: 3.75rem 0;
+  position: relative; }
   section.section-unpadded {
     padding: 0 0; }
+  section > .container,
+  section > .container-fluid {
+    position: relative; }
 
 .section-black {
   background-color: #000;
@@ -12885,6 +12889,226 @@ section {
     height: 50%;
     width: 100%;
     top: 0; }
+
+.crosshair-100 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-100:after, .crosshair-100:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-100:after {
+    border-right: 1px solid #f8f9fa;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-100:before {
+    border-bottom: 1px solid #f8f9fa;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshair-200 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-200:after, .crosshair-200:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-200:after {
+    border-right: 1px solid #e9ecef;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-200:before {
+    border-bottom: 1px solid #e9ecef;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshair-300 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-300:after, .crosshair-300:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-300:after {
+    border-right: 1px solid #dee2e6;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-300:before {
+    border-bottom: 1px solid #dee2e6;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshair-400 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-400:after, .crosshair-400:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-400:after {
+    border-right: 1px solid #ced4da;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-400:before {
+    border-bottom: 1px solid #ced4da;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshair-500 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-500:after, .crosshair-500:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-500:after {
+    border-right: 1px solid #A8A8A8;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-500:before {
+    border-bottom: 1px solid #A8A8A8;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshair-600 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-600:after, .crosshair-600:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-600:after {
+    border-right: 1px solid #707070;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-600:before {
+    border-bottom: 1px solid #707070;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshair-700 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-700:after, .crosshair-700:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-700:after {
+    border-right: 1px solid #676767;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-700:before {
+    border-bottom: 1px solid #676767;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshair-800 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-800:after, .crosshair-800:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-800:after {
+    border-right: 1px solid #222222;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-800:before {
+    border-bottom: 1px solid #222222;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshair-900 {
+  display: block;
+  position: relative;
+  height: 1.375rem;
+  width: 1.375rem; }
+  .crosshair-900:after, .crosshair-900:before {
+    content: " ";
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: block;
+    position: absolute; }
+  .crosshair-900:after {
+    border-right: 1px solid #010101;
+    height: 100%;
+    width: 50%;
+    left: 0; }
+  .crosshair-900:before {
+    border-bottom: 1px solid #010101;
+    height: 50%;
+    width: 100%;
+    top: 0; }
+
+.crosshairs-top-left,
+.crosshairs-top-right,
+.crosshairs-bottom-left,
+.crosshairs-bottom-right {
+  position: absolute; }
+
+.crosshairs-top-left {
+  top: 0;
+  left: 0; }
+
+.crosshairs-top-right {
+  top: 0;
+  right: 0; }
+
+.crosshairs-bottom-left {
+  bottom: 0;
+  left: 0; }
+
+.crosshairs-bottom-right {
+  bottom: 0;
+  right: 0; }
 
 /* Pipes */
 span.pipe::after {

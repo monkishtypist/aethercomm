@@ -67,8 +67,13 @@ p {
  */
 section {
     padding: #{$spacer * 3.75} 0;
+    position: relative;
     &.section-unpadded {
         padding: 0 0;
+    }
+    > .container,
+    > .container-fluid {
+        position: relative;
     }
 }
 .section-black {
@@ -133,6 +138,31 @@ section {
 }
 @each $color, $value in $theme-colors {
     .crosshair-#{$color} { @include crosshairs($value); }
+}
+@each $color, $value in $grays {
+    .crosshair-#{$color} { @include crosshairs($value); }
+}
+.crosshairs-top-left,
+.crosshairs-top-right,
+.crosshairs-bottom-left,
+.crosshairs-bottom-right {
+    position: absolute;
+}
+.crosshairs-top-left {
+    top: 0;
+    left: 0;
+}
+.crosshairs-top-right {
+    top: 0;
+    right: 0;
+}
+.crosshairs-bottom-left {
+    bottom: 0;
+    left: 0;
+}
+.crosshairs-bottom-right {
+    bottom: 0;
+    right: 0;
 }
 
 /* Pipes */

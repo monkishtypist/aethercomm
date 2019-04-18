@@ -48,6 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-posts" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
+
             <div id="posts-title">
                 <?php acf_field( 'front_page_settings_posts_title' ); ?>
             </div>
@@ -76,6 +77,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php echo ob_get_clean(); ?>
 
             <?php endif; wp_reset_query(); ?>
+
+            <span class="crosshair-gray-600 crosshairs-top-left"></span>
+            <span class="crosshair-gray-600 crosshairs-top-right"></span>
+            <span class="crosshair-gray-600 crosshairs-bottom-left"></span>
+            <span class="crosshair-gray-600 crosshairs-bottom-right"></span>
 
         </div>
 
