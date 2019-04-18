@@ -12387,8 +12387,8 @@ body {
   color: #fff; }
 
 .section-banner {
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1rem, calc(100% - 11rem) 1rem, calc(100% - 10rem) 0);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1rem, calc(100% - 11rem) 1rem, calc(100% - 10rem) 0); }
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.5rem, calc(100% - 27rem) 1.5rem, calc(100% - 25rem) 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.5rem, calc(100% - 27rem) 1.5rem, calc(100% - 25rem) 0); }
 
 /**
  * Custom Elements
