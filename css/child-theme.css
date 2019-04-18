@@ -12382,7 +12382,9 @@ body {
 .section-blue {
   background-color: rgba(74, 99, 174, 0.9); }
 
-/* Crosshairs */
+/**
+ * Crosshairs
+ */
 .crosshair-blue {
   display: block;
   position: relative;
@@ -12846,6 +12848,20 @@ body {
     top: 0; }
 
 /**
+ * Pipes
+ */
+span.pipe::after {
+  content: " | "; }
+
+@media (max-width: 991.98px) {
+  span.pipe {
+    width: 100%;
+    display: block; }
+    span.pipe::after {
+      content: "";
+      display: none; } }
+
+/**
  * Navs
  *
  * Styles for navigation bars
@@ -12894,10 +12910,6 @@ body {
  *
  * Widgets and content. For nav menus see 'Navs'
  */
-@media (max-width: 991.98px) {
-  #wrapper-footer .footer-widgets .footer-widget {
-    text-align: center; } }
-
 #wrapper-footer .footer-widgets .footer-widget p:last-of-type {
   margin-bottom: 0; }
 

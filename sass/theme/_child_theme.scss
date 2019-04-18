@@ -45,7 +45,9 @@ body {
     background-color: rgba($blue,.9);
 }
 
-/* Crosshairs */
+/**
+ * Crosshairs
+ */
 @mixin crosshairs($color) {
     display: block;
     position: relative;
@@ -71,12 +73,28 @@ body {
         top: 0;
     }
 }
-
 @each $color, $value in $colors {
     .crosshair-#{$color} { @include crosshairs($value); }
 }
 @each $color, $value in $theme-colors {
     .crosshair-#{$color} { @include crosshairs($value); }
+}
+
+/**
+ * Pipes
+ */
+span.pipe {
+    &::after {
+        content: " | ";
+    }
+    @include media-breakpoint-down('md') {
+        width: 100%;
+        display: block;
+        &::after {
+            content: "";
+            display: none;
+        }
+    }
 }
 
 /**
@@ -152,9 +170,6 @@ body {
         .footer-widget {
             @extend .col-12;
             @extend .col-lg-auto;
-            @include media-breakpoint-down('md') {
-                text-align: center;
-            }
             p {
                 &:last-of-type {
                     margin-bottom: 0;
