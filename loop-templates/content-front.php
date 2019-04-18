@@ -18,8 +18,12 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-intro" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
-            <?php acf_field( 'front_page_settings_intro_header', true ); ?>
-            <?php acf_field( 'front_page_settings_intro_copy', true ); ?>
+            <div id="intro-header">
+                <?php acf_field( 'front_page_settings_intro_header' ); ?>
+            </div>
+            <div id="intro-copy">
+                <?php acf_field( 'front_page_settings_intro_copy' ); ?>
+            </div>
         </div>
 
     </section>
@@ -27,12 +31,14 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-banner" class="section-banner section-blue">
 
         <div class="<?php echo esc_attr( $container ); ?>">
-            <h2><?php acf_field( 'front_page_settings_banner_copy', true ); ?></h2>
+            <div id="banner-copy">
+                <?php acf_field( 'front_page_settings_banner_copy' ); ?>
+            </div>
         </div>
 
     </section>
 
-    <section id="front-page-slider" class="section-full">
+    <section id="front-page-slider" class="section-unpadded">
 
         <div class="container-fluid">
         </div>
@@ -42,7 +48,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-posts" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
-            <h2><?php acf_field( 'front_page_settings_posts_title', true ); ?></h2>
+            <?php acf_field( 'front_page_settings_posts_title' ); ?>
         </div>
 
     </section>

@@ -127,8 +127,8 @@ if ( ! function_exists( 'get_acf_field' ) ) {
 	}
 }
 if ( ! function_exists( 'acf_field' ) ) {
-	function acf_field( $field, $bool = false, $esc = false ) {
-		$value = get_acf_field( $field, $bool, $esc );
+	function acf_field( $field, $single = true, $esc = false ) {
+		$value = get_acf_field( $field, $single, $esc );
 		if ( $value ) {
 			echo $value;
 		}
