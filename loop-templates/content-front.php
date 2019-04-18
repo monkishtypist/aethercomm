@@ -18,6 +18,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-intro" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
+            <?php acf_field( 'front_page_settings_intro_header', true ); ?>
+            <?php acf_field( 'front_page_settings_intro_copy', true ); ?>
         </div>
 
     </section>
@@ -25,7 +27,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-banner" class="section-banner section-blue">
 
         <div class="<?php echo esc_attr( $container ); ?>">
-            <h2>Our corporate headquarters are located in a state-of-the-art, 50,000 square foot facility just north of San Diego in Carlsbad, California.</h2>
+            <h2><?php acf_field( 'front_page_settings_banner_copy', true ); ?></h2>
         </div>
 
     </section>
