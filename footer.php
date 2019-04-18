@@ -44,21 +44,13 @@ $container = get_theme_mod( 'understrap_container_type' );
 
         <?php
         /**
-         * FOOTER: Footer Widgets and Social
+         * FOOTER: Widgets and Social
          */
         ?>
-		<div class="row justify-content-between align-items-center">
+		<div class="footer-widgets">
             <?php if ( is_active_sidebar( 'footer-content' ) ) : ?>
-			    <div class="col-12 col-lg-auto">
-                    <?php dynamic_sidebar( 'footer-content' ); ?>
-                </div>
+                <?php dynamic_sidebar( 'footer-content' ); ?>
             <?php endif; ?>
-            <div class="col-12 col-lg-auto">
-                <div id="footer-social">
-                    <?php aethercomm_social_link( 'facebook' ); ?>
-                    <?php aethercomm_social_link( 'linkedin' ); ?>
-                </div>
-            </div>
         </div>
 
         <?php

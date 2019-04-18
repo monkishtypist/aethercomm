@@ -5,34 +5,12 @@
  * Sections
  * Crosshairs
  * Navs
+ * Footer
  */
 
 /* Typography */
 body {
     letter-spacing: .025em;
-}
-.footer-widget {
-    p {
-        &:last-of-type {
-            margin-bottom: 0;
-        }
-    }
-    a {
-        text-decoration: underline;
-    }
-}
-#footer-social {
-    a {
-        color: $white;
-        font-size: #{$font-size-base * 1.5};
-        margin-right: 2em;
-        &:last-of-type {
-            margin-right: 0;
-        }
-    }
-}
-#colophon {
-    font-size: $font-size-sm;
 }
 
 /**
@@ -159,5 +137,38 @@ body {
             padding: 0;
             text-decoration: underline;
         }
+    }
+}
+
+/**
+ * Footer
+ *
+ * Widgets and content. For nav menus see 'Navs'
+ */
+ #wrapper-footer {
+    .footer-widgets {
+        .footer-widget {
+            p {
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
+                a {
+                    text-decoration: underline;
+                }
+            }
+        }
+        #footer-social {
+            a {
+                color: $white;
+                font-size: #{$font-size-base * 1.5};
+                margin-right: 2em;
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
+    }
+    #colophon {
+        font-size: $font-size-sm;
     }
 }
