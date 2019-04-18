@@ -65,7 +65,9 @@ section {
     color: $white;
 }
 .section-banner {
-    padding-top: #{$clip-top};
+    margin-top: -#{$clip-top};
+    padding-top: #{($spacer * 4.125) + $clip-top};
+    padding-bottom: #{$spacer * 4.125};
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-top}, #{$clip-left} #{$clip-top}, #{$clip-right} 0);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-top}, #{$clip-left} #{$clip-top}, #{$clip-right} 0);
 }
