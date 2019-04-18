@@ -114,8 +114,17 @@ span.pipe {
         @extend .col-sm-6;
         @extend .col-md-4;
         @extend .col-lg-auto;
+        @include media-breakpoint-down('sm') {
+            &:nth-last-child(0) {
+                margin-bottom: 0;
+            }
+        }
         @include media-breakpoint-down('md') {
             margin-bottom: #{$spacer};
+            &:nth-last-child(0),
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
         }
         > .nav-link { // <a>
             color: $white;
