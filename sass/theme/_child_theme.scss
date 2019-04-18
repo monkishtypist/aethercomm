@@ -151,9 +151,10 @@ span.pipe {
     }
 }
 #legal-menu { // <ul>
+    @extend .row;
     justify-content: space-between;
     > .nav-item { // <li>
-        // @extend .col;
+        @extend .col-auto;
         > .nav-link { // <a>
             color: $white;
             font-size: $font-size-sm;
@@ -206,10 +207,17 @@ span.pipe {
             @extend .col-12;
             @extend .col-lg-auto;
             font-size: $font-size-sm;
+            @include media-breakpoint-up('lg') {
+                margin-right: #{$spacer * 4};
+            }
         }
         #legal-menu-wrapper {
             @extend .col-12;
             @extend .col-lg;
+            @include media-breakpoint-down('md') {
+                text-align: center;
+                margin-bottom: #{$spacer};
+            }
         }
     }
 }
