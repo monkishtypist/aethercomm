@@ -3,7 +3,9 @@
  * Buttons
  * Wrappers
  * Sections
- * Crosshairs
+ * Custom elements
+ *   Crosshairs
+ *   Pipes
  * Navs
  * Footer
  */
@@ -46,8 +48,12 @@ body {
 }
 
 /**
- * Crosshairs
+ * Custom Elements
+ *
+ * Additonal style elements
  */
+
+/* Crosshairs */
 @mixin crosshairs($color) {
     display: block;
     position: relative;
@@ -80,9 +86,7 @@ body {
     .crosshair-#{$color} { @include crosshairs($value); }
 }
 
-/**
- * Pipes
- */
+/* Pipes */
 span.pipe {
     &::after {
         content: " | ";
@@ -167,6 +171,8 @@ span.pipe {
  #wrapper-footer {
     .footer-widgets {
         @extend .row;
+        align-items: center;
+        justify-content: space-between;
         .footer-widget {
             @extend .col-12;
             @extend .col-lg-auto;
@@ -190,7 +196,9 @@ span.pipe {
             }
         }
     }
-    #colophon {
-        font-size: $font-size-sm;
+    .footer-siteinfo {
+        #colophon {
+            font-size: $font-size-sm;
+        }
     }
 }

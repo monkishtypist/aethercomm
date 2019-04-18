@@ -12349,7 +12349,9 @@ readers do not read off random characters that represent icons */
  * Buttons
  * Wrappers
  * Sections
- * Crosshairs
+ * Custom elements
+ *   Crosshairs
+ *   Pipes
  * Navs
  * Footer
  */
@@ -12383,8 +12385,11 @@ body {
   background-color: rgba(74, 99, 174, 0.9); }
 
 /**
- * Crosshairs
+ * Custom Elements
+ *
+ * Additonal style elements
  */
+/* Crosshairs */
 .crosshair-blue {
   display: block;
   position: relative;
@@ -12847,9 +12852,7 @@ body {
     width: 100%;
     top: 0; }
 
-/**
- * Pipes
- */
+/* Pipes */
 span.pipe::after {
   content: " | "; }
 
@@ -12910,20 +12913,25 @@ span.pipe::after {
  *
  * Widgets and content. For nav menus see 'Navs'
  */
-#wrapper-footer .footer-widgets .footer-widget p:last-of-type {
-  margin-bottom: 0; }
+#wrapper-footer .footer-widgets {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  #wrapper-footer .footer-widgets .footer-widget p:last-of-type {
+    margin-bottom: 0; }
+  #wrapper-footer .footer-widgets .footer-widget p a {
+    text-decoration: underline; }
+  #wrapper-footer .footer-widgets #footer-social a {
+    color: #fff;
+    font-size: 1.5rem;
+    margin-right: 2em; }
+    #wrapper-footer .footer-widgets #footer-social a:last-of-type {
+      margin-right: 0; }
 
-#wrapper-footer .footer-widgets .footer-widget p a {
-  text-decoration: underline; }
-
-#wrapper-footer .footer-widgets #footer-social a {
-  color: #fff;
-  font-size: 1.5rem;
-  margin-right: 2em; }
-  #wrapper-footer .footer-widgets #footer-social a:last-of-type {
-    margin-right: 0; }
-
-#wrapper-footer #colophon {
+#wrapper-footer .footer-siteinfo #colophon {
   font-size: 0.75rem; }
 
 /*# sourceMappingURL=child-theme.css.map */
