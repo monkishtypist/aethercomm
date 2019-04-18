@@ -87,9 +87,9 @@ body {
 #footer-menu { // <ul>
     justify-content: space-between;
     > .nav-item { // <li>
-        @extend .col-6;
-        // @extend .col-sm-4;
-        @extend .col-md-auto;
+        @extend .col-12;
+        @extend .col-sm-6;
+        @extend .col-lg-auto;
         > .nav-link { // <a>
             color: $white;
             font-size: #{$font-size-base * .875};
