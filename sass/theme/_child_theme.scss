@@ -19,9 +19,9 @@
  */
 $section-padding:  $spacer * 4.125;
 
-$clip-top:         $spacer * 1.5;
+$clip-top:         $spacer * 1.625;
 $clip-height:      $clip-top;
-$clip-width:       $spacer * 2.5;
+$clip-width:       $spacer * 2.875;
 $clip-offset:      $spacer * 25;
 $clip-right:       calc(100% - #{$clip-offset});
 $clip-left:        calc(100% - #{$clip-offset + $clip-width});
