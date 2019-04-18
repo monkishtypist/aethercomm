@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </section>
 
-    <section class="section-banner">
+    <section class="section-banner section-blue">
 
         <div class="<?php echo esc_attr( $container ); ?>">
             <h2>Our corporate headquarters are located in a state-of-the-art, 50,000 square foot facility just north of San Diego in Carlsbad, California.</h2>
