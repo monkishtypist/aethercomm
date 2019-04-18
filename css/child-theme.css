@@ -12899,9 +12899,14 @@ span.pipe::after {
         color: #707070; }
 
 #legal-menu {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (min-width: 992px) {
+    #legal-menu {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; } }
   #legal-menu > .nav-item > .nav-link {
     color: #fff;
     font-size: 0.75rem;
@@ -12943,6 +12948,9 @@ span.pipe::after {
 
 #wrapper-footer .footer-siteinfo #colophon {
   font-size: 0.75rem; }
+  @media (max-width: 991.98px) {
+    #wrapper-footer .footer-siteinfo #colophon {
+      text-align: center; } }
   @media (min-width: 992px) {
     #wrapper-footer .footer-siteinfo #colophon {
       margin-right: 4rem; } }

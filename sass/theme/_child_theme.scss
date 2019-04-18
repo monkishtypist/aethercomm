@@ -152,7 +152,10 @@ span.pipe {
 }
 #legal-menu { // <ul>
     @extend .row;
-    justify-content: space-between;
+    justify-content: center;
+    @include media-breakpoint-up('lg') {
+        justify-content: space-between;
+    }
     > .nav-item { // <li>
         @extend .col-auto;
         > .nav-link { // <a>
@@ -207,6 +210,9 @@ span.pipe {
             @extend .col-12;
             @extend .col-lg-auto;
             font-size: $font-size-sm;
+            @include media-breakpoint-down('md') {
+                text-align: center;
+            }
             @include media-breakpoint-up('lg') {
                 margin-right: #{$spacer * 4};
             }
