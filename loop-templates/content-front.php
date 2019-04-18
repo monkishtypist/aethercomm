@@ -48,7 +48,25 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-posts" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
-            <?php acf_field( 'front_page_settings_posts_title' ); ?>
+            <div id="posts-title">
+                <?php acf_field( 'front_page_settings_posts_title' ); ?>
+            </div>
+            <?php
+            $args = array(
+                'category_name' => 'featured'
+            );
+            $query = new WP_Query( $args );
+
+            if ( $query->have_posts() ) :
+
+                ob_start();
+
+                while ( $query->have_posts() ) : $query->the_post();
+
+                endwhile;
+
+            endif;
+            ?>
         </div>
 
     </section>
