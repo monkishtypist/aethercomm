@@ -31,6 +31,11 @@ $clip-left:        calc(100% - #{$clip-offset + $clip-width});
 body {
     letter-spacing: .025em;
 }
+p {
+    &:last-of-type {
+        margin-bottom: 0;
+    }
+}
 
 /**
  * Wrappers

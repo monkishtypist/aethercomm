@@ -28,7 +28,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </section>
 
-    <section id="front-page-banner" class="section-banner section-blue">
+    <section id="front-page-banner" class="section-banner section-blue" style="background-image: url(<?php acf_field( 'front_page_settings_banner_copy' ); ?>);">
 
         <div class="<?php echo esc_attr( $container ); ?>">
             <div id="banner-copy">

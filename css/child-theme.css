@@ -12367,6 +12367,9 @@ readers do not read off random characters that represent icons */
 body {
   letter-spacing: .025em; }
 
+p:last-of-type {
+  margin-bottom: 0; }
+
 /**
  * Wrappers
  *
@@ -12391,6 +12394,8 @@ body {
  */
 section {
   padding: 3.75rem 0; }
+  section.section-unpadded {
+    padding: 0 0; }
 
 .section-black {
   background-color: #000;
