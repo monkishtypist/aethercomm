@@ -147,7 +147,13 @@ body {
  */
  #wrapper-footer {
     .footer-widgets {
+        @extend .row;
         .footer-widget {
+            @extend .col-12;
+            @extend .col-lg-auto;
+            @include media-breakpoint-down('md') {
+                text-align: center;
+            }
             p {
                 &:last-of-type {
                     margin-bottom: 0;
