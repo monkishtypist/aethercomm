@@ -12387,6 +12387,7 @@ body {
   color: #fff; }
 
 .section-banner {
+  padding-top: 1.5rem;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.5rem, calc(100% - 27rem) 1.5rem, calc(100% - 25rem) 0);
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.5rem, calc(100% - 27rem) 1.5rem, calc(100% - 25rem) 0); }
 

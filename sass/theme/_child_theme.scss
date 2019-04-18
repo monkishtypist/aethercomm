@@ -50,6 +50,7 @@ body {
 }
 
 .section-banner {
+    padding-top: #{$spacer * 1.5};
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$spacer * 1.5}, calc(100% - #{($spacer * 25) + $spacer * 2}) #{$spacer * 1.5}, calc(100% - #{($spacer * 25)}) 0);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$spacer * 1.5}, calc(100% - #{($spacer * 25) + $spacer * 2}) #{$spacer * 1.5}, calc(100% - #{($spacer * 25)}) 0);
 }
