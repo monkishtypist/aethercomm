@@ -1,4 +1,5 @@
 /**
+ * Variables
  * Typography
  * Buttons
  * Wrappers
@@ -10,7 +11,17 @@
  * Footer
  */
 
-/* Typography */
+/**
+ * Variables
+ *
+ * Custom, non-Bootstrap variables
+ */
+$clip-top:   #{$spacer * 1.5};
+$clip-right: calc(100% - #{$spacer * 25});
+$clip-left:  calc(100% - #{($spacer * 25) + ($spacer * 2.5)});
+/**
+ * Typography
+ */
 body {
     letter-spacing: .025em;
 }
@@ -20,6 +31,9 @@ body {
  *
  * Used to wrap distinct page elements
  */
+#frontpage-wrapper {
+    padding: 0;
+}
 #wrapper-footer {
     background-color: $dark;
     color: $white;
@@ -39,20 +53,21 @@ body {
  *
  * These are the rows with defined backgrounds
  */
+section {
+    padding: #{$spacer * 3.75} 0;
+}
 .section-black {
     background-color: $black;
     color: $white;
 }
-
 .section-blue {
     background-color: rgba($blue,.9);
     color: $white;
 }
-
 .section-banner {
-    padding-top: #{$spacer * 1.5};
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$spacer * 1.5}, calc(100% - #{($spacer * 25) + $spacer * 2}) #{$spacer * 1.5}, calc(100% - #{($spacer * 25)}) 0);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$spacer * 1.5}, calc(100% - #{($spacer * 25) + $spacer * 2}) #{$spacer * 1.5}, calc(100% - #{($spacer * 25)}) 0);
+    padding-top: #{$clip-top};
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-top}, #{$clip-left} #{$clip-top}, #{$clip-right} 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-top}, #{$clip-left} #{$clip-top}, #{$clip-right} 0);
 }
 
 /**

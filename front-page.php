@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper" id="frontpage-wrapper">
 
     <main class="site-main" id="main">
 
