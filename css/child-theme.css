@@ -13095,20 +13095,20 @@ section {
   position: absolute; }
 
 .crosshairs-top-left {
-  top: 0;
-  left: 0; }
+  top: -2.75rem;
+  left: -0.6875rem; }
 
 .crosshairs-top-right {
-  top: 0;
-  right: 0; }
+  top: -2.75rem;
+  right: -0.6875rem; }
 
 .crosshairs-bottom-left {
-  bottom: 0;
-  left: 0; }
+  bottom: -2.75rem;
+  left: -0.6875rem; }
 
 .crosshairs-bottom-right {
-  bottom: 0;
-  right: 0; }
+  bottom: -2.75rem;
+  right: -0.6875rem; }
 
 /* Pipes */
 span.pipe::after {
