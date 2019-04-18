@@ -61,7 +61,7 @@ p {
 }
 
 /**
- * Sections
+ * Sections (and Containers)
  *
  * These are the rows with defined backgrounds
  */
@@ -74,6 +74,10 @@ section {
     > .container,
     > .container-fluid {
         position: relative;
+        @include media-breakpoint-down('sm') {
+            padding-left: 2.25rem;
+            padding-right: 2.25rem;
+        }
     }
 }
 .section-black {
