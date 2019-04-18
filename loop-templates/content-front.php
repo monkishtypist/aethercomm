@@ -40,7 +40,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-posts" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
-            <h2><?php acf_field( 'front_page_settings_posts_title' ); ?></h2>
+            <h2><?php print_r( get_acf_field( 'front_page_settings_posts_title' ) ); ?></h2>
         </div>
 
     </section>
