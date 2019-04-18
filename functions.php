@@ -106,16 +106,15 @@ if ( ! function_exists( 'disable_acf_on_frontend' ) ) {
 }
 if ( ! function_exists( 'get_acf_field' ) ) {
     // Accesses ACF fields with WP core functions
-	function get_acf_field( $field, $bool = false, $esc = false ) {
+	function get_acf_field( $field, $single = false, $esc = false ) {
 
-		$term = get_queried_object();
+        $term = get_queried_object();
 
-		if ( isset( $term->taxonomy ) ) {
-			$value = get_term_meta( $term->term_id, $field, $bool );
-		}
-		else {
-			$value = get_post_meta( get_the_ID(), $field, $bool );
-		}
+        $id = isset( $term->taxonomy )
+            ? $term->term_id
+            : get_the_ID();
+
+        $value = get_post_meta( $id, $field, $single );
 
 		if ( $esc ) {
 			$value = esc_html( $value );
