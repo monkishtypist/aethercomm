@@ -17,9 +17,14 @@
  * Custom, non-Bootstrap variables
  */
 $section-padding:  $spacer * 4.125;
+
 $clip-top:         $spacer * 1.5;
-$clip-right:       calc(100% - ($spacer * 25));
-$clip-left:        calc(100% - (($spacer * 25) + ($spacer * 2.5)));
+$clip-height:      $clip-top;
+$clip-width:       $spacer * 2.5;
+$clip-offset:      $spacer * 25;
+$clip-right:       calc(100% - #{$clip-offset});
+$clip-left:        calc(100% - #{$clip-offset + $clip-width});
+
 /**
  * Typography
  */
@@ -66,11 +71,11 @@ section {
     color: $white;
 }
 .section-banner {
-    margin-top: -#{$clip-top};
-    padding-top: #{$section-padding + $clip-top};
+    margin-top: -#{$clip-height};
     padding-bottom: #{$section-padding};
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-top}, #{$clip-left} #{$clip-top}, #{$clip-right} 0);
-    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-top}, #{$clip-left} #{$clip-top}, #{$clip-right} 0);
+    padding-top: #{$section-padding + $clip-height};
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-height}, #{$clip-left} #{$clip-height}, #{$clip-right} 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-height}, #{$clip-left} #{$clip-height}, #{$clip-right} 0);
 }
 
 /**
