@@ -112,7 +112,11 @@ span.pipe {
     > .nav-item { // <li>
         @extend .col-12;
         @extend .col-sm-6;
+        @extend .col-md-4;
         @extend .col-lg-auto;
+        @include media-breakpoint-down('md') {
+            margin-bottom: #{$spacer};
+        }
         > .nav-link { // <a>
             color: $white;
             font-size: #{$font-size-base * .875};
@@ -213,7 +217,7 @@ span.pipe {
             @include media-breakpoint-down('md') {
                 text-align: center;
             }
-            @include media-breakpoint-up('lg') {
+            @include media-breakpoint-up('xl') {
                 margin-right: #{$spacer * 4};
             }
         }
