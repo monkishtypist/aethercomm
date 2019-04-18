@@ -53,6 +53,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php acf_field( 'front_page_settings_posts_title' ); ?>
             </div>
 
+        </div>
+
+        <div class="<?php echo esc_attr( $container ); ?>">
+
             <?php
             $args = array(
                 'category_name' => 'featured'
