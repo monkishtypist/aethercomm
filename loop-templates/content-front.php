@@ -15,14 +15,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section class="section-black">
+    <section id="front-page-intro" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
         </div>
 
     </section>
 
-    <section class="section-banner section-blue">
+    <section id="front-page-banner" class="section-banner section-blue">
 
         <div class="<?php echo esc_attr( $container ); ?>">
             <h2>Our corporate headquarters are located in a state-of-the-art, 50,000 square foot facility just north of San Diego in Carlsbad, California.</h2>
@@ -30,14 +30,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </section>
 
-    <section class="section-full">
+    <section id="front-page-slider" class="section-full">
 
         <div class="container-fluid">
         </div>
 
     </section>
 
-    <section class="section-black">
+    <section id="front-page-posts" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
         </div>

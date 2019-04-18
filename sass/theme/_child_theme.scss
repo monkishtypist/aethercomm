@@ -61,7 +61,7 @@ section {
     color: $white;
 }
 .section-blue {
-    background-color: rgba($blue,.9);
+    background-color: $blue; // rgba($blue,.9);
     color: $white;
 }
 .section-banner {
