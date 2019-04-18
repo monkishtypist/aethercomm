@@ -4,6 +4,7 @@
  * Buttons
  * Wrappers
  * Sections
+ * Cards
  * Custom elements
  *   Crosshairs
  *   Pipes
@@ -84,6 +85,15 @@ section {
     padding-top: #{$section-padding + $clip-height};
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-height}, #{$clip-left} #{$clip-height}, #{$clip-right} 0);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-height}, #{$clip-left} #{$clip-height}, #{$clip-right} 0);
+}
+
+/**
+ * Cards
+ *
+ * Used to show posts as grid
+ */
+.card {
+
 }
 
 /**

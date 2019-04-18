@@ -825,15 +825,15 @@ $line-height-base:            1.625 !default; // 1.5 !default;
 // // Cards
 
 // $card-spacer-y:                     .75rem !default;
-// $card-spacer-x:                     1.25rem !default;
-// $card-border-width:                 $border-width !default;
+$card-spacer-x:                     0 !default; // 1.25rem !default;
+$card-border-width:                 0 !default; // $border-width !default;
 // $card-border-radius:                $border-radius !default;
-// $card-border-color:                 rgba($black, .125) !default;
+$card-border-color:                 transparent !default; // rgba($black, .125) !default;
 // $card-inner-border-radius:          calc(#{$card-border-radius} - #{$card-border-width}) !default;
 // $card-cap-bg:                       rgba($black, .03) !default;
 // $card-cap-color:                    null !default;
 // $card-color:                        null !default;
-// $card-bg:                           $white !default;
+$card-bg:                           transparent !default; // $white !default;
 
 // $card-img-overlay-padding:          1.25rem !default;
 
