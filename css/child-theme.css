@@ -12428,6 +12428,9 @@ section {
  *
  * Styles for navigation bars
  */
+#wrapper-navbar > nav.navbar-dark {
+  background-color: black; }
+
 #footer-menu {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;

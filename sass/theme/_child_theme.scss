@@ -102,6 +102,13 @@ section {
  *
  * Styles for navigation bars
  */
+#wrapper-navbar {
+    > nav {
+        &.navbar-dark {
+            background-color: rgba($black, 1);
+        }
+    }
+}
 #main-menu { // <ul>
     > .nav-item { // <li>
         > .nav-link { // <a>
