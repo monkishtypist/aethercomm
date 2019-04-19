@@ -56,8 +56,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 						the_custom_logo();
 					} ?><!-- end custom logo -->
 
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'aethercomm' ); ?>">
-					<span class="navbar-toggler-icon"></span>
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#container-main-menu" aria-controls="container-main-menu" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'aethercomm' ); ?>">
+					<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
 
 				<!-- The WordPress Menu goes here -->
@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 					array(
 						'theme_location'  => 'primary',
 						'container_class' => 'collapse navbar-collapse',
-						'container_id'    => 'navbarNavDropdown',
+						'container_id'    => 'container-main-menu',
 						'menu_class'      => 'navbar-nav ml-auto',
 						'fallback_cb'     => '',
 						'menu_id'         => 'main-menu',
