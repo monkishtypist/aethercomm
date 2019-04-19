@@ -12784,23 +12784,26 @@ section {
   @media (max-width: 991.98px) {
     #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 18rem, #000 30rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 19rem) 40rem, calc(50vw - 17rem) 26rem, 0 0, 0 -4rem;
+      background-position: calc(50vw - 19rem) 40rem, calc(50vw - 17rem) 26rem, 0 0, 0 0;
       background-size: 40rem auto,35rem auto,auto,auto; }
       #front-page-intro #intro-header {
         margin-bottom: 40rem; } }
   @media (max-width: 768.98px) {
     #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 15rem, #000 25rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 19rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 -4rem;
-      background-size: 38rem auto,36rem auto,auto,auto; }
+      background-position: calc(50vw - 17rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 0;
+      background-size: 38rem auto,36rem auto,auto,73rem auto;
+      padding-top: 10rem; }
       #front-page-intro #intro-header {
-        margin-bottom: 39rem; }
+        margin-bottom: 42rem; }
+        #front-page-intro #intro-header h1 {
+          margin-bottom: 4rem; }
       #front-page-intro #intro-copy .btn {
         margin-top: 2.6rem; } }
   @media (max-width: 575.98px) {
     #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 18rem, #000 30rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 19rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 -4rem;
+      background-position: calc(50vw - 19rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 0;
       background-size: 38rem auto,36rem auto,auto,auto; }
       #front-page-intro #intro-header {
         margin-bottom: 13.1875rem;
