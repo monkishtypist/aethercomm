@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php acf_field( 'front_page_settings_intro_header' ); ?>
                 <?php
                 $link1 = get_acf_field( 'front_page_settings_intro_header_cta' );
-                var_dump($link);
+                var_dump($link1);
                 echo sprintf( '<a href="%1$s" class="btn btn-primary">%2$s</a>',
                     'url',
                     'text'
