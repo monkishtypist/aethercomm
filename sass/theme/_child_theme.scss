@@ -4,6 +4,7 @@
  * Buttons
  * Wrappers
  * Sections
+ * Pages
  * Navs
  * Cards
  * Custom elements
@@ -97,13 +98,22 @@ section {
     }
 }
 
+/**
+ * Pages
+ *
+ * Page specific sections and spacing, et al.
+ */
 #front-page-intro {
     background-color: #{$black};
     background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), url(../images/earth_desktop.png);
-    background-position: left top, right middle, right bottom;
+    background-position: 100% 100%, 100% 100%, 0 0;
     background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: cover, auto, auto;
+    background-size: auto, auto, auto;
     padding-top: 15rem;
+    padding-bottom: #{$spacer * 5.625};
+    #intro-header {
+        margin-bottom: #{$spacer * 13.1875};
+    }
 }
 
 /**

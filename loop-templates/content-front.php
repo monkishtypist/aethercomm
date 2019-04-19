@@ -21,8 +21,10 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div id="intro-header">
                 <?php acf_field( 'front_page_settings_intro_header' ); ?>
             </div>
-            <div id="intro-copy">
-                <?php acf_field( 'front_page_settings_intro_copy' ); ?>
+            <div class="row">
+                <div id="intro-copy" class="col-12 col-md-6">
+                    <?php acf_field( 'front_page_settings_intro_copy' ); ?>
+                </div>
             </div>
         </div>
 
