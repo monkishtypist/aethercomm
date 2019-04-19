@@ -7059,9 +7059,9 @@
         var scroll = $(window).scrollTop();
 
         if (scroll >= 200) {
-            wrapperNavbar.addClass("nav-transparent");
+            wrapperNavbar.removeClass("nav-transparency");
         } else {
-            wrapperNavbar.removeClass("nav-transparent");
+            wrapperNavbar.addClass("nav-transparency");
         }
     });
 
