@@ -55,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     the_custom_logo();
                 } ?><!-- end custom logo -->
 
-                <a class ="nav-link d-inline-block d-md-none"><i class="far fa-comment-alt"></i></a>
+                <a class="navbar-icon-reps"><i class="far fa-comment-alt"></i></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#container-main-menu" aria-controls="container-main-menu" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'aethercomm' ); ?>">
 					<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
@@ -81,8 +81,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="sub-navbar">
             <div class="sub-navbar-inner">
                 <ul class="nav">
-                    <li class="nav-item"><a class ="nav-link"><i class="far fa-comment-alt"></i><?php echo sprintf( ' &nbsp; %1$s', __( 'Rep Listings', 'aethercomm' ) ); ?></a></li>
-                    <li class="nav-item"><a class ="nav-link"><i class="fas fa-search"></i><?php echo sprintf( '<span class="sr-only">%1$s</span>', __( 'Search', 'aethercomm' ) ); ?></a></li>
+                    <li class="nav-item"><a class="nav-link"><i class="far fa-comment-alt"></i><?php echo sprintf( ' &nbsp; %1$s', __( 'Rep Listings', 'aethercomm' ) ); ?></a></li>
+                    <li class="nav-item"><a class="nav-link"><i class="fas fa-search"></i><?php echo sprintf( '<span class="sr-only">%1$s</span>', __( 'Search', 'aethercomm' ) ); ?></a></li>
                 </ul>
             </div>
         </div>

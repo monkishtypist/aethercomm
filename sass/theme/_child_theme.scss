@@ -235,7 +235,7 @@ section {
             top: 46px;
         }
     }
-    nav.navbar {
+    > nav {
         border-bottom: 1px solid #{$gray-600};
         @include media-breakpoint-down('xs') {
             padding: 0;
@@ -246,14 +246,17 @@ section {
                 }
             }
         }
+        .navbar-icon-reps {
+            @extend .navbar-toggler;
+        }
         .navbar-toggler-icon {
             height: auto;
             width: auto;
         }
-    }
-    > nav.navbar-dark {
-        background-color: rgba($black, 1);
-        transition: $transition-base;
+        &.navbar-dark {
+            background-color: rgba($black, 1);
+            transition: $transition-base;
+        }
     }
     .home & {
         &.nav-transparency {

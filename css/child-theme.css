@@ -3396,13 +3396,13 @@ input[type="button"].btn-block {
       -ms-flex-align: center;
           align-items: center; }
 
-.navbar-toggler {
+.navbar-toggler, #wrapper-navbar > nav .navbar-icon-reps {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent; }
-  .navbar-toggler:hover, .navbar-toggler:focus {
+  .navbar-toggler:hover, #wrapper-navbar > nav .navbar-icon-reps:hover, .navbar-toggler:focus, #wrapper-navbar > nav .navbar-icon-reps:focus {
     text-decoration: none; }
 
 .navbar-toggler-icon {
@@ -3449,7 +3449,7 @@ input[type="button"].btn-block {
       display: flex !important;
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
-    .navbar-expand-sm .navbar-toggler {
+    .navbar-expand-sm .navbar-toggler, .navbar-expand-sm #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand-sm .navbar-icon-reps {
       display: none; } }
 
 @media (max-width: 768.98px) {
@@ -3487,7 +3487,7 @@ input[type="button"].btn-block {
       display: flex !important;
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
-    .navbar-expand-md .navbar-toggler {
+    .navbar-expand-md .navbar-toggler, .navbar-expand-md #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand-md .navbar-icon-reps {
       display: none; } }
 
 @media (max-width: 991.98px) {
@@ -3525,7 +3525,7 @@ input[type="button"].btn-block {
       display: flex !important;
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
-    .navbar-expand-lg .navbar-toggler {
+    .navbar-expand-lg .navbar-toggler, .navbar-expand-lg #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand-lg .navbar-icon-reps {
       display: none; } }
 
 @media (max-width: 1199.98px) {
@@ -3563,7 +3563,7 @@ input[type="button"].btn-block {
       display: flex !important;
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
-    .navbar-expand-xl .navbar-toggler {
+    .navbar-expand-xl .navbar-toggler, .navbar-expand-xl #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand-xl .navbar-icon-reps {
       display: none; } }
 
 .navbar-expand {
@@ -3598,7 +3598,7 @@ input[type="button"].btn-block {
     display: flex !important;
     -ms-flex-preferred-size: auto;
         flex-basis: auto; }
-  .navbar-expand .navbar-toggler {
+  .navbar-expand .navbar-toggler, .navbar-expand #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand .navbar-icon-reps {
     display: none; }
 
 .navbar-light .navbar-brand {
@@ -3619,7 +3619,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9); }
 
-.navbar-light .navbar-toggler {
+.navbar-light .navbar-toggler, .navbar-light #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-light .navbar-icon-reps {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1); }
 
@@ -3651,7 +3651,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .nav-link.active {
   color: #FF5800; }
 
-.navbar-dark .navbar-toggler {
+.navbar-dark .navbar-toggler, .navbar-dark #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-dark .navbar-icon-reps {
   color: #fff;
   border-color: transparent; }
 
@@ -12826,22 +12826,22 @@ section {
     @media screen and (max-width: 781px) {
       .admin-bar #wrapper-navbar {
         top: 46px; } }
-  #wrapper-navbar nav.navbar {
+  #wrapper-navbar > nav {
     border-bottom: 1px solid #707070; }
     @media (max-width: 575.98px) {
-      #wrapper-navbar nav.navbar {
+      #wrapper-navbar > nav {
         padding: 0; }
-        #wrapper-navbar nav.navbar .navbar-brand {
+        #wrapper-navbar > nav .navbar-brand {
           padding: 0; }
-          #wrapper-navbar nav.navbar .navbar-brand img {
+          #wrapper-navbar > nav .navbar-brand img {
             max-width: 11rem; } }
-    #wrapper-navbar nav.navbar .navbar-toggler-icon {
+    #wrapper-navbar > nav .navbar-toggler-icon {
       height: auto;
       width: auto; }
-  #wrapper-navbar > nav.navbar-dark {
-    background-color: black;
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
+    #wrapper-navbar > nav.navbar-dark {
+      background-color: black;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
   #wrapper-navbar .sub-navbar {
