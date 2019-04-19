@@ -129,8 +129,14 @@ section {
         }
     }
     .sub-navbar {
+        background-color: rgba($black, .5);
         -webkit-clip-path: polygon(100% 0, 100% 100%, #{$clip-right} #{$clip-height}, #{$clip-left} 0);
         clip-path: polygon(100% 0, 100% 100%, #{$clip-right} #{$clip-height}, #{$clip-left} 0);
+        @each $breakpoint, $width in $container-max-widths {
+            @include media-breakpoint-down( $breakpoint ) {
+                padding-right: calc((100vw - #{$width}) / 2);
+            }
+        }
     }
 }
 #main-menu { // <ul>
@@ -259,6 +265,16 @@ section {
  *
  * Additonal style elements
  */
+
+/* Clips */
+.clip-tl2br {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 100% 0);
+    clip-path: polygon(100% 0, 100% 100%, 100% 0);
+}
+.clip-bl2tr {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
 
 /* Crosshairs */
 @mixin crosshairs($color) {

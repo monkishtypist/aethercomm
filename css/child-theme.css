@@ -12448,8 +12448,19 @@ section {
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
   #wrapper-navbar .sub-navbar {
+    background-color: rgba(0, 0, 0, 0.5);
     -webkit-clip-path: polygon(100% 0, 100% 100%, calc(100% - 25rem) 1.625rem, calc(100% - 27.875rem) 0);
-    clip-path: polygon(100% 0, 100% 100%, calc(100% - 25rem) 1.625rem, calc(100% - 27.875rem) 0); }
+    clip-path: polygon(100% 0, 100% 100%, calc(100% - 25rem) 1.625rem, calc(100% - 27.875rem) 0);
+    padding-right: calc((100vw - 1088px) / 2); }
+    @media (max-width: 768.98px) {
+      #wrapper-navbar .sub-navbar {
+        padding-right: calc((100vw - 540px) / 2); } }
+    @media (max-width: 991.98px) {
+      #wrapper-navbar .sub-navbar {
+        padding-right: calc((100vw - 720px) / 2); } }
+    @media (max-width: 1199.98px) {
+      #wrapper-navbar .sub-navbar {
+        padding-right: calc((100vw - 960px) / 2); } }
 
 #main-menu {
   -webkit-box-align: center;
@@ -12543,6 +12554,15 @@ section {
  *
  * Additonal style elements
  */
+/* Clips */
+.clip-tl2br {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 100% 0);
+  clip-path: polygon(100% 0, 100% 100%, 100% 0); }
+
+.clip-bl2tr {
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%); }
+
 /* Crosshairs */
 .crosshair-blue {
   display: block;
