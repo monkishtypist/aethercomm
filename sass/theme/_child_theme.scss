@@ -148,15 +148,15 @@ section {
     background-color: #{$black};
     background-image: url(../images/f22-V3.png),
         url(../images/SOLDIERS-UPDATES-3.png),
-        linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%),
+        linear-gradient(156deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%),
         url(../images/earth_desktop.png);
-    background-position: 121% 95%,110% 52%,0 0,0 20%;
+    background-position: 121% 95%,110% 52%,0 0,0 0;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: auto, auto, auto, auto;
     padding-top: 15rem;
     padding-bottom: #{$spacer * 5.625};
     #intro-header {
-        margin-bottom: #{$spacer * 13.1875};
+        margin-bottom: 13.1875rem;
         text-align: center;
         h1 {
             margin-bottom: 1.6875rem;
@@ -165,6 +165,86 @@ section {
     #intro-copy {
         .btn {
             margin-top: 2.6rem;
+        }
+    }
+    @include media-breakpoint-down('lg') {
+        background-position: 162% 92%,131% 45%,0 0,0 0;
+        background-image: url(../images/f22-V3.png),
+            url(../images/SOLDIERS-UPDATES-3.png),
+            linear-gradient(156deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%),
+            url(../images/earth_desktop.png);
+        background-size: auto, auto, auto, auto;
+        #intro-header {
+            margin-bottom: 13.1875rem;
+            text-align: center;
+            h1 {
+                margin-bottom: 1.6875rem;
+            }
+        }
+        #intro-copy {
+            .btn {
+                margin-top: 2.6rem;
+            }
+        }
+    }
+    @include media-breakpoint-down('md') {
+        background-position: 162% 92%,131% 45%,0 0,0 20%;
+        background-image: url(../images/f22-V3.png),
+            url(../images/SOLDIERS-UPDATES-3.png),
+            linear-gradient(156deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%),
+            url(../images/earth_desktop.png);
+        background-size: auto, auto, auto, auto;
+        #intro-header {
+            margin-bottom: 13.1875rem;
+            text-align: center;
+            h1 {
+                margin-bottom: 1.6875rem;
+            }
+        }
+        #intro-copy {
+            .btn {
+                margin-top: 2.6rem;
+            }
+        }
+    }
+    @include media-breakpoint-down('sm') {
+        background-position: 162% 92%,131% 45%,0 0,0 20%;
+        background-image: url(../images/f22-V3.png),
+            url(../images/SOLDIERS-UPDATES-3.png),
+            linear-gradient(156deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%),
+            url(../images/earth_desktop.png);
+        background-size: auto, auto, auto, auto;
+        #intro-header {
+            margin-bottom: 13.1875rem;
+            text-align: center;
+            h1 {
+                margin-bottom: 1.6875rem;
+            }
+        }
+        #intro-copy {
+            .btn {
+                margin-top: 2.6rem;
+            }
+        }
+    }
+    @include media-breakpoint-down('xs') {
+        background-position: 162% 92%,131% 45%,0 0,0 20%;
+        background-image: url(../images/f22-V3.png),
+            url(../images/SOLDIERS-UPDATES-3.png),
+            linear-gradient(156deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 50%),
+            url(../images/earth_desktop.png);
+        background-size: auto, auto, auto, auto;
+        #intro-header {
+            margin-bottom: 13.1875rem;
+            text-align: center;
+            h1 {
+                margin-bottom: 1.6875rem;
+            }
+        }
+        #intro-copy {
+            .btn {
+                margin-top: 2.6rem;
+            }
         }
     }
 }

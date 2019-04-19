@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 ?>
             </div>
             <div class="row">
-                <div id="intro-copy" class="col-12 col-md-6">
+                <div id="intro-copy" class="col-12 col-md-9 col-lg-6">
                     <?php acf_field( 'front_page_settings_intro_copy' ); ?>
                     <?php
                     $link2 = get_acf_field( 'front_page_settings_intro_copy_cta' );
