@@ -55,13 +55,17 @@ h2, .h2 {
     }
 }
 a.btn {
-    font-weight: $font-weight-black;
+    font-size: #{$font-size-sm};
     letter-spacing: .600em;
     line-height: 1;
     max-width: 100%;
     position: relative;
     text-transform: uppercase;
     width: 342px;
+    &.btn-lg {
+        font-size: #{$font-size-base};
+        width: 352px;
+    }
     &::before {
         content: " ";
         border-bottom: 2px solid #{$white};
@@ -71,6 +75,9 @@ a.btn {
         width: 1em;
         width: 1ch;
     }
+}
+li.btn { // navmenu buttons
+    font-size: inherit;
 }
 
 /**

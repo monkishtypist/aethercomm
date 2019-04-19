@@ -2022,7 +2022,7 @@ textarea.form-control {
 
 .btn {
   display: inline-block;
-  font-weight: 400;
+  font-weight: 900;
   color: #222222;
   text-align: center;
   vertical-align: middle;
@@ -12682,13 +12682,16 @@ h2, .h2 {
               box-shadow: 0 0 0 0.2rem rgba(34, 34, 34, 0.5); }
 
 a.btn {
-  font-weight: 900;
+  font-size: 0.75rem;
   letter-spacing: .600em;
   line-height: 1;
   max-width: 100%;
   position: relative;
   text-transform: uppercase;
   width: 342px; }
+  a.btn.btn-lg, .btn-group-lg > a.btn {
+    font-size: 1rem;
+    width: 352px; }
   a.btn::before {
     content: " ";
     border-bottom: 2px solid #fff;
@@ -12697,6 +12700,9 @@ a.btn {
     position: absolute;
     width: 1em;
     width: 1ch; }
+
+li.btn {
+  font-size: inherit; }
 
 /**
  * Wrappers
