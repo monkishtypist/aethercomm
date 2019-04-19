@@ -12455,8 +12455,9 @@ section {
     float: right;
     position: relative; }
     #wrapper-navbar .sub-navbar .sub-navbar-inner {
-      padding-left: 2.875rem;
       background-color: #000;
+      color: #fff;
+      padding-left: 2.875rem;
       -webkit-clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, calc(2.875rem - 1px) 99.66%);
       clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, calc(2.875rem - 1px) 99.66%); }
       @media (min-width: 576px) {
