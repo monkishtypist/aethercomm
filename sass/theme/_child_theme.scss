@@ -148,9 +148,9 @@ section {
     background-color: #{$black};
     background-image: url(../images/f22-V3.png),
         url(../images/SOLDIERS-UPDATES-3.png),
-        linear-gradient(156deg,rgba($black,0) 22%,#{$black} 43%),
+        linear-gradient(156deg,rgba($black,0) 22rem,$black 43rem),
         url(../images/earth_desktop.png);
-    background-position: calc(50vw - 1rem) 32rem,calc(50vw + 4rem) 15rem,0 0,0 0;
+    background-position: calc(50vw + 1rem) 34rem,calc(50vw + 5rem) 15.5rem,0 0,0 0;
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
     background-size: auto, auto, auto, auto;
     padding-top: 15rem;
@@ -170,50 +170,29 @@ section {
     @include media-breakpoint-down('lg') {
         background-image: url(../images/f22-V3.png),
             url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(156deg,rgba($black,0) 22%,#{$black} 43%),
+            linear-gradient(149deg,rgba($black,0) 23rem,$black 34rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 1rem) 32rem,calc(50vw + 4rem) 15rem,0 0,0 0;
-        background-size: auto, auto, auto, auto;
-        #intro-header {
-            margin-bottom: 13.1875rem;
-            text-align: center;
-            h1 {
-                margin-bottom: 1.6875rem;
-            }
-        }
-        #intro-copy {
-            .btn {
-                margin-top: 2.6rem;
-            }
-        }
+        background-position: calc(50vw + 2rem) 37rem,calc(50vw + 4rem) 16rem,0 0,0 0;
+        background-size: auto,auto,auto,auto;
     }
     @include media-breakpoint-down('md') {
         background-image: url(../images/f22-V3.png),
             url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(156deg,rgba($black,0) 22%,#{$black} 43%),
+            linear-gradient(151deg,rgba($black,0) 18rem,$black 30rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 1rem) 32rem,calc(50vw + 4rem) 15rem,0 0,0 0;
-        background-size: auto, auto, auto, auto;
+        background-position: calc(50vw - 19rem) 36rem,calc(50vw - 14rem) 25rem,0 0,0 -4rem;
+        background-size: 40rem auto,30rem auto,auto,auto;
         #intro-header {
-            margin-bottom: 13.1875rem;
-            text-align: center;
-            h1 {
-                margin-bottom: 1.6875rem;
-            }
-        }
-        #intro-copy {
-            .btn {
-                margin-top: 2.6rem;
-            }
+            margin-bottom: 36rem;
         }
     }
     @include media-breakpoint-down('sm') {
         background-image: url(../images/f22-V3.png),
             url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(156deg,rgba($black,0) 22%,#{$black} 43%),
+            linear-gradient(151deg,rgba($black,0) 18rem,$black 30rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 1rem) 32rem,calc(50vw + 4rem) 15rem,0 0,0 0;
-        background-size: auto, auto, auto, auto;
+        background-position: calc(50vw - 19rem) 36rem,calc(50vw - 14rem) 25rem,0 0,0 -4rem;
+        background-size: 40rem auto,30rem auto,auto,auto;
         #intro-header {
             margin-bottom: 13.1875rem;
             text-align: center;
@@ -228,12 +207,12 @@ section {
         }
     }
     @include media-breakpoint-down('xs') {
-        background-position: 162% 92%,131% 45%,0 0,0 20%;
         background-image: url(../images/f22-V3.png),
             url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(156deg,rgba($black,0) 22%,#{$black} 43%),
+            linear-gradient(151deg,rgba($black,0) 18rem,$black 30rem),
             url(../images/earth_desktop.png);
-        background-size: auto, auto, auto, auto;
+        background-position: calc(50vw - 19rem) 36rem,calc(50vw - 14rem) 25rem,0 0,0 -4rem;
+        background-size: 40rem auto,30rem auto,auto,auto;
         #intro-header {
             margin-bottom: 13.1875rem;
             text-align: center;
