@@ -209,13 +209,11 @@ section {
             url(../images/SOLDIERS-UPDATES-3.png),
             linear-gradient(151deg,rgba($black,0) 9rem,$black 17rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 13rem) 44rem,calc(50vw - 13rem) 32rem,0 0,0 0;
+        background-position: calc(50vw - 13rem) 42rem,calc(50vw - 13rem) 30rem,0 0,0 0;
         background-size: 30rem auto,28rem auto,auto,50rem auto;
+        padding-top: 8rem;
         #intro-header {
             margin-bottom: 33rem;
-            h1 {
-                margin-bottom: 4rem;
-            }
         }
     }
 }
@@ -239,6 +237,15 @@ section {
     }
     nav.navbar {
         border-bottom: 1px solid #{$gray-600};
+        @include media-breakpoint-down('xs') {
+            padding: 0;
+            .navbar-brand {
+                padding: 0;
+                img {
+                    max-width: 11rem;
+                }
+            }
+        }
         .navbar-toggler-icon {
             height: auto;
             width: auto;

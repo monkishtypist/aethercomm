@@ -12804,12 +12804,11 @@ section {
   @media (max-width: 575.98px) {
     #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 9rem, #000 17rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 13rem) 44rem, calc(50vw - 13rem) 32rem, 0 0, 0 0;
-      background-size: 30rem auto,28rem auto,auto,50rem auto; }
+      background-position: calc(50vw - 13rem) 42rem, calc(50vw - 13rem) 30rem, 0 0, 0 0;
+      background-size: 30rem auto,28rem auto,auto,50rem auto;
+      padding-top: 8rem; }
       #front-page-intro #intro-header {
-        margin-bottom: 33rem; }
-        #front-page-intro #intro-header h1 {
-          margin-bottom: 4rem; } }
+        margin-bottom: 33rem; } }
 
 /**
  * Navs
@@ -12829,6 +12828,13 @@ section {
         top: 46px; } }
   #wrapper-navbar nav.navbar {
     border-bottom: 1px solid #707070; }
+    @media (max-width: 575.98px) {
+      #wrapper-navbar nav.navbar {
+        padding: 0; }
+        #wrapper-navbar nav.navbar .navbar-brand {
+          padding: 0; }
+          #wrapper-navbar nav.navbar .navbar-brand img {
+            max-width: 11rem; } }
     #wrapper-navbar nav.navbar .navbar-toggler-icon {
       height: auto;
       width: auto; }
