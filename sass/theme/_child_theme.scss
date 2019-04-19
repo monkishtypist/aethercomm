@@ -189,16 +189,12 @@ section {
     @include media-breakpoint-down('sm') {
         background-image: url(../images/f22-V3.png),
             url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(151deg,rgba($black,0) 18rem,$black 30rem),
+            linear-gradient(151deg,rgba($black,0) 15rem,$black 25rem),
             url(../images/earth_desktop.png);
         background-position: calc(50vw - 19rem) 44rem,calc(50vw - 17rem) 29rem,0 0,0 -4rem;
         background-size: 38rem auto,36rem auto,auto,auto;
         #intro-header {
-            margin-bottom: 13.1875rem;
-            text-align: center;
-            h1 {
-                margin-bottom: 1.6875rem;
-            }
+            margin-bottom: 39rem;
         }
         #intro-copy {
             .btn {
@@ -277,6 +273,9 @@ section {
                     padding-right: calc((100vw - #{$width}) / 2);
                 }
             }
+        }
+        @include media-breakpoint-down('sm') {
+            display: none;
         }
     }
 }

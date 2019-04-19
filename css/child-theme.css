@@ -12790,14 +12790,11 @@ section {
         margin-bottom: 40rem; } }
   @media (max-width: 768.98px) {
     #front-page-intro {
-      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 18rem, #000 30rem), url(../images/earth_desktop.png);
+      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 15rem, #000 25rem), url(../images/earth_desktop.png);
       background-position: calc(50vw - 19rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 -4rem;
       background-size: 38rem auto,36rem auto,auto,auto; }
       #front-page-intro #intro-header {
-        margin-bottom: 13.1875rem;
-        text-align: center; }
-        #front-page-intro #intro-header h1 {
-          margin-bottom: 1.6875rem; }
+        margin-bottom: 39rem; }
       #front-page-intro #intro-copy .btn {
         margin-top: 2.6rem; } }
   @media (max-width: 575.98px) {
@@ -12862,6 +12859,9 @@ section {
       @media (min-width: 1200px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
           padding-right: calc((100vw - 1088px) / 2); } }
+    @media (max-width: 768.98px) {
+      #wrapper-navbar .sub-navbar {
+        display: none; } }
 
 #main-menu {
   -webkit-box-align: center;
