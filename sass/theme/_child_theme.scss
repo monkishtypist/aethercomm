@@ -248,10 +248,16 @@ section {
         }
         .navbar-icon-reps {
             @extend .navbar-toggler;
+            color: #{$white};
+            margin-left: auto;
+            margin-top: 4px;
         }
-        .navbar-toggler-icon {
-            height: auto;
-            width: auto;
+        .navbar-toggler {
+            margin-right: -#{$navbar-toggler-padding-x};
+            .navbar-toggler-icon {
+                height: auto;
+                width: auto;
+            }
         }
         &.navbar-dark {
             background-color: rgba($black, 1);

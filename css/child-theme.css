@@ -12835,9 +12835,15 @@ section {
           padding: 0; }
           #wrapper-navbar > nav .navbar-brand img {
             max-width: 11rem; } }
-    #wrapper-navbar > nav .navbar-toggler-icon {
-      height: auto;
-      width: auto; }
+    #wrapper-navbar > nav .navbar-icon-reps {
+      color: #fff;
+      margin-left: auto;
+      margin-top: 4px; }
+    #wrapper-navbar > nav .navbar-toggler, #wrapper-navbar > nav .navbar-icon-reps {
+      margin-right: -0.75rem; }
+      #wrapper-navbar > nav .navbar-toggler .navbar-toggler-icon, #wrapper-navbar > nav .navbar-icon-reps .navbar-toggler-icon {
+        height: auto;
+        width: auto; }
     #wrapper-navbar > nav.navbar-dark {
       background-color: black;
       -webkit-transition: all 0.2s ease-in-out;
