@@ -118,7 +118,8 @@ section {
         border-bottom: 1px solid #{$gray-600};
     }
     > nav.navbar-dark {
-            background-color: rgba($black, 1);
+        background-color: rgba($black, 1);
+        transition: $transition-base;
     }
     .home & {
         &.nav-transparency {

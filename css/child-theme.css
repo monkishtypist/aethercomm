@@ -12442,7 +12442,9 @@ section {
   #wrapper-navbar nav.navbar {
     border-bottom: 1px solid #707070; }
   #wrapper-navbar > nav.navbar-dark {
-    background-color: black; }
+    background-color: black;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
 

@@ -76,6 +76,12 @@ $container = get_theme_mod( 'understrap_container_type' );
     			</div><!-- .container -->
 			<?php endif; ?>
 
-		</nav><!-- .site-navigation -->
+        </nav><!-- .site-navigation -->
+        <div class="sub-navbar">
+            <ul class="nav">
+                <li class="nav-item"><a class ="nav-link"><i class="far fa-comment-alt-dots"></i> <?php _e( 'Rep Listings', 'aethercomm' ); ?></a></li>
+                <li class="nav-item"><a class ="nav-link"><i class="fas fa-search"></i></a></li>
+            </ul>
+        </div>
 
 	</div><!-- #wrapper-navbar end -->
