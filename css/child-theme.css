@@ -2032,9 +2032,9 @@ textarea.form-control {
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 0.375rem 0.75rem;
+  padding: 1rem 4.9375rem;
   font-size: 1rem;
-  line-height: 1.625;
+  line-height: 1;
   border-radius: 0;
   -webkit-transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
   transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, -webkit-box-shadow 0.15s ease-in-out;
@@ -2744,8 +2744,8 @@ input[type="button"].btn-block {
   margin-left: -1px; }
 
 .dropdown-toggle-split {
-  padding-right: 0.5625rem;
-  padding-left: 0.5625rem; }
+  padding-right: 3.70312rem;
+  padding-left: 3.70312rem; }
   .dropdown-toggle-split::after,
   .dropup .dropdown-toggle-split::after,
   .dropright .dropdown-toggle-split::after {
@@ -12371,6 +12371,22 @@ body {
 
 p:last-of-type {
   margin-bottom: 0; }
+
+/**
+ * Buttons
+ */
+.btn {
+  font-weight: 900;
+  letter-spacing: .600em;
+  line-height: 1;
+  text-transform: uppercase; }
+  .btn::before {
+    content: " ";
+    border-bottom: 2px solid #fff;
+    bottom: 0.5rem;
+    display: block;
+    position: absolute;
+    width: 1em; }
 
 /**
  * Wrappers
