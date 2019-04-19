@@ -20,6 +20,14 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="<?php echo esc_attr( $container ); ?>">
             <div id="intro-header">
                 <?php acf_field( 'front_page_settings_intro_header' ); ?>
+                <?php
+                $link1 = get_acf_field( 'front_page_settings_intro_header_cta' );
+                var_dump($link);
+                echo sprintf( '<a href="%1$s" class="btn btn-primary">%2$s</a>',
+                    'url',
+                    'text'
+                );
+                ?>
             </div>
             <div class="row">
                 <div id="intro-copy" class="col-12 col-md-6">
