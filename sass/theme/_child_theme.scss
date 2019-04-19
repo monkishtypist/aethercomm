@@ -130,10 +130,10 @@ section {
     }
     .sub-navbar {
         background-color: rgba($black, .5);
-        -webkit-clip-path: polygon(100% 0, 100% 100%, #{$clip-right} #{$clip-height}, #{$clip-left} 0);
-        clip-path: polygon(100% 0, 100% 100%, #{$clip-right} #{$clip-height}, #{$clip-left} 0);
+        display: inline-block;
+        float: right;
         @each $breakpoint, $width in $container-max-widths {
-            @include media-breakpoint-down( $breakpoint ) {
+            @include media-breakpoint-up( $breakpoint ) {
                 padding-right: calc((100vw - #{$width}) / 2);
             }
         }
@@ -144,6 +144,7 @@ section {
     > .nav-item { // <li>
         margin-left: #{$spacer * .5};
         margin-right: #{$spacer * .5};
+        text-align: center;
         &:first-of-type {
             margin-left: 0;
         }

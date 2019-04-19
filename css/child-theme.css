@@ -12449,18 +12449,20 @@ section {
     background-color: rgba(0, 0, 0, 0.5); }
   #wrapper-navbar .sub-navbar {
     background-color: rgba(0, 0, 0, 0.5);
-    -webkit-clip-path: polygon(100% 0, 100% 100%, calc(100% - 25rem) 1.625rem, calc(100% - 27.875rem) 0);
-    clip-path: polygon(100% 0, 100% 100%, calc(100% - 25rem) 1.625rem, calc(100% - 27.875rem) 0);
-    padding-right: calc((100vw - 1088px) / 2); }
-    @media (max-width: 768.98px) {
+    display: inline-block;
+    float: right; }
+    @media (min-width: 576px) {
       #wrapper-navbar .sub-navbar {
         padding-right: calc((100vw - 540px) / 2); } }
-    @media (max-width: 991.98px) {
+    @media (min-width: 769px) {
       #wrapper-navbar .sub-navbar {
         padding-right: calc((100vw - 720px) / 2); } }
-    @media (max-width: 1199.98px) {
+    @media (min-width: 992px) {
       #wrapper-navbar .sub-navbar {
         padding-right: calc((100vw - 960px) / 2); } }
+    @media (min-width: 1200px) {
+      #wrapper-navbar .sub-navbar {
+        padding-right: calc((100vw - 1088px) / 2); } }
 
 #main-menu {
   -webkit-box-align: center;
@@ -12468,7 +12470,8 @@ section {
           align-items: center; }
   #main-menu > .nav-item {
     margin-left: 0.5rem;
-    margin-right: 0.5rem; }
+    margin-right: 0.5rem;
+    text-align: center; }
     #main-menu > .nav-item:first-of-type {
       margin-left: 0; }
     #main-menu > .nav-item:last-of-type {
