@@ -118,8 +118,10 @@ section {
             background-color: rgba($black, 1);
     }
     .home & {
-        > nav.navbar-dark {
-            background-color: rgba($black, .5);
+        &.nav-transparent {
+            > nav.navbar-dark {
+                background-color: rgba($black, .5);
+            }
         }
     }
 }

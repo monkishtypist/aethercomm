@@ -12441,7 +12441,7 @@ section {
         top: 46px; } }
   #wrapper-navbar > nav.navbar-dark {
     background-color: black; }
-  .home #wrapper-navbar > nav.navbar-dark {
+  .home #wrapper-navbar.nav-transparent > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
 
 #main-menu {
