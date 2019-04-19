@@ -103,7 +103,11 @@ section {
  * Used to show posts as grid
  */
 .card {
-
+    .card-deck & {
+        @include media-breakpoint-down('md') {
+            flex-basis: 100%;
+        }
+    }
 }
 
 /**
