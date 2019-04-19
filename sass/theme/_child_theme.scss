@@ -103,6 +103,12 @@ section {
  * Styles for navigation bars
  */
 #wrapper-navbar {
+    position: fixed;
+    .home & {
+        .navbar-dark {
+            background-color: rgba($black, .5);
+        }
+    }
     > nav {
         &.navbar-dark {
             background-color: rgba($black, 1);

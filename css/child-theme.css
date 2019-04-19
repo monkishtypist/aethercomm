@@ -12428,8 +12428,12 @@ section {
  *
  * Styles for navigation bars
  */
-#wrapper-navbar > nav.navbar-dark {
-  background-color: black; }
+#wrapper-navbar {
+  position: fixed; }
+  .home #wrapper-navbar .navbar-dark {
+    background-color: rgba(0, 0, 0, 0.5); }
+  #wrapper-navbar > nav.navbar-dark {
+    background-color: black; }
 
 #main-menu {
   -webkit-box-align: center;
