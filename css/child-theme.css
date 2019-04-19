@@ -29,7 +29,7 @@
   --dark: #222222;
   --breakpoint-xs: 0;
   --breakpoint-sm: 576px;
-  --breakpoint-md: 768px;
+  --breakpoint-md: 769px;
   --breakpoint-lg: 992px;
   --breakpoint-xl: 1200px;
   --font-family-sans-serif: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -454,7 +454,7 @@ pre {
   @media (min-width: 576px) {
     .container {
       max-width: 540px; } }
-  @media (min-width: 768px) {
+  @media (min-width: 769px) {
     .container {
       max-width: 720px; } }
   @media (min-width: 992px) {
@@ -853,7 +853,7 @@ pre {
   .offset-sm-11 {
     margin-left: 91.66667%; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .col-md {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -1552,7 +1552,7 @@ pre {
     .table-responsive-sm > .table-bordered {
       border: 0; } }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -2558,7 +2558,7 @@ input[type="button"].btn-block {
     right: 0;
     left: auto; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .dropdown-menu-md-left {
     right: auto;
     left: 0; }
@@ -3452,13 +3452,13 @@ input[type="button"].btn-block {
     .navbar-expand-sm .navbar-toggler {
       display: none; } }
 
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
   .navbar-expand-md > .container,
   .navbar-expand-md > .container-fluid {
     padding-right: 0;
     padding-left: 0; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .navbar-expand-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -4266,7 +4266,7 @@ input[type="button"].btn-block {
       .list-group-horizontal-sm .list-group-item:last-child {
         margin-right: 0; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .list-group-horizontal-md {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -5322,7 +5322,7 @@ button.bg-dark:focus {
     display: -ms-inline-flexbox !important;
     display: inline-flex !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .d-md-none {
     display: none !important; }
   .d-md-inline {
@@ -5732,7 +5732,7 @@ button.bg-dark:focus {
     -ms-flex-item-align: stretch !important;
         align-self: stretch !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .flex-md-row {
     -webkit-box-orient: horizontal !important;
     -webkit-box-direction: normal !important;
@@ -6121,7 +6121,7 @@ button.bg-dark:focus {
   .float-sm-none {
     float: none !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .float-md-left {
     float: left !important; }
   .float-md-right {
@@ -6879,7 +6879,7 @@ button.bg-dark:focus {
   .mx-sm-auto {
     margin-left: auto !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .m-md-0 {
     margin: 0 !important; }
   .mt-md-0,
@@ -7675,7 +7675,7 @@ button.bg-dark:focus {
   .text-sm-center {
     text-align: center !important; } }
 
-@media (min-width: 768px) {
+@media (min-width: 769px) {
   .text-md-left {
     text-align: left !important; }
   .text-md-right {
@@ -12417,7 +12417,7 @@ section {
 .container,
 .container-fluid {
   position: relative; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .container,
     .container-fluid {
       padding-left: 2.25rem;
@@ -12428,7 +12428,7 @@ section {
  *
  * Used to show posts as grid
  */
-@media (max-width: 767.98px) {
+@media (max-width: 768.98px) {
   .card-deck .card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; } }
@@ -12444,7 +12444,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-blue {
       display: none; } }
   .crosshair-blue:after, .crosshair-blue:before {
@@ -12469,7 +12469,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-indigo {
       display: none; } }
   .crosshair-indigo:after, .crosshair-indigo:before {
@@ -12494,7 +12494,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-purple {
       display: none; } }
   .crosshair-purple:after, .crosshair-purple:before {
@@ -12519,7 +12519,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-pink {
       display: none; } }
   .crosshair-pink:after, .crosshair-pink:before {
@@ -12544,7 +12544,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-red {
       display: none; } }
   .crosshair-red:after, .crosshair-red:before {
@@ -12569,7 +12569,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-orange {
       display: none; } }
   .crosshair-orange:after, .crosshair-orange:before {
@@ -12594,7 +12594,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-yellow {
       display: none; } }
   .crosshair-yellow:after, .crosshair-yellow:before {
@@ -12619,7 +12619,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-green {
       display: none; } }
   .crosshair-green:after, .crosshair-green:before {
@@ -12644,7 +12644,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-teal {
       display: none; } }
   .crosshair-teal:after, .crosshair-teal:before {
@@ -12669,7 +12669,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-cyan {
       display: none; } }
   .crosshair-cyan:after, .crosshair-cyan:before {
@@ -12694,7 +12694,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-white {
       display: none; } }
   .crosshair-white:after, .crosshair-white:before {
@@ -12719,7 +12719,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-gray {
       display: none; } }
   .crosshair-gray:after, .crosshair-gray:before {
@@ -12744,7 +12744,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-gray-dark {
       display: none; } }
   .crosshair-gray-dark:after, .crosshair-gray-dark:before {
@@ -12769,7 +12769,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-primary {
       display: none; } }
   .crosshair-primary:after, .crosshair-primary:before {
@@ -12794,7 +12794,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-secondary {
       display: none; } }
   .crosshair-secondary:after, .crosshair-secondary:before {
@@ -12819,7 +12819,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-success {
       display: none; } }
   .crosshair-success:after, .crosshair-success:before {
@@ -12844,7 +12844,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-info {
       display: none; } }
   .crosshair-info:after, .crosshair-info:before {
@@ -12869,7 +12869,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-warning {
       display: none; } }
   .crosshair-warning:after, .crosshair-warning:before {
@@ -12894,7 +12894,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-danger {
       display: none; } }
   .crosshair-danger:after, .crosshair-danger:before {
@@ -12919,7 +12919,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-light {
       display: none; } }
   .crosshair-light:after, .crosshair-light:before {
@@ -12944,7 +12944,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-dark {
       display: none; } }
   .crosshair-dark:after, .crosshair-dark:before {
@@ -12969,7 +12969,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-100 {
       display: none; } }
   .crosshair-100:after, .crosshair-100:before {
@@ -12994,7 +12994,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-200 {
       display: none; } }
   .crosshair-200:after, .crosshair-200:before {
@@ -13019,7 +13019,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-300 {
       display: none; } }
   .crosshair-300:after, .crosshair-300:before {
@@ -13044,7 +13044,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-400 {
       display: none; } }
   .crosshair-400:after, .crosshair-400:before {
@@ -13069,7 +13069,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-500 {
       display: none; } }
   .crosshair-500:after, .crosshair-500:before {
@@ -13094,7 +13094,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-600 {
       display: none; } }
   .crosshair-600:after, .crosshair-600:before {
@@ -13119,7 +13119,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-700 {
       display: none; } }
   .crosshair-700:after, .crosshair-700:before {
@@ -13144,7 +13144,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-800 {
       display: none; } }
   .crosshair-800:after, .crosshair-800:before {
@@ -13169,7 +13169,7 @@ section {
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
-  @media (max-width: 767.98px) {
+  @media (max-width: 768.98px) {
     .crosshair-900 {
       display: none; } }
   .crosshair-900:after, .crosshair-900:before {
@@ -13237,12 +13237,12 @@ span.pipe::after {
       margin-bottom: 1rem; }
       #footer-menu > .nav-item:nth-last-child(1) {
         margin-bottom: 0; } }
-  @media (min-width: 576px) and (max-width: 767.98px) {
+  @media (min-width: 576px) and (max-width: 768.98px) {
     #footer-menu > .nav-item {
       margin-bottom: 1rem; }
       #footer-menu > .nav-item:nth-last-child(1), #footer-menu > .nav-item:nth-last-child(2) {
         margin-bottom: 0; } }
-  @media (min-width: 768px) and (max-width: 991.98px) {
+  @media (min-width: 769px) and (max-width: 991.98px) {
     #footer-menu > .nav-item {
       margin-bottom: 1rem; }
       #footer-menu > .nav-item:nth-last-child(1), #footer-menu > .nav-item:nth-last-child(2), #footer-menu > .nav-item:nth-last-child(3) {
