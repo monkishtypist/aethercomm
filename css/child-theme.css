@@ -12432,7 +12432,8 @@ section {
   left: 0;
   position: fixed;
   right: 0;
-  top: 0; }
+  top: 0;
+  z-index: 9999; }
   .admin-bar #wrapper-navbar {
     top: 32px; }
     @media screen and (max-width: 781px) {
