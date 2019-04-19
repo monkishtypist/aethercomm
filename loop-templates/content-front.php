@@ -22,10 +22,12 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php acf_field( 'front_page_settings_intro_header' ); ?>
                 <?php
                 $link1 = get_acf_field( 'front_page_settings_intro_header_cta' );
-                var_dump($link1);
-                echo sprintf( '<a href="%1$s" class="btn btn-primary">%2$s</a>',
-                    'url',
-                    'text'
+                echo sprintf( '<a href="%1$s" class="btn btn-primary mx-auto" %2$s>%3$s</a>',
+                    esc_url( $link1[0]['url'] ),
+                    sprintf( 'target="%1$s"',
+                        $link1[0]['target']
+                    ),
+                    esc_html__( $link1[0]['title'], 'aethercomm' )
                 );
                 ?>
             </div>
