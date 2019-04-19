@@ -118,6 +118,9 @@ section {
     position: relative;
     height: #{$spacer * 1.375};
     width: #{$spacer * 1.375};
+    @include media-breakpoint-down('sm') {
+        display: none;
+    }
     &:after,
     &:before {
         content: " ";
