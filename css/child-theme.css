@@ -12378,6 +12378,9 @@ h1, .h1 {
 h2, .h2 {
   line-height: 1.2;
   margin-bottom: 1.8rem; }
+  @media (max-width: 768.98px) {
+    h2, .h2 {
+      font-size: 1.875rem; } }
 
 /**
  * Buttons
@@ -12800,11 +12803,11 @@ section {
           margin-bottom: 4rem; } }
   @media (max-width: 575.98px) {
     #front-page-intro {
-      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 15rem, #000 25rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 17rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 0;
-      background-size: 38rem auto,36rem auto,auto,50rem auto; }
+      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 9rem, #000 17rem), url(../images/earth_desktop.png);
+      background-position: calc(50vw - 13rem) 44rem, calc(50vw - 13rem) 32rem, 0 0, 0 0;
+      background-size: 30rem auto,28rem auto,auto,50rem auto; }
       #front-page-intro #intro-header {
-        margin-bottom: 42rem; }
+        margin-bottom: 33rem; }
         #front-page-intro #intro-header h1 {
           margin-bottom: 4rem; } }
 
@@ -12826,6 +12829,9 @@ section {
         top: 46px; } }
   #wrapper-navbar nav.navbar {
     border-bottom: 1px solid #707070; }
+    #wrapper-navbar nav.navbar .navbar-toggler-icon {
+      height: auto;
+      width: auto; }
   #wrapper-navbar > nav.navbar-dark {
     background-color: black;
     -webkit-transition: all 0.2s ease-in-out;

@@ -44,6 +44,9 @@ h1, .h1 {
 h2, .h2 {
     line-height: 1.2;
     margin-bottom: 1.8rem;
+    @include media-breakpoint-down('sm') {
+        font-size: #{$font-size-base * 1.875};
+    }
 }
 
 /**
@@ -189,7 +192,7 @@ section {
     @include media-breakpoint-down('sm') {
         background-image: url(../images/f22-V3.png),
             url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(151deg,rgba(0,0,0,0) 15rem,#000 25rem),
+            linear-gradient(151deg,rgba($black,0) 15rem,$black 25rem),
             url(../images/earth_desktop.png);
         background-position: calc(50vw - 17rem) 44rem,calc(50vw - 17rem) 29rem,0 0,0 0;
         background-size: 38rem auto,36rem auto,auto,73rem auto;
@@ -204,12 +207,12 @@ section {
     @include media-breakpoint-down('xs') {
         background-image: url(../images/f22-V3.png),
             url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(151deg,rgba(0,0,0,0) 15rem,#000 25rem),
+            linear-gradient(151deg,rgba($black,0) 9rem,$black 17rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 17rem) 44rem,calc(50vw - 17rem) 29rem,0 0,0 0;
-        background-size: 38rem auto,36rem auto,auto,50rem auto;
+        background-position: calc(50vw - 13rem) 44rem,calc(50vw - 13rem) 32rem,0 0,0 0;
+        background-size: 30rem auto,28rem auto,auto,50rem auto;
         #intro-header {
-            margin-bottom: 42rem;
+            margin-bottom: 33rem;
             h1 {
                 margin-bottom: 4rem;
             }
@@ -236,6 +239,10 @@ section {
     }
     nav.navbar {
         border-bottom: 1px solid #{$gray-600};
+        .navbar-toggler-icon {
+            height: auto;
+            width: auto;
+        }
     }
     > nav.navbar-dark {
         background-color: rgba($black, 1);
