@@ -3,16 +3,18 @@
  *
  * Use this file to manage custom scripts for the child theme
  */
-$(function() {
-    //caches a jQuery object containing the header element
-    var wrapperNavbar = $("#wrapper-navbar");
+(function($) {
+
+    var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
+
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
         if (scroll >= 200) {
-            wrapperNavbar.addClass("nav-transparent");
+            wrapperNavbar.removeClass("nav-transparency");
         } else {
-            wrapperNavbar.removeClass("nav-transparent");
+            wrapperNavbar.addClass("nav-transparency");
         }
     });
-});
+
+})(jQuery);

@@ -12439,9 +12439,11 @@ section {
     @media screen and (max-width: 781px) {
       .admin-bar #wrapper-navbar {
         top: 46px; } }
+  #wrapper-navbar nav.navbar {
+    border-bottom: 1px solid #707070; }
   #wrapper-navbar > nav.navbar-dark {
     background-color: black; }
-  .home #wrapper-navbar.nav-transparent > nav.navbar-dark {
+  .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
 
 #main-menu {

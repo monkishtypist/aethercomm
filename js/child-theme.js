@@ -7051,9 +7051,10 @@
  *
  * Use this file to manage custom scripts for the child theme
  */
-$(function() {
-    //caches a jQuery object containing the header element
-    var wrapperNavbar = $("#wrapper-navbar");
+(function($) {
+
+    var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
+
     $(window).scroll(function() {
         var scroll = $(window).scrollTop();
 
@@ -7063,4 +7064,5 @@ $(function() {
             wrapperNavbar.removeClass("nav-transparent");
         }
     });
-});
+
+})(jQuery);

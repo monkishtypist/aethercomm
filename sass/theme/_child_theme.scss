@@ -114,11 +114,14 @@ section {
             top: 46px;
         }
     }
+    nav.navbar {
+        border-bottom: 1px solid #{$gray-600};
+    }
     > nav.navbar-dark {
             background-color: rgba($black, 1);
     }
     .home & {
-        &.nav-transparent {
+        &.nav-transparency {
             > nav.navbar-dark {
                 background-color: rgba($black, .5);
             }
