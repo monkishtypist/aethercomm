@@ -12448,16 +12448,17 @@ section {
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
   #wrapper-navbar .sub-navbar {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.875rem 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2.875rem 100%);
     background-color: #707070;
     display: inline-block;
     float: right;
     position: relative; }
     #wrapper-navbar .sub-navbar .sub-navbar-inner {
+      padding-left: 2.875rem;
       background-color: #000;
-      -webkit-clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, 2.525rem 99.66%);
-      clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, 2.525rem 99.66%); }
+      -webkit-clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, calc(2.875rem - 1px) 99.66%);
+      clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, calc(2.875rem - 1px) 99.66%); }
       @media (min-width: 576px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
           padding-right: calc((100vw - 540px) / 2); } }

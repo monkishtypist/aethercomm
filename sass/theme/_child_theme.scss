@@ -129,16 +129,17 @@ section {
         }
     }
     .sub-navbar {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, #{$clip-width} 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, #{$clip-width} 100%);
         background-color: $gray-600;
         display: inline-block;
         float: right;
         position: relative;
         .sub-navbar-inner {
+            padding-left: #{$clip-width};
             background-color: $black;
-            -webkit-clip-path: polygon(.33% 0, 100% 0, 100% 99.66%, 2.525rem 99.66%);
-            clip-path: polygon(.33% 0, 100% 0, 100% 99.66%, 2.525rem 99.66%);
+            -webkit-clip-path: polygon(.33% 0, 100% 0, 100% 99.66%, calc(#{$clip-width} - 1px) 99.66%);
+            clip-path: polygon(.33% 0, 100% 0, 100% 99.66%, calc(#{$clip-width} - 1px) 99.66%);
             @each $breakpoint, $width in $container-max-widths {
                 @include media-breakpoint-up( $breakpoint ) {
                     padding-right: calc((100vw - #{$width}) / 2);
