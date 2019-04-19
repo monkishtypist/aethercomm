@@ -12444,7 +12444,8 @@ section {
       margin-right: 0; }
     #main-menu > .nav-item > .nav-link {
       font-size: 0.875rem;
-      font-weight: 700; }
+      font-weight: 700;
+      text-transform: uppercase; }
 
 #footer-menu {
   -webkit-box-pack: justify;

@@ -123,6 +123,7 @@ section {
         > .nav-link { // <a>
             font-size: #{$font-size-base * .875};
             font-weight: $font-weight-bold;
+            text-transform: uppercase;
         }
     }
 }
