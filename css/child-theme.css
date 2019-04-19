@@ -2032,7 +2032,7 @@ textarea.form-control {
           user-select: none;
   background-color: transparent;
   border: 1px solid transparent;
-  padding: 1rem 4.9375rem;
+  padding: 1rem 0.75rem;
   font-size: 1rem;
   line-height: 1;
   border-radius: 0;
@@ -2744,8 +2744,8 @@ input[type="button"].btn-block {
   margin-left: -1px; }
 
 .dropdown-toggle-split {
-  padding-right: 3.70312rem;
-  padding-left: 3.70312rem; }
+  padding-right: 0.5625rem;
+  padding-left: 0.5625rem; }
   .dropdown-toggle-split::after,
   .dropup .dropdown-toggle-split::after,
   .dropright .dropdown-toggle-split::after {
@@ -12372,6 +12372,13 @@ body {
 p:last-of-type {
   margin-bottom: 0; }
 
+h1, .h1 {
+  line-height: 1; }
+
+h2, .h2 {
+  line-height: 1.2;
+  margin-bottom: 1.1rem; }
+
 /**
  * Buttons
  */
@@ -12379,7 +12386,9 @@ p:last-of-type {
   font-weight: 900;
   letter-spacing: .600em;
   line-height: 1;
-  text-transform: uppercase; }
+  max-width: 100%;
+  text-transform: uppercase;
+  width: 342px; }
   .btn::before {
     content: " ";
     border-bottom: 2px solid #fff;
@@ -12454,7 +12463,10 @@ section {
   padding-top: 15rem;
   padding-bottom: 5.625rem; }
   #front-page-intro #intro-header {
-    margin-bottom: 13.1875rem; }
+    margin-bottom: 13.1875rem;
+    text-align: center; }
+    #front-page-intro #intro-header h1 {
+      margin-bottom: 1.6875rem; }
 
 /**
  * Navs

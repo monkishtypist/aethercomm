@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php acf_field( 'front_page_settings_intro_header' ); ?>
                 <?php
                 $link1 = get_acf_field( 'front_page_settings_intro_header_cta' );
-                echo sprintf( '<a href="%1$s" class="btn btn-primary mx-auto" %2$s>%3$s</a>',
+                echo sprintf( '<a href="%1$s" class="btn btn-primary" %2$s>%3$s</a>',
                     esc_url( $link1[0]['url'] ),
                     sprintf( 'target="%1$s"',
                         $link1[0]['target']
@@ -34,6 +34,16 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="row">
                 <div id="intro-copy" class="col-12 col-md-6">
                     <?php acf_field( 'front_page_settings_intro_copy' ); ?>
+                    <?php
+                    $link2 = get_acf_field( 'front_page_settings_intro_copy_cta' );
+                    echo sprintf( '<a href="%1$s" class="btn btn-outline-white" %2$s>%3$s</a>',
+                        esc_url( $link2[0]['url'] ),
+                        sprintf( 'target="%1$s"',
+                            $link2[0]['target']
+                        ),
+                        esc_html__( $link2[0]['title'], 'aethercomm' )
+                    );
+                    ?>
                 </div>
             </div>
         </div>
