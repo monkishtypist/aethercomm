@@ -49,7 +49,7 @@ h2, .h2 {
 /**
  * Buttons
  */
-.btn {
+a.btn {
     font-weight: $font-weight-black;
     letter-spacing: .600em;
     line-height: 1;
@@ -60,9 +60,10 @@ h2, .h2 {
         content: " ";
         border-bottom: 2px solid #{$white};
         bottom: #{$btn-padding-y * .5};
-        display: block;
+        display: inline-block;
         position: absolute;
         width: 1em;
+        width: 1ch;
     }
 }
 

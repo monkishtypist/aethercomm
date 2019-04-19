@@ -12382,20 +12382,21 @@ h2, .h2 {
 /**
  * Buttons
  */
-.btn {
+a.btn {
   font-weight: 900;
   letter-spacing: .600em;
   line-height: 1;
   max-width: 100%;
   text-transform: uppercase;
   width: 342px; }
-  .btn::before {
+  a.btn::before {
     content: " ";
     border-bottom: 2px solid #fff;
     bottom: 0.5rem;
-    display: block;
+    display: inline-block;
     position: absolute;
-    width: 1em; }
+    width: 1em;
+    width: 1ch; }
 
 /**
  * Wrappers
