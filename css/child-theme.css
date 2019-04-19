@@ -12424,7 +12424,11 @@ section {
       padding-right: 2.25rem !important; } }
 
 #front-page-intro {
-  padding-top: 15rem; }
+  padding-top: 15rem;
+  background-color: #000;
+  background-image: url(../images/earth_desktop.png);
+  background-size: cover;
+  background-position: left top; }
 
 /**
  * Navs

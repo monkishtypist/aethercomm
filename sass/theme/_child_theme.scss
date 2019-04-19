@@ -47,8 +47,8 @@ p {
     padding: 0;
 }
 #wrapper-footer {
-    background-color: $dark;
-    color: $white;
+    background-color: #{$dark};
+    color: #{$white};
     padding: #{$spacer * 4.125} 0;
     .container {
         > .row {
@@ -73,12 +73,12 @@ section {
     }
 }
 .section-black {
-    background-color: $black;
-    color: $white;
+    background-color: #{$black};
+    color: #{$white};
 }
 .section-blue {
-    background-color: $blue; // rgba($blue,.9);
-    color: $white;
+    background-color: #{$blue}; // rgba($blue,.9);
+    color: #{$white};
 }
 .section-banner {
     margin-top: -#{$clip-height};
@@ -99,6 +99,10 @@ section {
 
 #front-page-intro {
     padding-top: 15rem;
+    background-color: #{$black};
+    background-image: url(../images/earth_desktop.png);
+    background-size: cover;
+    background-position: left top;
 }
 
 /**
@@ -397,7 +401,7 @@ span.pipe {
         }
         #footer-social {
             a {
-                color: $white;
+                color: #{$white};
                 font-size: #{$font-size-base * 1.5};
                 margin-right: 2em;
                 &:last-of-type {
@@ -415,7 +419,7 @@ span.pipe {
         #colophon {
             @extend .col-12;
             @extend .col-lg-auto;
-            font-size: $font-size-sm;
+            font-size: #{$font-size-sm};
             @include media-breakpoint-down('md') {
                 text-align: center;
             }
