@@ -12446,8 +12446,8 @@ section {
       font-size: 0.875rem;
       font-weight: 700;
       text-transform: uppercase; }
-      .active #main-menu > .nav-item > .nav-link.btn {
-        color: #fff; }
+    #main-menu > .nav-item.active.btn > .nav-link {
+      color: #fff; }
 
 #footer-menu {
   -webkit-box-pack: justify;
