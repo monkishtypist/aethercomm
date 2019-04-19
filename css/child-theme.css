@@ -12448,9 +12448,12 @@ section {
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
   #wrapper-navbar .sub-navbar {
-    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
+    background-color: #707070;
     display: inline-block;
-    float: right; }
+    float: right;
+    position: relative; }
     @media (min-width: 576px) {
       #wrapper-navbar .sub-navbar {
         padding-right: calc((100vw - 540px) / 2); } }
@@ -12463,6 +12466,10 @@ section {
     @media (min-width: 1200px) {
       #wrapper-navbar .sub-navbar {
         padding-right: calc((100vw - 1088px) / 2); } }
+    #wrapper-navbar .sub-navbar .sub-navbar-inner {
+      -webkit-clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, 2.525rem 99.66%);
+      clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, 2.525rem 99.66%);
+      background-color: #000; }
 
 #main-menu {
   -webkit-box-align: center;
@@ -12559,8 +12566,8 @@ section {
  */
 /* Clips */
 .clip-tl2br {
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 100% 0);
-  clip-path: polygon(100% 0, 100% 100%, 100% 0); }
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 0); }
 
 .clip-bl2tr {
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);

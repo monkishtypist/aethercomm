@@ -129,13 +129,21 @@ section {
         }
     }
     .sub-navbar {
-        background-color: rgba($black, .5);
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
+        background-color: $gray-600;
         display: inline-block;
         float: right;
+        position: relative;
         @each $breakpoint, $width in $container-max-widths {
             @include media-breakpoint-up( $breakpoint ) {
                 padding-right: calc((100vw - #{$width}) / 2);
             }
+        }
+        .sub-navbar-inner {
+            -webkit-clip-path: polygon(.33% 0, 100% 0, 100% 99.66%, 2.525rem 99.66%);
+            clip-path: polygon(.33% 0, 100% 0, 100% 99.66%, 2.525rem 99.66%);
+            background-color: $black;
         }
     }
 }
@@ -269,8 +277,8 @@ section {
 
 /* Clips */
 .clip-tl2br {
-    -webkit-clip-path: polygon(100% 0, 100% 100%, 100% 0);
-    clip-path: polygon(100% 0, 100% 100%, 100% 0);
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 0);
 }
 .clip-bl2tr {
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%);
