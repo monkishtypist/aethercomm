@@ -4,11 +4,11 @@
  * Buttons
  * Wrappers
  * Sections
+ * Navs
  * Cards
  * Custom elements
  *   Crosshairs
  *   Pipes
- * Navs
  * Footer
  */
 
@@ -94,6 +94,100 @@ section {
     @include media-breakpoint-down('sm') {
         padding-left: 2.25rem;
         padding-right: 2.25rem;
+    }
+}
+
+/**
+ * Navs
+ *
+ * Styles for navigation bars
+ */
+#main-menu { // <ul>
+    > .nav-item { // <li>
+        > .nav-link { // <a>
+        }
+    }
+}
+#footer-menu { // <ul>
+    @extend .row;
+    justify-content: space-between;
+    > .nav-item { // <li>
+        @extend .col-12;
+        @extend .col-sm-6;
+        @extend .col-md-4;
+        @extend .col-lg-auto;
+        @include media-breakpoint-only('xs') {
+            margin-bottom: #{$spacer};
+            &:nth-last-child(1) {
+                margin-bottom: 0;
+            }
+        }
+        @include media-breakpoint-only('sm') {
+            margin-bottom: #{$spacer};
+            &:nth-last-child(1),
+            &:nth-last-child(2) {
+                margin-bottom: 0;
+            }
+        }
+        @include media-breakpoint-only('md') {
+            margin-bottom: #{$spacer};
+            &:nth-last-child(1),
+            &:nth-last-child(2),
+            &:nth-last-child(3) {
+                margin-bottom: 0;
+            }
+        }
+        > .nav-link { // <a>
+            color: $white;
+            font-size: #{$font-size-base * .875};
+            font-weight: $font-weight-bold;
+            padding: 0;
+            text-transform: uppercase;
+            &.dropdown-toggle {
+                &::after {
+                    display: none;
+                }
+            }
+        }
+        &.dropdown { // <li>
+            > .dropdown-menu { // <ul>
+                background-color: transparent;
+                display: block !important;
+                margin: 0;
+                padding: 0;
+                position: relative !important;
+                top: 0;
+                transform: inherit !important;
+                > .nav-item { // <li>
+                    > .dropdown-item { // <a>
+                        background-color: transparent;
+                        color: $gray-600;
+                        padding: 0;
+                        &:active,
+                        &:hover {
+                            background-color: transparent;
+                            color: $gray-600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+#legal-menu { // <ul>
+    @extend .row;
+    justify-content: center;
+    @include media-breakpoint-up('lg') {
+        justify-content: space-between;
+    }
+    > .nav-item { // <li>
+        @extend .col-auto;
+        > .nav-link { // <a>
+            color: $white;
+            font-size: $font-size-sm;
+            padding: 0;
+            text-decoration: underline;
+        }
     }
 }
 
@@ -188,94 +282,6 @@ span.pipe {
         &::after {
             content: "";
             display: none;
-        }
-    }
-}
-
-/**
- * Navs
- *
- * Styles for navigation bars
- */
-#footer-menu { // <ul>
-    @extend .row;
-    justify-content: space-between;
-    > .nav-item { // <li>
-        @extend .col-12;
-        @extend .col-sm-6;
-        @extend .col-md-4;
-        @extend .col-lg-auto;
-        @include media-breakpoint-only('xs') {
-            margin-bottom: #{$spacer};
-            &:nth-last-child(1) {
-                margin-bottom: 0;
-            }
-        }
-        @include media-breakpoint-only('sm') {
-            margin-bottom: #{$spacer};
-            &:nth-last-child(1),
-            &:nth-last-child(2) {
-                margin-bottom: 0;
-            }
-        }
-        @include media-breakpoint-only('md') {
-            margin-bottom: #{$spacer};
-            &:nth-last-child(1),
-            &:nth-last-child(2),
-            &:nth-last-child(3) {
-                margin-bottom: 0;
-            }
-        }
-        > .nav-link { // <a>
-            color: $white;
-            font-size: #{$font-size-base * .875};
-            font-weight: $font-weight-bold;
-            padding: 0;
-            text-transform: uppercase;
-            &.dropdown-toggle {
-                &::after {
-                    display: none;
-                }
-            }
-        }
-        &.dropdown { // <li>
-            > .dropdown-menu { // <ul>
-                background-color: transparent;
-                display: block !important;
-                margin: 0;
-                padding: 0;
-                position: relative !important;
-                top: 0;
-                transform: inherit !important;
-                > .nav-item { // <li>
-                    > .dropdown-item { // <a>
-                        background-color: transparent;
-                        color: $gray-600;
-                        padding: 0;
-                        &:active,
-                        &:hover {
-                            background-color: transparent;
-                            color: $gray-600;
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-#legal-menu { // <ul>
-    @extend .row;
-    justify-content: center;
-    @include media-breakpoint-up('lg') {
-        justify-content: space-between;
-    }
-    > .nav-item { // <li>
-        @extend .col-auto;
-        > .nav-link { // <a>
-            color: $white;
-            font-size: $font-size-sm;
-            padding: 0;
-            text-decoration: underline;
         }
     }
 }
