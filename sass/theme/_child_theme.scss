@@ -104,7 +104,7 @@ section {
  */
 .card {
     .card-deck & {
-        @include media-breakpoint-down('md') {
+        @include media-breakpoint-down('sm') {
             flex-basis: 100%;
         }
     }

@@ -12428,7 +12428,7 @@ section {
  *
  * Used to show posts as grid
  */
-@media (max-width: 991.98px) {
+@media (max-width: 767.98px) {
   .card-deck .card {
     -ms-flex-preferred-size: 100%;
         flex-basis: 100%; } }
