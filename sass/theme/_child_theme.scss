@@ -172,7 +172,7 @@ section {
             url(../images/SOLDIERS-UPDATES-3.png),
             linear-gradient(149deg,rgba($black,0) 23rem,$black 34rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw + 2rem) 37rem,calc(50vw + 4rem) 16rem,0 0,0 0;
+        background-position: 50vw 37rem,calc(50vw + 4rem) 16rem,0 0,0 0;
         background-size: auto,auto,auto,auto;
     }
     @include media-breakpoint-down('md') {
@@ -180,10 +180,10 @@ section {
             url(../images/SOLDIERS-UPDATES-3.png),
             linear-gradient(151deg,rgba($black,0) 18rem,$black 30rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 19rem) 36rem,calc(50vw - 14rem) 25rem,0 0,0 -4rem;
-        background-size: 40rem auto,30rem auto,auto,auto;
+        background-position: calc(50vw - 19rem) 40rem,calc(50vw - 17rem) 26rem,0 0,0 -4rem;
+        background-size: 40rem auto,35rem auto,auto,auto;
         #intro-header {
-            margin-bottom: 36rem;
+            margin-bottom: 40rem;
         }
     }
     @include media-breakpoint-down('sm') {
@@ -191,8 +191,8 @@ section {
             url(../images/SOLDIERS-UPDATES-3.png),
             linear-gradient(151deg,rgba($black,0) 18rem,$black 30rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 19rem) 36rem,calc(50vw - 14rem) 25rem,0 0,0 -4rem;
-        background-size: 40rem auto,30rem auto,auto,auto;
+        background-position: calc(50vw - 19rem) 44rem,calc(50vw - 17rem) 29rem,0 0,0 -4rem;
+        background-size: 38rem auto,36rem auto,auto,auto;
         #intro-header {
             margin-bottom: 13.1875rem;
             text-align: center;
@@ -211,8 +211,8 @@ section {
             url(../images/SOLDIERS-UPDATES-3.png),
             linear-gradient(151deg,rgba($black,0) 18rem,$black 30rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 19rem) 36rem,calc(50vw - 14rem) 25rem,0 0,0 -4rem;
-        background-size: 40rem auto,30rem auto,auto,auto;
+        background-position: calc(50vw - 19rem) 44rem,calc(50vw - 17rem) 29rem,0 0,0 -4rem;
+        background-size: 38rem auto,36rem auto,auto,auto;
         #intro-header {
             margin-bottom: 13.1875rem;
             text-align: center;
