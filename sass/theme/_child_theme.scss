@@ -128,6 +128,10 @@ section {
             }
         }
     }
+    .sub-navbar {
+        -webkit-clip-path: polygon(100% 0, 100% 100%, #{$clip-right} #{$clip-height}, #{$clip-left} 0);
+        clip-path: polygon(100% 0, 100% 100%, #{$clip-right} #{$clip-height}, #{$clip-left} 0);
+    }
 }
 #main-menu { // <ul>
     align-items: center;

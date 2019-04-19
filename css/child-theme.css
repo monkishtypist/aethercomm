@@ -12447,6 +12447,9 @@ section {
     transition: all 0.2s ease-in-out; }
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
+  #wrapper-navbar .sub-navbar {
+    -webkit-clip-path: polygon(100% 0, 100% 100%, calc(100% - 25rem) 1.625rem, calc(100% - 27.875rem) 0);
+    clip-path: polygon(100% 0, 100% 100%, calc(100% - 25rem) 1.625rem, calc(100% - 27.875rem) 0); }
 
 #main-menu {
   -webkit-box-align: center;
