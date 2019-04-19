@@ -49,11 +49,17 @@ h2, .h2 {
 /**
  * Buttons
  */
+@each $color, $value in $colors {
+    .btn-outline-#{$color} {
+        @include button-outline-variant($value);
+    }
+}
 a.btn {
     font-weight: $font-weight-black;
     letter-spacing: .600em;
     line-height: 1;
     max-width: 100%;
+    position: relative;
     text-transform: uppercase;
     width: 342px;
     &::before {

@@ -80,8 +80,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="sub-navbar">
             <div class="sub-navbar-inner">
                 <ul class="nav">
-                    <li class="nav-item"><a class ="nav-link"><i class="far fa-comment-alt-dots"></i> <?php _e( 'Rep Listings', 'aethercomm' ); ?></a></li>
-                    <li class="nav-item"><a class ="nav-link"><i class="fas fa-search"></i></a></li>
+                    <li class="nav-item"><a class ="nav-link"><i class="far fa-comment-alt"></i><?php echo sprintf( ' &nbsp; %1$s', __( 'Rep Listings', 'aethercomm' ) ); ?></a></li>
+                    <li class="nav-item"><a class ="nav-link"><i class="fas fa-search"></i><?php echo sprintf( '<span class="sr-only">%1$s</span>', __( 'Search', 'aethercomm' ) ); ?></a></li>
                 </ul>
             </div>
         </div>
