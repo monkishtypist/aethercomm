@@ -97,6 +97,10 @@ section {
     }
 }
 
+#front-page-intro {
+    padding-top: 15rem;
+}
+
 /**
  * Navs
  *
@@ -139,8 +143,8 @@ section {
             background-color: #{$black};
             color: #{$white};
             padding-left: #{$clip-width};
-            -webkit-clip-path: polygon(.33% 0, 100% 0, 100% 99.66%, calc(#{$clip-width} - 1px) 99.66%);
-            clip-path: polygon(.33% 0, 100% 0, 100% 99.66%, calc(#{$clip-width} - 1px) 99.66%);
+            -webkit-clip-path: polygon(#{$border-width} 0, 100% 0, 100% calc(100% - #{$border-width}), #{$clip-width} calc(100% - #{$border-width}));
+            path: polygon(#{$border-width} 0, 100% 0, 100% calc(100% - #{$border-width}), #{$clip-width} calc(100% - #{$border-width}));
             @each $breakpoint, $width in $container-max-widths {
                 @include media-breakpoint-up( $breakpoint ) {
                     padding-right: calc((100vw - #{$width}) / 2);

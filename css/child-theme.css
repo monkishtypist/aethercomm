@@ -12423,6 +12423,9 @@ section {
       padding-left: 2.25rem !important;
       padding-right: 2.25rem !important; } }
 
+#front-page-intro {
+  padding-top: 15rem; }
+
 /**
  * Navs
  *
@@ -12458,8 +12461,8 @@ section {
       background-color: #000;
       color: #fff;
       padding-left: 2.875rem;
-      -webkit-clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, calc(2.875rem - 1px) 99.66%);
-      clip-path: polygon(0.33% 0, 100% 0, 100% 99.66%, calc(2.875rem - 1px) 99.66%); }
+      -webkit-clip-path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.875rem calc(100% - 1px));
+      path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.875rem calc(100% - 1px)); }
       @media (min-width: 576px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
           padding-right: calc((100vw - 540px) / 2); } }
