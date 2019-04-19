@@ -3396,13 +3396,13 @@ input[type="button"].btn-block {
       -ms-flex-align: center;
           align-items: center; }
 
-.navbar-toggler, #wrapper-navbar > nav .navbar-icon-reps {
+.navbar-toggler {
   padding: 0.25rem 0.75rem;
   font-size: 1.25rem;
   line-height: 1;
   background-color: transparent;
   border: 1px solid transparent; }
-  .navbar-toggler:hover, #wrapper-navbar > nav .navbar-icon-reps:hover, .navbar-toggler:focus, #wrapper-navbar > nav .navbar-icon-reps:focus {
+  .navbar-toggler:hover, .navbar-toggler:focus {
     text-decoration: none; }
 
 .navbar-toggler-icon {
@@ -3449,7 +3449,7 @@ input[type="button"].btn-block {
       display: flex !important;
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
-    .navbar-expand-sm .navbar-toggler, .navbar-expand-sm #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand-sm .navbar-icon-reps {
+    .navbar-expand-sm .navbar-toggler {
       display: none; } }
 
 @media (max-width: 768.98px) {
@@ -3487,7 +3487,7 @@ input[type="button"].btn-block {
       display: flex !important;
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
-    .navbar-expand-md .navbar-toggler, .navbar-expand-md #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand-md .navbar-icon-reps {
+    .navbar-expand-md .navbar-toggler {
       display: none; } }
 
 @media (max-width: 991.98px) {
@@ -3525,7 +3525,7 @@ input[type="button"].btn-block {
       display: flex !important;
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
-    .navbar-expand-lg .navbar-toggler, .navbar-expand-lg #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand-lg .navbar-icon-reps {
+    .navbar-expand-lg .navbar-toggler {
       display: none; } }
 
 @media (max-width: 1199.98px) {
@@ -3563,7 +3563,7 @@ input[type="button"].btn-block {
       display: flex !important;
       -ms-flex-preferred-size: auto;
           flex-basis: auto; }
-    .navbar-expand-xl .navbar-toggler, .navbar-expand-xl #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand-xl .navbar-icon-reps {
+    .navbar-expand-xl .navbar-toggler {
       display: none; } }
 
 .navbar-expand {
@@ -3598,7 +3598,7 @@ input[type="button"].btn-block {
     display: flex !important;
     -ms-flex-preferred-size: auto;
         flex-basis: auto; }
-  .navbar-expand .navbar-toggler, .navbar-expand #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-expand .navbar-icon-reps {
+  .navbar-expand .navbar-toggler {
     display: none; }
 
 .navbar-light .navbar-brand {
@@ -3619,7 +3619,7 @@ input[type="button"].btn-block {
 .navbar-light .navbar-nav .nav-link.active {
   color: rgba(0, 0, 0, 0.9); }
 
-.navbar-light .navbar-toggler, .navbar-light #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-light .navbar-icon-reps {
+.navbar-light .navbar-toggler {
   color: rgba(0, 0, 0, 0.5);
   border-color: rgba(0, 0, 0, 0.1); }
 
@@ -3651,7 +3651,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .nav-link.active {
   color: #FF5800; }
 
-.navbar-dark .navbar-toggler, .navbar-dark #wrapper-navbar > nav .navbar-icon-reps, #wrapper-navbar > nav .navbar-dark .navbar-icon-reps {
+.navbar-dark .navbar-toggler {
   color: #fff;
   border-color: transparent; }
 
@@ -12836,12 +12836,17 @@ section {
           #wrapper-navbar > nav .navbar-brand img {
             max-width: 11rem; } }
     #wrapper-navbar > nav .navbar-icon-reps {
+      background-color: transparent;
+      border: 1px solid transparent;
       color: #fff;
+      font-size: 1.25rem;
+      line-height: 1;
       margin-left: auto;
-      margin-top: 4px; }
-    #wrapper-navbar > nav .navbar-toggler, #wrapper-navbar > nav .navbar-icon-reps {
+      margin-top: 4px;
+      padding: 0.25rem 0.75rem; }
+    #wrapper-navbar > nav .navbar-toggler {
       margin-right: -0.75rem; }
-      #wrapper-navbar > nav .navbar-toggler .navbar-toggler-icon, #wrapper-navbar > nav .navbar-icon-reps .navbar-toggler-icon {
+      #wrapper-navbar > nav .navbar-toggler .navbar-toggler-icon {
         height: auto;
         width: auto; }
     #wrapper-navbar > nav.navbar-dark {
