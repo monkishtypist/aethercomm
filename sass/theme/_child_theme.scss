@@ -43,7 +43,7 @@ h1, .h1 {
 }
 h2, .h2 {
     line-height: 1.2;
-    margin-bottom: 1.1rem;
+    margin-bottom: 1.8rem;
 }
 
 /**
@@ -139,10 +139,13 @@ section {
  */
 #front-page-intro {
     background-color: #{$black};
-    background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), url(../images/earth_desktop.png);
-    background-position: 121% 137%,108% 85%,0 20%;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-size: auto, auto, auto;
+    background-image: url(../images/f22-V3.png),
+        url(../images/SOLDIERS-UPDATES-3.png),
+        linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,1) 100%),
+        url(../images/earth_desktop.png);
+    background-position: 121% 95%,110% 52%,0 0,0 20%;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, auto, auto;
     padding-top: 15rem;
     padding-bottom: #{$spacer * 5.625};
     #intro-header {
@@ -150,6 +153,11 @@ section {
         text-align: center;
         h1 {
             margin-bottom: 1.6875rem;
+        }
+    }
+    #intro-copy {
+        .btn {
+            margin-top: 2.6rem;
         }
     }
 }
