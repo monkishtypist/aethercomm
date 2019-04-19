@@ -103,15 +103,22 @@ section {
  * Styles for navigation bars
  */
 #wrapper-navbar {
+    left: 0;
     position: fixed;
-    .home & {
-        .navbar-dark {
-            background-color: rgba($black, .5);
+    right: 0;
+    top: 0;
+    .admin-bar & {
+        top: 32px;
+        @media screen and (max-width: 781px) {
+            top: 46px;
         }
     }
-    > nav {
-        &.navbar-dark {
+    > nav.navbar-dark {
             background-color: rgba($black, 1);
+    }
+    .home & {
+        > nav.navbar-dark {
+            background-color: rgba($black, .5);
         }
     }
 }
