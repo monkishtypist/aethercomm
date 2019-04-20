@@ -12809,7 +12809,7 @@ section {
   @media (max-width: 575.98px) {
     #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 9rem, #000 17rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 13rem) 42rem, calc(50vw - 13rem) 30rem, 0 0, 0 0;
+      background-position: calc(50vw - 13rem) 38rem, calc(50vw - 13rem) 26rem, 0 0, 0 0;
       background-size: 30rem auto,28rem auto,auto,50rem auto;
       padding-top: 8rem; }
       #front-page-intro #intro-header {
@@ -12857,7 +12857,7 @@ section {
     #front-page-posts {
       background-position: calc(50vw - 20rem) 3.3125rem;
       background-size: auto;
-      padding-bottom: 6rem;
+      padding-bottom: 3rem;
       padding-top: 8.375rem; } }
 
 /**
@@ -13002,6 +13002,18 @@ section {
       #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:active, #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:hover {
         background-color: transparent;
         color: #707070; }
+    @media (max-width: 1199.98px) {
+      #footer-menu > .nav-item.dropdown > .dropdown-menu {
+        margin-top: 2rem; } }
+    @media (max-width: 991.98px) {
+      #footer-menu > .nav-item.dropdown > .dropdown-menu {
+        margin-top: 2rem; } }
+    @media (max-width: 768.98px) {
+      #footer-menu > .nav-item.dropdown > .dropdown-menu {
+        margin-top: 2rem; } }
+    @media (max-width: 575.98px) {
+      #footer-menu > .nav-item.dropdown > .dropdown-menu {
+        margin-top: 2rem; } }
 
 #legal-menu {
   -webkit-box-pack: center;
@@ -13027,7 +13039,9 @@ section {
   .card-deck .card {
     -ms-flex-preferred-size: calc(100% - 20px);
         flex-basis: calc(100% - 20px);
-    margin-bottom: 3rem; } }
+    margin-bottom: 3rem; }
+    .card-deck .card:last-of-type {
+      margin-bottom: 0; } }
 
 .card-deck .card .card-img-top {
   margin-bottom: 2rem; }
@@ -13842,6 +13856,18 @@ span.pipe::after {
   background-position: calc(50vw - 33.5rem) 6.5rem;
   background-repeat: no-repeat;
   background-size: auto; }
+  @media (max-width: 1199.98px) {
+    #wrapper-footer {
+      background-position: calc(50vw - 33.5rem) 6.5rem; } }
+  @media (max-width: 991.98px) {
+    #wrapper-footer {
+      background-position: calc(50vw - 33.5rem) 6.5rem; } }
+  @media (max-width: 768.98px) {
+    #wrapper-footer {
+      background-position: calc(50vw - 33.5rem) 6.5rem; } }
+  @media (max-width: 575.98px) {
+    #wrapper-footer {
+      background-position: calc(50vw - 33.5rem) 6.5rem; } }
   #wrapper-footer .footer-widgets {
     -webkit-box-align: center;
         -ms-flex-align: center;

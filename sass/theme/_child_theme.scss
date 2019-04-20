@@ -217,7 +217,7 @@ section {
             url(../images/SOLDIERS-UPDATES-3.png),
             linear-gradient(151deg,rgba($black,0) 9rem,$black 17rem),
             url(../images/earth_desktop.png);
-        background-position: calc(50vw - 13rem) 42rem,calc(50vw - 13rem) 30rem,0 0,0 0;
+        background-position: calc(50vw - 13rem) 38rem,calc(50vw - 13rem) 26rem,0 0,0 0;
         background-size: 30rem auto,28rem auto,auto,50rem auto;
         padding-top: 8rem;
         #intro-header {
@@ -272,7 +272,7 @@ section {
     @include media-breakpoint-down('xs') {
         background-position: calc(50vw - 20rem) 3.3125rem;
         background-size: auto;
-        padding-bottom: 6rem;
+        padding-bottom: 3rem;
         padding-top: 8.375rem;
     }
 }
@@ -453,6 +453,18 @@ section {
                         }
                     }
                 }
+                @include media-breakpoint-down('lg') {
+                    margin-top: 2rem;
+                }
+                @include media-breakpoint-down('md') {
+                    margin-top: 2rem;
+                }
+                @include media-breakpoint-down('sm') {
+                    margin-top: 2rem;
+                }
+                @include media-breakpoint-down('xs') {
+                    margin-top: 2rem;
+                }
             }
         }
     }
@@ -484,6 +496,9 @@ section {
         @include media-breakpoint-down('sm') {
             flex-basis: calc(100% - #{$card-group-margin * 2});
             margin-bottom: #{$spacer * 3};
+            &:last-of-type {
+                margin-bottom: 0;
+            }
         }
         .card-img-top {
             margin-bottom: 2rem;
@@ -596,6 +611,18 @@ span.pipe {
     background-position: calc(50vw - 33.5rem) 6.5rem;
     background-repeat: no-repeat;
     background-size: auto;
+    @include media-breakpoint-down('lg') {
+        background-position: calc(50vw - 33.5rem) 6.5rem;
+    }
+    @include media-breakpoint-down('md') {
+        background-position: calc(50vw - 33.5rem) 6.5rem;
+    }
+    @include media-breakpoint-down('sm') {
+        background-position: calc(50vw - 33.5rem) 6.5rem;
+    }
+    @include media-breakpoint-down('xs') {
+        background-position: calc(50vw - 33.5rem) 6.5rem;
+    }
     .footer-widgets {
         @extend .row;
         align-items: center;
