@@ -50,7 +50,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </section>
 
-    <section id="front-page-banner" class="section-banner section-blue" style="background-image: url(<?php acf_field( 'front_page_settings_banner_copy' ); ?>);">
+    <section id="front-page-banner" class="section-banner section-blue" style="background-image: url(<?php acf_field( 'front_page_settings_banner_background' ); ?>);">
 
         <div class="<?php echo esc_attr( $container ); ?>">
             <div id="banner-copy">
@@ -63,7 +63,11 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-slider" class="section-unpadded">
 
         <div class="container-fluid">
-            <?php echo do_shortcode('[rev_slider alias="home"]'); ?>
+            <?php
+            if ( class_exists( 'RevSlider' ) ) {
+                putRevSlider("home");
+            }
+            ?>
         </div>
 
     </section>

@@ -535,6 +535,10 @@ span.pipe {
  * Widgets and content. For nav menus see 'Navs'
  */
 #wrapper-footer {
+    background-image: url(../images/path2.png);
+    background-position: calc(50vw - 44.3rem) 3.3125rem;
+    background-repeat: no-repeat;
+    background-size: auto;
     .footer-widgets {
         @extend .row;
         align-items: center;
