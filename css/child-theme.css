@@ -13851,7 +13851,7 @@ span.pipe::after {
       background-position: calc(50vw - 39.3rem) 27rem; } }
   @media (max-width: 768.98px) {
     #wrapper-footer {
-      background-position: calc(50vw - 39.3rem) 27rem; } }
+      background-position: calc(50vw - 54rem) 31.5rem; } }
   @media (max-width: 575.98px) {
     #wrapper-footer {
       background-position: calc(50vw - 39.3rem) 27rem; } }
@@ -13871,7 +13871,7 @@ span.pipe::after {
         margin-bottom: 5rem; } }
     @media (max-width: 768.98px) {
       #wrapper-footer .footer-widgets {
-        margin-bottom: 5rem; } }
+        margin-bottom: 6rem; } }
     @media (max-width: 991.98px) {
       #wrapper-footer .footer-widgets .footer-widget {
         margin-bottom: 1rem; }
