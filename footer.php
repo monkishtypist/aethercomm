@@ -51,6 +51,9 @@ $container = get_theme_mod( 'understrap_container_type' );
             <?php if ( is_active_sidebar( 'footer-content' ) ) : ?>
                 <?php dynamic_sidebar( 'footer-content' ); ?>
             <?php endif; ?>
+            <div id="initial-here">
+                <?php _e( 'Initial here:', 'aethercomm' ); ?>
+            </div>
         </div>
 
         <?php

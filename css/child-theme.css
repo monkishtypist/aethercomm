@@ -13002,18 +13002,9 @@ section {
       #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:active, #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:hover {
         background-color: transparent;
         color: #707070; }
-    @media (max-width: 1199.98px) {
-      #footer-menu > .nav-item.dropdown > .dropdown-menu {
-        margin-top: 2rem; } }
     @media (max-width: 991.98px) {
       #footer-menu > .nav-item.dropdown > .dropdown-menu {
-        margin-top: 2rem; } }
-    @media (max-width: 768.98px) {
-      #footer-menu > .nav-item.dropdown > .dropdown-menu {
-        margin-top: 2rem; } }
-    @media (max-width: 575.98px) {
-      #footer-menu > .nav-item.dropdown > .dropdown-menu {
-        margin-top: 2rem; } }
+        margin-top: 0rem; } }
 
 #legal-menu {
   -webkit-box-pack: center;
@@ -13858,7 +13849,7 @@ span.pipe::after {
   background-size: auto; }
   @media (max-width: 1199.98px) {
     #wrapper-footer {
-      background-position: calc(50vw - 33.5rem) 6.5rem; } }
+      background-position: calc(50vw - 29.5rem) 6.5rem; } }
   @media (max-width: 991.98px) {
     #wrapper-footer {
       background-position: calc(50vw - 33.5rem) 6.5rem; } }
@@ -13874,7 +13865,8 @@ span.pipe::after {
             align-items: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    position: relative; }
     @media (max-width: 991.98px) {
       #wrapper-footer .footer-widgets .footer-widget {
         margin-bottom: 1rem; }
@@ -13890,6 +13882,13 @@ span.pipe::after {
       margin-right: 2em; }
       #wrapper-footer .footer-widgets #footer-social a:last-of-type {
         margin-right: 0; }
+    #wrapper-footer .footer-widgets #initial-here {
+      position: absolute;
+      width: 262px;
+      height: 85px;
+      background-color: #fff;
+      color: #222222;
+      border: 1px solid #707070; }
   @media (min-width: 992px) {
     #wrapper-footer .footer-siteinfo {
       -webkit-box-orient: horizontal;
