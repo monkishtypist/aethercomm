@@ -63,6 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-slider" class="section-unpadded">
 
         <div class="container-fluid">
+            <?php echo do_shortcode('[rev_slider alias="home"]'); ?>
         </div>
 
     </section>
