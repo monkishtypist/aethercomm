@@ -52,6 +52,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     <section id="front-page-banner" class="section-banner section-blue" style="background-image: url(<?php echo wp_get_attachment_url( get_acf_field( 'front_page_settings_banner_background' ) ); ?>);">
 
+        <?php var_dump( get_acf_field( 'front_page_settings_banner_background' ) ); ?>
+
         <div class="<?php echo esc_attr( $container ); ?>">
             <div id="banner-copy">
                 <?php acf_field( 'front_page_settings_banner_copy' ); ?>
