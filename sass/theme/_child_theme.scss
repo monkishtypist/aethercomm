@@ -220,7 +220,12 @@ section {
         }
     }
 }
-#front-page-banner {}
+#front-page-banner {
+    background-position: 50% 50%, 50% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    text-align: center;
+}
 #front-page-slider {}
 #front-page-posts {
     background-image: url(../images/path1.png);

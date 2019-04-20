@@ -56,7 +56,8 @@ $container = get_theme_mod( 'understrap_container_type' );
         $banner_image_id     = (int) $banner_image_array[0];
         $banner_image_styles = null;
         if ( $banner_image_id ) {
-            $banner_image_styles = sprintf( 'style="background-image: url(%1$s);"',
+            $banner_image_styles = sprintf( 'style="background-image: %1$s, url(%2$s);"',
+                'linear-gradient(0deg, rgba(74, 99, 174, .9) 0, rgba(74, 99, 174, .9) 100%)',
                 wp_get_attachment_url( $banner_image_id )
             );
         }
