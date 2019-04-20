@@ -12874,7 +12874,6 @@ section {
     position: relative; }
     #wrapper-navbar .sub-navbar .sub-navbar-inner {
       background-color: #000;
-      color: #fff;
       padding-left: 2.875rem;
       -webkit-clip-path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.875rem calc(100% - 1px));
       path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.875rem calc(100% - 1px)); }
@@ -12890,6 +12889,8 @@ section {
       @media (min-width: 1200px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
           padding-right: calc((100vw - 1088px) / 2); } }
+      #wrapper-navbar .sub-navbar .sub-navbar-inner a {
+        color: #fff; }
     @media (max-width: 768.98px) {
       #wrapper-navbar .sub-navbar {
         display: none; } }

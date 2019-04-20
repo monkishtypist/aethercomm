@@ -297,7 +297,6 @@ section {
         position: relative;
         .sub-navbar-inner {
             background-color: #{$black};
-            color: #{$white};
             padding-left: #{$clip-width};
             -webkit-clip-path: polygon(#{$border-width} 0, 100% 0, 100% calc(100% - #{$border-width}), #{$clip-width} calc(100% - #{$border-width}));
             path: polygon(#{$border-width} 0, 100% 0, 100% calc(100% - #{$border-width}), #{$clip-width} calc(100% - #{$border-width}));
@@ -305,6 +304,9 @@ section {
                 @include media-breakpoint-up( $breakpoint ) {
                     padding-right: calc((100vw - #{$width}) / 2);
                 }
+            }
+            a {
+                color: #{$white};
             }
         }
         @include media-breakpoint-down('sm') {
