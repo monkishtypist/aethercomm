@@ -12816,6 +12816,7 @@ section {
   background-position: 50% 50%, 50% 50%;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
+  font-size: 1.875rem;
   text-align: center; }
 
 #front-page-posts {
