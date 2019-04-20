@@ -67,7 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </section>
 
-    <section id="front-page-posts" class="section-black">
+    <section id="front-page-posts" class="section-black section-path1">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 

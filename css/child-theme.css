@@ -12810,6 +12810,15 @@ section {
       #front-page-intro #intro-header {
         margin-bottom: 33rem; } }
 
+#front-page-posts {
+  background-image: url(../images/path1);
+  background-position: calc(50vw - 10rem) 5rem;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-bottom: 6rem; }
+  #front-page-posts #posts-title {
+    margin-bottom: 4rem; }
+
 /**
  * Navs
  *
@@ -13758,6 +13767,10 @@ section {
 .crosshairs-bottom-right {
   bottom: -2.75rem;
   right: -0.6875rem; }
+
+/* Paths */
+.section-path1 {
+  padding-top: 6.625rem; }
 
 /* Pipes */
 span.pipe::after {
