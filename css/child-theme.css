@@ -3634,9 +3634,9 @@ input[type="button"].btn-block {
       color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand {
-  color: #FF5800; }
+  color: #4A63AE; }
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-    color: #FF5800; }
+    color: #4A63AE; }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff; }
@@ -3649,7 +3649,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #FF5800; }
+  color: #4A63AE; }
 
 .navbar-dark .navbar-toggler {
   color: #fff;
@@ -3661,9 +3661,9 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text {
   color: #fff; }
   .navbar-dark .navbar-text a {
-    color: #FF5800; }
+    color: #4A63AE; }
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-      color: #FF5800; }
+      color: #4A63AE; }
 
 .card {
   position: relative;
@@ -7954,9 +7954,9 @@ a.skip-link {
     color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand a {
-  color: #FF5800; }
+  color: #4A63AE; }
   .navbar-dark .navbar-brand a:hover, .navbar-dark .navbar-brand a:focus {
-    color: #FF5800; }
+    color: #4A63AE; }
 
 .navbar h1 {
   font-weight: 400; }
@@ -13031,6 +13031,7 @@ section {
       margin-bottom: 0; } }
 
 .card-deck .card .card-img-top {
+  border: 1px solid #707070;
   margin-bottom: 2rem; }
 
 /**

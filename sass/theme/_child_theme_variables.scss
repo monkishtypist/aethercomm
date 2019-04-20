@@ -734,7 +734,7 @@ $btn-box-shadow:              none !default; // inset 0 1px 0 rgba($white, .15),
 
 $navbar-dark-color:                 $white !default; // rgba($white, .5) !default;
 $navbar-dark-hover-color:           rgba($white, .75) !default;
-$navbar-dark-active-color:          $primary !default; // $white !default;
+$navbar-dark-active-color:          $secondary !default; // $white !default;
 $navbar-dark-disabled-color:        rgba($white, .25) !default;
 $navbar-dark-toggler-icon-bg:       none !default; // str-replace(url("data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3e%3cpath stroke='#{$navbar-dark-color}' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e"), "#", "%23") !default;
 $navbar-dark-toggler-border-color:  transparent !default; // rgba($white, .1) !default;
