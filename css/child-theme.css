@@ -13854,7 +13854,7 @@ span.pipe::after {
       background-position: calc(50vw - 54rem) 31.5rem; } }
   @media (max-width: 575.98px) {
     #wrapper-footer {
-      background-position: calc(50vw - 39.3rem) 27rem; } }
+      background-position: calc(50vw - 53rem) 39rem; } }
   #wrapper-footer #footer-menu-wrapper {
     margin-bottom: 2.625rem; }
   #wrapper-footer .footer-widgets {
@@ -13886,8 +13886,8 @@ span.pipe::after {
         margin-left: auto; } }
     #wrapper-footer .footer-widgets .social-icons-widget a {
       color: #fff;
-      font-size: 1.5rem;
-      margin-right: 2em; }
+      font-size: 2rem;
+      margin-right: 1.5rem; }
       #wrapper-footer .footer-widgets .social-icons-widget a:last-of-type {
         margin-right: 0; }
   @media (min-width: 992px) {

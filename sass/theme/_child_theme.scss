@@ -607,7 +607,7 @@ span.pipe {
         background-position: calc(50vw - 54rem) 31.5rem;
     }
     @include media-breakpoint-down('xs') {
-        background-position: calc(50vw - 39.3rem) 27rem;
+        background-position: calc(50vw - 53rem) 39rem;
     }
     #footer-menu-wrapper {
         margin-bottom: #{$spacer * 2.625};
@@ -649,8 +649,8 @@ span.pipe {
             }
             a {
                 color: #{$white};
-                font-size: #{$font-size-base * 1.5};
-                margin-right: 2em;
+                font-size: #{$font-size-base * 2};
+                margin-right: #{$spacer * 1.5};
                 &:last-of-type {
                     margin-right: 0;
                 }
