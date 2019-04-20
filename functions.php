@@ -458,5 +458,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name'          => __( 'Social Icons', 'aethercomm' ),
+				'id'            => 'social-icons',
+				'description'   => __( 'Various social icon placements', 'aethercomm' ),
+				'before_widget' => '<div id="%1$s" class="social-icons-widget %2$s">',
+				'after_widget'  => '</div><!-- .social-icons-widget -->',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 	}
 }
