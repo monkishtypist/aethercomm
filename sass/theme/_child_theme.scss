@@ -48,6 +48,11 @@ h2, .h2 {
         font-size: #{$font-size-base * 1.875};
     }
 }
+a {
+    &.read-more-link {
+        text-decoration: underline;
+    }
+}
 
 /**
  * Buttons

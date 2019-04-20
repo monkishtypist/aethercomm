@@ -12382,6 +12382,9 @@ h2, .h2 {
     h2, .h2 {
       font-size: 1.875rem; } }
 
+a.read-more-link {
+  text-decoration: underline; }
+
 /**
  * Buttons
  */
