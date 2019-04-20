@@ -641,6 +641,7 @@ span.pipe {
             }
         }
         .social-icons-widget {
+            @extend .col-auto;
             a {
                 color: #{$white};
                 font-size: #{$font-size-base * 1.5};
