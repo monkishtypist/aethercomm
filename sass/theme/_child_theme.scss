@@ -640,7 +640,7 @@ span.pipe {
                 }
             }
         }
-        #footer-social {
+        .social-icons-widget {
             a {
                 color: #{$white};
                 font-size: #{$font-size-base * 1.5};
@@ -649,14 +649,6 @@ span.pipe {
                     margin-right: 0;
                 }
             }
-        }
-        #initial-here {
-            position: absolute;
-            width: 262px;
-            height: 85px;
-            background-color: #{$white};
-            color: #{$dark};
-            border: #{$border-width} solid #{$gray-600};
         }
     }
     .footer-siteinfo {

@@ -54,11 +54,6 @@ $container = get_theme_mod( 'understrap_container_type' );
             <?php if ( is_active_sidebar( 'social-icons' ) ) : ?>
                 <?php dynamic_sidebar( 'social-icons' ); ?>
             <?php endif; ?>
-            <div id="initial-here">
-                <?php echo sprintf( '<span class="intial-here-text">%1$s</span>',
-                    __( 'Initial here:', 'aethercomm' )
-                ); ?>
-            </div>
         </div>
 
         <?php

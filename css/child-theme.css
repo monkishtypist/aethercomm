@@ -13876,19 +13876,12 @@ span.pipe::after {
       margin-bottom: 0; }
     #wrapper-footer .footer-widgets .footer-widget p a {
       text-decoration: underline; }
-    #wrapper-footer .footer-widgets #footer-social a {
+    #wrapper-footer .footer-widgets .social-icons-widget a {
       color: #fff;
       font-size: 1.5rem;
       margin-right: 2em; }
-      #wrapper-footer .footer-widgets #footer-social a:last-of-type {
+      #wrapper-footer .footer-widgets .social-icons-widget a:last-of-type {
         margin-right: 0; }
-    #wrapper-footer .footer-widgets #initial-here {
-      position: absolute;
-      width: 262px;
-      height: 85px;
-      background-color: #fff;
-      color: #222222;
-      border: 1px solid #707070; }
   @media (min-width: 992px) {
     #wrapper-footer .footer-siteinfo {
       -webkit-box-orient: horizontal;
