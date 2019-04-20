@@ -539,13 +539,13 @@ section {
     }
 }
 @each $color, $value in $colors {
-    .crosshair-#{$color} { @include crosshairs($value); }
+    .crosshairs-#{$color} { @include crosshairs($value); }
 }
 @each $color, $value in $theme-colors {
-    .crosshair-#{$color} { @include crosshairs($value); }
+    .crosshairs-#{$color} { @include crosshairs($value); }
 }
 @each $color, $value in $grays {
-    .crosshair-#{$color} { @include crosshairs($value); }
+    .crosshairs-#{$color} { @include crosshairs($value); }
 }
 .crosshairs-top-left,
 .crosshairs-top-right,

@@ -13049,751 +13049,751 @@ section {
   clip-path: polygon(100% 0, 100% 100%, 0 100%); }
 
 /* Crosshairs */
-.crosshair-blue {
+.crosshairs-blue {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-blue {
+    .crosshairs-blue {
       display: none; } }
-  .crosshair-blue:after, .crosshair-blue:before {
+  .crosshairs-blue:after, .crosshairs-blue:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-blue:after {
+  .crosshairs-blue:after {
     border-right: 1px solid #4A63AE;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-blue:before {
+  .crosshairs-blue:before {
     border-bottom: 1px solid #4A63AE;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-indigo {
+.crosshairs-indigo {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-indigo {
+    .crosshairs-indigo {
       display: none; } }
-  .crosshair-indigo:after, .crosshair-indigo:before {
+  .crosshairs-indigo:after, .crosshairs-indigo:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-indigo:after {
+  .crosshairs-indigo:after {
     border-right: 1px solid #6610f2;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-indigo:before {
+  .crosshairs-indigo:before {
     border-bottom: 1px solid #6610f2;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-purple {
+.crosshairs-purple {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-purple {
+    .crosshairs-purple {
       display: none; } }
-  .crosshair-purple:after, .crosshair-purple:before {
+  .crosshairs-purple:after, .crosshairs-purple:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-purple:after {
+  .crosshairs-purple:after {
     border-right: 1px solid #6f42c1;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-purple:before {
+  .crosshairs-purple:before {
     border-bottom: 1px solid #6f42c1;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-pink {
+.crosshairs-pink {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-pink {
+    .crosshairs-pink {
       display: none; } }
-  .crosshair-pink:after, .crosshair-pink:before {
+  .crosshairs-pink:after, .crosshairs-pink:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-pink:after {
+  .crosshairs-pink:after {
     border-right: 1px solid #FF00B1;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-pink:before {
+  .crosshairs-pink:before {
     border-bottom: 1px solid #FF00B1;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-red {
+.crosshairs-red {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-red {
+    .crosshairs-red {
       display: none; } }
-  .crosshair-red:after, .crosshair-red:before {
+  .crosshairs-red:after, .crosshairs-red:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-red:after {
+  .crosshairs-red:after {
     border-right: 1px solid #FF5800;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-red:before {
+  .crosshairs-red:before {
     border-bottom: 1px solid #FF5800;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-orange {
+.crosshairs-orange {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-orange {
+    .crosshairs-orange {
       display: none; } }
-  .crosshair-orange:after, .crosshair-orange:before {
+  .crosshairs-orange:after, .crosshairs-orange:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-orange:after {
+  .crosshairs-orange:after {
     border-right: 1px solid #fd7e14;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-orange:before {
+  .crosshairs-orange:before {
     border-bottom: 1px solid #fd7e14;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-yellow {
+.crosshairs-yellow {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-yellow {
+    .crosshairs-yellow {
       display: none; } }
-  .crosshair-yellow:after, .crosshair-yellow:before {
+  .crosshairs-yellow:after, .crosshairs-yellow:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-yellow:after {
+  .crosshairs-yellow:after {
     border-right: 1px solid #FFCE00;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-yellow:before {
+  .crosshairs-yellow:before {
     border-bottom: 1px solid #FFCE00;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-green {
+.crosshairs-green {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-green {
+    .crosshairs-green {
       display: none; } }
-  .crosshair-green:after, .crosshair-green:before {
+  .crosshairs-green:after, .crosshairs-green:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-green:after {
+  .crosshairs-green:after {
     border-right: 1px solid #28a745;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-green:before {
+  .crosshairs-green:before {
     border-bottom: 1px solid #28a745;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-teal {
+.crosshairs-teal {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-teal {
+    .crosshairs-teal {
       display: none; } }
-  .crosshair-teal:after, .crosshair-teal:before {
+  .crosshairs-teal:after, .crosshairs-teal:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-teal:after {
+  .crosshairs-teal:after {
     border-right: 1px solid #20c997;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-teal:before {
+  .crosshairs-teal:before {
     border-bottom: 1px solid #20c997;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-cyan {
+.crosshairs-cyan {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-cyan {
+    .crosshairs-cyan {
       display: none; } }
-  .crosshair-cyan:after, .crosshair-cyan:before {
+  .crosshairs-cyan:after, .crosshairs-cyan:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-cyan:after {
+  .crosshairs-cyan:after {
     border-right: 1px solid #17a2b8;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-cyan:before {
+  .crosshairs-cyan:before {
     border-bottom: 1px solid #17a2b8;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-white {
+.crosshairs-white {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-white {
+    .crosshairs-white {
       display: none; } }
-  .crosshair-white:after, .crosshair-white:before {
+  .crosshairs-white:after, .crosshairs-white:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-white:after {
+  .crosshairs-white:after {
     border-right: 1px solid #fff;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-white:before {
+  .crosshairs-white:before {
     border-bottom: 1px solid #fff;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-gray {
+.crosshairs-gray {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-gray {
+    .crosshairs-gray {
       display: none; } }
-  .crosshair-gray:after, .crosshair-gray:before {
+  .crosshairs-gray:after, .crosshairs-gray:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-gray:after {
+  .crosshairs-gray:after {
     border-right: 1px solid #676767;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-gray:before {
+  .crosshairs-gray:before {
     border-bottom: 1px solid #676767;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-gray-dark {
+.crosshairs-gray-dark {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-gray-dark {
+    .crosshairs-gray-dark {
       display: none; } }
-  .crosshair-gray-dark:after, .crosshair-gray-dark:before {
+  .crosshairs-gray-dark:after, .crosshairs-gray-dark:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-gray-dark:after {
+  .crosshairs-gray-dark:after {
     border-right: 1px solid #222222;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-gray-dark:before {
+  .crosshairs-gray-dark:before {
     border-bottom: 1px solid #222222;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-primary {
+.crosshairs-primary {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-primary {
+    .crosshairs-primary {
       display: none; } }
-  .crosshair-primary:after, .crosshair-primary:before {
+  .crosshairs-primary:after, .crosshairs-primary:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-primary:after {
+  .crosshairs-primary:after {
     border-right: 1px solid #FF5800;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-primary:before {
+  .crosshairs-primary:before {
     border-bottom: 1px solid #FF5800;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-secondary {
+.crosshairs-secondary {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-secondary {
+    .crosshairs-secondary {
       display: none; } }
-  .crosshair-secondary:after, .crosshair-secondary:before {
+  .crosshairs-secondary:after, .crosshairs-secondary:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-secondary:after {
+  .crosshairs-secondary:after {
     border-right: 1px solid #4A63AE;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-secondary:before {
+  .crosshairs-secondary:before {
     border-bottom: 1px solid #4A63AE;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-success {
+.crosshairs-success {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-success {
+    .crosshairs-success {
       display: none; } }
-  .crosshair-success:after, .crosshair-success:before {
+  .crosshairs-success:after, .crosshairs-success:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-success:after {
+  .crosshairs-success:after {
     border-right: 1px solid #28a745;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-success:before {
+  .crosshairs-success:before {
     border-bottom: 1px solid #28a745;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-info {
+.crosshairs-info {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-info {
+    .crosshairs-info {
       display: none; } }
-  .crosshair-info:after, .crosshair-info:before {
+  .crosshairs-info:after, .crosshairs-info:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-info:after {
+  .crosshairs-info:after {
     border-right: 1px solid #17a2b8;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-info:before {
+  .crosshairs-info:before {
     border-bottom: 1px solid #17a2b8;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-warning {
+.crosshairs-warning {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-warning {
+    .crosshairs-warning {
       display: none; } }
-  .crosshair-warning:after, .crosshair-warning:before {
+  .crosshairs-warning:after, .crosshairs-warning:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-warning:after {
+  .crosshairs-warning:after {
     border-right: 1px solid #FFCE00;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-warning:before {
+  .crosshairs-warning:before {
     border-bottom: 1px solid #FFCE00;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-danger {
+.crosshairs-danger {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-danger {
+    .crosshairs-danger {
       display: none; } }
-  .crosshair-danger:after, .crosshair-danger:before {
+  .crosshairs-danger:after, .crosshairs-danger:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-danger:after {
+  .crosshairs-danger:after {
     border-right: 1px solid #FF5800;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-danger:before {
+  .crosshairs-danger:before {
     border-bottom: 1px solid #FF5800;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-light {
+.crosshairs-light {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-light {
+    .crosshairs-light {
       display: none; } }
-  .crosshair-light:after, .crosshair-light:before {
+  .crosshairs-light:after, .crosshairs-light:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-light:after {
+  .crosshairs-light:after {
     border-right: 1px solid #A8A8A8;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-light:before {
+  .crosshairs-light:before {
     border-bottom: 1px solid #A8A8A8;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-dark {
+.crosshairs-dark {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-dark {
+    .crosshairs-dark {
       display: none; } }
-  .crosshair-dark:after, .crosshair-dark:before {
+  .crosshairs-dark:after, .crosshairs-dark:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-dark:after {
+  .crosshairs-dark:after {
     border-right: 1px solid #222222;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-dark:before {
+  .crosshairs-dark:before {
     border-bottom: 1px solid #222222;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-100 {
+.crosshairs-100 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-100 {
+    .crosshairs-100 {
       display: none; } }
-  .crosshair-100:after, .crosshair-100:before {
+  .crosshairs-100:after, .crosshairs-100:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-100:after {
+  .crosshairs-100:after {
     border-right: 1px solid #f8f9fa;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-100:before {
+  .crosshairs-100:before {
     border-bottom: 1px solid #f8f9fa;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-200 {
+.crosshairs-200 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-200 {
+    .crosshairs-200 {
       display: none; } }
-  .crosshair-200:after, .crosshair-200:before {
+  .crosshairs-200:after, .crosshairs-200:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-200:after {
+  .crosshairs-200:after {
     border-right: 1px solid #e9ecef;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-200:before {
+  .crosshairs-200:before {
     border-bottom: 1px solid #e9ecef;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-300 {
+.crosshairs-300 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-300 {
+    .crosshairs-300 {
       display: none; } }
-  .crosshair-300:after, .crosshair-300:before {
+  .crosshairs-300:after, .crosshairs-300:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-300:after {
+  .crosshairs-300:after {
     border-right: 1px solid #dee2e6;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-300:before {
+  .crosshairs-300:before {
     border-bottom: 1px solid #dee2e6;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-400 {
+.crosshairs-400 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-400 {
+    .crosshairs-400 {
       display: none; } }
-  .crosshair-400:after, .crosshair-400:before {
+  .crosshairs-400:after, .crosshairs-400:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-400:after {
+  .crosshairs-400:after {
     border-right: 1px solid #ced4da;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-400:before {
+  .crosshairs-400:before {
     border-bottom: 1px solid #ced4da;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-500 {
+.crosshairs-500 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-500 {
+    .crosshairs-500 {
       display: none; } }
-  .crosshair-500:after, .crosshair-500:before {
+  .crosshairs-500:after, .crosshairs-500:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-500:after {
+  .crosshairs-500:after {
     border-right: 1px solid #A8A8A8;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-500:before {
+  .crosshairs-500:before {
     border-bottom: 1px solid #A8A8A8;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-600 {
+.crosshairs-600 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-600 {
+    .crosshairs-600 {
       display: none; } }
-  .crosshair-600:after, .crosshair-600:before {
+  .crosshairs-600:after, .crosshairs-600:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-600:after {
+  .crosshairs-600:after {
     border-right: 1px solid #707070;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-600:before {
+  .crosshairs-600:before {
     border-bottom: 1px solid #707070;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-700 {
+.crosshairs-700 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-700 {
+    .crosshairs-700 {
       display: none; } }
-  .crosshair-700:after, .crosshair-700:before {
+  .crosshairs-700:after, .crosshairs-700:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-700:after {
+  .crosshairs-700:after {
     border-right: 1px solid #676767;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-700:before {
+  .crosshairs-700:before {
     border-bottom: 1px solid #676767;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-800 {
+.crosshairs-800 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-800 {
+    .crosshairs-800 {
       display: none; } }
-  .crosshair-800:after, .crosshair-800:before {
+  .crosshairs-800:after, .crosshairs-800:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-800:after {
+  .crosshairs-800:after {
     border-right: 1px solid #222222;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-800:before {
+  .crosshairs-800:before {
     border-bottom: 1px solid #222222;
     height: 50%;
     width: 100%;
     top: 0; }
 
-.crosshair-900 {
+.crosshairs-900 {
   display: block;
   position: relative;
   height: 1.375rem;
   width: 1.375rem; }
   @media (max-width: 768.98px) {
-    .crosshair-900 {
+    .crosshairs-900 {
       display: none; } }
-  .crosshair-900:after, .crosshair-900:before {
+  .crosshairs-900:after, .crosshairs-900:before {
     content: " ";
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
     display: block;
     position: absolute; }
-  .crosshair-900:after {
+  .crosshairs-900:after {
     border-right: 1px solid #010101;
     height: 100%;
     width: 50%;
     left: 0; }
-  .crosshair-900:before {
+  .crosshairs-900:before {
     border-bottom: 1px solid #010101;
     height: 50%;
     width: 100%;

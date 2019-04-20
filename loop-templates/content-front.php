@@ -124,10 +124,10 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php endif; wp_reset_query(); ?>
 
-            <span class="crosshair-600 crosshairs-top-left"></span>
-            <span class="crosshair-600 crosshairs-top-right"></span>
-            <span class="crosshair-600 crosshairs-bottom-left"></span>
-            <span class="crosshair-600 crosshairs-bottom-right"></span>
+            <span class="crosshairs-600 crosshairs-top-left"></span>
+            <span class="crosshairs-600 crosshairs-top-right"></span>
+            <span class="crosshairs-600 crosshairs-bottom-left"></span>
+            <span class="crosshairs-600 crosshairs-bottom-right"></span>
 
         </div>
 
