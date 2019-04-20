@@ -12811,11 +12811,12 @@ section {
         margin-bottom: 33rem; } }
 
 #front-page-posts {
-  background-image: url(../images/path1);
-  background-position: calc(50vw - 10rem) 5rem;
+  background-image: url(../images/path1.png);
+  background-position: calc(50vw - 44.3rem) 3.3125rem;
   background-repeat: no-repeat;
   background-size: auto;
-  padding-bottom: 6rem; }
+  padding-bottom: 6rem;
+  padding-top: 8.375rem; }
   #front-page-posts #posts-title {
     margin-bottom: 4rem; }
 
@@ -13769,9 +13770,6 @@ section {
   right: -0.6875rem; }
 
 /* Paths */
-.section-path1 {
-  padding-top: 6.625rem; }
-
 /* Pipes */
 span.pipe::after {
   content: " | "; }
