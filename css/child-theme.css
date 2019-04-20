@@ -12944,9 +12944,10 @@ section {
     background-color: transparent;
     display: block !important;
     margin: 0;
+    margin-top: 2rem;
     padding: 0;
     position: relative !important;
-    top: 0;
+    top: auto;
     -webkit-transform: inherit !important;
             transform: inherit !important; }
     #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item {
@@ -13789,7 +13790,7 @@ span.pipe::after {
  */
 #wrapper-footer {
   background-image: url(../images/path2.png);
-  background-position: calc(50vw - 44.3rem) 3.3125rem;
+  background-position: calc(50vw - 33.5rem) 6.5rem;
   background-repeat: no-repeat;
   background-size: auto; }
   #wrapper-footer .footer-widgets {
