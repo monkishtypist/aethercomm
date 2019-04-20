@@ -226,6 +226,14 @@ section {
     background-size: cover, cover;
     font-size: #{$font-size-base * 1.875};
     text-align: center;
+    #banner-copy {
+        @extend .row;
+        > div {
+            @extend .col-12;
+            @extend .col-lg-10;
+            @extend .offset-lg-1;
+        }
+    }
 }
 #front-page-slider {}
 #front-page-posts {

@@ -67,7 +67,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <div class="<?php echo esc_attr( $container ); ?>">
                 <div id="banner-copy">
-                    <?php acf_field( 'front_page_settings_banner_copy' ); ?>
+                    <div><?php acf_field( 'front_page_settings_banner_copy' ); ?></div>
                 </div>
             </div>
 
