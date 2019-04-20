@@ -12746,11 +12746,11 @@ section {
   color: #fff; }
 
 .section-banner {
-  margin-top: -1.625rem;
+  margin-top: -1.75rem;
   padding-bottom: 4.125rem;
-  padding-top: 5.75rem;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.625rem, calc(100% - 27.875rem) 1.625rem, calc(100% - 25rem) 0);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.625rem, calc(100% - 27.875rem) 1.625rem, calc(100% - 25rem) 0); }
+  padding-top: 5.875rem;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(100% - 24.8rem) 1.75rem, calc(100% - 22.3rem) 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(100% - 24.8rem) 1.75rem, calc(100% - 22.3rem) 0); }
 
 .container,
 .container-fluid {
@@ -12875,17 +12875,17 @@ section {
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
   #wrapper-navbar .sub-navbar {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.875rem 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 2.875rem 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
     background-color: #707070;
     display: inline-block;
     float: right;
     position: relative; }
     #wrapper-navbar .sub-navbar .sub-navbar-inner {
       background-color: #000;
-      padding-left: 2.875rem;
-      -webkit-clip-path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.875rem calc(100% - 1px));
-      path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.875rem calc(100% - 1px)); }
+      padding-left: 2.5rem;
+      -webkit-clip-path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.5rem calc(100% - 1px));
+      path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.5rem calc(100% - 1px)); }
       @media (min-width: 576px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
           padding-right: calc((100vw - 540px) / 2); } }
