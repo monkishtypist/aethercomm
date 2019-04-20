@@ -12722,10 +12722,6 @@ li.btn {
   background-color: #222222;
   color: #fff;
   padding: 4.125rem 0; }
-  #wrapper-footer .container > .row, #wrapper-footer #front-page-banner .container > #banner-copy, #front-page-banner #wrapper-footer .container > #banner-copy, #wrapper-footer .container > #footer-menu, #wrapper-footer .container > #legal-menu, #wrapper-footer .container > .footer-widgets, #wrapper-footer .container > .footer-siteinfo {
-    margin-bottom: 2.625rem; }
-    #wrapper-footer .container > .row:last-of-type, #wrapper-footer #front-page-banner .container > #banner-copy:last-of-type, #front-page-banner #wrapper-footer .container > #banner-copy:last-of-type, #wrapper-footer .container > #footer-menu:last-of-type, #wrapper-footer .container > #legal-menu:last-of-type, #wrapper-footer .container > .footer-widgets:last-of-type, #wrapper-footer .container > .footer-siteinfo:last-of-type {
-      margin-bottom: 0; }
 
 /**
  * Sections (and Containers)
@@ -13852,13 +13848,15 @@ span.pipe::after {
       background-position: calc(50vw - 29.5rem) 6.5rem; } }
   @media (max-width: 991.98px) {
     #wrapper-footer {
-      background-position: calc(50vw - 39.3rem) 27.5rem; } }
+      background-position: calc(50vw - 39.3rem) 27rem; } }
   @media (max-width: 768.98px) {
     #wrapper-footer {
       background-position: calc(50vw - 33.5rem) 6.5rem; } }
   @media (max-width: 575.98px) {
     #wrapper-footer {
       background-position: calc(50vw - 33.5rem) 6.5rem; } }
+  #wrapper-footer #footer-menu-wrapper {
+    margin-bottom: 2.625rem; }
   #wrapper-footer .footer-widgets {
     -webkit-box-align: center;
         -ms-flex-align: center;
@@ -13866,6 +13864,7 @@ span.pipe::after {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    margin-bottom: 2.625rem;
     position: relative; }
     @media (max-width: 991.98px) {
       #wrapper-footer .footer-widgets .footer-widget {
@@ -13876,6 +13875,9 @@ span.pipe::after {
       margin-bottom: 0; }
     #wrapper-footer .footer-widgets .footer-widget p a {
       text-decoration: underline; }
+    @media (max-width: 991.98px) {
+      #wrapper-footer .footer-widgets .social-icons-widget {
+        margin-left: auto; } }
     #wrapper-footer .footer-widgets .social-icons-widget a {
       color: #fff;
       font-size: 1.5rem;

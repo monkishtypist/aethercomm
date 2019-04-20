@@ -25,22 +25,18 @@ $container = get_theme_mod( 'understrap_container_type' );
          * FOOTER: Footer Menu
          */
         ?>
-        <div class="row">
-            <div class="col">
-                <?php wp_nav_menu(
-					array(
-						'theme_location'  => 'footer',
-						'container_class' => '',
-						'container_id'    => 'footer-menu-wrapper',
-						'menu_class'      => 'nav',
-						'fallback_cb'     => '',
-						'menu_id'         => 'footer-menu',
-						'depth'           => 2,
-						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
-					)
-				); ?>
-            </div>
-        </div>
+        <?php wp_nav_menu(
+            array(
+                'theme_location'  => 'footer',
+                'container_class' => '',
+                'container_id'    => 'footer-menu-wrapper',
+                'menu_class'      => 'nav',
+                'fallback_cb'     => '',
+                'menu_id'         => 'footer-menu',
+                'depth'           => 2,
+                'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
+            )
+        ); ?>
 
         <?php
         /**

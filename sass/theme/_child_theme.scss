@@ -100,14 +100,6 @@ li.btn { // navmenu buttons
     background-color: #{$dark};
     color: #{$white};
     padding: #{$spacer * 4.125} 0;
-    .container {
-        > .row {
-            margin-bottom: #{$spacer * 2.625};
-            &:last-of-type {
-                margin-bottom: 0;
-            }
-        }
-    }
 }
 
 /**
@@ -609,7 +601,7 @@ span.pipe {
         background-position: calc(50vw - 29.5rem) 6.5rem;
     }
     @include media-breakpoint-down('md') {
-        background-position: calc(50vw - 39.3rem) 27.5rem;
+        background-position: calc(50vw - 39.3rem) 27rem;
     }
     @include media-breakpoint-down('sm') {
         background-position: calc(50vw - 33.5rem) 6.5rem;
@@ -617,11 +609,16 @@ span.pipe {
     @include media-breakpoint-down('xs') {
         background-position: calc(50vw - 33.5rem) 6.5rem;
     }
+    #footer-menu-wrapper {
+        margin-bottom: #{$spacer * 2.625};
+    }
     .footer-widgets {
         @extend .row;
         align-items: center;
         justify-content: space-between;
+        margin-bottom: #{$spacer * 2.625};
         position: relative;
+        @include media-breakpoint-down('md') {}
         .footer-widget {
             @extend .col-12;
             @extend .col-lg-auto;
@@ -642,6 +639,9 @@ span.pipe {
         }
         .social-icons-widget {
             @extend .col-auto;
+            @include media-breakpoint-down('md') {
+                margin-left: auto;
+            }
             a {
                 color: #{$white};
                 font-size: #{$font-size-base * 1.5};
