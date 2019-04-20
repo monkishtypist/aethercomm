@@ -228,10 +228,10 @@ section {
     text-align: center;
     #banner-copy {
         @extend .row;
+        justify-content: center;
         > div {
             @extend .col-12;
-            @extend .col-lg-10;
-            @extend .offset-lg-1;
+            @extend .col-lg-11;
         }
     }
 }

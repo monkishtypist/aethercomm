@@ -1071,12 +1071,12 @@ pre {
         -ms-flex: 0 0 75%;
             flex: 0 0 75%;
     max-width: 75%; }
-  .col-lg-10, #front-page-banner #banner-copy > div {
+  .col-lg-10 {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 83.33333%;
             flex: 0 0 83.33333%;
     max-width: 83.33333%; }
-  .col-lg-11 {
+  .col-lg-11, #front-page-banner #banner-copy > div {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 91.66667%;
             flex: 0 0 91.66667%;
@@ -1148,7 +1148,7 @@ pre {
             order: 12; }
   .offset-lg-0 {
     margin-left: 0; }
-  .offset-lg-1, #front-page-banner #banner-copy > div {
+  .offset-lg-1 {
     margin-left: 8.33333%; }
   .offset-lg-2 {
     margin-left: 16.66667%; }
@@ -12818,6 +12818,10 @@ section {
   background-size: cover, cover;
   font-size: 1.875rem;
   text-align: center; }
+  #front-page-banner #banner-copy {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
 
 #front-page-posts {
   background-image: url(../images/path1.png);
