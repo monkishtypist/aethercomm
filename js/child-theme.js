@@ -7055,10 +7055,17 @@
 
     var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
 
-    $(window).scroll(function() {
-        var scroll = $(window).scrollTop();
+    var scrollOffset = 200;
+    var scroll = $(window).scrollTop();
 
-        if (scroll >= 200) {
+    if (scroll < scrollOffset) {
+        wrapperNavbar.addClass("nav-transparency");
+    }
+
+    $(window).scroll(function() {
+        scroll = $(window).scrollTop();
+
+        if (scroll >= scrollOffset) {
             wrapperNavbar.removeClass("nav-transparency");
         } else {
             wrapperNavbar.addClass("nav-transparency");
