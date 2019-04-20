@@ -246,6 +246,30 @@ section {
     #posts-title {
         margin-bottom: 4rem;
     }
+    @include media-breakpoint-down('lg') {
+        background-position: calc(50vw - 40.3rem) 3.3125rem;
+        background-size: auto;
+        padding-bottom: 6rem;
+        padding-top: 8.375rem;
+    }
+    @include media-breakpoint-down('md') {
+        background-position: calc(50vw - 33.3rem) 3.3125rem;
+        background-size: auto;
+        padding-bottom: 6rem;
+        padding-top: 8.375rem;
+    }
+    @include media-breakpoint-down('sm') {
+        background-position: calc(50vw - 26rem) 3.3125rem;
+        background-size: auto;
+        padding-bottom: 6rem;
+        padding-top: 8.375rem;
+    }
+    @include media-breakpoint-down('xs') {
+        background-position: calc(50vw - 20rem) 3.3125rem;
+        background-size: auto;
+        padding-bottom: 6rem;
+        padding-top: 8.375rem;
+    }
 }
 
 /**
@@ -449,7 +473,7 @@ section {
 .card {
     .card-deck & {
         @include media-breakpoint-down('sm') {
-            flex-basis: 100%;
+            flex-basis: calc(100% - #{$card-group-margin * 2});
         }
     }
 }

@@ -12832,6 +12832,30 @@ section {
   padding-top: 8.375rem; }
   #front-page-posts #posts-title {
     margin-bottom: 4rem; }
+  @media (max-width: 1199.98px) {
+    #front-page-posts {
+      background-position: calc(50vw - 40.3rem) 3.3125rem;
+      background-size: auto;
+      padding-bottom: 6rem;
+      padding-top: 8.375rem; } }
+  @media (max-width: 991.98px) {
+    #front-page-posts {
+      background-position: calc(50vw - 33.3rem) 3.3125rem;
+      background-size: auto;
+      padding-bottom: 6rem;
+      padding-top: 8.375rem; } }
+  @media (max-width: 768.98px) {
+    #front-page-posts {
+      background-position: calc(50vw - 26rem) 3.3125rem;
+      background-size: auto;
+      padding-bottom: 6rem;
+      padding-top: 8.375rem; } }
+  @media (max-width: 575.98px) {
+    #front-page-posts {
+      background-position: calc(50vw - 20rem) 3.3125rem;
+      background-size: auto;
+      padding-bottom: 6rem;
+      padding-top: 8.375rem; } }
 
 /**
  * Navs
@@ -12994,8 +13018,8 @@ section {
  */
 @media (max-width: 768.98px) {
   .card-deck .card {
-    -ms-flex-preferred-size: 100%;
-        flex-basis: 100%; } }
+    -ms-flex-preferred-size: calc(100% - 20px);
+        flex-basis: calc(100% - 20px); } }
 
 /**
  * Custom Elements
