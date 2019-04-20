@@ -39,6 +39,25 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="who-page-tabs" class="section-unpadded">
 
         <div class="container-fluid">
+
+            <ul class="nav nav-tabs" id="milestones-tabs" role="tablist">
+                <?php echo sprintf( '<li class="nav-item"><a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">%1$s</a></li>',
+                    get_acf_field( 'who-we-are_page_settings_tabs_tab1_title', true )
+                ); ?>
+                <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false">%1$s</a></li>',
+                    get_acf_field( 'who-we-are_page_settings_tabs_tab2_title', true )
+                ); ?>
+                <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false">%1$s</a></li>',
+                    get_acf_field( 'who-we-are_page_settings_tabs_tab3_title', true )
+                ); ?>
+            </ul>
+
+        </div>
+
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">...tab1</div>
+            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...tab2</div>
+            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">...tab3</div>
         </div>
 
     </section>
