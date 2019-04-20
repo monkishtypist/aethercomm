@@ -474,6 +474,10 @@ section {
     .card-deck & {
         @include media-breakpoint-down('sm') {
             flex-basis: calc(100% - #{$card-group-margin * 2});
+            margin-bottom: #{$spacer * 3};
+        }
+        .card-img-top {
+            margin-bottom: 2rem;
         }
     }
 }
