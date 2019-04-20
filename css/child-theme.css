@@ -12889,11 +12889,15 @@ section {
       background-color: transparent;
       border: 1px solid transparent;
       color: #fff;
+      display: none;
       font-size: 1.25rem;
       line-height: 1;
       margin-left: auto;
       margin-top: 4px;
       padding: 0.25rem 0.75rem; }
+      @media (max-width: 768.98px) {
+        #wrapper-navbar > nav .navbar-icon-reps {
+          display: inline-block; } }
     #wrapper-navbar > nav .navbar-toggler {
       margin-right: -0.75rem; }
       #wrapper-navbar > nav .navbar-toggler .navbar-toggler-icon {
