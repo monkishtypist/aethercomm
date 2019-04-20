@@ -12733,7 +12733,9 @@ section {
   padding: 3.75rem 0;
   position: relative; }
   section.section-unpadded {
-    padding: 0 0; }
+    padding: 0; }
+    section.section-unpadded .container-fluid {
+      padding: 0; }
 
 .section-black {
   background-color: #000;

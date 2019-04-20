@@ -114,7 +114,10 @@ section {
     padding: #{$spacer * 3.75} 0;
     position: relative;
     &.section-unpadded {
-        padding: 0 0;
+        padding: 0;
+        .container-fluid {
+            padding: 0;
+        }
     }
 }
 .section-black {

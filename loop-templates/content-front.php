@@ -50,29 +50,41 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </section>
 
-    <section id="front-page-banner" class="section-banner section-blue" style="background-image: url(<?php echo wp_get_attachment_url( get_acf_field( 'front_page_settings_banner_background' ) ); ?>);">
+    <?php
+    if ( get_acf_field( 'front_page_settings_banner_copy' ) ) :
+        $banner_image_array  = get_acf_field( 'front_page_settings_banner_background' );
+        $banner_image_id     = (int) $banner_image_array[0];
+        $banner_image_styles = null;
+        if ( $banner_image_id ) {
+            $banner_image_styles = sprintf( 'style="background-image: url(%1$s);"',
+                wp_get_attachment_url( $banner_image_id )
+            );
+        }
+        ?>
 
-        <?php var_dump( get_acf_field( 'front_page_settings_banner_background' ) ); ?>
+        <section id="front-page-banner" class="section-banner section-blue" <?php echo $banner_image_styles; ?> >
 
-        <div class="<?php echo esc_attr( $container ); ?>">
-            <div id="banner-copy">
-                <?php acf_field( 'front_page_settings_banner_copy' ); ?>
+            <div class="<?php echo esc_attr( $container ); ?>">
+                <div id="banner-copy">
+                    <?php acf_field( 'front_page_settings_banner_copy' ); ?>
+                </div>
             </div>
-        </div>
 
-    </section>
+        </section>
 
-    <section id="front-page-slider" class="section-unpadded">
+    <?php endif; ?>
 
-        <div class="container-fluid">
-            <?php
-            if ( class_exists( 'RevSlider' ) ) {
-                putRevSlider("home");
-            }
-            ?>
-        </div>
+    <?php if ( class_exists( 'RevSlider' ) ) : ?>
 
-    </section>
+        <section id="front-page-slider" class="section-unpadded">
+
+            <div class="container-fluid">
+                <?php putRevSlider("home"); ?>
+            </div>
+
+        </section>
+
+    <?php endif; ?>
 
     <section id="front-page-posts" class="section-black section-path1">
 
