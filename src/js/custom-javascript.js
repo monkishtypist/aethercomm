@@ -38,7 +38,7 @@
 
         if (searchform.is(".show") ){
             if ($.trim(searchinput.val()) != "" ){
-                searchform.submit();
+                searchform[0].submit();
             } else {
                 searchform.removeClass("show");
             }
