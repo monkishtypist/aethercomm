@@ -13834,6 +13834,20 @@ span.pipe::after {
       content: "";
       display: none; } }
 
+/* Search Form */
+#searchform #s {
+  background-color: #000;
+  max-height: 2rem;
+  padding: 0;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+
+#searchform #searchsubmit {
+  background-color: transparent;
+  border: 0;
+  color: #fff;
+  padding: 0; }
+
 /**
  * Footer
  *

@@ -588,6 +588,22 @@ span.pipe {
     }
 }
 
+/* Search Form */
+#searchform { // <form>
+    #s { // <input>
+        background-color: #{$black};
+        max-height: 2rem;
+        padding: 0;
+        transition: #{$transition-base};
+    }
+    #searchsubmit { // <button>
+        background-color: transparent;
+        border: 0;
+        color: #{$white};
+        padding: 0;
+    }
+}
+
 /**
  * Footer
  *
