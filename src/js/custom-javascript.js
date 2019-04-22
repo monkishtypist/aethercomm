@@ -32,7 +32,7 @@
     var searchinput = $("#s");
     var searchsubmit = $("#searchsubmit");
 
-    searchsubmit.click(function(){
+    searchform.submit(function(e){
         e.preventDefault();
 
         if (searchform.is(".show") ){
