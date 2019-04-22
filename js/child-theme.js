@@ -7094,8 +7094,9 @@
             searchform.addClass("show");
         }
     });
-    $(document).on("click", function(e) {
-        if ($(e.target).is("#searchform") === false) {
+    $(document).on("click", function(event) {
+        var target = $( event.target );
+        if (target.parents().addBack().is("#searchform") === false) {
             searchform.removeClass("show");
         }
     });
