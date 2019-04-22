@@ -9,7 +9,7 @@
 
     var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
 
-    var scrollOffset = 200;
+    var scrollOffset = 100;
     var scroll = $(window).scrollTop();
 
     if (scroll < scrollOffset) {
