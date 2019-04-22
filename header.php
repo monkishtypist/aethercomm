@@ -82,7 +82,8 @@ $container = get_theme_mod( 'understrap_container_type' );
             <div class="sub-navbar-inner">
                 <ul class="nav">
                     <li class="nav-item"><a href="<?php echo get_permalink( 27 ); ?>" class="nav-link"><i class="far fa-comment-alt"></i><?php echo sprintf( ' &nbsp; %1$s', __( 'Rep Listings', 'aethercomm' ) ); ?></a></li>
-                    <li class="nav-item"><a href="?s=" class="nav-link"><i class="fas fa-search"></i><?php echo sprintf( '<span class="sr-only">%1$s</span>', __( 'Search', 'aethercomm' ) ); ?></a></li>
+					<li class="nav-item"><a href="?s=" class="nav-link"><i class="fas fa-search"></i><?php echo sprintf( '<span class="sr-only">%1$s</span>', __( 'Search', 'aethercomm' ) ); ?></a>
+						<?php get_search_form(); ?></li>
                 </ul>
             </div>
         </div>
