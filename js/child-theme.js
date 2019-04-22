@@ -7082,6 +7082,7 @@
 
     searchform.submit(function(e){
         e.preventDefault();
+        e.stopPropagation();
 
         if (searchform.is(".show") ){
             if ($.trim(searchinput.val()) != "" ){
@@ -7091,7 +7092,6 @@
             }
         } else {
             searchform.addClass("show");
-            e.stopPropagation();
         }
     });
     $(document).on("click", function(e) {
