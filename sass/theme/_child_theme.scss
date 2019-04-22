@@ -370,8 +370,8 @@ section {
                 background-color: transparent;
                 border: 0;
                 color: #{$white};
-                padding: #{$input-btn-padding-y} #{$input-btn-padding-x};
-                margin-right: -#{$input-btn-padding-x};
+                padding: 0 #{$spacer * .5};
+                margin-right: -#{$spacer * .5};
             }
             &.show {
                 #s {
