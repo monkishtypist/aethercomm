@@ -143,23 +143,26 @@ gulp.task( 'scripts', function() {
 
         paths.dev + '/js/skip-link-focus-fix.js',
 
+        // FontAwesome
+        paths.dev + '/js/font-awesome/fontawesome.js',
+
         // Adding currently empty javascript file to add on for your own themes´ customizations
         // Please add any customizations to this .js file only!
         paths.dev + '/js/custom-javascript.js'
     ];
-  gulp.src( scripts )
-    .pipe( concat( 'child-theme.min.js' ) )
-    .pipe( uglify() )
-    .pipe( gulp.dest( paths.js ) );
+    gulp.src( scripts )
+        .pipe( concat( 'child-theme.min.js' ) )
+        .pipe( uglify() )
+        .pipe( gulp.dest( paths.js ) );
 
-  gulp.src( scripts )
-    .pipe( concat( 'child-theme.js' ) )
-    .pipe( gulp.dest( paths.js ) );
+    gulp.src( scripts )
+        .pipe( concat( 'child-theme.js' ) )
+        .pipe( gulp.dest( paths.js ) );
 });
 
 // Deleting any file inside the /src folder
 gulp.task('clean-source', function () {
-  return del(['src/**/*',]);
+    return del(['src/**/*',]);
 });
 
 // Run:
@@ -181,12 +184,12 @@ gulp.task( 'copy-assets', function() {
 ////////////////// End Bootstrap 4 Assets /////////////////////////
 
 // Copy all Font Awesome Fonts
-    gulp.src( paths.node + '@fortawesome/fontawesome-free/webfonts/**/*.{ttf,woff,woff2,eot,svg}' )
-        .pipe( gulp.dest( './webfonts' ) );
+    // gulp.src( paths.node + '@fortawesome/fontawesome-free/webfonts/**/*.{ttf,woff,woff2,eot,svg}' )
+    //     .pipe( gulp.dest( './webfonts' ) );
 
 // Copy all Font Awesome SCSS files
-    gulp.src( paths.node + '@fortawesome/fontawesome-free/scss/*.scss' )
-        .pipe( gulp.dest( paths.dev + '/sass/fontawesome' ) );
+    // gulp.src( paths.node + '@fortawesome/fontawesome-free/scss/*.scss' )
+    //     .pipe( gulp.dest( paths.dev + '/sass/fontawesome' ) );
 
 // // Copy all Font Awesome Fonts
 //     gulp.src( paths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eot,svg}' )
