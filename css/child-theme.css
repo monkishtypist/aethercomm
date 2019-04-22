@@ -13844,13 +13844,17 @@ span.pipe::after {
   max-height: 2rem;
   padding: 0;
   -webkit-transition: all 0.2s ease-in-out;
-  transition: all 0.2s ease-in-out; }
+  transition: all 0.2s ease-in-out;
+  width: 0; }
 
 #searchform #searchsubmit {
   background-color: transparent;
   border: 0;
   color: #fff;
   padding: 0; }
+
+#searchform.show #s {
+  width: 200px; }
 
 /**
  * Footer

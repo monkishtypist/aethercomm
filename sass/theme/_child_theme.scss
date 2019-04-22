@@ -598,12 +598,18 @@ span.pipe {
         max-height: 2rem;
         padding: 0;
         transition: #{$transition-base};
+        width: 0;
     }
     #searchsubmit { // <button>
         background-color: transparent;
         border: 0;
         color: #{$white};
         padding: 0;
+    }
+    &.show {
+        #s {
+            width: 200px;
+        }
     }
 }
 
