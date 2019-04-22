@@ -357,6 +357,29 @@ section {
         @include media-breakpoint-down('sm') {
             display: none;
         }
+        #searchform { // <form>
+            #s { // <input>
+                background-color: transparent;
+                border-color: transparent;
+                max-height: 2rem;
+                padding: 0;
+                transition: #{$transition-base};
+                width: 0;
+            }
+            #searchsubmit { // <button>
+                background-color: transparent;
+                border: 0;
+                color: #{$white};
+                padding-right: 0;
+            }
+            &.show {
+                #s {
+                    border-color: #{$gray-600};
+                    padding: #{$input-btn-padding-y} #{$input-btn-padding-x};
+                    width: 200px;
+                }
+            }
+        }
     }
 }
 #main-menu { // <ul>
@@ -592,26 +615,7 @@ span.pipe {
 }
 
 /* Search Form */
-#searchform { // <form>
-    #s { // <input>
-        background-color: #{$black};
-        max-height: 2rem;
-        padding: 0;
-        transition: #{$transition-base};
-        width: 0;
-    }
-    #searchsubmit { // <button>
-        background-color: transparent;
-        border: 0;
-        color: #{$white};
-        padding: 0;
-    }
-    &.show {
-        #s {
-            width: 200px;
-        }
-    }
-}
+
 
 /**
  * Footer
