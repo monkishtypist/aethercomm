@@ -43,6 +43,12 @@
             }
         } else {
             searchform.addClass("show");
+            e.stopPropagation();
+        }
+    });
+    $(document).on("click", function(e) {
+        if ($(e.target).is("#searchform") === false) {
+            searchform.removeClass("show");
         }
     });
 
