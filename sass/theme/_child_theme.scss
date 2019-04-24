@@ -274,6 +274,9 @@ section {
 
 #who-we-are_page-wrapper {
     #who-we-are_header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         header {
             -webkit-box-flex: 0;
             -ms-flex: 0 0 50%;
@@ -281,6 +284,11 @@ section {
             max-width: 50%;
             padding: 0;
         }
+    }
+    #who-we-are_mission {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 }
 
