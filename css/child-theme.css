@@ -14734,10 +14734,26 @@ section {
     padding: 0; }
 
 #who-we-are_page-wrapper #who-we-are_mission {
-  background-position: calc(50vw) 0, center;
+  background-position: calc(50vw - 44.5rem) 3rem, center;
   background-repeat: no-repeat;
   background-size: auto, cover;
   padding-top: 6.375rem; }
+  @media (max-width: 1199.98px) {
+    #who-we-are_page-wrapper #who-we-are_mission {
+      background-position: calc(50vw - 44.5rem) 3rem, center;
+      padding-top: 6.375rem; } }
+  @media (max-width: 991.98px) {
+    #who-we-are_page-wrapper #who-we-are_mission {
+      background-position: calc(50vw - 44.5rem) 3rem, center;
+      padding-top: 6.375rem; } }
+  @media (max-width: 768.98px) {
+    #who-we-are_page-wrapper #who-we-are_mission {
+      background-position: calc(50vw - 44.5rem) 3rem, center;
+      padding-top: 6.375rem; } }
+  @media (max-width: 575.98px) {
+    #who-we-are_page-wrapper #who-we-are_mission {
+      background-position: calc(50vw - 44.5rem) 3rem, center;
+      padding-top: 6.375rem; } }
 
 /**
  * Navs

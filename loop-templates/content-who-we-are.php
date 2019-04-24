@@ -13,7 +13,7 @@ global $post;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$section_header_styles = null;
+$section_header_styles = '/wp-content/uploads/2019/04/who-we-are-hero.png';
 if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
     $section_header_background_img_id = get_acf_field( 'who-we-are_page_settings_header_background' );
     if ( is_array( $section_header_background_img_id ) && isset( $section_header_background_img_id[0] ) ) {
@@ -26,7 +26,7 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
     }
 }
 
-$section_mission_styles = null;
+$section_mission_styles = '/wp-content/uploads/2019/04/who-we-are_mission-statement.png';
 if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
     $section_mission_background_img_id = get_acf_field( 'who-we-are_page_settings_mission_background' );
     if ( is_array( $section_mission_background_img_id ) && isset( $section_mission_background_img_id[0] ) ) {
@@ -114,13 +114,36 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
-            <div class="row">
-                <div class="col-12">
-                    <?php echo sprintf( '<h2 class="">%1$s</h2>',
-                        __( 'Team', 'aethercomm' )
-                    ); ?>
-                </div>
+            <div id="team-members-title">
+                <?php echo sprintf( '<h2 class="">%1$s</h2>',
+                    __( 'Team', 'aethercomm' )
+                ); ?>
             </div>
+
+            <?php
+            $args = array(
+                'post_type' => 'team-members'
+            );
+            $query = new WP_Query( $args );
+            ?>
+
+            <?php if ( $query->have_posts() ) : ?>
+
+                <?php ob_start(); ?>
+
+                <div class="card-deck">
+
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                        <?php get_template_part( 'loop-templates/content', 'card' ); ?>
+
+                    <?php endwhile; ?>
+
+                </div>
+
+                <?php echo ob_get_clean(); ?>
+
+            <?php endif; wp_reset_query(); ?>
 
         </div>
 

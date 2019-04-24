@@ -286,10 +286,26 @@ section {
         }
     }
     #who-we-are_mission {
-        background-position: calc(50vw) 0, center;
+        background-position: calc(50vw - 44.5rem) 3rem, center;
         background-repeat: no-repeat;
         background-size: auto, cover;
         padding-top: #{$spacer * 6.375};
+        @include media-breakpoint-down('lg') {
+            background-position: calc(50vw - 44.5rem) 3rem, center;
+            padding-top: #{$spacer * 6.375};
+        }
+        @include media-breakpoint-down('md') {
+            background-position: calc(50vw - 44.5rem) 3rem, center;
+            padding-top: #{$spacer * 6.375};
+        }
+        @include media-breakpoint-down('sm') {
+            background-position: calc(50vw - 44.5rem) 3rem, center;
+            padding-top: #{$spacer * 6.375};
+        }
+        @include media-breakpoint-down('xs') {
+            background-position: calc(50vw - 44.5rem) 3rem, center;
+            padding-top: #{$spacer * 6.375};
+        }
     }
 }
 
