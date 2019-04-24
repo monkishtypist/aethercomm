@@ -9,6 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+global $post;
+
 $container = get_theme_mod( 'understrap_container_type' );
 
 $section_header_styles = null;
@@ -28,7 +30,7 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="who-page-intro" class="section-blue" <?php echo $section_header_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_header" class="section-blue" <?php echo $section_header_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -49,7 +51,7 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
 
     </section>
 
-    <section id="who-page-tabs" class="section-unpadded">
+    <section id="<?php echo $post->post_name; ?>_tabs" class="section-unpadded">
 
         <div class="container-fluid">
 
@@ -77,7 +79,7 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
 
     </section>
 
-    <section id="who-page-mission" class="section-black section-path1">
+    <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 

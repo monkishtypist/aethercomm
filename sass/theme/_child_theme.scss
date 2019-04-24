@@ -96,10 +96,8 @@ li.btn { // navmenu buttons
 #frontpage-wrapper {
     padding: 0;
 }
-#page-wrapper {
-    #main > article > section:first-of-type {
-        padding-top: #{($spacer * 3.75) + ($spacer * 6.7)};
-    }
+.wrapper > #main > article > section:first-of-type {
+    padding-top: #{($spacer * 3.75) + ($spacer * 6.7)};
 }
 #wrapper-footer {
     background-color: #{$dark};
@@ -271,6 +269,18 @@ section {
         background-size: auto;
         padding-bottom: 3rem;
         padding-top: 8.375rem;
+    }
+}
+
+#who-we-are_page-wrapper {
+    #who-we-are_header {
+        header {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0;
+        }
     }
 }
 
