@@ -11,18 +11,24 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$section_styles = array();
-
+$section_header_styles = null;
 if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
-    $section_styles['header']['background'] = get_acf_field( 'who-we-are_page_settings_header_background' );
-    ?><pre><?php print_r($section_styles); ?></pre><?php
+    $section_header_background_img_id = get_acf_field( 'who-we-are_page_settings_header_background' );
+    if ( is_array( $section_header_background_img_id ) && isset( $section_header_background_img_id[0] ) ) {
+        $section_header_background_image_url = wp_get_attachment_url( $section_header_background_img_id[0] );
+        $section_header_styles = sprintf( 'styles="%1$s"',
+            sprintf( 'background-image:url(%1$s);',
+                $section_header_background_image_url
+            )
+        );
+    }
 }
 
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="who-page-intro" class="section-blue">
+    <section id="who-page-intro" class="section-blue" <?php echo $section_header_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
