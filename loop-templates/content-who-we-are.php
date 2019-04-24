@@ -15,7 +15,7 @@ $section_styles = array();
 
 if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
     $section_styles['header']['background'] = get_acf_field( 'who-we-are_page_settings_header_background' );
-    var_dump($section_styles);
+    ?><pre><?php print_r($section_styles); ?></pre><?php
 }
 
 ?>
