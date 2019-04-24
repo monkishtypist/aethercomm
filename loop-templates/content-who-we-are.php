@@ -92,7 +92,7 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1" <?php echo $section_header_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1" <?php echo $section_mission_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
