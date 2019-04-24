@@ -14581,6 +14581,9 @@ li.btn {
 #frontpage-wrapper {
   padding: 0; }
 
+#page-wrapper #main > article > section:first-of-type {
+  padding-top: 10.45rem; }
+
 #wrapper-footer {
   background-color: #222222;
   color: #fff;

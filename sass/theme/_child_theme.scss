@@ -96,6 +96,11 @@ li.btn { // navmenu buttons
 #frontpage-wrapper {
     padding: 0;
 }
+#page-wrapper {
+    #main > article > section:first-of-type {
+        padding-top: #{($spacer * 3.75) + ($spacer * 6.7)};
+    }
+}
 #wrapper-footer {
     background-color: #{$dark};
     color: #{$white};
