@@ -307,6 +307,12 @@ section {
             padding-top: #{$spacer * 6.375};
         }
     }
+    #who-we-are_team {
+        #team-members-title {}
+        #team-members-cards {
+            .card {}
+        }
+    }
 }
 
 /**

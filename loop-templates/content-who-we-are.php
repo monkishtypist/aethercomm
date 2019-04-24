@@ -132,7 +132,7 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
                 <?php ob_start(); ?>
 
-                <div class="card-deck team-members">
+                <div id="team-members-cards" class="card-deck">
 
                     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
