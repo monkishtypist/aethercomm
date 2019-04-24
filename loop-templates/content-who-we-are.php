@@ -26,6 +26,19 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
     }
 }
 
+$section_mission_styles = null;
+if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
+    $section_mission_background_img_id = get_acf_field( 'who-we-are_page_settings_header_background' );
+    if ( is_array( $section_mission_background_img_id ) && isset( $section_mission_background_img_id[0] ) ) {
+        $section_mission_background_image_url = wp_get_attachment_url( $section_mission_background_img_id[0] );
+        $section_mission_styles = sprintf( 'style="%1$s"',
+            sprintf( 'background-image:url(%1$s);',
+                $section_mission_background_image_url
+            )
+        );
+    }
+}
+
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -79,7 +92,7 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1">
+    <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1" <?php echo $section_header_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -89,6 +102,22 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
                         get_acf_field( 'who-we-are_page_settings_mission_title', true )
                     ); ?>
                     <?php echo apply_filters( 'the_content', get_acf_field( 'who-we-are_page_settings_mission_copy', true ) ); ?>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="<?php echo $post->post_name; ?>_team" class="section-white">
+
+        <div class="<?php echo esc_attr( $container ); ?>">
+
+            <div class="row">
+                <div class="col-12">
+                    <?php echo sprintf( '<h2 class="">%1$s</h2>',
+                        __( 'Team', 'aethercomm' )
+                    ); ?>
                 </div>
             </div>
 
