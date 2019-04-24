@@ -17,7 +17,7 @@ global $post;
 
 ?>
 
-<div class="wrapper" id="page-wrapper">
+<div class="wrapper" id="<?php echo $post->post_name; ?>_page-wrapper">
 
     <main class="site-main" id="main">
 

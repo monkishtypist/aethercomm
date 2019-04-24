@@ -16,7 +16,7 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
     $section_header_background_img_id = get_acf_field( 'who-we-are_page_settings_header_background' );
     if ( is_array( $section_header_background_img_id ) && isset( $section_header_background_img_id[0] ) ) {
         $section_header_background_image_url = wp_get_attachment_url( $section_header_background_img_id[0] );
-        $section_header_styles = sprintf( 'styles="%1$s"',
+        $section_header_styles = sprintf( 'style="%1$s"',
             sprintf( 'background-image:url(%1$s);',
                 $section_header_background_image_url
             )
