@@ -14734,9 +14734,10 @@ section {
     padding: 0; }
 
 #who-we-are_page-wrapper #who-we-are_mission {
-  background-position: center;
+  background-position: calc(50vw) 0, center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: auto, cover;
+  padding-top: 6.375rem; }
 
 /**
  * Navs

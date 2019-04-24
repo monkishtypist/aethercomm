@@ -286,9 +286,10 @@ section {
         }
     }
     #who-we-are_mission {
-        background-position: center;
+        background-position: calc(50vw) 0, center;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto, cover;
+        padding-top: #{$spacer * 6.375};
     }
 }
 
