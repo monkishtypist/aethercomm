@@ -11,11 +11,18 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 $container = get_theme_mod( 'understrap_container_type' );
 
+$section_styles = array();
+
+if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
+    $section_styles['header']['background'] = get_acf_field( 'who-we-are_page_settings_header_background' );
+    var_dump($section_styles);
+}
+
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="who-page-intro" class="section-black">
+    <section id="who-page-intro" class="section-blue">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
