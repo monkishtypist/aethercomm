@@ -32,7 +32,8 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
     if ( is_array( $section_mission_background_img_id ) && isset( $section_mission_background_img_id[0] ) ) {
         $section_mission_background_image_url = wp_get_attachment_url( $section_mission_background_img_id[0] );
         $section_mission_styles = sprintf( 'style="%1$s"',
-            sprintf( 'background-image:url(%1$s);',
+            sprintf( 'background-image:url(%1$s),url(%2$s);',
+                get_stylesheet_directory_uri() . '/images/path1.png',
                 $section_mission_background_image_url
             )
         );
