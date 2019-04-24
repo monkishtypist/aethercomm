@@ -27,8 +27,8 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
 }
 
 $section_mission_styles = null;
-if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
-    $section_mission_background_img_id = get_acf_field( 'who-we-are_page_settings_header_background' );
+if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
+    $section_mission_background_img_id = get_acf_field( 'who-we-are_page_settings_mission_background' );
     if ( is_array( $section_mission_background_img_id ) && isset( $section_mission_background_img_id[0] ) ) {
         $section_mission_background_image_url = wp_get_attachment_url( $section_mission_background_img_id[0] );
         $section_mission_styles = sprintf( 'style="%1$s"',
