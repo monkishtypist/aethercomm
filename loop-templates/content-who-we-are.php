@@ -146,6 +146,9 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
             <?php endif; wp_reset_query(); ?>
 
+            <span class="crosshairs-blue crosshairs-bottom-left"></span>
+            <span class="crosshairs-blue crosshairs-bottom-right"></span>
+
         </div>
 
     </section>
