@@ -588,6 +588,9 @@ section {
             border: #{$border-width} solid #{$gray-600};
             margin-bottom: 2rem;
         }
+        a {
+            @extend .stretched-link;
+        }
     }
 }
 

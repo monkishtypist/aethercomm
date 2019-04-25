@@ -6270,7 +6270,7 @@ button.bg-dark:focus {
 .vh-100 {
   height: 100vh !important; }
 
-.stretched-link::after {
+.stretched-link::after, .card-deck .card a::after {
   position: absolute;
   top: 0;
   right: 0;
