@@ -14733,23 +14733,32 @@ section {
     max-width: 50%;
     padding: 0; }
 
-#who-we-are_page-wrapper #who-we-are_tabs .nav-tabs > .nav-item > .nav-link {
-  background-color: #222222;
-  color: #fff;
-  font-size: 1.25rem;
-  font-weight: 700;
-  letter-spacing: .025em;
-  padding-bottom: 1rem;
-  padding-top: 1rem;
-  -webkit-transform: skew(-45deg);
-          transform: skew(-45deg); }
-  #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs > .nav-item > .nav-link.active {
-    border: 0;
-    background-color: #fff;
-    color: #222222; }
-  #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs > .nav-item > .nav-link span {
-    -webkit-transform: skew(45deg);
-            transform: skew(45deg); }
+#who-we-are_page-wrapper #who-we-are_tabs {
+  margin-top: -4.25rem; }
+  #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs {
+    margin-left: 2.125rem;
+    margin-right: -4.25rem; }
+    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link {
+      padding-right: nav-tabs-height; }
+    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
+      background-color: #222222;
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 700;
+      height: 4.25rem;
+      letter-spacing: .025em;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      -webkit-transform: skew(-45deg);
+              transform: skew(-45deg); }
+      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
+        background-color: #fff;
+        border: 0;
+        color: #222222; }
+      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
+        display: block;
+        -webkit-transform: skew(45deg);
+                transform: skew(45deg); }
 
 #who-we-are_page-wrapper #who-we-are_mission {
   background-position: calc(50vw - 44.5rem) 3rem, center;
