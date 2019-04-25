@@ -14733,6 +14733,13 @@ section {
     max-width: 50%;
     padding: 0; }
 
+#who-we-are_page-wrapper #who-we-are_tabs .nav-tabs > .nav-item > .nav-link {
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: .025em; }
+
 #who-we-are_page-wrapper #who-we-are_mission {
   background-position: calc(50vw - 44.5rem) 3rem, center;
   background-repeat: no-repeat;

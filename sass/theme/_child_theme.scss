@@ -285,6 +285,19 @@ section {
             padding: 0;
         }
     }
+    #who-we-are_tabs {
+        .nav-tabs { // <ul>
+            > .nav-item { // <li>
+                > .nav-link { // <a>
+                    background-color: #{$dark};
+                    color: #{$white};
+                    font-size: #{$font-size-lg};
+                    font-weight: #{$font-weight-bold};
+                    letter-spacing: .025em;
+                }
+            }
+        }
+    }
     #who-we-are_mission {
         background-position: calc(50vw - 44.5rem) 3rem, center;
         background-repeat: no-repeat;
