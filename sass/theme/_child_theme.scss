@@ -315,6 +315,7 @@ section {
                 -ms-flex: 0 0 25%;
                 flex: 0 0 25%;
                 max-width: 25%;
+                max-width: calc(25% - #{$card-group-margin * 2});
             }
         }
     }
