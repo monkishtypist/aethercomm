@@ -296,7 +296,7 @@ section {
             .nav-item { // <li>
                 &:last-of-type {
                     .nav-link { // <a>
-                        padding-right: #{nav-tabs-height};
+                        padding-right: #{$nav-tabs-height};
                     }
                 }
                 .nav-link { // <a>
