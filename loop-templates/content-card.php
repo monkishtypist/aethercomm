@@ -15,7 +15,11 @@ global $post;
 
 <div class="card">
 
-    <?php the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) ); ?>
+    <?php if ( has_post_thumbnail() ) {
+        the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) );
+    } else { ?>
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/team_default.png" alt="<?php the_title(); ?>" />
+    <?php } ?>
 
     <div class="card-body">
         <div class="card-meta"></div>
