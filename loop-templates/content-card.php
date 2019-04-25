@@ -13,7 +13,7 @@ global $post;
 
 ?>
 
-<div class="card">
+<div class="card" data-post-type="<?php echo $post->type; ?>">
 
     <?php if ( has_post_thumbnail() ) {
         the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) );

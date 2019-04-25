@@ -316,6 +316,17 @@ section {
                 flex: 0 0 25%;
                 max-width: 25%;
                 max-width: calc(25% - #{$card-group-margin * 2});
+                .card-img-top {
+                    margin-bottom: #{$spacer * 1.4375};
+                }
+                .card-body {
+                    .card-title {
+                        font-size: #{$font-size-base};
+                    }
+                    .card-text {
+                        font-size: #{$font-size-sm};
+                    }
+                }
             }
         }
     }
