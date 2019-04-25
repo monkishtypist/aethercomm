@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 global $post;
 
 $card_text = null;
-switch ($post->post_type) {
+switch ( $post->post_type ) {
     case 'team-member':
         $card_text = apply_filters( 'the_content', get_acf_field( 'team_member_position', true ) );
         break;
@@ -34,7 +34,7 @@ switch ($post->post_type) {
     <div class="card-body">
         <div class="card-meta"></div>
         <?php the_title( '<h3 class="card-title">', '</h3>' ); ?>
-        <div class="card-text"><?php ; ?></div>
+        <div class="card-text"><?php echo $card_text; ?></div>
     </div>
 
 </div>
