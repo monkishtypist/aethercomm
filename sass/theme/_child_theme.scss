@@ -322,6 +322,13 @@ section {
                 }
             }
         }
+        #milestones-tabs-content {
+            position: relative;
+            .tab-pane {
+                position: absolute;
+                top: 0;
+            }
+        }
     }
     #who-we-are_mission {
         background-position: calc(50vw - 44.5rem) 3rem, center;
