@@ -83,7 +83,7 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
         </div>
 
-        <div class="tab-content" id="myTabContent">
+        <div class="<?php echo esc_attr( $container ); ?>" id="milestones-tabs-content">
             <div class="<?php echo esc_attr( $container ); ?>">
                 <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">...tab1</div>
                 <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...tab2</div>

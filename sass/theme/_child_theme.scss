@@ -288,8 +288,8 @@ section {
         }
     }
     #who-we-are_tabs {
-        // CSS
         margin-top: -#{$nav-tabs-height};
+        overflow-x: hidden;
         .nav-tabs { // <ul>
             margin-left: #{$nav-tabs-height * .5};
             margin-right: -#{$nav-tabs-height};
