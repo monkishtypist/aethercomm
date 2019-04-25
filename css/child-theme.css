@@ -14742,7 +14742,9 @@ section {
   padding-bottom: 1rem;
   padding-top: 1rem; }
   #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs > .nav-item > .nav-link.active {
-    border: 0; }
+    border: 0;
+    background-color: #fff;
+    color: #222222; }
 
 #who-we-are_page-wrapper #who-we-are_mission {
   background-position: calc(50vw - 44.5rem) 3rem, center;

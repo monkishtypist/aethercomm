@@ -298,6 +298,8 @@ section {
                     padding-top: #{$nav-link-padding-y * 2};
                     &.active {
                         border: 0;
+                        background-color: #{$white};
+                        color: #{$dark};
                     }
                 }
             }
