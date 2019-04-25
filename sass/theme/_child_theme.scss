@@ -323,10 +323,11 @@ section {
             }
         }
         #milestones-tabs-content {
-            position: relative;
             .tab-pane {
-                position: absolute;
-                top: 0;
+                &:not(.show) {
+                    height: 0;
+                    overflow: hidden;
+                }
             }
         }
     }
