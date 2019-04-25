@@ -317,6 +317,7 @@ section {
                 max-width: 25%;
                 max-width: calc(25% - #{$card-group-margin * 2});
                 .card-img-top {
+                    border: 0;
                     margin-bottom: #{$spacer * 1.4375};
                 }
                 .card-body {

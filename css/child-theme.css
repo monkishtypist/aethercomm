@@ -14762,6 +14762,7 @@ section {
   max-width: 25%;
   max-width: calc(25% - 36px); }
   #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-img-top {
+    border: 0;
     margin-bottom: 1.4375rem; }
   #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-body .card-title {
     font-size: 1rem; }
