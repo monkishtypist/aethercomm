@@ -14755,6 +14755,12 @@ section {
       background-position: calc(50vw - 44.5rem) 3rem, center;
       padding-top: 6.375rem; } }
 
+#who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%; }
+
 /**
  * Navs
  *
