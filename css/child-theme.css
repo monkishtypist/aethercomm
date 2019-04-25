@@ -14763,7 +14763,8 @@ section {
                 transform: skew(45deg); }
   #who-we-are_page-wrapper #who-we-are_tabs #milestones-tabs-content .tab-pane {
     -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out; }
+    transition: all 0.2s ease-in-out;
+    height: auto; }
     #who-we-are_page-wrapper #who-we-are_tabs #milestones-tabs-content .tab-pane:not(.show) {
       height: 0;
       overflow: hidden; }

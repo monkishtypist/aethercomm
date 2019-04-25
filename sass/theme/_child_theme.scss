@@ -325,6 +325,7 @@ section {
         #milestones-tabs-content {
             .tab-pane {
                 transition: #{$transition-base};
+                height: auto;
                 &:not(.show) {
                     height: 0;
                     overflow: hidden;
