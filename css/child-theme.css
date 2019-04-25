@@ -14742,6 +14742,7 @@ section {
       padding-right: 4.25rem; }
     #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
       background-color: #222222;
+      border: 1px solid #4A63AE;
       color: #fff;
       font-size: 1.25rem;
       font-weight: 700;
@@ -14753,7 +14754,7 @@ section {
               transform: skew(-45deg); }
       #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
         background-color: #fff;
-        border: 0;
+        border-bottom-color: #fff;
         color: #222222; }
       #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
         display: block;

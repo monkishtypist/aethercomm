@@ -301,6 +301,7 @@ section {
                 }
                 .nav-link { // <a>
                     background-color: #{$dark};
+                    border: #{$border-width} solid #{$blue};
                     color: #{$white};
                     font-size: #{$font-size-lg};
                     font-weight: #{$font-weight-bold};
@@ -311,7 +312,7 @@ section {
                     transform: skew(-45deg);
                     &.active {
                         background-color: #{$white};
-                        border: 0;
+                        border-bottom-color: #{$white};
                         color: #{$dark};
                     }
                     span {
