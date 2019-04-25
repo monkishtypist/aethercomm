@@ -3754,15 +3754,15 @@ input[type="button"].btn-block {
       -ms-flex-direction: column;
           flex-direction: column; }
   .card-deck .card {
-    margin-bottom: 10px; }
+    margin-bottom: 18px; }
   @media (min-width: 576px) {
     .card-deck {
       -webkit-box-orient: horizontal;
       -webkit-box-direction: normal;
           -ms-flex-flow: row wrap;
               flex-flow: row wrap;
-      margin-right: -10px;
-      margin-left: -10px; }
+      margin-right: -18px;
+      margin-left: -18px; }
       .card-deck .card {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -3774,9 +3774,9 @@ input[type="button"].btn-block {
         -webkit-box-direction: normal;
             -ms-flex-direction: column;
                 flex-direction: column;
-        margin-right: 10px;
+        margin-right: 18px;
         margin-bottom: 0;
-        margin-left: 10px; } }
+        margin-left: 18px; } }
 
 .card-group {
   display: -webkit-box;
@@ -3787,7 +3787,7 @@ input[type="button"].btn-block {
       -ms-flex-direction: column;
           flex-direction: column; }
   .card-group > .card {
-    margin-bottom: 10px; }
+    margin-bottom: 18px; }
   @media (min-width: 576px) {
     .card-group {
       -webkit-box-orient: horizontal;
@@ -14951,8 +14951,8 @@ section {
  */
 @media (max-width: 768.98px) {
   .card-deck .card {
-    -ms-flex-preferred-size: calc(100% - 20px);
-        flex-basis: calc(100% - 20px);
+    -ms-flex-preferred-size: calc(100% - 36px);
+        flex-basis: calc(100% - 36px);
     margin-bottom: 3rem; }
     .card-deck .card:last-of-type {
       margin-bottom: 0; } }
