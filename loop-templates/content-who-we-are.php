@@ -69,7 +69,7 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
         <div class="container-fluid">
 
-            <ul class="nav nav-tabs" id="milestones-tabs" role="tablist">
+            <ul class="nav nav-tabs nav-fill" id="milestones-tabs" role="tablist">
                 <?php echo sprintf( '<li class="nav-item"><a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true">%1$s</a></li>',
                     get_acf_field( 'who-we-are_page_settings_tabs_tab1_title', true )
                 ); ?>
