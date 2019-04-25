@@ -23,7 +23,7 @@ switch ($post->post_type) {
 
 ?>
 
-<div class="card" data-post-type="<?php echo $post->post_type; ?>">
+<div class="card card-<?php echo $post->post_type; ?>" data-post-type="<?php echo $post->post_type; ?>">
 
     <?php if ( has_post_thumbnail() ) {
         the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) );
