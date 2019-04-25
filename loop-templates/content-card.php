@@ -13,7 +13,7 @@ global $post;
 
 $card_text = null;
 switch ( $post->post_type ) {
-    case 'team-member':
+    case 'team-members':
         $card_text = apply_filters( 'the_content', get_acf_field( 'team_member_position', true ) );
         break;
     default:
