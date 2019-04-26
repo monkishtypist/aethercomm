@@ -14867,6 +14867,10 @@ section {
 #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card3 {
   background-color: #222222; }
 
+#what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-icon {
+  margin: auto;
+  display: block; }
+
 #what-we-do_page-wrapper #what-we-do_capabilities .card .card-img-top {
   margin: auto;
   display: block; }

@@ -432,6 +432,12 @@ section {
             &.card-capabilities-card3 {
                 background-color: #{$dark};
             }
+            .card-body {
+                .card-icon {
+                    margin: auto;
+                    display: block;
+                }
+            }
             .card-img-top {
                 margin: auto;
                 display: block;
