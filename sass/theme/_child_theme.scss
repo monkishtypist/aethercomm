@@ -46,6 +46,7 @@ h1, .h1 {
         font-size: #{$font-size-base * .75};
         font-weight: #{$font-weight-black};
         letter-spacing: .600em;
+        margin-bottom: 2em;
         text-transform: uppercase;
     }
 }
@@ -60,6 +61,7 @@ h2, .h2 {
     font-size: #{$font-size-base * 2.625};
     font-weight: #{$font-weight-light};
     line-height: 1;
+    margin-bottom: .5em;
 }
 a {
     &.read-more-link {
@@ -174,7 +176,7 @@ section {
     background-size: auto, auto, auto, auto;
     padding-top: 15rem;
     padding-bottom: #{$spacer * 5.625};
-    #intro-header {
+    #front-page-header {
         margin-bottom: 13.1875rem;
         text-align: center;
         h1 {

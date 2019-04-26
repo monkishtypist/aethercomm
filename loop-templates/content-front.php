@@ -18,8 +18,8 @@ $container = get_theme_mod( 'understrap_container_type' );
     <section id="front-page-intro" class="section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
-            <div id="intro-header">
-                <?php acf_field( 'front_page_settings_intro_header' ); ?>
+            <header id="front-page-header">
+                <h1><?php acf_field( 'front_page_settings_intro_header' ); ?></h1>
                 <?php
                 $link1 = get_acf_field( 'front_page_settings_intro_header_cta' );
                 echo sprintf( '<a href="%1$s" class="btn btn-primary btn-lg" %2$s>%3$s</a>',
@@ -30,10 +30,11 @@ $container = get_theme_mod( 'understrap_container_type' );
                     esc_html__( $link1[0]['title'], 'aethercomm' )
                 );
                 ?>
-            </div>
+            </header>
             <div class="row">
                 <div id="intro-copy" class="col-12 col-md-10 offset-md-1 col-lg-6 offset-lg-0">
-                    <?php acf_field( 'front_page_settings_intro_copy' ); ?>
+                    <div class="page-lede"><?php acf_field( 'front_page_settings_intro_lede' ); ?></div>
+                    <?php echo apply_filters( 'the_content', get_acf_field( 'front_page_settings_intro_copy', true ) ); ?>
                     <?php
                     $link2 = get_acf_field( 'front_page_settings_intro_copy_cta' );
                     echo sprintf( '<a href="%1$s" class="btn btn-outline-white" %2$s>%3$s</a>',

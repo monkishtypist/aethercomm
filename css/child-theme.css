@@ -14241,6 +14241,7 @@ h1, .h1 {
     font-size: 0.75rem;
     font-weight: 900;
     letter-spacing: .600em;
+    margin-bottom: 2em;
     text-transform: uppercase; }
 
 h2, .h2 {
@@ -14253,7 +14254,8 @@ h2, .h2 {
 .page-lede {
   font-size: 2.625rem;
   font-weight: 300;
-  line-height: 1; }
+  line-height: 1;
+  margin-bottom: .5em; }
 
 a.read-more-link {
   text-decoration: underline; }
@@ -14649,10 +14651,10 @@ section {
   background-size: auto, auto, auto, auto;
   padding-top: 15rem;
   padding-bottom: 5.625rem; }
-  #front-page-intro #intro-header {
+  #front-page-intro #front-page-header {
     margin-bottom: 13.1875rem;
     text-align: center; }
-    #front-page-intro #intro-header h1 {
+    #front-page-intro #front-page-header h1 {
       margin-bottom: 1.6875rem; }
   #front-page-intro #intro-copy .btn {
     margin-top: 2.6rem; }
