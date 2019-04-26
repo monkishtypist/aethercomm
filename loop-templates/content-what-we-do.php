@@ -99,7 +99,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                     <div class="row">
                         <div class="col-6">
                             <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab1_title' ); ?></h3>
-                            <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab1_copy', true ) ); ?>
+                            <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab1_content', true ) ); ?>
                         </div>
                         <div class="col-6">
                             <?php
