@@ -13,9 +13,9 @@ global $post;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$section_header_styles = '/wp-content/uploads/2019/04/who-we-are-hero.png';
-if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
-    $section_header_background_img_id = get_acf_field( 'who-we-are_page_settings_header_background' );
+$section_header_styles = '/wp-content/uploads/2019/04/what-we-do-hero.png';
+if ( get_acf_field( 'what-we-do_page_settings_header_background' ) ) {
+    $section_header_background_img_id = get_acf_field( 'what-we-do_page_settings_header_background' );
     if ( is_array( $section_header_background_img_id ) && isset( $section_header_background_img_id[0] ) ) {
         $section_header_background_image_url = wp_get_attachment_url( $section_header_background_img_id[0] );
         $section_header_styles = sprintf( 'style="%1$s"',
@@ -26,19 +26,19 @@ if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
     }
 }
 
-$section_mission_styles = sprintf( 'style="%1$s"',
+$section_capabilities_styles = sprintf( 'style="%1$s"',
     sprintf( 'background-image:url(%1$s);',
-        '/wp-content/uploads/2019/04/who-we-are_mission-statement.png'
+        '/wp-content/uploads/2019/04/what-we-do_capabilities-background.png'
     )
 );
-if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
-    $section_mission_background_img_id = get_acf_field( 'who-we-are_page_settings_mission_background' );
-    if ( is_array( $section_mission_background_img_id ) && isset( $section_mission_background_img_id[0] ) ) {
-        $section_mission_background_image_url = wp_get_attachment_url( $section_mission_background_img_id[0] );
-        $section_mission_styles = sprintf( 'style="%1$s"',
+if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
+    $section_capabilities_background_img_id = get_acf_field( 'what-we-do_page_settings_capabilities_background' );
+    if ( is_array( $section_capabilities_background_img_id ) && isset( $section_capabilities_background_img_id[0] ) ) {
+        $section_capabilities_background_image_url = wp_get_attachment_url( $section_capabilities_background_img_id[0] );
+        $section_capabilities_styles = sprintf( 'style="%1$s"',
             sprintf( 'background-image:url(%1$s),url(%2$s);',
                 get_stylesheet_directory_uri() . '/images/path1.png',
-                $section_mission_background_image_url
+                $section_capabilities_background_image_url
             )
         );
     }
@@ -54,11 +54,11 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
             <header>
                 <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
-                <?php if ( get_acf_field( 'who-we-are_page_settings_header_lede' ) ) { ?>
-                    <div class="page-lede"><?php echo apply_filters( 'the_content', get_acf_field( 'who-we-are_page_settings_header_lede', true ) ); ?></div>
+                <?php if ( get_acf_field( 'what-we-do_page_settings_header_lede' ) ) { ?>
+                    <div class="page-lede"><?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_header_lede', true ) ); ?></div>
                 <?php } ?>
-                <?php if ( get_acf_field( 'who-we-are_page_settings_header_copy' ) ) { ?>
-                    <?php echo apply_filters( 'the_content', get_acf_field( 'who-we-are_page_settings_header_copy', true ) ); ?>
+                <?php if ( get_acf_field( 'what-we-do_page_settings_header_copy' ) ) { ?>
+                    <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_header_copy', true ) ); ?>
                 <?php } ?>
             </header>
 
@@ -73,38 +73,42 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
         <div class="container-fluid">
 
-            <ul class="nav nav-tabs nav-fill" id="milestones-tabs" role="tablist">
+            <ul class="nav nav-tabs nav-fill" id="platforms-tabs" role="tablist">
                 <?php echo sprintf( '<li class="nav-item"><a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"><span>%1$s</span></a></li>',
-                    get_acf_field( 'who-we-are_page_settings_tabs_tab1_title', true )
+                    get_acf_field( 'what-we-do_page_settings_tabs_tab1_title', true )
                 ); ?>
                 <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"><span>%1$s</span></a></li>',
-                    get_acf_field( 'who-we-are_page_settings_tabs_tab2_title', true )
+                    get_acf_field( 'what-we-do_page_settings_tabs_tab2_title', true )
                 ); ?>
                 <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"><span>%1$s</span></a></li>',
-                    get_acf_field( 'who-we-are_page_settings_tabs_tab3_title', true )
+                    get_acf_field( 'what-we-do_page_settings_tabs_tab3_title', true )
+                ); ?>
+                <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab4-tab" data-toggle="tab" href="#tab4" role="tab" aria-controls="tab4" aria-selected="false"><span>%1$s</span></a></li>',
+                    get_acf_field( 'what-we-do_page_settings_tabs_tab4_title', true )
                 ); ?>
             </ul>
 
         </div>
 
-        <div class="<?php echo esc_attr( $container ); ?>" id="milestones-tabs-content">
+        <div class="<?php echo esc_attr( $container ); ?>" id="platforms-tabs-content">
             <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">...tab1</div>
             <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...tab2</div>
             <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">...tab3</div>
+            <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab3-tab">...tab3</div>
         </div>
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1" <?php echo $section_mission_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_capabilities" class="section-black section-path1" <?php echo $section_capabilities_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <?php echo sprintf( '<h2 class="">%1$s</h2>',
-                        get_acf_field( 'who-we-are_page_settings_mission_title', true )
+                        get_acf_field( 'what-we-do_page_settings_capabilities_title', true )
                     ); ?>
-                    <?php echo apply_filters( 'the_content', get_acf_field( 'who-we-are_page_settings_mission_copy', true ) ); ?>
+                    <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_capabilities_copy', true ) ); ?>
                 </div>
             </div>
 
