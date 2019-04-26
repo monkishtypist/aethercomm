@@ -423,6 +423,7 @@ section {
     }
     #what-we-do_capabilities {
         .card {
+            padding: 4.125rem 2.875rem;
             &.card-capabilities-card1 {
                 background-color: #{$blue};
             }

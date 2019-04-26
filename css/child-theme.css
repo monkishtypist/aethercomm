@@ -14858,22 +14858,20 @@ section {
         -webkit-transform: skew(45deg);
                 transform: skew(45deg); }
 
-#what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card1 {
-  background-color: #4A63AE; }
-
-#what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card2 {
-  background-color: #fd7e14; }
-
-#what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card3 {
-  background-color: #222222; }
-
-#what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-icon {
-  margin: auto;
-  display: block; }
-
-#what-we-do_page-wrapper #what-we-do_capabilities .card .card-img-top {
-  margin: auto;
-  display: block; }
+#what-we-do_page-wrapper #what-we-do_capabilities .card {
+  padding: 4.125rem 2.875rem; }
+  #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card1 {
+    background-color: #4A63AE; }
+  #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card2 {
+    background-color: #fd7e14; }
+  #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card3 {
+    background-color: #222222; }
+  #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-icon {
+    margin: auto;
+    display: block; }
+  #what-we-do_page-wrapper #what-we-do_capabilities .card .card-img-top {
+    margin: auto;
+    display: block; }
 
 /**
  * Navs
