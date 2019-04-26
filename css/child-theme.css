@@ -14889,6 +14889,9 @@ section {
       margin: auto;
       display: block; }
     #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-title {
+      -webkit-box-flex: 1;
+          -ms-flex-positive: 1;
+              flex-grow: 1;
       margin-bottom: 3rem; }
   #what-we-do_page-wrapper #what-we-do_capabilities .card .card-img-top {
     margin: auto;

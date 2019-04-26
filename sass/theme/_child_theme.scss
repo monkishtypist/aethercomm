@@ -407,6 +407,7 @@ section {
         }
     }
 }
+
 #what-we-do_page-wrapper {
     #what-we-do_header {
         background-position: center;
@@ -452,6 +453,7 @@ section {
                     display: block;
                 }
                 .card-title {
+                    flex-grow: 1;
                     margin-bottom: #{$spacer * 3};
                 }
             }
