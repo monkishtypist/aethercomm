@@ -106,6 +106,10 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
+            <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
+                get_acf_field( 'what-we-do_page_settings_capabilities_title', true )
+            ); ?>
+
             <div class="card-deck">
 
                 <div class="card card-capabilities-card1">
@@ -114,7 +118,6 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         $capabilities_cards_card1_icon = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_icon' );
                         if ( is_array( $capabilities_cards_card1_icon ) && isset( $capabilities_cards_card1_icon[0] ) ) {
                             $capabilities_cards_card1_icon_url = wp_get_attachment_url( $capabilities_cards_card1_icon[0] );
-                            var_dump($capabilities_cards_card1_icon_url);
                             echo sprintf( '<img class="card-img-top" src="%1$s" alt="%2$s" />',
                                 $capabilities_cards_card1_icon_url,
                                 $post->$post_title
@@ -214,15 +217,6 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
                 </div>
 
-            </div>
-
-            <div class="row">
-                <div class="col-12 col-lg-6">
-                    <?php echo sprintf( '<h2 class="">%1$s</h2>',
-                        get_acf_field( 'what-we-do_page_settings_capabilities_title', true )
-                    ); ?>
-                    <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_capabilities_copy', true ) ); ?>
-                </div>
             </div>
 
         </div>
