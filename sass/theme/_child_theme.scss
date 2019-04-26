@@ -32,7 +32,7 @@ $nav-tabs-height:  $spacer * 4.25;
 /**
  * Mixins
  */
-@mixin skewed-tabs( $background-color-base: $dark, $background-color-active: $white ) {
+@mixin skewed-tabs( $background-color-base: $dark, $background-color-active: $white, $font-color-base: $white, $font-color-active: $dark ) {
     margin-top: -#{$nav-tabs-height};
     overflow-x: hidden;
     .nav-tabs { // <ul>
@@ -47,7 +47,7 @@ $nav-tabs-height:  $spacer * 4.25;
             .nav-link { // <a>
                 background-color: #{$background-color-base};
                 border: #{$border-width} solid #{$blue};
-                color: #{$white};
+                color: #{$font-color-base};
                 font-size: #{$font-size-lg};
                 font-weight: #{$font-weight-bold};
                 height: #{$spacer * 4.25};
@@ -57,8 +57,8 @@ $nav-tabs-height:  $spacer * 4.25;
                 transform: skew(-45deg);
                 &.active {
                     background-color: #{$background-color-active};
-                    border-bottom-color: #{$white};
-                    color: #{$dark};
+                    border-bottom-color: #{$background-color-active};
+                    color: #{$font-color-active};
                 }
                 span {
                     display: block;
@@ -423,7 +423,7 @@ section {
         }
     }
     #what-we-do_tabs {
-        @include skewed-tabs( $black, $dark );
+        @include skewed-tabs( $black, $dark, $white, $white );
     }
     #what-we-do_capabilities {
         .card {

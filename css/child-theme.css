@@ -14853,8 +14853,8 @@ section {
               transform: skew(-45deg); }
       #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link.active {
         background-color: #222222;
-        border-bottom-color: #fff;
-        color: #222222; }
+        border-bottom-color: #222222;
+        color: #fff; }
       #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span {
         display: block;
         -webkit-transform: skew(45deg);
