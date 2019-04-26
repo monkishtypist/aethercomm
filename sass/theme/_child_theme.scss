@@ -434,8 +434,13 @@ section {
                 background-color: #{$dark};
             }
             .card-body {
+                text-align: center;
                 &:first-child {
                     height: 110px;
+                    flex-grow: 0;
+                }
+                &:last-child {
+                    align-content: space-between;
                 }
                 .card-icon {
                     margin: auto;

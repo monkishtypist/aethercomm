@@ -14866,11 +14866,19 @@ section {
     background-color: #fd7e14; }
   #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card3 {
     background-color: #222222; }
-  #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body:first-child {
-    height: 110px; }
-  #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-icon {
-    margin: auto;
-    display: block; }
+  #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body {
+    text-align: center; }
+    #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body:first-child {
+      height: 110px;
+      -webkit-box-flex: 0;
+          -ms-flex-positive: 0;
+              flex-grow: 0; }
+    #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body:last-child {
+      -ms-flex-line-pack: justify;
+          align-content: space-between; }
+    #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-icon {
+      margin: auto;
+      display: block; }
   #what-we-do_page-wrapper #what-we-do_capabilities .card .card-img-top {
     margin: auto;
     display: block; }
