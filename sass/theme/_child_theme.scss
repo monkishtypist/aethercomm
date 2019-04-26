@@ -420,12 +420,6 @@ section {
     }
     #what-we-do_tabs {
         @include skewed-tabs();
-        #milestones-tabs-content {
-            .tab-pane {
-                &:not(.show) {
-                }
-            }
-        }
     }
 }
 
