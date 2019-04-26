@@ -14859,6 +14859,8 @@ section {
         display: block;
         -webkit-transform: skew(45deg);
                 transform: skew(45deg); }
+  #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content {
+    background-color: #222222; }
 
 #what-we-do_page-wrapper #what-we-do_capabilities .card {
   padding: 4.125rem 2.875rem; }

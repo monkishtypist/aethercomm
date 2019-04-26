@@ -424,6 +424,9 @@ section {
     }
     #what-we-do_tabs {
         @include skewed-tabs( $black, $dark, $white, $white );
+        #platforms-tabs-content {
+            background-color: #{$dark};
+        }
     }
     #what-we-do_capabilities {
         .card {
