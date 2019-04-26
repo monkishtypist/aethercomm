@@ -40,8 +40,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
     if ( is_array( $section_capabilities_background_img_id ) && isset( $section_capabilities_background_img_id[0] ) ) {
         $section_capabilities_background_image_url = wp_get_attachment_url( $section_capabilities_background_img_id[0] );
         $section_capabilities_styles = sprintf( 'style="%1$s"',
-            sprintf( 'background-image:url(%1$s),url(%2$s);',
-                get_stylesheet_directory_uri() . '/images/path1.png',
+            sprintf( 'background-image:url(%1$s);',
                 $section_capabilities_background_image_url
             )
         );
@@ -52,7 +51,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section-blue" <?php echo $section_header_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_header" class="section-black" <?php echo $section_header_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -103,7 +102,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_capabilities" class="section-black section-path1" <?php echo $section_capabilities_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_capabilities" class="section-black" <?php echo $section_capabilities_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
