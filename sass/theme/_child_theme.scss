@@ -424,7 +424,7 @@ section {
     }
     #what-we-do_tabs {
         @include skewed-tabs( $black, $dark, $white, $white );
-        #platforms-tabs-content {
+        #platforms-tabs-content-wrapper {
             background-color: #{$dark};
         }
     }
