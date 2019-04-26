@@ -114,6 +114,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         $capabilities_cards_card1_icon = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_icon' );
                         if ( is_array( $capabilities_cards_card1_icon ) && isset( $capabilities_cards_card1_icon[0] ) ) {
                             $capabilities_cards_card1_icon_url = wp_get_attachment_url( $capabilities_cards_card1_icon[0] );
+                            var_dump($capabilities_cards_card1_icon_url);
                             echo sprintf( '<img class="card-img-top" src="%1$s" alt="%2$s" />',
                                 $capabilities_cards_card1_icon_url,
                                 $post->$post_title
