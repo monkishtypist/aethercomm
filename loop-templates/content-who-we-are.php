@@ -13,7 +13,11 @@ global $post;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$section_header_styles = '/wp-content/uploads/2019/04/who-we-are-hero.png';
+$section_header_styles = sprintf( 'style="%1$s"',
+    sprintf( 'background-image:url(%1$s);',
+        '/wp-content/uploads/2019/04/who-we-are-hero.png' // default background image
+    )
+);
 if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
     $section_header_background_img_id = get_acf_field( 'who-we-are_page_settings_header_background' );
     if ( is_array( $section_header_background_img_id ) && isset( $section_header_background_img_id[0] ) ) {

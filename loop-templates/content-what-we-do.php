@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 $section_header_styles = sprintf( 'style="%1$s"',
     sprintf( 'background-image:url(%1$s);',
-        '/wp-content/uploads/2019/04/what-we-do-hero.png'
+        '/wp-content/uploads/2019/04/what-we-do-hero.png' // default background image
     )
 );
 if ( get_acf_field( 'what-we-do_page_settings_header_background' ) ) {
@@ -98,7 +98,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
             <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">...tab1</div>
             <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...tab2</div>
             <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">...tab3</div>
-            <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab3-tab">...tab3</div>
+            <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab3-tab">...tab4</div>
         </div>
 
     </section>
@@ -126,7 +126,8 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_label' ) ) {
                             echo sprintf( '<h3 class="card-title">%1$s</h3>',
                                 get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_label', true )
-                            ); ?>
+                            );
+                         } ?>
                         <div class="card-text">
                         <?php
                         $capabilities_card1_link = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_link' );
@@ -160,7 +161,8 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_label' ) ) {
                             echo sprintf( '<h3 class="card-title">%1$s</h3>',
                                 get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_label', true )
-                            ); ?>
+                            );
+                         } ?>
                         <div class="card-text">
                         <?php
                         $capabilities_card2_link = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_link' );
@@ -194,7 +196,8 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_label' ) ) {
                             echo sprintf( '<h3 class="card-title">%1$s</h3>',
                                 get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_label', true )
-                            ); ?>
+                            );
+                         } ?>
                         <div class="card-text">
                         <?php
                         $capabilities_card3_link = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_link' );
