@@ -404,6 +404,30 @@ section {
         }
     }
 }
+#what-we-do_page-wrapper {
+    #what-we-do_header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: #{$spacer * 7};
+        header {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0;
+        }
+    }
+    #what-we-do_tabs {
+        @include skewed-tabs();
+        #milestones-tabs-content {
+            .tab-pane {
+                &:not(.show) {
+                }
+            }
+        }
+    }
+}
 
 /**
  * Navs
