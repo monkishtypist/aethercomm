@@ -95,7 +95,24 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
         <div id="platforms-tabs-content-wrapper">
             <div class="<?php echo esc_attr( $container ); ?>" id="platforms-tabs-content">
-                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">...tab1</div>
+                <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab1_title' ); ?></h3>
+                            <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab1_copy', true ) ); ?>
+                        </div>
+                        <div class="col-6">
+                            <?php
+                            if ( get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' ) ) {
+                                $page_settings_tabs_tab1_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' );
+                                if ( is_array( $page_settings_tabs_tab1_image_id ) && isset( $page_settings_tabs_tab1_image_id[0] ) ) {
+                                    echo wp_get_attachment_image( $page_settings_tabs_tab1_image_id[0], 'large', false, array( 'class' => 'tab-image' ) );
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
                 <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...tab2</div>
                 <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">...tab3</div>
                 <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab3-tab">...tab4</div>
