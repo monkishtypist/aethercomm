@@ -14237,6 +14237,11 @@ p:last-of-type {
 
 h1, .h1 {
   line-height: 1; }
+  h1.page-title, .h1.page-title {
+    font-size: 0.75rem;
+    font-weight: 900;
+    letter-spacing: .600em;
+    text-transform: uppercase; }
 
 h2, .h2 {
   line-height: 1.2;

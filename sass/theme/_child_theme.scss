@@ -42,6 +42,12 @@ p {
 }
 h1, .h1 {
     line-height: 1;
+    &.page-title {
+        font-size: #{$font-size-base * .75};
+        font-weight: #{$font-weight-black};
+        letter-spacing: .600em;
+        text-transform: uppercase;
+    }
 }
 h2, .h2 {
     line-height: 1.2;
