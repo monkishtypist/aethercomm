@@ -114,16 +114,20 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
                 <div class="card card-capabilities-card1">
 
-                    <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_icon' ) ) {
-                        $capabilities_cards_card1_icon = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_icon' );
-                        if ( is_array( $capabilities_cards_card1_icon ) && isset( $capabilities_cards_card1_icon[0] ) ) {
-                            $capabilities_cards_card1_icon_url = wp_get_attachment_url( $capabilities_cards_card1_icon[0] );
-                            echo sprintf( '<img class="card-img-top" src="%1$s" alt="%2$s" />',
-                                $capabilities_cards_card1_icon_url,
-                                $post->$post_title
-                            );
-                        }
-                    } ?>
+                    <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_icon' ) ) { ?>
+                        <div class="card-body">
+                            <?php
+                            $capabilities_cards_card1_icon = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_icon' );
+                            if ( is_array( $capabilities_cards_card1_icon ) && isset( $capabilities_cards_card1_icon[0] ) ) {
+                                $capabilities_cards_card1_icon_url = wp_get_attachment_url( $capabilities_cards_card1_icon[0] );
+                                echo sprintf( '<img class="card-img-top" src="%1$s" alt="%2$s" />',
+                                    $capabilities_cards_card1_icon_url,
+                                    $post->$post_title
+                                );
+                            }
+                            ?>
+                        </div>
+                    <?php } ?>
 
                     <div class="card-body">
                         <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_label' ) ) {
@@ -149,16 +153,20 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
                 <div class="card card-capabilities-card2">
 
-                    <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_icon' ) ) {
-                        $capabilities_cards_card2_icon = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_icon' );
-                        if ( is_array( $capabilities_cards_card2_icon ) && isset( $capabilities_cards_card2_icon[0] ) ) {
-                            $capabilities_cards_card2_icon_url = wp_get_attachment_url( $capabilities_cards_card2_icon[0] );
-                            echo sprintf( '<img class="card-img-top" src="%1$s" alt="%2$s" />',
-                                $capabilities_cards_card2_icon_url,
-                                $post->$post_title
-                            );
-                        }
-                    } ?>
+                    <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_icon' ) ) { ?>
+                        <div class="card-body">
+                            <?php
+                            $capabilities_cards_card2_icon = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_icon' );
+                            if ( is_array( $capabilities_cards_card2_icon ) && isset( $capabilities_cards_card2_icon[0] ) ) {
+                                $capabilities_cards_card2_icon_url = wp_get_attachment_url( $capabilities_cards_card2_icon[0] );
+                                echo sprintf( '<img class="card-img-top" src="%1$s" alt="%2$s" />',
+                                    $capabilities_cards_card2_icon_url,
+                                    $post->$post_title
+                                );
+                            }
+                            ?>
+                        </div>
+                    <?php } ?>
 
                     <div class="card-body">
                         <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_label' ) ) {
@@ -184,16 +192,20 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
                 <div class="card card-capabilities-card3">
 
-                    <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_icon' ) ) {
-                        $capabilities_cards_card3_icon = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_icon' );
-                        if ( is_array( $capabilities_cards_card3_icon ) && isset( $capabilities_cards_card3_icon[0] ) ) {
-                            $capabilities_cards_card3_icon_url = wp_get_attachment_url( $capabilities_cards_card3_icon[0] );
-                            echo sprintf( '<img class="card-img-top" src="%1$s" alt="%2$s" />',
-                                $capabilities_cards_card3_icon_url,
-                                $post->$post_title
-                            );
-                        }
-                    } ?>
+                    <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_icon' ) ) { ?>
+                        <div class="card-body">
+                            <?php
+                            $capabilities_cards_card3_icon = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_icon' );
+                            if ( is_array( $capabilities_cards_card3_icon ) && isset( $capabilities_cards_card3_icon[0] ) ) {
+                                $capabilities_cards_card3_icon_url = wp_get_attachment_url( $capabilities_cards_card3_icon[0] );
+                                echo sprintf( '<img class="card-img-top" src="%1$s" alt="%2$s" />',
+                                    $capabilities_cards_card3_icon_url,
+                                    $post->$post_title
+                                );
+                            }
+                            ?>
+                        </div>
+                    <?php } ?>
 
                     <div class="card-body">
                         <?php if ( get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_label' ) ) {
