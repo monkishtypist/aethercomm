@@ -14725,7 +14725,8 @@ section {
 #who-we-are_page-wrapper #who-we-are_header {
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-size: cover;
+  padding-bottom: 7rem; }
   #who-we-are_page-wrapper #who-we-are_header header {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;
@@ -14761,13 +14762,6 @@ section {
         display: block;
         -webkit-transform: skew(45deg);
                 transform: skew(45deg); }
-  #who-we-are_page-wrapper #who-we-are_tabs #milestones-tabs-content .tab-pane {
-    -webkit-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
-    height: auto; }
-    #who-we-are_page-wrapper #who-we-are_tabs #milestones-tabs-content .tab-pane:not(.show) {
-      height: 0;
-      overflow: hidden; }
 
 #who-we-are_page-wrapper #who-we-are_mission {
   background-position: calc(50vw - 44.5rem) 3rem, center;

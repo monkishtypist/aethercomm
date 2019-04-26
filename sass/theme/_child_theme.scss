@@ -279,6 +279,7 @@ section {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        padding-bottom: #{$spacer * 7};
         header {
             -webkit-box-flex: 0;
             -ms-flex: 0 0 50%;
@@ -324,11 +325,7 @@ section {
         }
         #milestones-tabs-content {
             .tab-pane {
-                transition: #{$transition-base};
-                height: auto;
                 &:not(.show) {
-                    height: 0;
-                    overflow: hidden;
                 }
             }
         }
