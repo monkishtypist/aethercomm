@@ -32,7 +32,7 @@ $nav-tabs-height:  $spacer * 4.25;
 /**
  * Mixins
  */
-@mixin skewed-tabs() {
+@mixin skewed-tabs( $background-color-base: $dark, $background-color-active: $white ) {
     margin-top: -#{$nav-tabs-height};
     overflow-x: hidden;
     .nav-tabs { // <ul>
@@ -45,7 +45,7 @@ $nav-tabs-height:  $spacer * 4.25;
                 }
             }
             .nav-link { // <a>
-                background-color: #{$dark};
+                background-color: #{$background-color-base};
                 border: #{$border-width} solid #{$blue};
                 color: #{$white};
                 font-size: #{$font-size-lg};
@@ -56,7 +56,7 @@ $nav-tabs-height:  $spacer * 4.25;
                 padding-top: #{$nav-link-padding-y * 2};
                 transform: skew(-45deg);
                 &.active {
-                    background-color: #{$white};
+                    background-color: #{$background-color-active};
                     border-bottom-color: #{$white};
                     color: #{$dark};
                 }
@@ -423,7 +423,7 @@ section {
         }
     }
     #what-we-do_tabs {
-        @include skewed-tabs();
+        @include skewed-tabs( $black, $dark );
     }
     #what-we-do_capabilities {
         .card {
