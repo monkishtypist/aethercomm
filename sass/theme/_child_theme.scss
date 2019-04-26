@@ -56,6 +56,11 @@ h2, .h2 {
         font-size: #{$font-size-base * 1.875};
     }
 }
+.page-lede {
+    font-size: #{$font-size-base * 2.625};
+    font-weight: #{$font-weight-light};
+    line-height: 1;
+}
 a {
     &.read-more-link {
         text-decoration: underline;

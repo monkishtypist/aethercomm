@@ -14250,6 +14250,11 @@ h2, .h2 {
     h2, .h2 {
       font-size: 1.875rem; } }
 
+.page-lede {
+  font-size: 2.625rem;
+  font-weight: 300;
+  line-height: 1; }
+
 a.read-more-link {
   text-decoration: underline; }
 
