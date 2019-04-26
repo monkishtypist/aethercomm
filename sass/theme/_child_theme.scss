@@ -436,15 +436,20 @@ section {
             .card-body {
                 text-align: center;
                 &:first-child {
-                    height: 110px;
+                    height: #{$spacer * 6.875};
                     flex-grow: 0;
                 }
                 &:last-child {
                     align-content: space-between;
+                    display: flex;
+                    flex-direction: column;
                 }
                 .card-icon {
                     margin: auto;
                     display: block;
+                }
+                .card-title {
+                    margin-bottom: #{$spacer * 3};
                 }
             }
             .card-img-top {
