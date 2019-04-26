@@ -426,6 +426,9 @@ section {
         @include skewed-tabs( $black, $dark, $white, $white );
         #platforms-tabs-content-wrapper {
             background-color: #{$dark};
+            #platforms-tabs-content {
+                color: #{$white};
+            }
         }
     }
     #what-we-do_capabilities {

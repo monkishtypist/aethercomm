@@ -14861,6 +14861,8 @@ section {
                 transform: skew(45deg); }
   #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper {
     background-color: #222222; }
+    #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content {
+      color: #fff; }
 
 #what-we-do_page-wrapper #what-we-do_capabilities .card {
   padding: 4.125rem 2.875rem; }
