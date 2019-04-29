@@ -428,10 +428,18 @@ section {
             background-color: #{$dark};
             #platforms-tabs-content {
                 color: #{$white};
+                .tab-pane {
+                    &:not(.active) {
+                        display: none;
+                    }
+                }
             }
         }
     }
     #what-we-do_capabilities {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
         .card {
             padding: 4.125rem 2.875rem;
             &.card-capabilities-card1 {
