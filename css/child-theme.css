@@ -14565,7 +14565,8 @@ a.read-more-link {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(34, 34, 34, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(34, 34, 34, 0.5); }
 
-a.btn {
+a.btn,
+button.btn {
   font-size: 0.75rem;
   letter-spacing: .600em;
   line-height: 1;
@@ -14573,10 +14574,13 @@ a.btn {
   position: relative;
   text-transform: uppercase;
   width: 342px; }
-  a.btn.btn-lg, .btn-group-lg > a.btn {
+  a.btn.btn-lg, .btn-group-lg > a.btn,
+  button.btn.btn-lg,
+  .btn-group-lg > button.btn {
     font-size: 1rem;
     width: 352px; }
-  a.btn::before {
+  a.btn::before,
+  button.btn::before {
     content: " ";
     border-bottom: 2px solid #fff;
     bottom: 0.5rem;

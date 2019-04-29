@@ -117,7 +117,8 @@ a {
         @include button-outline-variant($value);
     }
 }
-a.btn {
+a.btn,
+button.btn {
     font-size: #{$font-size-sm};
     letter-spacing: .600em;
     line-height: 1;
