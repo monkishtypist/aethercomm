@@ -113,9 +113,60 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         </div>
                     </div>
                 </div>
-                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...tab2</div>
-                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">...tab3</div>
-                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab3-tab">...tab4</div>
+                <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab2_title' ); ?></h3>
+                            <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab2_content', true ) ); ?>
+                        </div>
+                        <div class="col-6">
+                            <?php
+                            if ( get_acf_field( 'what-we-do_page_settings_tabs_tab2_image' ) ) {
+                                $page_settings_tabs_tab2_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab2_image' );
+                                if ( is_array( $page_settings_tabs_tab2_image_id ) && isset( $page_settings_tabs_tab2_image_id[0] ) ) {
+                                    echo wp_get_attachment_image( $page_settings_tabs_tab2_image_id[0], 'large', false, array( 'class' => 'tab-image' ) );
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab3_title' ); ?></h3>
+                            <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab3_content', true ) ); ?>
+                        </div>
+                        <div class="col-6">
+                            <?php
+                            if ( get_acf_field( 'what-we-do_page_settings_tabs_tab3_image' ) ) {
+                                $page_settings_tabs_tab3_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab3_image' );
+                                if ( is_array( $page_settings_tabs_tab3_image_id ) && isset( $page_settings_tabs_tab3_image_id[0] ) ) {
+                                    echo wp_get_attachment_image( $page_settings_tabs_tab3_image_id[0], 'large', false, array( 'class' => 'tab-image' ) );
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab3-tab">
+                    <div class="row">
+                        <div class="col-6">
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab4_title' ); ?></h3>
+                            <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab4_content', true ) ); ?>
+                        </div>
+                        <div class="col-6">
+                            <?php
+                            if ( get_acf_field( 'what-we-do_page_settings_tabs_tab4_image' ) ) {
+                                $page_settings_tabs_tab4_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab4_image' );
+                                if ( is_array( $page_settings_tabs_tab4_image_id ) && isset( $page_settings_tabs_tab4_image_id[0] ) ) {
+                                    echo wp_get_attachment_image( $page_settings_tabs_tab4_image_id[0], 'large', false, array( 'class' => 'tab-image' ) );
+                                }
+                            }
+                            ?>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
