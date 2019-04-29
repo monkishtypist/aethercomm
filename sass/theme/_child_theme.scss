@@ -429,6 +429,8 @@ section {
             #platforms-tabs-content {
                 color: #{$white};
                 .tab-pane {
+                    padding-bottom: #{$spacer * 5};
+                    padding-top: #{$spacer * 3.75};
                     &:not(.active) {
                         display: none;
                     }
