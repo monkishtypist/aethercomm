@@ -14860,7 +14860,11 @@ section {
         -webkit-transform: skew(45deg);
                 transform: skew(45deg); }
   #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper {
-    background-color: #222222; }
+    background-color: #222222;
+    background-image: url(../images/path1.png);
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto; }
     #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content {
       color: #fff; }
       #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane {

@@ -426,6 +426,10 @@ section {
         @include skewed-tabs( $black, $dark, $white, $white );
         #platforms-tabs-content-wrapper {
             background-color: #{$dark};
+            background-image: url(../images/path1.png);
+            background-position: 50% 50%;
+            background-repeat: no-repeat;
+            background-size: auto;
             #platforms-tabs-content {
                 color: #{$white};
                 .tab-pane {
