@@ -9,6 +9,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
+$container = get_theme_mod( 'understrap_container_type' );
+
 global $post;
 
 ?>
@@ -16,6 +18,12 @@ global $post;
 <?php if ( is_active_sidebar( 'contact' ) ) : ?>
 
     <section id="<?php echo $post->post_name; ?>_contact" class="section-blue-gradient section-contact-form">
+
+        <div class="<?php echo esc_attr( $container ); ?>">
+
+            <?php dynamic_sidebar( 'herocanvas' ); ?>
+
+        </div>
 
     </section>
 
