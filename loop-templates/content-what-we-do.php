@@ -305,4 +305,6 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
     </section>
 
+    <?php get_template_part( 'sidebar-templates/sidebar', 'contact' ); ?>
+
 </article>
