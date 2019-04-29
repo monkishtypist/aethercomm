@@ -14219,6 +14219,8 @@ readers do not read off random characters that represent icons */
  * Custom elements
  *   Crosshairs
  *   Pipes
+ *   Search Form
+ *   Gravity Forms
  * Footer
  */
 /**
@@ -15932,6 +15934,13 @@ span.pipe::after {
       display: none; } }
 
 /* Search Form */
+/* Gravity Forms */
+li.gfield.hidden_label label {
+  display: none; }
+
+li.gfield input, li.gfield textarea {
+  border-radius: 0.25rem; }
+
 /**
  * Footer
  *

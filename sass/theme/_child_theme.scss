@@ -10,6 +10,8 @@
  * Custom elements
  *   Crosshairs
  *   Pipes
+ *   Search Form
+ *   Gravity Forms
  * Footer
  */
 
@@ -857,6 +859,17 @@ span.pipe {
 
 /* Search Form */
 
+/* Gravity Forms */
+li.gfield {
+    &.hidden_label {
+        label {
+            display: none;
+        }
+    }
+    input, textarea {
+        border-radius: $border-radius;
+    }
+}
 
 /**
  * Footer
