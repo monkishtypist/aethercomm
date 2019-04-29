@@ -239,9 +239,9 @@ $grid-gutter-width:           20px !default; // 30px !default;
 // $border-width:                1px !default;
 // $border-color:                $gray-300 !default;
 
-// $border-radius:               .25rem !default;
-// $border-radius-lg:            .3rem !default;
-// $border-radius-sm:            .2rem !default;
+$border-radius:               0 !default; // .25rem !default;
+$border-radius-lg:            $border-radius !default; // .3rem !default;
+$border-radius-sm:            $border-radius !default; // .2rem !default;
 
 // $rounded-pill:                50rem !default;
 

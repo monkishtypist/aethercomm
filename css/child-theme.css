@@ -4761,7 +4761,7 @@ a.close.disabled {
     display: block;
     width: 1rem;
     height: 0.5rem;
-    margin: 0 0.3rem; }
+    margin: 0 0; }
     .popover .arrow::before, .popover .arrow::after {
       position: absolute;
       display: block;
@@ -4788,7 +4788,7 @@ a.close.disabled {
     left: calc((0.5rem + 1px) * -1);
     width: 0.5rem;
     height: 1rem;
-    margin: 0.3rem 0; }
+    margin: 0 0; }
     .bs-popover-right > .arrow::before, .bs-popover-auto[x-placement^="right"] > .arrow::before {
       left: 0;
       border-width: 0.5rem 0.5rem 0.5rem 0;
@@ -4826,7 +4826,7 @@ a.close.disabled {
     right: calc((0.5rem + 1px) * -1);
     width: 0.5rem;
     height: 1rem;
-    margin: 0.3rem 0; }
+    margin: 0 0; }
     .bs-popover-left > .arrow::before, .bs-popover-auto[x-placement^="left"] > .arrow::before {
       right: 0;
       border-width: 0.5rem 0 0.5rem 0.5rem;
@@ -5229,29 +5229,29 @@ button.bg-dark:focus {
   border-color: #fff !important; }
 
 .rounded-sm {
-  border-radius: 0.2rem !important; }
+  border-radius: 0 !important; }
 
 .rounded {
-  border-radius: 0.25rem !important; }
+  border-radius: 0 !important; }
 
 .rounded-top {
-  border-top-left-radius: 0.25rem !important;
-  border-top-right-radius: 0.25rem !important; }
+  border-top-left-radius: 0 !important;
+  border-top-right-radius: 0 !important; }
 
 .rounded-right {
-  border-top-right-radius: 0.25rem !important;
-  border-bottom-right-radius: 0.25rem !important; }
+  border-top-right-radius: 0 !important;
+  border-bottom-right-radius: 0 !important; }
 
 .rounded-bottom {
-  border-bottom-right-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important; }
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
 
 .rounded-left {
-  border-top-left-radius: 0.25rem !important;
-  border-bottom-left-radius: 0.25rem !important; }
+  border-top-left-radius: 0 !important;
+  border-bottom-left-radius: 0 !important; }
 
 .rounded-lg {
-  border-radius: 0.3rem !important; }
+  border-radius: 0 !important; }
 
 .rounded-circle {
   border-radius: 50% !important; }
@@ -15938,8 +15938,10 @@ span.pipe::after {
 li.gfield.hidden_label label {
   display: none; }
 
-li.gfield input, li.gfield textarea {
-  border-radius: 0.25rem; }
+li.gfield .ginput_container input,
+li.gfield .ginput_container select,
+li.gfield .ginput_container textarea {
+  border-radius: 0; }
 
 /**
  * Footer

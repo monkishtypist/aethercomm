@@ -866,8 +866,12 @@ li.gfield {
             display: none;
         }
     }
-    input, textarea {
-        border-radius: $border-radius;
+    .ginput_container {
+        input,
+        select,
+        textarea {
+            border-radius: #{$border-radius};
+        }
     }
 }
 
