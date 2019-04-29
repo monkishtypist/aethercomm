@@ -21,7 +21,7 @@ global $post;
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
-            <?php dynamic_sidebar( 'herocanvas' ); ?>
+            <?php dynamic_sidebar( 'contact' ); ?>
 
         </div>
 
