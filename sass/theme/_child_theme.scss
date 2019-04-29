@@ -871,6 +871,7 @@ li.gfield {
         select,
         textarea {
             border-radius: #{$border-radius};
+            color: #{$blue};
         }
     }
 }

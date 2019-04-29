@@ -1693,7 +1693,7 @@ textarea.form-control {
   height: auto; }
 
 .form-group {
-  margin-bottom: 1rem; }
+  margin-bottom: 1.75rem; }
 
 .form-text {
   display: block;
@@ -15941,7 +15941,8 @@ li.gfield.hidden_label label {
 li.gfield .ginput_container input,
 li.gfield .ginput_container select,
 li.gfield .ginput_container textarea {
-  border-radius: 0; }
+  border-radius: 0;
+  color: #4A63AE; }
 
 /**
  * Footer
