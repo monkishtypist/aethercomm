@@ -14634,6 +14634,17 @@ section {
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(100% - 24.8rem) 1.75rem, calc(100% - 22.3rem) 0);
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(100% - 24.8rem) 1.75rem, calc(100% - 22.3rem) 0); }
 
+.section-blue-gradient {
+  background-image: url(../images/blue_radial_gradient_bg.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  .section-blue-gradient.section-contact-form {
+    background-image: url(../images/path3.png), url(../images/path1.png), url(../images/swoosh_bg.png), url(../images/blue_radial_gradient_bg.png);
+    background-position: calc(50vw) calc(0%), calc(50vw) calc(100%), 50% 50%, 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto, auto, auto, cover; }
+
 .container,
 .container-fluid {
   position: relative; }
