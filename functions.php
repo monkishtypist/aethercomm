@@ -470,5 +470,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name'          => __( 'Contact Form', 'aethercomm' ),
+				'id'            => 'contact-form',
+				'description'   => __( 'Contact form section', 'aethercomm' ),
+				'before_widget' => '<div id="%1$s" class="contact-form-widget %2$s">',
+				'after_widget'  => '</div><!-- .contact-form-widget -->',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 	}
 }
