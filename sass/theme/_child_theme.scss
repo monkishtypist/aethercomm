@@ -427,7 +427,7 @@ section {
         #platforms-tabs-content-wrapper {
             background-color: #{$dark};
             background-image: url(../images/path1.png);
-            background-position: 50% 50%;
+            background-position: calc(50vw - 43.7rem) calc(100% - 3rem);
             background-repeat: no-repeat;
             background-size: auto;
             #platforms-tabs-content {
