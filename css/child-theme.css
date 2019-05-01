@@ -15726,7 +15726,8 @@ li.gfield .ginput_container textarea {
   float: right;
   height: auto;
   margin-left: 4rem;
-  width: 530px; }
+  max-width: 530px;
+  width: 100%; }
   @media (max-width: 991.98px) {
     .child-page-content .rev-slider-outer {
       margin-bottom: 4rem !important; } }

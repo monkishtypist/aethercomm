@@ -647,7 +647,8 @@ li {
         float: right;
         height: auto;
         margin-left: #{$spacer * 4};
-        width: 530px;
+        max-width: 530px;
+        width: 100%;
         @include media-breakpoint-down('md') {
             margin-bottom: #{$spacer * 4} !important;
         }
