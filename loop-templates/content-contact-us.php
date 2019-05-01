@@ -51,8 +51,8 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php } ?>
             </div>
 
-            <span class="crosshairs-white crosshairs-top-left"></span>
-            <span class="crosshairs-white crosshairs-top-right"></span>
+            <span class="crosshairs-gray crosshairs-top-left"></span>
+            <span class="crosshairs-gray crosshairs-top-right"></span>
 
         </div>
 
