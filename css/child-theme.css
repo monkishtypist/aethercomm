@@ -15743,22 +15743,22 @@ span.pipe::after {
     height: 1.875rem;
     position: absolute;
     width: 2rem; }
-    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(1) {
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(0) {
       top: 0;
       left: 0;
       border-bottom-color: transparent;
       border-right-color: transparent; }
-    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(2) {
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(1) {
       top: 0;
       right: 0;
       border-bottom-color: transparent;
       border-left-color: transparent; }
-    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(3) {
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(2) {
       bottom: 0;
       right: 0;
       border-top-color: transparent;
       border-left-color: transparent; }
-    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(4) {
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(3) {
       bottom: 0;
       left: 0;
       border-top-color: transparent;
