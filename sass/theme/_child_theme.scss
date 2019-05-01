@@ -119,7 +119,7 @@ ul {
         flex-wrap: wrap;
         justify-content: space-between;
         > li {
-            flex: 0 1 34%;
+            flex: 0 0 auto;
         }
     }
 }
