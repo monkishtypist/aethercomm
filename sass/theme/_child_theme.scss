@@ -29,8 +29,8 @@ $clip-width:       $spacer * 2.5;
 $clip-offset:      $spacer * 22.3;
 $clip-right:       calc(100% - #{$clip-offset});
 $clip-left:        calc(100% - #{$clip-offset + $clip-width});
-$clip-right-wide:  calc(50% - #{$clip-offset});
-$clip-left-wide:   calc(50% - #{$clip-offset + $clip-width});
+$clip-right-wide:  calc(66% - #{$clip-offset});
+$clip-left-wide:   calc(66% - #{$clip-offset + $clip-width});
 
 $nav-tabs-height:  $spacer * 4.25;
 
@@ -211,6 +211,10 @@ section {
 }
 .section-blue {
     background-color: #{$blue}; // rgba($blue,.9);
+    color: #{$white};
+}
+.section-white {
+    background-color: #{$white};
     color: #{$white};
 }
 // Section shapes
@@ -1071,7 +1075,7 @@ li {
                 width: 60%;
             }
             @include media-breakpoint-down('sm') {
-                width: auto;
+                width: 80%;
             }
             @include media-breakpoint-down('xs') {
                 width: auto;

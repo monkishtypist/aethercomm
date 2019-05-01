@@ -14654,6 +14654,10 @@ section {
   background-color: #4A63AE;
   color: #fff; }
 
+.section-white {
+  background-color: #fff;
+  color: #fff; }
+
 .section-banner {
   margin-top: -1.75rem;
   padding-top: 5.875rem;
@@ -14663,8 +14667,8 @@ section {
 .section-banner-wide {
   margin-top: -1.75rem;
   padding-top: 5.875rem;
-  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(50% - 24.8rem) 1.75rem, calc(50% - 22.3rem) 0);
-  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(50% - 24.8rem) 1.75rem, calc(50% - 22.3rem) 0); }
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(66% - 24.8rem) 1.75rem, calc(66% - 22.3rem) 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(66% - 24.8rem) 1.75rem, calc(66% - 22.3rem) 0); }
 
 .section-blue-gradient {
   background-image: url(../images/blue_radial_gradient_bg.png);
@@ -16118,7 +16122,7 @@ li.gfield .ginput_container textarea {
         width: 60%; } }
     @media (max-width: 768.98px) {
       #careers_page-wrapper #careers_header header {
-        width: auto; } }
+        width: 80%; } }
     @media (max-width: 575.98px) {
       #careers_page-wrapper #careers_header header {
         width: auto; } }
