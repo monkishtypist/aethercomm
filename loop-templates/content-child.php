@@ -34,7 +34,7 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section-blue" <?php echo $section_header_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_header" class="section-black" <?php echo $section_header_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -49,7 +49,7 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_content" class="section-black section-path1" <?php echo $section_mission_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_content" class="section-dark section-banner">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -58,6 +58,9 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
                     <?php the_content(); ?>
                 </div>
             </div>
+
+            <span class="crosshairs-white crosshairs-bottom-left"></span>
+            <span class="crosshairs-white crosshairs-bottom-right"></span>
 
         </div>
 

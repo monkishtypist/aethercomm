@@ -14625,6 +14625,10 @@ section {
     section.section-unpadded .container-fluid {
       padding: 0; }
 
+.section-dark {
+  background-color: #222222;
+  color: #fff; }
+
 .section-black {
   background-color: #000;
   color: #fff; }

@@ -181,6 +181,10 @@ section {
         }
     }
 }
+.section-dark {
+    background-color: #{$dark};
+    color: #{$white};
+}
 .section-black {
     background-color: #{$black};
     color: #{$white};
