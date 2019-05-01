@@ -120,6 +120,8 @@ ul {
         justify-content: space-between;
         > li {
             flex: 0 0 auto;
+            font-size: #{$font-size-base * 1.5};
+            min-width: 34%;
         }
     }
 }
