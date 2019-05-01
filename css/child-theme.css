@@ -14266,6 +14266,15 @@ h2, .h2 {
 a.read-more-link {
   text-decoration: underline; }
 
+ul.list-col {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  ul.list-col > li {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%; }
+
 /**
  * Buttons
  */

@@ -115,7 +115,10 @@ a {
 }
 ul {
     &.list-col {
-
+        display: flex;
+        > li {
+            flex: 1 1 50%;
+        }
     }
 }
 
