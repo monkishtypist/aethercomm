@@ -15769,8 +15769,12 @@ li.gfield .ginput_container textarea {
   /* Microsoft Edge */
   color: #FF5800; }
 
+.gform_fields {
+  margin-left: -10px;
+  margin-right: -10px; }
+
 .gform_footer {
-  margin: 0 -1rem;
+  margin: 0 -10px;
   padding: 0 10px; }
 
 /* Sliders */

@@ -684,8 +684,12 @@ li {
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: #{$primary};
 }
+.gform_fields {
+    margin-left: -#{$grid-gutter-width / 2};
+    margin-right: -#{$grid-gutter-width / 2};
+}
 .gform_footer {
-    margin: 0 -#{$spacer};
+    margin: 0 -#{$grid-gutter-width / 2};
     padding: 0 #{$grid-gutter-width / 2};
 }
 /* Sliders */
