@@ -14262,6 +14262,8 @@ h2, .h2 {
   font-weight: 300;
   line-height: 1;
   margin-bottom: .5em; }
+  .page-lede strong {
+    font-weight: 900; }
 
 a.read-more-link {
   text-decoration: underline; }
@@ -16105,6 +16107,16 @@ li.gfield .ginput_container textarea {
       margin: auto;
       display: block; }
 
+#careers_page-wrapper #careers_header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #careers_page-wrapper #careers_header header {
+    width: 40%; }
+    @media (max-width: 991.98px) {
+      #careers_page-wrapper #careers_header header {
+        width: auto; } }
+
 #careers_page-wrapper #careers_benefits {
   background-position: center;
   background-repeat: no-repeat;
@@ -16124,5 +16136,8 @@ li.gfield .ginput_container textarea {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+
+#careers_page-wrapper #careers_open_positions .section-title {
+  text-align: center; }
 
 /*# sourceMappingURL=child-theme.css.map */

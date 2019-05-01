@@ -107,6 +107,9 @@ h2, .h2 {
     font-weight: #{$font-weight-light};
     line-height: 1;
     margin-bottom: .5em;
+    strong {
+        font-weight: #{$font-weight-black};
+    }
 }
 a {
     &.read-more-link {
@@ -1058,7 +1061,17 @@ li {
 }
 
 #careers_page-wrapper {
-    #careers_header {}
+    #careers_header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        header {
+            width: 40%;
+            @include media-breakpoint-down('md') {
+                width: auto;
+            }
+        }
+    }
     #careers_benefits {
         background-position: center;
         background-repeat: no-repeat;
@@ -1073,5 +1086,9 @@ li {
             }
         }
     }
-    #careers_open_positions {}
+    #careers_open_positions {
+        .section-title {
+            text-align: center;
+        }
+    }
 }
