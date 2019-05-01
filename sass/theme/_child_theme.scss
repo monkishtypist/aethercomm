@@ -746,6 +746,9 @@ li {
     margin: 0 -#{$grid-gutter-width / 2};
     padding: 0 #{$grid-gutter-width / 2};
 }
+textarea {
+    max-height: #{$spacer * 6.875};
+}
 /* Sliders */
 .rev-slider-outer {
     .child-page-content & {

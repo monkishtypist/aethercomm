@@ -15822,6 +15822,9 @@ li.gfield .ginput_container textarea {
   margin: 0 -10px;
   padding: 0 10px; }
 
+textarea {
+  max-height: 6.875rem; }
+
 /* Sliders */
 .child-page-content .rev-slider-outer {
   float: right;
