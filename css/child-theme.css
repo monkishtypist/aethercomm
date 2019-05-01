@@ -15950,6 +15950,32 @@ li.gfield .ginput_container textarea {
   color: #4A63AE;
   border: 0; }
 
+::-webkit-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FF5800;
+  opacity: 1;
+  /* Firefox */ }
+
+::-ms-input-placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FF5800;
+  opacity: 1;
+  /* Firefox */ }
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #FF5800;
+  opacity: 1;
+  /* Firefox */ }
+
+:-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #FF5800; }
+
+::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #FF5800; }
+
 /**
  * Footer
  *
