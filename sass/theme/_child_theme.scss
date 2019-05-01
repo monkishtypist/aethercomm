@@ -691,7 +691,7 @@ span.pipe {
         &::after,
         &::before {
             border-top: #{$border-width} solid #{$white};
-            content: "";
+            content: " ";
             display: block;
             margin-top: -.5px;
             position: absolute;
