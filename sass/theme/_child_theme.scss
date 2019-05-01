@@ -659,7 +659,7 @@ span.pipe {
     padding: #{$spacer * 1.875} #{$spacer * 2};
     position: relative;
     .image-frame-wrapper-corner {
-        border: 2px solid #{$white};
+        border: 0;
         box-sizing: border-box;
         height: #{$spacer * 1.875};
         position: absolute;
@@ -667,26 +667,26 @@ span.pipe {
         &:nth-child(0) {
             top: 0;
             left: 0;
-            border-bottom-color: transparent;
-            border-right-color: transparent;
+            border-top: #{$border-width * 2} solid #{$white};
+            border-left: #{$border-width * 2} solid #{$white};
         }
         &:nth-child(1) {
             top: 0;
             right: 0;
-            border-bottom-color: transparent;
-            border-left-color: transparent;
+            border-top: #{$border-width * 2} solid #{$white};
+            border-right: #{$border-width * 2} solid #{$white};
         }
         &:nth-child(2) {
             bottom: 0;
             right: 0;
-            border-top-color: transparent;
-            border-left-color: transparent;
+            border-bottom: #{$border-width * 2} solid #{$white};
+            border-right: #{$border-width * 2} solid #{$white};
         }
         &:nth-child(3) {
             bottom: 0;
             left: 0;
-            border-top-color: transparent;
-            border-right-color: transparent;
+            border-bottom: #{$border-width * 2} solid #{$white};
+            border-left: #{$border-width * 2} solid #{$white};
         }
     }
 }
