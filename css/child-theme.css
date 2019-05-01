@@ -15769,6 +15769,10 @@ li.gfield .ginput_container textarea {
   /* Microsoft Edge */
   color: #FF5800; }
 
+.gform_footer {
+  margin: 0 -1rem;
+  padding: 0 10px; }
+
 /* Sliders */
 .child-page-content .rev-slider-outer {
   float: right;
@@ -16169,5 +16173,13 @@ li.gfield .ginput_container textarea {
 
 #careers_page-wrapper #careers_open_positions .section-title {
   text-align: center; }
+
+#contact-us_page-wrapper #contact-us_header {
+  background-image: url(../images/contact-us-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #contact-us_page-wrapper #contact-us_header .gform_button {
+    width: 100%; }
 
 /*# sourceMappingURL=child-theme.css.map */

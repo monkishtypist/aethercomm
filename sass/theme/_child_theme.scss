@@ -684,7 +684,10 @@ li {
 ::-ms-input-placeholder { /* Microsoft Edge */
     color: #{$primary};
 }
-
+.gform_footer {
+    margin: 0 -#{$spacer};
+    padding: 0 #{$grid-gutter-width / 2};
+}
 /* Sliders */
 .rev-slider-outer {
     .child-page-content & {
@@ -1115,6 +1118,18 @@ li {
     #careers_open_positions {
         .section-title {
             text-align: center;
+        }
+    }
+}
+
+#contact-us_page-wrapper {
+    #contact-us_header {
+        background-image: url(../images/contact-us-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .gform_button {
+            width: 100%;
         }
     }
 }
