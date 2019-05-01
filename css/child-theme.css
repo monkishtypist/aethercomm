@@ -14272,15 +14272,15 @@ ul.list-col {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -ms-flex-pack: distribute;
+      justify-content: space-around; }
   ul.list-col > li {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
     font-size: 1.5rem;
-    min-width: 34%; }
+    margin-bottom: .9em;
+    min-width: 42%; }
 
 /**
  * Buttons

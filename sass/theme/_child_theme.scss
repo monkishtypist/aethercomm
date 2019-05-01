@@ -117,11 +117,12 @@ ul {
     &.list-col {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         > li {
             flex: 0 0 auto;
             font-size: #{$font-size-base * 1.5};
-            min-width: 34%;
+            margin-bottom: .9em;
+            min-width: 42%;
         }
     }
 }
