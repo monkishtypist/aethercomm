@@ -741,6 +741,10 @@ li {
 .gform_fields {
     margin-left: -#{$grid-gutter-width / 2};
     margin-right: -#{$grid-gutter-width / 2};
+    .name_first input,
+    #input_2_4 {
+        margin-bottom: #{$form-group-margin-bottom};
+    }
 }
 .gform_footer {
     margin: 0 -#{$grid-gutter-width / 2};
