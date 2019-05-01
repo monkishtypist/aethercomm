@@ -72,7 +72,7 @@ if ( get_acf_field( 'careers_page_settings_benefits_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_benefits" class="section-blue">
+    <section id="<?php echo $post->post_name; ?>_benefits" class="section-blue" <?php echo $section_benefits_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
