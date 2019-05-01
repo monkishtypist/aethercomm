@@ -49,7 +49,7 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_content" class="section-dark section-banner">
+    <section id="<?php echo $post->post_name; ?>_content" class="section-child-content section-dark section-banner">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 

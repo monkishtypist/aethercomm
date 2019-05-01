@@ -231,6 +231,9 @@ section {
         }
     }
 }
+.section-child-content {
+    padding-bottom: #{$spacer * 6.5};
+}
 
 .container,
 .container-fluid {

@@ -14662,6 +14662,9 @@ section {
     .section-blue-gradient.section-contact-form .crosshairs-top-right {
       top: 0.8125rem; }
 
+.section-child-content {
+  padding-bottom: 6.5rem; }
+
 .container,
 .container-fluid {
   position: relative; }
