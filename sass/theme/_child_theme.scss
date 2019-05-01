@@ -382,17 +382,21 @@ section {
         &:last-of-type {
             margin-right: 0;
         }
-        > .nav-link { // <a>
-            font-size: #{$font-size-base * .875};
-            font-weight: $font-weight-bold;
-            text-transform: uppercase;
-        }
-        &.active {
+        &.active,
+        &.current-page-ancestor {
+            > .nav-link {
+                color: #{$blue};
+            }
             &.btn {
                 > .nav-link {
-                    color: $white;
+                    color: #{$white};
                 }
             }
+        }
+        > .nav-link { // <a>
+            font-size: #{$font-size-base * .875};
+            font-weight: #{$font-weight-bold};
+            text-transform: uppercase;
         }
     }
 }
