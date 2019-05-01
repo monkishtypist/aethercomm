@@ -4,7 +4,6 @@
  * Buttons
  * Wrappers
  * Sections
- * Pages
  * Navs
  * Cards
  * Custom elements
@@ -12,7 +11,9 @@
  *   Pipes
  *   Search Form
  *   Gravity Forms
+ *   Sliders
  * Footer
+ * Pages
  */
 
 /**
@@ -231,7 +232,14 @@ section {
         }
     }
 }
-.section-child-content {
+
+.child-page-header {
+    background-color: #{$black};
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.child-page-content {
     padding-bottom: #{$spacer * 6.5};
 }
 
@@ -241,288 +249,6 @@ section {
     @include media-breakpoint-down('sm') {
         padding-left: 2.25rem !important;
         padding-right: 2.25rem !important;
-    }
-}
-
-/**
- * Pages
- *
- * Page specific sections and spacing, et al.
- */
-#front-page-intro {
-    background-color: #{$black};
-    background-image: url(../images/f22-V3.png),
-        url(../images/SOLDIERS-UPDATES-3.png),
-        linear-gradient(156deg,rgba($black,0) 22rem,$black 43rem),
-        url(../images/earth_desktop.png);
-    background-position: calc(50vw + 1rem) 34rem,calc(50vw + 5rem) 15.5rem,0 0,0 -4rem;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-size: auto, auto, auto, auto;
-    padding-top: 15rem;
-    padding-bottom: #{$spacer * 5.625};
-    #front-page-header {
-        margin-bottom: 13.1875rem;
-        text-align: center;
-        h1 {
-            margin-bottom: 1.6875rem;
-        }
-    }
-    #intro-copy {
-        .btn {
-            margin-top: 2.6rem;
-        }
-    }
-    @include media-breakpoint-down('lg') {
-        background-image: url(../images/f22-V3.png),
-            url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(149deg,rgba($black,0) 23rem,$black 34rem),
-            url(../images/earth_desktop.png);
-        background-position: 50vw 37rem,calc(50vw + 4rem) 16rem,0 0,0 0;
-        background-size: auto,auto,auto,auto;
-    }
-    @include media-breakpoint-down('md') {
-        background-image: url(../images/f22-V3.png),
-            url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(151deg,rgba($black,0) 18rem,$black 26rem),
-            url(../images/earth_desktop.png);
-        background-position: calc(50vw - 21rem) 43rem,calc(50vw - 20rem) 26rem,0 0,0 0;
-        background-size: auto,auto,auto,50rem auto;
-        #intro-header {
-            margin-bottom: 50rem;
-        }
-    }
-    @include media-breakpoint-down('sm') {
-        background-image: url(../images/f22-V3.png),
-            url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(151deg,rgba($black,0) 15rem,$black 25rem),
-            url(../images/earth_desktop.png);
-        background-position: calc(50vw - 17rem) 44rem,calc(50vw - 17rem) 29rem,0 0,0 0;
-        background-size: 38rem auto,36rem auto,auto,73rem auto;
-        padding-top: 10rem;
-        #intro-header {
-            margin-bottom: 42rem;
-            h1 {
-                margin-bottom: 4rem;
-            }
-        }
-    }
-    @include media-breakpoint-down('xs') {
-        background-image: url(../images/f22-V3.png),
-            url(../images/SOLDIERS-UPDATES-3.png),
-            linear-gradient(151deg,rgba($black,0) 9rem,$black 17rem),
-            url(../images/earth_desktop.png);
-        background-position: calc(50vw - 13rem) 38rem,calc(50vw - 13rem) 26rem,0 0,0 0;
-        background-size: 30rem auto,28rem auto,auto,50rem auto;
-        padding-top: 8rem;
-        #intro-header {
-            margin-bottom: 33rem;
-        }
-    }
-}
-#front-page-banner {
-    background-position: 50% 50%, 50% 50%;
-    background-repeat: no-repeat, no-repeat;
-    background-size: cover, cover;
-    font-size: #{$font-size-base * 1.875};
-    text-align: center;
-    #banner-copy {
-        @extend .row;
-        justify-content: center;
-        > div {
-            @extend .col-12;
-            @extend .col-lg-11;
-        }
-    }
-}
-#front-page-slider {}
-#front-page-posts {
-    background-image: url(../images/path1.png);
-    background-position: calc(50vw - 44.3rem) 3.3125rem;
-    background-repeat: no-repeat;
-    background-size: auto;
-    padding-bottom: 6rem;
-    padding-top: 8.375rem;
-    #posts-title {
-        margin-bottom: 4rem;
-    }
-    @include media-breakpoint-down('lg') {
-        background-position: calc(50vw - 40.3rem) 3.3125rem;
-        background-size: auto;
-        padding-bottom: 6rem;
-        padding-top: 8.375rem;
-    }
-    @include media-breakpoint-down('md') {
-        background-position: calc(50vw - 33.3rem) 3.3125rem;
-        background-size: auto;
-        padding-bottom: 6rem;
-        padding-top: 8.375rem;
-    }
-    @include media-breakpoint-down('sm') {
-        background-position: calc(50vw - 26rem) 3.3125rem;
-        background-size: auto;
-        padding-bottom: 6rem;
-        padding-top: 8.375rem;
-    }
-    @include media-breakpoint-down('xs') {
-        background-position: calc(50vw - 20rem) 3.3125rem;
-        background-size: auto;
-        padding-bottom: 3rem;
-        padding-top: 8.375rem;
-    }
-}
-
-#who-we-are_page-wrapper {
-    #who-we-are_header {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: #{$spacer * 7};
-        header {
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
-            padding: 0;
-        }
-    }
-    #who-we-are_tabs {
-        @include skewed-tabs();
-        #milestones-tabs-content {
-            .tab-pane {
-                &:not(.show) {
-                }
-            }
-        }
-    }
-    #who-we-are_mission {
-        background-position: calc(50vw - 44.5rem) 3rem, center;
-        background-repeat: no-repeat;
-        background-size: auto, cover;
-        padding-top: #{$spacer * 6.375};
-        @include media-breakpoint-down('lg') {
-            background-position: calc(50vw - 44.5rem) 3rem, center;
-            padding-top: #{$spacer * 6.375};
-        }
-        @include media-breakpoint-down('md') {
-            background-position: calc(50vw - 44.5rem) 3rem, center;
-            padding-top: #{$spacer * 6.375};
-        }
-        @include media-breakpoint-down('sm') {
-            background-position: calc(50vw - 44.5rem) 3rem, center;
-            padding-top: #{$spacer * 6.375};
-        }
-        @include media-breakpoint-down('xs') {
-            background-position: calc(50vw - 44.5rem) 3rem, center;
-            padding-top: #{$spacer * 6.375};
-        }
-    }
-    #who-we-are_team {
-        #team-members-title {}
-        #team-members-cards {
-            .card {
-                -webkit-box-flex: 0;
-                -ms-flex: 0 0 25%;
-                flex: 0 0 25%;
-                max-width: 25%;
-                max-width: calc(25% - #{$card-group-margin * 2});
-                margin-bottom: #{$spacer * 3};
-                &:nth-last-child(1),
-                &:nth-last-child(2),
-                &:nth-last-child(3),
-                &:nth-last-child(4) {
-                    margin-bottom: 0;
-                }
-                .card-img-top {
-                    border: 0;
-                    margin-bottom: #{$spacer * 1.4375};
-                }
-                .card-body {
-                    .card-title {
-                        font-size: #{$font-size-base};
-                    }
-                    .card-text {
-                        font-size: #{$font-size-sm};
-                    }
-                }
-            }
-        }
-    }
-}
-
-#what-we-do_page-wrapper {
-    #what-we-do_header {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: #{$spacer * 7};
-        header {
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
-            padding: 0;
-        }
-    }
-    #what-we-do_tabs {
-        @include skewed-tabs( $black, $dark, $white, $white );
-        #platforms-tabs-content-wrapper {
-            background-color: #{$dark};
-            background-image: url(../images/path1.png);
-            background-position: calc(50vw - 43.7rem) calc(100% - 3rem);
-            background-repeat: no-repeat;
-            background-size: auto;
-            #platforms-tabs-content {
-                color: #{$white};
-                .tab-pane {
-                    padding-bottom: #{$spacer * 5};
-                    padding-top: #{$spacer * 3.75};
-                    &:not(.active) {
-                        display: none;
-                    }
-                }
-            }
-        }
-    }
-    #what-we-do_capabilities {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        .card {
-            padding: 4.125rem 2.875rem;
-            &.card-capabilities-card1 {
-                background-color: #{$blue};
-            }
-            &.card-capabilities-card2 {
-                background-color: #{$orange};
-            }
-            &.card-capabilities-card3 {
-                background-color: #{$dark};
-            }
-            .card-body {
-                text-align: center;
-                &:first-child {
-                    height: #{$spacer * 6.875};
-                    flex-grow: 0;
-                }
-                &:last-child {
-                    align-content: space-between;
-                    display: flex;
-                    flex-direction: column;
-                }
-                .card-icon {
-                    margin: auto;
-                    display: block;
-                }
-                .card-title {
-                    flex-grow: 1;
-                    margin-bottom: #{$spacer * 3};
-                }
-            }
-            .card-img-top {
-                margin: auto;
-                display: block;
-            }
-        }
     }
 }
 
@@ -907,6 +633,13 @@ li {
     color: #{$primary};
 }
 
+/* Sliders */
+.rev_slider_wrapper {
+    .child-page-content & {
+        margin-bottom: #{$spacer * 4};
+    }
+}
+
 /**
  * Footer
  *
@@ -1000,6 +733,288 @@ li {
             @include media-breakpoint-down('md') {
                 text-align: center;
                 margin-bottom: #{$spacer};
+            }
+        }
+    }
+}
+
+/**
+ * Pages
+ *
+ * Page specific sections and spacing, et al.
+ */
+#front-page-intro {
+    background-color: #{$black};
+    background-image: url(../images/f22-V3.png),
+        url(../images/SOLDIERS-UPDATES-3.png),
+        linear-gradient(156deg,rgba($black,0) 22rem,$black 43rem),
+        url(../images/earth_desktop.png);
+    background-position: calc(50vw + 1rem) 34rem,calc(50vw + 5rem) 15.5rem,0 0,0 -4rem;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-size: auto, auto, auto, auto;
+    padding-top: 15rem;
+    padding-bottom: #{$spacer * 5.625};
+    #front-page-header {
+        margin-bottom: 13.1875rem;
+        text-align: center;
+        h1 {
+            margin-bottom: 1.6875rem;
+        }
+    }
+    #intro-copy {
+        .btn {
+            margin-top: 2.6rem;
+        }
+    }
+    @include media-breakpoint-down('lg') {
+        background-image: url(../images/f22-V3.png),
+            url(../images/SOLDIERS-UPDATES-3.png),
+            linear-gradient(149deg,rgba($black,0) 23rem,$black 34rem),
+            url(../images/earth_desktop.png);
+        background-position: 50vw 37rem,calc(50vw + 4rem) 16rem,0 0,0 0;
+        background-size: auto,auto,auto,auto;
+    }
+    @include media-breakpoint-down('md') {
+        background-image: url(../images/f22-V3.png),
+            url(../images/SOLDIERS-UPDATES-3.png),
+            linear-gradient(151deg,rgba($black,0) 18rem,$black 26rem),
+            url(../images/earth_desktop.png);
+        background-position: calc(50vw - 21rem) 43rem,calc(50vw - 20rem) 26rem,0 0,0 0;
+        background-size: auto,auto,auto,50rem auto;
+        #intro-header {
+            margin-bottom: 50rem;
+        }
+    }
+    @include media-breakpoint-down('sm') {
+        background-image: url(../images/f22-V3.png),
+            url(../images/SOLDIERS-UPDATES-3.png),
+            linear-gradient(151deg,rgba($black,0) 15rem,$black 25rem),
+            url(../images/earth_desktop.png);
+        background-position: calc(50vw - 17rem) 44rem,calc(50vw - 17rem) 29rem,0 0,0 0;
+        background-size: 38rem auto,36rem auto,auto,73rem auto;
+        padding-top: 10rem;
+        #intro-header {
+            margin-bottom: 42rem;
+            h1 {
+                margin-bottom: 4rem;
+            }
+        }
+    }
+    @include media-breakpoint-down('xs') {
+        background-image: url(../images/f22-V3.png),
+            url(../images/SOLDIERS-UPDATES-3.png),
+            linear-gradient(151deg,rgba($black,0) 9rem,$black 17rem),
+            url(../images/earth_desktop.png);
+        background-position: calc(50vw - 13rem) 38rem,calc(50vw - 13rem) 26rem,0 0,0 0;
+        background-size: 30rem auto,28rem auto,auto,50rem auto;
+        padding-top: 8rem;
+        #intro-header {
+            margin-bottom: 33rem;
+        }
+    }
+}
+#front-page-banner {
+    background-position: 50% 50%, 50% 50%;
+    background-repeat: no-repeat, no-repeat;
+    background-size: cover, cover;
+    font-size: #{$font-size-base * 1.875};
+    text-align: center;
+    #banner-copy {
+        @extend .row;
+        justify-content: center;
+        > div {
+            @extend .col-12;
+            @extend .col-lg-11;
+        }
+    }
+}
+#front-page-slider {}
+#front-page-posts {
+    background-image: url(../images/path1.png);
+    background-position: calc(50vw - 44.3rem) 3.3125rem;
+    background-repeat: no-repeat;
+    background-size: auto;
+    padding-bottom: 6rem;
+    padding-top: 8.375rem;
+    #posts-title {
+        margin-bottom: 4rem;
+    }
+    @include media-breakpoint-down('lg') {
+        background-position: calc(50vw - 40.3rem) 3.3125rem;
+        background-size: auto;
+        padding-bottom: 6rem;
+        padding-top: 8.375rem;
+    }
+    @include media-breakpoint-down('md') {
+        background-position: calc(50vw - 33.3rem) 3.3125rem;
+        background-size: auto;
+        padding-bottom: 6rem;
+        padding-top: 8.375rem;
+    }
+    @include media-breakpoint-down('sm') {
+        background-position: calc(50vw - 26rem) 3.3125rem;
+        background-size: auto;
+        padding-bottom: 6rem;
+        padding-top: 8.375rem;
+    }
+    @include media-breakpoint-down('xs') {
+        background-position: calc(50vw - 20rem) 3.3125rem;
+        background-size: auto;
+        padding-bottom: 3rem;
+        padding-top: 8.375rem;
+    }
+}
+
+#who-we-are_page-wrapper {
+    #who-we-are_header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: #{$spacer * 7};
+        header {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0;
+        }
+    }
+    #who-we-are_tabs {
+        @include skewed-tabs();
+        #milestones-tabs-content {
+            .tab-pane {
+                &:not(.show) {
+                }
+            }
+        }
+    }
+    #who-we-are_mission {
+        background-position: calc(50vw - 44.5rem) 3rem, center;
+        background-repeat: no-repeat;
+        background-size: auto, cover;
+        padding-top: #{$spacer * 6.375};
+        @include media-breakpoint-down('lg') {
+            background-position: calc(50vw - 44.5rem) 3rem, center;
+            padding-top: #{$spacer * 6.375};
+        }
+        @include media-breakpoint-down('md') {
+            background-position: calc(50vw - 44.5rem) 3rem, center;
+            padding-top: #{$spacer * 6.375};
+        }
+        @include media-breakpoint-down('sm') {
+            background-position: calc(50vw - 44.5rem) 3rem, center;
+            padding-top: #{$spacer * 6.375};
+        }
+        @include media-breakpoint-down('xs') {
+            background-position: calc(50vw - 44.5rem) 3rem, center;
+            padding-top: #{$spacer * 6.375};
+        }
+    }
+    #who-we-are_team {
+        #team-members-title {}
+        #team-members-cards {
+            .card {
+                -webkit-box-flex: 0;
+                -ms-flex: 0 0 25%;
+                flex: 0 0 25%;
+                max-width: 25%;
+                max-width: calc(25% - #{$card-group-margin * 2});
+                margin-bottom: #{$spacer * 3};
+                &:nth-last-child(1),
+                &:nth-last-child(2),
+                &:nth-last-child(3),
+                &:nth-last-child(4) {
+                    margin-bottom: 0;
+                }
+                .card-img-top {
+                    border: 0;
+                    margin-bottom: #{$spacer * 1.4375};
+                }
+                .card-body {
+                    .card-title {
+                        font-size: #{$font-size-base};
+                    }
+                    .card-text {
+                        font-size: #{$font-size-sm};
+                    }
+                }
+            }
+        }
+    }
+}
+
+#what-we-do_page-wrapper {
+    #what-we-do_header {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        padding-bottom: #{$spacer * 7};
+        header {
+            -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+            max-width: 50%;
+            padding: 0;
+        }
+    }
+    #what-we-do_tabs {
+        @include skewed-tabs( $black, $dark, $white, $white );
+        #platforms-tabs-content-wrapper {
+            background-color: #{$dark};
+            background-image: url(../images/path1.png);
+            background-position: calc(50vw - 43.7rem) calc(100% - 3rem);
+            background-repeat: no-repeat;
+            background-size: auto;
+            #platforms-tabs-content {
+                color: #{$white};
+                .tab-pane {
+                    padding-bottom: #{$spacer * 5};
+                    padding-top: #{$spacer * 3.75};
+                    &:not(.active) {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    #what-we-do_capabilities {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .card {
+            padding: 4.125rem 2.875rem;
+            &.card-capabilities-card1 {
+                background-color: #{$blue};
+            }
+            &.card-capabilities-card2 {
+                background-color: #{$orange};
+            }
+            &.card-capabilities-card3 {
+                background-color: #{$dark};
+            }
+            .card-body {
+                text-align: center;
+                &:first-child {
+                    height: #{$spacer * 6.875};
+                    flex-grow: 0;
+                }
+                &:last-child {
+                    align-content: space-between;
+                    display: flex;
+                    flex-direction: column;
+                }
+                .card-icon {
+                    margin: auto;
+                    display: block;
+                }
+                .card-title {
+                    flex-grow: 1;
+                    margin-bottom: #{$spacer * 3};
+                }
+            }
+            .card-img-top {
+                margin: auto;
+                display: block;
             }
         }
     }

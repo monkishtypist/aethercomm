@@ -34,7 +34,7 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section-black" <?php echo $section_header_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_header" class="child-page-header section-black" <?php echo $section_header_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -49,13 +49,13 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_content" class="section-child-content section-dark section-banner">
+    <section id="<?php echo $post->post_name; ?>_content" class="child-page-content section-dark section-banner">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">
                 <?php if ( get_acf_field( 'child_page_settings_content_slider' ) && class_exists( 'RevSlider' ) ) : ?>
-                    <div class="col-12 col-lg-6 order-12">
+                    <div class="col-12 col-lg-6 order-lg-last">
                         <?php putRevSlider( get_acf_field( 'child_page_settings_content_slider', true ) ); ?>
                     </div>
                 <?php endif; ?>
@@ -64,8 +64,8 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
                 </div>
             </div>
 
-            <span class="crosshairs-gray-600 crosshairs-bottom-left"></span>
-            <span class="crosshairs-gray-600 crosshairs-bottom-right"></span>
+            <span class="crosshairs-gray crosshairs-bottom-left"></span>
+            <span class="crosshairs-gray crosshairs-bottom-right"></span>
 
         </div>
 

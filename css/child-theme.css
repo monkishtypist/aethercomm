@@ -471,7 +471,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row, #front-page-banner #banner-copy, #footer-menu, #legal-menu, #wrapper-footer .footer-widgets, #wrapper-footer .footer-siteinfo {
+.row, #footer-menu, #legal-menu, #wrapper-footer .footer-widgets, #wrapper-footer .footer-siteinfo, #front-page-banner #banner-copy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +488,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .section-blue-gradient.section-contact-form .contact-widget, #front-page-banner #banner-copy > div, #footer-menu > .nav-item, #wrapper-footer .footer-widgets .footer-widget, #wrapper-footer .footer-siteinfo #colophon, #wrapper-footer .footer-siteinfo #legal-menu-wrapper, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .section-blue-gradient.section-contact-form .contact-widget, #footer-menu > .nav-item, #wrapper-footer .footer-widgets .footer-widget, #wrapper-footer .footer-siteinfo #colophon, #wrapper-footer .footer-siteinfo #legal-menu-wrapper, #front-page-banner #banner-copy > div, .col,
 .col-auto, #legal-menu > .nav-item, #wrapper-footer .footer-widgets .social-icons-widget, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -580,7 +580,7 @@ pre {
           flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, .section-blue-gradient.section-contact-form .contact-widget, #front-page-banner #banner-copy > div, #footer-menu > .nav-item, #wrapper-footer .footer-widgets .footer-widget, #wrapper-footer .footer-siteinfo #colophon, #wrapper-footer .footer-siteinfo #legal-menu-wrapper {
+.col-12, .section-blue-gradient.section-contact-form .contact-widget, #footer-menu > .nav-item, #wrapper-footer .footer-widgets .footer-widget, #wrapper-footer .footer-siteinfo #colophon, #wrapper-footer .footer-siteinfo #legal-menu-wrapper, #front-page-banner #banner-copy > div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -14213,7 +14213,6 @@ readers do not read off random characters that represent icons */
  * Buttons
  * Wrappers
  * Sections
- * Pages
  * Navs
  * Cards
  * Custom elements
@@ -14221,7 +14220,9 @@ readers do not read off random characters that represent icons */
  *   Pipes
  *   Search Form
  *   Gravity Forms
+ *   Sliders
  * Footer
+ * Pages
  */
 /**
  * Variables
@@ -14662,7 +14663,13 @@ section {
     .section-blue-gradient.section-contact-form .crosshairs-top-right {
       top: 0.8125rem; }
 
-.section-child-content {
+.child-page-header {
+  background-color: #000;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.child-page-content {
   padding-bottom: 6.5rem; }
 
 .container,
@@ -14673,277 +14680,6 @@ section {
     .container-fluid {
       padding-left: 2.25rem !important;
       padding-right: 2.25rem !important; } }
-
-/**
- * Pages
- *
- * Page specific sections and spacing, et al.
- */
-#front-page-intro {
-  background-color: #000;
-  background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(156deg, rgba(0, 0, 0, 0) 22rem, #000 43rem), url(../images/earth_desktop.png);
-  background-position: calc(50vw + 1rem) 34rem, calc(50vw + 5rem) 15.5rem, 0 0, 0 -4rem;
-  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-  background-size: auto, auto, auto, auto;
-  padding-top: 15rem;
-  padding-bottom: 5.625rem; }
-  #front-page-intro #front-page-header {
-    margin-bottom: 13.1875rem;
-    text-align: center; }
-    #front-page-intro #front-page-header h1 {
-      margin-bottom: 1.6875rem; }
-  #front-page-intro #intro-copy .btn {
-    margin-top: 2.6rem; }
-  @media (max-width: 1199.98px) {
-    #front-page-intro {
-      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(149deg, rgba(0, 0, 0, 0) 23rem, #000 34rem), url(../images/earth_desktop.png);
-      background-position: 50vw 37rem, calc(50vw + 4rem) 16rem, 0 0, 0 0;
-      background-size: auto,auto,auto,auto; } }
-  @media (max-width: 991.98px) {
-    #front-page-intro {
-      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 18rem, #000 26rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 21rem) 43rem, calc(50vw - 20rem) 26rem, 0 0, 0 0;
-      background-size: auto,auto,auto,50rem auto; }
-      #front-page-intro #intro-header {
-        margin-bottom: 50rem; } }
-  @media (max-width: 768.98px) {
-    #front-page-intro {
-      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 15rem, #000 25rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 17rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 0;
-      background-size: 38rem auto,36rem auto,auto,73rem auto;
-      padding-top: 10rem; }
-      #front-page-intro #intro-header {
-        margin-bottom: 42rem; }
-        #front-page-intro #intro-header h1 {
-          margin-bottom: 4rem; } }
-  @media (max-width: 575.98px) {
-    #front-page-intro {
-      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 9rem, #000 17rem), url(../images/earth_desktop.png);
-      background-position: calc(50vw - 13rem) 38rem, calc(50vw - 13rem) 26rem, 0 0, 0 0;
-      background-size: 30rem auto,28rem auto,auto,50rem auto;
-      padding-top: 8rem; }
-      #front-page-intro #intro-header {
-        margin-bottom: 33rem; } }
-
-#front-page-banner {
-  background-position: 50% 50%, 50% 50%;
-  background-repeat: no-repeat, no-repeat;
-  background-size: cover, cover;
-  font-size: 1.875rem;
-  text-align: center; }
-  #front-page-banner #banner-copy {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-
-#front-page-posts {
-  background-image: url(../images/path1.png);
-  background-position: calc(50vw - 44.3rem) 3.3125rem;
-  background-repeat: no-repeat;
-  background-size: auto;
-  padding-bottom: 6rem;
-  padding-top: 8.375rem; }
-  #front-page-posts #posts-title {
-    margin-bottom: 4rem; }
-  @media (max-width: 1199.98px) {
-    #front-page-posts {
-      background-position: calc(50vw - 40.3rem) 3.3125rem;
-      background-size: auto;
-      padding-bottom: 6rem;
-      padding-top: 8.375rem; } }
-  @media (max-width: 991.98px) {
-    #front-page-posts {
-      background-position: calc(50vw - 33.3rem) 3.3125rem;
-      background-size: auto;
-      padding-bottom: 6rem;
-      padding-top: 8.375rem; } }
-  @media (max-width: 768.98px) {
-    #front-page-posts {
-      background-position: calc(50vw - 26rem) 3.3125rem;
-      background-size: auto;
-      padding-bottom: 6rem;
-      padding-top: 8.375rem; } }
-  @media (max-width: 575.98px) {
-    #front-page-posts {
-      background-position: calc(50vw - 20rem) 3.3125rem;
-      background-size: auto;
-      padding-bottom: 3rem;
-      padding-top: 8.375rem; } }
-
-#who-we-are_page-wrapper #who-we-are_header {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 7rem; }
-  #who-we-are_page-wrapper #who-we-are_header header {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0; }
-
-#who-we-are_page-wrapper #who-we-are_tabs {
-  margin-top: -4.25rem;
-  overflow-x: hidden; }
-  #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs {
-    margin-left: 2.125rem;
-    margin-right: -4.25rem; }
-    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link {
-      padding-right: 4.25rem; }
-    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
-      background-color: #222222;
-      border: 1px solid #4A63AE;
-      color: #fff;
-      font-size: 1.25rem;
-      font-weight: 700;
-      height: 4.25rem;
-      letter-spacing: .025em;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
-      -webkit-transform: skew(-45deg);
-              transform: skew(-45deg); }
-      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
-        background-color: #fff;
-        border-bottom-color: #fff;
-        color: #222222; }
-      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
-        display: block;
-        -webkit-transform: skew(45deg);
-                transform: skew(45deg); }
-
-#who-we-are_page-wrapper #who-we-are_mission {
-  background-position: calc(50vw - 44.5rem) 3rem, center;
-  background-repeat: no-repeat;
-  background-size: auto, cover;
-  padding-top: 6.375rem; }
-  @media (max-width: 1199.98px) {
-    #who-we-are_page-wrapper #who-we-are_mission {
-      background-position: calc(50vw - 44.5rem) 3rem, center;
-      padding-top: 6.375rem; } }
-  @media (max-width: 991.98px) {
-    #who-we-are_page-wrapper #who-we-are_mission {
-      background-position: calc(50vw - 44.5rem) 3rem, center;
-      padding-top: 6.375rem; } }
-  @media (max-width: 768.98px) {
-    #who-we-are_page-wrapper #who-we-are_mission {
-      background-position: calc(50vw - 44.5rem) 3rem, center;
-      padding-top: 6.375rem; } }
-  @media (max-width: 575.98px) {
-    #who-we-are_page-wrapper #who-we-are_mission {
-      background-position: calc(50vw - 44.5rem) 3rem, center;
-      padding-top: 6.375rem; } }
-
-#who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
-  -webkit-box-flex: 0;
-  -ms-flex: 0 0 25%;
-  flex: 0 0 25%;
-  max-width: 25%;
-  max-width: calc(25% - 36px);
-  margin-bottom: 3rem; }
-  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(1), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(2), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(3), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(4) {
-    margin-bottom: 0; }
-  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-img-top {
-    border: 0;
-    margin-bottom: 1.4375rem; }
-  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-body .card-title {
-    font-size: 1rem; }
-  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-body .card-text {
-    font-size: 0.75rem; }
-
-#what-we-do_page-wrapper #what-we-do_header {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 7rem; }
-  #what-we-do_page-wrapper #what-we-do_header header {
-    -webkit-box-flex: 0;
-    -ms-flex: 0 0 50%;
-    flex: 0 0 50%;
-    max-width: 50%;
-    padding: 0; }
-
-#what-we-do_page-wrapper #what-we-do_tabs {
-  margin-top: -4.25rem;
-  overflow-x: hidden; }
-  #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs {
-    margin-left: 2.125rem;
-    margin-right: -4.25rem; }
-    #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item:last-of-type .nav-link {
-      padding-right: 4.25rem; }
-    #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link {
-      background-color: #000;
-      border: 1px solid #4A63AE;
-      color: #fff;
-      font-size: 1.25rem;
-      font-weight: 700;
-      height: 4.25rem;
-      letter-spacing: .025em;
-      padding-bottom: 1rem;
-      padding-top: 1rem;
-      -webkit-transform: skew(-45deg);
-              transform: skew(-45deg); }
-      #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link.active {
-        background-color: #222222;
-        border-bottom-color: #222222;
-        color: #fff; }
-      #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span {
-        display: block;
-        -webkit-transform: skew(45deg);
-                transform: skew(45deg); }
-  #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper {
-    background-color: #222222;
-    background-image: url(../images/path1.png);
-    background-position: calc(50vw - 43.7rem) calc(100% - 3rem);
-    background-repeat: no-repeat;
-    background-size: auto; }
-    #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content {
-      color: #fff; }
-      #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane {
-        padding-bottom: 5rem;
-        padding-top: 3.75rem; }
-        #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane:not(.active) {
-          display: none; }
-
-#what-we-do_page-wrapper #what-we-do_capabilities {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
-  #what-we-do_page-wrapper #what-we-do_capabilities .card {
-    padding: 4.125rem 2.875rem; }
-    #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card1 {
-      background-color: #4A63AE; }
-    #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card2 {
-      background-color: #fd7e14; }
-    #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card3 {
-      background-color: #222222; }
-    #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body {
-      text-align: center; }
-      #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body:first-child {
-        height: 6.875rem;
-        -webkit-box-flex: 0;
-            -ms-flex-positive: 0;
-                flex-grow: 0; }
-      #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body:last-child {
-        -ms-flex-line-pack: justify;
-            align-content: space-between;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: column;
-                flex-direction: column; }
-      #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-icon {
-        margin: auto;
-        display: block; }
-      #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-title {
-        -webkit-box-flex: 1;
-            -ms-flex-positive: 1;
-                flex-grow: 1;
-        margin-bottom: 3rem; }
-    #what-we-do_page-wrapper #what-we-do_capabilities .card .card-img-top {
-      margin: auto;
-      display: block; }
 
 /**
  * Navs
@@ -15983,6 +15719,10 @@ li.gfield .ginput_container textarea {
   /* Microsoft Edge */
   color: #FF5800; }
 
+/* Sliders */
+.child-page-content .rev_slider_wrapper {
+  margin-bottom: 4rem; }
+
 /**
  * Footer
  *
@@ -16061,5 +15801,276 @@ li.gfield .ginput_container textarea {
     #wrapper-footer .footer-siteinfo #legal-menu-wrapper {
       text-align: center;
       margin-bottom: 1rem; } }
+
+/**
+ * Pages
+ *
+ * Page specific sections and spacing, et al.
+ */
+#front-page-intro {
+  background-color: #000;
+  background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(156deg, rgba(0, 0, 0, 0) 22rem, #000 43rem), url(../images/earth_desktop.png);
+  background-position: calc(50vw + 1rem) 34rem, calc(50vw + 5rem) 15.5rem, 0 0, 0 -4rem;
+  background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+  background-size: auto, auto, auto, auto;
+  padding-top: 15rem;
+  padding-bottom: 5.625rem; }
+  #front-page-intro #front-page-header {
+    margin-bottom: 13.1875rem;
+    text-align: center; }
+    #front-page-intro #front-page-header h1 {
+      margin-bottom: 1.6875rem; }
+  #front-page-intro #intro-copy .btn {
+    margin-top: 2.6rem; }
+  @media (max-width: 1199.98px) {
+    #front-page-intro {
+      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(149deg, rgba(0, 0, 0, 0) 23rem, #000 34rem), url(../images/earth_desktop.png);
+      background-position: 50vw 37rem, calc(50vw + 4rem) 16rem, 0 0, 0 0;
+      background-size: auto,auto,auto,auto; } }
+  @media (max-width: 991.98px) {
+    #front-page-intro {
+      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 18rem, #000 26rem), url(../images/earth_desktop.png);
+      background-position: calc(50vw - 21rem) 43rem, calc(50vw - 20rem) 26rem, 0 0, 0 0;
+      background-size: auto,auto,auto,50rem auto; }
+      #front-page-intro #intro-header {
+        margin-bottom: 50rem; } }
+  @media (max-width: 768.98px) {
+    #front-page-intro {
+      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 15rem, #000 25rem), url(../images/earth_desktop.png);
+      background-position: calc(50vw - 17rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 0;
+      background-size: 38rem auto,36rem auto,auto,73rem auto;
+      padding-top: 10rem; }
+      #front-page-intro #intro-header {
+        margin-bottom: 42rem; }
+        #front-page-intro #intro-header h1 {
+          margin-bottom: 4rem; } }
+  @media (max-width: 575.98px) {
+    #front-page-intro {
+      background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 9rem, #000 17rem), url(../images/earth_desktop.png);
+      background-position: calc(50vw - 13rem) 38rem, calc(50vw - 13rem) 26rem, 0 0, 0 0;
+      background-size: 30rem auto,28rem auto,auto,50rem auto;
+      padding-top: 8rem; }
+      #front-page-intro #intro-header {
+        margin-bottom: 33rem; } }
+
+#front-page-banner {
+  background-position: 50% 50%, 50% 50%;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+  font-size: 1.875rem;
+  text-align: center; }
+  #front-page-banner #banner-copy {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+#front-page-posts {
+  background-image: url(../images/path1.png);
+  background-position: calc(50vw - 44.3rem) 3.3125rem;
+  background-repeat: no-repeat;
+  background-size: auto;
+  padding-bottom: 6rem;
+  padding-top: 8.375rem; }
+  #front-page-posts #posts-title {
+    margin-bottom: 4rem; }
+  @media (max-width: 1199.98px) {
+    #front-page-posts {
+      background-position: calc(50vw - 40.3rem) 3.3125rem;
+      background-size: auto;
+      padding-bottom: 6rem;
+      padding-top: 8.375rem; } }
+  @media (max-width: 991.98px) {
+    #front-page-posts {
+      background-position: calc(50vw - 33.3rem) 3.3125rem;
+      background-size: auto;
+      padding-bottom: 6rem;
+      padding-top: 8.375rem; } }
+  @media (max-width: 768.98px) {
+    #front-page-posts {
+      background-position: calc(50vw - 26rem) 3.3125rem;
+      background-size: auto;
+      padding-bottom: 6rem;
+      padding-top: 8.375rem; } }
+  @media (max-width: 575.98px) {
+    #front-page-posts {
+      background-position: calc(50vw - 20rem) 3.3125rem;
+      background-size: auto;
+      padding-bottom: 3rem;
+      padding-top: 8.375rem; } }
+
+#who-we-are_page-wrapper #who-we-are_header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 7rem; }
+  #who-we-are_page-wrapper #who-we-are_header header {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0; }
+
+#who-we-are_page-wrapper #who-we-are_tabs {
+  margin-top: -4.25rem;
+  overflow-x: hidden; }
+  #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs {
+    margin-left: 2.125rem;
+    margin-right: -4.25rem; }
+    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link {
+      padding-right: 4.25rem; }
+    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
+      background-color: #222222;
+      border: 1px solid #4A63AE;
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 700;
+      height: 4.25rem;
+      letter-spacing: .025em;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      -webkit-transform: skew(-45deg);
+              transform: skew(-45deg); }
+      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
+        background-color: #fff;
+        border-bottom-color: #fff;
+        color: #222222; }
+      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
+        display: block;
+        -webkit-transform: skew(45deg);
+                transform: skew(45deg); }
+
+#who-we-are_page-wrapper #who-we-are_mission {
+  background-position: calc(50vw - 44.5rem) 3rem, center;
+  background-repeat: no-repeat;
+  background-size: auto, cover;
+  padding-top: 6.375rem; }
+  @media (max-width: 1199.98px) {
+    #who-we-are_page-wrapper #who-we-are_mission {
+      background-position: calc(50vw - 44.5rem) 3rem, center;
+      padding-top: 6.375rem; } }
+  @media (max-width: 991.98px) {
+    #who-we-are_page-wrapper #who-we-are_mission {
+      background-position: calc(50vw - 44.5rem) 3rem, center;
+      padding-top: 6.375rem; } }
+  @media (max-width: 768.98px) {
+    #who-we-are_page-wrapper #who-we-are_mission {
+      background-position: calc(50vw - 44.5rem) 3rem, center;
+      padding-top: 6.375rem; } }
+  @media (max-width: 575.98px) {
+    #who-we-are_page-wrapper #who-we-are_mission {
+      background-position: calc(50vw - 44.5rem) 3rem, center;
+      padding-top: 6.375rem; } }
+
+#who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 0 25%;
+  flex: 0 0 25%;
+  max-width: 25%;
+  max-width: calc(25% - 36px);
+  margin-bottom: 3rem; }
+  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(1), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(2), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(3), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(4) {
+    margin-bottom: 0; }
+  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-img-top {
+    border: 0;
+    margin-bottom: 1.4375rem; }
+  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-body .card-title {
+    font-size: 1rem; }
+  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-body .card-text {
+    font-size: 0.75rem; }
+
+#what-we-do_page-wrapper #what-we-do_header {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 7rem; }
+  #what-we-do_page-wrapper #what-we-do_header header {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0; }
+
+#what-we-do_page-wrapper #what-we-do_tabs {
+  margin-top: -4.25rem;
+  overflow-x: hidden; }
+  #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs {
+    margin-left: 2.125rem;
+    margin-right: -4.25rem; }
+    #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item:last-of-type .nav-link {
+      padding-right: 4.25rem; }
+    #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link {
+      background-color: #000;
+      border: 1px solid #4A63AE;
+      color: #fff;
+      font-size: 1.25rem;
+      font-weight: 700;
+      height: 4.25rem;
+      letter-spacing: .025em;
+      padding-bottom: 1rem;
+      padding-top: 1rem;
+      -webkit-transform: skew(-45deg);
+              transform: skew(-45deg); }
+      #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link.active {
+        background-color: #222222;
+        border-bottom-color: #222222;
+        color: #fff; }
+      #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span {
+        display: block;
+        -webkit-transform: skew(45deg);
+                transform: skew(45deg); }
+  #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper {
+    background-color: #222222;
+    background-image: url(../images/path1.png);
+    background-position: calc(50vw - 43.7rem) calc(100% - 3rem);
+    background-repeat: no-repeat;
+    background-size: auto; }
+    #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content {
+      color: #fff; }
+      #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane {
+        padding-bottom: 5rem;
+        padding-top: 3.75rem; }
+        #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane:not(.active) {
+          display: none; }
+
+#what-we-do_page-wrapper #what-we-do_capabilities {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #what-we-do_page-wrapper #what-we-do_capabilities .card {
+    padding: 4.125rem 2.875rem; }
+    #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card1 {
+      background-color: #4A63AE; }
+    #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card2 {
+      background-color: #fd7e14; }
+    #what-we-do_page-wrapper #what-we-do_capabilities .card.card-capabilities-card3 {
+      background-color: #222222; }
+    #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body {
+      text-align: center; }
+      #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body:first-child {
+        height: 6.875rem;
+        -webkit-box-flex: 0;
+            -ms-flex-positive: 0;
+                flex-grow: 0; }
+      #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body:last-child {
+        -ms-flex-line-pack: justify;
+            align-content: space-between;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column; }
+      #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-icon {
+        margin: auto;
+        display: block; }
+      #what-we-do_page-wrapper #what-we-do_capabilities .card .card-body .card-title {
+        -webkit-box-flex: 1;
+            -ms-flex-positive: 1;
+                flex-grow: 1;
+        margin-bottom: 3rem; }
+    #what-we-do_page-wrapper #what-we-do_capabilities .card .card-img-top {
+      margin: auto;
+      display: block; }
 
 /*# sourceMappingURL=child-theme.css.map */
