@@ -58,7 +58,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <?php $contact_us_page_settings_recommended_hotel_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' ); ?>
                     <?php if ( is_array( $contact_us_page_settings_recommended_hotel_image_id ) && isset( $contact_us_page_settings_recommended_hotel_image_id[0] ) ) { ?>
                         <div class="col-12 col-lg-6">
-                            <?php echo wp_get_attachment_image( $contact_us_page_settings_recommended_hotel_image_id[0], 'large', false, array( 'class' => 'tab-image' ) ); ?>
+                            <?php echo wp_get_attachment_image( $contact_us_page_settings_recommended_hotel_image_id[0], 'large', false, array( 'class' => 'image-fluid' ) ); ?>
                         </div>
                     <?php } ?>
                 <?php } ?>
