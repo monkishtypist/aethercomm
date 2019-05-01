@@ -15763,18 +15763,18 @@ span.pipe::after {
       left: 0;
       border-bottom: 2px solid #fff;
       border-left: 2px solid #fff; }
-    .image-frame-wrapper .image-frame-wrapper-corner::after, .image-frame-wrapper .image-frame-wrapper-corner::before {
-      border-top: 1px solid #fff;
-      content: " ";
-      display: block;
-      margin-top: -.5px;
-      position: absolute;
-      top: 50%;
-      width: 1.5rem; }
-    .image-frame-wrapper .image-frame-wrapper-corner::after {
-      right: 0; }
-    .image-frame-wrapper .image-frame-wrapper-corner::before {
-      left: 0; }
+  .image-frame-wrapper::after, .image-frame-wrapper::before {
+    border-top: 1px solid #fff;
+    content: " ";
+    display: block;
+    margin-top: -.5px;
+    position: absolute;
+    top: 50%;
+    width: 1.5rem; }
+  .image-frame-wrapper::after {
+    right: 0; }
+  .image-frame-wrapper::before {
+    left: 0; }
 
 /* Search Form */
 /* Gravity Forms */
