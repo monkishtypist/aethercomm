@@ -644,7 +644,7 @@ li {
 /* Sliders */
 .rev-slider-outer {
     .child-page-content & {
-        max-width: 530px;
+        width: 530px;
         float: right;
         @include media-breakpoint-down('md') {
             margin-bottom: #{$spacer * 4} !important;

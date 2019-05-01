@@ -15723,7 +15723,7 @@ li.gfield .ginput_container textarea {
 
 /* Sliders */
 .child-page-content .rev-slider-outer {
-  max-width: 530px;
+  width: 530px;
   float: right; }
   @media (max-width: 991.98px) {
     .child-page-content .rev-slider-outer {
