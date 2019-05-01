@@ -16115,6 +16115,12 @@ li.gfield .ginput_container textarea {
     width: 40%; }
     @media (max-width: 991.98px) {
       #careers_page-wrapper #careers_header header {
+        width: 60%; } }
+    @media (max-width: 768.98px) {
+      #careers_page-wrapper #careers_header header {
+        width: auto; } }
+    @media (max-width: 575.98px) {
+      #careers_page-wrapper #careers_header header {
         width: auto; } }
 
 #careers_page-wrapper #careers_benefits {
