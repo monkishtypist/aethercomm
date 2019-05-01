@@ -15765,6 +15765,7 @@ span.pipe::after {
       border-left: 2px solid #fff; }
     .image-frame-wrapper .image-frame-wrapper-corner::after, .image-frame-wrapper .image-frame-wrapper-corner::before {
       border-top: 1px solid #fff;
+      content: "";
       display: block;
       margin-top: -.5px;
       position: absolute;
