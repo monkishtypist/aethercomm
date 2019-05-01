@@ -15817,7 +15817,7 @@ li.gfield .ginput_container textarea {
 .gform_fields {
   margin-left: -10px;
   margin-right: -10px; }
-  .gform_fields .name_first input,
+  .gform_fields #input_2_1_3,
   .gform_fields #input_2_4 {
     margin-bottom: 1.75rem; }
 
