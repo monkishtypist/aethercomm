@@ -45,6 +45,9 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
                 <?php the_title( '<h1 class="page-lede">', '</h1>' ); ?>
             </header>
 
+            <span class="crosshairs-gray crosshairs-top-left"></span>
+            <span class="crosshairs-gray crosshairs-top-right"></span>
+
         </div>
 
     </section>

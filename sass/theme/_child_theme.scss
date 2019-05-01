@@ -238,6 +238,7 @@ section {
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    padding-top: #{$spacer * 13};
 }
 .child-page-content {
     padding-bottom: #{$spacer * 6.5};
