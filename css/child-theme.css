@@ -15720,8 +15720,9 @@ li.gfield .ginput_container textarea {
   color: #FF5800; }
 
 /* Sliders */
-.child-page-content .rev_slider_wrapper {
-  margin-bottom: 4rem; }
+@media (max-width: 991.98px) {
+  .child-page-content .rev_slider_wrapper {
+    margin-bottom: 4rem !important; } }
 
 /**
  * Footer

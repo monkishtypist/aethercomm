@@ -640,7 +640,9 @@ li {
 /* Sliders */
 .rev_slider_wrapper {
     .child-page-content & {
-        margin-bottom: #{$spacer * 4};
+        @include media-breakpoint-down('md') {
+            margin-bottom: #{$spacer * 4} !important;
+        }
     }
 }
 
