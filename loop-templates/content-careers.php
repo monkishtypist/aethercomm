@@ -77,7 +77,7 @@ if ( get_acf_field( 'careers_page_settings_benefits_background' ) ) {
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">
-                <div class="col-12 col-10-lg">
+                <div class="col-12 col-lg-10">
                     <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
                         get_acf_field( 'careers_page_settings_benefits_title', true )
                     ); ?>
