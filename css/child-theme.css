@@ -14642,6 +14642,12 @@ section {
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(100% - 24.8rem) 1.75rem, calc(100% - 22.3rem) 0);
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(100% - 24.8rem) 1.75rem, calc(100% - 22.3rem) 0); }
 
+.section-banner-wide {
+  margin-top: -1.75rem;
+  padding-top: 5.875rem;
+  -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(50% - 24.8rem) 1.75rem, calc(50% - 22.3rem) 0);
+  clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(50% - 24.8rem) 1.75rem, calc(50% - 22.3rem) 0); }
+
 .section-blue-gradient {
   background-image: url(../images/blue_radial_gradient_bg.png);
   background-position: 50% 50%;

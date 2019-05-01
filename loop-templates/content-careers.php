@@ -32,7 +32,7 @@ if ( get_acf_field( 'careers_page_settings_header_background' ) ) {
 
 $section_benefits_styles = sprintf( 'style="%1$s"',
     sprintf( 'background-image:url(%1$s);',
-        '/wp-content/uploads/2019/04/careers_mission-statement.png'
+        '/wp-content/uploads/2019/04/benefits-bg.png'
     )
 );
 if ( get_acf_field( 'careers_page_settings_benefits_background' ) ) {
@@ -51,7 +51,7 @@ if ( get_acf_field( 'careers_page_settings_benefits_background' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section_header section-blue" <?php echo $section_header_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_header" class="section_header section-black" <?php echo $section_header_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -72,42 +72,33 @@ if ( get_acf_field( 'careers_page_settings_benefits_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_tabs" class="section-unpadded">
+    <section id="<?php echo $post->post_name; ?>_benefits" class="section-blue">
 
-        <div class="container-fluid">
+        <div class="<?php echo esc_attr( $container ); ?>">
 
-            <ul class="nav nav-tabs nav-fill" id="milestones-tabs" role="tablist">
-                <?php echo sprintf( '<li class="nav-item"><a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"><span>%1$s</span></a></li>',
-                    get_acf_field( 'careers_page_settings_tabs_tab1_title', true )
-                ); ?>
-                <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"><span>%1$s</span></a></li>',
-                    get_acf_field( 'careers_page_settings_tabs_tab2_title', true )
-                ); ?>
-                <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"><span>%1$s</span></a></li>',
-                    get_acf_field( 'careers_page_settings_tabs_tab3_title', true )
-                ); ?>
-            </ul>
+            <div class="row">
+                <div class="col">
+                    <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
+                        get_acf_field( 'careers_page_settings_benefits_title', true )
+                    ); ?>
+                    <?php echo apply_filters( 'the_content', get_acf_field( 'careers_page_settings_benefits_copy', true ) ); ?>
+                </div>
+            </div>
 
-        </div>
-
-        <div class="<?php echo esc_attr( $container ); ?>" id="milestones-tabs-content">
-            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">...tab1</div>
-            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">...tab2</div>
-            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">...tab3</div>
         </div>
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1" <?php echo $section_mission_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_open_positions" class="section-white section-banner-wide" <?php echo $section_open_positions_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">
                 <div class="col-12 col-lg-6">
                     <?php echo sprintf( '<h2 class="">%1$s</h2>',
-                        get_acf_field( 'careers_page_settings_mission_title', true )
+                        get_acf_field( 'careers_page_settings_open_positions_title', true )
                     ); ?>
-                    <?php echo apply_filters( 'the_content', get_acf_field( 'careers_page_settings_mission_copy', true ) ); ?>
+                    <?php echo apply_filters( 'the_content', get_acf_field( 'careers_page_settings_open_positions_content', true ) ); ?>
                 </div>
             </div>
 
@@ -115,48 +106,17 @@ if ( get_acf_field( 'careers_page_settings_benefits_background' ) ) {
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_team" class="section-white">
+    <?php if ( class_exists( 'RevSlider' ) ) : ?>
 
-        <div class="<?php echo esc_attr( $container ); ?>">
+        <section id="<?php echo $post->post_name; ?>_slider" class="section-unpadded">
 
-            <div id="team-members-title">
-                <?php echo sprintf( '<h2 class="">%1$s</h2>',
-                    __( 'Team', 'aethercomm' )
-                ); ?>
+            <div class="container-fluid">
+                <?php putRevSlider("careers"); ?>
             </div>
 
-            <?php
-            $args = array(
-                'post_type' => 'team-members',
-                'posts_per_page' => 20
-            );
-            $query = new WP_Query( $args );
-            ?>
+        </section>
 
-            <?php if ( $query->have_posts() ) : ?>
-
-                <?php ob_start(); ?>
-
-                <div id="team-members-cards" class="card-deck">
-
-                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-
-                        <?php get_template_part( 'loop-templates/content', 'card' ); ?>
-
-                    <?php endwhile; ?>
-
-                </div>
-
-                <?php echo ob_get_clean(); ?>
-
-            <?php endif; wp_reset_query(); ?>
-
-            <span class="crosshairs-blue crosshairs-bottom-left"></span>
-            <span class="crosshairs-blue crosshairs-bottom-right"></span>
-
-        </div>
-
-    </section>
+    <?php endif; ?>
 
     <?php get_template_part( 'sidebar-templates/sidebar', 'contact' ); ?>
 

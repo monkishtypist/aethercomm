@@ -29,6 +29,8 @@ $clip-width:       $spacer * 2.5;
 $clip-offset:      $spacer * 22.3;
 $clip-right:       calc(100% - #{$clip-offset});
 $clip-left:        calc(100% - #{$clip-offset + $clip-width});
+$clip-right-wide:  calc(50% - #{$clip-offset});
+$clip-left-wide:   calc(50% - #{$clip-offset + $clip-width});
 
 $nav-tabs-height:  $spacer * 4.25;
 
@@ -109,6 +111,11 @@ h2, .h2 {
 a {
     &.read-more-link {
         text-decoration: underline;
+    }
+}
+ul {
+    &.list-col {
+
     }
 }
 
@@ -201,6 +208,12 @@ section {
     padding-top: #{$section-padding + $clip-height};
     -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-height}, #{$clip-left} #{$clip-height}, #{$clip-right} 0);
     clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-height}, #{$clip-left} #{$clip-height}, #{$clip-right} 0);
+}
+.section-banner-wide {
+    margin-top: -#{$clip-height};
+    padding-top: #{$section-padding + $clip-height};
+    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-height}, #{$clip-left-wide} #{$clip-height}, #{$clip-right-wide} 0);
+    clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 #{$clip-height}, #{$clip-left-wide} #{$clip-height}, #{$clip-right-wide} 0);
 }
 .section-blue-gradient {
     background-image: url(../images/blue_radial_gradient_bg.png);
