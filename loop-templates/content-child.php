@@ -64,8 +64,8 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
                 </div>
             </div>
 
-            <span class="crosshairs-white crosshairs-bottom-left"></span>
-            <span class="crosshairs-white crosshairs-bottom-right"></span>
+            <span class="crosshairs-gray-600 crosshairs-bottom-left"></span>
+            <span class="crosshairs-gray-600 crosshairs-bottom-right"></span>
 
         </div>
 
