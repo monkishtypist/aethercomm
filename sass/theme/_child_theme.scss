@@ -83,7 +83,7 @@ p {
     }
 }
 h1, .h1 {
-    line-height: 1;
+    line-height: #{$h1-line-height};
     &.page-title {
         font-size: #{$font-size-base * .75};
         font-weight: #{$font-weight-black};
@@ -93,7 +93,7 @@ h1, .h1 {
     }
 }
 h2, .h2 {
-    line-height: 1.2;
+    line-height: #{$h2-line-height};
     margin-bottom: 1.8rem;
     @include media-breakpoint-down('sm') {
         font-size: #{$font-size-base * 1.875};
@@ -215,6 +215,16 @@ section {
             50% 50%;
         background-repeat: no-repeat;
         background-size: auto, auto, auto, cover;
+        text-align: center;
+        .contact-widget {
+            @extend .col-12;
+            @extend .col-md-6;
+            @extend .offset-md-3;
+        }
+        .crosshairs-top-left,
+        .crosshairs-top-right {
+            top: #{(($h2-font-size * $h2-line-height) - ($spacer * 1.375)) / 2};
+        }
     }
 }
 
