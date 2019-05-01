@@ -25,6 +25,11 @@ global $post;
 
             <?php dynamic_sidebar( 'contact' ); ?>
 
+            <span class="crosshairs-white crosshairs-top-left"></span>
+            <span class="crosshairs-white crosshairs-top-right"></span>
+            <span class="crosshairs-white crosshairs-bottom-left"></span>
+            <span class="crosshairs-white crosshairs-bottom-right"></span>
+
         </div>
 
     </section>

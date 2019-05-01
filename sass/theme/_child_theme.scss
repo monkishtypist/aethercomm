@@ -201,6 +201,7 @@ section {
     background-position: 50% 50%;
     background-repeat: no-repeat;
     background-size: cover;
+    color: #{$white};
     padding-bottom: #{$spacer * 4.5};
     padding-top: #{$spacer * 3};
     &.section-contact-form {

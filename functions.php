@@ -477,7 +477,7 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 				'description'   => __( 'Contact form section', 'aethercomm' ),
 				'before_widget' => '<div id="%1$s" class="contact-widget %2$s">',
 				'after_widget'  => '</div><!-- .contact-widget -->',
-				'before_title'  => '<h3 class="widget-title">',
+				'before_title'  => '<h3 class="widget-title sr-only">',
 				'after_title'   => '</h3>',
 			)
 		);
