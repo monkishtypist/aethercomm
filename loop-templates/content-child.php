@@ -54,6 +54,11 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">
+                <?php if ( get_acf_field( 'child_page_settings_content_slider' ) && class_exists( 'RevSlider' ) ) : ?>
+                    <div class="col-12 col-lg-6">
+                        <?php putRevSlider( get_acf_field( 'child_page_settings_content_slider' ) ); ?>
+                    </div>
+                <?php endif; ?>
                 <div class="col-12 col-lg-6">
                     <?php the_content(); ?>
                 </div>

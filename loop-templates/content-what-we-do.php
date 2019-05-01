@@ -208,7 +208,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         <div class="card-text">
                         <?php
                         $capabilities_card1_link = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card1_link' );
-                        echo sprintf( '<a href="%1$s" class="btn btn-outline-white" %2$s>%3$s</a>',
+                        echo sprintf( '<a href="%1$s" class="btn btn-outline-white stretched-link" %2$s>%3$s</a>',
                             esc_url( $capabilities_card1_link[0]['url'] ),
                             sprintf( 'target="%1$s"',
                                 $capabilities_card1_link[0]['target']
@@ -247,7 +247,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         <div class="card-text">
                         <?php
                         $capabilities_card2_link = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card2_link' );
-                        echo sprintf( '<a href="%1$s" class="btn btn-outline-white" %2$s>%3$s</a>',
+                        echo sprintf( '<a href="%1$s" class="btn btn-outline-white stretched-link" %2$s>%3$s</a>',
                             esc_url( $capabilities_card2_link[0]['url'] ),
                             sprintf( 'target="%1$s"',
                                 $capabilities_card2_link[0]['target']
@@ -286,7 +286,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
                         <div class="card-text">
                         <?php
                         $capabilities_card3_link = get_acf_field( 'what-we-do_page_settings_capabilities_cards_card3_link' );
-                        echo sprintf( '<a href="%1$s" class="btn btn-outline-white" %2$s>%3$s</a>',
+                        echo sprintf( '<a href="%1$s" class="btn btn-outline-white stretched-link" %2$s>%3$s</a>',
                             esc_url( $capabilities_card3_link[0]['url'] ),
                             sprintf( 'target="%1$s"',
                                 $capabilities_card3_link[0]['target']
