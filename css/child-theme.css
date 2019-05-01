@@ -15942,7 +15942,8 @@ li.gfield .ginput_container input,
 li.gfield .ginput_container select,
 li.gfield .ginput_container textarea {
   border-radius: 0;
-  color: #4A63AE; }
+  color: #4A63AE;
+  border: 0; }
 
 /**
  * Footer

@@ -860,18 +860,21 @@ span.pipe {
 /* Search Form */
 
 /* Gravity Forms */
-li.gfield {
-    &.hidden_label {
-        label {
-            display: none;
+li {
+    &.gfield {
+        &.hidden_label {
+            label {
+                display: none;
+            }
         }
-    }
-    .ginput_container {
-        input,
-        select,
-        textarea {
-            border-radius: #{$border-radius};
-            color: #{$blue};
+        .ginput_container {
+            input,
+            select,
+            textarea {
+                border-radius: #{$border-radius};
+                color: #{$blue};
+                border: 0;
+            }
         }
     }
 }
