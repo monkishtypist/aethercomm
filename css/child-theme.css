@@ -14283,6 +14283,26 @@ ul.list-col {
     font-size: 1.5rem;
     margin-bottom: .9em;
     min-width: 42%; }
+    @media (max-width: 1199.98px) {
+      ul.list-col > li {
+        -ms-flex-preferred-size: 48%;
+            flex-basis: 48%;
+        min-width: 48%; } }
+    @media (max-width: 991.98px) {
+      ul.list-col > li {
+        -ms-flex-preferred-size: 50%;
+            flex-basis: 50%;
+        min-width: 50%; } }
+    @media (max-width: 768.98px) {
+      ul.list-col > li {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        min-width: 100%; } }
+    @media (max-width: 575.98px) {
+      ul.list-col > li {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
+        min-width: 100%; } }
 
 /**
  * Buttons

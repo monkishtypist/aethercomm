@@ -126,6 +126,22 @@ ul {
             font-size: #{$font-size-base * 1.5};
             margin-bottom: .9em;
             min-width: 42%;
+            @include media-breakpoint-down('lg') {
+                flex-basis: 48%;
+                min-width: 48%;
+            }
+            @include media-breakpoint-down('md') {
+                flex-basis: 50%;
+                min-width: 50%;
+            }
+            @include media-breakpoint-down('sm') {
+                flex-basis: 100%;
+                min-width: 100%;
+            }
+            @include media-breakpoint-down('xs') {
+                flex-basis: 100%;
+                min-width: 100%;
+            }
         }
     }
 }
