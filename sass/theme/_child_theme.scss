@@ -646,6 +646,7 @@ li {
     .child-page-content & {
         float: right;
         height: auto;
+        margin-bottom: #{$spacer * 4};
         margin-left: #{$spacer * 4};
         max-width: 530px;
         width: 100%;

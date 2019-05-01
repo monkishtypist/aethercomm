@@ -15725,6 +15725,7 @@ li.gfield .ginput_container textarea {
 .child-page-content .rev-slider-outer {
   float: right;
   height: auto;
+  margin-bottom: 4rem;
   margin-left: 4rem;
   max-width: 530px;
   width: 100%; }
