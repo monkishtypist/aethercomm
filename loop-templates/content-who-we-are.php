@@ -159,4 +159,6 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
     </section>
 
+    <?php get_template_part( 'sidebar-templates/sidebar', 'contact' ); ?>
+
 </article>
