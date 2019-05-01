@@ -1194,3 +1194,15 @@ textarea {
         }
     }
 }
+
+#register_page-wrapper {
+    #register_header {
+        background-image: url(../images/contact-us-bg.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .gform_button {
+            width: 100%;
+        }
+    }
+}

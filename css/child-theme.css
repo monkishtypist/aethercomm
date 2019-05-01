@@ -16234,4 +16234,12 @@ textarea {
   #contact-us_page-wrapper #contact-us_header .gform_button {
     width: 100%; }
 
+#register_page-wrapper #register_header {
+  background-image: url(../images/contact-us-bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #register_page-wrapper #register_header .gform_button {
+    width: 100%; }
+
 /*# sourceMappingURL=child-theme.css.map */

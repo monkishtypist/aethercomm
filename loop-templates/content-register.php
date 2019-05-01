@@ -22,7 +22,7 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <header>
-                <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
+                <?php the_title( '<h1 class="page-title text-center">', '</h1>' ); ?>
             </header>
 
             <div class="row justify-content-center">
