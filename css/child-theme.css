@@ -14295,9 +14295,9 @@ ul.list-col {
         min-width: 50%; } }
     @media (max-width: 768.98px) {
       ul.list-col > li {
-        -ms-flex-preferred-size: 100%;
-            flex-basis: 100%;
-        min-width: 100%; } }
+        -ms-flex-preferred-size: 66%;
+            flex-basis: 66%;
+        min-width: 66%; } }
     @media (max-width: 575.98px) {
       ul.list-col > li {
         -ms-flex-preferred-size: 100%;
@@ -14676,7 +14676,7 @@ section {
 
 .section-white {
   background-color: #fff;
-  color: #fff; }
+  color: #222222; }
 
 .section-banner {
   margin-top: -1.75rem;

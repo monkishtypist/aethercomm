@@ -135,8 +135,8 @@ ul {
                 min-width: 50%;
             }
             @include media-breakpoint-down('sm') {
-                flex-basis: 100%;
-                min-width: 100%;
+                flex-basis: 66%;
+                min-width: 66%;
             }
             @include media-breakpoint-down('xs') {
                 flex-basis: 100%;
@@ -231,7 +231,7 @@ section {
 }
 .section-white {
     background-color: #{$white};
-    color: #{$white};
+    color: #{$dark};
 }
 // Section shapes
 .section-banner {
