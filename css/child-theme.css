@@ -15722,9 +15722,12 @@ li.gfield .ginput_container textarea {
   color: #FF5800; }
 
 /* Sliders */
-@media (max-width: 991.98px) {
-  .child-page-content .rev_slider_wrapper {
-    margin-bottom: 4rem !important; } }
+.child-page-content .rev-slider-outer {
+  max-width: 530px;
+  float: right; }
+  @media (max-width: 991.98px) {
+    .child-page-content .rev-slider-outer {
+      margin-bottom: 4rem !important; } }
 
 /**
  * Footer

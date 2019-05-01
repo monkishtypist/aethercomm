@@ -59,7 +59,7 @@ if ( get_acf_field( 'child_page_settings_header_background' ) ) {
             <div class="row">
                 <div class="col">
                     <?php if ( get_acf_field( 'child_page_settings_content_slider' ) && class_exists( 'RevSlider' ) ) : ?>
-                        <div class="rev-slider-wrapper">
+                        <div class="rev-slider-outer">
                             <?php putRevSlider( get_acf_field( 'child_page_settings_content_slider', true ) ); ?>
                         </div>
                     <?php endif; ?>
