@@ -688,6 +688,21 @@ span.pipe {
             border-bottom: #{$border-width * 2} solid #{$white};
             border-left: #{$border-width * 2} solid #{$white};
         }
+        &::after,
+        &::before {
+            border-top: #{$border-width} solid #{$white};
+            display: block;
+            margin-top: -.5px;
+            position: absolute;
+            top: 50%;
+            width: #{$spacer * 1.5};
+        }
+        &::after {
+            right: 0;
+        }
+        &::before {
+            left: 0;
+        }
     }
 }
 
