@@ -77,7 +77,7 @@ if ( get_acf_field( 'careers_page_settings_benefits_background' ) ) {
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-10-lg">
                     <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
                         get_acf_field( 'careers_page_settings_benefits_title', true )
                     ); ?>
@@ -94,8 +94,8 @@ if ( get_acf_field( 'careers_page_settings_benefits_background' ) ) {
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">
-                <div class="col-12 col-lg-6">
-                    <?php echo sprintf( '<h2 class="">%1$s</h2>',
+                <div class="col-12">
+                    <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
                         get_acf_field( 'careers_page_settings_open_positions_title', true )
                     ); ?>
                     <?php echo apply_filters( 'the_content', get_acf_field( 'careers_page_settings_open_positions_content', true ) ); ?>

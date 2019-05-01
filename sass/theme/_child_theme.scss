@@ -116,8 +116,10 @@ a {
 ul {
     &.list-col {
         display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
         > li {
-            flex: 1 1 50%;
+            flex: 0 1 34%;
         }
     }
 }
@@ -1060,6 +1062,12 @@ li {
         background-size: cover;
         .section-title {
             text-align: center;
+        }
+        > .container,
+        > .container-fluid {
+            > .row {
+                justify-content: center;
+            }
         }
     }
     #careers_open_positions {}
