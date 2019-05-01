@@ -15743,22 +15743,22 @@ span.pipe::after {
     height: 1.875rem;
     position: absolute;
     width: 2rem; }
-    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(0) {
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-last-child(1) {
       top: 0;
       left: 0;
       border-top: 2px solid #fff;
       border-left: 2px solid #fff; }
-    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(1) {
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-last-child(2) {
       top: 0;
       right: 0;
       border-top: 2px solid #fff;
       border-right: 2px solid #fff; }
-    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(2) {
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-last-child(3) {
       bottom: 0;
       right: 0;
       border-bottom: 2px solid #fff;
       border-right: 2px solid #fff; }
-    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(3) {
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-last-child(4) {
       bottom: 0;
       left: 0;
       border-bottom: 2px solid #fff;

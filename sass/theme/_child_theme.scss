@@ -664,25 +664,25 @@ span.pipe {
         height: #{$spacer * 1.875};
         position: absolute;
         width: #{$spacer * 2};
-        &:nth-child(0) {
+        &:nth-last-child(1) {
             top: 0;
             left: 0;
             border-top: #{$border-width * 2} solid #{$white};
             border-left: #{$border-width * 2} solid #{$white};
         }
-        &:nth-child(1) {
+        &:nth-last-child(2) {
             top: 0;
             right: 0;
             border-top: #{$border-width * 2} solid #{$white};
             border-right: #{$border-width * 2} solid #{$white};
         }
-        &:nth-child(2) {
+        &:nth-last-child(3) {
             bottom: 0;
             right: 0;
             border-bottom: #{$border-width * 2} solid #{$white};
             border-right: #{$border-width * 2} solid #{$white};
         }
-        &:nth-child(3) {
+        &:nth-last-child(4) {
             bottom: 0;
             left: 0;
             border-bottom: #{$border-width * 2} solid #{$white};
