@@ -14744,16 +14744,16 @@ section {
       path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.5rem calc(100% - 1px)); }
       @media (min-width: 576px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
-          padding-right: calc((100vw - 540px) / 2); } }
+          padding-right: calc(((100vw - 540px) / 2) + 10px); } }
       @media (min-width: 769px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
-          padding-right: calc((100vw - 720px) / 2); } }
+          padding-right: calc(((100vw - 720px) / 2) + 10px); } }
       @media (min-width: 992px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
-          padding-right: calc((100vw - 960px) / 2); } }
+          padding-right: calc(((100vw - 960px) / 2) + 10px); } }
       @media (min-width: 1200px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
-          padding-right: calc((100vw - 1088px) / 2); } }
+          padding-right: calc(((100vw - 1088px) / 2) + 10px); } }
       #wrapper-navbar .sub-navbar .sub-navbar-inner .nav {
         -webkit-box-align: center;
             -ms-flex-align: center;
