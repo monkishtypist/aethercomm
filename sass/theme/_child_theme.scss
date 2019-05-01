@@ -658,6 +658,22 @@ span.pipe {
     border: 1px solid #{$white};
     padding: #{$spacer * 1.875} #{$spacer * 2};
     position: relative;
+    &::after,
+    &::before {
+        border-top: #{$border-width} solid #{$white};
+        content: " ";
+        display: block;
+        margin-top: -.5px;
+        position: absolute;
+        top: 50%;
+        width: #{$spacer * 1.5};
+    }
+    &::after {
+        right: 0;
+    }
+    &::before {
+        left: 0;
+    }
     .image-frame-wrapper-corner {
         border: 0;
         box-sizing: border-box;
@@ -688,22 +704,6 @@ span.pipe {
             border-bottom: #{$border-width * 2} solid #{$white};
             border-left: #{$border-width * 2} solid #{$white};
         }
-    }
-    &::after,
-    &::before {
-        border-top: #{$border-width} solid #{$white};
-        content: " ";
-        display: block;
-        margin-top: -.5px;
-        position: absolute;
-        top: 50%;
-        width: #{$spacer * 1.5};
-    }
-    &::after {
-        right: 0;
-    }
-    &::before {
-        left: 0;
     }
 }
 
