@@ -16089,4 +16089,11 @@ li.gfield .ginput_container textarea {
       margin: auto;
       display: block; }
 
+#careers_page-wrapper #careers_benefits {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #careers_page-wrapper #careers_benefits .section-title {
+    text-align: center; }
+
 /*# sourceMappingURL=child-theme.css.map */

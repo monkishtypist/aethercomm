@@ -1048,3 +1048,16 @@ li {
         }
     }
 }
+
+#careers_page-wrapper {
+    #careers_header {}
+    #careers_benefits {
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        .section-title {
+            text-align: center;
+        }
+    }
+    #careers_open_positions {}
+}
