@@ -36,9 +36,18 @@ $container = get_theme_mod( 'understrap_container_type' );
                     </div>
                 <?php } ?>
                 <?php if ( get_acf_field( 'contact_us_page_settings_header_map' ) ) { ?>
-                    <div class="col">
-                        <?php echo apply_filters( 'the_content', get_acf_field( 'contact_us_page_settings_header_map', true ) ); ?>
-                    </div>
+                    <?php $contact_us_page_settings_header_map_id = get_acf_field( 'contact_us_page_settings_header_map' ); ?>
+                    <?php if ( is_array( $contact_us_page_settings_header_map_id ) && isset( $contact_us_page_settings_header_map_id[0] ) ) { ?>
+                        <div class="col">
+                            <div class="image-frame-wrapper">
+                                <?php echo wp_get_attachment_image( $contact_us_page_settings_header_map_id[0], 'large', false, array( 'class' => 'image-fluid' ) ); ?>
+                                <div class="image-frame-wrapper-corner"></div>
+                                <div class="image-frame-wrapper-corner"></div>
+                                <div class="image-frame-wrapper-corner"></div>
+                                <div class="image-frame-wrapper-corner"></div>
+                            </div>
+                        </div>
+                    <?php } ?>
                 <?php } ?>
             </div>
 

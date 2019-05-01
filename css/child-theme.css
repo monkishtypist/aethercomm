@@ -15731,6 +15731,39 @@ span.pipe::after {
       content: "";
       display: none; } }
 
+/* Image frame */
+.image-frame-wrapper {
+  border: 1px solid #fff;
+  padding: 1.875rem 2rem;
+  position: relative; }
+  .image-frame-wrapper .image-frame-wrapper-corner {
+    border: 2px solid #fff;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 1.875rem;
+    position: absolute;
+    width: 2rem; }
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(1) {
+      top: 0;
+      left: 0;
+      border-bottom-color: transparent;
+      border-right-color: transparent; }
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(2) {
+      top: 0;
+      right: 0;
+      border-bottom-color: transparent;
+      border-left-color: transparent; }
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(3) {
+      bottom: 0;
+      right: 0;
+      border-top-color: transparent;
+      border-left-color: transparent; }
+    .image-frame-wrapper .image-frame-wrapper-corner:nth-child(4) {
+      bottom: 0;
+      left: 0;
+      border-top-color: transparent;
+      border-right-color: transparent; }
+
 /* Search Form */
 /* Gravity Forms */
 li.gfield.hidden_label label {
