@@ -51,7 +51,7 @@ if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section-black" <?php echo $section_header_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_header" class="section_header section-black" <?php echo $section_header_styles; ?> >
 
         <div class="<?php echo esc_attr( $container ); ?>">
 

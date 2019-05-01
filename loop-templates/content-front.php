@@ -15,7 +15,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="front-page-intro" class="section-black">
+    <section id="front-page-intro" class="section_header section-black">
 
         <div class="<?php echo esc_attr( $container ); ?>">
             <header id="front-page-header">

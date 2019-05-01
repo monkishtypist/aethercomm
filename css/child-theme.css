@@ -14605,8 +14605,6 @@ li.btn {
 
 .wrapper {
   padding: 0; }
-  .wrapper > #main > article > section:first-of-type {
-    padding-top: 10.45rem; }
 
 #wrapper-footer {
   background-color: #222222;
@@ -14619,12 +14617,12 @@ li.btn {
  * These are the rows with defined backgrounds
  */
 section {
-  padding: 3.75rem 0;
+  padding: 4.125rem 0;
   position: relative; }
+  section.section_header {
+    padding-top: 13rem; }
   section.section-unpadded {
     padding: 0; }
-    section.section-unpadded .container-fluid {
-      padding: 0; }
 
 .section-dark {
   background-color: #222222;
@@ -14640,7 +14638,6 @@ section {
 
 .section-banner {
   margin-top: -1.75rem;
-  padding-bottom: 4.125rem;
   padding-top: 5.875rem;
   -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(100% - 24.8rem) 1.75rem, calc(100% - 22.3rem) 0);
   clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 1.75rem, calc(100% - 24.8rem) 1.75rem, calc(100% - 22.3rem) 0); }
@@ -14667,8 +14664,7 @@ section {
   background-color: #000;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
-  padding-top: 13rem; }
+  background-size: cover; }
 
 .child-page-content {
   padding-bottom: 6.5rem; }
@@ -14681,6 +14677,9 @@ section {
     .container-fluid {
       padding-left: 2.25rem !important;
       padding-right: 2.25rem !important; } }
+  .section-unpadded .container, .section-unpadded
+  .container-fluid {
+    padding: 0; }
 
 /**
  * Navs
