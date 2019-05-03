@@ -66,10 +66,21 @@ $container-padding-sm: 2.25rem;
                     background-color: #{$background-color-active};
                     border-bottom-color: #{$background-color-active};
                     color: #{$font-color-active};
+                    span {
+                        &::before {
+                            content: "\f107";
+                        }
+                    }
                 }
                 span {
                     display: block;
                     transform: skew(45deg);
+                    &::before {
+                        content: "\f105";
+                        display: inline;
+                        font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                        font-weight: #{$font-weight-light};
+                    }
                 }
             }
         }
@@ -108,15 +119,20 @@ $container-padding-sm: 2.25rem;
                         background-image: url(../images/pathtab2.png); // updated for SM
                         border-bottom-color: #{$gray-600}; // updated for SM
                         color: #{$primary}; // updated for SM
+                        span {
+                            &::before {
+                                content: "\f107";
+                            }
+                        }
                     }
                     span {
                         display: block;
                         transform: none; // updated for SM
                         &::before {
-                            content: "/f105";
-                            // content: "/f107";
+                            content: "\f105";
                             display: inline;
                             font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                            font-weight: #{$font-weight-light};
                         }
                     }
                 }
