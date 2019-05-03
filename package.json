@@ -1,7 +1,7 @@
 {
   "name": "aethercomm",
   "version": "0.5.5",
-  "description": "Basic Child Theme for UnderStrap Theme Framework: https://github.com/holger1411/understrap",
+  "description": "Basic Child Theme for UnderStrap Theme Framework: https://github.com/monkishtypist/aethercomm",
   "main": "index.js",
   "scripts": {
     "postinstall": "gulp copy-assets"
@@ -17,12 +17,12 @@
     "bootstrap",
     "underscores"
   ],
-  "author": "Holger Koenemann",
+  "author": "Tim Spinks",
   "license": "GPL-2.0",
   "bugs": {
     "url": "https://github.com/monkishtypist/aethercomm/issues"
   },
-  "homepage": "https://understrap.com",
+  "homepage": "https://aethercomm.com",
   "dependencies": {
     "bootstrap": "^4.3.1",
     "browser-sync": "^2.23.6",

@@ -5,6 +5,13 @@
  */
 (function($) {
 
+    $(".dropdown, .btn-group").hover(function(){
+        var dropdownMenu = $(this).children(".dropdown-menu");
+        if(dropdownMenu.is(":visible")){
+            dropdownMenu.parent().toggleClass("show");
+        }
+    });
+
     // Main Menu: transition background based on scroll position
 
     var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
