@@ -505,6 +505,9 @@ section {
                             background-color: transparent;
                             color: $gray-600;
                         }
+                        strong, b {
+                            font-weight: #{$font-weight-normal};
+                        }
                     }
                 }
                 @include media-breakpoint-down('lg') {}

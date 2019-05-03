@@ -14895,6 +14895,8 @@ section {
       #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:active, #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item:hover {
         background-color: transparent;
         color: #707070; }
+      #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item strong, #footer-menu > .nav-item.dropdown > .dropdown-menu > .nav-item > .dropdown-item b {
+        font-weight: 400; }
     @media (max-width: 991.98px) {
       #footer-menu > .nav-item.dropdown > .dropdown-menu {
         margin-top: 0rem; } }
