@@ -94,6 +94,7 @@ $container-padding-sm: 2.25rem;
             margin-left: -#{$container-padding-sm}; // updated for SM
             margin-right: -#{$container-padding-sm}; // updated for SM
             .nav-item { // <li>
+                flex-basis: 100%; // updated for SM
                 &:last-of-type {
                     .nav-link { // <a>
                         padding-right: 0; // updated for SM

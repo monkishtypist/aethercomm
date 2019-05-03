@@ -16074,42 +16074,45 @@ textarea {
       #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs {
         margin-left: -2.25rem;
         margin-right: -2.25rem; }
-        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link {
-          padding-right: 0; }
-        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
-          background-color: #000;
-          background-image: url(../images/pathtab1.png);
-          background-position: calc(100% + 7rem) 50%;
-          background-repeat: no-repeat;
-          background-size: auto;
-          border: 1px solid #707070;
-          color: #fff;
-          font-size: 1.25rem;
-          font-weight: 700;
-          height: 4.25rem;
-          letter-spacing: .025em;
-          padding-bottom: 1rem;
-          padding-left: 2.25rem;
-          padding-top: 1rem;
-          text-align: left;
-          -webkit-transform: none;
-                  transform: none; }
-          #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
-            background-color: #fff;
-            background-image: url(../images/pathtab2.png);
-            border-bottom-color: #707070;
-            color: #FF5800; }
-            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active span::before {
-              content: "\f107"; }
-          #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
-            display: block;
+        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item {
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; }
+          #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link {
+            padding-right: 0; }
+          #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
+            background-color: #000;
+            background-image: url(../images/pathtab1.png);
+            background-position: calc(100% + 7rem) 50%;
+            background-repeat: no-repeat;
+            background-size: auto;
+            border: 1px solid #707070;
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 700;
+            height: 4.25rem;
+            letter-spacing: .025em;
+            padding-bottom: 1rem;
+            padding-left: 2.25rem;
+            padding-top: 1rem;
+            text-align: left;
             -webkit-transform: none;
                     transform: none; }
-            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
-              content: "\f105";
-              display: inline-block;
-              font-family: 'Font Awesome 5 Pro', 'Font Awesome';
-              font-weight: 300; } }
+            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
+              background-color: #fff;
+              background-image: url(../images/pathtab2.png);
+              border-bottom-color: #707070;
+              color: #FF5800; }
+              #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active span::before {
+                content: "\f107"; }
+            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
+              display: block;
+              -webkit-transform: none;
+                      transform: none; }
+              #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
+                content: "\f105";
+                display: inline-block;
+                font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                font-weight: 300; } }
 
 #who-we-are_page-wrapper #who-we-are_mission {
   background-position: calc(50vw - 44.5rem) 3rem, center;
@@ -16206,42 +16209,45 @@ textarea {
       #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs {
         margin-left: -2.25rem;
         margin-right: -2.25rem; }
-        #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item:last-of-type .nav-link {
-          padding-right: 0; }
-        #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link {
-          background-color: #000;
-          background-image: url(../images/pathtab1.png);
-          background-position: calc(100% + 7rem) 50%;
-          background-repeat: no-repeat;
-          background-size: auto;
-          border: 1px solid #707070;
-          color: #fff;
-          font-size: 1.25rem;
-          font-weight: 700;
-          height: 4.25rem;
-          letter-spacing: .025em;
-          padding-bottom: 1rem;
-          padding-left: 2.25rem;
-          padding-top: 1rem;
-          text-align: left;
-          -webkit-transform: none;
-                  transform: none; }
-          #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link.active {
-            background-color: #fff;
-            background-image: url(../images/pathtab2.png);
-            border-bottom-color: #707070;
-            color: #FF5800; }
-            #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link.active span::before {
-              content: "\f107"; }
-          #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span {
-            display: block;
+        #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item {
+          -ms-flex-preferred-size: 100%;
+              flex-basis: 100%; }
+          #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item:last-of-type .nav-link {
+            padding-right: 0; }
+          #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link {
+            background-color: #000;
+            background-image: url(../images/pathtab1.png);
+            background-position: calc(100% + 7rem) 50%;
+            background-repeat: no-repeat;
+            background-size: auto;
+            border: 1px solid #707070;
+            color: #fff;
+            font-size: 1.25rem;
+            font-weight: 700;
+            height: 4.25rem;
+            letter-spacing: .025em;
+            padding-bottom: 1rem;
+            padding-left: 2.25rem;
+            padding-top: 1rem;
+            text-align: left;
             -webkit-transform: none;
                     transform: none; }
-            #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span::before {
-              content: "\f105";
-              display: inline-block;
-              font-family: 'Font Awesome 5 Pro', 'Font Awesome';
-              font-weight: 300; } }
+            #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link.active {
+              background-color: #fff;
+              background-image: url(../images/pathtab2.png);
+              border-bottom-color: #707070;
+              color: #FF5800; }
+              #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link.active span::before {
+                content: "\f107"; }
+            #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span {
+              display: block;
+              -webkit-transform: none;
+                      transform: none; }
+              #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span::before {
+                content: "\f105";
+                display: inline-block;
+                font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                font-weight: 300; } }
   #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper {
     background-color: #222222;
     background-image: url(../images/path1.png);
