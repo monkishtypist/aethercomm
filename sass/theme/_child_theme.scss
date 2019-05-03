@@ -34,6 +34,8 @@ $clip-left-wide:   calc(66% - #{$clip-offset + $clip-width});
 
 $nav-tabs-height:  $spacer * 4.25;
 
+$container-padding-sm: 2.25rem;
+
 /**
  * Mixins
  */
@@ -73,41 +75,42 @@ $nav-tabs-height:  $spacer * 4.25;
         }
     }
     @include media-breakpoint-down('sm') {
-        margin-top: 0;
+        margin-top: 0; // updated for SM
         overflow-x: hidden;
         .nav-tabs { // <ul>
-            margin-left: 0;
-            margin-right: 0;
+            margin-left: -#{$container-padding-sm}; // updated for SM
+            margin-right: -#{$container-padding-sm}; // updated for SM
             .nav-item { // <li>
                 &:last-of-type {
                     .nav-link { // <a>
-                        padding-right: 0;
+                        padding-right: 0; // updated for SM
                     }
                 }
                 .nav-link { // <a>
-                    background-color: #{$black};
-                    background-image: url(../images/pathtab1.png);
-                    background-position: 50% 100%;
-                    background-repeat: no-repeat;
-                    background-size: auto;
-                    border: #{$border-width} solid #{$gray-600};
-                    color: #{$white};
+                    background-color: #{$black}; // updated for SM
+                    background-image: url(../images/pathtab1.png); // updated for SM
+                    background-position: 100% 50%; // updated for SM
+                    background-repeat: no-repeat; // updated for SM
+                    background-size: auto; // updated for SM
+                    border: #{$border-width} solid #{$gray-600}; // updated for SM
+                    color: #{$white}; // updated for SM
                     font-size: #{$font-size-lg};
                     font-weight: #{$font-weight-bold};
                     height: #{$spacer * 4.25};
                     letter-spacing: .025em;
                     padding-bottom: #{$nav-link-padding-y * 2};
+                    padding-left: #{$container-padding-sm}; // updated for SM
                     padding-top: #{$nav-link-padding-y * 2};
-                    transform: none;
+                    transform: none; // updated for SM
                     &.active {
-                        background-color: #{$white};
-                        background-image: url(../images/pathtab2.png);
-                        border-bottom-color: #{$gray-600};
-                        color: #{$primary};
+                        background-color: #{$white}; // updated for SM
+                        background-image: url(../images/pathtab2.png); // updated for SM
+                        border-bottom-color: #{$gray-600}; // updated for SM
+                        color: #{$primary}; // updated for SM
                     }
                     span {
                         display: block;
-                        transform: none;
+                        transform: none; // updated for SM
                     }
                 }
             }
@@ -333,8 +336,8 @@ section {
 .container-fluid {
     position: relative;
     @include media-breakpoint-down('sm') {
-        padding-left: 2.25rem !important;
-        padding-right: 2.25rem !important;
+        padding-left: #{$container-padding-sm} !important;
+        padding-right: #{$container-padding-sm} !important;
     }
     .section-unpadded & {
         padding: 0;

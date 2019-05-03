@@ -16063,14 +16063,14 @@ textarea {
       margin-top: 0;
       overflow-x: hidden; }
       #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs {
-        margin-left: 0;
-        margin-right: 0; }
+        margin-left: -2.25rem;
+        margin-right: -2.25rem; }
         #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link {
           padding-right: 0; }
         #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
           background-color: #000;
           background-image: url(../images/pathtab1.png);
-          background-position: 50% 100%;
+          background-position: 100% 50%;
           background-repeat: no-repeat;
           background-size: auto;
           border: 1px solid #707070;
@@ -16080,6 +16080,7 @@ textarea {
           height: 4.25rem;
           letter-spacing: .025em;
           padding-bottom: 1rem;
+          padding-left: 2.25rem;
           padding-top: 1rem;
           -webkit-transform: none;
                   transform: none; }
@@ -16177,14 +16178,14 @@ textarea {
       margin-top: 0;
       overflow-x: hidden; }
       #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs {
-        margin-left: 0;
-        margin-right: 0; }
+        margin-left: -2.25rem;
+        margin-right: -2.25rem; }
         #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item:last-of-type .nav-link {
           padding-right: 0; }
         #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link {
           background-color: #000;
           background-image: url(../images/pathtab1.png);
-          background-position: 50% 100%;
+          background-position: 100% 50%;
           background-repeat: no-repeat;
           background-size: auto;
           border: 1px solid #707070;
@@ -16194,6 +16195,7 @@ textarea {
           height: 4.25rem;
           letter-spacing: .025em;
           padding-bottom: 1rem;
+          padding-left: 2.25rem;
           padding-top: 1rem;
           -webkit-transform: none;
                   transform: none; }
