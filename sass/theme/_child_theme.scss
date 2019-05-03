@@ -77,9 +77,11 @@ $container-padding-sm: 2.25rem;
                     transform: skew(45deg);
                     &::before {
                         content: "\f105";
-                        display: inline;
+                        display: inline-block;
                         font-family: 'Font Awesome 5 Pro', 'Font Awesome';
                         font-weight: #{$font-weight-light};
+                        margin-right: #{$spacer * .75};
+                        width: #{$spacer * .75};
                     }
                 }
             }
@@ -130,7 +132,7 @@ $container-padding-sm: 2.25rem;
                         transform: none; // updated for SM
                         &::before {
                             content: "\f105";
-                            display: inline;
+                            display: inline-block;
                             font-family: 'Font Awesome 5 Pro', 'Font Awesome';
                             font-weight: #{$font-weight-light};
                         }

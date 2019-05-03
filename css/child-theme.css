@@ -16062,9 +16062,11 @@ textarea {
                 transform: skew(45deg); }
         #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
           content: "\f105";
-          display: inline;
+          display: inline-block;
           font-family: 'Font Awesome 5 Pro', 'Font Awesome';
-          font-weight: 300; }
+          font-weight: 300;
+          margin-right: 0.75rem;
+          width: 0.75rem; }
   @media (max-width: 768.98px) {
     #who-we-are_page-wrapper #who-we-are_tabs {
       margin-top: 0;
@@ -16105,7 +16107,7 @@ textarea {
                     transform: none; }
             #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
               content: "\f105";
-              display: inline;
+              display: inline-block;
               font-family: 'Font Awesome 5 Pro', 'Font Awesome';
               font-weight: 300; } }
 
@@ -16192,9 +16194,11 @@ textarea {
                 transform: skew(45deg); }
         #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span::before {
           content: "\f105";
-          display: inline;
+          display: inline-block;
           font-family: 'Font Awesome 5 Pro', 'Font Awesome';
-          font-weight: 300; }
+          font-weight: 300;
+          margin-right: 0.75rem;
+          width: 0.75rem; }
   @media (max-width: 768.98px) {
     #what-we-do_page-wrapper #what-we-do_tabs {
       margin-top: 0;
@@ -16235,7 +16239,7 @@ textarea {
                     transform: none; }
             #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span::before {
               content: "\f105";
-              display: inline;
+              display: inline-block;
               font-family: 'Font Awesome 5 Pro', 'Font Awesome';
               font-weight: 300; } }
   #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper {
