@@ -16070,7 +16070,7 @@ textarea {
         #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
           background-color: #000;
           background-image: url(../images/pathtab1.png);
-          background-position: 100% 50%;
+          background-position: calc(100% + 7rem) 50%;
           background-repeat: no-repeat;
           background-size: auto;
           border: 1px solid #707070;
@@ -16082,6 +16082,7 @@ textarea {
           padding-bottom: 1rem;
           padding-left: 2.25rem;
           padding-top: 1rem;
+          text-align: left;
           -webkit-transform: none;
                   transform: none; }
           #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
@@ -16092,7 +16093,11 @@ textarea {
           #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
             display: block;
             -webkit-transform: none;
-                    transform: none; } }
+                    transform: none; }
+            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
+              content: "/f105";
+              display: inline;
+              font-family: 'Font Awesome 5 Pro', 'Font Awesome'; } }
 
 #who-we-are_page-wrapper #who-we-are_mission {
   background-position: calc(50vw - 44.5rem) 3rem, center;
@@ -16185,7 +16190,7 @@ textarea {
         #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link {
           background-color: #000;
           background-image: url(../images/pathtab1.png);
-          background-position: 100% 50%;
+          background-position: calc(100% + 7rem) 50%;
           background-repeat: no-repeat;
           background-size: auto;
           border: 1px solid #707070;
@@ -16197,6 +16202,7 @@ textarea {
           padding-bottom: 1rem;
           padding-left: 2.25rem;
           padding-top: 1rem;
+          text-align: left;
           -webkit-transform: none;
                   transform: none; }
           #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link.active {
@@ -16207,7 +16213,11 @@ textarea {
           #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span {
             display: block;
             -webkit-transform: none;
-                    transform: none; } }
+                    transform: none; }
+            #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span::before {
+              content: "/f105";
+              display: inline;
+              font-family: 'Font Awesome 5 Pro', 'Font Awesome'; } }
   #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper {
     background-color: #222222;
     background-image: url(../images/path1.png);

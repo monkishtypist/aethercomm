@@ -89,7 +89,7 @@ $container-padding-sm: 2.25rem;
                 .nav-link { // <a>
                     background-color: #{$black}; // updated for SM
                     background-image: url(../images/pathtab1.png); // updated for SM
-                    background-position: 100% 50%; // updated for SM
+                    background-position: calc(100% + 7rem) 50%; // updated for SM
                     background-repeat: no-repeat; // updated for SM
                     background-size: auto; // updated for SM
                     border: #{$border-width} solid #{$gray-600}; // updated for SM
@@ -101,6 +101,7 @@ $container-padding-sm: 2.25rem;
                     padding-bottom: #{$nav-link-padding-y * 2};
                     padding-left: #{$container-padding-sm}; // updated for SM
                     padding-top: #{$nav-link-padding-y * 2};
+                    text-align: left; // updated for SM
                     transform: none; // updated for SM
                     &.active {
                         background-color: #{$white}; // updated for SM
@@ -111,6 +112,12 @@ $container-padding-sm: 2.25rem;
                     span {
                         display: block;
                         transform: none; // updated for SM
+                        &::before {
+                            content: "/f105";
+                            // content: "/f107";
+                            display: inline;
+                            font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                        }
                     }
                 }
             }
