@@ -1140,6 +1140,14 @@ textarea {
                         font-size: #{$font-size-sm};
                     }
                 }
+                @include media-breakpoint-down('sm') {
+                    max-width: 50%;
+                    max-width: calc(50% - #{$card-group-margin * 2});
+                }
+                @include media-breakpoint-down('sm') {
+                    max-width: 100%;
+                    max-width: calc(100% - #{$card-group-margin * 2});
+                }
             }
         }
     }
