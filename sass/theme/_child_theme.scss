@@ -421,7 +421,7 @@ section {
         min-width: 100%;
         min-height: 100%;
     }
-    @include media-breakpoint-down('md') {
+    @include media-breakpoint-down('sm') {
         background-color: #{$gray-200};
         clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
         height: #{$spacer * 10};

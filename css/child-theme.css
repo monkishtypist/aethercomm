@@ -14764,7 +14764,7 @@ section {
        object-fit: cover;
     min-width: 100%;
     min-height: 100%; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 768.98px) {
     .section-header-image-wrapper {
       background-color: #ebebeb;
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
