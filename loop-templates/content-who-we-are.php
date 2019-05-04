@@ -91,7 +91,7 @@ $section_mission_styles = sprintf( 'style="%1$s"',
         <div class="section-image-overlay-wrapper">
             <div class="section-image-overlay-wrapper-inner">
                 <div class="overlay"></div>
-                <img class="path path1" src="<?php echo get_template_directory_uri(); ?>/images/path1.png" />
+                <img class="path path1" src="<?php echo get_stylesheet_directory_uri(); ?>/images/path1.png" />
                 <img class="section-overlay-image" src="<?php echo $section_mission_background_image_url; ?>" width="100%" />
             </div>
         </div>
