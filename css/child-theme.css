@@ -16067,6 +16067,8 @@ textarea {
           font-weight: 300;
           margin-right: 0.75rem;
           width: 0.75rem; }
+  #who-we-are_page-wrapper #who-we-are_tabs .tab-pane:not(.active) {
+    display: none; }
   @media (max-width: 768.98px) {
     #who-we-are_page-wrapper #who-we-are_tabs {
       margin-top: 0;
@@ -16210,6 +16212,8 @@ textarea {
           font-weight: 300;
           margin-right: 0.75rem;
           width: 0.75rem; }
+  #what-we-do_page-wrapper #what-we-do_tabs .tab-pane:not(.active) {
+    display: none; }
   @media (max-width: 768.98px) {
     #what-we-do_page-wrapper #what-we-do_tabs {
       margin-top: 0;
@@ -16267,8 +16271,6 @@ textarea {
       #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane {
         padding-bottom: 5rem;
         padding-top: 3.75rem; }
-        #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane:not(.active) {
-          display: none; }
 
 #what-we-do_page-wrapper #what-we-do_capabilities {
   background-position: center;
