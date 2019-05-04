@@ -422,9 +422,10 @@ section {
         min-height: 100%;
     }
     @include media-breakpoint-down('md') {
-        position: relative;
-        height: #{$spacer * 10};
+        background-color: #{$gray-200};
         clip-path: polygon(-2% 0, 100% 0, 100% 100%, 24% 100%);
+        height: #{$spacer * 10};
+        position: relative;
         .section-header-image-wrapper-inner {
             clip-path: polygon(calc(-2% + 8px) 0, 100% 0, 100% calc(100% - 8px), calc(24% + 8px) calc(100% - 8px));
         }
