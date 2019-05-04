@@ -14659,7 +14659,7 @@ section {
   position: relative; }
   section.section_header {
     padding-top: 13rem; }
-    @media (max-width: 991.98px) {
+    @media (max-width: 768.98px) {
       section.section_header {
         padding-top: 4.5rem; } }
   section.section-unpadded {

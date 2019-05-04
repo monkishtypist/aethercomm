@@ -302,7 +302,7 @@ section {
     position: relative;
     &.section_header {
         padding-top: #{$spacer * 13};
-        @include media-breakpoint-down('md') {
+        @include media-breakpoint-down('sm') {
             padding-top: #{$spacer * 4.5};
         }
     }
