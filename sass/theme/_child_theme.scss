@@ -406,6 +406,10 @@ section {
     position: absolute;
     right: 0;
     top: 0;
+    .section-header-image-wrapper-inner {
+        height: 100%;
+        width: 100%;
+    }
     .overlay {
         @include gradient();
         height: 100%;
@@ -419,8 +423,11 @@ section {
     }
     @include media-breakpoint-down('md') {
         position: relative;
-        height: #{$spacer * 9.5};
-
+        height: #{$spacer * 10};
+        clip-path: polygon(-2% 0, 100% 0, 100% 100%, 24% 100%);
+        .section-header-image-wrapper-inner {
+            clip-path: polygon(calc(-2% + 8px) 0, 100% 0, 100% calc(100% - 8px), calc(24% + 8px) calc(100% - 8px));
+        }
     }
 }
 
