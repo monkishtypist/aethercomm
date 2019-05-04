@@ -741,18 +741,46 @@ section {
     }
 }
 @each $color, $value in $colors {
-    .crosshairs-#{$color} { @include crosshairs($value); }
+    .crosshairs-#{$color} {
+        @include crosshairs($value);
+        @include media-breakpoint-down('sm') {
+            display: none;
+        }
+    }
     .crosshairs-sm-#{$color} {
         @include media-breakpoint-down('sm') {
             @include crosshairs($value);
+            display: block;
         }
     }
 }
 @each $color, $value in $theme-colors {
-    .crosshairs-#{$color} { @include crosshairs($value); }
+    .crosshairs-#{$color} {
+        @include crosshairs($value);
+        @include media-breakpoint-down('sm') {
+            display: none;
+        }
+    }
+    .crosshairs-sm-#{$color} {
+        @include media-breakpoint-down('sm') {
+            @include crosshairs($value);
+            display: block;
+        }
+    }
 }
 @each $color, $value in $grays {
-    .crosshairs-#{$color} { @include crosshairs($value); }
+    .crosshairs-#{$color} {
+        @include crosshairs($value);
+        @include media-breakpoint-down('sm') {
+            display: none;
+        }
+    }
+    .crosshairs-sm-#{$color} {
+        @include media-breakpoint-down('sm') {
+            @include crosshairs($value);
+            display: block;
+        }
+    }
 }
 .crosshairs-top-left,
 .crosshairs-top-right,
