@@ -23,10 +23,10 @@ $section_header_styles = sprintf( 'style="%1$s"',
 ?>
 
 <?php if ( $section_header_background_image_url ) : ?>
-    <div class="section-header-image-wrapper" <?php // echo $section_header_styles; ?>>
-        <div class="section-header-image-wrapper-inner">
+    <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
+        <div class="section-image-overlay-wrapper-inner">
             <div class="overlay"></div>
-            <img class="section-header-image" src="<?php echo $section_header_background_image_url; ?>" width="100%" />
+            <img class="section-overlay-image" src="<?php echo $section_header_background_image_url; ?>" width="100%" />
         </div>
     </div>
 <?php endif; ?>

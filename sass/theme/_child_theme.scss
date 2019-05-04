@@ -165,35 +165,46 @@ $container-padding-sm: 2.25rem;
     }
 }
 @mixin section-overlay( $color: $blue, $width: 88%, $offset: .87 ) {
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    > div { // wrapper-inner
-        height: 100%;
-        width: 100%;
-    }
-    .overlay {
-        @include gradient( $color, $width, $offset );
-        height: 100%;
+    .section-image-overlay-wrapper {
+        bottom: 0;
+        left: 0;
+        overflow: hidden;
         position: absolute;
-        width: 100%;
+        right: 0;
+        top: 0;
+        .section-image-overlay-wrapper-inner { // wrapper-inner
+            height: 100%;
+            width: 100%;
+        }
+        .overlay {
+            @include gradient( $color, $width, $offset );
+            height: 100%;
+            position: absolute;
+            width: 100%;
+        }
+        img.section-overlay-image {
+            object-fit: cover;
+            min-width: 100%;
+            min-height: 100%;
+        }
     }
-    img.section-header-image {
-        object-fit: cover;
-        min-width: 100%;
-        min-height: 100%;
-    }
+}
+@mixin section-header-overlay( $color: $blue, $width: 88%, $offset: .87 ) {
+    @include section-overlay( $color, $width, $offset );
+    background-color: #{$color};
+    color: #{$white};
     @include media-breakpoint-down('sm') {
-        background-color: #{$gray-200};
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
-        height: #{$spacer * 10};
-        margin-bottom: #{$spacer * 2.25};
-        position: relative;
-        > div { // wrapper-inner
-            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
+        background-color: #{$white};
+        color: #{$body-color};
+        .section-image-overlay-wrapper {
+            background-color: #{$gray-200};
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
+            height: #{$spacer * 10};
+            margin-bottom: #{$spacer * 2.25};
+            position: relative;
+            .section-image-overlay-wrapper-inner { // wrapper-inner
+                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
+            }
         }
     }
 }
@@ -428,15 +439,6 @@ section {
     .section-unpadded & {
         padding: 0;
     }
-}
-
-/**
- * Headers
- *
- * These are the section headers
- */
-.section-header-image-wrapper {
-    @include section-overlay();
 }
 
 /**
@@ -1168,16 +1170,9 @@ textarea {
 
 #who-we-are_page-wrapper {
     #who-we-are_header {
-        // background-position: center;
-        // background-repeat: no-repeat;
-        // background-size: cover;
-        // padding-bottom: #{$spacer * 7};
-        background-color: #{$blue};
-        color: #{$white};
+        @include section-header-overlay();
         padding-bottom: #{$spacer * 7.125};
         @include media-breakpoint-down('sm') {
-            background-color: #{$white};
-            color: #{$body-color};
             padding-bottom: #{$spacer * 2.125};
         }
         header {
@@ -1266,9 +1261,7 @@ textarea {
 
 #what-we-do_page-wrapper {
     #what-we-do_header {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        @include section-overlay();
         padding-bottom: #{$spacer * 7};
         header {
             -webkit-box-flex: 0;
