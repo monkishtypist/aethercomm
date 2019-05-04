@@ -14661,6 +14661,9 @@ section {
     padding-top: 13rem; }
     @media (max-width: 768.98px) {
       section.section_header {
+        padding-top: 6.7rem; } }
+    @media (max-width: 575.98px) {
+      section.section_header {
         padding-top: 4.5rem; } }
   section.section-unpadded {
     padding: 0; }

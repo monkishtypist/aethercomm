@@ -303,6 +303,9 @@ section {
     &.section_header {
         padding-top: #{$spacer * 13};
         @include media-breakpoint-down('sm') {
+            padding-top: #{$spacer * 6.7};
+        }
+        @include media-breakpoint-down('xs') {
             padding-top: #{$spacer * 4.5};
         }
     }
