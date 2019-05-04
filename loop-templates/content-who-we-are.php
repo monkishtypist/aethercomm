@@ -46,7 +46,7 @@ $section_mission_styles = sprintf( 'style="%1$s"',
                     <?php echo apply_filters( 'the_content', get_acf_field( 'who-we-are_page_settings_header_copy', true ) ); ?>
                 <?php } ?>
                 <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
-                <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-right"></span>
+                <span class="crosshairs-white crosshairs-top-right"></span>
             </header>
 
 
