@@ -16776,6 +16776,8 @@ textarea {
          object-fit: cover;
       min-width: 100%;
       min-height: 100%; }
+    #who-we-are_page-wrapper #who-we-are_header .section-image-overlay-wrapper img.path {
+      position: absolute; }
   @media (max-width: 768.98px) {
     #who-we-are_page-wrapper #who-we-are_header {
       background-color: #fff;
@@ -16896,9 +16898,6 @@ textarea {
 
 #who-we-are_page-wrapper #who-we-are_mission {
   position: relative;
-  background-position: calc(50vw - 44.5rem) 3rem, center;
-  background-repeat: no-repeat;
-  background-size: auto, cover;
   padding-top: 6.375rem; }
   #who-we-are_page-wrapper #who-we-are_mission .section-image-overlay-wrapper {
     bottom: 0;
@@ -16927,6 +16926,8 @@ textarea {
          object-fit: cover;
       min-width: 100%;
       min-height: 100%; }
+    #who-we-are_page-wrapper #who-we-are_mission .section-image-overlay-wrapper img.path {
+      position: absolute; }
   @media (max-width: 1199.98px) {
     #who-we-are_page-wrapper #who-we-are_mission {
       background-position: calc(50vw - 44.5rem) 3rem, center;
@@ -16943,6 +16944,10 @@ textarea {
     #who-we-are_page-wrapper #who-we-are_mission {
       background-position: calc(50vw - 12.5rem) 3rem, center;
       padding-top: 7.5rem; } }
+  #who-we-are_page-wrapper #who-we-are_mission img.path {
+    background-position: calc(50vw - 44.5rem) 3rem, center;
+    background-repeat: no-repeat;
+    background-size: auto, cover; }
 
 #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
   -webkit-box-flex: 0;
@@ -17000,6 +17005,8 @@ textarea {
          object-fit: cover;
       min-width: 100%;
       min-height: 100%; }
+    #what-we-do_page-wrapper #what-we-do_header .section-image-overlay-wrapper img.path {
+      position: absolute; }
   @media (max-width: 768.98px) {
     #what-we-do_page-wrapper #what-we-do_header {
       background-color: #fff;
