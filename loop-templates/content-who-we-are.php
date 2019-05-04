@@ -91,7 +91,7 @@ if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
 
         </div>
 
-        <div class="<?php echo esc_attr( $container ); ?>" id="milestones-tabs-content">
+        <div class="<?php // echo esc_attr( $container ); ?>" id="milestones-tabs-content">
             <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                 <img src="/wp-content/themes/aethercomm/images/placeholder.png" />
             </div>
