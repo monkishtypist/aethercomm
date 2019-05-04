@@ -39,19 +39,19 @@ $container-padding-sm: 2.25rem;
 /**
  * Mixins
  */
-@mixin gradient( $color, $width: '88', $offset: '87' ) {
+@mixin gradient( $color: $blue, $width: 88%, $offset: .87 ) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+66 */
     background: -moz-linear-gradient(left, rgba($color,1) 0%,
-        rgba($color,#{$offset * .01}) #{$width * 1%},
-        rgba($color,0) #{$width * 1%},
+        rgba($color,$offset) #{$width * .33},
+        rgba($color,0) $width,
         rgba($color,0) 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(left, rgba($color,1) 0%,
-        rgba($color,#{$offset * .01}) #{$width * 1%},
-        rgba($color,0) #{$width * 1%},
+        rgba($color,$offset) #{$width * .33},
+        rgba($color,0) $width,
         rgba($color,0) 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to right, rgba($color,1) 0%,
-        rgba($color,#{$offset * .01}) #{$width * 1%},
-        rgba($color,0) #{$width * 1%},
+        rgba($color,$offset) #{$width * .33},
+        rgba($color,0) $width,
         rgba($color,0) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$color}', endColorstr='#{$black}',GradientType=1 ); /* IE6-9 */
 }
@@ -402,7 +402,12 @@ section {
     position: absolute;
     right: 0;
     top: 0;
-    .overlay {}
+    .overlay {
+        @include gradient();
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
     img.section-header-image {}
 }
 
