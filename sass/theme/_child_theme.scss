@@ -1135,8 +1135,10 @@ textarea {
         // background-repeat: no-repeat;
         // background-size: cover;
         // padding-bottom: #{$spacer * 7};
+        background-color: #{$blue};
         color: #{$white};
-        @include media-breakpoint-down('md') {
+        @include media-breakpoint-down('sm') {
+            background-color: #{$white};
             color: #{$body-color};
         }
         header {

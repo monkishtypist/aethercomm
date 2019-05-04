@@ -16065,9 +16065,11 @@ textarea {
       padding-top: 8.375rem; } }
 
 #who-we-are_page-wrapper #who-we-are_header {
+  background-color: #4A63AE;
   color: #fff; }
-  @media (max-width: 991.98px) {
+  @media (max-width: 768.98px) {
     #who-we-are_page-wrapper #who-we-are_header {
+      background-color: #fff;
       color: #222222; } }
   #who-we-are_page-wrapper #who-we-are_header header {
     -webkit-box-flex: 0;
