@@ -14737,6 +14737,7 @@ section {
 .section-header-image-wrapper {
   bottom: 0;
   left: 0;
+  overflow: hidden;
   position: absolute;
   right: 0;
   top: 0; }
@@ -14752,6 +14753,11 @@ section {
     height: 100%;
     position: absolute;
     width: 100%; }
+  .section-header-image-wrapper img.section-header-image {
+    -o-object-fit: cover;
+       object-fit: cover;
+    min-width: 100%;
+    min-height: 100%; }
 
 /**
  * Navs

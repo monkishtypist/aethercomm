@@ -399,6 +399,7 @@ section {
 .section-header-image-wrapper {
     bottom: 0;
     left: 0;
+    overflow: hidden;
     position: absolute;
     right: 0;
     top: 0;
@@ -408,7 +409,11 @@ section {
         position: absolute;
         width: 100%;
     }
-    img.section-header-image {}
+    img.section-header-image {
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
+    }
 }
 
 /**
