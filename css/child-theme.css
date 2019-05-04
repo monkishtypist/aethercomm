@@ -14747,7 +14747,7 @@ section {
   position: absolute;
   right: 0;
   top: 0; }
-  .section-header-image-wrapper .section-header-image-wrapper-inner {
+  .section-header-image-wrapper > div {
     height: 100%;
     width: 100%; }
   .section-header-image-wrapper .overlay {
@@ -14775,7 +14775,7 @@ section {
       height: 10rem;
       margin-bottom: 2.25rem;
       position: relative; }
-      .section-header-image-wrapper .section-header-image-wrapper-inner {
+      .section-header-image-wrapper > div {
         -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
                 clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px); } }
 

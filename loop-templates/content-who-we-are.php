@@ -88,6 +88,13 @@ $section_mission_styles = sprintf( 'style="%1$s"',
 
     <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1" <?php echo $section_mission_styles; ?> >
 
+        <div class="section-mission-image-wrapper" <?php // echo $section_mission_styles; ?>>
+            <div class="section-mission-image-wrapper-inner">
+                <div class="overlay"></div>
+                <img class="section-mission-image" src="<?php echo $section_mission_background_image_url; ?>" width="100%" />
+            </div>
+        </div>
+
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">

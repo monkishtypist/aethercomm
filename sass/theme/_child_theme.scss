@@ -164,6 +164,39 @@ $container-padding-sm: 2.25rem;
         }
     }
 }
+@mixin section-overlay( $color: $blue, $width: 88%, $offset: .87 ) {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0;
+    > div { // wrapper-inner
+        height: 100%;
+        width: 100%;
+    }
+    .overlay {
+        @include gradient( $color, $width, $offset );
+        height: 100%;
+        position: absolute;
+        width: 100%;
+    }
+    img.section-header-image {
+        object-fit: cover;
+        min-width: 100%;
+        min-height: 100%;
+    }
+    @include media-breakpoint-down('sm') {
+        background-color: #{$gray-200};
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
+        height: #{$spacer * 10};
+        margin-bottom: #{$spacer * 2.25};
+        position: relative;
+        > div { // wrapper-inner
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
+        }
+    }
+}
 
 /**
  * Typography
@@ -403,37 +436,7 @@ section {
  * These are the section headers
  */
 .section-header-image-wrapper {
-    bottom: 0;
-    left: 0;
-    overflow: hidden;
-    position: absolute;
-    right: 0;
-    top: 0;
-    .section-header-image-wrapper-inner {
-        height: 100%;
-        width: 100%;
-    }
-    .overlay {
-        @include gradient();
-        height: 100%;
-        position: absolute;
-        width: 100%;
-    }
-    img.section-header-image {
-        object-fit: cover;
-        min-width: 100%;
-        min-height: 100%;
-    }
-    @include media-breakpoint-down('sm') {
-        background-color: #{$gray-200};
-        clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
-        height: #{$spacer * 10};
-        margin-bottom: #{$spacer * 2.25};
-        position: relative;
-        .section-header-image-wrapper-inner {
-            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
-        }
-    }
+    @include section-overlay();
 }
 
 /**
@@ -1218,6 +1221,7 @@ textarea {
             background-position: calc(50vw - 12.5rem) 3rem, center;
             padding-top: #{$spacer * 7.5};
         }
+        .section-mission-image-wrapper {}
     }
     #who-we-are_team {
         #team-members-title {}

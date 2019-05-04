@@ -21,9 +21,12 @@ $section_header_styles = sprintf( 'style="%1$s"',
 );
 
 ?>
-<div class="section-header-image-wrapper" <?php // echo $section_header_styles; ?>>
-    <div class="section-header-image-wrapper-inner">
-        <div class="overlay"></div>
-        <img class="section-header-image" src="<?php echo $section_header_background_image_url; ?>" width="100%" />
+
+<?php if ( $section_header_background_image_url ) : ?>
+    <div class="section-header-image-wrapper" <?php // echo $section_header_styles; ?>>
+        <div class="section-header-image-wrapper-inner">
+            <div class="overlay"></div>
+            <img class="section-header-image" src="<?php echo $section_header_background_image_url; ?>" width="100%" />
+        </div>
     </div>
-</div>
+<?php endif; ?>
