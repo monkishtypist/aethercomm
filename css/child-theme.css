@@ -14773,10 +14773,11 @@ section {
       -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
               clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
       height: 10rem;
+      margin-bottom: 2.25rem;
       position: relative; }
       .section-header-image-wrapper .section-header-image-wrapper-inner {
-        -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 9px);
-                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 9px); } }
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
+                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px); } }
 
 /**
  * Navs
@@ -16069,11 +16070,13 @@ textarea {
 
 #who-we-are_page-wrapper #who-we-are_header {
   background-color: #4A63AE;
-  color: #fff; }
+  color: #fff;
+  padding-bottom: 7.125rem; }
   @media (max-width: 768.98px) {
     #who-we-are_page-wrapper #who-we-are_header {
       background-color: #fff;
-      color: #222222; } }
+      color: #222222;
+      padding-bottom: 2.125rem; } }
   #who-we-are_page-wrapper #who-we-are_header header {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;

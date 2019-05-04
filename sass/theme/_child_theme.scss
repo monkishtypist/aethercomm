@@ -428,9 +428,10 @@ section {
         background-color: #{$gray-200};
         clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
         height: #{$spacer * 10};
+        margin-bottom: #{$spacer * 2.25};
         position: relative;
         .section-header-image-wrapper-inner {
-            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 9px);
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
         }
     }
 }
@@ -1140,9 +1141,11 @@ textarea {
         // padding-bottom: #{$spacer * 7};
         background-color: #{$blue};
         color: #{$white};
+        padding-bottom: #{$spacer * 7.125};
         @include media-breakpoint-down('sm') {
             background-color: #{$white};
             color: #{$body-color};
+            padding-bottom: #{$spacer * 2.125};
         }
         header {
             -webkit-box-flex: 0;
