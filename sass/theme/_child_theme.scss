@@ -1214,7 +1214,7 @@ textarea {
                 }
                 @include media-breakpoint-down('sm') {
                     max-width: 100%;
-                    max-width: calc(100% - #{$card-group-margin * 2});
+                    // max-width: calc(100% - #{$card-group-margin * 2});
                 }
             }
         }

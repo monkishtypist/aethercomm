@@ -16214,8 +16214,7 @@ textarea {
       max-width: calc(50% - 36px); } }
   @media (max-width: 768.98px) {
     #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
-      max-width: 100%;
-      max-width: calc(100% - 36px); } }
+      max-width: 100%; } }
 
 #what-we-do_page-wrapper #what-we-do_header {
   background-position: center;
