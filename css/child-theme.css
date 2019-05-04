@@ -14767,13 +14767,13 @@ section {
   @media (max-width: 991.98px) {
     .section-header-image-wrapper {
       background-color: #ebebeb;
-      -webkit-clip-path: polygon(-2% 0, 100% 0, 100% 100%, 24% 100%);
-              clip-path: polygon(-2% 0, 100% 0, 100% 100%, 24% 100%);
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
       height: 10rem;
       position: relative; }
       .section-header-image-wrapper .section-header-image-wrapper-inner {
-        -webkit-clip-path: polygon(calc(-2% + 8px) 0, 100% 0, 100% calc(100% - 8px), calc(24% + 8px) calc(100% - 8px));
-                clip-path: polygon(calc(-2% + 8px) 0, 100% 0, 100% calc(100% - 8px), calc(24% + 8px) calc(100% - 8px)); } }
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 9px);
+                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 9px); } }
 
 /**
  * Navs

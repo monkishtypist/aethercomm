@@ -423,11 +423,11 @@ section {
     }
     @include media-breakpoint-down('md') {
         background-color: #{$gray-200};
-        clip-path: polygon(-2% 0, 100% 0, 100% 100%, 24% 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
         height: #{$spacer * 10};
         position: relative;
         .section-header-image-wrapper-inner {
-            clip-path: polygon(calc(-2% + 8px) 0, 100% 0, 100% calc(100% - 8px), calc(24% + 8px) calc(100% - 8px));
+            clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 9px);
         }
     }
 }
