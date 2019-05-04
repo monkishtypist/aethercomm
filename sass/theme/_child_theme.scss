@@ -165,6 +165,7 @@ $container-padding-sm: 2.25rem;
     }
 }
 @mixin section-overlay( $color: $blue, $width: 88%, $offset: .87 ) {
+    position: relative;
     .section-image-overlay-wrapper {
         bottom: 0;
         left: 0;

@@ -16745,6 +16745,7 @@ textarea {
       padding-top: 8.375rem; } }
 
 #who-we-are_page-wrapper #who-we-are_header {
+  position: relative;
   background-color: #4A63AE;
   color: #fff;
   padding-bottom: 7.125rem; }
@@ -16940,6 +16941,7 @@ textarea {
       max-width: 100%; } }
 
 #what-we-do_page-wrapper #what-we-do_header {
+  position: relative;
   padding-bottom: 7rem; }
   #what-we-do_page-wrapper #what-we-do_header .section-image-overlay-wrapper {
     bottom: 0;
