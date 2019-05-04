@@ -1197,6 +1197,7 @@ textarea {
         @include skewed-tabs();
     }
     #who-we-are_mission {
+        @include section-overlay( $black );
         background-position: calc(50vw - 44.5rem) 3rem, center;
         background-repeat: no-repeat;
         background-size: auto, cover;
@@ -1262,7 +1263,7 @@ textarea {
 
 #what-we-do_page-wrapper {
     #what-we-do_header {
-        @include section-overlay();
+        @include section-header-overlay();
         padding-bottom: #{$spacer * 7};
         header {
             -webkit-box-flex: 0;
