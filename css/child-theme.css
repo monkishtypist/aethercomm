@@ -16808,6 +16808,9 @@ textarea {
         -ms-flex-preferred-size: 100%;
             flex-basis: 100%;
         max-width: 100%; } }
+  @media (max-width: 768.98px) {
+    #who-we-are_page-wrapper #who-we-are_header .crosshairs-top-left {
+      left: 1rem; } }
 
 #who-we-are_page-wrapper #who-we-are_tabs {
   margin-top: -4.25rem;

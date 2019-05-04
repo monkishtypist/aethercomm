@@ -1188,6 +1188,11 @@ textarea {
                 max-width: 100%;
             }
         }
+        .crosshairs-top-left {
+            @include media-breakpoint-down('sm') {
+                left: #{$spacer};
+            }
+        }
     }
     #who-we-are_tabs {
         @include skewed-tabs();
