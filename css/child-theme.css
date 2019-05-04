@@ -14659,6 +14659,9 @@ section {
   position: relative; }
   section.section_header {
     padding-top: 13rem; }
+    @media (max-width: 991.98px) {
+      section.section_header {
+        padding-top: 4.5rem; } }
   section.section-unpadded {
     padding: 0; }
 
@@ -14758,6 +14761,10 @@ section {
        object-fit: cover;
     min-width: 100%;
     min-height: 100%; }
+  @media (max-width: 991.98px) {
+    .section-header-image-wrapper {
+      position: relative;
+      height: 9.5rem; } }
 
 /**
  * Navs

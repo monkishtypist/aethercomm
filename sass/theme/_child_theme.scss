@@ -302,6 +302,9 @@ section {
     position: relative;
     &.section_header {
         padding-top: #{$spacer * 13};
+        @include media-breakpoint-down('md') {
+            padding-top: #{$spacer * 4.5};
+        }
     }
     &.section-unpadded {
         padding: 0;
@@ -413,6 +416,11 @@ section {
         object-fit: cover;
         min-width: 100%;
         min-height: 100%;
+    }
+    @include media-breakpoint-down('md') {
+        position: relative;
+        height: #{$spacer * 9.5};
+
     }
 }
 

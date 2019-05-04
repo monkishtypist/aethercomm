@@ -45,10 +45,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
 
     <section id="<?php echo $post->post_name; ?>_header" class="section_header section-black" <?php // echo $section_header_styles; ?> >
 
-        <div class="section-header-image-wrapper" <?php // echo $section_header_styles; ?>>
-            <div class="overlay"></div>
-            <img class="section-header-image" src="<?php echo $section_header_background_image_url; ?>" width="100%" />
-        </div>
+        <?php get_template_part( 'global-templates/header', 'image' ); ?>
 
         <div class="<?php echo esc_attr( $container ); ?>">
 

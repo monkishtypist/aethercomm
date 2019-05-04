@@ -13,19 +13,6 @@ global $post;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$section_header_background_image_url = '/wp-content/uploads/2019/04/who-we-are-hero.png'; // default
-if ( get_acf_field( 'who-we-are_page_settings_header_background' ) ) {
-    $section_header_background_img_id = get_acf_field( 'who-we-are_page_settings_header_background' );
-    if ( is_array( $section_header_background_img_id ) && isset( $section_header_background_img_id[0] ) ) {
-        $section_header_background_image_url = wp_get_attachment_url( $section_header_background_img_id[0] );
-    }
-}
-$section_header_styles = sprintf( 'style="%1$s"',
-    sprintf( 'background-image:url(%1$s);',
-        $section_header_background_image_url
-    )
-);
-
 $section_mission_background_image_url = '/wp-content/uploads/2019/04/who-we-are_mission-statement.png'; // default
 if ( get_acf_field( 'who-we-are_page_settings_mission_background' ) ) {
     $section_mission_background_img_id = get_acf_field( 'who-we-are_page_settings_mission_background' );
@@ -46,10 +33,7 @@ $section_mission_styles = sprintf( 'style="%1$s"',
 
     <section id="<?php echo $post->post_name; ?>_header" class="section_header section-blue" <?php // echo $section_header_styles; ?> >
 
-        <div class="section-header-image-wrapper" <?php // echo $section_header_styles; ?>>
-            <div class="overlay"></div>
-            <img class="section-header-image" src="<?php echo $section_header_background_image_url; ?>" width="100%" />
-        </div>
+        <?php get_template_part( 'global-templates/header', 'image' ); ?>
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
