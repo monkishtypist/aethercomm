@@ -16065,10 +16065,10 @@ textarea {
       padding-top: 8.375rem; } }
 
 #who-we-are_page-wrapper #who-we-are_header {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  padding-bottom: 7rem; }
+  color: #fff; }
+  @media (max-width: 991.98px) {
+    #who-we-are_page-wrapper #who-we-are_header {
+      color: #222222; } }
   #who-we-are_page-wrapper #who-we-are_header header {
     -webkit-box-flex: 0;
     -ms-flex: 0 0 50%;

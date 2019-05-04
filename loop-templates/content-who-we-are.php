@@ -31,7 +31,7 @@ $section_mission_styles = sprintf( 'style="%1$s"',
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section_header section-blue" <?php // echo $section_header_styles; ?> >
+    <section id="<?php echo $post->post_name; ?>_header" class="section_header" <?php // echo $section_header_styles; ?> >
 
         <?php get_template_part( 'global-templates/header', 'image' ); ?>
 

@@ -1131,10 +1131,14 @@ textarea {
 
 #who-we-are_page-wrapper {
     #who-we-are_header {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        padding-bottom: #{$spacer * 7};
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-size: cover;
+        // padding-bottom: #{$spacer * 7};
+        color: #{$white};
+        @include media-breakpoint-down('md') {
+            color: #{$body-color};
+        }
         header {
             -webkit-box-flex: 0;
             -ms-flex: 0 0 50%;
