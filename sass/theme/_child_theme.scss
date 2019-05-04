@@ -720,9 +720,6 @@ section {
     position: relative;
     height: #{$spacer * 1.375};
     width: #{$spacer * 1.375};
-    @include media-breakpoint-down('sm') {
-        display: none;
-    }
     &:after,
     &:before {
         content: " ";
@@ -745,6 +742,11 @@ section {
 }
 @each $color, $value in $colors {
     .crosshairs-#{$color} { @include crosshairs($value); }
+    .crosshairs-sm-#{$color} {
+        @include media-breakpoint-down('sm') {
+            @include crosshairs($value);
+        }
+    }
 }
 @each $color, $value in $theme-colors {
     .crosshairs-#{$color} { @include crosshairs($value); }
