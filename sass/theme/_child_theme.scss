@@ -915,9 +915,27 @@ form {
                 background-color: #{$gray-600};
                 border: #{$border-width} solid #{$white};
                 height: #{$spacer * 2.875};
-                &::-webkit-input-placeholder,
-                &::-moz-placeholder,
-                &:-ms-input-placeholder,
+                &::-webkit-input-placeholder {
+                    color: #{$white};
+                    font-family: #{$font-family-sans-serif};
+                    font-size: #{$font-size-base * .875};
+                    font-weight: #{$font-weight-bold};
+                    text-transform: uppercase;
+                }
+                &::-moz-placeholder {
+                    color: #{$white};
+                    font-family: #{$font-family-sans-serif};
+                    font-size: #{$font-size-base * .875};
+                    font-weight: #{$font-weight-bold};
+                    text-transform: uppercase;
+                }
+                &:-ms-input-placeholder {
+                    color: #{$white};
+                    font-family: #{$font-family-sans-serif};
+                    font-size: #{$font-size-base * .875};
+                    font-weight: #{$font-weight-bold};
+                    text-transform: uppercase;
+                }
                 &::placeholder {
                     color: #{$white};
                     font-family: #{$font-family-sans-serif};
