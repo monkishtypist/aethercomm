@@ -711,7 +711,7 @@ section {
         }
     }
     &.card-representatives {
-        border-color: #{$gray-600};
+        border: border: #{$border-width} solid #{$gray-600};
         padding: #{$spacer * 2} #{$spacer * 1.5};
         .card-footer {
             background-color: transparent;
