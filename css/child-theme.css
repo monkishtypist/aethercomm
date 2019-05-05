@@ -16867,6 +16867,8 @@ textarea {
         #who-we-are_page-wrapper #who-we-are_header .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
           -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
                   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px); }
+        #who-we-are_page-wrapper #who-we-are_header .section-image-overlay-wrapper .overlay {
+          display: none; }
       #who-we-are_page-wrapper #who-we-are_header header {
         -webkit-box-flex: 0;
         -ms-flex: 1 0 100%;
@@ -17109,6 +17111,8 @@ textarea {
         #what-we-do_page-wrapper #what-we-do_header .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
           -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
                   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px); }
+        #what-we-do_page-wrapper #what-we-do_header .section-image-overlay-wrapper .overlay {
+          display: none; }
       #what-we-do_page-wrapper #what-we-do_header header {
         -webkit-box-flex: 0;
         -ms-flex: 1 0 100%;
@@ -17311,6 +17315,8 @@ textarea {
         #careers_page-wrapper #careers_header .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
           -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
                   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px); }
+        #careers_page-wrapper #careers_header .section-image-overlay-wrapper .overlay {
+          display: none; }
       #careers_page-wrapper #careers_header header {
         -webkit-box-flex: 0;
         -ms-flex: 1 0 100%;
@@ -17414,6 +17420,8 @@ textarea {
         #rep-listing_page-wrapper #rep-listing_header .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
           -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
                   clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px); }
+        #rep-listing_page-wrapper #rep-listing_header .section-image-overlay-wrapper .overlay {
+          display: none; }
       #rep-listing_page-wrapper #rep-listing_header header {
         -webkit-box-flex: 0;
         -ms-flex: 1 0 100%;
