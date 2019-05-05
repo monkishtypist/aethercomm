@@ -17238,7 +17238,7 @@ textarea {
 
 #rep-listing_page-wrapper #rep-listing_header {
   position: relative;
-  background-color: #4A63AE;
+  background-color: #000;
   color: #fff;
   padding-bottom: 7rem; }
   #rep-listing_page-wrapper #rep-listing_header .section-image-overlay-wrapper {
@@ -17255,10 +17255,10 @@ textarea {
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+66 */
       /* FF3.6-15 */
       /* Chrome10-25,Safari5.1-6 */
-      background: -webkit-gradient(linear, left top, right top, from(#4a63ae), color-stop(29.04%, rgba(74, 99, 174, 0.87)), color-stop(88%, rgba(74, 99, 174, 0)), to(rgba(74, 99, 174, 0)));
-      background: linear-gradient(to right, #4a63ae 0%, rgba(74, 99, 174, 0.87) 29.04%, rgba(74, 99, 174, 0) 88%, rgba(74, 99, 174, 0) 100%);
+      background: -webkit-gradient(linear, left top, right top, from(black), color-stop(29.04%, rgba(0, 0, 0, 0.87)), color-stop(88%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0.87) 29.04%, rgba(0, 0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%);
       /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4A63AE', endColorstr='#000',GradientType=1 );
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000',GradientType=1 );
       /* IE6-9 */
       height: 100%;
       position: absolute;
