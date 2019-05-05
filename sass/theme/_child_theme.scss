@@ -1219,22 +1219,22 @@ textarea {
             padding-top: #{$spacer * 7.5};
         }
         img.path {
-            left: -#{$spacer * 6.7};
+            left: calc(50vw - 44.5rem);
             top: #{$spacer * 3};
             @include media-breakpoint-down('lg') {
-                left: -#{$spacer * 6.7};
+                left: calc(50vw - 44.5rem);
                 top: #{$spacer * 3};
             }
             @include media-breakpoint-down('md') {
-                left: -#{$spacer * 6.7};
+                left: calc(50vw - 44.5rem);
                 top: #{$spacer * 3};
             }
             @include media-breakpoint-down('sm') {
-                left: -#{$spacer * 6.7};
+                left: calc(50vw - 44.5rem);
                 top: #{$spacer * 3};
             }
             @include media-breakpoint-down('xs') {
-                left: -#{$spacer * 6.7};
+                left: calc(50vw - 44.5rem);
                 top: #{$spacer * 3};
             }
         }

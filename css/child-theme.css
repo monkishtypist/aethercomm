@@ -16945,23 +16945,23 @@ textarea {
       background-position: calc(50vw - 12.5rem) 3rem, center;
       padding-top: 7.5rem; } }
   #who-we-are_page-wrapper #who-we-are_mission img.path {
-    left: -6.7rem;
+    left: calc(50vw - 44.5rem);
     top: 3rem; }
     @media (max-width: 1199.98px) {
       #who-we-are_page-wrapper #who-we-are_mission img.path {
-        left: -6.7rem;
+        left: calc(50vw - 44.5rem);
         top: 3rem; } }
     @media (max-width: 991.98px) {
       #who-we-are_page-wrapper #who-we-are_mission img.path {
-        left: -6.7rem;
+        left: calc(50vw - 44.5rem);
         top: 3rem; } }
     @media (max-width: 768.98px) {
       #who-we-are_page-wrapper #who-we-are_mission img.path {
-        left: -6.7rem;
+        left: calc(50vw - 44.5rem);
         top: 3rem; } }
     @media (max-width: 575.98px) {
       #who-we-are_page-wrapper #who-we-are_mission img.path {
-        left: -6.7rem;
+        left: calc(50vw - 44.5rem);
         top: 3rem; } }
 
 #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
