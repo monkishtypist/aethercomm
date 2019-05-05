@@ -226,6 +226,9 @@ $container-padding-sm: 2.25rem;
             max-width: 100%;
             padding: 0;
         }
+        .crosshairs-top-left {
+            left: #{$spacer};
+        }
     }
 }
 
@@ -1270,11 +1273,6 @@ textarea {
 #who-we-are_page-wrapper {
     #who-we-are_header {
         @include section-header-overlay();
-        .crosshairs-top-left {
-            @include media-breakpoint-down('sm') {
-                left: #{$spacer};
-            }
-        }
     }
     #who-we-are_tabs {
         @include skewed-tabs();
@@ -1426,21 +1424,7 @@ textarea {
 
 #careers_page-wrapper {
     #careers_header {
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        header {
-            width: 40%;
-            @include media-breakpoint-down('md') {
-                width: 60%;
-            }
-            @include media-breakpoint-down('sm') {
-                width: 80%;
-            }
-            @include media-breakpoint-down('xs') {
-                width: auto;
-            }
-        }
+        @include section-header-overlay( $black );
     }
     #careers_benefits {
         background-position: center;

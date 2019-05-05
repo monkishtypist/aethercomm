@@ -16872,10 +16872,9 @@ textarea {
         -ms-flex: 1 0 100%;
         flex: 1 0 100%;
         max-width: 100%;
-        padding: 0; } }
-  @media (max-width: 768.98px) {
-    #who-we-are_page-wrapper #who-we-are_header .crosshairs-top-left {
-      left: 1rem; } }
+        padding: 0; }
+      #who-we-are_page-wrapper #who-we-are_header .crosshairs-top-left {
+        left: 1rem; } }
 
 #who-we-are_page-wrapper #who-we-are_tabs {
   margin-top: -4.25rem;
@@ -17115,7 +17114,9 @@ textarea {
         -ms-flex: 1 0 100%;
         flex: 1 0 100%;
         max-width: 100%;
-        padding: 0; } }
+        padding: 0; }
+      #what-we-do_page-wrapper #what-we-do_header .crosshairs-top-left {
+        left: 1rem; } }
 
 #what-we-do_page-wrapper #what-we-do_tabs {
   margin-top: -4.25rem;
@@ -17256,20 +17257,68 @@ textarea {
       display: block; }
 
 #careers_page-wrapper #careers_header {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover; }
+  position: relative;
+  background-color: #000;
+  color: #fff;
+  padding-bottom: 7.125rem; }
+  #careers_page-wrapper #careers_header .section-image-overlay-wrapper {
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    top: 0; }
+    #careers_page-wrapper #careers_header .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
+      height: 100%;
+      width: 100%; }
+    #careers_page-wrapper #careers_header .section-image-overlay-wrapper .overlay {
+      /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+66 */
+      /* FF3.6-15 */
+      /* Chrome10-25,Safari5.1-6 */
+      background: -webkit-gradient(linear, left top, right top, from(black), color-stop(29.04%, rgba(0, 0, 0, 0.87)), color-stop(88%, rgba(0, 0, 0, 0)), to(rgba(0, 0, 0, 0)));
+      background: linear-gradient(to right, black 0%, rgba(0, 0, 0, 0.87) 29.04%, rgba(0, 0, 0, 0) 88%, rgba(0, 0, 0, 0) 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000', endColorstr='#000',GradientType=1 );
+      /* IE6-9 */
+      height: 100%;
+      position: absolute;
+      width: 100%; }
+    #careers_page-wrapper #careers_header .section-image-overlay-wrapper img.section-overlay-image {
+      -o-object-fit: cover;
+         object-fit: cover;
+      min-width: 100%;
+      min-height: 100%; }
+    #careers_page-wrapper #careers_header .section-image-overlay-wrapper img.path {
+      position: absolute; }
   #careers_page-wrapper #careers_header header {
-    width: 40%; }
-    @media (max-width: 991.98px) {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 50%;
+    flex: 0 0 50%;
+    max-width: 50%;
+    padding: 0; }
+  @media (max-width: 768.98px) {
+    #careers_page-wrapper #careers_header {
+      background-color: #fff;
+      color: #222222;
+      padding-bottom: 2.125rem; }
+      #careers_page-wrapper #careers_header .section-image-overlay-wrapper {
+        background-color: #ebebeb;
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
+                clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
+        height: 10rem;
+        margin-bottom: 2.25rem;
+        position: relative; }
+        #careers_page-wrapper #careers_header .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
+          -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
+                  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px); }
       #careers_page-wrapper #careers_header header {
-        width: 60%; } }
-    @media (max-width: 768.98px) {
-      #careers_page-wrapper #careers_header header {
-        width: 80%; } }
-    @media (max-width: 575.98px) {
-      #careers_page-wrapper #careers_header header {
-        width: auto; } }
+        -webkit-box-flex: 0;
+        -ms-flex: 1 0 100%;
+        flex: 1 0 100%;
+        max-width: 100%;
+        padding: 0; }
+      #careers_page-wrapper #careers_header .crosshairs-top-left {
+        left: 1rem; } }
 
 #careers_page-wrapper #careers_benefits {
   background-position: center;
@@ -17370,6 +17419,8 @@ textarea {
         -ms-flex: 1 0 100%;
         flex: 1 0 100%;
         max-width: 100%;
-        padding: 0; } }
+        padding: 0; }
+      #rep-listing_page-wrapper #rep-listing_header .crosshairs-top-left {
+        left: 1rem; } }
 
 /*# sourceMappingURL=child-theme.css.map */
