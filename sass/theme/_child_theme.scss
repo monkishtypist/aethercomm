@@ -1219,9 +1219,24 @@ textarea {
             padding-top: #{$spacer * 7.5};
         }
         img.path {
-            background-position: calc(50vw - 44.5rem) 3rem, center;
-            background-repeat: no-repeat;
-            background-size: auto, cover;
+            left: -#{$spacer * 6.7};
+            top: #{$spacer * 3};
+            @include media-breakpoint-down('lg') {
+                left: -#{$spacer * 6.7};
+                top: #{$spacer * 3};
+            }
+            @include media-breakpoint-down('md') {
+                left: -#{$spacer * 6.7};
+                top: #{$spacer * 3};
+            }
+            @include media-breakpoint-down('sm') {
+                left: -#{$spacer * 6.7};
+                top: #{$spacer * 3};
+            }
+            @include media-breakpoint-down('xs') {
+                left: -#{$spacer * 6.7};
+                top: #{$spacer * 3};
+            }
         }
     }
     #who-we-are_team {
