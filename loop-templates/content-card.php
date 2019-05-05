@@ -36,6 +36,7 @@ switch ( $post->post_type ) { // modify the defaults
         $card_img = false;
         $card_text .= sprintf( '<div class="card-text">%1$s<br><a href="mailto:%2$s">%3$s</a></div>',
             get_acf_field( 'cpt_rep_phone', true ),
+            get_acf_field( 'cpt_rep_email', true ),
             get_acf_field( 'cpt_rep_email', true )
         );
         $card_footer = sprintf( '<div class="card-footer">%1$s</div>',
