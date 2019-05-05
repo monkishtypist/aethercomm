@@ -16529,6 +16529,7 @@ span.pipe::after {
 form.reps-filter-form .form-group {
   margin-right: 1rem; }
   form.reps-filter-form .form-group #rep-filter-input {
+    background-color: #707070;
     height: auto; }
     form.reps-filter-form .form-group #rep-filter-input ::-webkit-input-placeholder {
       color: #fff;

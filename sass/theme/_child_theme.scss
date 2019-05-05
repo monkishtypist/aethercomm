@@ -911,6 +911,7 @@ form {
         .form-group {
             margin-right: #{$spacer};
             #rep-filter-input {
+                background-color: #{$gray-600};
                 height: auto;
                 ::-webkit-input-placeholder {
                     color: #{$white};
