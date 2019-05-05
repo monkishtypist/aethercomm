@@ -16525,7 +16525,24 @@ span.pipe::after {
       border-bottom: 2px solid #fff;
       border-left: 2px solid #fff; }
 
-/* Search Form */
+/* Search Forms */
+form.reps-filter-form .form-group {
+  margin-right: 1rem; }
+  form.reps-filter-form .form-group #rep-filter-input {
+    height: auto; }
+    form.reps-filter-form .form-group #rep-filter-input ::-webkit-input-placeholder {
+      color: #fff;
+      font-size: 0.875rem; }
+    form.reps-filter-form .form-group #rep-filter-input :-ms-input-placeholder {
+      color: #fff;
+      font-size: 0.875rem; }
+    form.reps-filter-form .form-group #rep-filter-input ::-ms-input-placeholder {
+      color: #fff;
+      font-size: 0.875rem; }
+    form.reps-filter-form .form-group #rep-filter-input ::placeholder {
+      color: #fff;
+      font-size: 0.875rem; }
+
 /* Gravity Forms */
 li.gfield.hidden_label label {
   display: none; }

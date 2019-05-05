@@ -719,7 +719,6 @@ section {
         @include media-breakpoint-down('sm') {
             flex-basis: calc(100% - #{$card-group-margin * 2});
             max-width: 100%;
-            // max-width: calc(100% - #{$card-group-margin * 2});
         }
         .card-footer {
             background-color: transparent;
@@ -906,7 +905,34 @@ span.pipe {
     }
 }
 
-/* Search Form */
+/* Search Forms */
+form {
+    &.reps-filter-form {
+        .form-group {
+            margin-right: #{$spacer};
+            #rep-filter-input {
+                height: auto;
+                ::-webkit-input-placeholder {
+                    color: #{$white};
+                    font-size: #{$font-size-base * .875};
+                }
+                ::-moz-placeholder {
+                    color: #{$white};
+                    font-size: #{$font-size-base * .875};
+                }
+                :-ms-input-placeholder {
+                    color: #{$white};
+                    font-size: #{$font-size-base * .875};
+                }
+                ::placeholder {
+                    color: #{$white};
+                    font-size: #{$font-size-base * .875};
+                }
+            }
+        }
+        button[type="submit"] {}
+    }
+}
 
 /* Gravity Forms */
 li {
