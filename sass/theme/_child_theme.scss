@@ -317,7 +317,7 @@ button.btn {
     }
     &.btn-gray {
         background-color: #{$gray};
-        border-color: #{$white};
+        border-color: #{$gray};
         color: #{$white};
     }
 }
@@ -708,6 +708,13 @@ section {
         }
         a {
             @extend .stretched-link;
+        }
+    }
+    &.card-representatives {
+        border-color: #{$gray-600};
+        padding: #{$spacer * 2} #{$spacer * 1.5};
+        .card-footer {
+            background-color: transparent;
         }
     }
 }
