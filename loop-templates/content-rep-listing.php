@@ -76,9 +76,32 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 ); ?>
             <?php } ?>
 
-            <div class="card-deck">
+            <?php
+            $args = array(
+                'post_type' => 'representatives',
+                'post_status' => 'publish',
+                'posts_per_page' => 9
+            );
+            $query = new WP_Query( $args );
+            ?>
 
-            </div>
+            <?php if ( $query->have_posts() ) : ?>
+
+                <?php ob_start(); ?>
+
+                <div class="card-deck">
+
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                        <?php get_template_part( 'loop-templates/content', 'card' ); ?>
+
+                    <?php endwhile; ?>
+
+                </div>
+
+                <?php echo ob_get_clean(); ?>
+
+            <?php endif; wp_reset_query(); ?>
 
         </div>
 
