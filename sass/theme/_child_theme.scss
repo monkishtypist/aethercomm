@@ -913,19 +913,19 @@ form {
             #rep-filter-input {
                 background-color: #{$gray-600};
                 height: auto;
-                ::-webkit-input-placeholder {
+                &::-webkit-input-placeholder {
                     color: #{$white};
                     font-size: #{$font-size-base * .875};
                 }
-                ::-moz-placeholder {
+                &::-moz-placeholder {
                     color: #{$white};
                     font-size: #{$font-size-base * .875};
                 }
-                :-ms-input-placeholder {
+                &:-ms-input-placeholder {
                     color: #{$white};
                     font-size: #{$font-size-base * .875};
                 }
-                ::placeholder {
+                &::placeholder {
                     color: #{$white};
                     font-size: #{$font-size-base * .875};
                 }

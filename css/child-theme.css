@@ -16531,16 +16531,16 @@ form.reps-filter-form .form-group {
   form.reps-filter-form .form-group #rep-filter-input {
     background-color: #707070;
     height: auto; }
-    form.reps-filter-form .form-group #rep-filter-input ::-webkit-input-placeholder {
+    form.reps-filter-form .form-group #rep-filter-input::-webkit-input-placeholder {
       color: #fff;
       font-size: 0.875rem; }
-    form.reps-filter-form .form-group #rep-filter-input :-ms-input-placeholder {
+    form.reps-filter-form .form-group #rep-filter-input:-ms-input-placeholder {
       color: #fff;
       font-size: 0.875rem; }
-    form.reps-filter-form .form-group #rep-filter-input ::-ms-input-placeholder {
+    form.reps-filter-form .form-group #rep-filter-input::-ms-input-placeholder {
       color: #fff;
       font-size: 0.875rem; }
-    form.reps-filter-form .form-group #rep-filter-input ::placeholder {
+    form.reps-filter-form .form-group #rep-filter-input::placeholder {
       color: #fff;
       font-size: 0.875rem; }
 
