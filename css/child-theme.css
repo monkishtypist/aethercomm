@@ -16594,6 +16594,8 @@ li.gfield .ginput_container textarea {
 .gform_footer {
   margin: 0 -10px;
   padding: 0 10px; }
+  .gform_footer button[type="submit"] {
+    width: 100%; }
 
 textarea {
   max-height: 6.875rem; }

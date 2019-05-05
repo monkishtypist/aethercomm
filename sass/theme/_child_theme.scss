@@ -971,6 +971,9 @@ li {
 .gform_footer {
     margin: 0 -#{$grid-gutter-width / 2};
     padding: 0 #{$grid-gutter-width / 2};
+    button[type="submit"] {
+        width: 100%;
+    }
 }
 textarea {
     max-height: #{$spacer * 6.875};
