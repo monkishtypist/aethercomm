@@ -70,9 +70,11 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
-            <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
-                get_acf_field( 'rep-listing_page_settings_reps_title', true )
-            ); ?>
+            <?php if ( get_acf_field( 'rep-listing_page_settings_reps_title' ) ) { ?>
+                <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
+                    get_acf_field( 'rep-listing_page_settings_reps_title', true )
+                ); ?>
+            <?php } ?>
 
             <div class="card-deck">
 
