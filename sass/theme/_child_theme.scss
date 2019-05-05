@@ -197,9 +197,18 @@ $container-padding-sm: 2.25rem;
     @include section-overlay( $color, $width, $offset );
     background-color: #{$color};
     color: #{$white};
+    padding-bottom: #{$spacer * 7.125};
+    header {
+        -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+        padding: 0;
+    }
     @include media-breakpoint-down('sm') {
         background-color: #{$white};
         color: #{$body-color};
+        padding-bottom: #{$spacer * 2.125};
         .section-image-overlay-wrapper {
             background-color: #{$gray-200};
             clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
@@ -209,6 +218,13 @@ $container-padding-sm: 2.25rem;
             .section-image-overlay-wrapper-inner { // wrapper-inner
                 clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
             }
+        }
+        header {
+            -webkit-box-flex: 0;
+            -ms-flex: 1 0 100%;
+            flex: 1 0 100%;
+            max-width: 100%;
+            padding: 0;
         }
     }
 }
@@ -1254,21 +1270,6 @@ textarea {
 #who-we-are_page-wrapper {
     #who-we-are_header {
         @include section-header-overlay();
-        padding-bottom: #{$spacer * 7.125};
-        @include media-breakpoint-down('sm') {
-            padding-bottom: #{$spacer * 2.125};
-        }
-        header {
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
-            padding: 0;
-            @include media-breakpoint-down('sm') {
-                flex-basis: 100%;
-                max-width: 100%;
-            }
-        }
         .crosshairs-top-left {
             @include media-breakpoint-down('sm') {
                 left: #{$spacer};
@@ -1362,14 +1363,6 @@ textarea {
 #what-we-do_page-wrapper {
     #what-we-do_header {
         @include section-header-overlay( $black );
-        padding-bottom: #{$spacer * 7};
-        header {
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
-            padding: 0;
-        }
     }
     #what-we-do_tabs {
         @include skewed-tabs( $black, $dark, $white, $white );
@@ -1497,13 +1490,5 @@ textarea {
 #rep-listing_page-wrapper {
     #rep-listing_header {
         @include section-header-overlay( $black );
-        padding-bottom: #{$spacer * 7};
-        header {
-            -webkit-box-flex: 0;
-            -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-            max-width: 50%;
-            padding: 0;
-        }
     }
 }
