@@ -14946,7 +14946,7 @@ section {
   margin-bottom: 2rem; }
 
 .card.card-representatives {
-  border-color: #707070;
+  border: 1px solid #707070;
   padding: 2rem 1.5rem; }
   .card.card-representatives .card-footer {
     background-color: transparent; }
