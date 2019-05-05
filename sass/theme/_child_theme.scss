@@ -1282,7 +1282,7 @@ textarea {
 
 #what-we-do_page-wrapper {
     #what-we-do_header {
-        @include section-header-overlay();
+        @include section-header-overlay( $black );
         padding-bottom: #{$spacer * 7};
         header {
             -webkit-box-flex: 0;
