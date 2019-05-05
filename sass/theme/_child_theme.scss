@@ -315,6 +315,11 @@ button.btn {
         width: 1em;
         width: 1ch;
     }
+    &.btn-gray {
+        background-color: #{$gray};
+        border-color: #{$white};
+        color: #{$white};
+    }
 }
 li.btn { // navmenu buttons
     font-size: inherit;
