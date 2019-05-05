@@ -76,6 +76,14 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 ); ?>
             <?php } ?>
 
+            <form class="form-inline reps-filter-form">
+                <div class="form-group">
+                    <label for="rep-filter-input" class="sr-only"><?php _e( 'Search by state', 'aethercomm' ); ?></label>
+                    <input type="text" class="form-control" id="rep-filter-input" value="" placeholder="<?php _e( 'Search by state', 'aethercomm' ); ?>">
+                </div>
+                <button type="submit" class="btn btn-primary"><?php _e( 'Search', 'aethercomm' ); ?></button>
+            </form>
+
             <?php
             $args = array(
                 'post_type' => 'representatives',
