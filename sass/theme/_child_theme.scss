@@ -713,6 +713,8 @@ section {
     &.card-representatives {
         border: #{$border-width} solid #{$gray-600};
         padding: #{$spacer * 2} #{$spacer * 1.5};
+        flex-basis: calc(33.333333% - #{$card-group-margin * 2});
+        max-width: 33.333333%;
         .card-footer {
             background-color: transparent;
         }
