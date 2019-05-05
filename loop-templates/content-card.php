@@ -34,7 +34,7 @@ switch ( $post->post_type ) { // modify the defaults
         break;
     case 'representatives':
         $card_img = false;
-        $card_text .= sprintf( '<div class="card-text">%1$s<br>%2$s</div>',
+        $card_text .= sprintf( '<div class="card-text">%1$s<br><a href="mailto:%2$s">%3$s</a></div>',
             get_acf_field( 'cpt_rep_phone', true ),
             get_acf_field( 'cpt_rep_email', true )
         );
