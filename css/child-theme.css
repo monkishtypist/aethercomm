@@ -14947,10 +14947,16 @@ section {
 
 .card.card-representatives {
   border: 1px solid #707070;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem;
   -ms-flex-preferred-size: calc(33.333333% - 36px);
       flex-basis: calc(33.333333% - 36px);
-  max-width: 33.333333%; }
+  max-width: 33.333333%;
+  max-width: calc(33.333333% - 36px); }
+  @media (max-width: 768.98px) {
+    .card.card-representatives {
+      -ms-flex-preferred-size: calc(100% - 36px);
+          flex-basis: calc(100% - 36px);
+      max-width: 100%; } }
   .card.card-representatives .card-footer {
     background-color: transparent; }
 
