@@ -1222,19 +1222,19 @@ textarea {
             left: calc(50vw - 44.5rem);
             top: #{$spacer * 3};
             @include media-breakpoint-down('lg') {
-                left: calc(50vw - 44.5rem);
+                left: calc(50vw - 40.5rem);
                 top: #{$spacer * 3};
             }
             @include media-breakpoint-down('md') {
-                left: calc(50vw - 44.5rem);
+                left: calc(50vw - 33rem);
                 top: #{$spacer * 3};
             }
             @include media-breakpoint-down('sm') {
-                left: calc(50vw - 44.5rem);
+                left: calc(50vw - 25.7rem);
                 top: #{$spacer * 3};
             }
             @include media-breakpoint-down('xs') {
-                left: calc(50vw - 44.5rem);
+                left: -#{$spacer * 2};
                 top: #{$spacer * 3};
             }
         }

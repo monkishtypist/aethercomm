@@ -55,7 +55,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     the_custom_logo();
                 } ?><!-- end custom logo -->
 
-                <a href="<?php echo get_permalink( 27 ); ?>" class="navbar-icon-reps"><i class="far fa-comment-alt"></i></a>
+                <a href="<?php echo get_permalink( 27 ); ?>" class="navbar-icon-reps"><i class="far fa-comment-alt-dots"></i></a>
 				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#container-main-menu" aria-controls="container-main-menu" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'aethercomm' ); ?>">
 					<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>

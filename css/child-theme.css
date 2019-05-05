@@ -456,7 +456,7 @@ pre {
       max-width: 540px; } }
   @media (min-width: 769px) {
     .container {
-      max-width: 720px; } }
+      max-width: 760px; } }
   @media (min-width: 992px) {
     .container {
       max-width: 960px; } }
@@ -14801,7 +14801,7 @@ section {
           padding-right: calc(((100vw - 540px) / 2) + 10px); } }
       @media (min-width: 769px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
-          padding-right: calc(((100vw - 720px) / 2) + 10px); } }
+          padding-right: calc(((100vw - 760px) / 2) + 10px); } }
       @media (min-width: 992px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
           padding-right: calc(((100vw - 960px) / 2) + 10px); } }
@@ -16949,19 +16949,19 @@ textarea {
     top: 3rem; }
     @media (max-width: 1199.98px) {
       #who-we-are_page-wrapper #who-we-are_mission img.path {
-        left: calc(50vw - 44.5rem);
+        left: calc(50vw - 40.5rem);
         top: 3rem; } }
     @media (max-width: 991.98px) {
       #who-we-are_page-wrapper #who-we-are_mission img.path {
-        left: calc(50vw - 44.5rem);
+        left: calc(50vw - 33rem);
         top: 3rem; } }
     @media (max-width: 768.98px) {
       #who-we-are_page-wrapper #who-we-are_mission img.path {
-        left: calc(50vw - 44.5rem);
+        left: calc(50vw - 25.7rem);
         top: 3rem; } }
     @media (max-width: 575.98px) {
       #who-we-are_page-wrapper #who-we-are_mission img.path {
-        left: calc(50vw - 44.5rem);
+        left: -2rem;
         top: 3rem; } }
 
 #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
