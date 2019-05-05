@@ -16529,11 +16529,18 @@ span.pipe::after {
 form.reps-filter-form {
   margin-bottom: 3.25rem; }
   form.reps-filter-form .form-group {
-    margin-right: 1rem; }
+    margin-right: 1rem;
+    width: 50%; }
+    @media (max-width: 768.98px) {
+      form.reps-filter-form .form-group {
+        margin-bottom: 1rem;
+        margin-right: 0;
+        width: 100%; } }
     form.reps-filter-form .form-group #rep-filter-input {
       background-color: #707070;
       border: 1px solid #fff;
-      height: 2.875rem; }
+      height: 2.875rem;
+      width: 100%; }
       form.reps-filter-form .form-group #rep-filter-input::-webkit-input-placeholder {
         color: #fff;
         font-family: Lato, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
@@ -16558,6 +16565,9 @@ form.reps-filter-form {
         font-size: 0.875rem;
         font-weight: 700;
         text-transform: uppercase; }
+  @media (max-width: 768.98px) {
+    form.reps-filter-form button[type="submit"] {
+      width: 100%; } }
 
 /* Gravity Forms */
 li.gfield.hidden_label label {
