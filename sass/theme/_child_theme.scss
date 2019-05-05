@@ -722,6 +722,9 @@ section {
         }
         .card-footer {
             background-color: transparent;
+            .btn {
+                width: 100%;
+            }
         }
     }
 }
@@ -920,6 +923,7 @@ form {
             #rep-filter-input {
                 background-color: #{$gray-600};
                 border: #{$border-width} solid #{$white};
+                color: #{$white};
                 height: #{$spacer * 2.875};
                 width: 100%;
                 &::-webkit-input-placeholder {

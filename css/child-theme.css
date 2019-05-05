@@ -14959,6 +14959,8 @@ section {
       max-width: 100%; } }
   .card.card-representatives .card-footer {
     background-color: transparent; }
+    .card.card-representatives .card-footer .btn {
+      width: 100%; }
 
 /**
  * Custom Elements
@@ -16539,6 +16541,7 @@ form.reps-filter-form {
     form.reps-filter-form .form-group #rep-filter-input {
       background-color: #707070;
       border: 1px solid #fff;
+      color: #fff;
       height: 2.875rem;
       width: 100%; }
       form.reps-filter-form .form-group #rep-filter-input::-webkit-input-placeholder {
