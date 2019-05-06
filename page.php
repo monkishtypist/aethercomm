@@ -23,7 +23,7 @@ if ( $post->post_parent ) {
 
 ?>
 
-<div class="wrapper" id="<?php echo $post->post_name; ?>_page-wrapper">
+<div class="wrapper" id="<?php echo $post->post_name; ?>_page-wrapper" class="<?php echo $template_slug; ?>_page-wrapper">
 
     <main class="site-main" id="main">
 

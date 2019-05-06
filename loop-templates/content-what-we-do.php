@@ -59,7 +59,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 <?php } ?>
             </header>
 
-            <span class="crosshairs-white crosshairs-top-left"></span>
+            <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
             <span class="crosshairs-white crosshairs-top-right"></span>
 
         </div>
