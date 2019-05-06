@@ -52,7 +52,7 @@ $cats = get_categories();
 
             </section>
 
-            <section id="latest-post_section" class="child-page-content section-dark section-banner">
+            <section id="latest-post_section" class="section-dark section-banner">
 
                 <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -92,14 +92,18 @@ $cats = get_categories();
 
             <?php if ( have_posts() ) : ?>
 
-                <?php while ( have_posts() ) : the_post(); ?>
+                <section id="the-posts_section" class="section-white section-banner-wide">
 
-                    <?php get_template_part( 'loop-templates/content', 'posts' ); ?>
+                    <?php while ( have_posts() ) : the_post(); ?>
 
-                <?php endwhile; // end of the loop. ?>
+                        <?php get_template_part( 'loop-templates/content', 'posts' ); ?>
 
-                <!-- The pagination component -->
-                <?php understrap_pagination(); ?>
+                    <?php endwhile; // end of the loop. ?>
+
+                    <!-- The pagination component -->
+                    <?php understrap_pagination(); ?>
+
+                </section>
 
             <?php endif; ?>
 

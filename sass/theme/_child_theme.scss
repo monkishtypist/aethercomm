@@ -1546,6 +1546,7 @@ textarea {
 #index-wrapper {
     #latest-post_section {
         article {
+            overflow: auto;
             .latest-post-image-wrapper {
                 border: #{$border-width} solid #{$gray-600};
                 float: right;
