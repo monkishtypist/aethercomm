@@ -17221,13 +17221,18 @@ textarea {
       #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane {
         padding-bottom: 5rem;
         padding-top: 3.75rem; }
+        @media (max-width: 768.98px) {
+          #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane {
+            padding-top: 0; } }
         #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane .tab-content-image-wrapper {
           border: 1px solid #707070;
           float: right;
+          margin-bottom: 1rem;
           margin-left: 5rem; }
           @media (max-width: 768.98px) {
             #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane .tab-content-image-wrapper {
               border: 0;
+              margin-bottom: 1.5rem;
               margin-left: -2.25rem;
               margin-right: -2.25rem; } }
 
