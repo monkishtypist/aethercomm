@@ -39,7 +39,7 @@ $container-padding-sm: 2.25rem;
 /**
  * Mixins
  */
-@mixin gradient( $color: $blue, $width: 88%, $offset: .87 ) {
+@mixin gradient( $color: $blue, $width: 88%, $offset: 1 ) {
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,000000+100&0.65+0,0+66 */
     background: -moz-linear-gradient(left, rgba($color,1) 0%,
         rgba($color,$offset) #{$width * .33},
