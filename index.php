@@ -52,37 +52,51 @@ $cats = get_categories();
 
             </section>
 
-            <?php
-            $args = array(
-                'post_type' => 'post',
-                'posts_per_page' => 1
-            );
-            $query = new WP_Query( $args );
-            ?>
+            <section id="<?php echo $post->post_name; ?>_content" class="child-page-content section-dark section-banner">
 
-            <?php if ( $query->have_posts() ) : ?>
-
-                <?php ob_start(); ?>
-
-                <section id="<?php echo $post->post_name; ?>_content" class="child-page-content section-dark section-banner">
-
-                    <div class="<?php echo esc_attr( $container ); ?>">
+                <div class="<?php echo esc_attr( $container ); ?>">
 
                     <pre><?php print_r($cats); ?></pre>
 
-                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                    <?php if ( $cats ) : ?>
+                        <nav class="nav" role="tablist">
+                            <?php foreach ( $cats as $cat ) : ?>
+                                <a class="nav-link" id="<?php echo $cat->slug; ?>-tab" data-toggle="tab" href="#<?php echo $cat->slug; ?>" role="tab" aria-controls="<?php echo $cat->slug; ?>" aria-selected="false"><?php echo $cat->name; ?></a>
+                            <?php endforeach; ?>
+                        </nav>
+                    <?php endif; ?>
 
-                            <?php get_template_part( 'loop-templates/content', 'card' ); ?>
+                    <?php if ( $cats ) : foreach ( $cats as $cat ) : ?>
 
-                        <?php endwhile; ?>
+                        <?php
+                        $args = array(
+                            'post_type' => 'post',
+                            'posts_per_page' => 1,
+                            'category' => $cat->slug
+                        );
+                        $query = new WP_Query( $args );
+                        ?>
 
-                    </div>
+                        <?php if ( $query->have_posts() ) : ?>
 
-                </section>
+                            <?php ob_start(); ?>
 
-                <?php echo ob_get_clean(); ?>
 
-            <?php endif; wp_reset_query(); ?>
+                                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                                        <?php get_template_part( 'loop-templates/content', 'card' ); ?>
+
+                                    <?php endwhile; ?>
+
+                            <?php echo ob_get_clean(); ?>
+
+                        <?php endif; wp_reset_query(); ?>
+
+                    <?php endforeach; endif; ?>
+
+                </div>
+
+            </section>
 
             <?php if ( have_posts() ) : ?>
 
