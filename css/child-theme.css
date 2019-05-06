@@ -2058,28 +2058,30 @@ a.btn.disabled,
 fieldset:disabled a.btn {
   pointer-events: none; }
 
-.btn-primary {
+.btn-primary, #index-wrapper #latest-post_section article .btn-read-more {
   color: #fff;
   background-color: #FF5800;
   border-color: #FF5800; }
-  .btn-primary:hover {
+  .btn-primary:hover, #index-wrapper #latest-post_section article .btn-read-more:hover {
     color: #fff;
     background-color: #d94b00;
     border-color: #cc4600; }
-  .btn-primary:focus, .btn-primary.focus {
+  .btn-primary:focus, #index-wrapper #latest-post_section article .btn-read-more:focus, .btn-primary.focus, #index-wrapper #latest-post_section article .focus.btn-read-more {
     -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 113, 38, 0.5);
             box-shadow: 0 0 0 0.2rem rgba(255, 113, 38, 0.5); }
-  .btn-primary.disabled, .btn-primary:disabled {
+  .btn-primary.disabled, #index-wrapper #latest-post_section article .disabled.btn-read-more, .btn-primary:disabled, #index-wrapper #latest-post_section article .btn-read-more:disabled {
     color: #fff;
     background-color: #FF5800;
     border-color: #FF5800; }
-  .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
-  .show > .btn-primary.dropdown-toggle {
+  .btn-primary:not(:disabled):not(.disabled):active, #index-wrapper #latest-post_section article .btn-read-more:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active, #index-wrapper #latest-post_section article .btn-read-more:not(:disabled):not(.disabled).active,
+  .show > .btn-primary.dropdown-toggle,
+  #index-wrapper #latest-post_section article .show > .dropdown-toggle.btn-read-more {
     color: #fff;
     background-color: #cc4600;
     border-color: #bf4200; }
-    .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
-    .show > .btn-primary.dropdown-toggle:focus {
+    .btn-primary:not(:disabled):not(.disabled):active:focus, #index-wrapper #latest-post_section article .btn-read-more:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus, #index-wrapper #latest-post_section article .btn-read-more:not(:disabled):not(.disabled).active:focus,
+    .show > .btn-primary.dropdown-toggle:focus,
+    #index-wrapper #latest-post_section article .show > .dropdown-toggle.btn-read-more:focus {
       -webkit-box-shadow: 0 0 0 0.2rem rgba(255, 113, 38, 0.5);
               box-shadow: 0 0 0 0.2rem rgba(255, 113, 38, 0.5); }
 
@@ -14645,6 +14647,7 @@ li.btn {
   font-size: inherit; }
 
 .btn-read-more {
+  display: block;
   margin-top: 2rem; }
 
 /**

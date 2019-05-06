@@ -370,6 +370,7 @@ li.btn { // navmenu buttons
 }
 .btn-read-more {
     @extend .btn-secondary;
+    display: block;
     margin-top: #{$spacer * 2};
 }
 
@@ -1566,6 +1567,9 @@ textarea {
                 img {
                     width: 100%;
                 }
+            }
+            .btn-read-more {
+                @extend .btn-primary;
             }
         }
     }
