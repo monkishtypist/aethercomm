@@ -178,7 +178,6 @@ $container-padding-sm: 2.25rem;
             width: 100%;
         }
         .overlay {
-            @include gradient( $color, $width, $offset );
             height: 100%;
             position: absolute;
             width: 100%;
@@ -192,12 +191,28 @@ $container-padding-sm: 2.25rem;
             position: absolute;
         }
     }
+    &.section-header-overlay_blue {
+        .overlay {
+            @include gradient( $blue, $width, $offset );
+        }
+    }
+    &.section-header-overlay_black {
+        .overlay {
+            @include gradient( $black, $width, $offset );
+        }
+    }
 }
 @mixin section-header-overlay( $color: $blue, $width: 88%, $offset: .87 ) {
     @include section-overlay( $color, $width, $offset );
-    background-color: #{$color};
+    // background-color: #{$color};
     color: #{$white};
     padding-bottom: #{$spacer * 7.125};
+    &.section-header-overlay_blue {
+        background-color: #{$blue};
+    }
+    &.section-header-overlay_black {
+        background-color: #{$black};
+    }
     header {
         -webkit-box-flex: 0;
         -ms-flex: 0 0 50%;

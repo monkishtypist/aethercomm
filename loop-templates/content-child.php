@@ -13,23 +13,6 @@ global $post;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$section_header_styles = sprintf( 'style="%1$s"',
-    sprintf( 'background-image:url(%1$s);',
-        '/wp-content/uploads/2019/04/custom-design-hero.png' // default background image
-    )
-);
-if ( get_acf_field( 'child_page_settings_header_background' ) ) {
-    $section_header_background_img_id = get_acf_field( 'child_page_settings_header_background' );
-    if ( is_array( $section_header_background_img_id ) && isset( $section_header_background_img_id[0] ) ) {
-        $section_header_background_image_url = wp_get_attachment_url( $section_header_background_img_id[0] );
-        $section_header_styles = sprintf( 'style="%1$s"',
-            sprintf( 'background-image:url(%1$s);',
-                $section_header_background_image_url
-            )
-        );
-    }
-}
-
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
