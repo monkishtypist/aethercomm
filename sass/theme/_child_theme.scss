@@ -343,6 +343,7 @@ button.btn {
     line-height: 1;
     max-width: 100%;
     position: relative;
+    text-decoration: none;
     text-transform: uppercase;
     width: 342px;
     &.btn-lg {
@@ -369,6 +370,7 @@ li.btn { // navmenu buttons
 }
 .btn-read-more {
     @extend .btn-secondary;
+    margin-top: #{$spacer * 2};
 }
 
 /**

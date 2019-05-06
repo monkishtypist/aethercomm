@@ -14618,6 +14618,7 @@ button.btn {
   line-height: 1;
   max-width: 100%;
   position: relative;
+  text-decoration: none;
   text-transform: uppercase;
   width: 342px; }
   a.btn.btn-lg, .btn-group-lg > a.btn,
@@ -14642,6 +14643,9 @@ button.btn {
 
 li.btn {
   font-size: inherit; }
+
+.btn-read-more {
+  margin-top: 2rem; }
 
 /**
  * Wrappers
