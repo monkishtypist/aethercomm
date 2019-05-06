@@ -68,7 +68,7 @@ $cats = get_categories();
 
                     <div class="<?php echo esc_attr( $container ); ?>">
 
-                    <?php var_dump($cats); ?>
+                    <pre><?php print_r($cats); ?></pre>
 
                         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
