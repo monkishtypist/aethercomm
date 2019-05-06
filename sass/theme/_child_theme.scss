@@ -386,6 +386,9 @@ section {
         @include media-breakpoint-down('xs') {
             padding-top: #{$spacer * 4.5};
         }
+        &.section-header-overlay {
+            @include section-header-overlay();
+        }
     }
     &.section-unpadded {
         padding: 0;

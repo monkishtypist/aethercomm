@@ -19,7 +19,7 @@ if ( get_acf_field( 'page_header_background' ) ) {
 
 ?>
 
-<section id="<?php echo $post->post_name; ?>_header" class="section_header <?php echo $template_slug; ?>_header section-header-overlay_<?php echo get_acf_field( 'page_header_overlay' ); ?>">
+<section id="<?php echo $post->post_name; ?>_header" class="section_header <?php echo $template_slug; ?>_header section-header-overlay section-header-overlay_<?php echo get_acf_field( 'page_header_overlay', true ); ?>">
 
     <?php if ( $section_header_background_image_id ) : ?>
         <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
