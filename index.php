@@ -59,40 +59,34 @@ $cats = get_categories();
                     <pre><?php print_r($cats); ?></pre>
 
                     <?php if ( $cats ) : ?>
-                        <nav class="nav" role="tablist">
+                        <nav class="nav">
                             <?php foreach ( $cats as $cat ) : ?>
-                                <a class="nav-link" id="<?php echo $cat->slug; ?>-tab" data-toggle="tab" href="#<?php echo $cat->slug; ?>" role="tab" aria-controls="<?php echo $cat->slug; ?>" aria-selected="false"><?php echo $cat->name; ?></a>
+                                <a class="nav-link" href="<?php echo get_category_link( $cat ); ?>"><?php echo $cat->name; ?></a>
                             <?php endforeach; ?>
                         </nav>
                     <?php endif; ?>
 
-                    <?php if ( $cats ) : foreach ( $cats as $cat ) : ?>
+                    <?php
+                    $args = array(
+                        'post_type' => 'post',
+                        'posts_per_page' => 1
+                    );
+                    $query = new WP_Query( $args );
+                    ?>
 
-                        <?php
-                        $args = array(
-                            'post_type' => 'post',
-                            'posts_per_page' => 1,
-                            'category' => $cat->slug
-                        );
-                        $query = new WP_Query( $args );
-                        ?>
+                    <?php if ( $query->have_posts() ) : ?>
 
-                        <?php if ( $query->have_posts() ) : ?>
+                        <?php ob_start(); ?>
 
-                            <?php ob_start(); ?>
+                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
+                                <?php get_template_part( 'loop-templates/content', 'card' ); ?>
 
-                                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                            <?php endwhile; ?>
 
-                                        <?php get_template_part( 'loop-templates/content', 'card' ); ?>
+                        <?php echo ob_get_clean(); ?>
 
-                                    <?php endwhile; ?>
-
-                            <?php echo ob_get_clean(); ?>
-
-                        <?php endif; wp_reset_query(); ?>
-
-                    <?php endforeach; endif; ?>
+                    <?php endif; wp_reset_query(); ?>
 
                 </div>
 
