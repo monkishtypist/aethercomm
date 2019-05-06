@@ -14739,7 +14739,9 @@ section {
         float: none;
         margin-left: -2.25rem;
         margin-right: -2.25rem;
-        max-width: 100%; } }
+        max-width: 100%;
+        min-width: 100%;
+        min-width: 100vw; } }
 
 .container,
 .container-fluid {

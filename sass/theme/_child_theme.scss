@@ -470,6 +470,8 @@ section {
                 margin-left: -#{$container-padding-sm};
                 margin-right: -#{$container-padding-sm};
                 max-width: 100%;
+                min-width: 100%;
+                min-width: 100vw;
             }
         }
     }
