@@ -17352,7 +17352,7 @@ textarea {
         margin-left: calc(-1 * ((50vw - 270px) + 2.25rem));
         margin-right: calc(-1 * ((50vw - 270px) + 2.25rem));
         max-width: 100%;
-        width: 100vw; } }
+        min-width: 100vw; } }
     @media (max-width: 575.98px) {
       #index-wrapper #latest-post_section article .latest-post-image-wrapper {
         margin-left: -2.25rem;

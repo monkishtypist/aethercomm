@@ -1594,7 +1594,7 @@ textarea {
                     margin-left: calc(-1 * ((50vw - 270px) + #{$container-padding-sm}));
                     margin-right: calc(-1 * ((50vw - 270px) + #{$container-padding-sm}));
                     max-width: 100%;
-                    width: 100vw;
+                    min-width: 100vw;
                 }
                 @include media-breakpoint-down('xs') {
                     margin-left: -#{$container-padding-sm};
