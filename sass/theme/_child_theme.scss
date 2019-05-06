@@ -461,6 +461,16 @@ section {
 }
 .child-page-content {
     padding-bottom: #{$spacer * 6.5};
+    &.section-banner {
+        @include media-breakpoint-down('sm') {
+            clip-path: none;
+            padding-top: 0;
+            .rev-slider-outer {
+                margin-left: -#{$container-padding-sm};
+                margin-right: -#{$container-padding-sm};
+            }
+        }
+    }
 }
 // Containers
 .container,

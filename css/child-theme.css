@@ -14730,6 +14730,14 @@ section {
 
 .child-page-content {
   padding-bottom: 6.5rem; }
+  @media (max-width: 768.98px) {
+    .child-page-content.section-banner {
+      -webkit-clip-path: none;
+              clip-path: none;
+      padding-top: 0; }
+      .child-page-content.section-banner .rev-slider-outer {
+        margin-left: -2.25rem;
+        margin-right: -2.25rem; } }
 
 .container,
 .container-fluid {
