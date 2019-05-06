@@ -1426,8 +1426,15 @@ textarea {
                             border: 0;
                             float: none;
                             margin-bottom: #{$spacer * 1.5};
+                            margin-left: calc(-1 * ((50vw - 270px) + #{$container-padding-sm}));
+                            margin-right: calc(-1 * ((50vw - 270px) + #{$container-padding-sm}));
+                        }
+                        @include media-breakpoint-down('xs') {
                             margin-left: -#{$container-padding-sm};
                             margin-right: -#{$container-padding-sm};
+                        }
+                        img {
+                            width: 100%;
                         }
                     }
                 }

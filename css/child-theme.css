@@ -17203,8 +17203,14 @@ textarea {
               border: 0;
               float: none;
               margin-bottom: 1.5rem;
+              margin-left: calc(-1 * ((50vw - 270px) + 2.25rem));
+              margin-right: calc(-1 * ((50vw - 270px) + 2.25rem)); } }
+          @media (max-width: 575.98px) {
+            #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane .tab-content-image-wrapper {
               margin-left: -2.25rem;
               margin-right: -2.25rem; } }
+          #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane .tab-content-image-wrapper img {
+            width: 100%; }
 
 #what-we-do_page-wrapper #what-we-do_capabilities {
   background-position: center;
