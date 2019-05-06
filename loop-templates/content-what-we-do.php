@@ -93,14 +93,16 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <div class="row">
                         <div class="col">
                             <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab1_title' ); ?></h3>
-                            <?php
-                            if ( get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' ) ) {
-                                $page_settings_tabs_tab1_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' );
-                                if ( is_array( $page_settings_tabs_tab1_image_id ) && isset( $page_settings_tabs_tab1_image_id[0] ) ) {
-                                    echo wp_get_attachment_image( $page_settings_tabs_tab1_image_id[0], 'large', false, array( 'class' => 'tab-image' ) );
+                            <div class="tab-content-image-wrapper">
+                                <?php
+                                if ( get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' ) ) {
+                                    $page_settings_tabs_tab1_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' );
+                                    if ( is_array( $page_settings_tabs_tab1_image_id ) && isset( $page_settings_tabs_tab1_image_id[0] ) ) {
+                                        echo wp_get_attachment_image( $page_settings_tabs_tab1_image_id[0], 'large', false, array( 'class' => 'tab-image' ) );
+                                    }
                                 }
-                            }
-                            ?>
+                                ?>
+                            </div>
                             <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab1_content', true ) ); ?>
                         </div>
                     </div>
@@ -109,14 +111,16 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <div class="row">
                         <div class="col">
                             <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab2_title' ); ?></h3>
-                            <?php
-                            if ( get_acf_field( 'what-we-do_page_settings_tabs_tab2_image' ) ) {
-                                $page_settings_tabs_tab2_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab2_image' );
-                                if ( is_array( $page_settings_tabs_tab2_image_id ) && isset( $page_settings_tabs_tab2_image_id[0] ) ) {
-                                    echo wp_get_attachment_image( $page_settings_tabs_tab2_image_id[0], 'large', false, array( 'class' => 'tab-image img-fluid' ) );
+                            <div class="tab-content-image-wrapper">
+                                <?php
+                                if ( get_acf_field( 'what-we-do_page_settings_tabs_tab2_image' ) ) {
+                                    $page_settings_tabs_tab2_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab2_image' );
+                                    if ( is_array( $page_settings_tabs_tab2_image_id ) && isset( $page_settings_tabs_tab2_image_id[0] ) ) {
+                                        echo wp_get_attachment_image( $page_settings_tabs_tab2_image_id[0], 'large', false, array( 'class' => 'tab-image img-fluid' ) );
+                                    }
                                 }
-                            }
-                            ?>
+                                ?>
+                            </div>
                             <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab2_content', true ) ); ?>
                         </div>
                     </div>
@@ -125,14 +129,16 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <div class="row">
                         <div class="col">
                             <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab3_title' ); ?></h3>
-                            <?php
-                            if ( get_acf_field( 'what-we-do_page_settings_tabs_tab3_image' ) ) {
-                                $page_settings_tabs_tab3_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab3_image' );
-                                if ( is_array( $page_settings_tabs_tab3_image_id ) && isset( $page_settings_tabs_tab3_image_id[0] ) ) {
-                                    echo wp_get_attachment_image( $page_settings_tabs_tab3_image_id[0], 'large', false, array( 'class' => 'tab-image img-fluid' ) );
+                            <div class="tab-content-image-wrapper">
+                                <?php
+                                if ( get_acf_field( 'what-we-do_page_settings_tabs_tab3_image' ) ) {
+                                    $page_settings_tabs_tab3_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab3_image' );
+                                    if ( is_array( $page_settings_tabs_tab3_image_id ) && isset( $page_settings_tabs_tab3_image_id[0] ) ) {
+                                        echo wp_get_attachment_image( $page_settings_tabs_tab3_image_id[0], 'large', false, array( 'class' => 'tab-image img-fluid' ) );
+                                    }
                                 }
-                            }
-                            ?>
+                                ?>
+                            </div>
                             <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab3_content', true ) ); ?>
                         </div>
                     </div>
@@ -141,14 +147,16 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <div class="row">
                         <div class="col">
                             <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab4_title' ); ?></h3>
-                            <?php
-                            if ( get_acf_field( 'what-we-do_page_settings_tabs_tab4_image' ) ) {
-                                $page_settings_tabs_tab4_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab4_image' );
-                                if ( is_array( $page_settings_tabs_tab4_image_id ) && isset( $page_settings_tabs_tab4_image_id[0] ) ) {
-                                    echo wp_get_attachment_image( $page_settings_tabs_tab4_image_id[0], 'large', false, array( 'class' => 'tab-image img-fluid' ) );
+                            <div class="tab-content-image-wrapper">
+                                <?php
+                                if ( get_acf_field( 'what-we-do_page_settings_tabs_tab4_image' ) ) {
+                                    $page_settings_tabs_tab4_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab4_image' );
+                                    if ( is_array( $page_settings_tabs_tab4_image_id ) && isset( $page_settings_tabs_tab4_image_id[0] ) ) {
+                                        echo wp_get_attachment_image( $page_settings_tabs_tab4_image_id[0], 'large', false, array( 'class' => 'tab-image img-fluid' ) );
+                                    }
                                 }
-                            }
-                            ?>
+                                ?>
+                            </div>
                             <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab4_content', true ) ); ?>
                         </div>
                     </div>
