@@ -78,7 +78,7 @@ $cats = get_categories();
 
                             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                                <?php get_template_part( 'loop-templates/content', 'card' ); ?>
+                                <?php get_template_part( 'loop-templates/content', 'latest-post' ); ?>
 
                             <?php endwhile; ?>
 
