@@ -17302,17 +17302,19 @@ textarea {
     width: 100%; }
 
 #index-wrapper #latest-post_section nav {
+  margin-bottom: 3.25rem;
   margin-left: -1rem;
   margin-right: -1rem; }
   #index-wrapper #latest-post_section nav .nav-link {
     color: #fff;
     font-size: 0.875rem;
+    font-weight: 700;
     margin-left: 0.8125rem;
     margin-right: 0.8125rem;
     text-transform: uppercase; }
     #index-wrapper #latest-post_section nav .nav-link:first-of-type {
       margin-left: 0; }
-    #index-wrapper #latest-post_section nav .nav-link::last-of-type {
+    #index-wrapper #latest-post_section nav .nav-link:last-of-type {
       margin-right: 0; }
 
 #index-wrapper #latest-post_section article {
