@@ -15,22 +15,12 @@ global $post;
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <div class="row">
+    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 
-        <div class="col">
+    <?php the_content(); ?>
 
-            <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
-
-            <?php the_content(); ?>
-
-        </div>
-
-
-        <?php if ( has_post_thumbnail() ) { ?>
-            <div class="col">
-                <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
-            </div>
-        <?php } ?>
-
+    <?php if ( has_post_thumbnail() ) { ?>
+        <?php echo get_the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
+    <?php } ?>
 
 </article>
