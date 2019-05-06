@@ -14736,8 +14736,10 @@ section {
               clip-path: none;
       padding-top: 0; }
       .child-page-content.section-banner .rev-slider-outer {
+        float: none;
         margin-left: -2.25rem;
-        margin-right: -2.25rem; } }
+        margin-right: -2.25rem;
+        max-width: 100%; } }
 
 .container,
 .container-fluid {

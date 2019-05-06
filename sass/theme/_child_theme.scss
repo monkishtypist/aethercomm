@@ -466,8 +466,10 @@ section {
             clip-path: none;
             padding-top: 0;
             .rev-slider-outer {
+                float: none;
                 margin-left: -#{$container-padding-sm};
                 margin-right: -#{$container-padding-sm};
+                max-width: 100%;
             }
         }
     }
