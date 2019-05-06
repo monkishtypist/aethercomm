@@ -31,28 +31,7 @@ $section_mission_styles = sprintf( 'style="%1$s"',
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section_header" <?php // echo $section_header_styles; ?> >
-
-        <?php get_template_part( 'global-templates/header', 'image' ); ?>
-
-        <div class="<?php echo esc_attr( $container ); ?>">
-
-            <header>
-                <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
-                <?php if ( get_acf_field( 'who-we-are_page_settings_header_lede' ) ) { ?>
-                    <div class="page-lede"><?php echo apply_filters( 'the_content', get_acf_field( 'who-we-are_page_settings_header_lede', true ) ); ?></div>
-                <?php } ?>
-                <?php if ( get_acf_field( 'who-we-are_page_settings_header_copy' ) ) { ?>
-                    <?php echo apply_filters( 'the_content', get_acf_field( 'who-we-are_page_settings_header_copy', true ) ); ?>
-                <?php } ?>
-            </header>
-
-            <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
-            <span class="crosshairs-white crosshairs-top-right"></span>
-
-        </div>
-
-    </section>
+    <?php get_template_part( 'global-templates/header' ); ?>
 
     <section id="<?php echo $post->post_name; ?>_tabs" class="section-unpadded">
 
