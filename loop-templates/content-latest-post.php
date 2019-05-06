@@ -19,8 +19,8 @@ global $post;
 
     <?php the_content(); ?>
 
-    <?php if ( has_post_thumbnail() ) { ?>
-        <?php echo get_the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
+    <?php if ( has_post_thumbnail( the_ID() ) ) { ?>
+        <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
     <?php } ?>
 
 </article>
