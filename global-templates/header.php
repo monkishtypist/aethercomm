@@ -5,6 +5,8 @@
 
 global $post;
 
+$container = get_theme_mod( 'understrap_container_type' );
+
 if ( $post->post_parent ) {
     $template_slug = 'child';
 } else {
