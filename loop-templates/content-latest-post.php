@@ -26,7 +26,7 @@ global $post;
         </div>
 
 
-        <?php if has_post_thumbnail() { ?>
+        <?php if ( has_post_thumbnail() ) { ?>
             <div class="col">
                 <?php get_the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
             </div>
