@@ -17218,6 +17218,9 @@ textarea {
       #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane {
         padding-bottom: 5rem;
         padding-top: 3.75rem; }
+        #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane .tab-image {
+          float: right;
+          margin-left: 5rem; }
 
 #what-we-do_page-wrapper #what-we-do_capabilities {
   background-position: center;

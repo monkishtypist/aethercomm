@@ -1378,6 +1378,13 @@ textarea {
                 .tab-pane {
                     padding-bottom: #{$spacer * 5};
                     padding-top: #{$spacer * 3.75};
+                    .tab-image {
+                        float: right;
+                        margin-left: #{$spacer * 5};
+                        @include media-breakpoint-down('sm') {
+
+                        }
+                    }
                 }
             }
         }
