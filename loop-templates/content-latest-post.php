@@ -19,7 +19,7 @@ global $post;
 
     <?php the_content(); ?>
 
-    <?php if ( has_post_thumbnail( the_ID() ) ) { ?>
+    <?php if ( has_post_thumbnail() ) { ?>
         <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
     <?php } ?>
 
