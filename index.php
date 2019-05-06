@@ -18,6 +18,9 @@ if ( ! defined( 'ABSPATH' ) ) {
 get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
+
+$cats = get_categories();
+
 ?>
 
 <div class="wrapper" id="index-wrapper" class="index-wrapper">
@@ -48,6 +51,38 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
 
             </section>
+
+            <?php
+            $args = array(
+                'post_type' => 'post',
+                'posts_per_page' => 1
+            );
+            $query = new WP_Query( $args );
+            ?>
+
+            <?php if ( $query->have_posts() ) : ?>
+
+                <?php ob_start(); ?>
+
+                <section id="<?php echo $post->post_name; ?>_content" class="child-page-content section-dark section-banner">
+
+                    <div class="<?php echo esc_attr( $container ); ?>">
+
+                    <?php var_dump($cats); ?>
+
+                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+
+                            <?php get_template_part( 'loop-templates/content', 'card' ); ?>
+
+                        <?php endwhile; ?>
+
+                    </div>
+
+                </section>
+
+                <?php echo ob_get_clean(); ?>
+
+            <?php endif; wp_reset_query(); ?>
 
             <?php if ( have_posts() ) : ?>
 
