@@ -1424,6 +1424,7 @@ textarea {
                         margin-left: #{$spacer * 5};
                         @include media-breakpoint-down('sm') {
                             border: 0;
+                            float: none;
                             margin-bottom: #{$spacer * 1.5};
                             margin-left: -#{$container-padding-sm};
                             margin-right: -#{$container-padding-sm};

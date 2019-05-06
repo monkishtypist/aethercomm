@@ -17201,6 +17201,7 @@ textarea {
           @media (max-width: 768.98px) {
             #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper #platforms-tabs-content .tab-pane .tab-content-image-wrapper {
               border: 0;
+              float: none;
               margin-bottom: 1.5rem;
               margin-left: -2.25rem;
               margin-right: -2.25rem; } }
