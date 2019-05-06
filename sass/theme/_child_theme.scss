@@ -1382,12 +1382,13 @@ textarea {
                     padding-bottom: #{$spacer * 5};
                     padding-top: #{$spacer * 3.75};
                     .tab-content-image-wrapper {
+                        border: #{$border-width} solid #{$gray-600};
                         float: right;
                         margin-left: #{$spacer * 5};
                         @include media-breakpoint-down('sm') {
-
-                        }
-                        .tab-image {
+                            border: 0;
+                            margin-left: -#{$container-padding-sm};
+                            margin-right: -#{$container-padding-sm};
                         }
                     }
                 }

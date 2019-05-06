@@ -92,7 +92,6 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                     <div class="row">
                         <div class="col">
-                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab1_title' ); ?></h3>
                             <div class="tab-content-image-wrapper">
                                 <?php
                                 if ( get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' ) ) {
@@ -103,6 +102,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                                 }
                                 ?>
                             </div>
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab1_title' ); ?></h3>
                             <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab1_content', true ) ); ?>
                         </div>
                     </div>
@@ -110,7 +110,6 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
                     <div class="row">
                         <div class="col">
-                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab2_title' ); ?></h3>
                             <div class="tab-content-image-wrapper">
                                 <?php
                                 if ( get_acf_field( 'what-we-do_page_settings_tabs_tab2_image' ) ) {
@@ -121,6 +120,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                                 }
                                 ?>
                             </div>
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab2_title' ); ?></h3>
                             <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab2_content', true ) ); ?>
                         </div>
                     </div>
@@ -128,7 +128,6 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
                     <div class="row">
                         <div class="col">
-                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab3_title' ); ?></h3>
                             <div class="tab-content-image-wrapper">
                                 <?php
                                 if ( get_acf_field( 'what-we-do_page_settings_tabs_tab3_image' ) ) {
@@ -139,6 +138,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                                 }
                                 ?>
                             </div>
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab3_title' ); ?></h3>
                             <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab3_content', true ) ); ?>
                         </div>
                     </div>
@@ -146,7 +146,6 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 <div class="tab-pane fade" id="tab4" role="tabpanel" aria-labelledby="tab3-tab">
                     <div class="row">
                         <div class="col">
-                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab4_title' ); ?></h3>
                             <div class="tab-content-image-wrapper">
                                 <?php
                                 if ( get_acf_field( 'what-we-do_page_settings_tabs_tab4_image' ) ) {
@@ -157,6 +156,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                                 }
                                 ?>
                             </div>
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab4_title' ); ?></h3>
                             <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab4_content', true ) ); ?>
                         </div>
                     </div>
