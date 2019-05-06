@@ -367,6 +367,9 @@ button.btn {
 li.btn { // navmenu buttons
     font-size: inherit;
 }
+.btn-read-more {
+    @extend .btn-secondary;
+}
 
 /**
  * Wrappers
