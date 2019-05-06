@@ -56,8 +56,6 @@ $cats = get_categories();
 
                 <div class="<?php echo esc_attr( $container ); ?>">
 
-                    <pre><?php print_r($cats); ?></pre>
-
                     <?php if ( $cats ) : ?>
                         <nav class="nav">
                             <?php foreach ( $cats as $cat ) : ?>

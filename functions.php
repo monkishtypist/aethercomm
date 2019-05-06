@@ -426,6 +426,11 @@ if ( ! function_exists( 'aethercomm_modify_query' ) ) {
             $query->set( 'posts_per_page', 20 );
             return;
         }
+
+        if ( $query->is_home() && $query->is_main_query() ) {
+            // Offset the main query by one
+            $query->set( 'offset', '1' );
+        }
     }
 }
 
