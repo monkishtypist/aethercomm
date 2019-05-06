@@ -14265,6 +14265,9 @@ h2, .h2 {
   .page-lede strong {
     font-weight: 900; }
 
+.section-title {
+  display: inline-block; }
+
 a.read-more-link {
   text-decoration: underline; }
 

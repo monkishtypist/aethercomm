@@ -272,6 +272,9 @@ h2, .h2 {
         font-weight: #{$font-weight-black};
     }
 }
+.section-title {
+    display: inline-block;
+}
 a {
     &.read-more-link {
         text-decoration: underline;
