@@ -91,11 +91,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
             <div class="<?php echo esc_attr( $container ); ?>" id="platforms-tabs-content">
                 <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
                     <div class="row">
-                        <div class="col-6">
-                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab1_title' ); ?></h3>
-                            <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab1_content', true ) ); ?>
-                        </div>
-                        <div class="col-6">
+                        <div class="col-6 order-md-last">
                             <?php
                             if ( get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' ) ) {
                                 $page_settings_tabs_tab1_image_id = get_acf_field( 'what-we-do_page_settings_tabs_tab1_image' );
@@ -104,6 +100,10 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                                 }
                             }
                             ?>
+                        </div>
+                        <div class="col-6">
+                            <h3 class="section-title"><?php acf_field( 'what-we-do_page_settings_tabs_tab1_title' ); ?></h3>
+                            <?php echo apply_filters( 'the_content', get_acf_field( 'what-we-do_page_settings_tabs_tab1_content', true ) ); ?>
                         </div>
                     </div>
                 </div>
