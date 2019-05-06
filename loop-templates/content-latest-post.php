@@ -19,8 +19,8 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="latest-post-image-wrapper"><?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?></div>
     <?php } ?>
 
-    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+    <?php the_title( '<h1 class="entry-title h3">', '</h1>' ); ?>
 
-    <?php the_content(); ?>
+    <?php the_excerpt(); ?>
 
 </article>
