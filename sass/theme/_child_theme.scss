@@ -1536,3 +1536,15 @@ textarea {
     #rep-listing_header {
     }
 }
+
+#index-wrapper {
+    #posts_intro_content {
+        article {
+            img.wp-post-image {
+                float: right;
+                margin-left: #{$spacer * 4};
+                margin-bottom: #{$spacer * 1.5};
+            }
+        }
+    }
+}

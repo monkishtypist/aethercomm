@@ -17292,4 +17292,9 @@ textarea {
   #register_page-wrapper #register_header .gform_button {
     width: 100%; }
 
+#index-wrapper #posts_intro_content article img.wp-post-image {
+  float: right;
+  margin-left: 4rem;
+  margin-bottom: 1.5rem; }
+
 /*# sourceMappingURL=child-theme.css.map */

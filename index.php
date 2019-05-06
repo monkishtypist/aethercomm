@@ -52,7 +52,7 @@ $cats = get_categories();
 
             </section>
 
-            <section id="<?php echo $post->post_name; ?>_content" class="child-page-content section-dark section-banner">
+            <section id="posts_intro_content" class="child-page-content section-dark section-banner">
 
                 <div class="<?php echo esc_attr( $container ); ?>">
 
