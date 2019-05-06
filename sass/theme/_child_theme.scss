@@ -221,9 +221,12 @@ $container-padding-sm: 2.25rem;
         padding: 0;
     }
     @include media-breakpoint-down('sm') {
-        background-color: #{$white};
         color: #{$body-color};
         padding-bottom: #{$spacer * 2.125};
+        &.section-header-overlay_blue,
+        &.section-header-overlay_black {
+            background-color: #{$white};
+        }
         .section-image-overlay-wrapper {
             background-color: #{$gray-200};
             clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
