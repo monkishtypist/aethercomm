@@ -17292,9 +17292,23 @@ textarea {
   #register_page-wrapper #register_header .gform_button {
     width: 100%; }
 
-#index-wrapper #posts_intro_content article img.wp-post-image {
+#index-wrapper #posts_intro_content article .latest-post-image-wrapper {
+  border: 1px solid #707070;
   float: right;
-  margin-left: 4rem;
-  margin-bottom: 1.5rem; }
+  margin-bottom: 1rem;
+  margin-left: 5rem; }
+  @media (max-width: 768.98px) {
+    #index-wrapper #posts_intro_content article .latest-post-image-wrapper {
+      border: 0;
+      float: none;
+      margin-bottom: 1.5rem;
+      margin-left: calc(-1 * ((50vw - 270px) + 2.25rem));
+      margin-right: calc(-1 * ((50vw - 270px) + 2.25rem)); } }
+  @media (max-width: 575.98px) {
+    #index-wrapper #posts_intro_content article .latest-post-image-wrapper {
+      margin-left: -2.25rem;
+      margin-right: -2.25rem; } }
+  #index-wrapper #posts_intro_content article .latest-post-image-wrapper img {
+    width: 100%; }
 
 /*# sourceMappingURL=child-theme.css.map */

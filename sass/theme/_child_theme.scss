@@ -1540,10 +1540,25 @@ textarea {
 #index-wrapper {
     #posts_intro_content {
         article {
-            img.wp-post-image {
+            .latest-post-image-wrapper {
+                border: #{$border-width} solid #{$gray-600};
                 float: right;
-                margin-left: #{$spacer * 4};
-                margin-bottom: #{$spacer * 1.5};
+                margin-bottom: #{$spacer * 1};
+                margin-left: #{$spacer * 5};
+                @include media-breakpoint-down('sm') {
+                    border: 0;
+                    float: none;
+                    margin-bottom: #{$spacer * 1.5};
+                    margin-left: calc(-1 * ((50vw - 270px) + #{$container-padding-sm}));
+                    margin-right: calc(-1 * ((50vw - 270px) + #{$container-padding-sm}));
+                }
+                @include media-breakpoint-down('xs') {
+                    margin-left: -#{$container-padding-sm};
+                    margin-right: -#{$container-padding-sm};
+                }
+                img {
+                    width: 100%;
+                }
             }
         }
     }
