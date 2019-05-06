@@ -416,6 +416,7 @@ if ( ! function_exists( 'aethercomm_representative_post_type' ) ) {
 }
 
 /* 8. Modify the Query */
+add_action( 'pre_get_posts', 'aethercomm_modify_query', 1 );
 if ( ! function_exists( 'aethercomm_modify_query' ) ) {
     function aethercomm_modify_query( $query ) {
         if ( is_admin() || ! $query->is_main_query() )
@@ -429,7 +430,7 @@ if ( ! function_exists( 'aethercomm_modify_query' ) ) {
 
         if ( $query->is_home() && $query->is_main_query() ) {
             // Offset the main query by one
-            $query->set( 'offset', '1' );
+            $query->set( 'offset', 1 );
         }
     }
 }
