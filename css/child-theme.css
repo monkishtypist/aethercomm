@@ -14642,6 +14642,14 @@ button.btn {
     background-color: #676767;
     border-color: #676767;
     color: #fff; }
+  @media (max-width: 768.98px) {
+    a.btn,
+    button.btn {
+      width: 100%; }
+      a.btn.btn-lg, .btn-group-lg > a.btn,
+      button.btn.btn-lg,
+      .btn-group-lg > button.btn {
+        width: 100%; } }
 
 li.btn {
   font-size: inherit; }
@@ -17301,6 +17309,11 @@ textarea {
   #register_page-wrapper #register_header .gform_button {
     width: 100%; }
 
+@media (max-width: 768.98px) {
+  #index-wrapper #latest-post_section {
+    -webkit-clip-path: none;
+            clip-path: none; } }
+
 #index-wrapper #latest-post_section nav {
   margin-bottom: 3.25rem;
   margin-left: -1rem;
@@ -17316,9 +17329,15 @@ textarea {
       margin-left: 0; }
     #index-wrapper #latest-post_section nav .nav-link:last-of-type {
       margin-right: 0; }
+  @media (max-width: 768.98px) {
+    #index-wrapper #latest-post_section nav {
+      display: none; } }
 
 #index-wrapper #latest-post_section article {
   overflow: auto; }
+  @media (max-width: 768.98px) {
+    #index-wrapper #latest-post_section article {
+      overflow: visible; } }
   #index-wrapper #latest-post_section article .latest-post-image-wrapper {
     border: 1px solid #707070;
     float: right;
@@ -17332,7 +17351,8 @@ textarea {
         margin-bottom: 1.5rem;
         margin-left: calc(-1 * ((50vw - 270px) + 2.25rem));
         margin-right: calc(-1 * ((50vw - 270px) + 2.25rem));
-        max-width: 100%; } }
+        max-width: 100%;
+        width: 100vw; } }
     @media (max-width: 575.98px) {
       #index-wrapper #latest-post_section article .latest-post-image-wrapper {
         margin-left: -2.25rem;

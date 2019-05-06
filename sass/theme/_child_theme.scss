@@ -364,6 +364,12 @@ button.btn {
         border-color: #{$gray};
         color: #{$white};
     }
+    @include media-breakpoint-down('sm') {
+        width: 100%;
+        &.btn-lg {
+            width: 100%;
+        }
+    }
 }
 li.btn { // navmenu buttons
     font-size: inherit;
@@ -1545,6 +1551,9 @@ textarea {
 
 #index-wrapper {
     #latest-post_section {
+        @include media-breakpoint-down('sm') {
+            clip-path: none;
+        }
         nav {
             margin-bottom: #{$spacer * 3.25};
             margin-left: -#{$nav-link-padding-x};
@@ -1563,9 +1572,15 @@ textarea {
                     margin-right: 0;
                 }
             }
+            @include media-breakpoint-down('sm') {
+                display: none;
+            }
         }
         article {
             overflow: auto;
+            @include media-breakpoint-down('sm') {
+                overflow: visible;
+            }
             .latest-post-image-wrapper {
                 border: #{$border-width} solid #{$gray-600};
                 float: right;
@@ -1579,6 +1594,7 @@ textarea {
                     margin-left: calc(-1 * ((50vw - 270px) + #{$container-padding-sm}));
                     margin-right: calc(-1 * ((50vw - 270px) + #{$container-padding-sm}));
                     max-width: 100%;
+                    width: 100vw;
                 }
                 @include media-breakpoint-down('xs') {
                     margin-left: -#{$container-padding-sm};
