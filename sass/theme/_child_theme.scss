@@ -1313,7 +1313,6 @@ textarea {
 
 #who-we-are_page-wrapper {
     #who-we-are_header {
-        @include section-header-overlay();
     }
     #who-we-are_tabs {
         @include skewed-tabs();
@@ -1401,7 +1400,6 @@ textarea {
 
 #what-we-do_page-wrapper {
     #what-we-do_header {
-        @include section-header-overlay( $black );
     }
     #what-we-do_tabs {
         @include skewed-tabs( $black, $dark, $white, $white );
@@ -1480,7 +1478,6 @@ textarea {
 
 #careers_page-wrapper {
     #careers_header {
-        @include section-header-overlay( $black );
     }
     #careers_benefits {
         background-position: center;
