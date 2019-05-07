@@ -1634,8 +1634,8 @@ textarea {
                 // border-right-color: transparent;
                 border-right-width: 0;
                 // display: flex;
-                height: auto;
-                max-height: #{$spacer * 21};
+                // height: auto;
+                // max-height: #{$spacer * 21};
                 margin-bottom: #{$spacer * 2.75};
                 &:last-of-type {
                     margin-bottom: 0;

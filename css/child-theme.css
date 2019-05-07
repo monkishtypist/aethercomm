@@ -17389,8 +17389,6 @@ textarea {
 #index-wrapper #the-posts_section .posts-articles article {
   border: 1px solid #707070;
   border-right-width: 0;
-  height: auto;
-  max-height: 21rem;
   margin-bottom: 2.75rem; }
   #index-wrapper #the-posts_section .posts-articles article:last-of-type {
     margin-bottom: 0; }
