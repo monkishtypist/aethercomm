@@ -1609,4 +1609,17 @@ textarea {
             }
         }
     }
+    #the-posts_section {
+        article {
+            border: #{$border-width} solid #{$gray-600};
+            height: #{$spacer * 21};
+            .post-image-wrapper {
+                float: left;
+                width: #{$spacer * 27.25}
+            }
+            .post-content-wrapper {
+                float: right;
+            }
+        }
+    }
 }

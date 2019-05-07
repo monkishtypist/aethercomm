@@ -17357,4 +17357,13 @@ textarea {
     #index-wrapper #latest-post_section article .latest-post-image-wrapper img {
       width: 100%; }
 
+#index-wrapper #the-posts_section article {
+  border: 1px solid #707070;
+  height: 21rem; }
+  #index-wrapper #the-posts_section article .post-image-wrapper {
+    float: left;
+    width: 27.25rem; }
+  #index-wrapper #the-posts_section article .post-content-wrapper {
+    float: right; }
+
 /*# sourceMappingURL=child-theme.css.map */
