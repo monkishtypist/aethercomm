@@ -17311,8 +17311,10 @@ textarea {
 
 @media (max-width: 768.98px) {
   #index-wrapper #latest-post_section {
+    background-color: #fff;
     -webkit-clip-path: none;
             clip-path: none;
+    color: #222222;
     padding-top: 0.5rem; } }
 
 #index-wrapper #latest-post_section nav {

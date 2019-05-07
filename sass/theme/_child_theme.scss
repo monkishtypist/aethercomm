@@ -1552,7 +1552,9 @@ textarea {
 #index-wrapper {
     #latest-post_section {
         @include media-breakpoint-down('sm') {
+            background-color: #{$white};
             clip-path: none;
+            color: #{$body-color};
             padding-top: #{$spacer * .5};
         }
         nav {
