@@ -13,7 +13,9 @@ global $post;
 
 $card_class = null;
 
-$card_meta = false;
+$card_meta = null;
+
+$card_image = null;
 
 $cats = get_the_category();
 if ( $cats ) {
@@ -25,7 +27,7 @@ if ( $cats ) {
 }
 
 if ( has_post_thumbnail() ) {
-    $card_image = get_the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) );
+    $card_image = get_the_post_thumbnail( get_the_ID(), 'card-img-top', array( 'class' => 'card-img-top' ) );
     $card_class .= 'post-has-thumbnail';
 }
 
@@ -52,7 +54,9 @@ switch ( $post->post_type ) { // modify the defaults
             get_stylesheet_directory_uri(),
             get_the_title()
         ) );
-        $card_text = apply_filters( 'the_content', get_acf_field( 'team_member_position', true ) );
+        $card_text = sprintf( '<div class="card-text">%1$s</div>',
+            apply_filters( 'the_content', get_acf_field( 'team_member_position', true ) )
+        );
         break;
     case 'representatives':
         $card_image = false;
@@ -76,7 +80,7 @@ switch ( $post->post_type ) { // modify the defaults
 
 <div class="card card-<?php echo $post->post_type; ?> <?php echo $card_class; ?>" data-post-type="<?php echo $post->post_type; ?>">
 
-    <?php if ( $card_image ) { echo $card_image; } ?>
+    <?php echo $card_image; ?>
 
     <div class="card-body">
         <?php echo ( is_front_page() ? $card_meta : null ); ?>
