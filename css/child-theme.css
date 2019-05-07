@@ -17359,7 +17359,8 @@ textarea {
 
 #index-wrapper #the-posts_section .posts-articles {
   margin-right: 0;
-  margin-right: calc(-1 * (((100vw - 1088px) / 2) + 10px)); }
+  margin-right: calc(-1 * (((100vw - 1088px) / 2) + 10px));
+  padding-right: 0; }
   @media (max-width: 768.98px) {
     #index-wrapper #the-posts_section .posts-articles {
       margin-right: 0;

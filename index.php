@@ -99,7 +99,7 @@ $cats = get_categories();
                         <div class="row">
 
                             <?php if ( is_active_sidebar( 'blog' ) ) : ?>
-                                <div class="posts-sidebar col-2">
+                                <div class="posts-sidebar col-3">
                                     <?php dynamic_sidebar( 'blog' ); ?>
                                 </div>
                             <?php endif; ?>

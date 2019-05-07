@@ -1618,6 +1618,7 @@ textarea {
                     margin-right: calc(-1 * (((100vw - #{$width}) / 2) + #{$grid-gutter-width / 2}));
                 }
             }
+            padding-right: 0;
             article {
                 border: #{$border-width} solid #{$gray-600};
                 border-right-color: transparent;
