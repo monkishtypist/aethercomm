@@ -374,11 +374,6 @@ button.btn {
 li.btn { // navmenu buttons
     font-size: inherit;
 }
-.btn-read-more {
-    // @extend .btn-secondary;
-    // display: block;
-    // margin-top: #{$spacer * 2};
-}
 
 /**
  * Wrappers
@@ -1322,6 +1317,9 @@ textarea {
             padding-bottom: 3rem;
             padding-top: 8.375rem;
         }
+        .read-more-link span.read {
+            display: none;
+        }
     }
 }
 
@@ -1609,7 +1607,7 @@ textarea {
                     width: 100%;
                 }
             }
-            .btn-read-more {
+            .read-more-link {
                 @extend .btn;
                 @extend .btn-primary;
             }
@@ -1671,7 +1669,7 @@ textarea {
                     border: 0;
                     height: auto;
                 }
-                .btn-read-more {
+                .read-more-link {
                     @extend .btn;
                     @extend .btn-secondary;
                 }
@@ -1701,7 +1699,7 @@ textarea {
                     @include media-breakpoint-down('sm') {
                         flex-basis: 100%;
                         padding: 0;
-                        .btn-read-more {
+                        .read-more-link {
                             width: 100%;
                         }
                     }

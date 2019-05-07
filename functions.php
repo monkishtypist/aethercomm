@@ -157,7 +157,14 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	// Adds a custom read more link to all excerpts, manually or automatically generated
 	function understrap_all_excerpts_get_more_link( $post_excerpt ) {
 		if ( ! is_admin() ) {
-			$post_excerpt = $post_excerpt . '<a class="btn-read-more aethercomm-read-more-link read-more-link" href="' . esc_url( get_permalink( get_the_ID() ) ) . '">' . __( 'Read More', 'aethercomm' ) . '</a>';
+            $read_more_link = sprintf( '<a class="aethercomm-read-more-link read-more-link" href="%1$s">%2$s</a>',
+                esc_url( get_permalink( get_the_ID() ) ),
+                sprintf( '<span class="readmore-read">%1$s</span> <span class="readmore-more">%2$s</span>',
+                    __( 'Read', 'aethercomm' ),
+                    __( 'More', 'aethercomm' )
+                )
+            );
+			$post_excerpt = $post_excerpt . $read_more_link;
 		}
 		return $post_excerpt;
 	}
