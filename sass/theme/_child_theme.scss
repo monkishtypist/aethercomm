@@ -1657,6 +1657,7 @@ textarea {
                         min-width: 100%;
                     }
                     @include media-breakpoint-down('sm') {
+                        clip-path: none;
                         order: 0;
                     }
                 }
