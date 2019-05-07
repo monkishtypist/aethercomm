@@ -17382,6 +17382,8 @@ textarea {
     #index-wrapper #the-posts_section .posts-articles article:last-of-type {
       margin-bottom: 0; }
     #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper {
+      -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14.625rem 100%);
+              clip-path: polygon(0 0, 100% 0, 100% 100%, 14.625rem 100%);
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
