@@ -96,22 +96,26 @@ $cats = get_categories();
 
                     <div class="<?php echo esc_attr( $container ); ?>">
 
-                        <?php if ( is_active_sidebar( 'blog' ) ) : ?>
-                            <div class="col col-md-3">
-                                <?php dynamic_sidebar( 'blog' ); ?>
+                        <div class="row">
+
+                            <?php if ( is_active_sidebar( 'blog' ) ) : ?>
+                                <div class="col col-md-3">
+                                    <?php dynamic_sidebar( 'blog' ); ?>
+                                </div>
+                            <?php endif; ?>
+
+                            <div class="col">
+
+                                <?php while ( have_posts() ) : the_post(); ?>
+
+                                    <?php get_template_part( 'loop-templates/content', 'posts' ); ?>
+
+                                <?php endwhile; // end of the loop. ?>
+
+                                <!-- The pagination component -->
+                                <?php understrap_pagination(); ?>
+
                             </div>
-                        <?php endif; ?>
-
-                        <div class="col">
-
-                            <?php while ( have_posts() ) : the_post(); ?>
-
-                                <?php get_template_part( 'loop-templates/content', 'posts' ); ?>
-
-                            <?php endwhile; // end of the loop. ?>
-
-                            <!-- The pagination component -->
-                            <?php understrap_pagination(); ?>
 
                         </div>
 
