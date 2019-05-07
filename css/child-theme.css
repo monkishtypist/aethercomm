@@ -17395,7 +17395,8 @@ textarea {
     display: none; } }
 
 #index-wrapper #the-posts_section .posts-sidebar .widget-title {
-  font-size: 2.5rem; }
+  font-size: 2.5rem;
+  margin-bottom: 2rem; }
 
 #index-wrapper #the-posts_section .posts-sidebar .widget_categories ul {
   list-style: none;

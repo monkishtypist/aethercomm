@@ -1632,6 +1632,7 @@ textarea {
             }
             .widget-title {
                 font-size: #{$h2-font-size};
+                margin-bottom: #{$spacer * 2};
             }
             .widget_categories {
                 ul {
