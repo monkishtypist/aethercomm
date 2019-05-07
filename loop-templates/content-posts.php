@@ -13,7 +13,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 ?>
 
-<article <?php post_class( 'row' ); ?> id="post-<?php the_ID(); ?>">
+<article <?php post_class( 'row no-gutters' ); ?> id="post-<?php the_ID(); ?>">
 
     <?php if ( has_post_thumbnail() ) { ?>
         <div class="post-image-wrapper col order-last"><?php the_post_thumbnail( 'posts-archive', array( 'class' => 'img-fluid' ) ); ?></div>
