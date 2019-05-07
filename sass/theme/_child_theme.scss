@@ -1552,7 +1552,7 @@ textarea {
 #index-wrapper {
     .read-more-link {
         @extend .btn;
-        margin-top: #{$spacer * 1.5};
+        margin-top: #{$spacer * 2};
     }
     #latest-post_section {
         @include media-breakpoint-down('sm') {
