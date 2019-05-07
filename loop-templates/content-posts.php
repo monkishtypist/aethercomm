@@ -19,7 +19,7 @@ if ( ! defined( 'ABSPATH' ) ) {
         <div class="post-image-wrapper col-12 col-md order-last"><?php the_post_thumbnail( 'posts-archive', array( 'class' => 'img-fluid' ) ); ?></div>
     <?php } ?>
 
-    <div class="post-content-wrapper col-12 col-md-4 order-first">
+    <div class="post-content-wrapper col-12 col-md-5 order-first">
 
         <?php the_title( '<h1 class="entry-title h3">', '</h1>' ); ?>
 

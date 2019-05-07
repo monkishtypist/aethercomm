@@ -17410,8 +17410,6 @@ textarea {
       min-height: 100%;
       min-width: 100%; }
   #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper {
-    -ms-flex-preferred-size: 27.25rem;
-        flex-basis: 27.25rem;
     padding: 1.5rem 0 3.75rem 2.25rem; }
     #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper .entry-title {
       margin-bottom: 1.75rem; }

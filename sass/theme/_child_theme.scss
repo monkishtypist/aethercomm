@@ -1657,7 +1657,7 @@ textarea {
                     }
                 }
                 .post-content-wrapper {
-                    flex-basis: #{$spacer * 27.25};
+                    // flex-basis: #{$spacer * 27.25};
                     padding: #{$spacer * 1.5} 0 #{$spacer * 3.75} #{$spacer * 2.25};
                     .entry-title {
                         margin-bottom: #{$spacer * 1.75};
