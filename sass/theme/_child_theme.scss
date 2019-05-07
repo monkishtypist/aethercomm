@@ -1617,12 +1617,18 @@ textarea {
                 display: flex;
                 height: #{$spacer * 21};
                 .post-image-wrapper {
-                    align-self: flex-end;
                     display: flex;
                     flex: 1 0 50%;
                     height: 100%;
+                    object-fit: cover;
                     order: 13;
                     width: #{$spacer * 27.25};
+                    img {
+                        object-fit: cover;
+                        height: auto;
+                        min-height: 100%;
+                        min-width: 100%;
+                    }
                 }
                 .post-content-wrapper {
                     display: flex;

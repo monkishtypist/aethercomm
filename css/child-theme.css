@@ -17364,8 +17364,6 @@ textarea {
   display: flex;
   height: 21rem; }
   #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper {
-    -ms-flex-item-align: end;
-        align-self: flex-end;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -17373,10 +17371,18 @@ textarea {
         -ms-flex: 1 0 50%;
             flex: 1 0 50%;
     height: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
     -webkit-box-ordinal-group: 14;
         -ms-flex-order: 13;
             order: 13;
     width: 27.25rem; }
+    #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper img {
+      -o-object-fit: cover;
+         object-fit: cover;
+      height: auto;
+      min-height: 100%;
+      min-width: 100%; }
   #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
