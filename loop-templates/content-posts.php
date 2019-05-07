@@ -16,10 +16,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
     <?php if ( has_post_thumbnail() ) { ?>
-        <div class="post-image-wrapper"><?php the_post_thumbnail( 'posts-archive', array( 'class' => 'img-fluid' ) ); ?></div>
+        <div class="post-image-wrapper col order-last"><?php the_post_thumbnail( 'posts-archive', array( 'class' => 'img-fluid' ) ); ?></div>
     <?php } ?>
 
-    <div class="post-content-wrapper">
+    <div class="post-content-wrapper col-4 order-first">
 
         <?php the_title( '<h1 class="entry-title h3">', '</h1>' ); ?>
 
