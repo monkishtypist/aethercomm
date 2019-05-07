@@ -17358,27 +17358,27 @@ textarea {
       width: 100%; }
 
 @media (min-width: 576px) and (max-width: 768.98px) {
-  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 540px) / 2) + 10px)); } }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
-  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 760px) / 2) + 10px)); } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 960px) / 2) + 10px)); } }
 
 @media (min-width: 1200px) {
-  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 1088px) / 2) + 10px)); } }
 
 @media (max-width: 768.98px) {
-  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-left: 0;
     margin-right: 0; } }
 
@@ -17419,6 +17419,8 @@ textarea {
       margin-bottom: 1.75rem; }
     @media (max-width: 768.98px) {
       #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper {
+        -ms-flex-preferred-size: 100%;
+            flex-basis: 100%;
         padding: 0; }
         #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper .btn-read-more {
           width: 100%; } }
