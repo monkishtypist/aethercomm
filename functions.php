@@ -157,9 +157,9 @@ if ( ! function_exists( 'understrap_all_excerpts_get_more_link' ) ) {
 	// Adds a custom read more link to all excerpts, manually or automatically generated
 	function understrap_all_excerpts_get_more_link( $post_excerpt ) {
 		if ( ! is_admin() ) {
-            $read_more_link = sprintf( '<a class="aethercomm-read-more-link read-more-link" href="%1$s">%2$s</a>',
+            $read_more_link = sprintf( ' <a class="aethercomm-read-more-link read-more-link" href="%1$s">%2$s</a>',
                 esc_url( get_permalink( get_the_ID() ) ),
-                sprintf( '<span class="readmore-read">%1$s</span> <span class="readmore-more">%2$s</span>',
+                sprintf( '<span class="readmore-read">%1$s </span><span class="readmore-more">%2$s</span>',
                     __( 'Read', 'aethercomm' ),
                     __( 'More', 'aethercomm' )
                 )
