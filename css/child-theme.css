@@ -17419,6 +17419,8 @@ textarea {
       margin-bottom: 1.75rem; }
     @media (max-width: 768.98px) {
       #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper {
-        padding: 0; } }
+        padding: 0; }
+        #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper .btn-read-more {
+          width: 100%; } }
 
 /*# sourceMappingURL=child-theme.css.map */
