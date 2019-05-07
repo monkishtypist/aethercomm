@@ -1656,7 +1656,9 @@ textarea {
                         min-height: 100%;
                         min-width: 100%;
                     }
-                    @include media-breakpoint-down('md') {}
+                    @include media-breakpoint-down('sm') {
+                        order: 0;
+                    }
                 }
                 .post-content-wrapper {
                     display: flex;
@@ -1669,6 +1671,9 @@ textarea {
                     }
                     @include media-breakpoint-down('md') {
                         flex: 0 0 50%;
+                    }
+                    @include media-breakpoint-down('sm') {
+                        flex: 1 0 100%;
                     }
                 }
             }
