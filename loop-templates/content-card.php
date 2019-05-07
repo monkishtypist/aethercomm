@@ -48,7 +48,7 @@ switch ( $post->post_type ) { // modify the defaults
         );
         break;
     case 'team-members':
-        $card_image = ( ! $card_image
+        $card_image = ( empty( $card_image )
             ? sprintf( '<img class="card-img-top" src="%1$s/images/team_default.png" alt="%2$s" />',
                 get_stylesheet_directory_uri(),
                 get_the_title() )
