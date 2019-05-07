@@ -17383,7 +17383,6 @@ textarea {
 
 #index-wrapper #the-posts_section .posts-articles article {
   border: 1px solid #707070;
-  border-right-color: transparent;
   border-right-width: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17392,6 +17391,9 @@ textarea {
   margin-bottom: 2.75rem; }
   #index-wrapper #the-posts_section .posts-articles article:last-of-type {
     margin-bottom: 0; }
+  @media (max-width: 991.98px) {
+    #index-wrapper #the-posts_section .posts-articles article {
+      border-right-width: 1px; } }
   #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14.625rem 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 14.625rem 100%);
@@ -17416,10 +17418,8 @@ textarea {
     display: -ms-flexbox;
     display: flex;
     -webkit-box-flex: 0;
-        -ms-flex: 0 0 50%;
-            flex: 0 0 50%;
-    -ms-flex: 0 0 27.25rem;
-        flex: 0 0 27.25rem;
+        -ms-flex: 0 0 27.25rem;
+            flex: 0 0 27.25rem;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -17430,5 +17430,10 @@ textarea {
     padding: 1.5rem 0 3.75rem 2.25rem; }
     #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper .entry-title {
       margin-bottom: 1.75rem; }
+    @media (max-width: 991.98px) {
+      #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper {
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 50%;
+                flex: 0 0 50%; } }
 
 /*# sourceMappingURL=child-theme.css.map */

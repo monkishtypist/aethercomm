@@ -1625,13 +1625,16 @@ textarea {
             // padding-right: 0;
             article {
                 border: #{$border-width} solid #{$gray-600};
-                border-right-color: transparent;
+                // border-right-color: transparent;
                 border-right-width: 0;
                 display: flex;
                 height: #{$spacer * 21};
                 margin-bottom: #{$spacer * 2.75};
                 &:last-of-type {
                     margin-bottom: 0;
+                }
+                @include media-breakpoint-down('md') {
+                    border-right-width: #{$border-width};
                 }
                 .post-image-wrapper {
                     clip-path: polygon(0 0, 100% 0, 100% 100%, #{$spacer * 14.625} 100%);
@@ -1645,16 +1648,19 @@ textarea {
                         min-height: 100%;
                         min-width: 100%;
                     }
+                    @include media-breakpoint-down('md') {}
                 }
                 .post-content-wrapper {
                     display: flex;
-                    flex: 0 0 50%;
                     flex: 0 0 #{$spacer * 27.25};
                     flex-direction: column;
                     order: -1;
                     padding: #{$spacer * 1.5} 0 #{$spacer * 3.75} #{$spacer * 2.25};
                     .entry-title {
                         margin-bottom: #{$spacer * 1.75};
+                    }
+                    @include media-breakpoint-down('md') {
+                        flex: 0 0 50%;
                     }
                 }
             }
