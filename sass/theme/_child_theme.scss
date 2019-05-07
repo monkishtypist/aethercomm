@@ -1612,13 +1612,16 @@ textarea {
     #the-posts_section {
         article {
             border: #{$border-width} solid #{$gray-600};
+            display: flex;
             height: #{$spacer * 21};
             .post-image-wrapper {
-                float: left;
+                display: flex;
+                flex: 1 0 50%;
                 width: #{$spacer * 27.25}
             }
             .post-content-wrapper {
-                float: right;
+                display: flex;
+                flex: 1 0 50%;
             }
         }
     }
