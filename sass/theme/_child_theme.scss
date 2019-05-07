@@ -1612,10 +1612,19 @@ textarea {
     #the-posts_section {
         .posts-sidebar {}
         .posts-articles {
+            @each $breakpoint, $width in $container-max-widths {
+                @include media-breakpoint-down($breakpoint) {
+                    margin-right: calc(-1 * ((100vw - #{$width}) / 2));
+                }
+            }
             article {
                 border: #{$border-width} solid #{$gray-600};
                 display: flex;
                 height: #{$spacer * 21};
+                margin-bottom: #{$spacer * 2.75};
+                &:last-of-type {
+                    margin-bottom: 0;
+                }
                 .post-image-wrapper {
                     display: flex;
                     flex: 1 0 50%;
