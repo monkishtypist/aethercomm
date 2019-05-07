@@ -59,6 +59,7 @@ if ( ! function_exists( 'aethercomm_after_setup_theme' ) ) {
         ) );
         // custom image sizes
         add_image_size( 'card-img-top', 400, 300, true );
+        add_image_size( 'posts-archive', 532, 334, true );
     }
 }
 // add_action( 'wp_loaded', 'aethercomm_wp_loaded' );

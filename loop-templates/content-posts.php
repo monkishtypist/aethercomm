@@ -16,7 +16,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
     <?php if ( has_post_thumbnail() ) { ?>
-        <div class="post-image-wrapper"><?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?></div>
+        <div class="post-image-wrapper"><?php the_post_thumbnail( 'posts-archive', array( 'class' => 'img-fluid' ) ); ?></div>
     <?php } ?>
 
     <div class="post-content-wrapper">

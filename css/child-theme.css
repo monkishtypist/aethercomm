@@ -17393,7 +17393,8 @@ textarea {
     margin-bottom: 0; }
   @media (max-width: 991.98px) {
     #index-wrapper #the-posts_section .posts-articles article {
-      border-right-width: 1px; } }
+      border-right-width: 1px;
+      height: auto; } }
   #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper {
     -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14.625rem 100%);
             clip-path: polygon(0 0, 100% 0, 100% 100%, 14.625rem 100%);

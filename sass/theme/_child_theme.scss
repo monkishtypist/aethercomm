@@ -1635,6 +1635,7 @@ textarea {
                 }
                 @include media-breakpoint-down('md') {
                     border-right-width: #{$border-width};
+                    height: auto;
                 }
                 .post-image-wrapper {
                     clip-path: polygon(0 0, 100% 0, 100% 100%, #{$spacer * 14.625} 100%);
