@@ -17364,6 +17364,8 @@ textarea {
   display: flex;
   height: 21rem; }
   #index-wrapper #the-posts_section article .post-image-wrapper {
+    -ms-flex-item-align: end;
+        align-self: flex-end;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

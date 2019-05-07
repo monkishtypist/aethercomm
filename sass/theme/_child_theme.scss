@@ -1615,6 +1615,7 @@ textarea {
             display: flex;
             height: #{$spacer * 21};
             .post-image-wrapper {
+                align-self: flex-end;
                 display: flex;
                 flex: 1 0 50%;
                 width: #{$spacer * 27.25}
