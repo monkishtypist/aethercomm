@@ -17387,7 +17387,8 @@ textarea {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  height: 21rem;
+  height: auto;
+  max-height: 21rem;
   margin-bottom: 2.75rem; }
   #index-wrapper #the-posts_section .posts-articles article:last-of-type {
     margin-bottom: 0; }
