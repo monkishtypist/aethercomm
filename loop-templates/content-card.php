@@ -13,9 +13,9 @@ global $post;
 
 $card_class = null;
 
-$card_meta = null;
+$card_meta = false;
 
-$card_image = null;
+$card_image = false;
 
 $cats = get_the_category();
 if ( $cats ) {
@@ -48,12 +48,11 @@ switch ( $post->post_type ) { // modify the defaults
         );
         break;
     case 'team-members':
-        $card_image = ( has_post_thumbnail()
-        ? get_the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) )
-        : sprintf( '<img class="card-img-top" src="%1$s/images/team_default.png" alt="%2$s" />',
-            get_stylesheet_directory_uri(),
-            get_the_title()
-        ) );
+        $card_image = ( $card_image
+            ? sprintf( '<img class="card-img-top" src="%1$s/images/team_default.png" alt="%2$s" />',
+                get_stylesheet_directory_uri(),
+                get_the_title() )
+            : $card_image );
         $card_text = sprintf( '<div class="card-text">%1$s</div>',
             apply_filters( 'the_content', get_acf_field( 'team_member_position', true ) )
         );
