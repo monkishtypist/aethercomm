@@ -16966,6 +16966,8 @@ textarea {
     font-size: 1rem;
     font-weight: 300;
     text-transform: uppercase; }
+    #frontpage-wrapper #front-page-posts .card-meta a {
+      color: #707070; }
   #frontpage-wrapper #front-page-posts .read-more-link span.readmore-read {
     display: none; }
 
