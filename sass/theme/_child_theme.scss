@@ -375,9 +375,9 @@ li.btn { // navmenu buttons
     font-size: inherit;
 }
 .btn-read-more {
-    @extend .btn-secondary;
-    display: block;
-    margin-top: #{$spacer * 2};
+    // @extend .btn-secondary;
+    // display: block;
+    // margin-top: #{$spacer * 2};
 }
 
 /**
@@ -1610,6 +1610,7 @@ textarea {
                 }
             }
             .btn-read-more {
+                @extend .btn;
                 @extend .btn-primary;
             }
         }
@@ -1669,6 +1670,10 @@ textarea {
                 @include media-breakpoint-down('sm') {
                     border: 0;
                     height: auto;
+                }
+                .btn-read-more {
+                    @extend .btn;
+                    @extend .btn-secondary;
                 }
                 .post-image-wrapper {
                     clip-path: polygon(0 0, 100% 0, 100% 100%, #{$spacer * 14.625} 100%);
