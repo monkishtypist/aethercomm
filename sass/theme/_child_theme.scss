@@ -1653,6 +1653,7 @@ textarea {
                     @include media-breakpoint-down('sm') {
                         clip-path: none;
                         flex: 1 1 100%;
+                        margin-bottom: #{$spacer * 1.5};
                         margin-right: -#{$container-padding-sm};
                         margin-left: -#{$container-padding-sm};
                         max-width: 100vw;
