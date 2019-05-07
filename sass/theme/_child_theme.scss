@@ -1614,7 +1614,8 @@ textarea {
         .posts-articles {
             @each $breakpoint, $width in $container-max-widths {
                 @include media-breakpoint-down($breakpoint) {
-                    margin-right: calc(-1 * ((100vw - #{$width}) / 2));
+                    margin-right: 0;
+                    margin-right: calc(-1 * (((100vw - #{$width}) / 2) + #{$grid-gutter-width / 2}));
                 }
             }
             article {
