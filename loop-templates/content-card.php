@@ -15,9 +15,10 @@ $card_meta = false;
 
 $cats = get_the_category();
 if ( $cats ) {
-    $card_meta = sprintf( '<div class="card-meta"><a href="%1$s">%2$s</a></div>',
+    $card_meta = sprintf( '<div class="card-meta"><span class="post-category"><a href="%1$s">%2$s</a></span><span class="sep"> | </span><span class="entry-date">%3$s</span></div>',
         esc_url( get_category_link( $cats[0]->term_id ) ),
-        esc_html( $cats[0]->name )
+        esc_html( $cats[0]->name ),
+        get_the_date()
     );
 }
 
