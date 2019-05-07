@@ -488,5 +488,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 			)
 		);
 
+		register_sidebar(
+			array(
+				'name'          => __( 'Blog Sidebar', 'aethercomm' ),
+				'id'            => 'blog',
+				'description'   => __( 'Left sidebar on blog pages', 'aethercomm' ),
+				'before_widget' => '<div id="%1$s" class="blog-widget %2$s">',
+				'after_widget'  => '</div><!-- .blog-widget -->',
+				'before_title'  => '<h3 class="widget-title">',
+				'after_title'   => '</h3>',
+			)
+		);
+
 	}
 }

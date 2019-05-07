@@ -17329,9 +17329,6 @@ textarea {
       margin-left: 0; }
     #index-wrapper #latest-post_section nav .nav-link:last-of-type {
       margin-right: 0; }
-  @media (max-width: 768.98px) {
-    #index-wrapper #latest-post_section nav {
-      display: none; } }
 
 #index-wrapper #latest-post_section article {
   overflow: auto; }

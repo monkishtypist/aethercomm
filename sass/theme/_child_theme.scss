@@ -1573,7 +1573,7 @@ textarea {
                 }
             }
             @include media-breakpoint-down('sm') {
-                display: none;
+                // display: none;
             }
         }
         article {
