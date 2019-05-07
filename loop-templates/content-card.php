@@ -26,6 +26,11 @@ $card_text = sprintf( '<div class="card-text">%1$s</div>',
 $card_footer = false;
 
 switch ( $post->post_type ) { // modify the defaults
+    case 'post':
+        $card_text = sprintf( '<div class="card-text">%1$s</div>',
+            get_the_excerpt()
+        );
+        break;
     case 'team-members':
         $card_img = ( has_post_thumbnail()
         ? get_the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) )
