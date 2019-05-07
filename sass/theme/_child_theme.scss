@@ -1634,6 +1634,11 @@ textarea {
                     display: flex;
                     flex: 1 0 50%;
                     order: -1;
+                    padding: #{$spacer * 1.5} 0 #{$spacer * 3.75} #{$spacer * 2.25};
+                    .entry-title {
+                        display: block;
+                        margin-bottom: #{$spacer * 1.75};
+                    }
                 }
             }
         }

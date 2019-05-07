@@ -17392,6 +17392,10 @@ textarea {
             flex: 1 0 50%;
     -webkit-box-ordinal-group: 0;
         -ms-flex-order: -1;
-            order: -1; }
+            order: -1;
+    padding: 1.5rem 0 3.75rem 2.25rem; }
+    #index-wrapper #the-posts_section .posts-articles article .post-content-wrapper .entry-title {
+      display: block;
+      margin-bottom: 1.75rem; }
 
 /*# sourceMappingURL=child-theme.css.map */
