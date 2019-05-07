@@ -1553,11 +1553,15 @@ textarea {
     #latest-post_section {
         @include media-breakpoint-down('sm') {
             clip-path: none;
+            padding-top: #{$spacer * .5};
         }
         nav {
             margin-bottom: #{$spacer * 3.25};
             margin-left: -#{$nav-link-padding-x};
             margin-right: -#{$nav-link-padding-x};
+            @include media-breakpoint-down('sm') {
+                margin-bottom: #{$spacer * .5};
+            }
             .nav-link {
                 color: #{$white};
                 font-size: #{$font-size-base * .875};
@@ -1571,9 +1575,6 @@ textarea {
                 &:last-of-type {
                     margin-right: 0;
                 }
-            }
-            @include media-breakpoint-down('sm') {
-                // display: none;
             }
         }
         article {
@@ -1610,6 +1611,9 @@ textarea {
         }
     }
     #the-posts_section {
+        @include media-breakpoint-down('sm') {
+            padding-top: 0;
+        }
         > .container > .row {
             @each $breakpoint, $width in $container-max-widths {
                 @include media-breakpoint-only($breakpoint) {

@@ -17312,12 +17312,16 @@ textarea {
 @media (max-width: 768.98px) {
   #index-wrapper #latest-post_section {
     -webkit-clip-path: none;
-            clip-path: none; } }
+            clip-path: none;
+    padding-top: 0.5rem; } }
 
 #index-wrapper #latest-post_section nav {
   margin-bottom: 3.25rem;
   margin-left: -1rem;
   margin-right: -1rem; }
+  @media (max-width: 768.98px) {
+    #index-wrapper #latest-post_section nav {
+      margin-bottom: 0.5rem; } }
   #index-wrapper #latest-post_section nav .nav-link {
     color: #fff;
     font-size: 0.875rem;
@@ -17356,6 +17360,10 @@ textarea {
         margin-right: -2.25rem; } }
     #index-wrapper #latest-post_section article .latest-post-image-wrapper img {
       width: 100%; }
+
+@media (max-width: 768.98px) {
+  #index-wrapper #the-posts_section {
+    padding-top: 0; } }
 
 @media (min-width: 576px) and (max-width: 768.98px) {
   #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
