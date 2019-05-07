@@ -471,7 +471,7 @@ pre {
   margin-right: auto;
   margin-left: auto; }
 
-.row, #footer-menu, #legal-menu, #wrapper-footer .footer-widgets, #wrapper-footer .footer-siteinfo, #front-page-banner #banner-copy {
+.row, #footer-menu, #legal-menu, #wrapper-footer .footer-widgets, #wrapper-footer .footer-siteinfo, #frontpage-wrapper #front-page-banner #banner-copy {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -488,7 +488,7 @@ pre {
     padding-right: 0;
     padding-left: 0; }
 
-.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .section-blue-gradient.section-contact-form .contact-widget, #footer-menu > .nav-item, #wrapper-footer .footer-widgets .footer-widget, #wrapper-footer .footer-siteinfo #colophon, #wrapper-footer .footer-siteinfo #legal-menu-wrapper, #front-page-banner #banner-copy > div, .col,
+.col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .section-blue-gradient.section-contact-form .contact-widget, #footer-menu > .nav-item, #wrapper-footer .footer-widgets .footer-widget, #wrapper-footer .footer-siteinfo #colophon, #wrapper-footer .footer-siteinfo #legal-menu-wrapper, #frontpage-wrapper #front-page-banner #banner-copy > div, .col,
 .col-auto, #legal-menu > .nav-item, #wrapper-footer .footer-widgets .social-icons-widget, .col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm,
 .col-sm-auto, .col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12, .col-md,
 .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg,
@@ -580,7 +580,7 @@ pre {
           flex: 0 0 91.66667%;
   max-width: 91.66667%; }
 
-.col-12, .section-blue-gradient.section-contact-form .contact-widget, #footer-menu > .nav-item, #wrapper-footer .footer-widgets .footer-widget, #wrapper-footer .footer-siteinfo #colophon, #wrapper-footer .footer-siteinfo #legal-menu-wrapper, #front-page-banner #banner-copy > div {
+.col-12, .section-blue-gradient.section-contact-form .contact-widget, #footer-menu > .nav-item, #wrapper-footer .footer-widgets .footer-widget, #wrapper-footer .footer-siteinfo #colophon, #wrapper-footer .footer-siteinfo #legal-menu-wrapper, #frontpage-wrapper #front-page-banner #banner-copy > div {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 100%;
           flex: 0 0 100%;
@@ -1076,7 +1076,7 @@ pre {
         -ms-flex: 0 0 83.33333%;
             flex: 0 0 83.33333%;
     max-width: 83.33333%; }
-  .col-lg-11, #front-page-banner #banner-copy > div {
+  .col-lg-11, #frontpage-wrapper #front-page-banner #banner-copy > div {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 91.66667%;
             flex: 0 0 91.66667%;
@@ -16832,7 +16832,7 @@ textarea {
  *
  * Page specific sections and spacing, et al.
  */
-#front-page-intro {
+#frontpage-wrapper #front-page-intro {
   background-color: #000;
   background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(156deg, rgba(0, 0, 0, 0) 22rem, #000 43rem), url(../images/earth_desktop.png);
   background-position: calc(50vw + 1rem) 34rem, calc(50vw + 5rem) 15.5rem, 0 0, 0 -4rem;
@@ -16840,84 +16840,84 @@ textarea {
   background-size: auto, auto, auto, auto;
   padding-top: 15rem;
   padding-bottom: 5.625rem; }
-  #front-page-intro #front-page-header {
+  #frontpage-wrapper #front-page-intro #front-page-header {
     margin-bottom: 13.1875rem;
     text-align: center; }
-    #front-page-intro #front-page-header h1 {
+    #frontpage-wrapper #front-page-intro #front-page-header h1 {
       margin-bottom: 1.6875rem; }
-  #front-page-intro #intro-copy .btn {
+  #frontpage-wrapper #front-page-intro #intro-copy .btn {
     margin-top: 2.6rem; }
   @media (max-width: 1199.98px) {
-    #front-page-intro {
+    #frontpage-wrapper #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(149deg, rgba(0, 0, 0, 0) 23rem, #000 34rem), url(../images/earth_desktop.png);
       background-position: 50vw 37rem, calc(50vw + 4rem) 16rem, 0 0, 0 0;
       background-size: auto,auto,auto,auto; } }
   @media (max-width: 991.98px) {
-    #front-page-intro {
+    #frontpage-wrapper #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 18rem, #000 26rem), url(../images/earth_desktop.png);
       background-position: calc(50vw - 21rem) 43rem, calc(50vw - 20rem) 26rem, 0 0, 0 0;
       background-size: auto,auto,auto,50rem auto; }
-      #front-page-intro #intro-header {
+      #frontpage-wrapper #front-page-intro #front-page-header {
         margin-bottom: 50rem; } }
   @media (max-width: 768.98px) {
-    #front-page-intro {
+    #frontpage-wrapper #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 15rem, #000 25rem), url(../images/earth_desktop.png);
       background-position: calc(50vw - 17rem) 44rem, calc(50vw - 17rem) 29rem, 0 0, 0 0;
       background-size: 38rem auto,36rem auto,auto,73rem auto;
       padding-top: 10rem; }
-      #front-page-intro #intro-header {
+      #frontpage-wrapper #front-page-intro #front-page-header {
         margin-bottom: 42rem; }
-        #front-page-intro #intro-header h1 {
+        #frontpage-wrapper #front-page-intro #front-page-header h1 {
           margin-bottom: 4rem; } }
   @media (max-width: 575.98px) {
-    #front-page-intro {
+    #frontpage-wrapper #front-page-intro {
       background-image: url(../images/f22-V3.png), url(../images/SOLDIERS-UPDATES-3.png), linear-gradient(151deg, rgba(0, 0, 0, 0) 9rem, #000 17rem), url(../images/earth_desktop.png);
       background-position: calc(50vw - 13rem) 38rem, calc(50vw - 13rem) 26rem, 0 0, 0 0;
       background-size: 30rem auto,28rem auto,auto,50rem auto;
       padding-top: 8rem; }
-      #front-page-intro #intro-header {
+      #frontpage-wrapper #front-page-intro #front-page-header {
         margin-bottom: 33rem; } }
 
-#front-page-banner {
+#frontpage-wrapper #front-page-banner {
   background-position: 50% 50%, 50% 50%;
   background-repeat: no-repeat, no-repeat;
   background-size: cover, cover;
   font-size: 1.875rem;
   text-align: center; }
-  #front-page-banner #banner-copy {
+  #frontpage-wrapper #front-page-banner #banner-copy {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
 
-#front-page-posts {
+#frontpage-wrapper #front-page-posts {
   background-image: url(../images/path1.png);
   background-position: calc(50vw - 44.3rem) 3.3125rem;
   background-repeat: no-repeat;
   background-size: auto;
   padding-bottom: 6rem;
   padding-top: 8.375rem; }
-  #front-page-posts #posts-title {
+  #frontpage-wrapper #front-page-posts #posts-title {
     margin-bottom: 4rem; }
   @media (max-width: 1199.98px) {
-    #front-page-posts {
+    #frontpage-wrapper #front-page-posts {
       background-position: calc(50vw - 40.3rem) 3.3125rem;
       background-size: auto;
       padding-bottom: 6rem;
       padding-top: 8.375rem; } }
   @media (max-width: 991.98px) {
-    #front-page-posts {
+    #frontpage-wrapper #front-page-posts {
       background-position: calc(50vw - 33.3rem) 3.3125rem;
       background-size: auto;
       padding-bottom: 6rem;
       padding-top: 8.375rem; } }
   @media (max-width: 768.98px) {
-    #front-page-posts {
+    #frontpage-wrapper #front-page-posts {
       background-position: calc(50vw - 26rem) 3.3125rem;
       background-size: auto;
       padding-bottom: 6rem;
       padding-top: 8.375rem; } }
   @media (max-width: 575.98px) {
-    #front-page-posts {
+    #frontpage-wrapper #front-page-posts {
       background-position: calc(50vw - 20rem) 3.3125rem;
       background-size: auto;
       padding-bottom: 3rem;
@@ -17276,7 +17276,7 @@ textarea {
   background-size: cover; }
   #careers_page-wrapper #careers_benefits .section-title {
     text-align: center; }
-  #careers_page-wrapper #careers_benefits > .container > .row, #careers_page-wrapper #careers_benefits > .container > #footer-menu, #careers_page-wrapper #careers_benefits > .container > #legal-menu, #careers_page-wrapper #wrapper-footer #careers_benefits > .container > .footer-widgets, #wrapper-footer #careers_page-wrapper #careers_benefits > .container > .footer-widgets, #careers_page-wrapper #wrapper-footer #careers_benefits > .container > .footer-siteinfo, #wrapper-footer #careers_page-wrapper #careers_benefits > .container > .footer-siteinfo, #careers_page-wrapper #front-page-banner #careers_benefits > .container > #banner-copy, #front-page-banner #careers_page-wrapper #careers_benefits > .container > #banner-copy,
+  #careers_page-wrapper #careers_benefits > .container > .row, #careers_page-wrapper #careers_benefits > .container > #footer-menu, #careers_page-wrapper #careers_benefits > .container > #legal-menu, #careers_page-wrapper #wrapper-footer #careers_benefits > .container > .footer-widgets, #wrapper-footer #careers_page-wrapper #careers_benefits > .container > .footer-widgets, #careers_page-wrapper #wrapper-footer #careers_benefits > .container > .footer-siteinfo, #wrapper-footer #careers_page-wrapper #careers_benefits > .container > .footer-siteinfo, #careers_page-wrapper #frontpage-wrapper #front-page-banner #careers_benefits > .container > #banner-copy, #frontpage-wrapper #front-page-banner #careers_page-wrapper #careers_benefits > .container > #banner-copy,
   #careers_page-wrapper #careers_benefits > .container-fluid > .row,
   #careers_page-wrapper #careers_benefits > .container-fluid > #footer-menu,
   #careers_page-wrapper #careers_benefits > .container-fluid > #legal-menu,
@@ -17284,8 +17284,8 @@ textarea {
   #wrapper-footer #careers_page-wrapper #careers_benefits > .container-fluid > .footer-widgets,
   #careers_page-wrapper #wrapper-footer #careers_benefits > .container-fluid > .footer-siteinfo,
   #wrapper-footer #careers_page-wrapper #careers_benefits > .container-fluid > .footer-siteinfo,
-  #careers_page-wrapper #front-page-banner #careers_benefits > .container-fluid > #banner-copy,
-  #front-page-banner #careers_page-wrapper #careers_benefits > .container-fluid > #banner-copy {
+  #careers_page-wrapper #frontpage-wrapper #front-page-banner #careers_benefits > .container-fluid > #banner-copy,
+  #frontpage-wrapper #front-page-banner #careers_page-wrapper #careers_benefits > .container-fluid > #banner-copy {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
@@ -17368,27 +17368,27 @@ textarea {
     padding-top: 0; } }
 
 @media (min-width: 576px) and (max-width: 768.98px) {
-  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #frontpage-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #frontpage-wrapper #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 540px) / 2) + 10px)); } }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
-  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #frontpage-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #frontpage-wrapper #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 760px) / 2) + 10px)); } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #frontpage-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #frontpage-wrapper #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 960px) / 2) + 10px)); } }
 
 @media (min-width: 1200px) {
-  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #frontpage-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #frontpage-wrapper #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 1088px) / 2) + 10px)); } }
 
 @media (max-width: 768.98px) {
-  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
+  #index-wrapper #the-posts_section > .container > .row, #index-wrapper #the-posts_section > .container > #footer-menu, #index-wrapper #the-posts_section > .container > #legal-menu, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-widgets, #index-wrapper #wrapper-footer #the-posts_section > .container > .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section > .container > .footer-siteinfo, #index-wrapper #frontpage-wrapper #front-page-banner #the-posts_section > .container > #banner-copy, #frontpage-wrapper #front-page-banner #index-wrapper #the-posts_section > .container > #banner-copy {
     margin-left: 0;
     margin-right: 0; } }
 
