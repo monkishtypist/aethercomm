@@ -13,10 +13,7 @@ global $post;
 
 $card_img = ( has_post_thumbnail()
     ? get_the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) )
-    : sprintf( '<img class="card-img-top" src="%1$s/images/team_default.png" alt="%2$s" />',
-        get_stylesheet_directory_uri(),
-        get_the_title()
-    ) );
+    : false );
 
 $card_title = sprintf( '<h3 class="card-title">%1$s</h3>',
     wp_kses_post( get_the_title() )
@@ -30,6 +27,12 @@ $card_footer = false;
 
 switch ( $post->post_type ) { // modify the defaults
     case 'team-members':
+        $card_img = ( has_post_thumbnail()
+        ? get_the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) )
+        : sprintf( '<img class="card-img-top" src="%1$s/images/team_default.png" alt="%2$s" />',
+            get_stylesheet_directory_uri(),
+            get_the_title()
+        ) );
         $card_text = apply_filters( 'the_content', get_acf_field( 'team_member_position', true ) );
         break;
     case 'representatives':
