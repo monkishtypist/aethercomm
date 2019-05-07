@@ -1317,6 +1317,12 @@ textarea {
             padding-bottom: 3rem;
             padding-top: 8.375rem;
         }
+        .card-meta {
+            color: #{$gray-600};
+            font-size: #{$font-size-base};
+            font-weight: #{$font-weight-light};
+            text-transform: uppercase;
+        }
         .read-more-link span.readmore-read {
             display: none;
         }
