@@ -1620,11 +1620,14 @@ textarea {
                     align-self: flex-end;
                     display: flex;
                     flex: 1 0 50%;
-                    width: #{$spacer * 27.25}
+                    height: 100%;
+                    order: 13;
+                    width: #{$spacer * 27.25};
                 }
                 .post-content-wrapper {
                     display: flex;
                     flex: 1 0 50%;
+                    order: -1;
                 }
             }
         }
