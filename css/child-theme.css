@@ -17357,6 +17357,10 @@ textarea {
     #index-wrapper #latest-post_section article .latest-post-image-wrapper img {
       width: 100%; }
 
+@media (max-width: 991.98px) {
+  #index-wrapper #the-posts_section .posts-sidebar {
+    display: none; } }
+
 #index-wrapper #the-posts_section .posts-articles {
   padding-right: 0; }
   @media (min-width: 576px) and (max-width: 768.98px) {
