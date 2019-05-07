@@ -17357,29 +17357,29 @@ textarea {
     #index-wrapper #latest-post_section article .latest-post-image-wrapper img {
       width: 100%; }
 
-@media (max-width: 991.98px) {
-  #index-wrapper #the-posts_section .posts-sidebar {
-    display: none; } }
-
 @media (min-width: 576px) and (max-width: 768.98px) {
-  #index-wrapper #the-posts_section .posts-articles {
+  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 540px) / 2) + 10px)); } }
 
 @media (min-width: 769px) and (max-width: 991.98px) {
-  #index-wrapper #the-posts_section .posts-articles {
+  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 760px) / 2) + 10px)); } }
 
 @media (min-width: 992px) and (max-width: 1199.98px) {
-  #index-wrapper #the-posts_section .posts-articles {
+  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 960px) / 2) + 10px)); } }
 
 @media (min-width: 1200px) {
-  #index-wrapper #the-posts_section .posts-articles {
+  #index-wrapper #the-posts_section .row, #index-wrapper #the-posts_section #footer-menu, #index-wrapper #the-posts_section #legal-menu, #index-wrapper #the-posts_section #wrapper-footer .footer-widgets, #wrapper-footer #index-wrapper #the-posts_section .footer-widgets, #index-wrapper #the-posts_section #wrapper-footer .footer-siteinfo, #wrapper-footer #index-wrapper #the-posts_section .footer-siteinfo, #index-wrapper #the-posts_section #front-page-banner #banner-copy, #front-page-banner #index-wrapper #the-posts_section #banner-copy {
     margin-right: 0;
     margin-right: calc(-1 * (((100vw - 1088px) / 2) + 10px)); } }
+
+@media (max-width: 991.98px) {
+  #index-wrapper #the-posts_section .posts-sidebar {
+    display: none; } }
 
 #index-wrapper #the-posts_section .posts-articles article {
   border: 1px solid #707070;
