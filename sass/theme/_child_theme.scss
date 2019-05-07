@@ -1618,7 +1618,7 @@ textarea {
                 height: #{$spacer * 21};
                 .post-image-wrapper {
                     display: flex;
-                    flex: 1 0 50%;
+                    flex: 0 0 #{$spacer * 27.25};
                     height: 100%;
                     object-fit: cover;
                     order: 13;
@@ -1633,10 +1633,10 @@ textarea {
                 .post-content-wrapper {
                     display: flex;
                     flex: 1 0 50%;
+                    flex-direction: column;
                     order: -1;
                     padding: #{$spacer * 1.5} 0 #{$spacer * 3.75} #{$spacer * 2.25};
                     .entry-title {
-                        display: block;
                         margin-bottom: #{$spacer * 1.75};
                     }
                 }
