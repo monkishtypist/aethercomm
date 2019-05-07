@@ -46,7 +46,7 @@ $cats = get_categories();
                     </header>
 
                     <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
-                    <span class="crosshairs-gray crosshairs-top-right"></span>
+                    <span class="crosshairs-white crosshairs-top-right"></span>
 
                 </div>
 
@@ -114,6 +114,9 @@ $cats = get_categories();
                             <?php understrap_pagination(); ?>
 
                         </div>
+
+                        <span class="crosshairs-gray crosshairs-top-left"></span>
+                        <span class="crosshairs-gray crosshairs-top-right"></span>
 
                     </div>
 
