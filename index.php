@@ -96,13 +96,15 @@ $cats = get_categories();
 
                     <div class="<?php echo esc_attr( $container ); ?>">
 
+                        <div class="row">
+
                             <?php if ( is_active_sidebar( 'blog' ) ) : ?>
-                                <div class="posts-sidebar">
+                                <div class="posts-sidebar col-2">
                                     <?php dynamic_sidebar( 'blog' ); ?>
                                 </div>
                             <?php endif; ?>
 
-                            <div class="posts-articles">
+                            <div class="posts-articles col">
 
                                 <?php while ( have_posts() ) : the_post(); ?>
 
