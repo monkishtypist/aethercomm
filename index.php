@@ -96,7 +96,7 @@ $cats = get_categories();
 
                     <div class="<?php echo esc_attr( $container ); ?>">
 
-                        <div class="row">
+                        <div class="row no-gutters">
 
                             <?php if ( is_active_sidebar( 'blog' ) ) : ?>
                                 <div class="posts-sidebar col-3">
