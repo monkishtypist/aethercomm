@@ -317,7 +317,7 @@ h3, .h3 {
   font-size: 1.875rem; }
 
 h4, .h4 {
-  font-size: 1.5rem; }
+  font-size: 1.375rem; }
 
 h5, .h5 {
   font-size: 1.25rem; }
@@ -17393,6 +17393,19 @@ textarea {
 @media (max-width: 991.98px) {
   #index-wrapper #the-posts_section .posts-sidebar {
     display: none; } }
+
+#index-wrapper #the-posts_section .posts-sidebar .widget-title {
+  font-size: 2.5rem; }
+
+#index-wrapper #the-posts_section .posts-sidebar .widget_categories ul {
+  list-style: none;
+  padding: 0; }
+  #index-wrapper #the-posts_section .posts-sidebar .widget_categories ul .cat-item {
+    margin-bottom: 1.75rem; }
+    #index-wrapper #the-posts_section .posts-sidebar .widget_categories ul .cat-item a {
+      color: #222222;
+      font-size: 1.375rem;
+      font-weight: 700; }
 
 #index-wrapper #the-posts_section .posts-articles article {
   border: 1px solid #707070;

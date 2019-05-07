@@ -1630,6 +1630,23 @@ textarea {
             @include media-breakpoint-down('md') {
                 display: none;
             }
+            .widget-title {
+                font-size: #{$h2-font-size};
+            }
+            .widget_categories {
+                ul {
+                    list-style: none;
+                    padding: 0;
+                    .cat-item {
+                        margin-bottom: #{$spacer * 1.75};
+                        a {
+                            color: #{$body-color};
+                            font-size: #{$h4-font-size};
+                            font-weight: #{$font-weight-bold};
+                        }
+                    }
+                }
+            }
         }
         .posts-articles {
             // padding-right: 0;
