@@ -1550,6 +1550,10 @@ textarea {
 }
 
 #index-wrapper {
+    .read-more-link {
+        @extend .btn;
+        margin-top: #{$spacer * 1.5};
+    }
     #latest-post_section {
         @include media-breakpoint-down('sm') {
             background-color: #{$white};
@@ -1608,7 +1612,6 @@ textarea {
                 }
             }
             .read-more-link {
-                @extend .btn;
                 @extend .btn-primary;
             }
         }
@@ -1670,7 +1673,6 @@ textarea {
                     height: auto;
                 }
                 .read-more-link {
-                    @extend .btn;
                     @extend .btn-secondary;
                 }
                 .post-image-wrapper {
