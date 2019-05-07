@@ -11,6 +11,16 @@ if ( ! defined( 'ABSPATH' ) ) {
 
 global $post;
 
+$card_meta = false;
+
+$cats = get_the_category();
+if ( $cats ) {
+    $card_meta = sprintf( '<div class="card-meta"><a href="%1$s">%2$s</a></div>',
+        esc_url( get_category_link( $cats[0]->term_id ) ),
+        esc_html( $cats[0]->name )
+    );
+}
+
 $card_img = ( has_post_thumbnail()
     ? get_the_post_thumbnail( 'card-img-top', array( 'class' => 'card-img-top' ) )
     : false );
@@ -65,7 +75,7 @@ switch ( $post->post_type ) { // modify the defaults
     <?php if ( $card_img ) { echo $card_img; } ?>
 
     <div class="card-body">
-        <div class="card-meta"></div>
+        <?php echo ( is_front_page() ? $card_meta : null ); ?>
         <?php echo $card_title; ?>
         <?php echo $card_text; ?>
     </div>
