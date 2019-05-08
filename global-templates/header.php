@@ -40,7 +40,10 @@ $overlay_color = ( get_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page
     <div class="<?php echo esc_attr( $container ); ?>">
 
         <header>
-            <?php if ( $post->post_parent ) : ?>
+            <?php if ( is_single() ) : ?>
+                <div class="page-title"><?php single_term_title(); ?></div>
+                <?php the_title( '<h1 class="page-lede">', '</h1>' ); ?>
+            <?php ( $post->post_parent ) : ?>
                 <div class="page-title"><?php echo get_the_title( $post->post_parent ); ?></div>
                 <?php the_title( '<h1 class="page-lede">', '</h1>' ); ?>
             <?php else : ?>
