@@ -20,12 +20,12 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 		$args = wp_parse_args(
 			$args,
 			array(
-				'mid_size'           => 2,
+				'mid_size'           => 4,
 				'prev_next'          => true,
 				'prev_text'          => '<i class="fal fa-chevron-left"></i>',
 				'next_text'          => '<i class="fal fa-chevron-right"></i>',
                 'screen_reader_text' => __( 'Posts navigation', 'aethercomm' ),
-                'show_all'           => true,
+                // 'show_all'           => true,
 				'type'               => 'array',
 				'current'            => max( 1, get_query_var( 'paged' ) ),
 			)
