@@ -47,7 +47,11 @@ $product_cats = get_categories( $product_cats_args );
             <div class="<?php echo esc_attr( $container ); ?>">
 
                 <nav class="nav">
-                    <?php foreach ( $product_cats as $product_cat ) : ?>
+                    <?php
+                    foreach ( $product_cats as $product_cat ) :
+                        $cat_object = get_category( $product_cat );
+                        var_dump($product_cat);
+                    ?>
                         <a class="nav-link" href="<?php echo get_category_link( $product_cat ); ?>"><?php echo $product_cat->name; ?></a>
                     <?php endforeach; ?>
                 </nav>
@@ -61,12 +65,6 @@ $product_cats = get_categories( $product_cats_args );
     <section id="<?php echo $post->post_name; ?>_loop" class="section-white">
 
         <div class="<?php echo esc_attr( $container ); ?>">
-
-            <div id="products-section-title">
-                <?php echo sprintf( '<h2 class="">%1$s</h2>',
-                    __( 'Team', 'aethercomm' )
-                ); ?>
-            </div>
 
             <?php
             $args = array(
