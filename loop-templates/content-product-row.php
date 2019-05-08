@@ -14,6 +14,7 @@ $terms = get_terms( array(
     'hide_empty' => false,
 ) );
 
+var_dump($terms);
 ?>
 
 <tr>
@@ -27,7 +28,7 @@ $terms = get_terms( array(
     <td><?php acf_field( 'product_specs_frequency_min'); ?></td>
     <td><?php acf_field( 'product_specs_frequency_max'); ?></td>
     <td><?php acf_field( 'product_specs_watts'); ?></td>
-    <td><?php echo implode( ", ", $terms ); // Category ?></td>
+    <td><?php // echo implode( ", ", $terms ); // Category ?></td>
     <td>
         <?php echo apply_filters( 'the_excerpt', get_acf_field( 'product_details_short_description', true ) ); ?>
         <a href="<?php echo get_permalink(); ?>" class="read-more-link"><?php _e( 'More', 'aethercomm' ); ?></a>
