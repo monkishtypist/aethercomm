@@ -21,7 +21,7 @@ $queried_object = get_queried_object();
 
     <main class="site-main" id="main">
 
-        <?php get_template_part( 'loop-templates/content', $queried_object->taxonomy ); ?>
+        <?php get_template_part( 'loop-templates/content', 'products' ); ?>
 
     </main><!-- #main -->
 
