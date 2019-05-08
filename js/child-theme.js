@@ -24982,6 +24982,10 @@ return DataTable;
     });
 
     // Datatables
-    $('#products-table').DataTable();
+    var table = $('#products-table').DataTable();
+
+    $('#productsearch').on( 'keyup', function () {
+        table.search( this.value ).draw();
+    } );
 
 })(jQuery);
