@@ -1779,8 +1779,9 @@ textarea {
             color: #{$white};
             font-size: #{$font-size-base * .875};
             font-weight: #{$font-weight-bold};
-            margin-left: #{$spacer * .8125};
-            margin-right: #{$spacer * .8125};
+            line-height: 1.625;
+            margin-left: #{$spacer * 1.75};
+            margin-right: #{$spacer * 1.75};
             padding: 0;
             text-transform: uppercase;
             &:first-of-type {
