@@ -13,21 +13,24 @@ if ( $post->post_parent ) {
     $template_slug = $post->post_name;
 }
 
-$section_header_background_image_id = false;
-
 if ( get_acf_field( 'page_header_background' ) ) {
-    $section_header_background_image_id = get_acf_field( 'page_header_background', true );
+    $section_header_image_id = get_acf_field( 'page_header_background', true );
+    $section_header_image = wp_get_attachment_image( $section_header_image_id, 'full', false, array( 'class' => 'section-overlay-image img-fluid' ) )
+} elseif ( has_post_thumbnail() ) {
+    $section_header_image = get_the_post_thumbnail( get_the_ID(), 'full', array( 'class' => 'section-overlay-image img-fluid' ) );
+} else {
+    $section_header_image = false;
 }
 
 ?>
 
 <section id="<?php echo $post->post_name; ?>_header" class="section_header <?php echo $template_slug; ?>_header section-header-overlay section-header-overlay_<?php echo get_acf_field( 'page_header_overlay', true ); ?>">
 
-    <?php if ( $section_header_background_image_id ) : ?>
+    <?php if ( $section_header_image ) : ?>
         <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
             <div class="section-image-overlay-wrapper-inner">
                 <div class="overlay"></div>
-                <?php echo wp_get_attachment_image( $section_header_background_image_id, 'full', false, array( 'class' => 'section-overlay-image img-fluid' ) ); ?>
+                <?php echo $section_header_image; ?>
             </div>
         </div>
     <?php endif; ?>
