@@ -146,9 +146,6 @@ gulp.task( 'scripts', function() {
         // FontAwesome
         paths.dev + '/js/font-awesome/fontawesome.js',
 
-        // BS Tables
-        paths.dev + '/js/bootstrap-table.js',
-
         // Adding currently empty javascript file to add on for your own themes´ customizations
         // Please add any customizations to this .js file only!
         paths.dev + '/js/custom-javascript.js'
@@ -219,14 +216,6 @@ gulp.task( 'copy-assets', function() {
 // UnderStrap SCSS files
     gulp.src( paths.node + 'understrap/sass/**/*.scss' )
         .pipe( gulp.dest( paths.dev + '/sass/understrap' ) );
-
-// BootstrapTable JS files into /src/js
-    gulp.src( paths.node + 'bootstrap-table/src/bootstrap-table.js' )
-        .pipe( gulp.dest( paths.dev + '/js' ) );
-
-// BootstrapTable SCSS files
-    gulp.src( paths.node + 'bootstrap-table/src/bootstrap-table.scss' )
-        .pipe( gulp.dest( paths.dev + '/sass/bootstrap-table' ) );
 
     return stream;
 });

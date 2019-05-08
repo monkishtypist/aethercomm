@@ -45,6 +45,8 @@ function aethercomm_theme_enqueue_styles() {
     if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
         wp_enqueue_script( 'comment-reply' );
     }
+    wp_enqueue_script( 'datatables-scripts', get_stylesheet_directory_uri() . '/datatables/datatables.min.js', array(), $the_theme->get( 'Version' ), true );
+    wp_enqueue_style( 'datatables-styles', get_stylesheet_directory_uri() . '/datatables/datatables.min.css', array(), $the_theme->get( 'Version' ) );
 }
 
 /* 2. Theme Setup */
