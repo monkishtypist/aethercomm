@@ -17249,7 +17249,7 @@ textarea {
 /* Tables */
 table.table {
   font-size: 0.875rem; }
-  table.table a {
+  table.table a:not(.btn) {
     color: #4A63AE; }
 
 /**
