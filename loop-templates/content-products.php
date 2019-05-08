@@ -82,7 +82,16 @@ $product_cats = get_categories( $product_cats_args );
 
                 <table id="products-table" class="products-table table ">
 
-                    <thead></thead>
+                    <thead>
+                        <tr>
+                            <th>Filters</th>
+                            <th>Part Number</th>
+                            <th>Frequency Min</th>
+                            <th>Frequency Max</th>
+                            <th>Watts</th>
+                            <th>Description</th>
+                        </tr>
+                    </thead>
 
                     <tbody>
 
