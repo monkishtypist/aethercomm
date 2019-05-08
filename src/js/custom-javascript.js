@@ -57,11 +57,18 @@
     var table = $('#products-table').DataTable( {
         "columnDefs": [
             {
+                "order": [[ 1, "asc" ]]
+            },
+            {
+                "targets": [ 0 ],
+                "orderable": false
+            },
+            {
                 "targets": [ 5 ],
                 "visible": false
             },
             {
-                "targets": [ 0, 6 ],
+                "targets": [ 6 ],
                 "orderable": false
             }
         ]
