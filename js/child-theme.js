@@ -24987,6 +24987,10 @@ return DataTable;
             {
                 "targets": [ 5 ],
                 "visible": false
+            },
+            {
+                "targets": [ 6 ],
+                "orderable": false
             }
         ]
     });
