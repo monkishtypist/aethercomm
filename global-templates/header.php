@@ -15,7 +15,7 @@ if ( $post->post_parent ) {
 
 if ( get_acf_field( 'page_header_background' ) ) {
     $section_header_image_id = get_acf_field( 'page_header_background', true );
-    $section_header_image = wp_get_attachment_image( $section_header_image_id, 'full', false, array( 'class' => 'section-overlay-image img-fluid' ) )
+    $section_header_image = wp_get_attachment_image( $section_header_image_id, 'full', false, array( 'class' => 'section-overlay-image img-fluid' ) );
 } elseif ( has_post_thumbnail() ) {
     $section_header_image = get_the_post_thumbnail( get_the_ID(), 'full', array( 'class' => 'section-overlay-image img-fluid' ) );
 } else {
