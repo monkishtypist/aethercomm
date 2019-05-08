@@ -1153,6 +1153,7 @@ table.table {
         color: #{$white};
         tr {
             th {
+                border-bottom: #{$table-border-width * 2} solid #{$gray-700};
                 color: #{$white};
             }
         }
