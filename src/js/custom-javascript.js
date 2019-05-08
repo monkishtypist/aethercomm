@@ -61,7 +61,7 @@
                 "visible": false
             },
             {
-                "targets": [ 6 ],
+                "targets": [ 0, 6 ],
                 "orderable": false
             }
         ]
