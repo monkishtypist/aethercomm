@@ -13,6 +13,7 @@ if ( $post->post_parent ) {
     $template_slug = $post->post_name;
 }
 
+// Header image overlay
 if ( get_acf_field( 'page_header_background' ) ) {
     $section_header_image_id = get_acf_field( 'page_header_background', true );
     $section_header_image = wp_get_attachment_image( $section_header_image_id, 'full', false, array( 'class' => 'section-overlay-image img-fluid' ) );
@@ -21,7 +22,6 @@ if ( get_acf_field( 'page_header_background' ) ) {
 } else {
     $section_header_image = false;
 }
-
 $overlay_color = ( get_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page_header_overlay', true ) : 'black' );
 
 $cats = get_the_category();
@@ -33,6 +33,38 @@ if ( $cats ) :
         $cat_names_array[] = esc_html( $cat->name );
     }
     $cat_names_string = implode( " | ", $cat_names_array );
+endif;
+
+// Page Title
+$page_title = false;
+$page_lede = false;
+
+if ( is_single() ) :
+    $page_title = sprintf( '<div class="page-title">%1$s</div>',
+        $cat_names_string );
+    $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
+        get_the_title() );
+elseif ( $post->post_parent ) :
+    $page_title = sprintf( '<div class="page-title">%1$s</div>',
+        get_the_title( $post->post_parent ) );
+    $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
+        get_the_title() );
+else :
+    if ( get_acf_field( 'page_header_lede' ) ) {
+        $page_title = sprintf( '<h1 class="page-title">%1$s</h1>',
+            get_the_title() );
+        $page_lede = sprintf( '<div class="page-lede">%1$s</div>',
+            apply_filters( 'the_content', get_acf_field( 'page_header_lede', true ) ) );
+    } else {
+        $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
+            get_the_title() );
+    }
+endif;
+
+// Page header Copy
+$page_header_copy = false;
+if ( get_acf_field( 'page_header_copy' ) ) :
+    $page_header_copy = apply_filters( 'the_content', get_acf_field( 'page_header_copy', true ) );
 endif;
 
 ?>
@@ -51,21 +83,9 @@ endif;
     <div class="<?php echo esc_attr( $container ); ?>">
 
         <header>
-            <?php if ( is_single() ) : ?>
-                <div class="page-title page-cats"><?php echo $cat_names_string; ?></div>
-                <?php the_title( '<h1 class="page-lede">', '</h1>' ); ?>
-            <?php elseif ( $post->post_parent ) : ?>
-                <div class="page-title"><?php echo get_the_title( $post->post_parent ); ?></div>
-                <?php the_title( '<h1 class="page-lede">', '</h1>' ); ?>
-            <?php else : ?>
-                <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
-                <?php if ( get_acf_field( 'page_header_lede' ) ) { ?>
-                    <div class="page-lede"><?php echo apply_filters( 'the_content', get_acf_field( 'page_header_lede', true ) ); ?></div>
-                <?php } ?>
-                <?php if ( get_acf_field( 'page_header_copy' ) ) { ?>
-                    <?php echo apply_filters( 'the_content', get_acf_field( 'page_header_copy', true ) ); ?>
-                <?php } ?>
-            <?php endif; ?>
+            <?php echo $page_title; ?>
+            <?php echo $page_lede; ?>
+            <?php echo $page_header_copy; ?>
         </header>
 
         <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
