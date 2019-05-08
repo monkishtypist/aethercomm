@@ -39,6 +39,8 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 
 			<ul class="pagination">
 
+            <pre><?php print_r( $links ); ?></pre>
+
 				<?php foreach ( $links as $key => $link ) { ?>
 					<li class="page-item <?php echo strpos( $link, 'current' ) ? 'active' : ''; ?>">
 						<?php echo str_replace( 'page-numbers', 'page-link', $link ); ?>
