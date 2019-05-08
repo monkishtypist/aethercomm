@@ -19,13 +19,11 @@ get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$cats = get_categories();
-
-$queried_object = get_queried_object();
+global $post;
 
 ?>
 
-<div class="wrapper" id="product-categories-wrapper" class="product-categories-wrapper">
+<div class="wrapper" id="<?php echo $post->post_name; ?>_wrapper" class="<?php echo $post->post_name; ?>-wrapper">
 
     <main class="site-main" id="main">
 
