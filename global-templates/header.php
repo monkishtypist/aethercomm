@@ -35,7 +35,7 @@ if ( $cats ) :
     $cat_names_string = implode( " | ", $cat_names_array );
 endif;
 
-// Page Title
+// Page Title & Lede
 $page_title = false;
 $page_lede = false;
 
