@@ -76,41 +76,38 @@ $product_cats = get_categories( $product_cats_args );
             $query = new WP_Query( $args );
             ?>
 
-            <?php if ( $query->have_posts() ) : ?>
+            <table id="products-table" class="products-table table" data-toggle="table">
 
-                <?php ob_start(); ?>
+                <thead>
+                    <tr>
+                        <th>Filters</th>
+                        <th>Part Number</th>
+                        <th>Frequency Min</th>
+                        <th>Frequency Max</th>
+                        <th>Watts</th>
+                        <th>Description</th>
+                    </tr>
+                </thead>
 
-                <table id="products-table" class="products-table table" data-toggle="table">
+                <tbody>
 
-                    <thead>
-                        <tr>
-                            <th>Filters</th>
-                            <th>Part Number</th>
-                            <th>Frequency Min</th>
-                            <th>Frequency Max</th>
-                            <th>Watts</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
+                    <?php if ( $query->have_posts() ) : ?>
 
-                    <tbody>
+                        <?php ob_start(); ?>
 
-                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                            <?php get_template_part( 'loop-templates/content', 'product-row' ); ?>
+                                <?php get_template_part( 'loop-templates/content', 'product-row' ); ?>
 
-                        <?php endwhile; ?>
+                            <?php endwhile; ?>
 
-                    </tbody>
+                        <?php echo ob_get_clean(); ?>
 
-                </table>
+                    <?php endif; wp_reset_query(); ?>
 
-                <?php echo ob_get_clean(); ?>
+                </tbody>
 
-            <?php endif; wp_reset_query(); ?>
-
-            <span class="crosshairs-blue crosshairs-bottom-left"></span>
-            <span class="crosshairs-blue crosshairs-bottom-right"></span>
+            </table>
 
         </div>
 
