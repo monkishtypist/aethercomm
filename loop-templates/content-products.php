@@ -28,7 +28,7 @@ $product_cats = get_categories( $product_cats_args );
 
     <?php get_template_part( 'global-templates/header' ); ?>
 
-    <section id="<?php echo $post->post_name; ?>_search" class="section-white">
+    <section id="products_search" class="section-white">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -64,14 +64,14 @@ $product_cats = get_categories( $product_cats_args );
 
     <?php endif; ?>
 
-    <section id="<?php echo $post->post_name; ?>_loop" class="section-white">
+    <section id="products_loop" class="section-white">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <?php
             $args = array(
                 'post_type' => 'products',
-                'posts_per_page' => 20
+                'posts_per_page' => 9
             );
             $query = new WP_Query( $args );
             ?>
@@ -80,15 +80,21 @@ $product_cats = get_categories( $product_cats_args );
 
                 <?php ob_start(); ?>
 
-                <div id="team-members-cards" class="card-deck">
+                <table id="products-table" class="products-table table ">
 
-                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                    <thead></thead>
 
-                        <?php get_template_part( 'loop-templates/content', 'card' ); ?>
+                    <tbody>
 
-                    <?php endwhile; ?>
+                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                </div>
+                            <?php get_template_part( 'loop-templates/content', 'product-row' ); ?>
+
+                        <?php endwhile; ?>
+
+                    </tbody>
+
+                </table>
 
                 <?php echo ob_get_clean(); ?>
 
