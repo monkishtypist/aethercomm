@@ -21,7 +21,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 $cats = get_categories();
 
-$cat_id = $cats[0]->cat_ID;
+$queried_object = get_queried_object();
 
 ?>
 
@@ -45,7 +45,7 @@ $cat_id = $cats[0]->cat_ID;
                     <header>
                         <h1 class="page-title"><?php echo( sprintf( '%1$s: %2$s &amp; %3$s', single_term_title( '', false ), __( 'News', 'aethercomm' ), __( 'Articles', 'aethercomm' ) ) ); ?></h1>
                         <?php if ( is_category() ) : ?>
-                            <div class="page-lede"><?php echo category_description( $cat_id ); ?></div>
+                            <div class="page-lede"><?php echo category_description( $queried_object->term_id ); ?></div>
                         <?php endif; ?>
                     </header>
 
