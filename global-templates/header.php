@@ -22,9 +22,11 @@ if ( get_acf_field( 'page_header_background' ) ) {
     $section_header_image = false;
 }
 
+$overlay_color = ( get_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page_header_overlay', true ) : 'black' );
+
 ?>
 
-<section id="<?php echo $post->post_name; ?>_header" class="section_header <?php echo $template_slug; ?>_header section-header-overlay section-header-overlay_<?php echo get_acf_field( 'page_header_overlay', true ); ?>">
+<section id="<?php echo $post->post_name; ?>_header" class="section_header <?php echo $template_slug; ?>_header section-header-overlay section-header-overlay_<?php echo $overlay_color; ?>">
 
     <?php if ( $section_header_image ) : ?>
         <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
