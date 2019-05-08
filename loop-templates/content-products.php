@@ -14,12 +14,13 @@ global $post;
 $container = get_theme_mod( 'understrap_container_type' );
 
 $product_cats_args = array(
-    'taxonomy' => 'product-categories',
-    'orderby' => 'name',
-    'order'   => 'ASC'
+    'taxonomy'   => 'product-categories',
+    'orderby'    => 'name',
+    'order'      => 'ASC',
+    'hide_empty' => false
 );
 
-$product_cats = get_categories($product_cats_args);
+$product_cats = get_categories( $product_cats_args );
 
 ?>
 
@@ -69,7 +70,7 @@ $product_cats = get_categories($product_cats_args);
 
             <?php
             $args = array(
-                'post_type' => 'team-members',
+                'post_type' => 'products',
                 'posts_per_page' => 20
             );
             $query = new WP_Query( $args );
