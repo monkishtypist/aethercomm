@@ -5,6 +5,8 @@
 
 global $post;
 
+$queried_object = get_queried_object();
+
 $container = get_theme_mod( 'understrap_container_type' );
 
 if ( $post->post_parent ) {
@@ -49,6 +51,11 @@ elseif ( $post->post_parent ) :
         get_the_title( $post->post_parent ) );
     $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
         get_the_title() );
+elseif ( is_tax( 'product-categories' ) ) :
+    $page_title = sprintf( '<div class="page-title">%1$s</div>',
+        __( 'Our Products', 'aethercomm' ) );
+    $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
+        esc_html( $queried_object->name ) );
 else :
     if ( get_acf_field( 'page_header_lede' ) ) {
         $page_title = sprintf( '<h1 class="page-title">%1$s</h1>',
@@ -65,6 +72,8 @@ endif;
 $page_header_copy = false;
 if ( get_acf_field( 'page_header_copy' ) ) :
     $page_header_copy = apply_filters( 'the_content', get_acf_field( 'page_header_copy', true ) );
+elseif ( is_tax() && ! empty( $queried_object->description ) ) :
+    $page_header_copy = apply_filters( 'the_content', $queried_object->description );
 endif;
 
 ?>
