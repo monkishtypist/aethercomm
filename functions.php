@@ -437,8 +437,18 @@ if ( ! function_exists( 'aethercomm_modify_query' ) ) {
         }
 
         if ( $query->is_home() && $query->is_main_query() ) {
-            // Offset the main query by one
-            $query->set( 'offset', 1 );
+            $offset = 1;
+            $ppp = get_option('posts_per_page');
+            if ( $query->is_paged ) {
+                //Manually determine page query offset (offset + current page (minus one) x posts per page)
+                $page_offset = $offset + ( ($query->query_vars['paged']-1) * $ppp );
+                //Apply adjust page offset
+                $query->set('offset', $page_offset );
+            }
+            else {
+                //This is the first page. Just use the offset...
+                $query->set('offset',$offset);
+            }
         }
     }
 }

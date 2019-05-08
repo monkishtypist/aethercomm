@@ -16788,16 +16788,22 @@ textarea {
       margin-bottom: 4rem !important; } }
 
 /* Pagination */
+.pagination {
+  margin-top: 3.25rem; }
+
 .page-item .page-link {
-  border-color: transparent; }
+  border-color: transparent;
+  color: #222222; }
   .page-item .page-link.next, .page-item .page-link.prev {
     background-color: #222222;
+    color: #fff;
     font-family: 'Font Awesome 5 Pro';
     font-weight: 300; }
 
 .page-item.active .page-link {
   background-color: #4A63AE;
-  border-color: #4A63AE; }
+  border-color: #4A63AE;
+  color: #fff; }
 
 /**
  * Footer
