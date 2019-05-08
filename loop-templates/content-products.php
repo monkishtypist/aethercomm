@@ -48,8 +48,9 @@ $product_cats = get_categories( $product_cats_args );
 
                 <nav class="nav">
                     <?php foreach ( $product_cats as $product_cat ) : ?>
-                        <?php echo sprintf( '<a class="nav-link" href="%1$s">%2$s</a>',
+                        <?php echo sprintf( '<a class="nav-link" href="%1$s" data-cat-count="%2$s">%3$s</a>',
                             get_category_link( $product_cat ),
+                            $product_cat->category_count,
                             sprintf( '%1$s%2$s',
                                 esc_html( $product_cat->name ),
                                 ( $product_cat->category_count > 0 ? sprintf( ' (%1$s)', $product_cat->category_count ) : '' )

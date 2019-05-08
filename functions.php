@@ -281,7 +281,7 @@ if ( ! function_exists( 'aethercomm_product_cats_tax_init' ) ) {
             'back_to_terms'              => __( 'Back to product categories', 'aethercomm' ),
         );
         $rewrite = array(
-            'slug'                       => 'product-categories',
+            'slug'                       => 'products',
             'with_front'                 => false,
             'hierarchical'               => true
         );
