@@ -15083,7 +15083,8 @@ button.btn,
   #search-wrapper button.btn-sm.read-more-link {
     font-size: 0.625rem;
     padding-bottom: 0.5rem;
-    padding-top: 0.5rem; }
+    padding-top: 0.5rem;
+    width: auto; }
     a.btn.btn-sm::before, .btn-group-sm > a.btn::before, #index-wrapper .btn-group-sm > a.read-more-link::before,
     #archive-wrapper .btn-group-sm > a.read-more-link::before,
     #search-wrapper .btn-group-sm > a.read-more-link::before, #index-wrapper a.btn-sm.read-more-link::before,

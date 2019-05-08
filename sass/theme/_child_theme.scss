@@ -374,6 +374,7 @@ button.btn {
         font-size: #{$font-size-base * 0.625};
         padding-bottom: #{$btn-padding-y * .5};
         padding-top: #{$btn-padding-y * .5};
+        width: auto;
         &::before {
             display: none;
         }
