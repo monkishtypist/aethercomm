@@ -76,7 +76,7 @@ $product_cats = get_categories( $product_cats_args );
             $query = new WP_Query( $args );
             ?>
 
-            <table id="products-table" class="products-table table" data-toggle="table">
+            <table id="products-table" class="products-table table tablehover" data-toggle="table">
 
                 <thead>
                     <tr>
