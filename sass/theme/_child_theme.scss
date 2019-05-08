@@ -1595,6 +1595,7 @@ textarea {
 #search-wrapper {
     .read-more-link {
         @extend .btn;
+        display: block;
         margin-top: #{$spacer * 2};
     }
     #latest-post_section {

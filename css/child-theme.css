@@ -17583,6 +17583,7 @@ textarea {
 #index-wrapper .read-more-link,
 #archive-wrapper .read-more-link,
 #search-wrapper .read-more-link {
+  display: block;
   margin-top: 2rem; }
 
 @media (max-width: 768.98px) {
