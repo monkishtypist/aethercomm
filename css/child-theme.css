@@ -18095,10 +18095,14 @@ textarea {
     font-weight: 700;
     margin-left: 0.8125rem;
     margin-right: 0.8125rem;
+    padding: 0;
     text-transform: uppercase; }
     #products_page-wrapper nav .nav-link:first-of-type {
       margin-left: 0; }
     #products_page-wrapper nav .nav-link:last-of-type {
       margin-right: 0; }
+    #products_page-wrapper nav .nav-link.active {
+      color: #4A63AE;
+      border-bottom: 8px solid #4A63AE; }
 
 /*# sourceMappingURL=child-theme.css.map */

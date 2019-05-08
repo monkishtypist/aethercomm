@@ -1781,12 +1781,17 @@ textarea {
             font-weight: #{$font-weight-bold};
             margin-left: #{$spacer * .8125};
             margin-right: #{$spacer * .8125};
+            padding: 0;
             text-transform: uppercase;
             &:first-of-type {
                 margin-left: 0;
             }
             &:last-of-type {
                 margin-right: 0;
+            }
+            &.active {
+                color: #{$secondary};
+                border-bottom: 8px solid #{$secondary};
             }
         }
     }

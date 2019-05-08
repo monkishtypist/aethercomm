@@ -69,7 +69,13 @@
 
     $('#product-cats-nav').on( 'click', 'a', function( event ) {
         event.preventDefault();
-        table.columns( 5 ).search( $(this).data('cat-slug') ).draw();
+        if ( $(this).hasClass('active') ) {
+            table.columns( 5 ).search( '' ).draw();
+            $(this).removeClass('active');
+        } else {
+            table.columns( 5 ).search( $(this).data('cat-slug') ).draw();
+            $(this).addClass('active').siblings().removeClass('active');
+        }
     } );
 
 })(jQuery);
