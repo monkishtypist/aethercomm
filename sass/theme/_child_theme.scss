@@ -1768,31 +1768,37 @@ textarea {
 }
 
 #products_page-wrapper {
-    nav {
-        margin-bottom: 0;
-        margin-left: -#{$nav-link-padding-x};
-        margin-right: -#{$nav-link-padding-x};
-        @include media-breakpoint-down('sm') {
-            margin-bottom: #{$spacer * .5};
-        }
-        .nav-link {
-            color: #{$white};
-            font-size: #{$font-size-base * .875};
-            font-weight: #{$font-weight-bold};
-            line-height: 1.625;
-            margin-left: #{$spacer * 1.75};
-            margin-right: #{$spacer * 1.75};
-            padding: 0;
-            text-transform: uppercase;
-            &:first-of-type {
-                margin-left: 0;
+    #products_categories {
+        padding-bottom: #{$spacer * 1.25};
+        padding-top: #{$spacer * 1.5};
+        nav {
+            margin-bottom: 0;
+            margin-left: -#{$nav-link-padding-x};
+            margin-right: -#{$nav-link-padding-x};
+            @include media-breakpoint-down('sm') {
+                margin-bottom: #{$spacer * .5};
             }
-            &:last-of-type {
-                margin-right: 0;
-            }
-            &.active {
-                color: #{$secondary};
-                border-bottom: 8px solid #{$secondary};
+            .nav-link {
+                border-bottom: #{$spacer * .5} solid transparent;
+                color: #{$white};
+                font-size: #{$font-size-base * .875};
+                font-weight: #{$font-weight-bold};
+                line-height: 1.625;
+                margin-left: #{$spacer * 1.75};
+                margin-right: #{$spacer * 1.75};
+                padding-left: 0;
+                padding-right: 0;
+                text-transform: uppercase;
+                &:first-of-type {
+                    margin-left: 0;
+                }
+                &:last-of-type {
+                    margin-right: 0;
+                }
+                &.active {
+                    color: #{$secondary};
+                    border-bottom: #{$spacer * .5} solid #{$secondary};
+                }
             }
         }
     }
