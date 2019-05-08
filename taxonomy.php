@@ -19,15 +19,15 @@ $queried_object = get_queried_object();
 
 ?>
 
-<div class="wrapper" id="<?php echo $post->post_name; ?>_wrapper" class="<?php echo $post->post_name; ?>-wrapper">
+<div class="wrapper" id="<?php echo $queried_object->taxonomy; ?>_wrapper" class="<?php echo $queried_object->taxonomy; ?>-wrapper">
 
     <main class="site-main" id="main">
 
     <pre><?php print_r( $queried_object ); ?></pre>
 
-        <?php while ( have_posts() ) : the_post(); ?>
+        <?php get_template_part( 'loop-templates/content', 'products' ); ?>
 
-            <?php get_template_part( 'loop-templates/content', 'products' ); ?>
+        <?php while ( have_posts() ) : the_post(); ?>
 
         <?php endwhile; // end of the loop. ?>
 
