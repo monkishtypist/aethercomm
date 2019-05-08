@@ -67,7 +67,8 @@
         table.search( this.value ).draw();
     } );
 
-    $('#product-cats-nav').on( 'click', 'a', function() {
+    $('#product-cats-nav').on( 'click', 'a', function( event ) {
+        event.preventDefault();
         table.columns( 5 ).search( this.data('cat-slug') ).draw();
     } );
 

@@ -61,7 +61,7 @@ $product_cats = get_categories( $product_cats_args );
                 <nav id="product-cats-nav" class="nav">
                     <?php foreach ( $product_cats as $product_cat ) : ?>
                         <?php echo sprintf( '<a class="nav-link" href="%1$s" data-cat-slug="%2$s" data-cat-count="%3$s">%4$s</a>',
-                            get_category_link( $product_cat ),
+                            '#', // get_category_link( $product_cat ),
                             $product_cat->slug,
                             $product_cat->category_count,
                             sprintf( '%1$s%2$s',
