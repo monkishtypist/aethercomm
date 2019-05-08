@@ -20,7 +20,7 @@ foreach ( $terms as $term ) {
     <td>
         <a href="#" class="btn btn-secondary btn-sm"><?php echo sprintf( '%1$s<br />%2$s', __( 'Request', 'aethercomm' ), __( 'Details', 'aethercomm' ) ); ?></a>
     </td>
-    <td>
+    <td data-order="<?php echo get_acf_field( 'product_specs_model_number', true ); ?>">
         <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
         <?php echo sprintf( '<a href="%1$s" class="btn-link product-link">%2$s</a>',
             get_permalink(),
