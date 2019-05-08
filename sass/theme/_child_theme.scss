@@ -1093,6 +1093,25 @@ textarea {
     }
 }
 
+/* Pagination */
+.page-item {
+    .page-link {
+        border-color: transparent;
+        &.next,
+        &.prev {
+            background-color: #{$dark};
+            font-family: 'Font Awesome 5 Pro';
+            font-weight: #{$font-weight-light};
+        }
+    }
+    &.active {
+        .page-link {
+            background-color: #{$blue};
+            border-color: #{$blue};
+        }
+    }
+}
+
 /**
  * Footer
  *

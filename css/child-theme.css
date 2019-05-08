@@ -16787,6 +16787,18 @@ textarea {
     .child-page-content .rev-slider-outer {
       margin-bottom: 4rem !important; } }
 
+/* Pagination */
+.page-item .page-link {
+  border-color: transparent; }
+  .page-item .page-link.next, .page-item .page-link.prev {
+    background-color: #222222;
+    font-family: 'Font Awesome 5 Pro';
+    font-weight: 300; }
+
+.page-item.active .page-link {
+  background-color: #4A63AE;
+  border-color: #4A63AE; }
+
 /**
  * Footer
  *
