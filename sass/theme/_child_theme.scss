@@ -1591,7 +1591,8 @@ textarea {
 }
 
 #index-wrapper,
-#archive-wrapper {
+#archive-wrapper,
+#search-wrapper {
     .read-more-link {
         @extend .btn;
         margin-top: #{$spacer * 2};
