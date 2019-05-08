@@ -1589,7 +1589,8 @@ textarea {
     }
 }
 
-#index-wrapper {
+#index-wrapper,
+#archive-wrapper {
     .read-more-link {
         @extend .btn;
         margin-top: #{$spacer * 2};
