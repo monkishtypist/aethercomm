@@ -25,7 +25,7 @@ $queried_object = get_queried_object();
 
 ?>
 
-<div class="wrapper" id="products-wrapper" class="products-wrapper">
+<div class="wrapper" id="product-categories-wrapper" class="product-categories-wrapper">
 
     <main class="site-main" id="main">
 
