@@ -1176,7 +1176,7 @@ table.dataTable thead .sorting_desc_disabled:before {
 }
 
 /* Tables */
-table.table {
+.table {
     font-size: #{$font-size-base * 0.875};
     thead {
         background-color: #{$gray-700};
