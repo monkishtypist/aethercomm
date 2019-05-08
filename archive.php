@@ -25,13 +25,13 @@ $queried_object = get_queried_object();
 
 ?>
 
-<div class="wrapper" id="index-wrapper" class="archive-wrapper">
+<div class="wrapper" id="archive-wrapper" class="archive-wrapper">
 
     <main class="site-main" id="main">
 
         <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-            <section id="index_header" class="section_header index_header section-header-overlay section-header-overlay_black">
+            <section id="archive_header" class="section_header archive_header section-header-overlay section-header-overlay_black">
 
                 <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
                     <div class="section-image-overlay-wrapper-inner">
@@ -98,6 +98,6 @@ $queried_object = get_queried_object();
 
     </main><!-- #main -->
 
-</div><!-- #index-wrapper -->
+</div><!-- #archive-wrapper -->
 
 <?php get_footer(); ?>

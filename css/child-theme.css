@@ -17879,4 +17879,23 @@ textarea {
         #search-wrapper #the-posts_section .posts-articles article .post-content-wrapper .read-more-link {
           width: 100%; } }
 
+#products_page-wrapper nav {
+  margin-bottom: 3.25rem;
+  margin-left: -1rem;
+  margin-right: -1rem; }
+  @media (max-width: 768.98px) {
+    #products_page-wrapper nav {
+      margin-bottom: 0.5rem; } }
+  #products_page-wrapper nav .nav-link {
+    color: #fff;
+    font-size: 0.875rem;
+    font-weight: 700;
+    margin-left: 0.8125rem;
+    margin-right: 0.8125rem;
+    text-transform: uppercase; }
+    #products_page-wrapper nav .nav-link:first-of-type {
+      margin-left: 0; }
+    #products_page-wrapper nav .nav-link:last-of-type {
+      margin-right: 0; }
+
 /*# sourceMappingURL=child-theme.css.map */

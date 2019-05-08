@@ -1759,3 +1759,28 @@ textarea {
         }
     }
 }
+
+#products_page-wrapper {
+    nav {
+        margin-bottom: #{$spacer * 3.25};
+        margin-left: -#{$nav-link-padding-x};
+        margin-right: -#{$nav-link-padding-x};
+        @include media-breakpoint-down('sm') {
+            margin-bottom: #{$spacer * .5};
+        }
+        .nav-link {
+            color: #{$white};
+            font-size: #{$font-size-base * .875};
+            font-weight: #{$font-weight-bold};
+            margin-left: #{$spacer * .8125};
+            margin-right: #{$spacer * .8125};
+            text-transform: uppercase;
+            &:first-of-type {
+                margin-left: 0;
+            }
+            &:last-of-type {
+                margin-right: 0;
+            }
+        }
+    }
+}
