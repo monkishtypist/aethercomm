@@ -272,13 +272,6 @@ p {
 }
 h1, .h1 {
     line-height: #{$h1-line-height};
-    &.page-title {
-        font-size: #{$font-size-base * .75};
-        font-weight: #{$font-weight-black};
-        letter-spacing: .600em;
-        margin-bottom: 2em;
-        text-transform: uppercase;
-    }
 }
 h2, .h2 {
     line-height: #{$h2-line-height};
@@ -286,6 +279,13 @@ h2, .h2 {
     @include media-breakpoint-down('sm') {
         font-size: #{$font-size-base * 1.875};
     }
+}
+.page-title {
+    font-size: #{$font-size-base * .75};
+    font-weight: #{$font-weight-black};
+    letter-spacing: .600em;
+    margin-bottom: 2em;
+    text-transform: uppercase;
 }
 .page-lede {
     font-size: #{$font-size-base * 2.625};

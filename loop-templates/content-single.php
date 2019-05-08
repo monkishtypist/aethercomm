@@ -29,9 +29,6 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
             </div>
 
-            <span class="crosshairs-gray crosshairs-bottom-left"></span>
-            <span class="crosshairs-gray crosshairs-bottom-right"></span>
-
         </div>
 
     </section>

@@ -52,7 +52,7 @@ endif;
 
         <header>
             <?php if ( is_single() ) : ?>
-                <div class="page-title"><?php echo $cat_names_string; ?></div>
+                <div class="page-title page-cats"><?php echo $cat_names_string; ?></div>
                 <?php the_title( '<h1 class="page-lede">', '</h1>' ); ?>
             <?php elseif ( $post->post_parent ) : ?>
                 <div class="page-title"><?php echo get_the_title( $post->post_parent ); ?></div>
