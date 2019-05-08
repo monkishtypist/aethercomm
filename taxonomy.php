@@ -25,11 +25,15 @@ $queried_object = get_queried_object();
 
     <pre><?php print_r( $queried_object ); ?></pre>
 
-        <?php get_template_part( 'loop-templates/content', 'products' ); ?>
+        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
 
-        <?php while ( have_posts() ) : the_post(); ?>
+            <?php get_template_part( 'loop-templates/content', 'card' ); ?>
 
-        <?php endwhile; // end of the loop. ?>
+        <?php endwhile; ?><?php else : ?>
+
+            <?php get_template_part( 'loop-templates/content', $queried_object->taxonomy ); ?>
+
+        <?php endif; ?>
 
     </main><!-- #main -->
 
