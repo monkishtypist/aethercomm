@@ -17255,6 +17255,12 @@ table.table {
     table.table thead tr th {
       border-bottom: 2px solid #676767;
       color: #fff; }
+      table.table thead tr th .sorting::before {
+        content: "\f0de";
+        font-family: "Font Awesome 5 Pro"; }
+      table.table thead tr th .sorting::after {
+        content: "\f0dd";
+        font-family: "Font Awesome 5 Pro"; }
   table.table a.btn-link {
     color: #4A63AE;
     display: block;

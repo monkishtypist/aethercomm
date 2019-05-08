@@ -1155,6 +1155,16 @@ table.table {
             th {
                 border-bottom: #{$table-border-width * 2} solid #{$gray-700};
                 color: #{$white};
+                .sorting {
+                    &::before {
+                        content: "\f0de";
+                        font-family: "Font Awesome 5 Pro";
+                    }
+                    &::after {
+                        content: "\f0dd";
+                        font-family: "Font Awesome 5 Pro";
+                    }
+                }
             }
         }
     }
