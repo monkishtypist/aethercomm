@@ -29,9 +29,9 @@ $queried_object = get_queried_object();
 
     <main class="site-main" id="main">
 
+        <?php get_template_part( 'loop-templates/content', 'products' ); ?>
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <?php get_template_part( 'loop-templates/content', 'products' ); ?>
 
         <?php endwhile; // end of the loop. ?>
 
