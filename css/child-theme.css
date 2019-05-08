@@ -17880,7 +17880,7 @@ textarea {
           width: 100%; } }
 
 #products_page-wrapper nav {
-  margin-bottom: 3.25rem;
+  margin-bottom: 0;
   margin-left: -1rem;
   margin-right: -1rem; }
   @media (max-width: 768.98px) {
