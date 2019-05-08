@@ -1692,6 +1692,11 @@ textarea {
                             font-size: #{$h4-font-size};
                             font-weight: #{$font-weight-bold};
                         }
+                        &.current-cat {
+                            a {
+                                color: #{$secondary};
+                            }
+                        }
                     }
                 }
             }

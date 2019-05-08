@@ -41,7 +41,7 @@ $cats = get_categories();
                 <div class="<?php echo esc_attr( $container ); ?>">
 
                     <header>
-                        <h1 class="page-title"><?php echo( sprintf( '%1$s &amp; %2$s', __( 'News', 'aethercomm' ), __( 'Articles', 'aethercomm' ) ) ); ?></h1>
+                        <h1 class="page-title"><?php echo( sprintf( '%1$s: %2$s &amp; %3$s', single_term_title( '', false ), __( 'News', 'aethercomm' ), __( 'Articles', 'aethercomm' ) ) ); ?></h1>
                         <div class="page-lede"><?php _e( 'Lorem ipsum that <strong>saves lives.</strong>', 'aethercomm' ); ?></div>
                     </header>
 

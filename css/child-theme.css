@@ -17647,6 +17647,9 @@ textarea {
       color: #222222;
       font-size: 1.375rem;
       font-weight: 700; }
+    #index-wrapper #the-posts_section .posts-sidebar .widget_categories ul .cat-item.current-cat a,
+    #archive-wrapper #the-posts_section .posts-sidebar .widget_categories ul .cat-item.current-cat a {
+      color: #4A63AE; }
 
 #index-wrapper #the-posts_section .posts-articles article,
 #archive-wrapper #the-posts_section .posts-articles article {
