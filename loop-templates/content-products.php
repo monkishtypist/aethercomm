@@ -47,12 +47,13 @@ $product_cats = get_categories( $product_cats_args );
             <div class="<?php echo esc_attr( $container ); ?>">
 
                 <nav class="nav">
-                    <?php
-                    foreach ( $product_cats as $product_cat ) :
-                        $cat_object = get_category( $product_cat );
-                        var_dump($product_cat);
-                    ?>
-                        <a class="nav-link" href="<?php echo get_category_link( $product_cat ); ?>"><?php echo $product_cat->name; ?></a>
+                    <?php foreach ( $product_cats as $product_cat ) : ?>
+                        <?php echo sprintf( '<a class="nav-link" href="%1$s">%2$s</a>',
+                            get_category_link( $product_cat ),
+                            sprintf( '%1$s%2$s',
+                                esc_html( $product_cat->name ),
+                                ( $product_cat->category_count > 0 ? sprintf( ' (%1$s)', $product_cat->category_count ) : '' )
+                            ) ); ?>
                     <?php endforeach; ?>
                 </nav>
 
