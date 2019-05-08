@@ -24995,4 +24995,8 @@ return DataTable;
         table.search( this.value ).draw();
     } );
 
+    $('#product-cats-nav').on( 'click', 'a', function() {
+        table.columns( 5 ).search( this.data('cat-slug') ).draw();
+    } );
+
 })(jQuery);
