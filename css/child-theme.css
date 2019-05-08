@@ -17249,6 +17249,11 @@ textarea {
 /* Tables */
 table.table {
   font-size: 0.875rem; }
+  table.table thead {
+    background-color: #676767;
+    color: #fff; }
+    table.table thead tr th {
+      color: #fff; }
   table.table a.btn-link {
     color: #4A63AE;
     display: block;
@@ -17260,6 +17265,9 @@ table.table {
       font-family: "Font Awesome 5 Pro";
       font-weight: 400;
       margin-right: 0.5rem; }
+  table.table a.read-more-link {
+    color: #4A63AE;
+    text-transform: uppercase; }
 
 /**
  * Footer

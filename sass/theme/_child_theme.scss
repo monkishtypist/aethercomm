@@ -1148,19 +1148,34 @@ textarea {
 /* Tables */
 table.table {
     font-size: #{$font-size-base * 0.875};
-    a.btn-link {
-        color: #{$blue};
-        display: block;
-        font-weight: #{$font-weight-bold};
-        white-space: nowrap;
-        &.pdf-link {
-            &::before {
-                content: "\f1c1";
-                display: inline;
-                font-family: "Font Awesome 5 Pro";
-                font-weight: #{$font-weight-normal};
-                margin-right: #{$spacer * .5};
+    thead {
+        background-color: #{$gray-700};
+        color: #{$white};
+        tr {
+            th {
+                color: #{$white};
             }
+        }
+    }
+    a {
+        &.btn-link {
+            color: #{$blue};
+            display: block;
+            font-weight: #{$font-weight-bold};
+            white-space: nowrap;
+            &.pdf-link {
+                &::before {
+                    content: "\f1c1";
+                    display: inline;
+                    font-family: "Font Awesome 5 Pro";
+                    font-weight: #{$font-weight-normal};
+                    margin-right: #{$spacer * .5};
+                }
+            }
+        }
+        &.read-more-link {
+            color: #{$blue};
+            text-transform: uppercase;
         }
     }
 }
