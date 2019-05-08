@@ -18192,7 +18192,6 @@ table.dataTable thead .sorting_desc_disabled:before {
       border-bottom: 0.5rem solid transparent;
       color: #fff;
       font-size: 0.875rem;
-      font-weight: 700;
       line-height: 1.625;
       margin-left: 1.75rem;
       margin-right: 1.75rem;

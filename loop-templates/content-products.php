@@ -64,7 +64,7 @@ $product_cats = get_categories( $product_cats_args );
                             '#', // get_category_link( $product_cat ),
                             $product_cat->slug,
                             $product_cat->category_count,
-                            sprintf( '%1$s%2$s',
+                            sprintf( '<strong>%1$s</strong>%2$s',
                                 esc_html( $product_cat->name ),
                                 ( $product_cat->category_count > 0 ? sprintf( ' (%1$s)', $product_cat->category_count ) : '' )
                             ) ); ?>
