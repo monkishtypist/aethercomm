@@ -372,6 +372,8 @@ button.btn {
     }
     &.btn-sm {
         font-size: #{$font-size-base * 0.625};
+        letter-spacing: .250em;
+        line-height: 1.2;
         padding-bottom: #{$btn-padding-y * .5};
         padding-top: #{$btn-padding-y * .5};
         width: auto;

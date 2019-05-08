@@ -15082,6 +15082,8 @@ button.btn,
   #archive-wrapper button.btn-sm.read-more-link,
   #search-wrapper button.btn-sm.read-more-link {
     font-size: 0.625rem;
+    letter-spacing: .250em;
+    line-height: 1.2;
     padding-bottom: 0.5rem;
     padding-top: 0.5rem;
     width: auto; }
