@@ -21,6 +21,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 $cats = get_categories();
 
+$cat_id = $cats[0]->cat_ID;
+
 ?>
 
 <div class="wrapper" id="index-wrapper" class="archive-wrapper">
@@ -42,7 +44,9 @@ $cats = get_categories();
 
                     <header>
                         <h1 class="page-title"><?php echo( sprintf( '%1$s: %2$s &amp; %3$s', single_term_title( '', false ), __( 'News', 'aethercomm' ), __( 'Articles', 'aethercomm' ) ) ); ?></h1>
-                        <div class="page-lede"><?php _e( 'Lorem ipsum that <strong>saves lives.</strong>', 'aethercomm' ); ?></div>
+                        <?php if ( is_category() ) : ?>
+                            <div class="page-lede"><?php echo category_description( $cat_id ); ?></div>
+                        <?php endif; ?>
                     </header>
 
                     <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
