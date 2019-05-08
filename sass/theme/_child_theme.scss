@@ -650,7 +650,8 @@ section {
             margin-right: 0;
         }
         &.active,
-        &.current-page-ancestor {
+        &.current-page-ancestor,
+        &.current_page_parent {
             > .nav-link {
                 color: #{$blue};
             }

@@ -15106,9 +15106,9 @@ section {
       margin-left: 0; }
     #main-menu > .nav-item:last-of-type {
       margin-right: 0; }
-    #main-menu > .nav-item.active > .nav-link, #main-menu > .nav-item.current-page-ancestor > .nav-link {
+    #main-menu > .nav-item.active > .nav-link, #main-menu > .nav-item.current-page-ancestor > .nav-link, #main-menu > .nav-item.current_page_parent > .nav-link {
       color: #4A63AE; }
-    #main-menu > .nav-item.active.btn > .nav-link, #index-wrapper #main-menu > .nav-item.active.read-more-link > .nav-link, #archive-wrapper #main-menu > .nav-item.active.read-more-link > .nav-link, #main-menu > .nav-item.current-page-ancestor.btn > .nav-link, #index-wrapper #main-menu > .nav-item.current-page-ancestor.read-more-link > .nav-link, #archive-wrapper #main-menu > .nav-item.current-page-ancestor.read-more-link > .nav-link {
+    #main-menu > .nav-item.active.btn > .nav-link, #index-wrapper #main-menu > .nav-item.active.read-more-link > .nav-link, #archive-wrapper #main-menu > .nav-item.active.read-more-link > .nav-link, #main-menu > .nav-item.current-page-ancestor.btn > .nav-link, #index-wrapper #main-menu > .nav-item.current-page-ancestor.read-more-link > .nav-link, #archive-wrapper #main-menu > .nav-item.current-page-ancestor.read-more-link > .nav-link, #main-menu > .nav-item.current_page_parent.btn > .nav-link, #index-wrapper #main-menu > .nav-item.current_page_parent.read-more-link > .nav-link, #archive-wrapper #main-menu > .nav-item.current_page_parent.read-more-link > .nav-link {
       color: #fff; }
     #main-menu > .nav-item > .nav-link {
       font-size: 0.875rem;
