@@ -12,8 +12,13 @@ if ( ! defined( 'ABSPATH' ) ) {
 ?>
 
 <tr>
-    <td></td>
-    <td><?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?><?php acf_field( 'product_specs_model_number'); ?></td>
+    <td>
+        <a href="#" class="btn btn-secondary">Request Details</a>
+    </td>
+    <td>
+        <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
+        <?php acf_field( 'product_specs_model_number'); ?>
+    </td>
     <td><?php acf_field( 'product_specs_frequency_min'); ?></td>
     <td><?php acf_field( 'product_specs_frequency_max'); ?></td>
     <td><?php acf_field( 'product_specs_watts'); ?></td>
