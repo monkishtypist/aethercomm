@@ -18182,9 +18182,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   padding-bottom: 1.25rem;
   padding-top: 1.5rem; }
   #products_page-wrapper #products_categories nav {
-    margin-bottom: 0;
-    margin-left: -1rem;
-    margin-right: -1rem; }
+    margin-bottom: 0; }
     @media (max-width: 768.98px) {
       #products_page-wrapper #products_categories nav {
         margin-bottom: 0.5rem; } }

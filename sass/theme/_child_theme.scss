@@ -1863,8 +1863,8 @@ table.dataTable thead .sorting_desc_disabled:before {
         padding-top: #{$spacer * 1.5};
         nav {
             margin-bottom: 0;
-            margin-left: -#{$nav-link-padding-x};
-            margin-right: -#{$nav-link-padding-x};
+            // margin-left: -#{$nav-link-padding-x};
+            // margin-right: -#{$nav-link-padding-x};
             @include media-breakpoint-down('sm') {
                 margin-bottom: #{$spacer * .5};
             }
