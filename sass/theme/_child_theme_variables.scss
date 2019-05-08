@@ -366,10 +366,10 @@ $headings-font-weight:        $font-weight-light !default; // 500 !default;
 // $table-active-bg:             $table-hover-bg !default;
 
 // $table-border-width:          $border-width !default;
-// $table-border-color:          $border-color !default;
+$table-border-color:          $gray-800 !default; // $border-color !default;
 
-// $table-head-bg:               $gray-200 !default;
-// $table-head-color:            $gray-700 !default;
+$table-head-bg:               $gray-700 !default; // $gray-200 !default;
+$table-head-color:            $white !default; // $gray-700 !default;
 
 // $table-dark-color:            $white !default;
 // $table-dark-bg:               $gray-800 !default;

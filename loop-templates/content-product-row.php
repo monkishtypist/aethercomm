@@ -22,7 +22,14 @@ foreach ( $terms as $term ) {
     </td>
     <td>
         <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
-        <?php acf_field( 'product_specs_model_number'); ?>
+        <?php echo sprintf( '<a href="%1$s" class="product-link">%2$s</a>',
+            get_permalink(),
+            get_acf_field( 'product_specs_model_number', true )
+        ); ?>
+        <?php echo sprintf( '<a href="%1$s" class="pdf-link">%2$s</a>',
+            get_acf_field( 'product_details_data_sheet', true ),
+            __( 'PDF', 'aethercomm' )
+        ); ?>
     </td>
     <td><?php acf_field( 'product_specs_frequency_min'); ?></td>
     <td><?php acf_field( 'product_specs_frequency_max'); ?></td>
