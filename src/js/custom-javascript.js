@@ -53,4 +53,7 @@
         }
     });
 
+    // Datatables
+    $('#products-table').DataTable();
+
 })(jQuery);
