@@ -41,8 +41,8 @@ if ( $post->post_parent ) {
                 <div class="<?php echo esc_attr( $container ); ?>">
 
                     <header>
-                        <h1 class="page-title"><?php echo( sprintf( '%1$s', __( 'Search', 'aethercomm' ) ) ); ?></h1>
-                        <div class="page-lede"><?php _e( 'Lorem ipsum that <strong>saves lives.</strong>', 'aethercomm' ); ?></div>
+                        <h1 class="page-title"><?php echo( sprintf( '%1$s:', __( 'Search', 'aethercomm' ) ) ); ?></h1>
+                        <div class="page-lede"><?php the_search_query(); ?></div>
                     </header>
 
                     <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
