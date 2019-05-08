@@ -1,14 +1,8 @@
 <?php
 /**
- * The main template file.
+ * The main template file for taxonomies.
  *
- * This is the most generic template file in a WordPress theme
- * and one of the two required files for a theme (the other being style.css).
- * It is used to display a page when nothing more specific matches a query.
- * E.g., it puts together the home page when no home.php file exists.
- * Learn more: http://codex.wordpress.org/Template_Hierarchy
- *
- * @package understrap
+ * @package aethercomm
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -19,15 +13,17 @@ get_header();
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$cats = get_categories();
+global $post;
 
 $queried_object = get_queried_object();
 
 ?>
 
-<div class="wrapper" id="products-wrapper" class="products-wrapper">
+<div class="wrapper" id="<?php echo $post->post_name; ?>_wrapper" class="<?php echo $post->post_name; ?>-wrapper">
 
     <main class="site-main" id="main">
+
+    <pre><?php print_r( $queried_object ); ?></pre>
 
         <?php while ( have_posts() ) : the_post(); ?>
 
