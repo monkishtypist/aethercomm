@@ -9,10 +9,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
 }
 
-$terms = get_terms( array(
-    'taxonomy' => 'product-categories',
-    'hide_empty' => false,
-) );
+$terms = get_the_terms( get_the_ID(), 'product-categories' );
 
 var_dump($terms);
 ?>
