@@ -1153,6 +1153,14 @@ table.table {
         display: block;
         font-weight: #{$font-weight-bold};
         white-space: nowrap;
+        &.pdf-link {
+            &::before {
+                content: "\f1c1";
+                display: inline;
+                font-family: "Font Awesome 5 Pro";
+                font-weight: #{$font-weight-normal};
+            }
+        }
     }
 }
 

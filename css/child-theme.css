@@ -17254,6 +17254,11 @@ table.table {
     display: block;
     font-weight: 700;
     white-space: nowrap; }
+    table.table a.btn-link.pdf-link::before {
+      content: "\f1c1";
+      display: inline;
+      font-family: "Font Awesome 5 Pro";
+      font-weight: 400; }
 
 /**
  * Footer
