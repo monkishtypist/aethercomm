@@ -80,7 +80,7 @@ $product_cats = get_categories( $product_cats_args );
 
                 <?php ob_start(); ?>
 
-                <table id="products-table" class="products-table table ">
+                <table id="products-table" class="products-table table" data-toggle="table">
 
                     <thead>
                         <tr>
