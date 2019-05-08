@@ -1155,7 +1155,7 @@ table.table {
             th {
                 border-bottom: #{$table-border-width * 2} solid #{$gray-700};
                 color: #{$white};
-                .sorting {
+                &.sorting {
                     &::before {
                         content: "\f0de";
                         font-family: "Font Awesome 5 Pro";
