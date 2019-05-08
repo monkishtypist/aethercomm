@@ -18,7 +18,8 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 6. Hooks
  * 7. Custom Post Types
  * 8. Modify the Query
- * Widgets
+ * 9. Pagination
+ * 10. Widgets
  */
 
 /* 0. Requires... */
@@ -453,7 +454,17 @@ if ( ! function_exists( 'aethercomm_modify_query' ) ) {
     }
 }
 
-/* Widgets */
+/* 9. Pagination */
+add_filter('found_posts', 'aethercomm_adjust_offset_pagination', 1, 2 );
+function aethercomm_adjust_offset_pagination( $found_posts, $query ) {
+    $offset = 1;
+    if ( $query->is_home() ) {
+        return $found_posts - $offset;
+    }
+    return $found_posts;
+}
+
+/* 10. Widgets */
 add_action( 'widgets_init', 'understrap_widgets_init' );
 if ( ! function_exists( 'understrap_widgets_init' ) ) {
     // Overwrite parent theme widgets function
