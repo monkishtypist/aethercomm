@@ -54,7 +54,6 @@
     "undescores-for-npm": "^1.0.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.1",
-    "bootstrap-table": "^1.14.2"
+    "@fortawesome/fontawesome-free": "^5.8.1"
   }
 }

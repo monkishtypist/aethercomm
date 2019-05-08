@@ -146,6 +146,10 @@ gulp.task( 'scripts', function() {
         // FontAwesome
         paths.dev + '/js/font-awesome/fontawesome.js',
 
+        // DataTables
+        paths.dev + '/js/dataTables/jquery.dataTables.js',
+        paths.dev + '/js/dataTables/dataTables.bootstrap4.js',
+
         // Adding currently empty javascript file to add on for your own themes´ customizations
         // Please add any customizations to this .js file only!
         paths.dev + '/js/custom-javascript.js'
@@ -216,6 +220,16 @@ gulp.task( 'copy-assets', function() {
 // UnderStrap SCSS files
     gulp.src( paths.node + 'understrap/sass/**/*.scss' )
         .pipe( gulp.dest( paths.dev + '/sass/understrap' ) );
+
+// DataTables JS files into /src/js
+    gulp.src( paths.node + 'datatables.net/js/jquery.dataTables.js' )
+        .pipe( gulp.dest( paths.dev + '/js/dataTables' ) );
+// DataTables BS4 JS files into /src/js
+    gulp.src( paths.node + 'datatables.net-bs4/js/dataTables.bootstrap4.js' )
+        .pipe( gulp.dest( paths.dev + '/js/dataTables' ) );
+// DataTables BS4 CSS files into /src/sass
+    gulp.src( paths.node + 'datatables.net-bs4/css/dataTables.bootstrap4.css' )
+        .pipe( gulp.dest( paths.dev + '/sass/dataTables' ) );
 
     return stream;
 });
