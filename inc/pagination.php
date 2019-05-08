@@ -24,7 +24,8 @@ if ( ! function_exists( 'understrap_pagination' ) ) {
 				'prev_next'          => true,
 				'prev_text'          => '<i class="fal fa-chevron-left"></i>',
 				'next_text'          => '<i class="fal fa-chevron-right"></i>',
-				'screen_reader_text' => __( 'Posts navigation', 'aethercomm' ),
+                'screen_reader_text' => __( 'Posts navigation', 'aethercomm' ),
+                'show_all'           => true,
 				'type'               => 'array',
 				'current'            => max( 1, get_query_var( 'paged' ) ),
 			)
