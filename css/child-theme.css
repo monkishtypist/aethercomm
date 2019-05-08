@@ -17249,8 +17249,11 @@ textarea {
 /* Tables */
 table.table {
   font-size: 0.875rem; }
-  table.table a:not(.btn) {
-    color: #4A63AE; }
+  table.table a.btn-link {
+    color: #4A63AE;
+    display: block;
+    font-weight: 700;
+    white-space: nowrap; }
 
 /**
  * Footer

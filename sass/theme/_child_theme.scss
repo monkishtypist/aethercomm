@@ -1148,8 +1148,11 @@ textarea {
 /* Tables */
 table.table {
     font-size: #{$font-size-base * 0.875};
-    a:not(.btn) {
+    a.btn-link {
         color: #{$blue};
+        display: block;
+        font-weight: #{$font-weight-bold};
+        white-space: nowrap;
     }
 }
 
