@@ -83,7 +83,7 @@ $product_cats = get_categories( $product_cats_args );
             <?php
             $args = array(
                 'post_type' => 'products',
-                'posts_per_page' => 9
+                'posts_per_page' => -1
             );
             $query = new WP_Query( $args );
             ?>
