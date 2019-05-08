@@ -18178,6 +18178,9 @@ table.dataTable thead .sorting_desc_disabled:before {
         #search-wrapper #the-posts_section .posts-articles article .post-content-wrapper .read-more-link {
           width: 100%; } }
 
+#products_page-wrapper #products_search .section-title {
+  margin-bottom: 0.5rem; }
+
 #products_page-wrapper #products_categories {
   padding-bottom: 1.25rem;
   padding-top: 1.5rem; }

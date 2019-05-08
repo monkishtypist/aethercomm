@@ -1858,6 +1858,14 @@ table.dataTable thead .sorting_desc_disabled:before {
 }
 
 #products_page-wrapper {
+    #products_search {
+        .section-title {
+            margin-bottom: #{$spacer * .5};
+        }
+        #productsearchform {
+            #productsearchsubmit {}
+        }
+    }
     #products_categories {
         padding-bottom: #{$spacer * 1.25};
         padding-top: #{$spacer * 1.5};

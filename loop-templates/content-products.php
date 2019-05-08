@@ -32,21 +32,27 @@ $product_cats = get_categories( $product_cats_args );
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
-            <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
-                __( 'Search Products', 'aethercomm' )
-            ); ?>
+            <div class="row">
 
-            <form method="get" id="productsearchform" action="/" role="search" class="show" _lpchecked="1">
-                <label class="sr-only" for="productsearch">Search Products</label>
-                <div class="input-group">
-                    <input class="field form-control" id="productsearch" name="productsearch" type="text" placeholder="" value="">
-                    <span class="input-group-append">
-                        <button type="submit" id="productsearchsubmit">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </span>
+                <div class="col-12 col-md-6">
+                    <?php echo sprintf( '<h2 class="section-title">%1$s</h2>',
+                        __( 'Search Products', 'aethercomm' )
+                    ); ?>
+
+                    <form method="get" id="productsearchform" action="/" role="search" class="show" _lpchecked="1">
+                        <label class="sr-only" for="productsearch">Search Products</label>
+                        <div class="input-group">
+                            <input class="field form-control" id="productsearch" name="productsearch" type="text" placeholder="" value="">
+                            <span class="input-group-append">
+                                <button type="submit" id="productsearchsubmit" class="btn btn-dark">
+                                    <i class="fas fa-search"></i>
+                                </button>
+                            </span>
+                        </div>
+                    </form>
                 </div>
-            </form>
+
+            </div>
 
         </div>
 
