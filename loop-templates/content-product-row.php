@@ -10,8 +10,10 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 $terms = get_the_terms( get_the_ID(), 'product-categories' );
-
-var_dump($terms);
+$terms_array = array();
+foreach ( $terms as $term ) {
+    $terms_array[] = $term->name;
+}
 ?>
 
 <tr>
@@ -25,7 +27,7 @@ var_dump($terms);
     <td><?php acf_field( 'product_specs_frequency_min'); ?></td>
     <td><?php acf_field( 'product_specs_frequency_max'); ?></td>
     <td><?php acf_field( 'product_specs_watts'); ?></td>
-    <td><?php // echo implode( ", ", $terms ); // Category ?></td>
+    <td><?php echo implode( ", ", $terms_array ); // Category ?></td>
     <td>
         <?php echo apply_filters( 'the_excerpt', get_acf_field( 'product_details_short_description', true ) ); ?>
         <a href="<?php echo get_permalink(); ?>" class="read-more-link"><?php _e( 'More', 'aethercomm' ); ?></a>
