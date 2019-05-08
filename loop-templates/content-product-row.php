@@ -22,5 +22,7 @@ if ( ! defined( 'ABSPATH' ) ) {
     <td><?php acf_field( 'product_specs_frequency_min'); ?></td>
     <td><?php acf_field( 'product_specs_frequency_max'); ?></td>
     <td><?php acf_field( 'product_specs_watts'); ?></td>
-    <td><?php the_excerpt(); ?></td>
+    <td>
+        <?php apply_filters( 'the_excerpt', get_acf_field( 'product_details_short_description', true ) ); ?>
+    </td>
 </tr>
