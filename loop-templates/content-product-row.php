@@ -12,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 $terms = get_the_terms( get_the_ID(), 'product-categories' );
 $terms_array = array();
 foreach ( $terms as $term ) {
-    $terms_array[] = $term->name;
+    $terms_array[] = $term->slug;
 }
 ?>
 

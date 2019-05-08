@@ -58,10 +58,11 @@ $product_cats = get_categories( $product_cats_args );
 
             <div class="<?php echo esc_attr( $container ); ?>">
 
-                <nav class="nav">
+                <nav id="product-cats-nav" class="nav">
                     <?php foreach ( $product_cats as $product_cat ) : ?>
-                        <?php echo sprintf( '<a class="nav-link" href="%1$s" data-cat-count="%2$s">%3$s</a>',
+                        <?php echo sprintf( '<a class="nav-link" href="%1$s" data-cat-name="%2$s" data-cat-count="%3$s">%4$s</a>',
                             get_category_link( $product_cat ),
+                            $product_cat->slug,
                             $product_cat->category_count,
                             sprintf( '%1$s%2$s',
                                 esc_html( $product_cat->name ),
@@ -97,7 +98,7 @@ $product_cats = get_categories( $product_cats_args );
                         <th>Frequency Min</th>
                         <th>Frequency Max</th>
                         <th>Watts</th>
-                        <th>Category</th>
+                        <th class="col-hidden">Category</th>
                         <th>Description</th>
                     </tr>
                 </thead>

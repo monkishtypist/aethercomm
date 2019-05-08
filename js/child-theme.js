@@ -24982,7 +24982,14 @@ return DataTable;
     });
 
     // Datatables
-    var table = $('#products-table').DataTable();
+    var table = $('#products-table').DataTable( {
+        "columnDefs": [
+            {
+                "targets": [ 5 ],
+                "visible": false
+            }
+        ]
+    });
 
     $('#productsearch').on( 'keyup', function () {
         table.search( this.value ).draw();
