@@ -24,6 +24,17 @@ if ( get_acf_field( 'page_header_background' ) ) {
 
 $overlay_color = ( get_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page_header_overlay', true ) : 'black' );
 
+$cats = get_the_category();
+$cat_names_string = null;
+
+if ( $cats ) :
+    $cat_names_array = array();
+    foreach ( $cats as $cat ) {
+        $cat_names_array[] = esc_html( $cat->name );
+    }
+    $cat_names_string = implode( " | ", $cat_names_array );
+endif;
+
 ?>
 
 <section id="<?php echo $post->post_name; ?>_header" class="section_header <?php echo $template_slug; ?>_header section-header-overlay section-header-overlay_<?php echo $overlay_color; ?>">
@@ -41,7 +52,7 @@ $overlay_color = ( get_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page
 
         <header>
             <?php if ( is_single() ) : ?>
-                <div class="page-title"><?php single_term_title(); ?></div>
+                <div class="page-title"><?php echo $cat_names_string; ?></div>
                 <?php the_title( '<h1 class="page-lede">', '</h1>' ); ?>
             <?php elseif ( $post->post_parent ) : ?>
                 <div class="page-title"><?php echo get_the_title( $post->post_parent ); ?></div>
