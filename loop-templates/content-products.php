@@ -97,6 +97,7 @@ $product_cats = get_categories( $product_cats_args );
                         <th>Frequency Min</th>
                         <th>Frequency Max</th>
                         <th>Watts</th>
+                        <th>Category</th>
                         <th>Description</th>
                     </tr>
                 </thead>
