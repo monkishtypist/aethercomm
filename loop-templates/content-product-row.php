@@ -18,7 +18,7 @@ foreach ( $terms as $term ) {
 
 <tr>
     <td>
-        <a href="#" class="btn btn-secondary">Request Details</a>
+        <a href="#" class="btn btn-secondary btn-sm"><?php _e( 'Request Details', 'aethercomm' ); ?></a>
     </td>
     <td>
         <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>

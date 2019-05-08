@@ -15068,6 +15068,36 @@ button.btn,
     background-color: #676767;
     border-color: #676767;
     color: #fff; }
+  a.btn.btn-sm, .btn-group-sm > a.btn, #index-wrapper .btn-group-sm > a.read-more-link,
+  #archive-wrapper .btn-group-sm > a.read-more-link,
+  #search-wrapper .btn-group-sm > a.read-more-link, #index-wrapper a.btn-sm.read-more-link,
+  #archive-wrapper a.btn-sm.read-more-link,
+  #search-wrapper a.btn-sm.read-more-link,
+  button.btn.btn-sm,
+  .btn-group-sm > button.btn,
+  #index-wrapper .btn-group-sm > button.read-more-link,
+  #archive-wrapper .btn-group-sm > button.read-more-link,
+  #search-wrapper .btn-group-sm > button.read-more-link,
+  #index-wrapper button.btn-sm.read-more-link,
+  #archive-wrapper button.btn-sm.read-more-link,
+  #search-wrapper button.btn-sm.read-more-link {
+    font-size: 0.625rem;
+    padding-bottom: 0.5rem;
+    padding-top: 0.5rem; }
+    a.btn.btn-sm::before, .btn-group-sm > a.btn::before, #index-wrapper .btn-group-sm > a.read-more-link::before,
+    #archive-wrapper .btn-group-sm > a.read-more-link::before,
+    #search-wrapper .btn-group-sm > a.read-more-link::before, #index-wrapper a.btn-sm.read-more-link::before,
+    #archive-wrapper a.btn-sm.read-more-link::before,
+    #search-wrapper a.btn-sm.read-more-link::before,
+    button.btn.btn-sm::before,
+    .btn-group-sm > button.btn::before,
+    #index-wrapper .btn-group-sm > button.read-more-link::before,
+    #archive-wrapper .btn-group-sm > button.read-more-link::before,
+    #search-wrapper .btn-group-sm > button.read-more-link::before,
+    #index-wrapper button.btn-sm.read-more-link::before,
+    #archive-wrapper button.btn-sm.read-more-link::before,
+    #search-wrapper button.btn-sm.read-more-link::before {
+      display: none; }
   @media (max-width: 768.98px) {
     a.btn, #index-wrapper a.read-more-link,
     #archive-wrapper a.read-more-link,

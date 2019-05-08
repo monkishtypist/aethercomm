@@ -370,6 +370,14 @@ button.btn {
         border-color: #{$gray};
         color: #{$white};
     }
+    &.btn-sm {
+        font-size: #{$font-size-base * 0.625};
+        padding-bottom: #{$btn-padding-y * .5};
+        padding-top: #{$btn-padding-y * .5};
+        &::before {
+            display: none;
+        }
+    }
     @include media-breakpoint-down('sm') {
         width: 100%;
         &.btn-lg {
