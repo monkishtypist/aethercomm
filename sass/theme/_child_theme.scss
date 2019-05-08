@@ -375,6 +375,8 @@ button.btn {
         letter-spacing: .250em;
         line-height: 1.2;
         padding-bottom: #{$btn-padding-y * .5};
+        padding-left: #{$btn-padding-x * 1.833333};
+        padding-right: #{$btn-padding-x * 1.833333};
         padding-top: #{$btn-padding-y * .5};
         width: auto;
         &::before {
