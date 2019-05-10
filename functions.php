@@ -275,7 +275,7 @@ if ( ! function_exists( 'aethercomm_products_cpt_parent_page' ) ) {
 
 // Add the custom columns to the Products post type:
 add_filter( 'manage_products_posts_columns', 'aethercomm_set_custom_edit_products_columns' );
-if ( ! function_exists( 'aethercomm_set_custom_edit_products_columns' ) {
+if ( ! function_exists( 'aethercomm_set_custom_edit_products_columns' ) ) {
     function aethercomm_set_custom_edit_products_columns($columns) {
         $columns['model_number'] = __( 'Part Number', 'aethercomm' );
         return $columns;
@@ -284,7 +284,7 @@ if ( ! function_exists( 'aethercomm_set_custom_edit_products_columns' ) {
 
 // Add the data to the custom columns for the book post type:
 add_action( 'manage_products_posts_custom_column' , 'aethercomm_custom_products_column', 10, 2 );
-if ( ! function_exists( 'aethercomm_custom_products_column' ) {
+if ( ! function_exists( 'aethercomm_custom_products_column' ) ) {
     function aethercomm_custom_products_column( $column, $post_id ) {
         switch ( $column ) {
             case 'model_number' :
