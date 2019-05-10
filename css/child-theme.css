@@ -17246,8 +17246,10 @@ textarea {
 #products-table_wrapper #products-table_filter {
   display: none; }
 
-#products-table_wrapper #products-table thead tr th:nth-child(2), #products-table_wrapper #products-table thead tr td:nth-child(2), #products-table_wrapper #products-table tbody tr th:nth-child(2), #products-table_wrapper #products-table tbody tr td:nth-child(2) {
-  min-width: 16.5rem; }
+#products-table_wrapper #products-table thead tr th, #products-table_wrapper #products-table thead tr td {
+  white-space: nowrap; }
+  #products-table_wrapper #products-table thead tr th:nth-child(2), #products-table_wrapper #products-table thead tr td:nth-child(2) {
+    min-width: 16.5rem; }
 
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:before,

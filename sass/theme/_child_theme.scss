@@ -1144,9 +1144,10 @@ textarea {
         display: none;
     }
     #products-table {
-        thead, tbody {
+        thead {
             tr {
                 th, td {
+                    white-space: nowrap;
                     &:nth-child(2) {
                         min-width: #{$spacer * 16.5};
                     }
