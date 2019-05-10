@@ -84,7 +84,7 @@
             table.columns( 5 ).search( '' ).draw();
             $(this).removeClass('active');
         } else {
-            table.columns( 5 ).search( $(this).data('cat-slug') ).draw();
+            table.columns( 5 ).search( '^'+$(this).data('cat-slug')+'$', true, false ).draw();
             $(this).addClass('active').siblings().removeClass('active');
         }
     } );
