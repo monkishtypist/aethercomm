@@ -273,6 +273,24 @@ if ( ! function_exists( 'aethercomm_products_cpt_parent_page' ) ) {
     }
 }
 
+// Add the custom columns to the Products post type:
+add_filter( 'manage_products_posts_columns', 'set_custom_edit_products_columns' );
+function set_custom_edit_products_columns($columns) {
+    $columns['model_number'] = __( 'Part Number', 'aethercomm' );
+    return $columns;
+}
+
+// Add the data to the custom columns for the book post type:
+add_action( 'manage_products_posts_custom_column' , 'custom_products_column', 10, 2 );
+function custom_products_column( $column, $post_id ) {
+    switch ( $column ) {
+        case 'model_number' :
+            echo get_acf_field( 'product_specs_model_number', true );
+            break;
+
+    }
+}
+
 add_action( 'init', 'aethercomm_product_cats_tax_init' );
 if ( ! function_exists( 'aethercomm_product_cats_tax_init' ) ) {
     function aethercomm_product_cats_tax_init() {
