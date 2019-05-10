@@ -1144,27 +1144,11 @@ textarea {
         display: none;
     }
     #products-table {
-        thead {
+        thead, tbody {
             tr {
                 th, td {
-                    &:nth-child(0) {
-                        width: auto;
-                    }
-                    &:nth-child(1) {
-                        width: 24%;
-                        min-width: #{$spacer * 16.5};
-                    }
                     &:nth-child(2) {
-                        width: 14.2%;
-                    }
-                    &:nth-child(3) {
-                        width: 14.6%;
-                    }
-                    &:nth-child(4) {
-                        width: 10.8%;
-                    }
-                    &:nth-child(5) {
-                        width: 26.6%;
+                        min-width: #{$spacer * 16.5};
                     }
                 }
             }

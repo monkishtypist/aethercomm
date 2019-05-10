@@ -22,10 +22,10 @@ foreach ( $terms as $term ) {
     </td>
     <td data-order="<?php echo get_acf_field( 'product_specs_model_number', true ); ?>">
         <div class="row no-gutters">
-            <div class="col-12 col-md-3 mr-md-1">
+            <div class="col-12 col-md-3">
                 <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
             </div>
-            <div class="col-12 col-md-9">
+            <div class="col-12 col-md-9 pl-md-1">
                 <?php echo sprintf( '<a href="%1$s" class="btn-link product-link">%2$s</a>',
                     get_permalink(),
                     get_acf_field( 'product_specs_model_number', true )
