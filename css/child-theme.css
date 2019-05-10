@@ -17250,7 +17250,8 @@ textarea {
   width: auto; }
 
 #products-table_wrapper #products-table thead tr th:nth-child(1), #products-table_wrapper #products-table thead tr td:nth-child(1) {
-  width: 24%; }
+  width: 24%;
+  min-width: 16.5rem; }
 
 #products-table_wrapper #products-table thead tr th:nth-child(2), #products-table_wrapper #products-table thead tr td:nth-child(2) {
   width: 14.2%; }

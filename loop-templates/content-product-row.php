@@ -21,8 +21,8 @@ foreach ( $terms as $term ) {
         <a href="#" class="btn btn-secondary btn-sm"><?php echo sprintf( '%1$s<br />%2$s', __( 'Request', 'aethercomm' ), __( 'Details', 'aethercomm' ) ); ?></a>
     </td>
     <td data-order="<?php echo get_acf_field( 'product_specs_model_number', true ); ?>">
-        <div class="row">
-            <div class="col-12 col-md-3">
+        <div class="row no-gutters">
+            <div class="col-12 col-md-3 mr-md-1">
                 <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
             </div>
             <div class="col-12 col-md-9">

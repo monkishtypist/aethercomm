@@ -1152,6 +1152,7 @@ textarea {
                     }
                     &:nth-child(1) {
                         width: 24%;
+                        min-width: #{$spacer * 16.5};
                     }
                     &:nth-child(2) {
                         width: 14.2%;
