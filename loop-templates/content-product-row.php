@@ -21,15 +21,21 @@ foreach ( $terms as $term ) {
         <a href="#" class="btn btn-secondary btn-sm"><?php echo sprintf( '%1$s<br />%2$s', __( 'Request', 'aethercomm' ), __( 'Details', 'aethercomm' ) ); ?></a>
     </td>
     <td data-order="<?php echo get_acf_field( 'product_specs_model_number', true ); ?>">
-        <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
-        <?php echo sprintf( '<a href="%1$s" class="btn-link product-link">%2$s</a>',
-            get_permalink(),
-            get_acf_field( 'product_specs_model_number', true )
-        ); ?>
-        <?php echo sprintf( '<a href="%1$s" class="btn-link pdf-link">%2$s</a>',
-            get_acf_field( 'product_details_data_sheet', true ),
-            __( 'PDF', 'aethercomm' )
-        ); ?>
+        <div class="row">
+            <div class="col-12 col-md-3">
+                <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
+            </div>
+            <div class="col-12 col-md-9">
+                <?php echo sprintf( '<a href="%1$s" class="btn-link product-link">%2$s</a>',
+                    get_permalink(),
+                    get_acf_field( 'product_specs_model_number', true )
+                ); ?>
+                <?php echo sprintf( '<a href="%1$s" class="btn-link pdf-link">%2$s</a>',
+                    get_acf_field( 'product_details_data_sheet', true ),
+                    __( 'PDF', 'aethercomm' )
+                ); ?>
+            </div>
+        </div>
     </td>
     <td><?php acf_field( 'product_specs_frequency_min'); ?></td>
     <td><?php acf_field( 'product_specs_frequency_max'); ?></td>
