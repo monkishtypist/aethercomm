@@ -255,6 +255,28 @@ if ( ! function_exists( 'aethercomm_products_post_type' ) ) {
     }
 }
 
+define( 'PRODUCSTS_PARENT_ID', 19 );
+
+add_action( 'wp_insert_post_data', 'aethercomm_products_cpt_parent_page', '99', 2  );
+
+function aethercomm_products_cpt_parent_page( $data, $postarr ) {
+    global $post;
+
+    // if ( !wp_verify_nonce( $_POST['staff_parent_custom_box'], 'stc_cpt' ) )
+    //     return $data;
+
+    // verify if this is an auto save routine.
+    // If it is our form has not been submitted, so we dont want to do anything
+    if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
+        return $data;
+
+    if ( $post->post_type == "friends" ){
+	    $data['post_parent'] = PRODUCSTS_PARENT_ID ;
+	}
+
+    return $data;
+}
+
 add_action( 'init', 'aethercomm_product_cats_tax_init' );
 if ( ! function_exists( 'aethercomm_product_cats_tax_init' ) ) {
     function aethercomm_product_cats_tax_init() {
