@@ -225,7 +225,7 @@ if ( ! function_exists( 'aethercomm_products_post_type' ) ) {
             'filter_items_list'     => __( 'Filter items list', 'aethercomm' ),
         );
         $rewrite = array(
-            'slug'                  => 'product',
+            'slug'                  => 'products',
             'with_front'            => false,
             'pages'                 => true,
             'feeds'                 => false,
