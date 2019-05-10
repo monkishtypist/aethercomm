@@ -265,7 +265,7 @@ if ( ! function_exists( 'aethercomm_products_cpt_parent_page' ) ) {
         if ( defined( 'DOING_AUTOSAVE' ) && DOING_AUTOSAVE )
             return $data;
 
-        if ( $post->post_type == "products" ){
+        if ( $post->post_type == 'products' ){
             $data['post_parent'] = 19 ;
         }
 
