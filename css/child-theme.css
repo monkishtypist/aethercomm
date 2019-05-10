@@ -18186,6 +18186,17 @@ table.dataTable thead .sorting_desc_disabled:before {
 #products_page-wrapper #products_search .section-title {
   margin-bottom: 0.5rem; }
 
+#products_page-wrapper #products_search #productsearchform #productsearch {
+  height: 50px;
+  border-color: #222222; }
+
+#products_page-wrapper #products_search #productsearchform #productsearchsubmit {
+  background-color: #222222;
+  color: #fff;
+  font-size: 1.5rem;
+  height: 50px;
+  width: 50px; }
+
 #products_page-wrapper #products_categories {
   padding-bottom: 1.25rem;
   padding-top: 1.5rem; }

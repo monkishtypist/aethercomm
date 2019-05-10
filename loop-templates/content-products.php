@@ -44,7 +44,7 @@ $product_cats = get_categories( $product_cats_args );
                         <div class="input-group">
                             <input class="field form-control" id="productsearch" name="productsearch" type="text" placeholder="" value="">
                             <span class="input-group-append">
-                                <button type="submit" id="productsearchsubmit" class="btn btn-dark">
+                                <button type="submit" id="productsearchsubmit" class="">
                                     <i class="fas fa-search"></i>
                                 </button>
                             </span>

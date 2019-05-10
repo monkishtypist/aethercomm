@@ -1875,8 +1875,16 @@ table.dataTable thead .sorting_desc_disabled:before {
             margin-bottom: #{$spacer * .5};
         }
         #productsearchform {
+            #productsearch {
+                height: 50px;
+                border-color: #{$dark};
+            }
             #productsearchsubmit {
-
+                background-color: #{$dark};
+                color: #{$white};
+                font-size: #{$font-size-base * 1.5};
+                height: 50px;
+                width: 50px;
             }
         }
     }
