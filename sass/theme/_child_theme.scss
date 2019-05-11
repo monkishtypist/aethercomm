@@ -1957,9 +1957,23 @@ table.dataTable thead .sorting_desc_disabled:before {
     }
     #single-products_specifications {
         background-image: url(../images/path5.png);
-        background-position: calc(50vw + 1rem) 2rem;
+        background-position: calc(50vw + 19rem) 5rem;
         background-repeat: no-repeat;
         background-size: auto;
+        @include media-breakpoint-down('lg') {
+            background-position: calc(50vw) 5rem;
+        }
+        @include media-breakpoint-down('md') {
+            background-position: calc(50vw) 5rem;
+        }
+        @include media-breakpoint-down('sm') {
+            background-image: url(../images/pathtab2.png);
+            background-position: calc(50vw) 5rem;
+        }
+        @include media-breakpoint-down('xs') {
+            background-image: url(../images/pathtab2.png);
+            background-position: calc(50vw) 5rem;
+        }
         .section-title {
             font-size: #{$font-size-base * 1.25};
             font-weight: #{$font-weight-bold};
