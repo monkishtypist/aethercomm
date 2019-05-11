@@ -65,6 +65,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                     <?php // get_template_part( 'global-templates/products', 'specifications-table' ); ?>
 
+                    <?php $term = get_queried_object();
+
+                    $id = isset( $term->taxonomy )
+                        ? $term->term_id
+                        : get_the_ID();
+
+                    echo $id; ?>
+
                     <table class="table">
                         <tbody>
                             <?php if ( get_acf_field( 'products_specs_frequency_min' ) ) { ?>
