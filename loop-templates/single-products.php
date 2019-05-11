@@ -35,7 +35,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                     <header>
                         <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
-                        <?php echo sprintf( '<a href="%1$s" class="btn-link pdf-link">%2$s</a>',
+                        <?php echo sprintf( '<a href="%1$s" class="btn-link pdf-link" target="_blank">%2$s</a>',
                             get_acf_field( 'product_details_data_sheet', true ),
                             __( 'Data Sheet', 'aethercomm' )
                         ); ?>
@@ -62,7 +62,26 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <?php echo apply_filters( 'the_content', get_acf_field( 'product_details_long-description', true ) ); ?>
                 </div>
                 <div class="col">
-                    <?php get_template_part( 'global-templates/products', 'specifications' ); ?>
+
+                    <?php // get_template_part( 'global-templates/products', 'specifications-table' ); ?>
+
+                    <table class="table">
+                        <tbody>
+                            <?php if ( get_acf_field( 'products_specs_frequency_min' ) ) { ?>
+                                <tr>
+                                    <td><?php _e( 'Low Frequency', 'aethercomm' ); ?></td>
+                                    <td><?php echo get_acf_field( 'products_specs_frequency_min', true ); ?></td>
+                                </tr>
+                            <?php } ?>
+                            <?php if ( get_acf_field( 'products_specs_frequency_max' ) ) { ?>
+                                <tr>
+                                    <td><?php _e( 'High Frequency', 'aethercomm' ); ?></td>
+                                    <td><?php echo get_acf_field( 'products_specs_frequency_max', true ); ?></td>
+                                </tr>
+                            <?php } ?>
+                        </tbody>
+                    </table>
+
                 </div>
             </div>
 

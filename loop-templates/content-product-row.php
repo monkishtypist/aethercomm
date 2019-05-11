@@ -33,7 +33,7 @@ foreach ( $terms as $term ) {
                     get_permalink(),
                     get_acf_field( 'product_specs_model_number', true )
                 ); ?>
-                <?php echo sprintf( '<a href="%1$s" class="btn-link pdf-link">%2$s</a>',
+                <?php echo sprintf( '<a href="%1$s" class="btn-link pdf-link" target="_blank">%2$s</a>',
                     get_acf_field( 'product_details_data_sheet', true ),
                     __( 'PDF', 'aethercomm' )
                 ); ?>
