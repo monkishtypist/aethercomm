@@ -37,7 +37,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
                         <?php echo sprintf( '<a href="%1$s" class="btn-link pdf-link">%2$s</a>',
                             get_acf_field( 'product_details_data_sheet', true ),
-                            __( 'PDF', 'aethercomm' )
+                            __( 'Data Sheet', 'aethercomm' )
                         ); ?>
                         <?php the_content(); ?>
                     </header>
