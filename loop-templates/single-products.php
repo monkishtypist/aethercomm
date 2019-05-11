@@ -64,10 +64,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
             </div>
             <div class="row">
-                <div class="col">
+                <div class="col-12 col-md-6 mr-md-5">
                     <?php echo apply_filters( 'the_content', get_acf_field( 'product_details_long_description', true ) ); ?>
                 </div>
-                <div class="col">
+                <div class="col-12 col-md-6">
 
                     <?php get_template_part( 'global-templates/products', 'specifications-table' ); ?>
 
