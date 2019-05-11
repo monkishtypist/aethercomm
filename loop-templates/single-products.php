@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 $terms = get_the_terms( get_the_ID(), 'product-categories' );
 $terms_array = array();
 foreach ( $terms as $term ) {
-    $terms_array[] = $term->slug;
+    $terms_array[] = $term->name;
 }
 
 ?>
