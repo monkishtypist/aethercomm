@@ -1981,5 +1981,16 @@ table.dataTable thead .sorting_desc_disabled:before {
                 margin-right: 0;
             }
         }
+        table.table {
+            tbody {
+                tr {
+                    &:first-of-type {
+                        td {
+                            border-top: 0;
+                        }
+                    }
+                }
+            }
+        }
     }
 }

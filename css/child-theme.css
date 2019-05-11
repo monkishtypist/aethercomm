@@ -18273,4 +18273,7 @@ table.dataTable thead .sorting_desc_disabled:before {
     #single_products-wrapper #single-products_specifications .specs-intro {
       margin-right: 0; } }
 
+#single_products-wrapper #single-products_specifications table.table tbody tr:first-of-type td {
+  border-top: 0; }
+
 /*# sourceMappingURL=child-theme.css.map */
