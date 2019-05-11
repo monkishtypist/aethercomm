@@ -13,6 +13,12 @@ global $post;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
+$terms = get_the_terms( get_the_ID(), 'product-categories' );
+$terms_array = array();
+foreach ( $terms as $term ) {
+    $terms_array[] = $term->slug;
+}
+
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -25,8 +31,10 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class="col">
                     <div id="single_products-breadcrumb">
                         <pre><?php print_r( $post ); ?></pre>
-                        <span><?php // parent ?></span>
-                        <span><?php // category ?></span>
+                        <span class="single_products-parent"><?php echo get_the_title( $post->post_parent ); // parent ?></span>
+                        <?php if ( ! empty( $terms_array ) ) { ?>
+                            <span class="single_products-terms"><?php echo implode( ' | ', $terms_array ); // category ?></span>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
