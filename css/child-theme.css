@@ -18267,4 +18267,10 @@ table.dataTable thead .sorting_desc_disabled:before {
   letter-spacing: 0;
   margin-bottom: .5em; }
 
+#single_products-wrapper #single-products_specifications .specs-intro {
+  margin-right: 4rem; }
+  @media (max-width: 768.98px) {
+    #single_products-wrapper #single-products_specifications .specs-intro {
+      margin-right: 0; } }
+
 /*# sourceMappingURL=child-theme.css.map */

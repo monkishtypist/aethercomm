@@ -1975,5 +1975,11 @@ table.dataTable thead .sorting_desc_disabled:before {
             letter-spacing: 0;
             margin-bottom: .5em;
         }
+        .specs-intro {
+            margin-right: #{$spacer * 4};
+            @include media-breakpoint-down('sm') {
+                margin-right: 0;
+            }
+        }
     }
 }
