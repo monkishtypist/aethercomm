@@ -63,32 +63,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 </div>
                 <div class="col">
 
-                    <?php // get_template_part( 'global-templates/products', 'specifications-table' ); ?>
-
-                    <?php $term = get_queried_object();
-
-                    $id = isset( $term->taxonomy )
-                        ? $term->term_id
-                        : get_the_ID();
-
-                    echo '<pre>'; get_post_meta( get_the_ID() ); echo '</pre>'; ?>
-
-                    <table class="table">
-                        <tbody>
-                            <?php if ( get_acf_field( 'product_specs_frequency_min' ) ) { ?>
-                                <tr>
-                                    <td><?php _e( 'Low Frequency', 'aethercomm' ); ?></td>
-                                    <td><?php echo get_acf_field( 'product_specs_frequency_min', true ); ?></td>
-                                </tr>
-                            <?php } ?>
-                            <?php if ( get_acf_field( 'product_specs_frequency_max' ) ) { ?>
-                                <tr>
-                                    <td><?php _e( 'High Frequency', 'aethercomm' ); ?></td>
-                                    <td><?php echo get_acf_field( 'product_specs_frequency_max', true ); ?></td>
-                                </tr>
-                            <?php } ?>
-                        </tbody>
-                    </table>
+                    <?php get_template_part( 'global-templates/products', 'specifications-table' ); ?>
 
                 </div>
             </div>
