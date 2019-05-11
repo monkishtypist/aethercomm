@@ -1961,18 +1961,18 @@ table.dataTable thead .sorting_desc_disabled:before {
         background-repeat: no-repeat;
         background-size: auto;
         @include media-breakpoint-down('lg') {
-            background-position: calc(50vw) 5rem;
+            background-position: calc(50vw + 15rem) 5rem;
         }
         @include media-breakpoint-down('md') {
-            background-position: calc(50vw) 5rem;
+            background-position: calc(50vw + 8rem) 5rem;
         }
         @include media-breakpoint-down('sm') {
             background-image: url(../images/pathtab2.png);
-            background-position: calc(50vw) 5rem;
+            background-position: calc(50vw + 9rem) 3.7rem;
         }
         @include media-breakpoint-down('xs') {
             background-image: url(../images/pathtab2.png);
-            background-position: calc(50vw) 5rem;
+            background-position: calc(50vw + 6rem) 3.7rem;
         }
         .section-title {
             font-size: #{$font-size-base * 1.25};

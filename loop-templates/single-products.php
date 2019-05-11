@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
                 <?php if ( has_post_thumbnail() ) { ?>
 
-                    <div class="col">
+                    <div class="col-12 col-md">
                         <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
                     </div>
 

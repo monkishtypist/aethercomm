@@ -18256,18 +18256,18 @@ table.dataTable thead .sorting_desc_disabled:before {
   background-size: auto; }
   @media (max-width: 1199.98px) {
     #single_products-wrapper #single-products_specifications {
-      background-position: calc(50vw) 5rem; } }
+      background-position: calc(50vw + 15rem) 5rem; } }
   @media (max-width: 991.98px) {
     #single_products-wrapper #single-products_specifications {
-      background-position: calc(50vw) 5rem; } }
+      background-position: calc(50vw + 8rem) 5rem; } }
   @media (max-width: 768.98px) {
     #single_products-wrapper #single-products_specifications {
       background-image: url(../images/pathtab2.png);
-      background-position: calc(50vw) 5rem; } }
+      background-position: calc(50vw + 9rem) 3.7rem; } }
   @media (max-width: 575.98px) {
     #single_products-wrapper #single-products_specifications {
       background-image: url(../images/pathtab2.png);
-      background-position: calc(50vw) 5rem; } }
+      background-position: calc(50vw + 6rem) 3.7rem; } }
   #single_products-wrapper #single-products_specifications .section-title {
     font-size: 1.25rem;
     font-weight: 700;
