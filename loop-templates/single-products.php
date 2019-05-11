@@ -65,7 +65,7 @@ $container = get_theme_mod( 'understrap_container_type' );
             </div>
             <div class="row">
                 <div class="col">
-                    <?php echo apply_filters( 'the_content', get_acf_field( 'product_details_long-description', true ) ); ?>
+                    <?php echo apply_filters( 'the_content', get_acf_field( 'product_details_long_description', true ) ); ?>
                 </div>
                 <div class="col">
 

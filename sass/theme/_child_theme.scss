@@ -1955,17 +1955,19 @@ table.dataTable thead .sorting_desc_disabled:before {
             margin-bottom: 1em;
         }
     }
-    .section-title {
-        font-size: #{$font-size-base * 1.25};
-        font-weight: #{$font-weight-bold};
-        letter-spacing: .025em;
-        &::before {
-            content: "\f078";
-            display: inline;
-            font-family: $font-family-fa;
-            font-weight: #{$font-weight-normal};
-            margin-right: #{$spacer * .5};
+    #single-products_specifications {
+        .section-title {
+            font-size: #{$font-size-base * 1.25};
+            font-weight: #{$font-weight-bold};
+            letter-spacing: .025em;
+            &::before {
+                content: "\f078";
+                display: inline;
+                font-family: $font-family-fa;
+                font-weight: #{$font-weight-normal};
+                margin-right: #{$spacer * .5};
+            }
         }
+        .section-lede {}
     }
-    .section-lede {}
 }

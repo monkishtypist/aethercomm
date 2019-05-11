@@ -18249,11 +18249,11 @@ table.dataTable thead .sorting_desc_disabled:before {
 #single_products-wrapper #single_products-header .pdf-link {
   margin-bottom: 1em; }
 
-#single_products-wrapper .section-title {
+#single_products-wrapper #single-products_specifications .section-title {
   font-size: 1.25rem;
   font-weight: 700;
   letter-spacing: .025em; }
-  #single_products-wrapper .section-title::before {
+  #single_products-wrapper #single-products_specifications .section-title::before {
     content: "\f078";
     display: inline;
     font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
