@@ -30,7 +30,6 @@ foreach ( $terms as $term ) {
             <div class="row">
                 <div class="col">
                     <div id="single_products-breadcrumb">
-                        <pre><?php print_r( $post ); ?></pre>
                         <span class="single_products-parent"><?php echo get_the_title( $post->post_parent ); // parent ?></span>
                         <?php if ( ! empty( $terms_array ) ) { ?>
                             <span class="single_products-terms"><?php echo implode( ' | ', $terms_array ); // category ?></span>
@@ -63,7 +62,7 @@ foreach ( $terms as $term ) {
 
             </div>
 
-            <span class="crosshairs-gray crosshairs-top-left"></span>
+            <span class="crosshairs-gray crosshairs-sm-gray crosshairs-top-left"></span>
             <span class="crosshairs-gray crosshairs-top-right"></span>
 
         </div>
