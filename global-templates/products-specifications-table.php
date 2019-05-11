@@ -26,13 +26,13 @@ $queried_object = get_queried_object();
         <?php if ( get_acf_field( 'product_specs_watts' ) ) { ?>
             <tr>
                 <td><?php _e( 'Output Power', 'aethercomm' ); ?></td>
-                <td class="text-right"><?php echo get_acf_field( 'product_specs_watts', true ); ?></td>
+                <td class="text-right"><?php echo get_acf_field( 'product_specs_watts', true ); ?> <?php _e( 'watts', 'aethercomm' ); ?></td>
             </tr>
         <?php } ?>
         <?php if ( get_acf_field( 'product_specs_applied_voltage' ) ) { ?>
             <tr>
                 <td><?php _e( 'Applied Voltage', 'aethercomm' ); ?></td>
-                <td class="text-right"><?php echo get_acf_field( 'product_specs_applied_voltage', true ); ?></td>
+                <td class="text-right"><?php echo get_acf_field( 'product_specs_applied_voltage', true ); ?> <?php _e( 'Vdc', 'aethercomm' ); ?></td>
             </tr>
         <?php } ?>
         <?php if ( get_acf_field( 'product_specs_short_protection' ) ) { ?>
