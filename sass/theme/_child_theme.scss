@@ -1956,6 +1956,10 @@ table.dataTable thead .sorting_desc_disabled:before {
         }
     }
     #single-products_specifications {
+        background-image: url(../images/pathtab2.png);
+        background-position: calc(50vw + 1rem) 2rem;
+        background-repeat: no-repeat;
+        background-size: auto;
         .section-title {
             font-size: #{$font-size-base * 1.25};
             font-weight: #{$font-weight-bold};
