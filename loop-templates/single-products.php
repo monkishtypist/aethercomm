@@ -23,6 +23,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <div class="row">
 
+                <?php if ( has_post_thumbnail() ) { ?>
+
+                    <div class="col">
+                        <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
+                    </div>
+
+                <?php } ?>
+
                 <div class="col">
 
                     <header>
