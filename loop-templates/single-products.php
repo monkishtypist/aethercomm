@@ -71,7 +71,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                         ? $term->term_id
                         : get_the_ID();
 
-                    echo '<pre>'; get_post_meta( $id ); echo '</pre>'; ?>
+                    echo '<pre>'; get_post_meta( get_the_ID() ); echo '</pre>'; ?>
 
                     <table class="table">
                         <tbody>
