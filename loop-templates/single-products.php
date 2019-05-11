@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section_header section-header-overlay">
+    <section id="single-products_header" class="section_header">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -42,7 +42,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
     </section>
 
-    <section id="<?php echo $post->post_name; ?>_specifications" class="single-products-specifications section-white">
+    <section id="single-products_specifications" class="single-products_specifications section-white">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
