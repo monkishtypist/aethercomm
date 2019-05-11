@@ -17,7 +17,7 @@ global $post;
 
 ?>
 
-<div class="wrapper" id="single_<?php echo $post->post_type; ?>_page-wrapper" class="single_page-wrapper">
+<div class="wrapper" id="single_<?php echo $post->post_type; ?>-wrapper" class="single-wrapper">
 
     <main class="site-main" id="main">
 

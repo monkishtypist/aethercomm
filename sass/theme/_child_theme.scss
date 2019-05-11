@@ -303,6 +303,21 @@ a {
     &.read-more-link {
         text-decoration: underline;
     }
+    &.btn-link {
+        color: #{$blue};
+        display: block;
+        font-weight: #{$font-weight-bold};
+        white-space: nowrap;
+        &.pdf-link {
+            &::before {
+                content: "\f1c1";
+                display: inline;
+                font-family: "Font Awesome 5 Pro";
+                font-weight: #{$font-weight-normal};
+                margin-right: #{$spacer * .5};
+            }
+        }
+    }
 }
 ul {
     &.list-col {
@@ -1195,21 +1210,6 @@ table.dataTable thead .sorting_desc_disabled:before {
         }
     }
     a {
-        &.btn-link {
-            color: #{$blue};
-            display: block;
-            font-weight: #{$font-weight-bold};
-            white-space: nowrap;
-            &.pdf-link {
-                &::before {
-                    content: "\f1c1";
-                    display: inline;
-                    font-family: "Font Awesome 5 Pro";
-                    font-weight: #{$font-weight-normal};
-                    margin-right: #{$spacer * .5};
-                }
-            }
-        }
         &.read-more-link {
             color: #{$blue};
             text-transform: uppercase;
@@ -1941,4 +1941,12 @@ table.dataTable thead .sorting_desc_disabled:before {
         }
     }
 
+}
+
+#single_products-wrapper {
+    .page_title {
+        font-size: #{$font-size-base * 2.625};
+        font-weight: #{$font-weight-light};
+        letter-spacing: 0;
+    }
 }

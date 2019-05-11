@@ -14676,6 +14676,18 @@ h2, .h2 {
 a.read-more-link {
   text-decoration: underline; }
 
+a.btn-link {
+  color: #4A63AE;
+  display: block;
+  font-weight: 700;
+  white-space: nowrap; }
+  a.btn-link.pdf-link::before {
+    content: "\f1c1";
+    display: inline;
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 400;
+    margin-right: 0.5rem; }
+
 ul.list-col {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -17289,17 +17301,6 @@ table.dataTable thead .sorting_desc_disabled:before {
       .table thead tr th.sorting::after {
         content: "\f0dd";
         font-family: "Font Awesome 5 Pro"; }
-  .table a.btn-link {
-    color: #4A63AE;
-    display: block;
-    font-weight: 700;
-    white-space: nowrap; }
-    .table a.btn-link.pdf-link::before {
-      content: "\f1c1";
-      display: inline;
-      font-family: "Font Awesome 5 Pro";
-      font-weight: 400;
-      margin-right: 0.5rem; }
   .table a.read-more-link {
     color: #4A63AE;
     text-transform: uppercase; }
@@ -18238,5 +18239,10 @@ table.dataTable thead .sorting_desc_disabled:before {
     font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     margin-right: 0.25rem; }
+
+#single_products-wrapper .page_title {
+  font-size: 2.625rem;
+  font-weight: 300;
+  letter-spacing: 0; }
 
 /*# sourceMappingURL=child-theme.css.map */
