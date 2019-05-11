@@ -18230,12 +18230,13 @@ table.dataTable thead .sorting_desc_disabled:before {
   font-size: 0.625rem;
   font-weight: 700;
   letter-spacing: .250em;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
   #products_page-wrapper #products-table_wrapper #products-table .product-queue-link::before {
     content: "\f00c";
     display: inline;
     font-family: "Font Awesome 5 Pro";
     font-weight: 400;
-    margin-right: 0.5rem; }
+    margin-right: 0.25rem; }
 
 /*# sourceMappingURL=child-theme.css.map */
