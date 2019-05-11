@@ -59,7 +59,8 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <div class="row">
                 <div class="col">
-
+                    <h2 class="section-title"><?php _e( 'Specs', 'aethercomm' ); ?></h2>
+                    <h3 class="section-lede"><?php _e( 'Product Specifications', 'aethercomm' ); ?></h3>
                     <?php echo apply_filters( 'the_content', get_acf_field( 'product_details_long-description', true ) ); ?>
                 </div>
                 <div class="col">

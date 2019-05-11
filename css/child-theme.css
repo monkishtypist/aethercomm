@@ -14684,7 +14684,7 @@ a.btn-link {
   a.btn-link.pdf-link::before {
     content: "\f1c1";
     display: inline;
-    font-family: "Font Awesome 5 Pro";
+    font-family: Font Awesome 5 Pro;
     font-weight: 400;
     margin-right: 0.5rem; }
 
@@ -18248,5 +18248,16 @@ table.dataTable thead .sorting_desc_disabled:before {
 
 #single_products-wrapper #single_products-header .pdf-link {
   margin-bottom: 1em; }
+
+#single_products-wrapper .section-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: .025em; }
+  #single_products-wrapper .section-title::before {
+    content: "\f078";
+    display: inline;
+    font-family: Font Awesome 5 Pro;
+    font-weight: 400;
+    margin-right: 0.5rem; }
 
 /*# sourceMappingURL=child-theme.css.map */
