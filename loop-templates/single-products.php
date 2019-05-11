@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="single-products_header" class="section_header">
+    <section id="single_products-header" class="section_header">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
@@ -59,6 +59,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <div class="row">
                 <div class="col">
+
                     <?php echo apply_filters( 'the_content', get_acf_field( 'product_details_long-description', true ) ); ?>
                 </div>
                 <div class="col">

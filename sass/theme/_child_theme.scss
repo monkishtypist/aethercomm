@@ -1944,7 +1944,7 @@ table.dataTable thead .sorting_desc_disabled:before {
 }
 
 #single_products-wrapper {
-    header {
+    #single_products-header {
         .page-title {
             font-size: #{$font-size-base * 2.625};
             font-weight: #{$font-weight-light};
