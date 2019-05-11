@@ -17,7 +17,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
 
-    <section id="<?php echo $post->post_name; ?>_header" class="section_header <?php echo $template_slug; ?>_header section-header-overlay section-header-overlay_<?php echo $overlay_color; ?>">
+    <section id="<?php echo $post->post_name; ?>_header" class="section_header section-header-overlay">
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
