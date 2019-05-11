@@ -1954,6 +1954,16 @@ table.dataTable thead .sorting_desc_disabled:before {
         .pdf-link {
             margin-bottom: 1em;
         }
+        #single_products-breadcrumb {
+            span {
+                font-size: #{$font-size-base * 0.8125};
+                font-weight: $font-weight-bold;
+                margin-right: #{$spacer * 3};
+                &:last-of-type {
+                    margin-right: 0;
+                }
+            }
+        }
     }
     #single-products_specifications {
         background-image: url(../images/path5.png);
