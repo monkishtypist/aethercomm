@@ -17,7 +17,7 @@ global $post;
 
 ?>
 
-<div class="wrapper" id="<?php echo $post->post_name; ?>_page-wrapper" class="single_page-wrapper">
+<div class="wrapper" id="single_page-wrapper" class="single_page-wrapper">
 
     <main class="site-main" id="main">
 
@@ -29,6 +29,6 @@ global $post;
 
     </main><!-- #main -->
 
-</div><!-- #page-wrapper -->
+</div><!-- #single_page-wrapper -->
 
 <?php get_footer(); ?>

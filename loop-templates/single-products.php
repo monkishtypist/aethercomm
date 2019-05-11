@@ -50,9 +50,9 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <div class="col">
                     <?php echo apply_filters( 'the_content', get_acf_field( 'product_details_long-description', true ) ); ?>
                 </div>
-
-                <?php get_template_part( 'global-templates/products', 'specifications' ); ?>
-
+                <div class="col">
+                    <?php get_template_part( 'global-templates/products', 'specifications' ); ?>
+                </div>
             </div>
 
             <span class="crosshairs-gray crosshairs-bottom-left"></span>
