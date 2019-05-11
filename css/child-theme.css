@@ -17243,14 +17243,6 @@ textarea {
   color: #fff; }
 
 /* Data Tables */
-#products-table_wrapper #products-table_filter {
-  display: none; }
-
-#products-table_wrapper #products-table thead tr th, #products-table_wrapper #products-table thead tr td {
-  white-space: nowrap; }
-  #products-table_wrapper #products-table thead tr th:nth-child(2), #products-table_wrapper #products-table thead tr td:nth-child(2) {
-    min-width: 16.5rem; }
-
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:before,
 table.dataTable thead .sorting_asc_disabled:before,
@@ -18224,5 +18216,26 @@ table.dataTable thead .sorting_desc_disabled:before {
       #products_page-wrapper #products_categories nav .nav-link.active {
         color: #4A63AE;
         border-bottom: 0.5rem solid #4A63AE; }
+
+#products_page-wrapper #products-table_wrapper #products-table_filter {
+  display: none; }
+
+#products_page-wrapper #products-table_wrapper #products-table thead tr th, #products_page-wrapper #products-table_wrapper #products-table thead tr td {
+  white-space: nowrap; }
+  #products_page-wrapper #products-table_wrapper #products-table thead tr th:nth-child(2), #products_page-wrapper #products-table_wrapper #products-table thead tr td:nth-child(2) {
+    min-width: 16.5rem; }
+
+#products_page-wrapper #products-table_wrapper #products-table .product-queue-link {
+  color: #4A63AE;
+  font-size: 0.625rem;
+  font-weight: 700;
+  letter-spacing: .250em;
+  text-align: center; }
+  #products_page-wrapper #products-table_wrapper #products-table .product-queue-link::before {
+    content: "\f00c";
+    display: inline;
+    font-family: Font Awesome 5 Pro;
+    font-weight: 400;
+    margin-right: 0.5rem; }
 
 /*# sourceMappingURL=child-theme.css.map */

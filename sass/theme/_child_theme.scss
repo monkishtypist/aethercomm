@@ -1139,23 +1139,6 @@ textarea {
 }
 
 /* Data Tables */
-#products-table_wrapper {
-    #products-table_filter {
-        display: none;
-    }
-    #products-table {
-        thead {
-            tr {
-                th, td {
-                    white-space: nowrap;
-                    &:nth-child(2) {
-                        min-width: #{$spacer * 16.5};
-                    }
-                }
-            }
-        }
-    }
-}
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:before,
 table.dataTable thead .sorting_asc_disabled:before,
@@ -1925,4 +1908,36 @@ table.dataTable thead .sorting_desc_disabled:before {
             }
         }
     }
+    #products-table_wrapper {
+        #products-table_filter {
+            display: none;
+        }
+        #products-table {
+            thead {
+                tr {
+                    th, td {
+                        white-space: nowrap;
+                        &:nth-child(2) {
+                            min-width: #{$spacer * 16.5};
+                        }
+                    }
+                }
+            }
+            .product-queue-link {
+                color: #{$blue};
+                font-size: #{$font-size-base * 0.625};
+                font-weight: #{$font-weight-bold};
+                letter-spacing: .250em;
+                text-align: center;
+                &::before {
+                    content: "\f00c";
+                    display: inline;
+                    font-family: #{$font-family-fa};
+                    font-weight: #{$font-weight-normal};
+                    margin-right: #{$spacer * .5};
+                }
+            }
+        }
+    }
+
 }

@@ -19,7 +19,7 @@ foreach ( $terms as $term ) {
 <tr>
     <td>
         <a href="#" class="btn btn-secondary btn-sm"><?php echo sprintf( '%1$s<br />%2$s', __( 'Request', 'aethercomm' ), __( 'Details', 'aethercomm' ) ); ?></a>
-        <a href="#" class="peoduct-queue-link"><?php _e( 'Add to queue', 'aethercomm' ); ?></a>
+        <a href="#" class="product-queue-link"><?php _e( 'Add to queue', 'aethercomm' ); ?></a>
     </td>
     <td data-order="<?php echo get_acf_field( 'product_specs_model_number', true ); ?>">
         <div class="row no-gutters">
