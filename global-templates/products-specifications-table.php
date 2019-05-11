@@ -47,7 +47,7 @@ $queried_object = get_queried_object();
                 <td class="text-right"><?php echo get_acf_field( 'product_specs_over_protection', true ); ?> <?php _e( 'MHz', 'aethercomm' ); ?></td>
             </tr>
         <?php } ?>
-        <?php if ( get_acf_field( 'product_specs_baseplate_temp' ) ) { ?>
+        <?php if ( get_acf_field( 'product_specs_baseplate_temp', true ) ) { ?>
             <tr>
                 <td><?php _e( 'Baseplate Temp', 'aethercomm' ); ?></td>
                 <td class="text-right"><?php echo get_acf_field( 'product_specs_baseplate_temp', true ); ?></td>
