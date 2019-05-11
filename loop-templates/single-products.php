@@ -22,6 +22,15 @@ $container = get_theme_mod( 'understrap_container_type' );
         <div class="<?php echo esc_attr( $container ); ?>">
 
             <div class="row">
+                <div class="col">
+                    <div id="single_products-breadcrumb">
+                        <pre><?php print_r( $post ); ?></pre>
+                        <span><?php // parent ?></span>
+                        <span><?php // category ?></span>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
 
                 <?php if ( has_post_thumbnail() ) { ?>
 
