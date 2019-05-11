@@ -283,7 +283,7 @@ h2, .h2 {
 .page-title {
     font-size: #{$font-size-base * .75};
     font-weight: #{$font-weight-black};
-    letter-spacing: .600em;
+    letter-spacing: .060em;
     margin-bottom: 2em;
     text-transform: uppercase;
 }
@@ -345,7 +345,7 @@ ul {
 a.btn,
 button.btn {
     font-size: #{$font-size-sm};
-    letter-spacing: .600em;
+    letter-spacing: .060em;
     line-height: 1;
     max-width: 100%;
     position: relative;
@@ -372,7 +372,7 @@ button.btn {
     }
     &.btn-sm {
         font-size: #{$font-size-base * 0.625};
-        letter-spacing: .250em;
+        letter-spacing: .025em;
         line-height: 1.2;
         padding-bottom: #{$btn-padding-y * .5};
         padding-left: #{$btn-padding-x * 1.833333};
@@ -1927,7 +1927,7 @@ table.dataTable thead .sorting_desc_disabled:before {
                 color: #{$blue};
                 font-size: #{$font-size-base * 0.625};
                 font-weight: #{$font-weight-bold};
-                letter-spacing: .250em;
+                letter-spacing: .025em;
                 text-align: center;
                 text-transform: uppercase;
                 &::before {
