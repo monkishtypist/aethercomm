@@ -23,7 +23,7 @@ global $post;
 
         <?php while ( have_posts() ) : the_post(); ?>
 
-            <?php get_template_part( 'loop-templates/content', 'single' ); ?>
+            <?php get_template_part( 'loop-templates/single', $post->post_type ); ?>
 
         <?php endwhile; // end of the loop. ?>
 
