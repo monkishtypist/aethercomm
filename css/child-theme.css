@@ -14684,7 +14684,7 @@ a.btn-link {
   a.btn-link.pdf-link::before {
     content: "\f1c1";
     display: inline;
-    font-family: Font Awesome 5 Pro;
+    font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
     font-weight: 400;
     margin-right: 0.5rem; }
 
@@ -17246,7 +17246,7 @@ textarea {
   .page-item .page-link.next, .page-item .page-link.prev {
     background-color: #222222;
     color: #fff;
-    font-family: 'Font Awesome 5 Pro';
+    font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
     font-weight: 300; }
 
 .page-item.active .page-link {
@@ -17261,7 +17261,7 @@ table.dataTable thead .sorting_asc_disabled:before,
 table.dataTable thead .sorting_desc:before,
 table.dataTable thead .sorting_desc_disabled:before {
   content: "\f0de";
-  font-family: "Font Awesome 5 Pro";
+  font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
   right: .5em; }
 
 table.dataTable thead .sorting:after,
@@ -17270,7 +17270,7 @@ table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc:after,
 table.dataTable thead .sorting_desc_disabled:after {
   content: "\f0dd";
-  font-family: "Font Awesome 5 Pro"; }
+  font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome"; }
 
 table.dataTable thead .sorting:after,
 table.dataTable thead .sorting:before,
@@ -17297,10 +17297,10 @@ table.dataTable thead .sorting_desc_disabled:before {
       vertical-align: top; }
       .table thead tr th.sorting::before {
         content: "\f0de";
-        font-family: "Font Awesome 5 Pro"; }
+        font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome"; }
       .table thead tr th.sorting::after {
         content: "\f0dd";
-        font-family: "Font Awesome 5 Pro"; }
+        font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome"; }
   .table a.read-more-link {
     color: #4A63AE;
     text-transform: uppercase; }
@@ -17524,7 +17524,7 @@ table.dataTable thead .sorting_desc_disabled:before {
         #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
           content: "\f105";
           display: inline-block;
-          font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+          font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
           font-weight: 300;
           margin-right: 0.75rem;
           width: 0.75rem; }
@@ -17574,7 +17574,7 @@ table.dataTable thead .sorting_desc_disabled:before {
               #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
                 content: "\f105";
                 display: inline-block;
-                font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
                 font-weight: 300; } }
 
 #who-we-are_page-wrapper #who-we-are_mission {
@@ -17712,7 +17712,7 @@ table.dataTable thead .sorting_desc_disabled:before {
         #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span::before {
           content: "\f105";
           display: inline-block;
-          font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+          font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
           font-weight: 300;
           margin-right: 0.75rem;
           width: 0.75rem; }
@@ -17762,7 +17762,7 @@ table.dataTable thead .sorting_desc_disabled:before {
               #what-we-do_page-wrapper #what-we-do_tabs .nav-tabs .nav-item .nav-link span::before {
                 content: "\f105";
                 display: inline-block;
-                font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
                 font-weight: 300; } }
   #what-we-do_page-wrapper #what-we-do_tabs #platforms-tabs-content-wrapper {
     background-color: #222222;
@@ -18236,7 +18236,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   #products_page-wrapper #products-table_wrapper #products-table .product-queue-link::before {
     content: "\f00c";
     display: inline;
-    font-family: "Font Awesome 5 Pro";
+    font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
     font-weight: 400;
     margin-right: 0.25rem; }
 
@@ -18256,7 +18256,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   #single_products-wrapper .section-title::before {
     content: "\f078";
     display: inline;
-    font-family: Font Awesome 5 Pro;
+    font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
     font-weight: 400;
     margin-right: 0.5rem; }
 

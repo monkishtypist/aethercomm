@@ -100,7 +100,7 @@ $container-padding-sm: 2.25rem;
                     &::before {
                         content: "\f105";
                         display: inline-block;
-                        font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                        font-family: $font-family-fa;
                         font-weight: #{$font-weight-light};
                         margin-right: #{$spacer * .75};
                         width: #{$spacer * .75};
@@ -161,7 +161,7 @@ $container-padding-sm: 2.25rem;
                         &::before {
                             content: "\f105";
                             display: inline-block;
-                            font-family: 'Font Awesome 5 Pro', 'Font Awesome';
+                            font-family: $font-family-fa;
                             font-weight: #{$font-weight-light};
                         }
                     }
@@ -312,7 +312,7 @@ a {
             &::before {
                 content: "\f1c1";
                 display: inline;
-                font-family: #{$font-family-fa};
+                font-family: $font-family-fa;
                 font-weight: #{$font-weight-normal};
                 margin-right: #{$spacer * .5};
             }
@@ -1140,7 +1140,7 @@ textarea {
         &.prev {
             background-color: #{$dark};
             color: #{$white};
-            font-family: 'Font Awesome 5 Pro';
+            font-family: $font-family-fa;
             font-weight: #{$font-weight-light};
         }
     }
@@ -1160,7 +1160,7 @@ table.dataTable thead .sorting_asc_disabled:before,
 table.dataTable thead .sorting_desc:before,
 table.dataTable thead .sorting_desc_disabled:before {
     content: "\f0de";
-    font-family: "Font Awesome 5 Pro";
+    font-family: $font-family-fa;
     right: .5em;
 }
 table.dataTable thead .sorting:after,
@@ -1169,7 +1169,7 @@ table.dataTable thead .sorting_asc_disabled:after,
 table.dataTable thead .sorting_desc:after,
 table.dataTable thead .sorting_desc_disabled:after {
     content: "\f0dd";
-    font-family: "Font Awesome 5 Pro";
+    font-family: $font-family-fa;
 }
 table.dataTable thead .sorting:after,
 table.dataTable thead .sorting:before,
@@ -1199,11 +1199,11 @@ table.dataTable thead .sorting_desc_disabled:before {
                 &.sorting {
                     &::before {
                         content: "\f0de";
-                        font-family: "Font Awesome 5 Pro";
+                        font-family: $font-family-fa;
                     }
                     &::after {
                         content: "\f0dd";
-                        font-family: "Font Awesome 5 Pro";
+                        font-family: $font-family-fa;
                     }
                 }
             }
@@ -1962,7 +1962,7 @@ table.dataTable thead .sorting_desc_disabled:before {
         &::before {
             content: "\f078";
             display: inline;
-            font-family: #{$font-family-fa};
+            font-family: $font-family-fa;
             font-weight: #{$font-weight-normal};
             margin-right: #{$spacer * .5};
         }
