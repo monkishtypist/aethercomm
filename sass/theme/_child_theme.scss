@@ -1932,7 +1932,7 @@ table.dataTable thead .sorting_desc_disabled:before {
                 &::before {
                     content: "\f00c";
                     display: inline;
-                    font-family: #{$font-family-fa};
+                    font-family: $font-family-fa;
                     font-weight: #{$font-weight-normal};
                     margin-right: #{$spacer * .5};
                 }

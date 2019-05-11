@@ -18234,7 +18234,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   #products_page-wrapper #products-table_wrapper #products-table .product-queue-link::before {
     content: "\f00c";
     display: inline;
-    font-family: Font Awesome 5 Pro;
+    font-family: "Font Awesome 5 Pro";
     font-weight: 400;
     margin-right: 0.5rem; }
 
