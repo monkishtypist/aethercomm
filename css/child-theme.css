@@ -18240,6 +18240,14 @@ table.dataTable thead .sorting_desc_disabled:before {
     font-weight: 400;
     margin-right: 0.25rem; }
 
+@media (max-width: 768.98px) {
+  #single_products-wrapper #single_products-header {
+    margin-top: 9.325rem; } }
+
+@media (max-width: 575.98px) {
+  #single_products-wrapper #single_products-header {
+    margin-top: 7.125rem; } }
+
 #single_products-wrapper #single_products-header .page-title {
   font-size: 2.625rem;
   font-weight: 300;

@@ -1945,6 +1945,12 @@ table.dataTable thead .sorting_desc_disabled:before {
 
 #single_products-wrapper {
     #single_products-header {
+        @include media-breakpoint-down('sm') {
+            margin-top: #{$spacer * 9.325};
+        }
+        @include media-breakpoint-down('xs') {
+            margin-top: #{$spacer * 7.125};
+        }
         .page-title {
             font-size: #{$font-size-base * 2.625};
             font-weight: #{$font-weight-light};
