@@ -36,7 +36,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                     <header>
                         <?php the_title( '<h1 class="page-title">', '</h1>' ); ?>
                         <?php echo sprintf( '<a href="%1$s" class="btn-link pdf-link" target="_blank">%2$s</a>',
-                            get_acf_field( 'product_details_data_sheet', true ),
+                            wp_get_attachment_url( get_acf_field( 'product_details_data_sheet', true ) ),
                             __( 'Data Sheet', 'aethercomm' )
                         ); ?>
                         <?php the_content(); ?>
