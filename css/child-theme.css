@@ -18273,6 +18273,8 @@ table.dataTable thead .sorting_desc_disabled:before {
     font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
     font-weight: 400;
     margin-right: 0.25rem; }
+  #products_page-wrapper #products-table_wrapper #products-table .product-queue-link[data-queued="true"] {
+    color: #28a745; }
 
 @media (max-width: 768.98px) {
   #single_products-wrapper #single_products-header {

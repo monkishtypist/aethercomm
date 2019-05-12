@@ -1966,6 +1966,9 @@ table.dataTable thead .sorting_desc_disabled:before {
                     font-weight: #{$font-weight-normal};
                     margin-right: #{$spacer * .25};
                 }
+                &[data-queued="true"] {
+                    color: $green;
+                }
             }
         }
     }
