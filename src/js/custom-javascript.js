@@ -149,7 +149,7 @@
         var modelsQueued = getModelsQueued();
         var modelsQueuedString = modelsQueued.join();
         $('.gfield.gform_hidden input').val( modelsQueuedString );
-        $('form.contact-form').scrollIntoView();
+        $('form.contact-form')[0].scrollIntoView();
     }
 
     // Get Models Queued
