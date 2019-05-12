@@ -253,9 +253,6 @@ $container-padding-sm: 2.25rem;
             max-width: 100%;
             padding: 0;
         }
-        .crosshairs-top-left {
-            left: #{$spacer};
-        }
     }
 }
 
@@ -929,11 +926,9 @@ section {
 .crosshairs-top-left {
     top: -#{$spacer * 1.375 * 2};
     left: -#{$spacer * 1.375 / 2};
-    &.crosshairs-sm-gray {
-        @include media-breakpoint-down('sm') {
-            left: .4rem;
-            top: .2rem;
-        }
+    @include media-breakpoint-down('sm') {
+        left: 1rem;
+        top: .2rem;
     }
 }
 .crosshairs-top-right {

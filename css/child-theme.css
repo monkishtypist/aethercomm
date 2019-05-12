@@ -15279,9 +15279,7 @@ section {
             -ms-flex: 1 0 100%;
             flex: 1 0 100%;
             max-width: 100%;
-            padding: 0; }
-          section.section_header.section-header-overlay .crosshairs-top-left {
-            left: 1rem; } }
+            padding: 0; } }
       @media (max-width: 768.98px) {
         section.section_header.section-header-overlay {
           padding-top: 6.7rem; } }
@@ -17083,8 +17081,8 @@ section {
   top: -2.75rem;
   left: -0.6875rem; }
   @media (max-width: 768.98px) {
-    .crosshairs-top-left.crosshairs-sm-gray {
-      left: .4rem;
+    .crosshairs-top-left {
+      left: 1rem;
       top: .2rem; } }
 
 .crosshairs-top-right {
