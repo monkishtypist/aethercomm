@@ -16,6 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 $terms = get_terms( 'timelines-categories', array(
     'hide_empty' => false,
 ) );
+echo '<pre>' . print_r($terms) . '</pre>';
 $args = array();
 $query = array();
 foreach ( $terms as $key => $term ) {
