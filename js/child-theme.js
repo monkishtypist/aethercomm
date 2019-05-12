@@ -25052,10 +25052,19 @@ return DataTable;
         var models = [ modelNumber ];
         if ( localStorage ) {
             var modelsQueued = JSON.parse( localStorage.getItem( 'modelsQueued' ) );
-            var newModelsQueued = modelsQueued.concat( models ).unique();
+            if ( modelsQueued ) {
+                var newModelsQueued = modelsQueued.concat( models ).unique();
+            } else {
+                var newModelsQueued = models;
+            }
             localStorage.setItem( 'modelsQueued' , JSON.stringify( modelsQueued ) );
         } else {
             var modelsQueued = JSON.parse( $('body').data( 'modelsQueued' ) );
+            if ( modelsQueued ) {
+                var newModelsQueued = modelsQueued.concat( models ).unique();
+            } else {
+                var newModelsQueued = models;
+            }
             var newModelsQueued = modelsQueued.concat( models ).unique();
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
