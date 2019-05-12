@@ -100,13 +100,38 @@
         var queued = $(this).data('queued');
         if ( ! queued ) {
             $(this).html( "Queued" );
+            modelNumberAdd( modelNumber );
         } else {
             $(this).html("Add to Queue");
         }
         queued = ! queued;
         $(this).data( 'queued', queued ).attr( 'data-queued', queued );
-        console.log( modelNumber );
-        console.log( queued );
-    })
+    });
+
+    Array.prototype.unique = function() {
+        var a = this.concat();
+        for(var i=0; i<a.length; ++i) {
+            for(var j=i+1; j<a.length; ++j) {
+                if(a[i] === a[j])
+                    a.splice(j--, 1);
+            }
+        }
+
+        return a;
+    };
+
+    var modelNumberAdd = function( modelNumber ) {
+        var models = [ modelNumber ];
+        if ( localStorage ) {
+            var modelsQueued = JSON.parse( localStorage.getItem( 'modelsQueued' ) );
+            var newModelsQueued = modelsQueued.concat( models ).unique();
+            localStorage.setItem( 'modelsQueued' , JSON.stringify( modelsQueued ) );
+        } else {
+            var modelsQueued = JSON.parse( $('body').data( 'modelsQueued' ) );
+            var newModelsQueued = modelsQueued.concat( models ).unique();
+            $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
+        }
+        console.log( newModelsQueued );
+    }
 
 })(jQuery);
