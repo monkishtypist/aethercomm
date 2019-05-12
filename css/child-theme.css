@@ -17679,8 +17679,6 @@ table.dataTable thead .sorting_desc_disabled:before {
   max-width: 25%;
   max-width: calc(25% - 36px);
   margin-bottom: 3rem; }
-  #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(1), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(2), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(3), #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card:nth-last-child(4) {
-    margin-bottom: 0; }
   #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-img-top {
     border: 0;
     margin-bottom: 1.4375rem; }

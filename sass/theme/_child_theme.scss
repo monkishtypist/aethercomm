@@ -1513,12 +1513,12 @@ table.dataTable thead .sorting_desc_disabled:before {
                 max-width: 25%;
                 max-width: calc(25% - #{$card-group-margin * 2});
                 margin-bottom: #{$spacer * 3};
-                &:nth-last-child(1),
-                &:nth-last-child(2),
-                &:nth-last-child(3),
-                &:nth-last-child(4) {
-                    margin-bottom: 0;
-                }
+                // &:nth-last-child(1),
+                // &:nth-last-child(2),
+                // &:nth-last-child(3),
+                // &:nth-last-child(4) {
+                //     margin-bottom: 0;
+                // }
                 .card-img-top {
                     border: 0;
                     margin-bottom: #{$spacer * 1.4375};
