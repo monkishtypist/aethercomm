@@ -145,6 +145,25 @@ if ( ! function_exists( 'acf_field' ) ) {
 		}
 	}
 }
+if ( ! function_exists( 'has_acf_field' ) ) {
+    // Check if ACF field exists using WP core functions
+	function has_acf_field( $field ) {
+
+        $term = get_queried_object();
+
+        $id = isset( $term->taxonomy )
+            ? $term->term_id
+            : get_the_ID();
+
+        $value = get_post_meta( $id, $field );
+
+		if ( isset( $value ) && ! empty( $value ) ) {
+			return true;
+		} else {
+            return false;
+        }
+	}
+}
 
 /* 5. Excerpts */
 add_filter( 'excerpt_more', 'understrap_custom_excerpt_more' );
