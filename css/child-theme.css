@@ -17685,7 +17685,8 @@ table.dataTable thead .sorting_desc_disabled:before {
   #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-body .card-title {
     font-size: 1rem; }
   #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card .card-body .card-text {
-    font-size: 0.75rem; }
+    font-size: 0.75rem;
+    font-weight: 700; }
   @media (max-width: 768.98px) {
     #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
       max-width: 50%;
@@ -17881,6 +17882,12 @@ table.dataTable thead .sorting_desc_disabled:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover; }
+  @media (max-width: 768.98px) {
+    #contact-us_page-wrapper #contact-us_header {
+      padding-top: 11rem; } }
+  @media (max-width: 575.98px) {
+    #contact-us_page-wrapper #contact-us_header {
+      padding-top: 7rem; } }
   #contact-us_page-wrapper #contact-us_header .gform_button {
     width: 100%; }
 

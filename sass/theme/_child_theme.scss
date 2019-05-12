@@ -1529,6 +1529,7 @@ table.dataTable thead .sorting_desc_disabled:before {
                     }
                     .card-text {
                         font-size: #{$font-size-sm};
+                        font-weight: #{$font-weight-bold};
                     }
                 }
                 @include media-breakpoint-down('sm') {
@@ -1660,6 +1661,12 @@ table.dataTable thead .sorting_desc_disabled:before {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        @include media-breakpoint-down('sm') {
+            padding-top: #{$spacer * 11};
+        }
+        @include media-breakpoint-down('xs') {
+            padding-top: #{$spacer * 7};
+        }
         .gform_button {
             width: 100%;
         }

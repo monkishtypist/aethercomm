@@ -31,7 +31,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <div class="row">
                 <?php if ( get_acf_field( 'contact_us_page_settings_header_copy' ) ) { ?>
-                    <div class="col-12 col-lg-6">
+                    <div class="col-12 col-lg-6 mb-5 mb-md-0">
                         <?php echo apply_filters( 'the_content', get_acf_field( 'contact_us_page_settings_header_copy', true ) ); ?>
                     </div>
                 <?php } ?>
@@ -66,7 +66,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 <?php if ( get_acf_field( 'contact_us_page_settings_recommended_hotel_image' ) ) { ?>
                     <?php $contact_us_page_settings_recommended_hotel_image_id = get_acf_field( 'contact_us_page_settings_recommended_hotel_image' ); ?>
                     <?php if ( is_array( $contact_us_page_settings_recommended_hotel_image_id ) && isset( $contact_us_page_settings_recommended_hotel_image_id[0] ) ) { ?>
-                        <div class="col-12 col-lg-6">
+                        <div class="col-12 col-lg-6 mb-5 mb-md-0">
                             <?php echo wp_get_attachment_image( $contact_us_page_settings_recommended_hotel_image_id[0], 'large', false, array( 'class' => 'image-fluid' ) ); ?>
                         </div>
                     <?php } ?>
