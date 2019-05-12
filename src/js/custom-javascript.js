@@ -157,7 +157,7 @@
     // Send queued models to Form
     var sendModelsToForm = function( models ) {
         if ( models ) {
-            var modelsQueued = models;
+            var modelsQueued = [ models ];
         } else {
             var modelsQueued = getModelsQueued();
         }
