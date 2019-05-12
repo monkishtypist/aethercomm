@@ -1927,6 +1927,7 @@ table.dataTable {
             // margin-left: -#{$nav-link-padding-x};
             // margin-right: -#{$nav-link-padding-x};
             @include media-breakpoint-down('sm') {
+                flex-direction: column;
                 margin-bottom: #{$spacer * .5};
             }
             .nav-link {
@@ -1940,6 +1941,10 @@ table.dataTable {
                 padding-left: 0;
                 padding-right: 0;
                 text-transform: uppercase;
+                @include media_breakpoint-down('sm') {
+                    margin-left: 0;
+                    margin-right: auto;
+                }
                 strong, b {
                     font-weight: #{$font-weight-bold};
                 }

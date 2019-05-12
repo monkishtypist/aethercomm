@@ -18248,6 +18248,10 @@ table.dataTable thead .sorting_desc_disabled:before {
     margin-bottom: 0; }
     @media (max-width: 768.98px) {
       #products_page-wrapper #products_categories nav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
         margin-bottom: 0.5rem; } }
     #products_page-wrapper #products_categories nav .nav-link {
       border-bottom: 0.5rem solid transparent;
@@ -18259,6 +18263,10 @@ table.dataTable thead .sorting_desc_disabled:before {
       padding-left: 0;
       padding-right: 0;
       text-transform: uppercase; }
+      @media (max-width: 768.98px) {
+        #products_page-wrapper #products_categories nav .nav-link {
+          margin-left: 0;
+          margin-right: auto; } }
       #products_page-wrapper #products_categories nav .nav-link strong, #products_page-wrapper #products_categories nav .nav-link b {
         font-weight: 700; }
       #products_page-wrapper #products_categories nav .nav-link:first-of-type {
