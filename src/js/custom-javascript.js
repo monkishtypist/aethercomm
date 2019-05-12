@@ -209,14 +209,37 @@
         }
     }
 
+    // Remove All Models from Queue
+    var modelNumbersRemoveAll = function() {
+        var newModelsQueued = [];
+        if ( localStorage ) {
+            localStorage.setItem( 'modelsQueued' , JSON.stringify( newModelsQueued ) );
+        } else {
+            $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
+        }
+    }
+
     // Update model queue links
     var preloadQueuedModels = function() {
         var modelsQueued = getModelsQueued();
         var arrayLength = modelsQueued.length;
-        for ( var i = 0; i < arrayLength; i++ ) {
-            $('.product-queue-link[data-model-number="'+modelsQueued[i]+'"]').data( 'queued', true ).attr( 'data-queued', true ).html( "Queued" );
-        }
+        $('.product-queue-link').each( function() {
+            var modelNumber = $(this).data('model-number');
+            if ( modelNumber.indexOf( $(this).data( 'model-number' ) ) ) {
+                $(this).data( 'queued', true ).attr( 'data-queued', true ).html( "Queued" );
+            } else {
+                $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );
+            }
+        });
     }
     preloadQueuedModels();
+
+    // After GForm submit success
+    $(document).on("gform_confirmation_loaded", function (e, form_id) {
+        if ( form_id === 1 ) {
+            modelNumbersRemoveAll();
+            preloadQueuedModels();
+        }
+    });
 
 })(jQuery);
