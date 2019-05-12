@@ -63,7 +63,8 @@ $terms = get_terms( array(
                     'tax_query' => array(
                         array(
                             'taxonomy' => 'timeline-categories',
-                            'term'     => $term->slug,
+                            'field'    => 'slug',
+                            'terms'    => $term->slug,
                         ),
                     ),
                     'posts_per_page' => -1
