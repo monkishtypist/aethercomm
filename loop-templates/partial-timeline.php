@@ -17,11 +17,10 @@ $terms = get_terms( array(
     'taxonomy' => 'timeline-categories',
     'hide_empty' => false,
 ) );
-echo '<pre>' . print_r($terms) . '</pre>';
 $args = array();
 $query = array();
 foreach ( $terms as $key => $term ) {
-    echo '<pre>' . print_r($term) . '</pre>';
+    // echo '<pre>' . print_r($term) . '</pre>';
     $args[ $key ] = array(
         'post_type' => 'timelines',
         'tax_query' => array(
@@ -49,7 +48,7 @@ foreach ( $terms as $key => $term ) {
                     $key,
                     $key,
                     ( $key == 0 ? 'true' : 'false' ),
-                    get_acf_field( 'who-we-are_page_settings_tabs_tab1_title', true )
+                    $term->name
                 ); ?>
             <?php } ?>
         </ul>
