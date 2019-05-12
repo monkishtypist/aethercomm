@@ -92,4 +92,19 @@
         }
     } );
 
+    // RFQ
+
+    $('.product-queue-link').on( 'click', function( event ) {
+        event.preventDefault();
+        var modelNumber = $(this).data('model-number');
+        var queued = $(this).data('queued');
+        if ( ! queued ) {
+            $(this).html("Queued");
+        } else {
+            $(this).html("Add to Queue");
+        }
+        console.log( modelNumber );
+        console.log( queued );
+    })
+
 })(jQuery);
