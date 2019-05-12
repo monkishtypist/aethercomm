@@ -1123,6 +1123,10 @@ textarea {
     form.contact-form {
         margin-top: -#{$spacer * 15};
         padding-top: #{$spacer * 15};
+        @include media-breakpoint-down('xs') {
+            margin-top: -#{$spacer * 13};
+            padding-top: #{$spacer * 13};
+        }
     }
 }
 

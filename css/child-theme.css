@@ -17244,6 +17244,10 @@ textarea {
   .section-contact-form form.contact-form {
     margin-top: -15rem;
     padding-top: 15rem; }
+    @media (max-width: 575.98px) {
+      .section-contact-form form.contact-form {
+        margin-top: -13rem;
+        padding-top: 13rem; } }
 
 /* Sliders */
 .child-page-content .rev-slider-outer {
