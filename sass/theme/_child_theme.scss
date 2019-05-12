@@ -929,6 +929,12 @@ section {
 .crosshairs-top-left {
     top: -#{$spacer * 1.375 * 2};
     left: -#{$spacer * 1.375 / 2};
+    &.crosshairs-sm-gray {
+        @include media-breakpoint-down('sm') {
+            left: .4rem;
+            top: .2rem;
+        }
+    }
 }
 .crosshairs-top-right {
     top: -#{$spacer * 1.375 * 2};
@@ -2074,12 +2080,6 @@ table.dataTable {
                 @include media-breakpoint-down('sm') {
                     margin-right: #{$spacer * .75};
                 }
-            }
-        }
-        .crosshairs-sm-gray.crosshairs-top-left {
-            @include media-breakpoint-down('sm') {
-                left: .4rem;
-                top: .2rem;
             }
         }
     }
