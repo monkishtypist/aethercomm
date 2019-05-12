@@ -17082,8 +17082,7 @@ section {
   left: -0.6875rem; }
   @media (max-width: 768.98px) {
     .crosshairs-top-left {
-      left: 1rem;
-      top: .2rem; } }
+      left: 1rem; } }
 
 .crosshairs-top-right {
   top: -2.75rem;

@@ -928,7 +928,7 @@ section {
     left: -#{$spacer * 1.375 / 2};
     @include media-breakpoint-down('sm') {
         left: 1rem;
-        top: .2rem;
+        // top: .2rem;
     }
 }
 .crosshairs-top-right {
