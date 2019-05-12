@@ -25031,7 +25031,8 @@ return DataTable;
         } else {
             $(this).html("Add to Queue");
         }
-        $(this).data( 'queued', ! queued );
+        queued = ! queued;
+        $(this).data( 'queued', queued ).attr( 'data-queued', queued );
         console.log( modelNumber );
         console.log( queued );
     })

@@ -1959,6 +1959,9 @@ table.dataTable thead .sorting_desc_disabled:before {
                 letter-spacing: .025em;
                 text-align: center;
                 text-transform: uppercase;
+                &:active, &:hover {
+                    text-decoration: none;
+                }
                 &::before {
                     content: "\f00c";
                     display: inline;

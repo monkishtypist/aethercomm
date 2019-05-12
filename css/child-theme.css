@@ -18267,6 +18267,8 @@ table.dataTable thead .sorting_desc_disabled:before {
   letter-spacing: .025em;
   text-align: center;
   text-transform: uppercase; }
+  #products_page-wrapper #products-table_wrapper #products-table .product-queue-link:active, #products_page-wrapper #products-table_wrapper #products-table .product-queue-link:hover {
+    text-decoration: none; }
   #products_page-wrapper #products-table_wrapper #products-table .product-queue-link::before {
     content: "\f00c";
     display: inline;
