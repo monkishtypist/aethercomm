@@ -1128,6 +1128,10 @@ textarea {
             padding-top: #{$spacer * 13};
         }
     }
+    .gfield_error .validation_message {
+        color: $white;
+        text-shadow: 1px 1px 1px $red;
+    }
 }
 
 /* Sliders */

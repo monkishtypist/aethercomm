@@ -17248,6 +17248,9 @@ textarea {
       .section-contact-form form.contact-form {
         margin-top: -13rem;
         padding-top: 13rem; } }
+  .section-contact-form .gfield_error .validation_message {
+    color: #fff;
+    text-shadow: 1px 1px 1px #FF5800; }
 
 /* Sliders */
 .child-page-content .rev-slider-outer {
