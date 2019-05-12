@@ -225,7 +225,7 @@ if ( ! function_exists( 'aethercomm_products_post_type' ) ) {
             'filter_items_list'     => __( 'Filter items list', 'aethercomm' ),
         );
         $rewrite = array(
-            'slug'                  => 'products',
+            'slug'                  => _x( 'products', 'aethercomm_products_post_type', 'aethercomm' ),
             'with_front'            => false,
             'pages'                 => true,
             'feeds'                 => false,
@@ -234,7 +234,7 @@ if ( ! function_exists( 'aethercomm_products_post_type' ) ) {
             'label'                 => _x( 'Products', 'aethercomm_products_post_type', 'aethercomm' ),
             'description'           => __( 'Company Product Page', 'aethercomm' ),
             'labels'                => $labels,
-            'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields' ),
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes' ),
             'taxonomies'            => array( 'product-categories' ),
             'hierarchical'          => true,
             'public'                => true,
