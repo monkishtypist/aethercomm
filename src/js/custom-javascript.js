@@ -105,6 +105,7 @@
         }
         console.log( modelNumber );
         console.log( queued );
+        queued = ! queued;
     })
 
 })(jQuery);
