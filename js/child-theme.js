@@ -25057,7 +25057,7 @@ return DataTable;
             } else {
                 var newModelsQueued = models;
             }
-            localStorage.setItem( 'modelsQueued' , JSON.stringify( modelsQueued ) );
+            localStorage.setItem( 'modelsQueued' , JSON.stringify( newModelsQueued ) );
         } else {
             var modelsQueued = JSON.parse( $('body').data( 'modelsQueued' ) );
             if ( modelsQueued ) {
