@@ -25065,9 +25065,9 @@ return DataTable;
             } else {
                 var newModelsQueued = models;
             }
-            var newModelsQueued = modelsQueued.concat( models ).unique();
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
+        console.log( modelsQueued );
         console.log( newModelsQueued );
     }
 
