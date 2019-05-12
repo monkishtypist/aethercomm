@@ -25077,6 +25077,7 @@ return DataTable;
         var modelsQueued = getModelsQueued();
         var modelsQueuedString = modelsQueued.join();
         $('.gfield.gform_hidden input').val( modelsQueuedString );
+        $('form.contact-form').scrollIntoView();
     }
 
     // Get Models Queued
