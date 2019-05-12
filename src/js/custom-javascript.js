@@ -135,11 +135,11 @@
     // Load models in form
     $('.product-request-all').on( 'click', function( event ) {
         event.preventDefault();
-        // add model number to queue
+        // add model number 'all' to queue
         var modelNumber = 'all';
         modelNumbersRemoveAll();
         preloadQueuedModels();
-        sendModelsToForm();
+        sendModelsToForm( modelNumber );
     });
 
     // unique()
