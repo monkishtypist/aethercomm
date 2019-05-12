@@ -87,11 +87,11 @@ $product_cats = get_categories( $product_cats_args );
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
-            <div class="row justify-content-end align-items-center">
-                <div class="d-none d-md-flex col-auto">
+            <div class="row justify-content-end align-items-center d-none d-md-flex mb-4">
+                <div class="col-auto">
                     <a href="#" class="product-request-all btn btn-lg btn-outline-gray" data-model-number="all"><?php _e( 'Request All', 'aethercomm' ); ?></a>
                 </div>
-                <div class="d-none d-md-flex col-auto">
+                <div class="col-auto">
                     <a href="#share" class="product-share share-link"><?php _e( 'Share', 'aethercomm' ); ?></a>
                 </div>
             </div>
