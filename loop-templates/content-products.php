@@ -87,6 +87,22 @@ $product_cats = get_categories( $product_cats_args );
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
+<?php
+// Set up the objects needed
+$my_wp_query = new WP_Query();
+$all_wp_pages = $my_wp_query->query(array('post_type' => 'page', 'posts_per_page' => '-1'));
+
+// Get the page as an Object
+// $portfolio =  get_page_by_title('Portfolio');
+
+// Filter through all pages and find Portfolio's children
+$children = get_page_children( 19, $all_wp_pages );
+
+// echo what we get back from WP to the browser
+echo '<pre>' . print_r( $children, true ) . '</pre>';
+?>
+
+
             <?php
             $args = array(
                 'post_type' => 'products',
