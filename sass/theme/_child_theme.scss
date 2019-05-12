@@ -1219,6 +1219,12 @@ table.dataTable thead .sorting_desc_disabled:before {
     top: 0.9em;
 }
 
+table.dataTable {
+    @include media-breakpoint-down('sm') {
+        max-width: 100%!important;
+    }
+}
+
 /* Tables */
 .table {
     font-size: #{$font-size-base * 0.875};

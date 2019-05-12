@@ -17326,6 +17326,10 @@ table.dataTable thead .sorting_desc_disabled:before {
   bottom: auto;
   top: 0.9em; }
 
+@media (max-width: 768.98px) {
+  table.dataTable {
+    max-width: 100% !important; } }
+
 /* Tables */
 .table {
   font-size: 0.875rem; }
