@@ -213,7 +213,7 @@
         var modelsQueued = getModelsQueued();
         var arrayLength = modelsQueued.length;
         for ( var i = 0; i < arrayLength; i++ ) {
-            $('.product-queue-link[data-model-number="'+modelsQueued[i]+'"]').data( 'queued', true ).attr( 'data-queued', true );
+            $('.product-queue-link[data-model-number="'+modelsQueued[i]+'"]').data( 'queued', true ).attr( 'data-queued', true ).html( "Queued" );
         }
     }
     preloadQueuedModels();
