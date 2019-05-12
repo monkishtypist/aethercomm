@@ -17,23 +17,23 @@ $terms = get_terms( array(
     'taxonomy' => 'timeline-categories',
     'hide_empty' => false,
 ) );
-$args = array();
-$query = array();
-foreach ( $terms as $key => $term ) {
-    // echo '<pre>' . print_r($term) . '</pre>';
-    $args[ $key ] = array(
-        'post_type' => 'timelines',
-        'tax_query' => array(
-            array(
-                'taxonomy' => 'timelines-categories',
-                'field'    => 'slug',
-                'terms'    => $term->slug,
-            ),
-        ),
-        'posts_per_page' => -1
-    );
-    $query[ $key ] = new WP_Query( $args[ $key ] );
-}
+// $args = array();
+// $query = array();
+// foreach ( $terms as $key => $term ) {
+//     // echo '<pre>' . print_r($term) . '</pre>';
+//     $args[ $key ] = array(
+//         'post_type' => 'timelines',
+//         'tax_query' => array(
+//             array(
+//                 'taxonomy' => 'timelines-categories',
+//                 'field'    => 'slug',
+//                 'terms'    => $term->slug,
+//             ),
+//         ),
+//         'posts_per_page' => -1
+//     );
+//     $query[ $key ] = new WP_Query( $args[ $key ] );
+// }
 
 ?>
 
