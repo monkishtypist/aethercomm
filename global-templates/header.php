@@ -57,7 +57,7 @@ elseif ( is_tax( 'product-categories' ) ) :
     $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
         esc_html( $queried_object->name ) );
 else :
-    if ( get_acf_field( 'page_header_lede' ) ) {
+    if ( get_acf_field( 'page_header_lede', true ) ) {
         $page_title = sprintf( '<h1 class="page-title" data-if="4-1">%1$s</h1>',
             get_the_title() );
         $page_lede = sprintf( '<div class="page-lede">%1$s</div>',
