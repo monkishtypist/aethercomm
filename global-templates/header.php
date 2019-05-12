@@ -42,28 +42,28 @@ $page_title = false;
 $page_lede = false;
 
 if ( is_single() && $post->post_type == 'post' ) :
-    $page_title = sprintf( '<div class="page-title">%1$s</div>',
+    $page_title = sprintf( '<div class="page-title" data-if="1">%1$s</div>',
         $cat_names_string );
     $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
         get_the_title() );
 elseif ( $post->post_parent ) :
-    $page_title = sprintf( '<div class="page-title">%1$s</div>',
+    $page_title = sprintf( '<div class="page-title" data-if="2">%1$s</div>',
         get_the_title( $post->post_parent ) );
     $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
         get_the_title() );
 elseif ( is_tax( 'product-categories' ) ) :
-    $page_title = sprintf( '<div class="page-title">%1$s</div>',
+    $page_title = sprintf( '<div class="page-title" data-if="3">%1$s</div>',
         __( 'Our Products', 'aethercomm' ) );
     $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
         esc_html( $queried_object->name ) );
 else :
     if ( get_acf_field( 'page_header_lede' ) ) {
-        $page_title = sprintf( '<h1 class="page-title">%1$s</h1>',
+        $page_title = sprintf( '<h1 class="page-title" data-if="4-1">%1$s</h1>',
             get_the_title() );
         $page_lede = sprintf( '<div class="page-lede">%1$s</div>',
             apply_filters( 'the_content', get_acf_field( 'page_header_lede', true ) ) );
     } else {
-        $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
+        $page_lede = sprintf( '<h1 class="page-lede" data-if="4-2">%1$s</h1>',
             get_the_title() );
     }
 endif;
