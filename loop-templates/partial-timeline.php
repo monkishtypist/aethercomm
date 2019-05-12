@@ -13,7 +13,8 @@ global $post;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
-$terms = get_terms( 'timelines-categories', array(
+$terms = get_terms( array(
+    'taxonomy' => 'timeline-categories',
     'hide_empty' => false,
 ) );
 echo '<pre>' . print_r($terms) . '</pre>';
