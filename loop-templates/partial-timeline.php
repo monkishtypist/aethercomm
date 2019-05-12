@@ -57,6 +57,19 @@ foreach ( $terms as $key => $term ) {
     <div class="<?php // echo esc_attr( $container ); ?>" id="milestones-tabs-content">
         <?php foreach ( $terms as $key => $term ) { ?>
             <div class="tab-pane fade show <?php echo ( $key == 0 ? 'active' : '' ); ?>" id="tab<?php echo $key; ?>" role="tabpanel" aria-labelledby="tab<?php echo $key; ?>-tab">
+                <?php
+                $args = array(
+                    'post_type' => 'timelines',
+                    'tax_query' => array(
+                        array(
+                            'taxonomy' => 'timelines-categories',
+                            'term'     => $term->slug,
+                        ),
+                    ),
+                    'posts_per_page' => -1
+                );
+                $query = new WP_Query( $args );
+                ?>
                 <?php if ( $query[ $key ]->have_posts() ) : ?>
                     <?php while ( $query[ $key ]->have_posts() ) : $query[ $key ]->the_post(); ?>
                         <div class="timeline-element">
