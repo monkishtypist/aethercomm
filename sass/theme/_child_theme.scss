@@ -463,6 +463,12 @@ section {
         }
         &.section-header-overlay {
             @include section-header-overlay();
+            @include media-breakpoint-down('sm') {
+                padding-top: #{$spacer * 6.7};
+            }
+            @include media-breakpoint-down('xs') {
+                padding-top: #{$spacer * 4.5};
+            }
         }
     }
     &.section-unpadded {
@@ -1953,6 +1959,9 @@ table.dataTable {
                 }
                 &:last-of-type {
                     margin-right: 0;
+                    @include media-breakpoint-down('sm') {
+                        margin-right: auto;
+                    }
                 }
                 &.active {
                     color: #{$secondary};
