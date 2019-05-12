@@ -90,7 +90,7 @@ $product_cats = get_categories( $product_cats_args );
 <?php
 // Set up the objects needed
 $my_wp_query = new WP_Query();
-$all_wp_pages = $my_wp_query->query(array('post_type' => 'page', 'posts_per_page' => '-1'));
+$all_wp_pages = $my_wp_query->query(array('post_type' => 'products', 'posts_per_page' => '-1'));
 
 // Get the page as an Object
 // $portfolio =  get_page_by_title('Portfolio');
