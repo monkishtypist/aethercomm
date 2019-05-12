@@ -636,3 +636,17 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 
 /* 11. Gravity Forms */
 add_filter( 'gform_confirmation_anchor', '__return_true' );
+
+// Allow the Gravity form to stay on the page when confirmation displays.
+add_filter( 'gform_pre_submission_filter', 'aethercomm_show_confirmation_and_form' );
+function aethercomm_show_confirmation_and_form( $form ) {
+	$shortcode = '[gravityform id="' . $form['id'] . '" title="false" description="false"]';
+
+	if ( array_key_exists( 'confirmations', $form ) ) {
+		foreach ( $form['confirmations'] as $key => $confirmation ) {
+			$form['confirmations'][ $key ]['message'] = $shortcode . '<div class="confirmation-message">' . $form['confirmations'][ $key ]['message'] . '</div>';
+		}
+	}
+
+	return $form;
+}
