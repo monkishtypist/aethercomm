@@ -13,6 +13,12 @@ global $post;
 
 $container = get_theme_mod( 'understrap_container_type' );
 
+$terms = get_the_terms( get_the_ID(), 'timeline-categories' );
+$terms_array = array();
+foreach ( $terms as $term ) {
+    $terms_array[] = $term->slug;
+}
+
 $args = array(
     'post_type' => 'timelines',
     'posts_per_page' => -1

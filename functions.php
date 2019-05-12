@@ -347,13 +347,14 @@ if ( ! function_exists( 'aethercomm_custom_products_column' ) ) {
     }
 }
 
+// CPT products tax
 add_action( 'init', 'aethercomm_product_cats_tax_init' );
 if ( ! function_exists( 'aethercomm_product_cats_tax_init' ) ) {
     function aethercomm_product_cats_tax_init() {
 
         $labels = array(
-            'name'                       => _x( 'Product Categories', 'far_productmembers_post_type', 'aethercomm' ),
-            'singular_name'              => _x( 'Product Category', 'far_productmembers_post_type', 'aethercomm' ),
+            'name'                       => _x( 'Product Categories', 'far_products_post_type', 'aethercomm' ),
+            'singular_name'              => _x( 'Product Category', 'far_products_post_type', 'aethercomm' ),
             'search_items'               => __( 'Search Product Categories', 'aethercomm' ),
             'popular_items'              => __( 'Popular Product Categories', 'aethercomm' ),
             'all_items'                  => __( 'All Product Categories', 'aethercomm' ),
@@ -363,7 +364,7 @@ if ( ! function_exists( 'aethercomm_product_cats_tax_init' ) ) {
             'view_item'                  => __( 'View Product Category', 'aethercomm' ),
             'update_item'                => __( 'Update Product Category', 'aethercomm' ),
             'add_new_item'               => __( 'Add New Product Category', 'aethercomm' ),
-            'new_item_name'              => __( 'New Position', 'aethercomm' ),
+            'new_item_name'              => __( 'New Product', 'aethercomm' ),
             'separate_items_with_commas' => __( 'Separate product categories with commas', 'aethercomm' ),
             'add_or_remove_items'        => __( 'Add or remove product categories', 'aethercomm' ),
             'choose_from_most_used'      => __( 'Choose from the most used product categories', 'aethercomm' ),
@@ -568,7 +569,7 @@ if ( ! function_exists( 'aethercomm_timeline_post_type' ) ) {
             'show_ui'               => true,
             'show_in_menu'          => true,
             'menu_position'         => 5,
-            'menu_icon'             => 'dashicons-groups',
+            'menu_icon'             => 'dashicons-performance',
             'show_in_admin_bar'     => true,
             'show_in_nav_menus'     => true,
             'can_export'            => true,
@@ -579,6 +580,56 @@ if ( ! function_exists( 'aethercomm_timeline_post_type' ) ) {
             'capability_type'       => 'page',
         );
         register_post_type( 'timelines', $args );
+    }
+}
+
+// CPT timline tax
+add_action( 'init', 'aethercomm_timline_cats_tax_init' );
+if ( ! function_exists( 'aethercomm_timline_cats_tax_init' ) ) {
+    function aethercomm_timline_cats_tax_init() {
+
+        $labels = array(
+            'name'                       => _x( 'Timeline Categories', 'far_timeline_post_type', 'aethercomm' ),
+            'singular_name'              => _x( 'Timeline Category', 'far_timeline_post_type', 'aethercomm' ),
+            'search_items'               => __( 'Search Timeline Categories', 'aethercomm' ),
+            'popular_items'              => __( 'Popular Timeline Categories', 'aethercomm' ),
+            'all_items'                  => __( 'All Timeline Categories', 'aethercomm' ),
+            'parent_item'                => __( 'Parent Timeline Category', 'aethercomm' ),
+            'parent_item_colon'          => __( 'Parent Timeline Category:', 'aethercomm' ),
+            'edit_item'                  => __( 'Edit Timeline Category', 'aethercomm' ),
+            'view_item'                  => __( 'View Timeline Category', 'aethercomm' ),
+            'update_item'                => __( 'Update Timeline Category', 'aethercomm' ),
+            'add_new_item'               => __( 'Add New Timeline Category', 'aethercomm' ),
+            'new_item_name'              => __( 'New Timeline', 'aethercomm' ),
+            'separate_items_with_commas' => __( 'Separate timeline categories with commas', 'aethercomm' ),
+            'add_or_remove_items'        => __( 'Add or remove timeline categories', 'aethercomm' ),
+            'choose_from_most_used'      => __( 'Choose from the most used timeline categories', 'aethercomm' ),
+            'not_found'                  => __( 'No timeline categories found', 'aethercomm' ),
+            'no_terms'                   => __( 'No timeline categories', 'aethercomm' ),
+            'items_list_navigation'      => __( 'Items list navigation', 'aethercomm' ),
+            'items_list'                 => __( 'Items list', 'aethercomm' ),
+            'most_used'                  => __( 'Most Used', 'aethercomm' ),
+            'back_to_terms'              => __( 'Back to timeline categories', 'aethercomm' ),
+        );
+        $rewrite = array(
+            'slug'                       => 'timelines',
+            'with_front'                 => false,
+            'hierarchical'               => false
+        );
+        $args = array(
+            'labels'                     => $labels,
+            'description'                => __( 'Timeline categories', 'aethercomm' ),
+            'public'                     => true,
+            'publicly_queryable'         => true,
+            'hierarchical'               => true,
+            'show_ui'                    => true,
+            'show_in_menu'               => true,
+            'show_in_nav_menus'          => true,
+            'show_admin_column'          => true,
+            'rewrite'                    => $rewrite
+        );
+
+        register_taxonomy( 'timeline-categories', 'timelines', $args );
     }
 }
 

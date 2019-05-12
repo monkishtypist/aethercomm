@@ -17357,6 +17357,14 @@ table.dataTable thead .sorting_desc_disabled:before {
     color: #4A63AE;
     text-transform: uppercase; }
 
+/* Timeline */
+#timeline_section {
+  background-image: url(../images/timeline-bg.png);
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 510px; }
+
 /**
  * Footer
  *
