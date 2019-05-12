@@ -20,8 +20,8 @@ $model_number = get_acf_field( 'product_specs_model_number', true );
 
 <tr>
     <td>
-        <a href="#" class="product-request btn btn-secondary btn-sm text-center" data-model-number="<?php echo $model_number; ?>"><?php echo sprintf( '%1$s<br />%2$s', __( 'Request', 'aethercomm' ), __( 'Details', 'aethercomm' ) ); ?></a>
-        <a href="#" class="product-queue-link text-center" data-model-number="<?php echo $model_number; ?>" data-queued="false"><?php _e( 'Add to queue', 'aethercomm' ); ?></a>
+        <a href="#" class="product-request btn btn-secondary btn-sm" data-model-number="<?php echo $model_number; ?>"><?php echo sprintf( '%1$s<br />%2$s', __( 'Request', 'aethercomm' ), __( 'Details', 'aethercomm' ) ); ?></a>
+        <a href="#" class="product-queue-link" data-model-number="<?php echo $model_number; ?>" data-queued="false"><?php _e( 'Add to queue', 'aethercomm' ); ?></a>
     </td>
     <td data-order="<?php echo $model_number; ?>">
         <div class="row no-gutters">

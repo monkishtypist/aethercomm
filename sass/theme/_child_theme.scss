@@ -1952,6 +1952,15 @@ table.dataTable thead .sorting_desc_disabled:before {
                     }
                 }
             }
+            tbody {
+                tr {
+                    td {
+                        &:first-of-type {
+                            text-align: center;
+                        }
+                    }
+                }
+            }
             .product-queue-link {
                 color: #{$blue};
                 font-size: #{$font-size-base * 0.625};

@@ -18260,6 +18260,9 @@ table.dataTable thead .sorting_desc_disabled:before {
   #products_page-wrapper #products-table_wrapper #products-table thead tr th:nth-child(2), #products_page-wrapper #products-table_wrapper #products-table thead tr td:nth-child(2) {
     min-width: 16.5rem; }
 
+#products_page-wrapper #products-table_wrapper #products-table tbody tr td:first-of-type {
+  text-align: center; }
+
 #products_page-wrapper #products-table_wrapper #products-table .product-queue-link {
   color: #4A63AE;
   font-size: 0.625rem;
