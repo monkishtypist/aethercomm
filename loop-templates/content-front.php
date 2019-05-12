@@ -102,7 +102,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
             <?php
             $args = array(
-                'category_name' => 'featured'
+                'post_type' => 'post'
             );
             $query = new WP_Query( $args );
             ?>

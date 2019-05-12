@@ -24999,7 +24999,10 @@ return DataTable;
                 "targets": [ 6 ],
                 "orderable": false
             }
-        ]
+        ],
+        "oSearch": {
+            "sSearch": $('#productsearch').val()
+        }
     });
 
     $('#productsearch').on( 'keyup', function () {
