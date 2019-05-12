@@ -132,6 +132,16 @@
         sendModelsToForm();
     });
 
+    // Load models in form
+    $('.product-request-all').on( 'click', function( event ) {
+        event.preventDefault();
+        // add model number to queue
+        var modelNumber = 'all';
+        modelNumbersRemoveAll();
+        preloadQueuedModels();
+        sendModelsToForm();
+    });
+
     // unique()
     Array.prototype.unique = function() {
         var a = this.concat();
@@ -145,8 +155,12 @@
     };
 
     // Send queued models to Form
-    var sendModelsToForm = function() {
-        var modelsQueued = getModelsQueued();
+    var sendModelsToForm = function( models ) {
+        if ( models ) {
+            var modelsQueued = models;
+        } else {
+            var modelsQueued = getModelsQueued();
+        }
         var modelsQueuedString = modelsQueued.join();
         $('.gfield.gform_hidden input').val( modelsQueuedString );
         $('form.contact-form')[0].scrollIntoView();
