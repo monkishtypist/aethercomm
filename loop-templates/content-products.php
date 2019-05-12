@@ -39,7 +39,7 @@ $product_cats = get_categories( $product_cats_args );
                         __( 'Search Products', 'aethercomm' )
                     ); ?>
 
-                    <form method="get" id="productsearchform" action="/" role="search" class="show" _lpchecked="1">
+                    <form method="get" id="productsearchform" action="<?php echo get_permalink(); ?>" role="search" class="show" _lpchecked="1">
                         <label class="sr-only" for="productsearch">Search Products</label>
                         <div class="input-group">
                             <input class="field form-control" id="productsearch" name="productsearch" type="text" placeholder="" value="">

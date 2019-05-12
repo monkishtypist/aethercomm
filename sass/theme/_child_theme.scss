@@ -1864,6 +1864,7 @@ table.dataTable thead .sorting_desc_disabled:before {
             }
             #productsearchsubmit {
                 background-color: #{$dark};
+                border: 0;
                 color: #{$white};
                 font-size: #{$font-size-base * 1.5};
                 height: 50px;
@@ -2031,12 +2032,6 @@ table.dataTable thead .sorting_desc_disabled:before {
             letter-spacing: 0;
             margin-bottom: .5em;
         }
-        // .specs-intro {
-        //     margin-right: #{$spacer * 4};
-        //     @include media-breakpoint-down('sm') {
-        //         margin-right: 0;
-        //     }
-        // }
         table.table {
             tbody {
                 tr {
