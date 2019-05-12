@@ -454,6 +454,9 @@ section {
     &.section-unpadded {
         padding: 0;
     }
+    &.default-page-content {
+        padding-top: 0;
+    }
 }
 // Section colors
 .section-dark {

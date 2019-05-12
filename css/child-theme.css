@@ -15271,6 +15271,8 @@ section {
             left: 1rem; } }
   section.section-unpadded {
     padding: 0; }
+  section.default-page-content {
+    padding-top: 0; }
 
 .section-dark {
   background-color: #222222;
