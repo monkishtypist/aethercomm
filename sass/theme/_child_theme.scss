@@ -1950,7 +1950,7 @@ table.dataTable thead .sorting_desc_disabled:before {
             }
         }
     }
-    #products-table_wrapper {
+    #products_loop {
         .product-request-all {
             color: $gray-500;
             font-weight: $font-weight-black;
@@ -1960,6 +1960,8 @@ table.dataTable thead .sorting_desc_disabled:before {
                 display: none;
             }
         }
+    }
+    #products-table_wrapper {
         #products-table_filter {
             display: none;
         }
