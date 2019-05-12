@@ -25027,13 +25027,13 @@ return DataTable;
         var modelNumber = $(this).data('model-number');
         var queued = $(this).data('queued');
         if ( ! queued ) {
-            $(this).html("Queued");
+            $(this).html( "Queued" );
         } else {
             $(this).html("Add to Queue");
         }
+        $(this).data( 'queued', ! queued );
         console.log( modelNumber );
         console.log( queued );
-        queued = ! queued;
     })
 
 })(jQuery);
