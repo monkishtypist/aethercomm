@@ -15085,6 +15085,21 @@ button.btn,
     font-size: 1rem;
     letter-spacing: .600em;
     width: 352px; }
+    @media (max-width: 768.98px) {
+      a.btn.btn-lg, .btn-group-lg > a.btn, #index-wrapper .btn-group-lg > a.read-more-link,
+      #archive-wrapper .btn-group-lg > a.read-more-link,
+      #search-wrapper .btn-group-lg > a.read-more-link, #index-wrapper a.btn-lg.read-more-link,
+      #archive-wrapper a.btn-lg.read-more-link,
+      #search-wrapper a.btn-lg.read-more-link,
+      button.btn.btn-lg,
+      .btn-group-lg > button.btn,
+      #index-wrapper .btn-group-lg > button.read-more-link,
+      #archive-wrapper .btn-group-lg > button.read-more-link,
+      #search-wrapper .btn-group-lg > button.read-more-link,
+      #index-wrapper button.btn-lg.read-more-link,
+      #archive-wrapper button.btn-lg.read-more-link,
+      #search-wrapper button.btn-lg.read-more-link {
+        width: 100%; } }
   a.btn::before, #index-wrapper a.read-more-link::before,
   #archive-wrapper a.read-more-link::before,
   #search-wrapper a.read-more-link::before,
@@ -15152,21 +15167,7 @@ button.btn,
     #index-wrapper button.read-more-link,
     #archive-wrapper button.read-more-link,
     #search-wrapper button.read-more-link {
-      width: 100%; }
-      a.btn.btn-lg, .btn-group-lg > a.btn, #index-wrapper .btn-group-lg > a.read-more-link,
-      #archive-wrapper .btn-group-lg > a.read-more-link,
-      #search-wrapper .btn-group-lg > a.read-more-link, #index-wrapper a.btn-lg.read-more-link,
-      #archive-wrapper a.btn-lg.read-more-link,
-      #search-wrapper a.btn-lg.read-more-link,
-      button.btn.btn-lg,
-      .btn-group-lg > button.btn,
-      #index-wrapper .btn-group-lg > button.read-more-link,
-      #archive-wrapper .btn-group-lg > button.read-more-link,
-      #search-wrapper .btn-group-lg > button.read-more-link,
-      #index-wrapper button.btn-lg.read-more-link,
-      #archive-wrapper button.btn-lg.read-more-link,
-      #search-wrapper button.btn-lg.read-more-link {
-        width: 100%; } }
+      width: 100%; } }
 
 li.btn, #index-wrapper li.read-more-link,
 #archive-wrapper li.read-more-link,
@@ -18263,6 +18264,12 @@ table.dataTable thead .sorting_desc_disabled:before {
       #products_page-wrapper #products_categories nav .nav-link.active {
         color: #4A63AE;
         border-bottom: 0.5rem solid #4A63AE; }
+
+#products_page-wrapper #products-table_wrapper .product-request-all {
+  font-weight: 900;
+  letter-spacing: .050em; }
+  #products_page-wrapper #products-table_wrapper .product-request-all::before {
+    display: none; }
 
 #products_page-wrapper #products-table_wrapper #products-table_filter {
   display: none; }

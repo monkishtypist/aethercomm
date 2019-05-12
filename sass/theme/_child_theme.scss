@@ -384,6 +384,9 @@ button.btn {
         font-size: #{$font-size-base};
         letter-spacing: .600em;
         width: 352px;
+        @include media-breakpoint-down('sm') {
+            width: 100%;
+        }
     }
     &::before {
         content: " ";
@@ -414,9 +417,6 @@ button.btn {
     }
     @include media-breakpoint-down('sm') {
         width: 100%;
-        &.btn-lg {
-            width: 100%;
-        }
     }
 }
 li.btn { // navmenu buttons
@@ -1951,6 +1951,13 @@ table.dataTable thead .sorting_desc_disabled:before {
         }
     }
     #products-table_wrapper {
+        .product-request-all {
+            font-weight: $font-weight-black;
+            letter-spacing: .050em;
+            &::before {
+                display: none;
+            }
+        }
         #products-table_filter {
             display: none;
         }
