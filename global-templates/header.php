@@ -41,7 +41,7 @@ endif;
 $page_title = false;
 $page_lede = false;
 
-if ( is_single() ) :
+if ( is_single() && $post->post_type == 'post' ) :
     $page_title = sprintf( '<div class="page-title">%1$s</div>',
         $cat_names_string );
     $page_lede = sprintf( '<h1 class="page-lede">%1$s</h1>',
