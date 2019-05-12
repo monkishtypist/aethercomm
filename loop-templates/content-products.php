@@ -40,9 +40,9 @@ $product_cats = get_categories( $product_cats_args );
                     ); ?>
 
                     <form method="get" id="productsearchform" action="<?php echo get_permalink(); ?>" role="search" class="show" _lpchecked="1">
-                        <label class="sr-only" for="s">Search Products</label>
+                        <label class="sr-only" for="productsearch">Search Products</label>
                         <div class="input-group">
-                            <input class="field form-control" id="productsearch" name="s" type="text" placeholder="" value="<?php the_search_query(); ?>">
+                            <input class="field form-control" id="productsearch" name="productsearch" type="text" placeholder="" value="<?php get_query_var( 'productsearch' ); ?>">
                             <span class="input-group-append">
                                 <button type="submit" id="productsearchsubmit" class="">
                                     <i class="fas fa-search"></i>
