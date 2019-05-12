@@ -18289,25 +18289,30 @@ table.dataTable thead .sorting_desc_disabled:before {
     #single_products-wrapper #single_products-header #single_products-breadcrumb i {
       margin-right: 0.75rem; } }
 
+@media (max-width: 768.98px) {
+  #single_products-wrapper #single_products-header .crosshairs-sm-gray.crosshairs-top-left {
+    left: .4rem;
+    top: .2rem; } }
+
 #single_products-wrapper #single-products_specifications {
-  background-image: url(../images/path5.png);
-  background-position: calc(50vw + 19rem) 5rem;
+  background-image: url(../images/path5.png), url(../images/products-specs-tab-bg.png);
+  background-position: calc(50vw + 19rem) 5rem, 0 0;
   background-repeat: no-repeat;
   background-size: auto; }
   @media (max-width: 1199.98px) {
     #single_products-wrapper #single-products_specifications {
-      background-position: calc(50vw + 15rem) 5rem; } }
+      background-position: calc(50vw + 15rem) 5rem, 0 0; } }
   @media (max-width: 991.98px) {
     #single_products-wrapper #single-products_specifications {
-      background-position: calc(50vw + 8rem) 5rem; } }
+      background-position: calc(50vw + 8rem) 5rem, 0 0; } }
   @media (max-width: 768.98px) {
     #single_products-wrapper #single-products_specifications {
-      background-image: url(../images/pathtab2.png);
-      background-position: calc(50vw + 9rem) 3.7rem; } }
+      background-image: url(../images/pathtab2.png), url(../images/products-specs-tab-bg.png);
+      background-position: calc(50vw + 9rem) 3.7rem, 0 0; } }
   @media (max-width: 575.98px) {
     #single_products-wrapper #single-products_specifications {
-      background-image: url(../images/pathtab2.png);
-      background-position: calc(50vw + 6rem) 3.7rem; } }
+      background-image: url(../images/pathtab2.png), url(../images/products-specs-tab-bg.png);
+      background-position: calc(50vw + 6rem) 3.7rem, 0 0; } }
   #single_products-wrapper #single-products_specifications .section-title {
     font-size: 1.25rem;
     font-weight: 700;
