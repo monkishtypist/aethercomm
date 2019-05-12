@@ -1964,10 +1964,13 @@ table.dataTable thead .sorting_desc_disabled:before {
             span {
                 font-size: #{$font-size-base * 0.8125};
                 font-weight: $font-weight-bold;
-                margin-right: #{$spacer * 3};
+                margin-right: #{$spacer * 1.125};
                 &:last-of-type {
                     margin-right: 0;
                 }
+            }
+            i {
+                margin-right: #{$spacer * 1.125};
             }
         }
     }

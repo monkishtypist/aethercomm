@@ -18260,9 +18260,12 @@ table.dataTable thead .sorting_desc_disabled:before {
 #single_products-wrapper #single_products-header #single_products-breadcrumb span {
   font-size: 0.8125rem;
   font-weight: 700;
-  margin-right: 3rem; }
+  margin-right: 1.125rem; }
   #single_products-wrapper #single_products-header #single_products-breadcrumb span:last-of-type {
     margin-right: 0; }
+
+#single_products-wrapper #single_products-header #single_products-breadcrumb i {
+  margin-right: 1.125rem; }
 
 #single_products-wrapper #single-products_specifications {
   background-image: url(../images/path5.png);
