@@ -17360,9 +17360,9 @@ table.dataTable thead .sorting_desc_disabled:before {
 /* Timeline */
 #timeline_section {
   background-image: url(../images/timeline-bg.png);
-  background-position: 50% 50%;
+  background-position: 50% 300px;
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: auto;
   height: 510px; }
 
 /**
