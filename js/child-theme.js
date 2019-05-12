@@ -25031,6 +25031,7 @@ return DataTable;
             modelNumberAdd( modelNumber );
         } else {
             $(this).html("Add to Queue");
+            modelNumberRemove( modelNumber );
         }
         queued = ! queued;
         $(this).data( 'queued', queued ).attr( 'data-queued', queued );
@@ -25049,26 +25050,53 @@ return DataTable;
     };
 
     var modelNumberAdd = function( modelNumber ) {
-        var models = [ modelNumber ];
+        var modelsArray = [ modelNumber ];
         if ( localStorage ) {
             var modelsQueued = JSON.parse( localStorage.getItem( 'modelsQueued' ) );
             if ( modelsQueued ) {
-                var newModelsQueued = modelsQueued.concat( models ).unique();
+                var newModelsQueued = modelsQueued.concat( modelsArray ).unique();
             } else {
-                var newModelsQueued = models;
+                var newModelsQueued = modelsArray;
             }
             localStorage.setItem( 'modelsQueued' , JSON.stringify( newModelsQueued ) );
         } else {
             var modelsQueued = JSON.parse( $('body').data( 'modelsQueued' ) );
             if ( modelsQueued ) {
-                var newModelsQueued = modelsQueued.concat( models ).unique();
+                var newModelsQueued = modelsQueued.concat( modelsArray ).unique();
             } else {
-                var newModelsQueued = models;
+                var newModelsQueued = modelsArray;
             }
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
-        console.log( modelsQueued );
-        console.log( newModelsQueued );
+        console.log(modelsQueued);
+        console.log(newModelsQueued);
+    }
+
+    var modelNumberRemove = function( modelNumber ) {
+        var modelsArray = [ modelNumber ];
+        if ( localStorage ) {
+            var modelsQueued = JSON.parse( localStorage.getItem( 'modelsQueued' ) );
+            if ( modelsQueued ) {
+                var newModelsQueued = array.filter( function( value, index, arr ) {
+                    return value != modelNumber;
+                });
+            } else {
+                var newModelsQueued = [];
+            }
+            localStorage.setItem( 'modelsQueued' , JSON.stringify( newModelsQueued ) );
+        } else {
+            var modelsQueued = JSON.parse( $('body').data( 'modelsQueued' ) );
+            if ( modelsQueued ) {
+                var newModelsQueued = array.filter( function( value, index, arr ) {
+                    return value != modelNumber;
+                });
+            } else {
+                var newModelsQueued = [];
+            }
+            $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
+        }
+        console.log(modelsQueued);
+        console.log(newModelsQueued);
     }
 
 })(jQuery);
