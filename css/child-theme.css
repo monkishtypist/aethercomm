@@ -17364,6 +17364,9 @@ table.dataTable thead .sorting_desc_disabled:before {
   background-repeat: no-repeat;
   background-size: auto;
   height: 578px; }
+  #timeline_section .timeline-element .timeline-content {
+    color: #fff;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 /**
  * Footer

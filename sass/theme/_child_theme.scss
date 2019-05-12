@@ -1273,7 +1273,10 @@ table.dataTable {
     height: 578px;
     .timeline-element {
         .timeline-image {}
-        .timeline-content {}
+        .timeline-content {
+            color: $white;
+            text-shadow: 1px 1px 1px rgba($black,.5);
+        }
         .timeline-date {}
     }
 }
