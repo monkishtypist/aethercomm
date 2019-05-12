@@ -17367,6 +17367,10 @@ table.dataTable thead .sorting_desc_disabled:before {
   #timeline_section .timeline-element .timeline-content {
     color: #fff;
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+  #timeline_section .timeline-element .timeline-date {
+    color: #707070; }
+    #timeline_section .timeline-element .timeline-date.active {
+      color: #222222; }
 
 /**
  * Footer

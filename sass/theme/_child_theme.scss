@@ -1277,7 +1277,12 @@ table.dataTable {
             color: $white;
             text-shadow: 1px 1px 1px rgba($black,.5);
         }
-        .timeline-date {}
+        .timeline-date {
+            color: $gray-600;
+            &.active {
+                color: $dark;
+            }
+        }
     }
 }
 
