@@ -218,6 +218,7 @@ if ( ! function_exists( 'aethercomm_add_site_info' ) ) {
 }
 
 /* 7. Custom Post Types */
+// CPT products
 add_action( 'init', 'aethercomm_products_post_type' );
 if ( ! function_exists( 'aethercomm_products_post_type' ) ) {
     function aethercomm_products_post_type() {
@@ -395,6 +396,7 @@ if ( ! function_exists( 'aethercomm_product_cats_tax_init' ) ) {
     }
 }
 
+// CPT team members
 add_action( 'init', 'aethercomm_teammember_post_type' );
 if ( ! function_exists( 'aethercomm_teammember_post_type' ) ) {
     function aethercomm_teammember_post_type() {
@@ -456,6 +458,7 @@ if ( ! function_exists( 'aethercomm_teammember_post_type' ) ) {
     }
 }
 
+// CPT representative
 add_action( 'init', 'aethercomm_representative_post_type' );
 if ( ! function_exists( 'aethercomm_representative_post_type' ) ) {
     function aethercomm_representative_post_type() {
@@ -514,6 +517,68 @@ if ( ! function_exists( 'aethercomm_representative_post_type' ) ) {
             'capability_type'       => 'page',
         );
         register_post_type( 'representatives', $args );
+    }
+}
+
+// CPT timeline
+add_action( 'init', 'aethercomm_timeline_post_type' );
+if ( ! function_exists( 'aethercomm_timeline_post_type' ) ) {
+    function aethercomm_timeline_post_type() {
+        $labels = array(
+            'name'                  => _x( 'Timelines', 'aethercomm_timelines_post_type', 'aethercomm' ),
+            'singular_name'         => _x( 'timeline', 'aethercomm_timelines_post_type', 'aethercomm' ),
+            'menu_name'             => _x( 'Timelines', 'aethercomm_timelines_post_type', 'aethercomm' ),
+            'name_admin_bar'        => _x( 'Timelines', 'aethercomm_timelines_post_type', 'aethercomm' ),
+            'archives'              => __( 'Item Archives', 'aethercomm' ),
+            'parent_item_colon'     => __( 'Parent Item:', 'aethercomm' ),
+            'all_items'             => __( 'All Timelines', 'aethercomm' ),
+            'add_new_item'          => __( 'Add New timeline', 'aethercomm' ),
+            'add_new'               => __( 'Add New', 'aethercomm' ),
+            'new_item'              => __( 'New timeline', 'aethercomm' ),
+            'edit_item'             => __( 'Edit timeline', 'aethercomm' ),
+            'update_item'           => __( 'Update timeline', 'aethercomm' ),
+            'view_item'             => __( 'View timeline', 'aethercomm' ),
+            'search_items'          => __( 'Search Timelines', 'aethercomm' ),
+            'not_found'             => __( 'Not found', 'aethercomm' ),
+            'not_found_in_trash'    => __( 'Not found in Trash', 'aethercomm' ),
+            'featured_image'        => __( 'Featured Image', 'aethercomm' ),
+            'set_featured_image'    => __( 'Set featured image', 'aethercomm' ),
+            'remove_featured_image' => __( 'Remove featured image', 'aethercomm' ),
+            'use_featured_image'    => __( 'Use as featured image', 'aethercomm' ),
+            'insert_into_item'      => __( 'Insert into item', 'aethercomm' ),
+            'uploaded_to_this_item' => __( 'Uploaded to this item', 'aethercomm' ),
+            'items_list'            => __( 'Items list', 'aethercomm' ),
+            'items_list_navigation' => __( 'Items list navigation', 'aethercomm' ),
+            'filter_items_list'     => __( 'Filter items list', 'aethercomm' ),
+        );
+        $rewrite = array(
+            'slug'                  => 'timeline',
+            'with_front'            => false,
+            'pages'                 => true,
+            'feeds'                 => false,
+        );
+        $args = array(
+            'label'                 => _x( 'Timelines', 'aethercomm_timelines_post_type', 'aethercomm' ),
+            'description'           => __( 'Company timeline Profile Page', 'aethercomm' ),
+            'labels'                => $labels,
+            'supports'              => array( 'title', 'editor', 'thumbnail', 'custom-fields' ),
+            'taxonomies'            => array( '' ),
+            'hierarchical'          => false,
+            'public'                => true,
+            'show_ui'               => true,
+            'show_in_menu'          => true,
+            'menu_position'         => 5,
+            'menu_icon'             => 'dashicons-groups',
+            'show_in_admin_bar'     => true,
+            'show_in_nav_menus'     => true,
+            'can_export'            => true,
+            'has_archive'           => false,
+            'exclude_from_search'   => true,
+            'publicly_queryable'    => true,
+            'rewrite'               => $rewrite,
+            'capability_type'       => 'page',
+        );
+        register_post_type( 'timelines', $args );
     }
 }
 
