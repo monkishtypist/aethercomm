@@ -158,6 +158,7 @@ if ( ! function_exists( 'has_acf_field' ) ) {
         $value = get_post_meta( $id, $field );
 
 		if ( isset( $value ) && ! empty( $value ) ) {
+            var_dump( $value);
 			return true;
 		} else {
             return false;
