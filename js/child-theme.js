@@ -25136,4 +25136,14 @@ return DataTable;
         }
     }
 
+    // Update model queue links
+    var preloadQueuedModels = function() {
+        var modelsQueued = getModelsQueued();
+        var arrayLength = modelsQueued.length;
+        for ( var i = 0; i < arrayLength; i++ ) {
+            $('.product-queue-link[data-model-number="'+modelsQueued[i]+'"]').data( 'queued', true ).attr( 'data-queued', true );
+        }
+    }
+    preloadQueuedModels();
+
 })(jQuery);
