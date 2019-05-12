@@ -70,8 +70,8 @@ $terms = get_terms( array(
                 );
                 $query = new WP_Query( $args );
                 ?>
-                <?php if ( $query[ $key ]->have_posts() ) : ?>
-                    <?php while ( $query[ $key ]->have_posts() ) : $query[ $key ]->the_post(); ?>
+                <?php if ( $query->have_posts() ) : ?>
+                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                         <div class="timeline-element">
                             <?php if ( has_post_thumbnail() ) { ?>
                                 <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid timeline-image' ) ); ?>
