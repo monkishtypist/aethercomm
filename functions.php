@@ -255,6 +255,8 @@ if ( ! function_exists( 'aethercomm_products_post_type' ) ) {
     }
 }
 
+// Set the Products post type parent page
+define( 'PRODUCTS_PAGE_PARENT_ID', '19' );
 add_action( 'wp_insert_post_data', 'aethercomm_products_cpt_parent_page', '99', 2  );
 if ( ! function_exists( 'aethercomm_products_cpt_parent_page' ) ) {
     function aethercomm_products_cpt_parent_page( $data, $postarr ) {
@@ -266,11 +268,37 @@ if ( ! function_exists( 'aethercomm_products_cpt_parent_page' ) ) {
             return $data;
 
         if ( $post->post_type == 'products' ){
-            $data['post_parent'] = 19 ;
+            $data['post_parent'] = PRODUCTS_PAGE_PARENT_ID ;
         }
 
         return $data;
     }
+}
+
+add_filter( 'nav_menu_css_class' , 'aethercomm_nav_menu_css_class', 10, 2 );
+/**
+ * add ancestor menu classes
+ *
+ * @author  Joe Sexton <joe@webtipblog.com>
+ * @param   array $classes
+ * @param   object $item
+ * @return  array
+ */
+function aethercomm_nav_menu_css_class( $classes, $item ){
+
+	$post = get_post();
+	if ( !$post )
+		return $classes;
+
+	// if on a press release CPT, add ancestor class to the 'news' page menu items
+	if ( $item->object_id == $post->post_parent && get_post_type() == 'products' ) {
+
+		$classes[] = 'current_page_ancestor';
+		$classes[] = 'current-page-ancestor';
+		$classes[] = 'current-menu-ancestor';
+	}
+
+	return $classes;
 }
 
 // Add the custom columns to the Products post type:
@@ -282,7 +310,7 @@ if ( ! function_exists( 'aethercomm_set_custom_edit_products_columns' ) ) {
     }
 }
 
-// Add the data to the custom columns for the book post type:
+// Add the data to the custom columns for the Products post type:
 add_action( 'manage_products_posts_custom_column' , 'aethercomm_custom_products_column', 10, 2 );
 if ( ! function_exists( 'aethercomm_custom_products_column' ) ) {
     function aethercomm_custom_products_column( $column, $post_id ) {
