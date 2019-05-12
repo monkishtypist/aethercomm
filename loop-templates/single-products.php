@@ -56,6 +56,7 @@ foreach ( $terms as $term ) {
                             __( 'Data Sheet', 'aethercomm' )
                         ); ?>
                         <?php the_content(); ?>
+                        <a href="#" class="btn btn-secondary"><?php _e( 'Request Details', 'aethercomm' ); ?></a>
                     </header>
 
                 </div>
