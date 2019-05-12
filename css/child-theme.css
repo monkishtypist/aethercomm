@@ -15187,7 +15187,7 @@ section {
   position: relative; }
   section.section_header {
     padding-top: 13rem; }
-    @media (max-width: 768.98px) {
+    @media (max-width: 575.98px) {
       section.section_header {
         padding-top: 9.5rem; } }
     section.section_header.section-header-overlay {
@@ -15271,8 +15271,9 @@ section {
             left: 1rem; } }
   section.section-unpadded {
     padding: 0; }
-  section.default-page-content {
-    padding-top: 0; }
+  @media (max-width: 768.98px) {
+    section.default-page-content {
+      padding-top: 0; } }
 
 .section-dark {
   background-color: #222222;

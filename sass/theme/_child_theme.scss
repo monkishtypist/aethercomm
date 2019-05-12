@@ -442,10 +442,11 @@ section {
         padding-top: #{$spacer * 13};
         @include media-breakpoint-down('sm') {
             // padding-top: #{$spacer * 6.7};
-            padding-top: #{$spacer * 9.5};
+            // padding-top: #{$spacer * 11.5};
         }
         @include media-breakpoint-down('xs') {
             // padding-top: #{$spacer * 4.5};
+            padding-top: #{$spacer * 9.5};
         }
         &.section-header-overlay {
             @include section-header-overlay();
@@ -455,7 +456,9 @@ section {
         padding: 0;
     }
     &.default-page-content {
-        padding-top: 0;
+        @include media-breakpoint-down('sm') {
+            padding-top: 0;
+        }
     }
 }
 // Section colors
