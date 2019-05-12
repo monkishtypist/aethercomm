@@ -236,7 +236,7 @@ if ( ! function_exists( 'aethercomm_products_post_type' ) ) {
             'labels'                => $labels,
             'supports'              => array( 'title', 'editor', 'thumbnail', 'revisions', 'custom-fields', 'page-attributes' ),
             'taxonomies'            => array( 'product-categories' ),
-            'hierarchical'          => true,
+            'hierarchical'          => false,
             'public'                => true,
             'show_ui'               => true,
             'show_in_menu'          => true,
