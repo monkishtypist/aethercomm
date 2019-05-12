@@ -32,7 +32,7 @@ foreach ( $terms as $term ) {
                     <div id="single_products-breadcrumb">
                         <span class="single_products-parent"><?php echo get_the_title( $post->post_parent ); // parent ?></span>
                         <?php if ( ! empty( $terms_array ) ) { ?>
-                            <span class="single_products-terms"><?php echo implode( ' | ', $terms_array ); // category ?></span>
+                            <i class="fal fa-chevron-right"></i><span class="single_products-terms"><?php echo implode( ' | ', $terms_array ); // category ?></span>
                         <?php } ?>
                     </div>
                 </div>
