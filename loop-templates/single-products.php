@@ -80,10 +80,10 @@ foreach ( $terms as $term ) {
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md specs-intro">
+                <div class="col-12 col-md-5 specs-intro">
                     <?php echo apply_filters( 'the_content', get_acf_field( 'product_details_long_description', true ) ); ?>
                 </div>
-                <div class="col-12 col-md-6 specs-table">
+                <div class="col-12 col-md-5 specs-table">
 
                     <?php get_template_part( 'global-templates/products', 'specifications-table' ); ?>
 
