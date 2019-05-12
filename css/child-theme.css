@@ -14704,6 +14704,18 @@ a.btn-link {
     font-weight: 400;
     margin-right: 0.5rem; }
 
+a.share-link {
+  color: #4A63AE;
+  display: block;
+  font-weight: 700;
+  white-space: nowrap; }
+  a.share-link::before {
+    content: "\f14d";
+    display: inline;
+    font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
+    font-weight: 400;
+    margin-right: 0.5rem; }
+
 ul.list-col {
   display: -webkit-box;
   display: -ms-flexbox;

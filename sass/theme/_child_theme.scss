@@ -318,6 +318,19 @@ a {
             }
         }
     }
+    &.share-link {
+        color: $blue;
+        display: block;
+        font-weight: #{$font-weight-bold};
+        white-space: nowrap;
+        &::before {
+            content: "\f14d";
+            display: inline;
+            font-family: $font-family-fa;
+            font-weight: #{$font-weight-normal};
+            margin-right: #{$spacer * .5};
+        }
+    }
 }
 ul {
     &.list-col {
