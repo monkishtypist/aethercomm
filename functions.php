@@ -6,7 +6,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 /**
  * Table of contents
  *
- * 0. Requires...
+ * 0. Defines...
  * 1. Child theme Scripts and Styles
  * 2. Theme Setup
  *      Textdomain
@@ -22,7 +22,9 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 10. Widgets
  */
 
-/* 0. Requires... */
+/* 0. Defines... */
+define( 'PRODUCTS_PAGE_PARENT_ID', '19' );
+define( 'NEWS_PAGE_PARENT_ID', '21' );
 
 /* 1. Child theme Scripts and Styles */
 add_action( 'wp_enqueue_scripts', 'aethercomm_remove_parent_scripts', 20 );
@@ -256,7 +258,6 @@ if ( ! function_exists( 'aethercomm_products_post_type' ) ) {
 }
 
 // Set the Products post type parent page
-define( 'PRODUCTS_PAGE_PARENT_ID', '19' );
 add_action( 'wp_insert_post_data', 'aethercomm_products_cpt_parent_page', '99', 2  );
 if ( ! function_exists( 'aethercomm_products_cpt_parent_page' ) ) {
     function aethercomm_products_cpt_parent_page( $data, $postarr ) {
@@ -275,36 +276,30 @@ if ( ! function_exists( 'aethercomm_products_cpt_parent_page' ) ) {
     }
 }
 
+// Add ancestor menu classes
 add_filter( 'nav_menu_css_class' , 'aethercomm_nav_menu_css_class', 10, 2 );
-/**
- * add ancestor menu classes
- *
- * @author  Joe Sexton <joe@webtipblog.com>
- * @param   array $classes
- * @param   object $item
- * @return  array
- */
-function aethercomm_nav_menu_css_class( $classes, $item ){
+if ( ! function_exists( 'aethercomm_nav_menu_css_class' ) ) {
+    function aethercomm_nav_menu_css_class( $classes, $item ){
 
-	$post = get_post();
-	if ( !$post )
-		return $classes;
+        $post = get_post();
+        if ( !$post )
+            return $classes;
 
-	// if on a press release CPT, add ancestor class to the 'news' page menu items
-	if ( $item->object_id == $post->post_parent && get_post_type() == 'products' ) {
+        // if on a Products CPT, add ancestor class to the 'products' page menu items
+        if ( $item->object_id == $post->post_parent && get_post_type() == 'products' ) {
+            $classes[] = 'current_page_parent';
+            $classes[] = 'current_page_ancestor';
+            $classes[] = 'current-page-ancestor';
+            $classes[] = 'current-menu-ancestor';
+        }
 
-		$classes[] = 'current_page_ancestor';
-		$classes[] = 'current-page-ancestor';
-		$classes[] = 'current-menu-ancestor';
+        // if on a Products CPT, remove parent class from the 'news' page menu items
+        if ( ( is_post_type_archive( 'products' ) || is_singular( 'products' ) ) && $item->object_id == NEWS_PAGE_PARENT_ID ) {
+            $classes = array_diff( $classes, array( 'current_page_parent' ) );
+        }
+
+        return $classes;
     }
-
-    if ( ( is_post_type_archive( 'products' ) || is_singular( 'products' ) ) && $item->object_id == '33' ) {
-        $classes = array_diff( $classes, array( 'current_page_parent' ) );
-    }
-
-    var_dump($item);
-
-	return $classes;
 }
 
 // Add the custom columns to the Products post type:
