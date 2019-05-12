@@ -76,9 +76,16 @@ elseif ( is_tax() && ! empty( $queried_object->description ) ) :
     $page_header_copy = apply_filters( 'the_content', $queried_object->description );
 endif;
 
+$section_classes = sprintf( 'section_header %1$s_header ',
+    $template_slug );
+if ( $section_header_image ) {
+    $section_classes .= sprintf( 'section-header-overlay section-header-overlay_',
+        $overlay_color );
+}
+
 ?>
 
-<section id="<?php echo $post->post_name; ?>_header" class="section_header <?php echo $template_slug; ?>_header section-header-overlay section-header-overlay_<?php echo $overlay_color; ?>">
+<section id="<?php echo $post->post_name; ?>_header" class="<?php echo $section_classes; ?>">
 
     <?php if ( $section_header_image ) : ?>
         <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
