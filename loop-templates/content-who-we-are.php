@@ -33,37 +33,7 @@ $section_mission_styles = sprintf( 'style="%1$s"',
 
     <?php get_template_part( 'global-templates/header' ); ?>
 
-    <section id="<?php echo $post->post_name; ?>_tabs" class="section-unpadded">
-
-        <div class="container-fluid">
-
-            <ul class="nav nav-tabs nav-fill" id="milestones-tabs" role="tablist">
-                <?php echo sprintf( '<li class="nav-item"><a class="nav-link active" id="tab1-tab" data-toggle="tab" href="#tab1" role="tab" aria-controls="tab1" aria-selected="true"><span>%1$s</span></a></li>',
-                    get_acf_field( 'who-we-are_page_settings_tabs_tab1_title', true )
-                ); ?>
-                <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab2-tab" data-toggle="tab" href="#tab2" role="tab" aria-controls="tab2" aria-selected="false"><span>%1$s</span></a></li>',
-                    get_acf_field( 'who-we-are_page_settings_tabs_tab2_title', true )
-                ); ?>
-                <?php echo sprintf( '<li class="nav-item"><a class="nav-link" id="tab3-tab" data-toggle="tab" href="#tab3" role="tab" aria-controls="tab3" aria-selected="false"><span>%1$s</span></a></li>',
-                    get_acf_field( 'who-we-are_page_settings_tabs_tab3_title', true )
-                ); ?>
-            </ul>
-
-        </div>
-
-        <div class="<?php // echo esc_attr( $container ); ?>" id="milestones-tabs-content">
-            <div class="tab-pane fade show active" id="tab1" role="tabpanel" aria-labelledby="tab1-tab">
-                <img src="/wp-content/themes/aethercomm/images/placeholder.png" />
-            </div>
-            <div class="tab-pane fade" id="tab2" role="tabpanel" aria-labelledby="tab2-tab">
-                <img src="/wp-content/themes/aethercomm/images/placeholder.png" />
-            </div>
-            <div class="tab-pane fade" id="tab3" role="tabpanel" aria-labelledby="tab3-tab">
-                <img src="/wp-content/themes/aethercomm/images/placeholder.png" />
-            </div>
-        </div>
-
-    </section>
+    <?php get_template_part( 'loop-templates/partial', 'timeline' ); ?>
 
     <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1" <?php // echo $section_mission_styles; ?> >
 

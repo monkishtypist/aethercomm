@@ -1520,7 +1520,8 @@ table.dataTable {
 #who-we-are_page-wrapper {
     #who-we-are_header {
     }
-    #who-we-are_tabs {
+    #who-we-are_tabs,
+    #timeline_section {
         @include skewed-tabs();
     }
     #who-we-are_mission {

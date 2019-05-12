@@ -621,7 +621,7 @@ if ( ! function_exists( 'aethercomm_timline_cats_tax_init' ) ) {
             'description'                => __( 'Timeline categories', 'aethercomm' ),
             'public'                     => true,
             'publicly_queryable'         => true,
-            'hierarchical'               => true,
+            'hierarchical'               => false,
             'show_ui'                    => true,
             'show_in_menu'               => true,
             'show_in_nav_menus'          => true,

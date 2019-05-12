@@ -17551,15 +17551,19 @@ table.dataTable thead .sorting_desc_disabled:before {
   #frontpage-wrapper #front-page-posts .read-more-link span.readmore-read {
     display: none; }
 
-#who-we-are_page-wrapper #who-we-are_tabs {
+#who-we-are_page-wrapper #who-we-are_tabs,
+#who-we-are_page-wrapper #timeline_section {
   margin-top: -4.25rem;
   overflow-x: hidden; }
-  #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs {
+  #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs,
+  #who-we-are_page-wrapper #timeline_section .nav-tabs {
     margin-left: 2.125rem;
     margin-right: -4.25rem; }
-    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link {
+    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link,
+    #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item:last-of-type .nav-link {
       padding-right: 4.25rem; }
-    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
+    #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link,
+    #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link {
       background-color: #222222;
       border: 1px solid #4A63AE;
       color: #fff;
@@ -17571,38 +17575,48 @@ table.dataTable thead .sorting_desc_disabled:before {
       padding-top: 1rem;
       -webkit-transform: skew(-45deg);
               transform: skew(-45deg); }
-      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
+      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active,
+      #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link.active {
         background-color: #fff;
         border-bottom-color: #fff;
         color: #222222; }
-        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active span::before {
+        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active span::before,
+        #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link.active span::before {
           content: "\f107"; }
-      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
+      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span,
+      #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link span {
         display: block;
         -webkit-transform: skew(45deg);
                 transform: skew(45deg); }
-        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
+        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before,
+        #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link span::before {
           content: "\f105";
           display: inline-block;
           font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
           font-weight: 300;
           margin-right: 0.75rem;
           width: 0.75rem; }
-  #who-we-are_page-wrapper #who-we-are_tabs .tab-pane:not(.active) {
+  #who-we-are_page-wrapper #who-we-are_tabs .tab-pane:not(.active),
+  #who-we-are_page-wrapper #timeline_section .tab-pane:not(.active) {
     display: none; }
   @media (max-width: 768.98px) {
-    #who-we-are_page-wrapper #who-we-are_tabs {
+    #who-we-are_page-wrapper #who-we-are_tabs,
+    #who-we-are_page-wrapper #timeline_section {
       margin-top: 0;
       overflow-x: hidden; }
-      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs {
+      #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs,
+      #who-we-are_page-wrapper #timeline_section .nav-tabs {
         margin-left: -2.25rem;
         margin-right: -2.25rem; }
-        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item {
+        #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item,
+        #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item {
           -ms-flex-preferred-size: 100%;
               flex-basis: 100%; }
-          #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link {
+          #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item:last-of-type .nav-link,
+          #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item:last-of-type .nav-link {
             padding-right: 0; }
-          #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link {
+          #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link,
+          #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link {
             background-color: #000;
             background-image: url(../images/pathtab1.png);
             background-position: calc(100% + 7rem) 50%;
@@ -17620,18 +17634,22 @@ table.dataTable thead .sorting_desc_disabled:before {
             text-align: left;
             -webkit-transform: none;
                     transform: none; }
-            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active {
+            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active,
+            #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link.active {
               background-color: #fff;
               background-image: url(../images/pathtab2.png);
               border-bottom-color: #707070;
               color: #FF5800; }
-              #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active span::before {
+              #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link.active span::before,
+              #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link.active span::before {
                 content: "\f107"; }
-            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span {
+            #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span,
+            #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link span {
               display: block;
               -webkit-transform: none;
                       transform: none; }
-              #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before {
+              #who-we-are_page-wrapper #who-we-are_tabs .nav-tabs .nav-item .nav-link span::before,
+              #who-we-are_page-wrapper #timeline_section .nav-tabs .nav-item .nav-link span::before {
                 content: "\f105";
                 display: inline-block;
                 font-family: "Font Awesome 5 Pro", "Font Awesome", "Fontawesome";
