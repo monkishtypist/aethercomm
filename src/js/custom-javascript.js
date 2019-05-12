@@ -92,8 +92,11 @@
         }
     } );
 
-    // RFQ
+    /**
+     * RFQ
+     */
 
+    // Add/remove models from Queue
     $('.product-queue-link').on( 'click', function( event ) {
         event.preventDefault();
         var modelNumber = $(this).data('model-number');
@@ -109,18 +112,43 @@
         $(this).data( 'queued', queued ).attr( 'data-queued', queued );
     });
 
+    // Load models in form
+    $('.product-request').on( 'click', function( event ) {
+        event.preventDefault();
+        var modelNumber = $(this).data('model-number');
+        modelNumberAdd( modelNumber );
+    });
+
+    // unique()
     Array.prototype.unique = function() {
         var a = this.concat();
-        for(var i=0; i<a.length; ++i) {
-            for(var j=i+1; j<a.length; ++j) {
-                if(a[i] === a[j])
-                    a.splice(j--, 1);
+        for( var i=0; i<a.length; ++i ) {
+            for( var j=i+1; j<a.length; ++j ) {
+                if( a[i] === a[j] )
+                    a.splice( j--, 1 );
             }
         }
-
         return a;
     };
 
+    // Send queued models to Form
+    var sendModelsToForm = function() {
+        var modelsQueued = getModelsQueued();
+        var modelsQueuedString = modelsQueued.join();
+        $('.gfield.gform_hidden input').val( modelsQueuedString );
+    }
+
+    // Get Models Queued
+    var getModelsQueued = function() {
+        if ( localStorage ) {
+            var modelsQueued = JSON.parse( localStorage.getItem( 'modelsQueued' ) );
+        } else {
+            var modelsQueued = JSON.parse( $('body').data( 'modelsQueued' ) );
+        }
+        return modelsQueued;
+    }
+
+    // Add Models to Queue
     var modelNumberAdd = function( modelNumber ) {
         var modelsArray = [ modelNumber ];
         if ( localStorage ) {
@@ -140,12 +168,10 @@
             }
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
-        console.log(modelsQueued);
-        console.log(newModelsQueued);
     }
 
+    // Remove Models from Queue
     var modelNumberRemove = function( modelNumber ) {
-        var modelsArray = [ modelNumber ];
         if ( localStorage ) {
             var modelsQueued = JSON.parse( localStorage.getItem( 'modelsQueued' ) );
             if ( modelsQueued ) {
@@ -167,8 +193,6 @@
             }
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
-        console.log(modelsQueued);
-        console.log(newModelsQueued);
     }
 
 })(jQuery);
