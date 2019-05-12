@@ -525,6 +525,15 @@ if ( ! function_exists( 'aethercomm_modify_query' ) ) {
     }
 }
 
+// add custom query variables
+add_filter( 'query_vars', 'aethercomm_add_query_vars_filter' );
+if ( ! function_exists( 'aethercomm_add_query_vars_filter' ) ) {
+    function aethercomm_add_query_vars_filter( $vars ) {
+        $vars[] = "productsearch";
+        return $vars;
+    }
+}
+
 /* 9. Pagination */
 add_filter('found_posts', 'aethercomm_adjust_offset_pagination', 1, 2 );
 function aethercomm_adjust_offset_pagination( $found_posts, $query ) {
