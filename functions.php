@@ -632,3 +632,8 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 
 	}
 }
+
+/* 11. Gravity Forms */
+add_filter( 'gform_confirmation_anchor', function() {
+    return 20;
+} );
