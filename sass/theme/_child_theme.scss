@@ -1961,6 +1961,13 @@ table.dataTable thead .sorting_desc_disabled:before {
             margin-bottom: 1em;
         }
         #single_products-breadcrumb {
+            margin-top: -#{$spacer * 3};
+            @include media-breakpoint-down('sm') {
+                margin-top: 0;
+            }
+            .single_products-parent {
+                margin-left: #{$spacer};
+            }
             span {
                 font-size: #{$font-size-base * 0.8125};
                 font-weight: $font-weight-bold;
@@ -1988,22 +1995,22 @@ table.dataTable thead .sorting_desc_disabled:before {
     }
     #single-products_specifications {
         background-image: url(../images/path5.png), url(../images/products-specs-tab-bg.png);
-        background-position: calc(50vw + 19rem) 5rem, 0 0;
+        background-position: calc(50vw + 19rem) 5rem, -1px 0;
         background-repeat: no-repeat;
         background-size: auto;
         @include media-breakpoint-down('lg') {
-            background-position: calc(50vw + 15rem) 5rem, 0 0;
+            background-position: calc(50vw + 15rem) 5rem, -1px 0;
         }
         @include media-breakpoint-down('md') {
-            background-position: calc(50vw + 8rem) 5rem, 0 0;
+            background-position: calc(50vw + 8rem) 5rem, -1px 0;
         }
         @include media-breakpoint-down('sm') {
             background-image: url(../images/pathtab2.png), url(../images/products-specs-tab-bg.png);
-            background-position: calc(50vw + 9rem) 3.7rem, 0 0;
+            background-position: calc(50vw + 9rem) 3.7rem, -1px 0;
         }
         @include media-breakpoint-down('xs') {
             background-image: url(../images/pathtab2.png), url(../images/products-specs-tab-bg.png);
-            background-position: calc(50vw + 6rem) 3.7rem, 0 0;
+            background-position: calc(50vw + 6rem) 3.7rem, -1px 0;
         }
         .section-title {
             font-size: #{$font-size-base * 1.25};
