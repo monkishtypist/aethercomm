@@ -296,7 +296,13 @@ function aethercomm_nav_menu_css_class( $classes, $item ){
 		$classes[] = 'current_page_ancestor';
 		$classes[] = 'current-page-ancestor';
 		$classes[] = 'current-menu-ancestor';
-	}
+    }
+
+    if ( ( is_post_type_archive( 'products' ) || is_singular( 'products' ) ) && $item->object_id == '33' ) {
+        $classes = array_diff( $classes, array( 'current_page_parent' ) );
+    }
+
+    var_dump($item);
 
 	return $classes;
 }
