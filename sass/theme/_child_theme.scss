@@ -369,6 +369,7 @@ button.btn {
     width: 342px;
     &.btn-lg {
         font-size: #{$font-size-base};
+        letter-spacing: .600em;
         width: 352px;
     }
     &::before {

@@ -15071,6 +15071,7 @@ button.btn,
   #archive-wrapper button.btn-lg.read-more-link,
   #search-wrapper button.btn-lg.read-more-link {
     font-size: 1rem;
+    letter-spacing: .600em;
     width: 352px; }
   a.btn::before, #index-wrapper a.read-more-link::before,
   #archive-wrapper a.read-more-link::before,
