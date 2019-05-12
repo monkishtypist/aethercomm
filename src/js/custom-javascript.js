@@ -58,6 +58,7 @@
      */
 
     var table = $('#products-table').DataTable( {
+        "responsive": true,
         "columnDefs": [
             {
                 "order": [[ 1, "asc" ]]

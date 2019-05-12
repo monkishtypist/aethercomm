@@ -24981,7 +24981,10 @@ return DataTable;
         }
     });
 
-    // Datatables
+    /**
+     * Datatables
+     */
+
     var table = $('#products-table').DataTable( {
         "columnDefs": [
             {
