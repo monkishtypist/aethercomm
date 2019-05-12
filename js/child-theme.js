@@ -25077,7 +25077,7 @@ return DataTable;
         if ( localStorage ) {
             var modelsQueued = JSON.parse( localStorage.getItem( 'modelsQueued' ) );
             if ( modelsQueued ) {
-                var newModelsQueued = array.filter( function( value, index, arr ) {
+                var newModelsQueued = modelsQueued.filter( function( value, index, arr ) {
                     return value != modelNumber;
                 });
             } else {
@@ -25087,7 +25087,7 @@ return DataTable;
         } else {
             var modelsQueued = JSON.parse( $('body').data( 'modelsQueued' ) );
             if ( modelsQueued ) {
-                var newModelsQueued = array.filter( function( value, index, arr ) {
+                var newModelsQueued = modelsQueued.filter( function( value, index, arr ) {
                     return value != modelNumber;
                 });
             } else {
