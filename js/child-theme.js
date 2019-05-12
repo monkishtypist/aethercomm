@@ -25045,6 +25045,7 @@ return DataTable;
         event.preventDefault();
         var modelNumber = $(this).data('model-number');
         modelNumberAdd( modelNumber );
+        sendModelsToForm();
     });
 
     // unique()
