@@ -19,6 +19,8 @@ foreach ( $terms as $term ) {
     $terms_array[] = $term->name;
 }
 
+$model_number = get_acf_field( 'product_specs_model_number', true );
+
 ?>
 
 <article <?php post_class(); ?> id="post-<?php the_ID(); ?>">
@@ -56,7 +58,7 @@ foreach ( $terms as $term ) {
                             __( 'Data Sheet', 'aethercomm' )
                         ); ?>
                         <?php the_content(); ?>
-                        <p><a href="#" class="btn btn-lg btn-secondary"><?php _e( 'Request Details', 'aethercomm' ); ?></a></p>
+                        <p><a href="#" class="product-request btn btn-lg btn-secondary" data-model-number="<?php echo $model_number; ?>"><?php _e( 'Request Details', 'aethercomm' ); ?></a></p>
                     </header>
 
                 </div>
