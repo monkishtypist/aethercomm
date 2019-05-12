@@ -18266,8 +18266,10 @@ table.dataTable thead .sorting_desc_disabled:before {
         border-bottom: 0.5rem solid #4A63AE; }
 
 #products_page-wrapper #products-table_wrapper .product-request-all {
+  color: #A8A8A8;
   font-weight: 900;
-  letter-spacing: .050em; }
+  letter-spacing: .050em;
+  width: auto; }
   #products_page-wrapper #products-table_wrapper .product-request-all::before {
     display: none; }
 

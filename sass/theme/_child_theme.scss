@@ -1952,8 +1952,10 @@ table.dataTable thead .sorting_desc_disabled:before {
     }
     #products-table_wrapper {
         .product-request-all {
+            color: $gray-500;
             font-weight: $font-weight-black;
             letter-spacing: .050em;
+            width: auto;
             &::before {
                 display: none;
             }
