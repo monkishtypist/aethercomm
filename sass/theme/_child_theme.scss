@@ -499,28 +499,6 @@ section {
     color: #{$white};
     padding-bottom: #{$spacer * 4.5};
     padding-top: #{$spacer * 3};
-    &.section-contact-form {
-        background-image: url(../images/path3.png),
-            url(../images/path1.png),
-            url(../images/swoosh_bg.png),
-            url(../images/blue_radial_gradient_bg.png);
-        background-position: calc(50vw + 16rem) 7rem,
-            calc(50vw - 44rem) calc(100% - 9.375rem),
-            calc(50vw - 16.125rem) 50%,
-            50% 50%;
-        background-repeat: no-repeat;
-        background-size: auto, auto, auto, cover;
-        text-align: center;
-        .contact-widget {
-            @extend .col-12;
-            @extend .col-md-6;
-            @extend .offset-md-3;
-        }
-        .crosshairs-top-left,
-        .crosshairs-top-right {
-            top: #{(($h2-font-size * $h2-line-height) - ($spacer * 1.375)) / 2};
-        }
-    }
 }
 // Child-page sections
 .child-page-header {
@@ -1121,6 +1099,33 @@ li {
 textarea {
     max-height: #{$spacer * 6.875};
 }
+.section-contact-form {
+    background-image: url(../images/path3.png),
+        url(../images/path1.png),
+        url(../images/swoosh_bg.png),
+        url(../images/blue_radial_gradient_bg.png);
+    background-position: calc(50vw + 16rem) 7rem,
+        calc(50vw - 44rem) calc(100% - 9.375rem),
+        calc(50vw - 16.125rem) 50%,
+        50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto, auto, auto, cover;
+    text-align: center;
+    .contact-widget {
+        @extend .col-12;
+        @extend .col-md-6;
+        @extend .offset-md-3;
+    }
+    .crosshairs-top-left,
+    .crosshairs-top-right {
+        top: #{(($h2-font-size * $h2-line-height) - ($spacer * 1.375)) / 2};
+    }
+    form.contact-form {
+        margin-top: -#{$spacer * 15};
+        padding-top: #{$spacer * 15};
+    }
+}
+
 /* Sliders */
 .rev-slider-outer {
     .child-page-content & {
