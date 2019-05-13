@@ -81,7 +81,7 @@ $section_classes = sprintf( 'section_header %1$s_header ',
 $section_crosshairs = '<span class="crosshairs-gray crosshairs-sm-gray crosshairs-top-left"></span><span class="crosshairs-gray crosshairs-top-right"></span>';
 
 if ( $section_header_image ) {
-    $section_classes .= sprintf( 'section-header-overlay section-header-overlay_',
+    $section_classes .= sprintf( 'section-header-overlay section-header-overlay_%1$s',
         $overlay_color );
     $section_crosshairs = '<span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span><span class="crosshairs-white crosshairs-top-right"></span>';
 }
