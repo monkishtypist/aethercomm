@@ -56,6 +56,12 @@ if ( $section_header_image ) {
     $section_crosshairs = '<span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span><span class="crosshairs-white crosshairs-top-right"></span>';
 }
 
+// Page header video
+$video_link = false;
+if ( has_acf_field( 'what-we-do_page_settings_header_video' ) ) {
+    $video_link = get_acf_field( 'what-we-do_page_settings_header_video', true );
+}
+
 // section capabilities
 $section_capabilities_background_image_url = '/wp-content/uploads/2019/04/what-we-do_capabilities-background.png'; // default
 if ( get_acf_field( 'what-we-do_page_settings_capabilities_background' ) ) {
@@ -79,6 +85,11 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
         <?php if ( $section_header_image ) : ?>
             <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
                 <div class="section-image-overlay-wrapper-inner">
+                    <?php if ( $video_link ) { ?>
+                        <div class="header-video">
+                            <a href="#play-video" class="play-video-button"><span class="sr-only"><?php _e( 'Play Video', 'aethercomm' ); ?></span></a>
+                        </div>
+                    <?php } ?>
                     <div class="overlay"></div>
                     <?php echo $section_header_image; ?>
                 </div>
