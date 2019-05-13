@@ -2068,6 +2068,20 @@ $timeline-rotation-increment: 34.5 !default;
             }
         }
     }
+    #product-share-alert {
+        box-shadow: 0px 0px 40px rgba($black, .125);
+        display: none;
+        position: fixed;
+        bottom: 1rem;
+        right: 1rem;
+        z-index: 9999;
+        input {
+            width: 360px;
+            @include media-breakpoint-down('sm') {
+                width: 240px;
+            }
+        }
+    }
     #products_categories {
         padding-bottom: #{$spacer * 1.25};
         padding-top: #{$spacer * 1.5};

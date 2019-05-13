@@ -93,8 +93,8 @@ $product_cats = get_categories( $product_cats_args );
                 </div>
                 <div class="col-auto">
                     <a href="#share" class="product-share share-link" data-link="<?php echo get_permalink(); ?>"><?php _e( 'Share', 'aethercomm' ); ?></a>
-                    <div id="product-share-alert" class="alert alert-success alert-dismissible fade show" role="alert" style="display:none;position:fixed;bottom:1rem;right:1rem;z-index:9999;">
-                        <strong>Copy link:</strong> <input type="text" value="<?php echo get_permalink(); ?>" />
+                    <div id="product-share-alert" class="alert alert-info alert-dismissible fade show" role="alert">
+                        <strong><?php _e( 'Copy this link to share', 'aethercomm' ); ?>:</strong> <input type="text" value="<?php echo get_permalink(); ?>" />
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>

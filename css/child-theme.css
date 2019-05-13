@@ -18383,6 +18383,20 @@ table.dataTable thead .sorting_desc_disabled:before {
   height: 50px;
   width: 50px; }
 
+#products_page-wrapper #product-share-alert {
+  -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.125);
+          box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.125);
+  display: none;
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+  z-index: 9999; }
+  #products_page-wrapper #product-share-alert input {
+    width: 360px; }
+    @media (max-width: 768.98px) {
+      #products_page-wrapper #product-share-alert input {
+        width: 240px; } }
+
 #products_page-wrapper #products_categories {
   padding-bottom: 1.25rem;
   padding-top: 1.5rem; }
