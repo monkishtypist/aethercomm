@@ -15593,6 +15593,7 @@ section {
   padding: 1.5rem;
   -ms-flex-preferred-size: calc(33.333333% - 36px);
       flex-basis: calc(33.333333% - 36px);
+  margin-bottom: 2rem;
   max-width: 33.333333%;
   max-width: calc(33.333333% - 36px); }
   @media (max-width: 768.98px) {

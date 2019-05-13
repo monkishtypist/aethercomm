@@ -852,6 +852,7 @@ section {
         border: #{$border-width} solid #{$gray-600};
         padding: #{$spacer * 1.5};
         flex-basis: calc(33.333333% - #{$card-group-margin * 2});
+        margin-bottom: #{$spacer * 2};
         max-width: 33.333333%;
         max-width: calc(33.333333% - #{$card-group-margin * 2});
         @include media-breakpoint-down('sm') {
@@ -1983,6 +1984,8 @@ $timeline-rotation-increment: 34.5 !default;
 
 #rep-listing_page-wrapper {
     #rep-listing_header {
+    }
+    #rep-listing_reps {
     }
 }
 
