@@ -270,7 +270,6 @@
 
     // Setup timelines on document ready
     $('.timeline-dial').each(function(){
-        $(this).data('focus', 0);
         var dialElements = $(this).find('.timeline-element');
         dialElements.each(function(i){
             var rotate = i * 34.5;
@@ -290,6 +289,9 @@
         // get the current dial and focus index
         var dial = timeline.find('.timeline-dial');
         var currentFocusIndex = dial.data('focus');
+        if ( typeof( currentFocusIndex ) === 'undefined' ) {
+            currentFocusIndex = 0;
+        }
         console.log( 'focused: ' + currentFocusIndex );
         // Get the first and last index
         var dialElements = dial.find('.timeline-element');
