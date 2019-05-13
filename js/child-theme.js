@@ -25091,7 +25091,7 @@ return DataTable;
         var modelsQueuedString = modelsQueued.join();
         $('.gfield.products-requested-field input').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').append( modelsQueuedString );
-        $('form.contact-form')[0].scrollIntoView();
+        $('form.contact-form')[0].scrollIntoView().find('li.gfield:first-of-type input').focus();
     }
 
     // Send all models to Form
@@ -25099,7 +25099,7 @@ return DataTable;
         var modelsQueuedString = 'All';
         $('.gfield.products-requested-field input').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').append( modelsQueuedString );
-        $('form.contact-form')[0].scrollIntoView();
+        $('form.contact-form')[0].scrollIntoView().find('li.gfield:first-of-type input').focus();
     }
 
     // Get Models Queued
