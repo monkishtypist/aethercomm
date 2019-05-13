@@ -42,6 +42,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 ); ?>
             <?php } ?>
 
+            <?php /* <!-- Search by State -->
             <form class="form-inline reps-filter-form">
                 <div class="form-group">
                     <label for="rep-filter-input" class="sr-only"><?php _e( 'Search by state', 'aethercomm' ); ?></label>
@@ -49,6 +50,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 </div>
                 <button type="submit" class="btn btn-primary"><?php _e( 'Search', 'aethercomm' ); ?></button>
             </form>
+            */ ?>
 
             <?php
             $args = array(

@@ -1756,6 +1756,9 @@ $timeline-rotation-increment: 34.5 !default;
                 display: none;
             }
         }
+        .header-video-wrapper {
+            @extend .col;
+        }
     }
     #what-we-do_tabs {
         @include skewed-tabs( $black, $dark, $white, $white );
