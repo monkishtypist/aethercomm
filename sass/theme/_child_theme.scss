@@ -1303,7 +1303,7 @@ $timeline-rotation-increment: 34.5 !default;
             transition: $transition-base;
             width: $timeline-elem-width;
             &:not(:first-of-type) {
-                display: none; // temp hide while working on layout
+                // display: none; // temp hide while working on layout
             }
             &.timeline-previous {
                 opacity: 0;

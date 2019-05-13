@@ -17386,8 +17386,6 @@ table.dataTable thead .sorting_desc_disabled:before {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
       width: 220px; }
-      #timeline_section .timeline-dial .timeline-element:not(:first-of-type) {
-        display: none; }
       #timeline_section .timeline-dial .timeline-element.timeline-previous {
         opacity: 0;
         -webkit-transform: rotate(-69deg);
