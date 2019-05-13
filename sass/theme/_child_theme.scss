@@ -1265,6 +1265,9 @@ table.dataTable {
 }
 
 /* Timeline */
+$timeline-width: 982px !default;
+$timeline-elem-width: 220px !default;
+$timeline-elem-height: 186px !default;
 #timeline_section {
     // background-image: url(../images/timeline-bg.png);
     // background-position: 50% 300px;
@@ -1277,22 +1280,22 @@ table.dataTable {
         position: relative;
         padding-top: 232px;
         left: 50%;
-        margin-left: -723px;
+        margin-left: -#{$timeline-width * .5};
         top: 0;
-        width: 982px;
+        width: $timeline-width;
         height: auto;
         .timeline-dial-bg-image {
-            width: 982px;
-            height: 982px;
+            width: $timeline-width;
+            height: $timeline-width;
         }
         .timeline-element {
             position: absolute;
             top: 0;
             left: 50%;
-            margin-left: -110px;
-            width: 220px;
+            margin-left: -#{$timeline-elem-width * .5};
+            width: $timeline-elem-width;
             .timeline-image {
-                height: 186px;
+                height: $timeline-elem-height;
                 width: auto;
             }
             .timeline-content {
