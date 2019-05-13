@@ -17880,14 +17880,16 @@ table.dataTable thead .sorting_desc_disabled:before {
   min-width: auto;
   max-width: 75%;
   float: right; }
-
-@media (max-width: 768.98px) {
-  #what-we-do_page-wrapper #what-we-do_header .section-overlay-image-desktop {
-    display: none; } }
-
-@media (min-width: 769px) {
-  #what-we-do_page-wrapper #what-we-do_header .section-overlay-image-mobile {
-    display: none; } }
+  @media (max-width: 768.98px) {
+    #what-we-do_page-wrapper #what-we-do_header .section-overlay-image.section-overlay-image-desktop {
+      display: none; } }
+  #what-we-do_page-wrapper #what-we-do_header .section-overlay-image.section-overlay-image-mobile {
+    float: none;
+    max-width: auto;
+    min-width: 100%; }
+    @media (min-width: 769px) {
+      #what-we-do_page-wrapper #what-we-do_header .section-overlay-image.section-overlay-image-mobile {
+        display: none; } }
 
 #what-we-do_page-wrapper #what-we-do_header .header-video-wrapper {
   text-align: right; }

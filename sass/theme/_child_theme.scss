@@ -1750,15 +1750,18 @@ $timeline-rotation-increment: 34.5 !default;
             min-width: auto;
             max-width: 75%;
             float: right;
-        }
-        .section-overlay-image-desktop {
-            @include media-breakpoint-down('sm') {
-                display: none;
+            &.section-overlay-image-desktop {
+                @include media-breakpoint-down('sm') {
+                    display: none;
+                }
             }
-        }
-        .section-overlay-image-mobile {
-            @include media-breakpoint-up('md') {
-                display: none;
+            &.section-overlay-image-mobile {
+                float: none;
+                max-width: auto;
+                min-width: 100%;
+                @include media-breakpoint-up('md') {
+                    display: none;
+                }
             }
         }
         .header-video-wrapper {
