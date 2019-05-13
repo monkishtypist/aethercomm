@@ -1764,8 +1764,18 @@ $timeline-rotation-increment: 34.5 !default;
         .header-video-wrapper {
             @extend .col-12;
             @extend .col-md-5;
-            .aethercomm-logo {}
-            .play-video-button {}
+            text-align: right;
+            .aethercomm-logo {
+                margin-right: 1rem;
+                margin-top: -2rem;
+                width: 20rem;
+            }
+            .play-video-button {
+
+            }
+            @include media-breakpoint-down('sm') {
+                display: none;
+            }
         }
     }
     #what-we-do_tabs {
