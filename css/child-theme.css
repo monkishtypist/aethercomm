@@ -17369,9 +17369,12 @@ table.dataTable thead .sorting_desc_disabled:before {
     top: 0;
     width: 1446px; }
     #timeline_section .timeline-wrapper .timeline-wrapper-dial-image {
+      display: block;
       height: 982px;
-      width: 982px;
-      margin: 232px auto; }
+      left: 50%;
+      margin-left: -723px;
+      position: absolute;
+      width: 982px; }
     #timeline_section .timeline-wrapper .timeline-dial {
       bottom: 0;
       height: 1446px;
