@@ -17400,7 +17400,7 @@ table.dataTable thead .sorting_desc_disabled:before {
         opacity: 0;
         -webkit-transform: rotate(69deg);
                 transform: rotate(69deg); }
-        #timeline_section .timeline-dial .timeline-element.timeline-next:last-of-type {
+        #timeline_section .timeline-dial .timeline-element.timeline-next:first-of-type {
           opacity: 1;
           -webkit-transform: rotate(34.5deg);
                   transform: rotate(34.5deg); }
