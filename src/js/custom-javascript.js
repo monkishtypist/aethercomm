@@ -268,8 +268,9 @@
      * Timeline
      */
 
-    // Setup timelines
+    // Setup timelines on document ready
     $('.timeline-dial').each(function(){
+        $(this).data('focus', 0);
         var dialElements = $(this).find('.timeline-element');
         dialElements.each(function(i){
             var rotate = i * 34.5;
@@ -286,56 +287,35 @@
     });
 
     var timelineNext = function( timeline ) {
-        var dial           = timeline.find('.timeline-dial');
-        var dialElements   = dial.find('.timeline-element');
-        var len            = dialElements.length;
-        var focusedIndex   = dialElements.index('[data-focus="focus"]');
-        console.log( 'focused: ' + focusedIndex );
-        console.log( 'next: ' + (focusedIndex + 1) );
-        if ( focusedIndex < dialElements.index( dialElements.last() ) ) {
-            var nextElement    = dialElements.eq( focusedIndex + 1 );
-            timelineReFocus( timeline, nextElement );
+        // get the current dial and focus index
+        var dial = timeline.find('.timeline-dial');
+        var currentFocusIndex = dial.data('focus');
+        console.log( 'focused: ' + currentFocusIndex );
+        // Get the first and last index
+        var dialElements = dial.find('.timeline-element');
+        var lastIndex = dialElements.index( dialElements.last() );
+        var firstIndex = dialElements.index( dialElements.last() );
+        // set the next focus index
+        if ( currentFocusIndex < lastIndex ) {
+            var newFocusIndex = currentFocusIndex + 1;
+            console.log( 'next: ' + newFocusIndex );
+            dial.data( 'focus', newFocusIndex );
+            timelineRefocus( timeline, newFocusIndex );
         }
     }
 
-    var timelineReFocus = function( timeline, newFocus ) {
-        timelineUnfocus( timeline );
-        timelineFocus( newFocus );
-    }
-
-    var timelineUnfocus = function( timeline ) {
-        var dial           = timeline.find('.timeline-dial');
-        var dialElements   = dial.find('.timeline-element');
-        var len            = dialElements.length;
-        var focusedIndex   = dialElements.index('[data-focus="focus"]');
-        console.log('unfocused: ' + focusedIndex);
-        var focusedElement = dialElements.eq( focusedIndex );
-        focusedElement.data('focus', false).attr('data-focus', 'false');
-        if ( focusedIndex < dialElements.index( dialElements.last() ) ) {
-            focusedElement.next().data('focus', false).attr('data-focus', 'false');
-            console.log('unfocused next: ' + (focusedIndex + 1));
-        }
-        if ( focusedIndex > dialElements.index( dialElements.first() ) ) {
-            focusedElement.prev().data('focus', false).attr('data-focus', 'false');
-            console.log('unfocused prev: ' + (focusedIndex - 1));
-        }
-    }
-
-    var timelineFocus = function( focusedElement ) {
-        var dial           = focusedElement.closest('.timeline-dial');
-        var dialElements   = dial.find('.timeline-element');
-        var len            = dialElements.length;
-        var focusedIndex   = dialElements.index( focusedElement );
-        focusedElement.data('focus', 'focus').attr('data-focus', 'focus');
-        console.log('focusedElement: ' + focusedIndex);
-        if ( focusedIndex < dialElements.index( dialElements.last() ) ) {
-            focusedElement.next().data('focus', 'near').attr('data-focus', 'near');
-            console.log('focusedElement next: ' + (focusedIndex + 1));
-        }
-        if ( focusedIndex > dialElements.index( dialElements.first() ) ) {
-            focusedElement.prev().data('focus', 'near').attr('data-focus', 'near');
-            console.log('focusedElement prev: ' + (focusedIndex - 1));
-        }
+    var timelineRefocus = function( timeline, index ) {
+        // get the current dial and set the focus index
+        var dial = timeline.find('.timeline-dial');
+        dial.data('focus', index).attr('data-focus', index);
+        // remove classes from dial elements
+        var dialElements = dial.find('.timeline-element');
+        dialElements.removeClass('focus near');
+        // add classes to newly focused elements
+        var focusedElement = dialElements.eq( index );
+        focusedElement.addClass('focus');
+        focusedElement.next().addClass('near');
+        focusedElement.prev().addClass('near');
     }
 
 })(jQuery);

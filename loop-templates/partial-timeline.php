@@ -57,11 +57,11 @@ $terms = get_terms( array(
                 $query = new WP_Query( $args );
                 ?>
                 <?php if ( $query->have_posts() ) : $i = 0; ?>
-                    <div id="timeline-<?php echo $key; ?>" class="timeline-wrapper">
+                    <div id="timeline-<?php echo $key; ?>" class="timeline-wrapper" data-focus="0">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/timeline-bg.png" class="timeline-wrapper-dial-image" />
                         <div class="timeline-dial">
                             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                                <div class="timeline-element" data-focus="<?php echo ( $i == 0 ? 'focus' : ( $i == 1 ? 'near' : 'false' ) ); ?>" data-rotation-multiplier="<?php echo $i + 1; ?>">
+                                <div class="timeline-element">
                                     <?php if ( has_post_thumbnail() ) { ?>
                                         <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid timeline-image' ) ); ?>
                                     <?php } ?>
