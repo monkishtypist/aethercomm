@@ -17375,6 +17375,9 @@ table.dataTable thead .sorting_desc_disabled:before {
       left: 0px; }
     #timeline_section .timeline-arrow.timeline-next {
       right: 0; }
+    #timeline_section .timeline-arrow i {
+      color: #fff;
+      font-size: 52px; }
   #timeline_section .timeline-wrapper {
     height: 1446px;
     left: 50%;
