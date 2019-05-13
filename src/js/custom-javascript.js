@@ -62,6 +62,10 @@
         theModal.modal('show');
     });
 
+    $('#video-modal').on('hidden.bs.modal', function (e) {
+        $(this).modal('dispose');
+    });
+
     var drawVideoModal = function( embedCode ) {
         var html = '<!-- Modal -->' +
             '<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal-title" aria-hidden="true">' +
