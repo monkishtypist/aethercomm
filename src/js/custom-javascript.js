@@ -165,6 +165,7 @@
         var modelsQueued = getModelsQueued();
         var modelsQueuedString = modelsQueued.join();
         $('.gfield.products-requested-field input').val( modelsQueuedString );
+        $('.gfield.products-requested-field textarea').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').append( modelsQueuedString );
     }
 
@@ -172,6 +173,7 @@
     var sendAllModelsToForm = function() {
         var modelsQueuedString = 'All';
         $('.gfield.products-requested-field input').val( modelsQueuedString );
+        $('.gfield.products-requested-field textarea').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').append( modelsQueuedString );
     }
 
@@ -211,6 +213,7 @@
             }
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
+        sendModelsToForm();
     }
 
     // Remove Models from Queue
@@ -236,6 +239,7 @@
             }
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
+        sendModelsToForm();
     }
 
     // Remove All Models from Queue
@@ -246,9 +250,8 @@
         } else {
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
+        sendModelsToForm();
     }
-
-    // Update Products Queued field textarea
 
     // Update model queue links
     var preloadQueuedModels = function() {

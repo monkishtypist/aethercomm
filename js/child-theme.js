@@ -25174,9 +25174,9 @@ return DataTable;
         } else {
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
+        $('.gfield.products-requested-field input').val( '' );
+        $('.gfield.products-requested-field textarea').append( '' );
     }
-
-    // Update Products Queued field textarea
 
     // Update model queue links
     var preloadQueuedModels = function() {
