@@ -2122,17 +2122,20 @@ $timeline-rotation-increment: 34.5 !default;
                 }
                 .post-image-wrapper {
                     // clip-path: polygon(0 0, 100% 0, 100% 100%, #{$spacer * 14.625} 100%);
+                    padding-left: 1px;
                     position: relative;
                     &::before {
-                        content: "";
-                        display: block;
-                        position: absolute;
-                        left: 0;
-                        top: 0;
-                        right: 0;
-                        bottom: 0;
                         background-image: url(../images/blog-post-triangle.png);
                         background-position: 0 0;
+                        background-repeat: no-repeat;
+                        background-size: cover;
+                        bottom: 0;
+                        content: "";
+                        display: block;
+                        left: 0;
+                        position: absolute;
+                        right: 0;
+                        top: 0;
                     }
                     @include media-breakpoint-down('sm') {
                         clip-path: none;
