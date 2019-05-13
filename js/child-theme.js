@@ -25029,8 +25029,8 @@ return DataTable;
      */
     $('.product-share.share-link').on( 'click', function( event ) {
         event.stopPropagation();
-        $('#product-share-alert').show();
-    })
+        $('#product-share-alert').show().find('input').select();
+    });
 
     /**
      * RFQ
