@@ -272,9 +272,9 @@
         var i = 0;
         $(this).find('.timeline-element').each(function(){
             var rotate = i * 34.5;
-            $(this).style('transform', 'rotate('+rotate+'deg)');
+            $(this).css('transform', 'rotate(' + rotate + 'deg)');
         });
         i++;
-    })
+    });
 
 })(jQuery);
