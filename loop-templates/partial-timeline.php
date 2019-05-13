@@ -76,8 +76,8 @@ $terms = get_terms( array(
                         </div>
                     </div>
                 <?php endif; wp_reset_query(); unset( $args, $query ); ?>
-                <div class="timeline-arrow timline-prev" data-timeline="<?php echo $key; ?>"><i class="fal fa-chevron-left"></i></div>
-                <div class="timeline-arrow timline-next" data-timeline="<?php echo $key; ?>"><i class="fal fa-chevron-right"></i></div>
+                <div class="timeline-arrow timeline-prev" data-timeline="<?php echo $key; ?>"><i class="fal fa-chevron-left"></i></div>
+                <div class="timeline-arrow timeline-next" data-timeline="<?php echo $key; ?>"><i class="fal fa-chevron-right"></i></div>
             </div>
         <?php } ?>
     </div>
