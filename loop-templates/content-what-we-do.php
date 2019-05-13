@@ -46,7 +46,8 @@ if ( has_acf_field( 'page_header_lede' ) ) {
 // Page header Copy
 $page_header_copy = false;
 if ( get_acf_field( 'page_header_copy' ) ) :
-    $page_header_copy = apply_filters( 'the_content', get_acf_field( 'page_header_copy', true ) );
+    $page_header_copy = sprintf( '<div class="d-none d-md-block">%1$s</div>',
+        apply_filters( 'the_content', get_acf_field( 'page_header_copy', true ) ) );
 endif;
 
 $section_header_classes = sprintf( 'section_header %1$s_header ',
@@ -54,7 +55,7 @@ $section_header_classes = sprintf( 'section_header %1$s_header ',
 $section_crosshairs = '<span class="crosshairs-gray crosshairs-sm-gray crosshairs-top-left"></span><span class="crosshairs-gray crosshairs-top-right"></span>';
 
 if ( $section_header_image ) {
-    $section_header_classes .= sprintf( 'section-header-overlay section-header-overlay_',
+    $section_header_classes .= sprintf( 'section-header-overlay section-header-overlay_%1$s',
         $overlay_color );
     $section_crosshairs = '<span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span><span class="crosshairs-white crosshairs-top-right"></span>';
 }
@@ -97,7 +98,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
-            <div class="row">
+            <div class="row justify-content-between align-items-center">
                 <header>
                     <?php echo $page_title; ?>
                     <?php echo $page_lede; ?>
