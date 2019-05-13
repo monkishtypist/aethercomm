@@ -64,11 +64,11 @@ $terms = get_terms( array(
                                 <?php if ( has_post_thumbnail() ) { ?>
                                     <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid timeline-image' ) ); ?>
                                 <?php } ?>
-                                <div class="timeline-content">
-                                    <?php the_content(); ?>
-                                </div>
                                 <div class="timeline-date">
                                     <?php the_date( 'Y' ); ?>
+                                </div>
+                                <div class="timeline-content">
+                                    <?php the_content(); ?>
                                 </div>
                             </div>
                         <?php endwhile; ?>

@@ -1278,40 +1278,41 @@ $timeline-elem-height:   ($timeline-width * .5) + $timeline-height-offset !defau
     overflow: hidden;
     .timeline-dial {
         // position: absolute;
-        position: relative;
-        padding-top: 232px;
+        height: auto;
         left: 50%;
         margin-left: -#{$timeline-width * .5};
+        padding-top: 232px;
+        position: relative;
         top: 0;
         width: $timeline-width;
-        height: auto;
         .timeline-dial-bg-image {
-            width: $timeline-width;
             height: $timeline-width;
+            width: $timeline-width;
         }
         .timeline-element {
+            height: $timeline-elem-height;
+            left: 50%;
+            margin-left: -#{$timeline-elem-width * .5};
             position: absolute;
             top: 0;
-            left: 50%;
-            height: $timeline-elem-height;
-            margin-left: -#{$timeline-elem-width * .5};
             width: $timeline-elem-width;
             &:not(:first-of-type) {
                 display: none; // temp hide while working on layout
             }
             .timeline-image {
                 height: 186px;
+                margin-top: #{$spacer * 1.5};
                 width: auto;
-            }
-            .timeline-content {
-                color: $white;
-                text-shadow: 1px 1px 1px rgba($black,.5);
             }
             .timeline-date {
                 color: $gray-600;
                 &.active {
                     color: $dark;
                 }
+            }
+            .timeline-content {
+                color: $white;
+                text-shadow: 1px 1px 1px rgba($black,.5);
             }
         }
     }

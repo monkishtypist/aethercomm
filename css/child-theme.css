@@ -17361,35 +17361,36 @@ table.dataTable thead .sorting_desc_disabled:before {
 #timeline_section {
   overflow: hidden; }
   #timeline_section .timeline-dial {
-    position: relative;
-    padding-top: 232px;
+    height: auto;
     left: 50%;
     margin-left: -491px;
+    padding-top: 232px;
+    position: relative;
     top: 0;
-    width: 982px;
-    height: auto; }
+    width: 982px; }
     #timeline_section .timeline-dial .timeline-dial-bg-image {
-      width: 982px;
-      height: 982px; }
+      height: 982px;
+      width: 982px; }
     #timeline_section .timeline-dial .timeline-element {
+      height: 723px;
+      left: 50%;
+      margin-left: -110px;
       position: absolute;
       top: 0;
-      left: 50%;
-      height: 723px;
-      margin-left: -110px;
       width: 220px; }
       #timeline_section .timeline-dial .timeline-element:not(:first-of-type) {
         display: none; }
       #timeline_section .timeline-dial .timeline-element .timeline-image {
         height: 186px;
+        margin-top: 1.5rem;
         width: auto; }
-      #timeline_section .timeline-dial .timeline-element .timeline-content {
-        color: #fff;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
       #timeline_section .timeline-dial .timeline-element .timeline-date {
         color: #707070; }
         #timeline_section .timeline-dial .timeline-element .timeline-date.active {
           color: #222222; }
+      #timeline_section .timeline-dial .timeline-element .timeline-content {
+        color: #fff;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 /**
  * Footer
