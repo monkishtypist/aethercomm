@@ -59,7 +59,7 @@ $terms = get_terms( array(
                 <?php if ( $query->have_posts() ) : $i = 0; ?>
                     <div id="timeline-<?php echo $key; ?>" class="timeline-wrapper">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/timeline-bg.png" class="timeline-wrapper-dial-image" />
-                        <div class="timeline-dial" data-focus="0">
+                        <div class="timeline-dial" data-focus="0" data-rotate="0">
                             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                                 <div class="timeline-element">
                                     <?php if ( has_post_thumbnail() ) { ?>

@@ -271,12 +271,22 @@
     // Setup timelines on document ready
     $('.timeline-dial').each(function(){
         var dial = $(this);
+        // set the default data vals
         dial.data('focus', 0);
+        dial.data('rotate', 0);
+        // fan out the dial elements
         var dialElements = dial.find('.timeline-element');
         dialElements.each(function(i){
             var rotate = i * 34.5;
             $(this).css('transform', 'rotate(' + rotate + 'deg)');
         });
+        // set initial dial rotation
+        var dialRotation = dial.data('rotate');
+        if ( typeof( dialRotation ) === 'undefined' ) {
+            dialRotation = 0;
+        }
+        var rotate = dialRotation * 34.5;
+        dial.css('transform', 'rotate('+rotate+'deg)');
     });
 
     // Timeline arrows next/prev actions
@@ -294,18 +304,13 @@
         if ( typeof( currentFocusIndex ) === 'undefined' ) {
             currentFocusIndex = 0;
         }
-        console.log( 'focused: ' + currentFocusIndex );
         // Get the first and last index
         var dialElements = dial.find('.timeline-element');
-        console.log(dialElements);
         var lastIndex = dialElements.index( dialElements.last() );
-        console.log(lastIndex);
         var firstIndex = dialElements.index( dialElements.last() );
-        console.log(firstIndex);
         // set the next focus index
         if ( currentFocusIndex < lastIndex ) {
             var newFocusIndex = currentFocusIndex + 1;
-            console.log( 'next: ' + newFocusIndex );
             dial.data( 'focus', newFocusIndex );
             timelineRefocus( timeline, newFocusIndex );
         }
@@ -315,6 +320,9 @@
         // get the current dial and set the focus index
         var dial = timeline.find('.timeline-dial');
         dial.data('focus', index).attr('data-focus', index);
+        // update current rotation
+        var rotate = index * 34.5;
+        dial.data('rotate', rotate).css('transform', 'rotate('+rotate+'deg)');
         // remove classes from dial elements
         var dialElements = dial.find('.timeline-element');
         dialElements.removeClass('focus near');

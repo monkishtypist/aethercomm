@@ -1332,6 +1332,7 @@ $timeline-rotation-increment: 34.5 !default;
             height: $timeline-elem-height;
             left: 50%;
             margin-left: -#{$timeline-elem-width * .5};
+            opacity: 0;
             position: absolute;
             text-align: center;
             top: 0;
@@ -1339,7 +1340,7 @@ $timeline-rotation-increment: 34.5 !default;
             transform: rotate(0deg);
             transition: $transition-base;
             width: $timeline-elem-width;
-            &[data-focus="focus"] {
+            &.focus {
                 opacity: 1;
                 .timeline-image {
                     opacity: 1;
@@ -1351,7 +1352,7 @@ $timeline-rotation-increment: 34.5 !default;
                     opacity: 1;
                 }
             }
-            &[data-focus="near"] {
+            &.near {
                 opacity: 1;
                 .timeline-image {
                     opacity: 0;
@@ -1363,12 +1364,10 @@ $timeline-rotation-increment: 34.5 !default;
                     opacity: 0;
                 }
             }
-            &[data-focus="false"] {
-                opacity: 0;
-            }
             .timeline-image {
                 height: 186px;
                 margin-top: #{$spacer * 1.5};
+                opacity: 0;
                 width: auto;
             }
             .timeline-date {
@@ -1381,6 +1380,7 @@ $timeline-rotation-increment: 34.5 !default;
                 font-size: #{$font-size-base * 1.125};
                 font-weight: $font-weight-light;
                 margin-top: #{$spacer * 6};
+                opacity: 0;
                 text-shadow: 1px 1px 1px rgba($black,.5);
                 transition: $transition-base;
             }
