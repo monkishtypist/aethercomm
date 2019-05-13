@@ -15580,6 +15580,9 @@ section {
         font-size: 0.75rem;
         text-decoration: underline;
         text-transform: none; }
+      #container-main-menu-mobile #main-menu > .nav-item.dropdown-divider, #container-main-menu-mobile
+      #main-menu-mobile > .nav-item.dropdown-divider {
+        border-top: 0; }
     #container-main-menu-mobile #main-menu .btn, #container-main-menu-mobile #main-menu #index-wrapper .read-more-link, #index-wrapper #container-main-menu-mobile #main-menu .read-more-link,
     #container-main-menu-mobile #main-menu #archive-wrapper .read-more-link, #archive-wrapper #container-main-menu-mobile #main-menu .read-more-link,
     #container-main-menu-mobile #main-menu #search-wrapper .read-more-link, #search-wrapper #container-main-menu-mobile #main-menu .read-more-link, #container-main-menu-mobile #main-menu-mobile .btn, #container-main-menu-mobile #main-menu-mobile #index-wrapper .read-more-link, #index-wrapper #container-main-menu-mobile #main-menu-mobile .read-more-link,

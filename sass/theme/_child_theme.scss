@@ -768,6 +768,9 @@ section {
                     text-transform: none;
                 }
             }
+            &.dropdown-divider {
+                border-top: 0;
+            }
         }
         .btn {
             padding: #{$spacer * .25} #{$spacer * 2};
