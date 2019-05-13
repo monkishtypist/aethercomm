@@ -17396,6 +17396,7 @@ table.dataTable thead .sorting_desc_disabled:before {
     height: 510px;
     left: 50%;
     margin-left: -723px;
+    overflow: hidden;
     padding: 0;
     position: relative;
     top: 0;

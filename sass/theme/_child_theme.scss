@@ -1317,6 +1317,7 @@ $timeline-rotation-increment: 34.5 !default;
         height: 510px;
         left: 50%;
         margin-left: -#{$timeline-width * .5};
+        overflow: hidden;
         padding: 0;
         position: relative;
         top: 0;
