@@ -707,6 +707,9 @@ section {
 #main-menu {
     justify-content: flex-end;
 }
+#container-main-menu {
+    width: 100%;
+}
 #main-menu, // <ul>
 #main-menu-mobile { // <ul>
     align-items: center;

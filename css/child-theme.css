@@ -15503,6 +15503,9 @@ section {
       -ms-flex-pack: end;
           justify-content: flex-end; }
 
+#container-main-menu {
+  width: 100%; }
+
 #main-menu,
 #main-menu-mobile {
   -webkit-box-align: center;
