@@ -25093,10 +25093,10 @@ return DataTable;
         $('.gfield.products-requested-field input').val( '' );
         $('.gfield.products-requested-field textarea').val( '' );
         if ( model ) {
-            var modelsQueuedString = model.join();
+            var modelsQueuedString = model.join( "/r/n" );
         } else {
             var modelsQueued = getModelsQueued();
-            var modelsQueuedString = modelsQueued.join();
+            var modelsQueuedString = modelsQueued.join( "/r/n" );
         }
         $('.gfield.products-requested-field input').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').val( modelsQueuedString );
