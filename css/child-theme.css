@@ -15179,7 +15179,9 @@ li.btn, #index-wrapper li.read-more-link,
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  min-height: 106px;
   height: 106px;
+  min-width: 83px;
   width: 83px; }
 
 /**
