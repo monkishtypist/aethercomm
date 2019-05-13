@@ -268,6 +268,7 @@
      * Timeline
      */
 
+    // Setup timelines
     $('.timeline-dial').each(function(){
         var dialElements = $(this).find('.timeline-element');
         dialElements.each(function(i){
@@ -275,5 +276,23 @@
             $(this).css('transform', 'rotate(' + rotate + 'deg)');
         });
     });
+
+    // Timeline arrows next/prev actions
+    $('.timeline-arrow').on('click', function(event){
+        event.preventDefault();
+        var timeline = $(this).data('timeline');
+        timelineNext( timeline );
+    });
+
+    var timelineNext = function( timelineID ) {
+        var timeline = $('#timeline-' + timelineID);
+        var dial = timeline.find('.timeline-dial');
+        var dialElements = dial.find('.timeline-element');
+        var focusedIndex = dialElements.index('[data-focus="focus"]');
+        var focusedElement = dialElements.eq( focusedIndex );
+        var nextElement = dialElements.eq( focusedIndex + 1 );
+        console.log( focusedElement );
+        console.log( nextElement );
+    }
 
 })(jQuery);

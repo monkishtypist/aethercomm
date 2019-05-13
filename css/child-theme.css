@@ -17376,8 +17376,10 @@ table.dataTable thead .sorting_desc_disabled:before {
       right: 0; }
     #timeline_section .timeline-arrow i {
       color: #fff;
+      display: block;
       font-size: 40px;
       margin-top: -20px;
+      position: relative;
       text-align: center;
       top: 50%; }
   #timeline_section .timeline-wrapper {
@@ -17403,6 +17405,8 @@ table.dataTable thead .sorting_desc_disabled:before {
       position: absolute;
       right: 0;
       top: 0;
+      -webkit-transform-origin: center center;
+              transform-origin: center center;
       width: 1446px; }
     #timeline_section .timeline-wrapper .timeline-element {
       height: 723px;

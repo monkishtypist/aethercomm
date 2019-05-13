@@ -1293,8 +1293,10 @@ $timeline-rotation-increment: 34.5 !default;
         }
         i {
             color: $white;
+            display: block;
             font-size: 40px;
             margin-top: -20px;
+            position: relative;
             text-align: center;
             top: 50%;
         }
@@ -1323,6 +1325,7 @@ $timeline-rotation-increment: 34.5 !default;
             position: absolute;
             right: 0;
             top: 0;
+            transform-origin: center center;
             width: $timeline-width;
         }
         .timeline-element {
