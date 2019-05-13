@@ -17904,6 +17904,8 @@ table.dataTable thead .sorting_desc_disabled:before {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  padding-top: 2.75rem;
+  padding-bottom: 5rem;
   text-align: center; }
   #what-we-do_page-wrapper #video-section-mobile .play-video-button {
     margin: auto; }
