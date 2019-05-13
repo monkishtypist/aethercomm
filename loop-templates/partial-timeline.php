@@ -17,23 +17,6 @@ $terms = get_terms( array(
     'taxonomy' => 'timeline-categories',
     'hide_empty' => false,
 ) );
-// $args = array();
-// $query = array();
-// foreach ( $terms as $key => $term ) {
-//     // echo '<pre>' . print_r($term) . '</pre>';
-//     $args[ $key ] = array(
-//         'post_type' => 'timelines',
-//         'tax_query' => array(
-//             array(
-//                 'taxonomy' => 'timelines-categories',
-//                 'field'    => 'slug',
-//                 'terms'    => $term->slug,
-//             ),
-//         ),
-//         'posts_per_page' => -1
-//     );
-//     $query[ $key ] = new WP_Query( $args[ $key ] );
-// }
 
 ?>
 
@@ -73,7 +56,7 @@ $terms = get_terms( array(
                 ?>
                 <?php if ( $query->have_posts() ) : ?>
                     <div class="timeline-dial">
-                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/timeline-bg.png" class="timeline-dial-bg-image">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/timeline-bg.png" class="timeline-dial-bg-image" />
                         <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                             <div class="timeline-element">
                                 <?php if ( has_post_thumbnail() ) { ?>
@@ -88,7 +71,7 @@ $terms = get_terms( array(
                             </div>
                         <?php endwhile; ?>
                     </div>
-                <?php endif; wp_reset_query(); ?>
+                <?php endif; wp_reset_query(); unset( $args, $query ); ?>
             </div>
         <?php } ?>
     </div>
