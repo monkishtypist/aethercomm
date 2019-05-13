@@ -92,8 +92,8 @@ $product_cats = get_categories( $product_cats_args );
                     <a href="#" class="product-request-all btn btn-lg btn-outline-gray" data-model-number="all"><?php _e( 'Request All', 'aethercomm' ); ?></a>
                 </div>
                 <div class="col-auto">
-                    <a href="#share" class="product-share share-link"><?php _e( 'Share', 'aethercomm' ); ?></a>
-                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="display:none;position:fixed;bottom:1rem;right:1rem;">
+                    <a href="#share" class="product-share share-link" data-link="<?php echo get_permalink(); ?>"><?php _e( 'Share', 'aethercomm' ); ?></a>
+                    <div id="product-share-alert" class="alert alert-success alert-dismissible fade show" role="alert" style="display:none;position:fixed;bottom:1rem;right:1rem;z-index:9999;">
                         <strong>Holy guacamole!</strong> You should check in on some of those fields below.
                         <button type="button" class="close" data-dismiss="alert" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
