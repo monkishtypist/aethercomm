@@ -37,7 +37,7 @@ $terms = get_terms( array(
         </ul>
     </div>
 
-    <div class="<?php // echo esc_attr( $container ); ?>" id="milestones-tabs-content">
+    <div class="container-fluid" id="milestones-tabs-content">
         <?php foreach ( $terms as $key => $term ) { ?>
             <div class="tab-pane fade show <?php echo ( $key == 0 ? 'active' : '' ); ?>" id="tab<?php echo $key; ?>" role="tabpanel" aria-labelledby="tab<?php echo $key; ?>-tab">
                 <?php
