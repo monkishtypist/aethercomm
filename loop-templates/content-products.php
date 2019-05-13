@@ -92,8 +92,13 @@ $product_cats = get_categories( $product_cats_args );
                     <a href="#" class="product-request-all btn btn-lg btn-outline-gray" data-model-number="all"><?php _e( 'Request All', 'aethercomm' ); ?></a>
                 </div>
                 <div class="col-auto">
-                    <!-- <a href="#share" class="product-share share-link"><?php _e( 'Share', 'aethercomm' ); ?></a> -->
-                    <a tabindex="0" class="product-share share-link" role="button" data-toggle="popover" data-trigger="focus" title="Link added." data-content="The page link has been copied to your clipboard."><?php _e( 'Share', 'aethercomm' ); ?></a>
+                    <a href="#share" class="product-share share-link"><?php _e( 'Share', 'aethercomm' ); ?></a>
+                    <div class="alert alert-success alert-dismissible fade show" role="alert" style="display:none;position:fixed;bottom:1rem;right:1rem;">
+                        <strong>Holy guacamole!</strong> You should check in on some of those fields below.
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
                 </div>
             </div>
 
