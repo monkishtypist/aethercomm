@@ -408,7 +408,10 @@ button.btn {
         border-bottom: 2px solid #{$white};
         bottom: #{$btn-padding-y * .5};
         display: inline-block;
-        position: absolute;
+        left: 1ch;
+        // position: absolute;
+        position: relative;
+        top: 1em;
         width: 1em;
         width: 1ch;
     }

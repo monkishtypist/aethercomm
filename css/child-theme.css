@@ -15111,7 +15111,9 @@ button.btn,
     border-bottom: 2px solid #fff;
     bottom: 0.5rem;
     display: inline-block;
-    position: absolute;
+    left: 1ch;
+    position: relative;
+    top: 1em;
     width: 1em;
     width: 1ch; }
   a.btn.btn-gray, #index-wrapper a.btn-gray.read-more-link,
