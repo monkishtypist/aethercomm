@@ -15174,6 +15174,14 @@ li.btn, #index-wrapper li.read-more-link,
 #search-wrapper li.read-more-link {
   font-size: inherit; }
 
+.play-video-button {
+  background-image: url(../images/play-video.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 106px;
+  width: 83px; }
+
 /**
  * Wrappers
  *
