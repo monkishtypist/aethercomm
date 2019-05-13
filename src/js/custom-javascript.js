@@ -271,6 +271,7 @@
     // Setup timelines on document ready
     $('.timeline-dial').each(function(){
         var dial = $(this);
+        var timeline = dial.closest('.timeline-wrapper');
         // set the default data vals
         dial.data('focus', 0);
         dial.data('rotate', 0);
@@ -280,13 +281,8 @@
             var rotate = i * 34.5;
             $(this).css('transform', 'rotate(' + rotate + 'deg)');
         });
-        // set initial dial rotation
-        var dialRotation = dial.data('rotate');
-        if ( typeof( dialRotation ) === 'undefined' ) {
-            dialRotation = 0;
-        }
-        var rotate = dialRotation * 34.5;
-        dial.css('transform', 'rotate('+rotate+'deg)');
+        // set initial focus
+        timelineRefocus( timeline, 0 );
     });
 
     // Timeline arrows next/prev actions
