@@ -1293,7 +1293,10 @@ $timeline-rotation-increment: 34.5 !default;
         }
         i {
             color: $white;
-            font-size: 52px;
+            font-size: 40px;
+            margin-top: -20px;
+            text-align: center;
+            top: 50%;
         }
     }
     .timeline-wrapper {
