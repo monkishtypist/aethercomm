@@ -24991,7 +24991,7 @@ return DataTable;
     });
 
     $(document).on('hidden.bs.modal', '#video-modal', function (event) {
-        $(this).modal('dispose');
+        $(this).remove();
         console.log('modal disposed');
     });
 
