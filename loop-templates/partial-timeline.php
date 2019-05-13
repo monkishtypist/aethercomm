@@ -57,7 +57,7 @@ $terms = get_terms( array(
                 $query = new WP_Query( $args );
                 ?>
                 <?php if ( $query->have_posts() ) : $i = 0; ?>
-                    <div class="timeline-wrapper">
+                    <div id="timeline-<?php echo $key; ?>" class="timeline-wrapper">
                         <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/timeline-bg.png" class="timeline-wrapper-dial-image" />
                         <div class="timeline-dial">
                             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
@@ -76,6 +76,8 @@ $terms = get_terms( array(
                         </div>
                     </div>
                 <?php endif; wp_reset_query(); unset( $args, $query ); ?>
+                <div class="timeline-arrow timline-prev" data-timeline="<?php echo $key; ?>"><i class="fal fa-chevron-left"></i></div>
+                <div class="timeline-arrow timline-next" data-timeline="<?php echo $key; ?>"><i class="fal fa-chevron-right"></i></div>
             </div>
         <?php } ?>
     </div>

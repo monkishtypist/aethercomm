@@ -17360,6 +17360,21 @@ table.dataTable thead .sorting_desc_disabled:before {
 /* Timeline */
 #timeline_section {
   overflow: hidden; }
+  #timeline_section .timeline-arrow {
+    width: 37px;
+    height: 137px;
+    background: #222222;
+    cursor: pointer;
+    position: absolute;
+    display: block;
+    z-index: 1000;
+    top: 50%;
+    -webkit-transform: matrix(1, 0, 0, 1, 0, -68);
+            transform: matrix(1, 0, 0, 1, 0, -68); }
+    #timeline_section .timeline-arrow.timeline-prev {
+      left: 0px; }
+    #timeline_section .timeline-arrow.timeline-next {
+      right: 0; }
   #timeline_section .timeline-wrapper {
     height: 1446px;
     left: 50%;
