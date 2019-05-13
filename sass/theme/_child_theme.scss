@@ -1763,7 +1763,9 @@ $timeline-rotation-increment: 34.5 !default;
         }
         .header-video-wrapper {
             @extend .col-12;
-            @extend .col-md-auto;
+            @extend .col-md-5;
+            .aethercomm-logo {}
+            .play-video-button {}
         }
     }
     #what-we-do_tabs {

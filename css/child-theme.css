@@ -861,7 +861,7 @@ pre {
         -ms-flex-positive: 1;
             flex-grow: 1;
     max-width: 100%; }
-  .col-md-auto, #what-we-do_page-wrapper #what-we-do_header .header-video-wrapper {
+  .col-md-auto {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 auto;
             flex: 0 0 auto;
@@ -887,7 +887,7 @@ pre {
         -ms-flex: 0 0 33.33333%;
             flex: 0 0 33.33333%;
     max-width: 33.33333%; }
-  .col-md-5 {
+  .col-md-5, #what-we-do_page-wrapper #what-we-do_header .header-video-wrapper {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 41.66667%;
             flex: 0 0 41.66667%;
