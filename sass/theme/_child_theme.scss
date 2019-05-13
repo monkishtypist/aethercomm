@@ -1750,6 +1750,11 @@ $timeline-rotation-increment: 34.5 !default;
 
 #what-we-do_page-wrapper {
     #what-we-do_header {
+        .section-image-overlay-wrapper-inner {
+            @include media-breakpoint-down('sm') {
+                padding-bottom: 1px;
+            }
+        }
         .section-overlay-image {
             min-width: auto;
             max-width: 75%;
