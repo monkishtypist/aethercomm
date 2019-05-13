@@ -1761,8 +1761,11 @@ $timeline-rotation-increment: 34.5 !default;
             }
             &.section-overlay-image-mobile {
                 float: none;
+                height: 100%;
                 max-width: auto;
                 min-width: 100%;
+                object-fit: cover;
+                width: 100%;
                 @include media-breakpoint-up('md') {
                     display: none;
                 }

@@ -17886,8 +17886,12 @@ table.dataTable thead .sorting_desc_disabled:before {
       display: none; } }
   #what-we-do_page-wrapper #what-we-do_header .section-overlay-image.section-overlay-image-mobile {
     float: none;
+    height: 100%;
     max-width: auto;
-    min-width: 100%; }
+    min-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+    width: 100%; }
     @media (min-width: 769px) {
       #what-we-do_page-wrapper #what-we-do_header .section-overlay-image.section-overlay-image-mobile {
         display: none; } }
