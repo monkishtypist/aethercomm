@@ -17374,6 +17374,7 @@ table.dataTable thead .sorting_desc_disabled:before {
       left: 50%;
       margin-left: -723px;
       position: absolute;
+      top: 232px;
       width: 982px; }
     #timeline_section .timeline-wrapper .timeline-dial {
       bottom: 0;

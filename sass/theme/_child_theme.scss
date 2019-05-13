@@ -1294,6 +1294,7 @@ $timeline-rotation-increment: 34.5 !default;
             left: 50%;
             margin-left: -#{$timeline-width * .5};
             position: absolute;
+            top: $timeline-offset;
             width: $timeline-dial-width;
         }
         .timeline-dial {
