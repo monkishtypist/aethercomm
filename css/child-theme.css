@@ -17375,12 +17375,34 @@ table.dataTable thead .sorting_desc_disabled:before {
       height: 723px;
       left: 50%;
       margin-left: -110px;
+      opacity: 1;
       position: absolute;
       text-align: center;
       top: 0;
+      -webkit-transform-origin: bottom center;
+              transform-origin: bottom center;
+      -webkit-transform: rotate(0deg);
+              transform: rotate(0deg);
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       width: 220px; }
       #timeline_section .timeline-dial .timeline-element:not(:first-of-type) {
         display: none; }
+      #timeline_section .timeline-dial .timeline-element.timeline-previous {
+        -webkit-transform: rotate(-34.5deg);
+                transform: rotate(-34.5deg); }
+        #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-date {
+          color: #707070; }
+        #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-content {
+          opacity: 0; }
+      #timeline_section .timeline-dial .timeline-element.timeline-next {
+        -webkit-transform: rotate(34.5deg);
+                transform: rotate(34.5deg); }
+        #timeline_section .timeline-dial .timeline-element.timeline-next .timeline-date {
+          color: #707070; }
+      #timeline_section .timeline-dial .timeline-element.offscreen {
+        -webkit-transform: rotate(180deg);
+                transform: rotate(180deg); }
       #timeline_section .timeline-dial .timeline-element .timeline-image {
         height: 186px;
         margin-top: 1.5rem;
@@ -17389,14 +17411,15 @@ table.dataTable thead .sorting_desc_disabled:before {
         color: #222222;
         font-weight: 700;
         margin-top: 3.7rem; }
-        #timeline_section .timeline-dial .timeline-element .timeline-date.active {
-          color: #222222; }
       #timeline_section .timeline-dial .timeline-element .timeline-content {
         color: #fff;
         font-size: 1.125rem;
         font-weight: 300;
         margin-top: 6rem;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+        opacity: 0;
+        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
 
 /**
  * Footer
