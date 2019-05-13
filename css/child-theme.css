@@ -17395,13 +17395,13 @@ table.dataTable thead .sorting_desc_disabled:before {
           -webkit-transform: rotate(-34.5deg);
                   transform: rotate(-34.5deg); }
       #timeline_section .timeline-dial .timeline-element.timeline-next {
-        opacity: 0;
-        -webkit-transform: rotate(69deg);
-                transform: rotate(69deg); }
-        #timeline_section .timeline-dial .timeline-element.timeline-next:first-of-type {
-          opacity: 1;
-          -webkit-transform: rotate(34.5deg);
-                  transform: rotate(34.5deg); }
+        opacity: 1;
+        -webkit-transform: rotate(34.5deg);
+                transform: rotate(34.5deg); }
+        #timeline_section .timeline-dial .timeline-element.timeline-next ~ .timeline-next {
+          opacity: 0;
+          -webkit-transform: rotate(69deg);
+                  transform: rotate(69deg); }
       #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-date, #timeline_section .timeline-dial .timeline-element.timeline-next .timeline-date {
         color: #707070; }
       #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-content, #timeline_section .timeline-dial .timeline-element.timeline-next .timeline-content {
