@@ -1292,7 +1292,7 @@ $timeline-rotation-increment: 34.5 !default;
             display: block;
             height: $timeline-dial-width;
             left: 50%;
-            margin-left: -#{$timeline-width * .5};
+            margin-left: -#{$timeline-dial-width * .5};
             position: absolute;
             top: $timeline-offset;
             width: $timeline-dial-width;
