@@ -62,7 +62,7 @@
         theModal.modal('show');
     });
 
-    $('#video-modal').on('hide.bs.modal', function (event) {
+    $('#video-modal').on('hidden.bs.modal', function (event) {
         $(this).modal('dispose');
         console.log('modal disposed');
     });
