@@ -120,14 +120,14 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
 
     <section id="video-section-mobile" class="d-block d-md-none section-unpadded">
         <div class="row no-gutters">
-            <div class="col-12">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aethercomm-logo-colorful_white.png" clas="img-fluid aethercomm-logo" alt="Aethercomm Logo" />
-            </div>
             <?php if ( $video_embed_code ) { ?>
                 <div class="col-12">
                     <a href="#play-video" class="play-video-button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play-video.png" alt="Play Video" /></a>
                 </div>
             <?php } ?>
+            <div class="col-12">
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aethercomm-logo-colorful_white.png" clas="img-fluid aethercomm-logo" alt="Aethercomm Logo" />
+            </div>
         </div>
     </section>
 

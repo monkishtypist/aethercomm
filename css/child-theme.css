@@ -17899,6 +17899,18 @@ table.dataTable thead .sorting_desc_disabled:before {
     #what-we-do_page-wrapper #what-we-do_header .header-video-wrapper {
       display: none; } }
 
+#what-we-do_page-wrapper #video-section-mobile {
+  background-image: url(../images/Aethercomm-Video-Placeholder.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center; }
+  #what-we-do_page-wrapper #video-section-mobile .play-video-button {
+    margin: auto; }
+  #what-we-do_page-wrapper #video-section-mobile .aethercomm-logo {
+    width: 240px;
+    margin: auto; }
+
 #what-we-do_page-wrapper #what-we-do_tabs {
   margin-top: -4.25rem;
   overflow-x: hidden; }

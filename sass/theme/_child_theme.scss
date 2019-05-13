@@ -1778,6 +1778,20 @@ $timeline-rotation-increment: 34.5 !default;
             }
         }
     }
+    #video-section-mobile {
+        background-image: url(../images/Aethercomm-Video-Placeholder.png);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        text-align: center;
+        .play-video-button {
+            margin: auto;
+        }
+        .aethercomm-logo {
+            width: 240px;
+            margin: auto;
+        }
+    }
     #what-we-do_tabs {
         @include skewed-tabs( $black, $dark, $white, $white );
         #platforms-tabs-content-wrapper {
