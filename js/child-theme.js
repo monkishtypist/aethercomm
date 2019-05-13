@@ -25208,19 +25208,42 @@ return DataTable;
     // Timeline arrows next/prev actions
     $('.timeline-arrow').on('click', function(event){
         event.preventDefault();
-        var timeline = $(this).data('timeline');
+        var timelineID = $(this).data('timeline');
+        var timeline   = $('timeline-' + timelineID);
         timelineNext( timeline );
     });
 
-    var timelineNext = function( timelineID ) {
-        var timeline = $('#timeline-' + timelineID);
-        var dial = timeline.find('.timeline-dial');
-        var dialElements = dial.find('.timeline-element');
-        var focusedIndex = dialElements.index('[data-focus="focus"]');
+    var timelineNext = function( timeline ) {
+        var dial           = timeline.find('.timeline-dial');
+        var dialElements   = dial.find('.timeline-element');
+        var focusedIndex   = dialElements.index('[data-focus="focus"]');
         var focusedElement = dialElements.eq( focusedIndex );
-        var nextElement = dialElements.eq( focusedIndex + 1 );
+        var nextElement    = dialElements.eq( focusedIndex + 1 );
         console.log( focusedElement );
         console.log( nextElement );
+        timelineReFocus( timeline, nextElement );
+    }
+
+    var timelineReFocus = function( timeline, newFocus ) {
+        timelineUnfocus( timeline );
+        timelineFocus( newFocus );
+    }
+
+    var timelineUnfocus = function( timeline ) {
+        var dial           = timeline.find('.timeline-dial');
+        var dialElements   = dial.find('.timeline-element');
+        var focusedIndex   = dialElements.index('[data-focus="focus"]');
+        var focusedElement = dialElements.eq( focusedIndex );
+        focusedElement.data('focus', false).attr('data-focus', 'false');
+        focusedElement.next().data('focus', false).attr('data-focus', 'false');
+        focusedElement.prev().data('focus', false).attr('data-focus', 'false');
+        callback();
+    }
+
+    var timelineFocus = function( focusedElement ) {
+        focusedElement.data('focus', 'focus').attr('data-focus', 'focus');
+        focusedElement.next().data('focus', 'near').attr('data-focus', 'near');
+        focusedElement.prev().data('focus', 'near').attr('data-focus', 'near');
     }
 
 })(jQuery);
