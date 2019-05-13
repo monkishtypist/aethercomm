@@ -101,8 +101,18 @@
      */
     $('.product-share.share-link').on( 'click', function( event ) {
         event.stopPropagation();
+        var html = '<div id="product-share-alert" class="alert alert-info alert-dismissible fade show" role="alert">' +
+            '<strong>Copy this link to share:</strong> <input type="text" value="<?php echo get_permalink(); ?>" />' +
+            '<button type="button" class="close" data-hide="alert" aria-label="Close">' +
+                '<span aria-hidden="true">&times;</span>' +
+            '</button></div>';
+        $(this).append( html );
         $('#product-share-alert').show().find('input').select();
     });
+
+    $("[data-hide]").on("click", function(){
+        $("." + $(this).attr("data-hide")).hide()
+    })
 
     /**
      * RFQ
