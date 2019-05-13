@@ -1337,7 +1337,7 @@ $timeline-elem-height:   ($timeline-width * .5) + $timeline-height-offset !defau
                 font-size: #{$font-size-base * 1.125};
                 font-weight: $font-weight-light;
                 margin-top: #{$spacer * 6};
-                opacity: 0;
+                opacity: 1;
                 text-shadow: 1px 1px 1px rgba($black,.5);
                 transition: $transition-base;
             }
