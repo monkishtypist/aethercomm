@@ -296,7 +296,8 @@
         }
         console.log( 'focused: ' + currentFocusIndex );
         // Get the first and last index
-        var dialElements = dial.find('.timeline-element');
+        // var dialElements = dial.find('.timeline-element');
+        var dialElements = dial.children();
         console.log(dialElements);
         var lastIndex = dialElements.index( dialElements.last() );
         console.log(lastIndex);
