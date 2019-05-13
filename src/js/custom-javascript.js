@@ -288,12 +288,14 @@
     var timelineNext = function( timeline ) {
         var dial           = timeline.find('.timeline-dial');
         var dialElements   = dial.find('.timeline-element');
+        var len            = dialElements.length;
         var focusedIndex   = dialElements.index('[data-focus="focus"]');
-        var focusedElement = dialElements.eq( focusedIndex );
-        var nextElement    = dialElements.eq( focusedIndex + 1 );
-        console.log( focusedElement );
-        console.log( nextElement );
-        timelineReFocus( timeline, nextElement );
+        console.log( 'focused: ' + focusedIndex );
+        console.log( 'next: ' + (focusedIndex + 1) );
+        if ( focusedIndex < dialElements.index( dialElements.last() ) ) {
+            var nextElement    = dialElements.eq( focusedIndex + 1 );
+            timelineReFocus( timeline, nextElement );
+        }
     }
 
     var timelineReFocus = function( timeline, newFocus ) {
@@ -304,17 +306,36 @@
     var timelineUnfocus = function( timeline ) {
         var dial           = timeline.find('.timeline-dial');
         var dialElements   = dial.find('.timeline-element');
+        var len            = dialElements.length;
         var focusedIndex   = dialElements.index('[data-focus="focus"]');
+        console.log('unfocused: ' + focusedIndex);
         var focusedElement = dialElements.eq( focusedIndex );
         focusedElement.data('focus', false).attr('data-focus', 'false');
-        focusedElement.next().data('focus', false).attr('data-focus', 'false');
-        focusedElement.prev().data('focus', false).attr('data-focus', 'false');
+        if ( focusedIndex < dialElements.index( dialElements.last() ) ) {
+            focusedElement.next().data('focus', false).attr('data-focus', 'false');
+            console.log('unfocused next: ' + (focusedIndex + 1));
+        }
+        if ( focusedIndex > dialElements.index( dialElements.first() ) ) {
+            focusedElement.prev().data('focus', false).attr('data-focus', 'false');
+            console.log('unfocused prev: ' + (focusedIndex - 1));
+        }
     }
 
     var timelineFocus = function( focusedElement ) {
+        var dial           = focusedElement.closest('.timeline-dial');
+        var dialElements   = dial.find('.timeline-element');
+        var len            = dialElements.length;
+        var focusedIndex   = dialElements.index( focusedElement );
         focusedElement.data('focus', 'focus').attr('data-focus', 'focus');
-        focusedElement.next().data('focus', 'near').attr('data-focus', 'near');
-        focusedElement.prev().data('focus', 'near').attr('data-focus', 'near');
+        console.log('focusedElement: ' + focusedIndex);
+        if ( focusedIndex < dialElements.index( dialElements.last() ) ) {
+            focusedElement.next().data('focus', 'near').attr('data-focus', 'near');
+            console.log('focusedElement next: ' + (focusedIndex + 1));
+        }
+        if ( focusedIndex > dialElements.index( dialElements.first() ) ) {
+            focusedElement.prev().data('focus', 'near').attr('data-focus', 'near');
+            console.log('focusedElement prev: ' + (focusedIndex - 1));
+        }
     }
 
 })(jQuery);
