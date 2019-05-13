@@ -25051,7 +25051,7 @@ return DataTable;
      */
 
     // Add/remove models from Queue
-    $('.product-queue-link').on( 'click', function( event ) {
+    $(document).on( 'click', '.product-queue-link', function( event ) {
         event.preventDefault();
         // get the model number and check if queued
         var modelNumber = $(this).data('model-number');
@@ -25071,7 +25071,7 @@ return DataTable;
     });
 
     // Load models in form
-    $('.product-request').on( 'click', function( event ) {
+    $(document).on( 'click', '.product-request', function( event ) {
         event.preventDefault();
         // add model number to queue
         var modelNumber = $(this).data('model-number');
@@ -25089,7 +25089,7 @@ return DataTable;
     });
 
     // Load models in form
-    $('.product-request-all').on( 'click', function( event ) {
+    $(document).on( 'click', '.product-request-all', function( event ) {
         event.preventDefault();
         // add model number 'all' to queue
         modelNumbersRemoveAll();
