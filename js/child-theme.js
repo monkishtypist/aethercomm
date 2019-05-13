@@ -24981,6 +24981,13 @@ return DataTable;
         }
     });
 
+    // Video Button
+    $('.play-video-button').on('click', function(event){
+        event.preventDefault();
+        var theModal = $('#video-modal');
+        theModal.modal('show');
+    });
+
     /**
      * Datatables
      */
