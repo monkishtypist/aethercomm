@@ -18406,8 +18406,19 @@ table.dataTable thead .sorting_desc_disabled:before {
   #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper,
   #archive-wrapper #the-posts_section .posts-articles article .post-image-wrapper,
   #search-wrapper #the-posts_section .posts-articles article .post-image-wrapper {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 14.625rem 100%);
-            clip-path: polygon(0 0, 100% 0, 100% 100%, 14.625rem 100%); }
+    position: relative; }
+    #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper::before,
+    #archive-wrapper #the-posts_section .posts-articles article .post-image-wrapper::before,
+    #search-wrapper #the-posts_section .posts-articles article .post-image-wrapper::before {
+      content: "";
+      display: block;
+      position: absolute;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background-image: url(../images/blog-post-triangle.png);
+      background-position: 0 0; }
     @media (max-width: 768.98px) {
       #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper,
       #archive-wrapper #the-posts_section .posts-articles article .post-image-wrapper,
