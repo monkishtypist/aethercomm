@@ -15434,18 +15434,15 @@ section {
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
     background-color: rgba(0, 0, 0, 0.5); }
   #wrapper-navbar .sub-navbar {
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 2.5rem 100%);
     background-color: transparent;
     background-image: url(../images/utility-nav-bg.png);
     background-position: 0 0;
+    background-size: cover;
     float: right;
     position: relative; }
     #wrapper-navbar .sub-navbar .sub-navbar-inner {
-      background-color: #000;
-      padding-left: 2.5rem;
-      -webkit-clip-path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.5rem calc(100% - 1px));
-      path: polygon(1px 0, 100% 0, 100% calc(100% - 1px), 2.5rem calc(100% - 1px)); }
+      background-color: transparen;
+      padding-left: 2.5rem; }
       @media (min-width: 576px) {
         #wrapper-navbar .sub-navbar .sub-navbar-inner {
           padding-right: calc(((100vw - 540px) / 2) + 10px); } }
