@@ -25196,31 +25196,6 @@ return DataTable;
      * Timeline
      */
 
-    // Setup timelines on document ready
-    $('.timeline-dial').each(function(){
-        var dial = $(this);
-        var timeline = dial.closest('.timeline-wrapper');
-        // set the default data vals
-        dial.data('focus', 0);
-        dial.data('rotate', 0);
-        // fan out the dial elements
-        var dialElements = dial.find('.timeline-element');
-        dialElements.each(function(i){
-            var rotate = i * 34.5;
-            $(this).css('transform', 'rotate(' + rotate + 'deg)');
-        });
-        // set initial focus
-        timelineRefocus( timeline, 0 );
-    });
-
-    // Timeline arrows next/prev actions
-    $('.timeline-arrow').on('click', function(event){
-        event.preventDefault();
-        var timelineID = $(this).data('timeline');
-        var timeline   = $('#timeline-' + timelineID);
-        timelineNext( timeline );
-    });
-
     var timelineNext = function( timeline ) {
         // get the current dial and focus index
         var dial = timeline.find('.timeline-dial');
@@ -25256,5 +25231,30 @@ return DataTable;
         focusedElement.next().addClass('near');
         focusedElement.prev().addClass('near');
     }
+
+    // Setup timelines on document ready
+    $('.timeline-dial').each(function(){
+        var dial = $(this);
+        var timeline = dial.closest('.timeline-wrapper');
+        // set the default data vals
+        dial.data('focus', 0);
+        dial.data('rotate', 0);
+        // fan out the dial elements
+        var dialElements = dial.find('.timeline-element');
+        dialElements.each(function(i){
+            var rotate = i * 34.5;
+            $(this).css('transform', 'rotate(' + rotate + 'deg)');
+        });
+        // set initial focus
+        timelineRefocus( timeline, 0 );
+    });
+
+    // Timeline arrows next/prev actions
+    $('.timeline-arrow').on('click', function(event){
+        event.preventDefault();
+        var timelineID = $(this).data('timeline');
+        var timeline   = $('#timeline-' + timelineID);
+        timelineNext( timeline );
+    });
 
 })(jQuery);
