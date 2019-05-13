@@ -246,11 +246,11 @@ $container-padding-sm: 2.25rem;
                 padding-bottom: 1px;
             }
             .overlay {
-                // display: none;
                 background-image: url(../images/mobile-header-overlay.png);
                 background-color: transparent;
                 background-position: 0 0;
                 background-size: cover;
+                display: none;
             }
         }
         header {

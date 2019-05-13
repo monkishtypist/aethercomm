@@ -15287,7 +15287,8 @@ section {
               background-image: url(../images/mobile-header-overlay.png);
               background-color: transparent;
               background-position: 0 0;
-              background-size: cover; }
+              background-size: cover;
+              display: none; }
           section.section_header.section-header-overlay header {
             -webkit-box-flex: 0;
             -ms-flex: 1 0 100%;
