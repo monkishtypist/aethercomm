@@ -1271,15 +1271,24 @@ table.dataTable {
     // background-repeat: no-repeat;
     // background-size: auto;
     // height: 578px;
+    overflow: hidden;
     .timeline-dial {
         // position: absolute;
         position: relative;
+        padding: 232px;
+        left: 50%;
+        margin-left: -723px;
+        top: 0;
         .timeline-dial-bg-image {
-            width: auto;
-            height: auto;
+            width: 982px;
+            height: 982px;
         }
         .timeline-element {
             position: absolute;
+            top: 0;
+            left: 50%;
+            margin-left: -110px;
+            width: 220px;
             .timeline-image {
                 height: 186px;
                 width: auto;
