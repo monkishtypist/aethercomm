@@ -235,14 +235,14 @@ $container-padding-sm: 2.25rem;
         }
         .section-image-overlay-wrapper {
             background-color: #{$gray-200};
-            // clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
-            clip-path: none;
+            clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
+            // clip-path: none;
             height: #{$spacer * 10};
             margin-bottom: #{$spacer * 2.25};
             position: relative;
             .section-image-overlay-wrapper-inner { // wrapper-inner
-                // clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
-                clip-path: none;
+                clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
+                // clip-path: none;
                 padding-bottom: 1px;
             }
             .overlay {

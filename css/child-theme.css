@@ -15274,14 +15274,14 @@ section {
             background-color: #fff; }
           section.section_header.section-header-overlay .section-image-overlay-wrapper {
             background-color: #ebebeb;
-            -webkit-clip-path: none;
-                    clip-path: none;
+            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
+                    clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
             height: 10rem;
             margin-bottom: 2.25rem;
             position: relative; }
             section.section_header.section-header-overlay .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
-              -webkit-clip-path: none;
-                      clip-path: none;
+              -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
+                      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
               padding-bottom: 1px; }
             section.section_header.section-header-overlay .section-image-overlay-wrapper .overlay {
               background-image: url(../images/mobile-header-overlay.png);
