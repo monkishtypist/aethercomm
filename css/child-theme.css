@@ -15557,7 +15557,10 @@ section {
         -ms-flex-direction: unset;
             flex-direction: unset;
     -ms-flex-wrap: wrap;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
     @media (min-width: 769px) {
       #container-main-menu-mobile #main-menu, #container-main-menu-mobile
       #main-menu-mobile {
@@ -15572,6 +15575,11 @@ section {
       #container-main-menu-mobile #main-menu > .nav-item:last-of-type, #container-main-menu-mobile
       #main-menu-mobile > .nav-item:last-of-type {
         margin-right: 0.5rem; }
+      #container-main-menu-mobile #main-menu > .nav-item.text-sm a, #container-main-menu-mobile
+      #main-menu-mobile > .nav-item.text-sm a {
+        font-size: 0.75rem;
+        text-decoration: underline;
+        text-transform: none; }
     #container-main-menu-mobile #main-menu .btn, #container-main-menu-mobile #main-menu #index-wrapper .read-more-link, #index-wrapper #container-main-menu-mobile #main-menu .read-more-link,
     #container-main-menu-mobile #main-menu #archive-wrapper .read-more-link, #archive-wrapper #container-main-menu-mobile #main-menu .read-more-link,
     #container-main-menu-mobile #main-menu #search-wrapper .read-more-link, #search-wrapper #container-main-menu-mobile #main-menu .read-more-link, #container-main-menu-mobile #main-menu-mobile .btn, #container-main-menu-mobile #main-menu-mobile #index-wrapper .read-more-link, #index-wrapper #container-main-menu-mobile #main-menu-mobile .read-more-link,

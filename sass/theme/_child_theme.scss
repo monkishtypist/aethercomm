@@ -749,6 +749,7 @@ section {
     #container-main-menu-mobile & {
         flex-direction: unset;
         flex-wrap: wrap;
+        justify-content: center;
         @include media-breakpoint-up('md') {
             display: none !important;
         }
@@ -759,6 +760,13 @@ section {
             }
             &:last-of-type {
                 margin-right: #{$spacer * .5};
+            }
+            &.text-sm {
+                a {
+                    font-size: #{$font-size-base * .75};
+                    text-decoration: underline;
+                    text-transform: none;
+                }
             }
         }
         .btn {
