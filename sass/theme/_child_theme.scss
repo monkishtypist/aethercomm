@@ -1294,6 +1294,9 @@ $timeline-elem-height: 186px !default;
             left: 50%;
             margin-left: -#{$timeline-elem-width * .5};
             width: $timeline-elem-width;
+            &:not(:first-child) {
+                display: none; // temp hide while working on layout
+            }
             .timeline-image {
                 height: $timeline-elem-height;
                 width: auto;

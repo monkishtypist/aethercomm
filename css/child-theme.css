@@ -17377,6 +17377,8 @@ table.dataTable thead .sorting_desc_disabled:before {
       left: 50%;
       margin-left: -110px;
       width: 220px; }
+      #timeline_section .timeline-dial .timeline-element:not(:first-child) {
+        display: none; }
       #timeline_section .timeline-dial .timeline-element .timeline-image {
         height: 186px;
         width: auto; }
