@@ -25197,12 +25197,11 @@ return DataTable;
      */
 
     $('.timeline-dial').each(function(){
-        var i = 0;
-        $(this).find('.timeline-element').each(function(){
+        var dialElements = $(this).find('.timeline-element');
+        dialElements.each(function(i){
             var rotate = i * 34.5;
             $(this).css('transform', 'rotate(' + rotate + 'deg)');
         });
-        i++;
     });
 
 })(jQuery);
