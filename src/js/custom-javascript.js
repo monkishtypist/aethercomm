@@ -285,6 +285,8 @@
             var newFocusIndex = currentFocusIndex + 1;
             dial.data( 'focus', newFocusIndex );
             timelineRefocus( timeline, newFocusIndex );
+        } else {
+            console.log('already showing last timeline element');
         }
     }
 
@@ -305,6 +307,8 @@
             var newFocusIndex = currentFocusIndex - 1;
             dial.data( 'focus', newFocusIndex );
             timelineRefocus( timeline, newFocusIndex );
+        } else {
+            console.log('already showing first timeline element');
         }
     }
 
@@ -349,9 +353,11 @@
         var timelineID = $(this).data('timeline');
         var timeline   = $('#timeline-' + timelineID);
         if ( $(this).hasClass('timeline-next') ) {
+            console.log('timeline next');
             timelineNext( timeline );
         }
         if ( $(this).hasClass('timeline-prev') ) {
+            console.log('timeline previous');
             timelinePrev( timeline );
         }
     });
