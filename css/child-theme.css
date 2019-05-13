@@ -18526,7 +18526,11 @@ table.dataTable thead .sorting_desc_disabled:before {
         margin-bottom: 1.5rem;
         margin-right: -2.25rem;
         margin-left: -2.25rem;
-        max-width: 100vw; } }
+        max-width: 100vw; }
+        #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper::before,
+        #archive-wrapper #the-posts_section .posts-articles article .post-image-wrapper::before,
+        #search-wrapper #the-posts_section .posts-articles article .post-image-wrapper::before {
+          display: none; } }
     #index-wrapper #the-posts_section .posts-articles article .post-image-wrapper img,
     #archive-wrapper #the-posts_section .posts-articles article .post-image-wrapper img,
     #search-wrapper #the-posts_section .posts-articles article .post-image-wrapper img {

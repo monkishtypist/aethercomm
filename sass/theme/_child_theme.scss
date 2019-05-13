@@ -2188,6 +2188,9 @@ $timeline-rotation-increment: 34.5 !default;
                         margin-right: -#{$container-padding-sm};
                         margin-left: -#{$container-padding-sm};
                         max-width: 100vw;
+                        &::before {
+                            display: none;
+                        }
                     }
                     img {
                         object-fit: cover;
