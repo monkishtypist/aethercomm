@@ -15281,16 +15281,25 @@ section {
             position: relative; }
             section.section_header.section-header-overlay .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
               -webkit-clip-path: none;
-                      clip-path: none; }
+                      clip-path: none;
+              padding-bottom: 1px; }
             section.section_header.section-header-overlay .section-image-overlay-wrapper .overlay {
               background-image: url(../images/mobile-header-overlay.png);
-              background-color: transparent; }
+              background-color: transparent;
+              background-position: 0 0;
+              background-size: cover; }
           section.section_header.section-header-overlay header {
             -webkit-box-flex: 0;
             -ms-flex: 1 0 100%;
             flex: 1 0 100%;
             max-width: 100%;
             padding: 0; } }
+      @media (max-width: 575.98px) {
+        section.section_header.section-header-overlay .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
+          padding-bottom: 1px; }
+        section.section_header.section-header-overlay .section-image-overlay-wrapper .overlay {
+          background-position: 0 0;
+          background-size: cover; } }
       @media (max-width: 768.98px) {
         section.section_header.section-header-overlay {
           padding-top: 6.7rem; } }

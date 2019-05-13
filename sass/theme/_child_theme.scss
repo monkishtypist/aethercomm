@@ -243,11 +243,14 @@ $container-padding-sm: 2.25rem;
             .section-image-overlay-wrapper-inner { // wrapper-inner
                 // clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
                 clip-path: none;
+                padding-bottom: 1px;
             }
             .overlay {
                 // display: none;
                 background-image: url(../images/mobile-header-overlay.png);
                 background-color: transparent;
+                background-position: 0 0;
+                background-size: cover;
             }
         }
         header {
@@ -256,6 +259,17 @@ $container-padding-sm: 2.25rem;
             flex: 1 0 100%;
             max-width: 100%;
             padding: 0;
+        }
+    }
+    @include media-breakpoint-down('xs') {
+        .section-image-overlay-wrapper {
+            .section-image-overlay-wrapper-inner { // wrapper-inner
+                padding-bottom: 1px;
+            }
+            .overlay {
+                background-position: 0 0;
+                background-size: cover;
+            }
         }
     }
 }
