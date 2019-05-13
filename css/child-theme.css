@@ -17369,10 +17369,9 @@ table.dataTable thead .sorting_desc_disabled:before {
     display: block;
     z-index: 1000;
     top: 50%;
-    -webkit-transform: matrix(1, 0, 0, 1, 0, -68);
-            transform: matrix(1, 0, 0, 1, 0, -68); }
+    margin-top: -68px; }
     #timeline_section .timeline-arrow.timeline-prev {
-      left: 0px; }
+      left: 0; }
     #timeline_section .timeline-arrow.timeline-next {
       right: 0; }
     #timeline_section .timeline-arrow i {

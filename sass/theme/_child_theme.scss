@@ -1284,9 +1284,9 @@ $timeline-rotation-increment: 34.5 !default;
         display: block;
         z-index: 1000;
         top: 50%;
-        transform: matrix(1, 0, 0, 1, 0, -68);
+        margin-top: -68px;
         &.timeline-prev {
-            left: 0px;
+            left: 0;
         }
         &.timeline-next {
             right: 0;
