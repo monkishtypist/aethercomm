@@ -15274,16 +15274,17 @@ section {
             background-color: #fff; }
           section.section_header.section-header-overlay .section-image-overlay-wrapper {
             background-color: #ebebeb;
-            -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
-                    clip-path: polygon(0 0, 100% 0, 100% 100%, 95px 100%, 0 30px);
+            -webkit-clip-path: none;
+                    clip-path: none;
             height: 10rem;
             margin-bottom: 2.25rem;
             position: relative; }
             section.section_header.section-header-overlay .section-image-overlay-wrapper .section-image-overlay-wrapper-inner {
-              -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px);
-                      clip-path: polygon(0 0, 100% 0, 100% calc(100% - 8px), 101px calc(100% - 8px), 0 14px); }
+              -webkit-clip-path: none;
+                      clip-path: none; }
             section.section_header.section-header-overlay .section-image-overlay-wrapper .overlay {
-              display: none; }
+              background-image: url(../images/mobile-header-overlay.png);
+              background-color: transparent; }
           section.section_header.section-header-overlay header {
             -webkit-box-flex: 0;
             -ms-flex: 1 0 100%;
