@@ -25196,6 +25196,7 @@ return DataTable;
      * Timeline
      */
 
+    // Next element in timeline
     var timelineNext = function( timeline ) {
         // get the current dial and focus index
         var dial = timeline.find('.timeline-dial');
@@ -25215,6 +25216,27 @@ return DataTable;
         }
     }
 
+    // Next element in timeline
+    var timelinePrev = function( timeline ) {
+        // get the current dial and focus index
+        var dial = timeline.find('.timeline-dial');
+        var currentFocusIndex = dial.data('focus');
+        if ( typeof( currentFocusIndex ) === 'undefined' ) {
+            currentFocusIndex = 0;
+        }
+        // Get the first and last index
+        var dialElements = dial.find('.timeline-element');
+        var lastIndex = dialElements.index( dialElements.last() );
+        var firstIndex = dialElements.index( dialElements.last() );
+        // set the next focus index
+        if ( currentFocusIndex > firstIndex ) {
+            var newFocusIndex = currentFocusIndex - 1;
+            dial.data( 'focus', newFocusIndex );
+            timelineRefocus( timeline, newFocusIndex );
+        }
+    }
+
+    // Set timeline focus and rotation
     var timelineRefocus = function( timeline, index ) {
         // get the current dial and set the focus index
         var dial = timeline.find('.timeline-dial');
@@ -25254,7 +25276,12 @@ return DataTable;
         event.preventDefault();
         var timelineID = $(this).data('timeline');
         var timeline   = $('#timeline-' + timelineID);
-        timelineNext( timeline );
+        if ( $(this).hasClass('timeline-next') ) {
+            timelineNext( timeline );
+        }
+        if ( $(this).hasClass('timeline-prev') ) {
+            timelinePrev( timeline );
+        }
     });
 
 })(jQuery);
