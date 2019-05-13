@@ -60,6 +60,7 @@ if ( ! function_exists( 'aethercomm_after_setup_theme' ) ) {
         load_child_theme_textdomain( 'aethercomm', get_stylesheet_directory() . '/languages' );
         // Add custom wp_nav_menu() locations.
         register_nav_menus( array(
+            'primary-mobile' => __( 'Mobile Main Menu', 'aethercomm' ),
             'footer' => __( 'Footer Menu', 'aethercomm' ),
             'legal' => __( 'Legal Menu', 'aethercomm' ),
         ) );
