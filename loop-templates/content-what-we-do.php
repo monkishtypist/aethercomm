@@ -126,7 +126,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 </div>
             <?php } ?>
             <div class="col-12">
-                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aethercomm-logo-colorful_white.png" clas="img-fluid aethercomm-logo" alt="Aethercomm Logo" />
+                <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aethercomm-logo-colorful_white.png" class="img-fluid aethercomm-logo" alt="Aethercomm Logo" />
             </div>
         </div>
     </section>
