@@ -25198,7 +25198,9 @@ return DataTable;
 
     // Setup timelines on document ready
     $('.timeline-dial').each(function(){
-        var dialElements = $(this).find('.timeline-element');
+        var dial = $(this);
+        dial.data('focus', 0);
+        var dialElements = dial.find('.timeline-element');
         dialElements.each(function(i){
             var rotate = i * 34.5;
             $(this).css('transform', 'rotate(' + rotate + 'deg)');
@@ -25224,7 +25226,9 @@ return DataTable;
         // Get the first and last index
         var dialElements = dial.find('.timeline-element');
         var lastIndex = dialElements.index( dialElements.last() );
+        console.log(lastIndex);
         var firstIndex = dialElements.index( dialElements.last() );
+        console.log(firstIndex);
         // set the next focus index
         if ( currentFocusIndex < lastIndex ) {
             var newFocusIndex = currentFocusIndex + 1;
