@@ -165,11 +165,11 @@
         $('.gfield.products-requested-field input').val( '' );
         $('.gfield.products-requested-field textarea').val( '' );
         if ( model ) {
-            var modelsQueuedString = model.join( "/r/n" );
+            var modelsQueued = model;
         } else {
             var modelsQueued = getModelsQueued();
-            var modelsQueuedString = modelsQueued.join( "/r/n" );
         }
+        var modelsQueuedString = modelsQueued.join( "\r\n" );
         $('.gfield.products-requested-field input').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').append( modelsQueuedString );
