@@ -60,9 +60,9 @@ if ( $section_header_image ) {
 }
 
 // Page header video
-$video_link = false;
+$video_embed_code = false;
 if ( has_acf_field( 'what-we-do_page_settings_header_video' ) ) {
-    $video_link = get_acf_field( 'what-we-do_page_settings_header_video', true );
+    $video_embed_code = get_acf_field( 'what-we-do_page_settings_header_video', true );
 }
 
 // section capabilities
@@ -88,7 +88,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
         <?php if ( $section_header_image ) : ?>
             <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
                 <div class="section-image-overlay-wrapper-inner">
-                    <?php if ( $video_link ) { ?>
+                    <?php if ( $video_embed_code ) { ?>
                         <div class="header-video">
                             <a href="#play-video" class="play-video-button"><span class="sr-only"><?php _e( 'Play Video', 'aethercomm' ); ?></span></a>
                         </div>
