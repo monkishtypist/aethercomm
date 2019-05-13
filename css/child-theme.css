@@ -17383,7 +17383,7 @@ table.dataTable thead .sorting_desc_disabled:before {
       text-align: center;
       top: 50%; }
   #timeline_section .timeline-wrapper {
-    height: 1446px;
+    height: 510px;
     left: 50%;
     margin-left: -723px;
     padding: 0;
@@ -17407,6 +17407,8 @@ table.dataTable thead .sorting_desc_disabled:before {
       top: 0;
       -webkit-transform-origin: center center;
               transform-origin: center center;
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out;
       width: 1446px; }
     #timeline_section .timeline-wrapper .timeline-element {
       height: 723px;
@@ -17443,11 +17445,15 @@ table.dataTable thead .sorting_desc_disabled:before {
         height: 186px;
         margin-top: 1.5rem;
         opacity: 0;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out;
         width: auto; }
       #timeline_section .timeline-wrapper .timeline-element .timeline-date {
         color: #222222;
         font-weight: 700;
-        margin-top: 3.7rem; }
+        margin-top: 3.7rem;
+        -webkit-transition: all 0.2s ease-in-out;
+        transition: all 0.2s ease-in-out; }
       #timeline_section .timeline-wrapper .timeline-element .timeline-content {
         color: #fff;
         font-size: 1.125rem;
