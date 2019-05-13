@@ -25237,7 +25237,6 @@ return DataTable;
         focusedElement.data('focus', false).attr('data-focus', 'false');
         focusedElement.next().data('focus', false).attr('data-focus', 'false');
         focusedElement.prev().data('focus', false).attr('data-focus', 'false');
-        callback();
     }
 
     var timelineFocus = function( focusedElement ) {
