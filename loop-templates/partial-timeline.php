@@ -42,15 +42,17 @@ $terms = get_terms( array(
             <div class="tab-pane fade show <?php echo ( $key == 0 ? 'active' : '' ); ?>" id="tab<?php echo $key; ?>" role="tabpanel" aria-labelledby="tab<?php echo $key; ?>-tab">
                 <?php
                 $args = array(
-                    'post_type' => 'timelines',
-                    'tax_query' => array(
+                    'post_type'        => 'timelines',
+                    'tax_query'        => array(
                         array(
                             'taxonomy' => 'timeline-categories',
                             'field'    => 'slug',
                             'terms'    => $term->slug,
                         ),
                     ),
-                    'posts_per_page' => -1
+                    'posts_per_page'   => -1,
+                    'orderby'          => 'date',
+                    'order'            => 'ASC'
                 );
                 $query = new WP_Query( $args );
                 ?>
