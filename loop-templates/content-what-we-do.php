@@ -103,7 +103,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 <?php echo $page_header_copy; ?>
                 <?php if ( $video_embed_code ) { ?>
                     <div class="header-video">
-                        <a href="#play-video" class="play-video-button"><span class="sr-only"><?php _e( 'Play Video', 'aethercomm' ); ?></span></a>
+                        <a href="#play-video" class="play-video-button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play-video.png" alt="Play Video" /></a>
                     </div>
                 <?php } ?>
             </header>
