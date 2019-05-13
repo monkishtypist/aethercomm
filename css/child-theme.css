@@ -17358,28 +17358,23 @@ table.dataTable thead .sorting_desc_disabled:before {
     text-transform: uppercase; }
 
 /* Timeline */
-#timeline_section {
-  background-image: url(../images/timeline-bg.png);
-  background-position: 50% 300px;
-  background-repeat: no-repeat;
-  background-size: auto; }
-  #timeline_section .timeline-dial {
-    position: relative; }
-    #timeline_section .timeline-dial .timeline-dial-bg-image {
-      width: auto;
-      height: auto; }
-    #timeline_section .timeline-dial .timeline-element {
-      position: absolute; }
-      #timeline_section .timeline-dial .timeline-element .timeline-image {
-        height: 186px;
-        width: auto; }
-      #timeline_section .timeline-dial .timeline-element .timeline-content {
-        color: #fff;
-        text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
-      #timeline_section .timeline-dial .timeline-element .timeline-date {
-        color: #707070; }
-        #timeline_section .timeline-dial .timeline-element .timeline-date.active {
-          color: #222222; }
+#timeline_section .timeline-dial {
+  position: relative; }
+  #timeline_section .timeline-dial .timeline-dial-bg-image {
+    width: auto;
+    height: auto; }
+  #timeline_section .timeline-dial .timeline-element {
+    position: absolute; }
+    #timeline_section .timeline-dial .timeline-element .timeline-image {
+      height: 186px;
+      width: auto; }
+    #timeline_section .timeline-dial .timeline-element .timeline-content {
+      color: #fff;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
+    #timeline_section .timeline-dial .timeline-element .timeline-date {
+      color: #707070; }
+      #timeline_section .timeline-dial .timeline-element .timeline-date.active {
+        color: #222222; }
 
 /**
  * Footer
