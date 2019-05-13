@@ -296,7 +296,7 @@
 
     // After GForm submit success
     $(document).on("gform_confirmation_loaded", function (e, form_id) {
-        if ( form_id === 1 ) {
+        if ( form_id === 3 ) {
             modelNumbersRemoveAll();
             preloadQueuedModels();
         }

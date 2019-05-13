@@ -773,11 +773,9 @@ if ( ! function_exists( 'aethercomm_show_confirmation_and_form' ) ) {
 
         if ( array_key_exists( 'confirmations', $form ) ) {
             foreach ( $form['confirmations'] as $key => $confirmation ) {
-                $form['confirmations'][ $key ]['message'] = sprintf( '%1$s%2$s',
-                    sprintf( '<div class="alert alert-success alert-dismissible fade show mb-5" role="alert">%1$s<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>',
-                        $form['confirmations'][ $key ]['message'] ),
-                    $shortcode
-                );
+                $form['confirmations'][ $key ]['message'] = sprintf( '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert">%1$s<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>%2$s',
+                    $form['confirmations'][ $key ]['message'],
+                    $shortcode );
             }
         }
 
