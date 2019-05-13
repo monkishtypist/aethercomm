@@ -17362,7 +17362,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   overflow: hidden; }
   #timeline_section .timeline-dial {
     position: relative;
-    padding: 232px;
+    padding-top: 232px;
     left: 50%;
     margin-left: -723px;
     top: 0;
