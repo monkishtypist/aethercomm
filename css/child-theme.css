@@ -17954,6 +17954,12 @@ table.dataTable thead .sorting_desc_disabled:before {
     margin-right: 1rem;
     margin-top: -2rem;
     width: 20rem; }
+    @media (max-width: 1199.98px) {
+      #what-we-do_page-wrapper #what-we-do_header .header-video-wrapper .aethercomm-logo {
+        width: 17rem; } }
+    @media (max-width: 991.98px) {
+      #what-we-do_page-wrapper #what-we-do_header .header-video-wrapper .aethercomm-logo {
+        width: 12rem; } }
   @media (max-width: 768.98px) {
     #what-we-do_page-wrapper #what-we-do_header .header-video-wrapper {
       display: none; } }

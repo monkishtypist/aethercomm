@@ -1826,10 +1826,14 @@ $timeline-rotation-increment: 34.5 !default;
                 margin-right: 1rem;
                 margin-top: -2rem;
                 width: 20rem;
+                @include media-breakpoint-down('lg') {
+                    width: 17rem;
+                }
+                @include media-breakpoint-down('md') {
+                    width: 12rem;
+                }
             }
-            .play-video-button {
-
-            }
+            .play-video-button {}
             @include media-breakpoint-down('sm') {
                 display: none;
             }
