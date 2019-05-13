@@ -24990,7 +24990,7 @@ return DataTable;
         theModal.modal('show');
     });
 
-    $('#video-modal').on('hidden.bs.modal', function (e) {
+    $('#video-modal').on('hide.bs.modal', function (event) {
         $(this).modal('dispose');
     });
 
