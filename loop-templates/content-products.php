@@ -154,6 +154,6 @@ $product_cats = get_categories( $product_cats_args );
 
     <?php endif; ?>
 
-    <?php get_template_part( 'sidebar-templates/sidebar', 'contact' ); ?>
+    <?php get_template_part( 'sidebar-templates/sidebar', 'request-products' ); ?>
 
 </article>

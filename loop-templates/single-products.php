@@ -100,6 +100,6 @@ $model_number = get_acf_field( 'product_specs_model_number', true );
 
     </section>
 
-    <?php get_template_part( 'sidebar-templates/sidebar', 'contact' ); ?>
+    <?php get_template_part( 'sidebar-templates/sidebar', 'request-products' ); ?>
 
 </article>
