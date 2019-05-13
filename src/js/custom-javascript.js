@@ -264,7 +264,7 @@
     // Update model queue links
     var preloadQueuedModels = function() {
         var modelsQueued = getModelsQueued();
-        var arrayLength = modelsQueued.length;
+        console.log(modelsQueued);
         $('.product-queue-link').each( function() {
             var modelNumber = $(this).data('model-number');
             if ( modelsQueued.indexOf( modelNumber ) ) {
@@ -272,6 +272,7 @@
             } else {
                 $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );
             }
+            console.log(modelsQueued.indexOf( modelNumber ));
         });
         sendModelsToForm();
     }
