@@ -81,7 +81,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 						'container_id'    => 'container-main-menu-mobile',
 						'menu_class'      => 'navbar-nav ml-auto',
 						'fallback_cb'     => '',
-						'menu_id'         => 'main-menu',
+						'menu_id'         => 'main-menu-mobile',
 						'depth'           => 2,
 						'walker'          => new Understrap_WP_Bootstrap_Navwalker(),
 					)
