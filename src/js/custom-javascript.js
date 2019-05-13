@@ -161,14 +161,16 @@
     var sendModelsToForm = function() {
         var modelsQueued = getModelsQueued();
         var modelsQueuedString = modelsQueued.join();
-        $('.gfield.products-requested-field input, .gfield.products-requested-field textarea').val( modelsQueuedString );
+        $('.gfield.products-requested-field input').val( modelsQueuedString );
+        $('.gfield.products-requested-field textarea').append( modelsQueuedString );
         $('form.contact-form')[0].scrollIntoView();
     }
 
     // Send all models to Form
     var sendAllModelsToForm = function() {
         var modelsQueuedString = 'All';
-        $('.gfield.products-requested-field input, .gfield.products-requested-field textarea').val( modelsQueuedString );
+        $('.gfield.products-requested-field input').val( modelsQueuedString );
+        $('.gfield.products-requested-field textarea').append( modelsQueuedString );
         $('form.contact-form')[0].scrollIntoView();
     }
 
