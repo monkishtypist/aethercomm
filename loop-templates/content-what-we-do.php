@@ -24,6 +24,9 @@ if ( has_acf_field( 'page_header_background' ) ) {
 } else {
     $section_header_image = false;
 }
+if ( has_post_thumbnail() ) {
+    $section_header_image_mobile = get_the_post_thumbnail( get_the_ID(), 'full', array( 'class' => 'section-overlay-image-mobile img-fluid' ) );
+}
 $overlay_color = ( has_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page_header_overlay', true ) : 'black' );
 
 // Page Title & Lede
@@ -92,6 +95,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <?php } ?>
                     <div class="overlay"></div>
                     <?php echo $section_header_image; ?>
+                    <?php echo $section_header_image_mobile; ?>
                 </div>
             </div>
         <?php endif; ?>
