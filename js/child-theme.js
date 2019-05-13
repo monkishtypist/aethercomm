@@ -25242,7 +25242,7 @@ return DataTable;
         var dial = timeline.find('.timeline-dial');
         dial.data('focus', index).attr('data-focus', index);
         // update current rotation
-        var rotate = index * 34.5;
+        var rotate = index * -34.5;
         dial.data('rotate', rotate).css('transform', 'rotate('+rotate+'deg)');
         // remove classes from dial elements
         var dialElements = dial.find('.timeline-element');
