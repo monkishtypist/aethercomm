@@ -24,7 +24,7 @@ if ( get_acf_field( 'page_header_background' ) ) {
 } else {
     $section_header_image = false;
 }
-$overlay_color = ( get_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page_header_overlay', true ) : 'black' );
+$overlay_color = ( has_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page_header_overlay', true ) : 'black' );
 
 $cats = get_the_category();
 $cat_names_string = null;
