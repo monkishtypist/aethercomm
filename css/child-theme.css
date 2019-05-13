@@ -17442,23 +17442,26 @@ table.dataTable thead .sorting_desc_disabled:before {
         #timeline_section .timeline-wrapper .timeline-element.near .timeline-content {
           opacity: 0; }
       #timeline_section .timeline-wrapper .timeline-element .timeline-image {
-        height: 186px;
-        margin-top: 1.5rem;
+        height: 232px;
         opacity: 0;
+        overflow: hidden;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         width: 100%; }
+        #timeline_section .timeline-wrapper .timeline-element .timeline-image img {
+          margin-top: 1rem; }
       #timeline_section .timeline-wrapper .timeline-element .timeline-date {
         color: #222222;
         font-weight: 700;
-        margin-top: 3.7rem;
+        height: 32px;
+        margin-top: 2.5rem;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out; }
       #timeline_section .timeline-wrapper .timeline-element .timeline-content {
         color: #fff;
         font-size: 1.125rem;
         font-weight: 300;
-        margin-top: 6rem;
+        margin-top: 5rem;
         opacity: 0;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         -webkit-transition: all 0.2s ease-in-out;
