@@ -17389,20 +17389,25 @@ table.dataTable thead .sorting_desc_disabled:before {
       #timeline_section .timeline-dial .timeline-element:not(:first-of-type) {
         display: none; }
       #timeline_section .timeline-dial .timeline-element.timeline-previous {
-        -webkit-transform: rotate(-34.5deg);
-                transform: rotate(-34.5deg); }
-        #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-date {
-          color: #707070; }
-        #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-content {
-          opacity: 0; }
+        opacity: 0;
+        -webkit-transform: rotate(-69deg);
+                transform: rotate(-69deg); }
+        #timeline_section .timeline-dial .timeline-element.timeline-previous:last-of-type {
+          opacity: 1;
+          -webkit-transform: rotate(-34.5deg);
+                  transform: rotate(-34.5deg); }
       #timeline_section .timeline-dial .timeline-element.timeline-next {
-        -webkit-transform: rotate(34.5deg);
-                transform: rotate(34.5deg); }
-        #timeline_section .timeline-dial .timeline-element.timeline-next .timeline-date {
-          color: #707070; }
-      #timeline_section .timeline-dial .timeline-element.offscreen {
-        -webkit-transform: rotate(180deg);
-                transform: rotate(180deg); }
+        opacity: 0;
+        -webkit-transform: rotate(69deg);
+                transform: rotate(69deg); }
+        #timeline_section .timeline-dial .timeline-element.timeline-next:last-of-type {
+          opacity: 1;
+          -webkit-transform: rotate(34.5deg);
+                  transform: rotate(34.5deg); }
+      #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-date, #timeline_section .timeline-dial .timeline-element.timeline-next .timeline-date {
+        color: #707070; }
+      #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-content, #timeline_section .timeline-dial .timeline-element.timeline-next .timeline-content {
+        opacity: 0; }
       #timeline_section .timeline-dial .timeline-element .timeline-image {
         height: 186px;
         margin-top: 1.5rem;

@@ -1265,10 +1265,11 @@ table.dataTable {
 }
 
 /* Timeline */
-$timeline-width:         982px !default;
-$timeline-height-offset: 232px !default;
-$timeline-elem-width:    220px !default;
-$timeline-elem-height:   ($timeline-width * .5) + $timeline-height-offset !default;
+$timeline-width:              982px !default;
+$timeline-height-offset:      232px !default;
+$timeline-elem-width:         220px !default;
+$timeline-elem-height:        ($timeline-width * .5) + $timeline-height-offset !default;
+$timeline-rotation-increment: 34.5 !default;
 #timeline_section {
     // background-image: url(../images/timeline-bg.png);
     // background-position: 50% 300px;
@@ -1305,22 +1306,29 @@ $timeline-elem-height:   ($timeline-width * .5) + $timeline-height-offset !defau
                 display: none; // temp hide while working on layout
             }
             &.timeline-previous {
-                transform: rotate(-34.5deg);
+                opacity: 0;
+                transform: rotate(-#{$timeline-rotation-increment * 2deg});
+                &:last-of-type {
+                    opacity: 1;
+                    transform: rotate(-#{$timeline-rotation-increment * 1deg});
+                }
+            }
+            &.timeline-next {
+                opacity: 0;
+                transform: rotate(#{$timeline-rotation-increment * 2deg});
+                &:last-of-type {
+                    opacity: 1;
+                    transform: rotate(#{$timeline-rotation-increment * 1deg});
+                }
+            }
+            &.timeline-previous,
+            &.timeline-next {
                 .timeline-date {
                     color: $gray-600;
                 }
                 .timeline-content {
                     opacity: 0;
                 }
-            }
-            &.timeline-next {
-                transform: rotate(34.5deg);
-                .timeline-date {
-                    color: $gray-600;
-                }
-            }
-            &.offscreen {
-                transform: rotate(180deg);
             }
             .timeline-image {
                 height: 186px;
