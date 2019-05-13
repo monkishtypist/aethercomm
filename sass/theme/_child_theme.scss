@@ -1371,10 +1371,15 @@ $timeline-rotation-increment: 34.5 !default;
                 // margin-top: #{$spacer * 1.5};
                 opacity: 0;
                 overflow: hidden;
+                padding-bottom: $spacer;
+                padding-top: $spacer;
                 transition: $transition-base;
                 width: 100%;
                 img {
-                    margin-top: $spacer;
+                    // margin-top: $spacer;
+                    max-height: 100%;
+                    max-width: 100%;
+                    object-fit: contain;
                 }
             }
             .timeline-date {

@@ -17445,11 +17445,16 @@ table.dataTable thead .sorting_desc_disabled:before {
         height: 232px;
         opacity: 0;
         overflow: hidden;
+        padding-bottom: 1rem;
+        padding-top: 1rem;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
         width: 100%; }
         #timeline_section .timeline-wrapper .timeline-element .timeline-image img {
-          margin-top: 1rem; }
+          max-height: 100%;
+          max-width: 100%;
+          -o-object-fit: contain;
+             object-fit: contain; }
       #timeline_section .timeline-wrapper .timeline-element .timeline-date {
         color: #222222;
         font-weight: 700;
