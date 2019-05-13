@@ -64,7 +64,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'd-none d-md-block',
+						'container_class' => '',
 						'container_id'    => 'container-main-menu',
 						'menu_class'      => 'navbar-nav ml-auto',
 						'fallback_cb'     => '',

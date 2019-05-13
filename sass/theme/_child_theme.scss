@@ -704,6 +704,9 @@ section {
         }
     }
 }
+#main-menu {
+    justify-content: flex-end;
+}
 #main-menu, // <ul>
 #main-menu-mobile { // <ul>
     align-items: center;
@@ -733,6 +736,11 @@ section {
             font-size: #{$font-size-base * .875};
             font-weight: #{$font-weight-bold};
             text-transform: uppercase;
+        }
+    }
+    #container-main-menu & {
+        @include media-breakpoint-down('sm') {
+            display: none;
         }
     }
     #container-main-menu-mobile & {
