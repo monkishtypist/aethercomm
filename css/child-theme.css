@@ -15550,16 +15550,34 @@ section {
     #container-main-menu #main-menu, #container-main-menu
     #main-menu-mobile {
       display: none; } }
-  @media (min-width: 769px) {
-    #container-main-menu-mobile #main-menu, #container-main-menu-mobile
-    #main-menu-mobile {
-      display: none !important; } }
-  #container-main-menu-mobile #main-menu > .nav-item:first-of-type, #container-main-menu-mobile
-  #main-menu-mobile > .nav-item:first-of-type {
-    margin-left: 0.5rem; }
-  #container-main-menu-mobile #main-menu > .nav-item:last-of-type, #container-main-menu-mobile
-  #main-menu-mobile > .nav-item:last-of-type {
-    margin-right: 0.5rem; }
+  #container-main-menu-mobile #main-menu, #container-main-menu-mobile
+  #main-menu-mobile {
+    -webkit-box-orient: unset;
+    -webkit-box-direction: unset;
+        -ms-flex-direction: unset;
+            flex-direction: unset;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    @media (min-width: 769px) {
+      #container-main-menu-mobile #main-menu, #container-main-menu-mobile
+      #main-menu-mobile {
+        display: none !important; } }
+    #container-main-menu-mobile #main-menu > .nav-item, #container-main-menu-mobile
+    #main-menu-mobile > .nav-item {
+      -ms-flex-preferred-size: 100%;
+          flex-basis: 100%; }
+      #container-main-menu-mobile #main-menu > .nav-item:first-of-type, #container-main-menu-mobile
+      #main-menu-mobile > .nav-item:first-of-type {
+        margin-left: 0.5rem; }
+      #container-main-menu-mobile #main-menu > .nav-item:last-of-type, #container-main-menu-mobile
+      #main-menu-mobile > .nav-item:last-of-type {
+        margin-right: 0.5rem; }
+    #container-main-menu-mobile #main-menu .btn, #container-main-menu-mobile #main-menu #index-wrapper .read-more-link, #index-wrapper #container-main-menu-mobile #main-menu .read-more-link,
+    #container-main-menu-mobile #main-menu #archive-wrapper .read-more-link, #archive-wrapper #container-main-menu-mobile #main-menu .read-more-link,
+    #container-main-menu-mobile #main-menu #search-wrapper .read-more-link, #search-wrapper #container-main-menu-mobile #main-menu .read-more-link, #container-main-menu-mobile #main-menu-mobile .btn, #container-main-menu-mobile #main-menu-mobile #index-wrapper .read-more-link, #index-wrapper #container-main-menu-mobile #main-menu-mobile .read-more-link,
+    #container-main-menu-mobile #main-menu-mobile #archive-wrapper .read-more-link, #archive-wrapper #container-main-menu-mobile #main-menu-mobile .read-more-link,
+    #container-main-menu-mobile #main-menu-mobile #search-wrapper .read-more-link, #search-wrapper #container-main-menu-mobile #main-menu-mobile .read-more-link {
+      padding: 0.25rem 2rem; }
 
 #footer-menu {
   -webkit-box-pack: justify;

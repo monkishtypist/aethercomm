@@ -747,16 +747,22 @@ section {
         }
     }
     #container-main-menu-mobile & {
+        flex-direction: unset;
+        flex-wrap: wrap;
         @include media-breakpoint-up('md') {
             display: none !important;
         }
         > .nav-item {
+            flex-basis: 100%;
             &:first-of-type {
                 margin-left: #{$spacer * .5};
             }
             &:last-of-type {
                 margin-right: #{$spacer * .5};
             }
+        }
+        .btn {
+            padding: #{$spacer * .25} #{$spacer * 2};
         }
     }
 }
