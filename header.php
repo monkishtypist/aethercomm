@@ -56,7 +56,7 @@ $container = get_theme_mod( 'understrap_container_type' );
                 } ?><!-- end custom logo -->
 
                 <a href="<?php echo get_permalink( 27 ); ?>" class="navbar-icon-reps"><i class="far fa-comment-alt-dots"></i></a>
-				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#container-main-menu" aria-controls="container-main-menu" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'aethercomm' ); ?>">
+				<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#container-main-menu-mobile" aria-controls="container-main-menu-mobile" aria-expanded="false" aria-label="<?php esc_attr_e( 'Toggle navigation', 'aethercomm' ); ?>">
 					<span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
 				</button>
 
@@ -64,7 +64,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary',
-						'container_class' => 'collapse navbar-collapse',
+						'container_class' => 'd-none d-md-block',
 						'container_id'    => 'container-main-menu',
 						'menu_class'      => 'navbar-nav ml-auto',
 						'fallback_cb'     => '',
@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary-mobile',
-						'container_class' => 'collapse navbar-collapse',
+						'container_class' => 'collapse navbar-collapse d-block d-md-none',
 						'container_id'    => 'container-main-menu-mobile',
 						'menu_class'      => 'navbar-nav ml-auto',
 						'fallback_cb'     => '',
