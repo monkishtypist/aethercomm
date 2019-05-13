@@ -25225,6 +25225,7 @@ return DataTable;
         console.log( 'focused: ' + currentFocusIndex );
         // Get the first and last index
         var dialElements = dial.find('.timeline-element');
+        console.log(dialElements);
         var lastIndex = dialElements.index( dialElements.last() );
         console.log(lastIndex);
         var firstIndex = dialElements.index( dialElements.last() );
