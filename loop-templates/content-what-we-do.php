@@ -116,6 +116,22 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
 
         </div>
 
+        <?php if ( $video_embed_code ) { ?>
+            <!-- Modal -->
+            <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal-title" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true"><i class="fal fa-times"></i></span>
+                        </button>
+                        <div class="modal-body">
+                            <?php echo $video_embed_code; ?>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        <?php } ?>
+
     </section>
 
     <section id="video-section-mobile" class="d-block d-md-none section-unpadded">
