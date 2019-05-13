@@ -1294,6 +1294,7 @@ $timeline-elem-height:   ($timeline-width * .5) + $timeline-height-offset !defau
             left: 50%;
             margin-left: -#{$timeline-elem-width * .5};
             position: absolute;
+            text-align: center;
             top: 0;
             width: $timeline-elem-width;
             &:not(:first-of-type) {
@@ -1305,13 +1306,19 @@ $timeline-elem-height:   ($timeline-width * .5) + $timeline-height-offset !defau
                 width: auto;
             }
             .timeline-date {
-                color: $gray-600;
+                // color: $gray-600;
+                color: $dark;
+                font-weight: $font-weight-bold;
+                margin-top: #{$spacer * 3.7};
                 &.active {
                     color: $dark;
                 }
             }
             .timeline-content {
                 color: $white;
+                font-size: #{$font-size-base * 1.125};
+                font-weight: $font-weight-light;
+                margin-top: #{$spacer * 6};
                 text-shadow: 1px 1px 1px rgba($black,.5);
             }
         }

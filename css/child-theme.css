@@ -17376,6 +17376,7 @@ table.dataTable thead .sorting_desc_disabled:before {
       left: 50%;
       margin-left: -110px;
       position: absolute;
+      text-align: center;
       top: 0;
       width: 220px; }
       #timeline_section .timeline-dial .timeline-element:not(:first-of-type) {
@@ -17385,11 +17386,16 @@ table.dataTable thead .sorting_desc_disabled:before {
         margin-top: 1.5rem;
         width: auto; }
       #timeline_section .timeline-dial .timeline-element .timeline-date {
-        color: #707070; }
+        color: #222222;
+        font-weight: 700;
+        margin-top: 3.7rem; }
         #timeline_section .timeline-dial .timeline-element .timeline-date.active {
           color: #222222; }
       #timeline_section .timeline-dial .timeline-element .timeline-content {
         color: #fff;
+        font-size: 1.125rem;
+        font-weight: 300;
+        margin-top: 6rem;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5); }
 
 /**
