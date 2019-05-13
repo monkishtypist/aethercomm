@@ -283,7 +283,7 @@
     $('.timeline-arrow').on('click', function(event){
         event.preventDefault();
         var timelineID = $(this).data('timeline');
-        var timeline   = $('timeline-' + timelineID);
+        var timeline   = $('#timeline-' + timelineID);
         timelineNext( timeline );
     });
 
@@ -296,8 +296,7 @@
         }
         console.log( 'focused: ' + currentFocusIndex );
         // Get the first and last index
-        // var dialElements = dial.find('.timeline-element');
-        var dialElements = dial.children();
+        var dialElements = dial.find('.timeline-element');
         console.log(dialElements);
         var lastIndex = dialElements.index( dialElements.last() );
         console.log(lastIndex);
