@@ -1265,9 +1265,10 @@ table.dataTable {
 }
 
 /* Timeline */
-$timeline-width: 982px !default;
-$timeline-elem-width: 220px !default;
-$timeline-elem-height: 186px !default;
+$timeline-width:         982px !default;
+$timeline-height-offset: 232px !default;
+$timeline-elem-width:    220px !default;
+$timeline-elem-height:   ($timeline-width * .5) + $timeline-height-offset !default;
 #timeline_section {
     // background-image: url(../images/timeline-bg.png);
     // background-position: 50% 300px;
@@ -1292,13 +1293,14 @@ $timeline-elem-height: 186px !default;
             position: absolute;
             top: 0;
             left: 50%;
+            height: $timeline-elem-height;
             margin-left: -#{$timeline-elem-width * .5};
             width: $timeline-elem-width;
-            &:not(:first-child) {
+            &:not(:first-of-type) {
                 display: none; // temp hide while working on layout
             }
             .timeline-image {
-                height: $timeline-elem-height;
+                height: 186px;
                 width: auto;
             }
             .timeline-content {
