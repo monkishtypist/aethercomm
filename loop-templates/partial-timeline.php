@@ -50,6 +50,7 @@ $terms = get_terms( array(
                             'terms'    => $term->slug,
                         ),
                     ),
+                    'post_status'      => array('publish', 'future'),
                     'posts_per_page'   => -1,
                     'orderby'          => 'date',
                     'order'            => 'ASC'
