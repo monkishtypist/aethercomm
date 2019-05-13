@@ -88,11 +88,6 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
         <?php if ( $section_header_image ) : ?>
             <div class="section-image-overlay-wrapper" <?php // echo $section_header_styles; ?>>
                 <div class="section-image-overlay-wrapper-inner">
-                    <?php if ( $video_embed_code ) { ?>
-                        <div class="header-video">
-                            <a href="#play-video" class="play-video-button"><span class="sr-only"><?php _e( 'Play Video', 'aethercomm' ); ?></span></a>
-                        </div>
-                    <?php } ?>
                     <div class="overlay"></div>
                     <?php echo $section_header_image; ?>
                     <?php echo $section_header_image_mobile; ?>
@@ -106,6 +101,11 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 <?php echo $page_title; ?>
                 <?php echo $page_lede; ?>
                 <?php echo $page_header_copy; ?>
+                <?php if ( $video_embed_code ) { ?>
+                    <div class="header-video">
+                        <a href="#play-video" class="play-video-button"><span class="sr-only"><?php _e( 'Play Video', 'aethercomm' ); ?></span></a>
+                    </div>
+                <?php } ?>
             </header>
 
             <?php echo $section_crosshairs; ?>
