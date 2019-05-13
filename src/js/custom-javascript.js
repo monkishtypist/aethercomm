@@ -278,8 +278,8 @@
         }
         // Get the first and last index
         var dialElements = dial.find('.timeline-element');
+        var firstIndex = dialElements.index( dialElements.first() );
         var lastIndex = dialElements.index( dialElements.last() );
-        var firstIndex = dialElements.index( dialElements.last() );
         // set the next focus index
         if ( currentFocusIndex < lastIndex ) {
             var newFocusIndex = currentFocusIndex + 1;
@@ -300,8 +300,8 @@
         }
         // Get the first and last index
         var dialElements = dial.find('.timeline-element');
+        var firstIndex = dialElements.index( dialElements.first() );
         var lastIndex = dialElements.index( dialElements.last() );
-        var firstIndex = dialElements.index( dialElements.last() );
         // set the next focus index
         if ( currentFocusIndex > firstIndex ) {
             var newFocusIndex = currentFocusIndex - 1;
