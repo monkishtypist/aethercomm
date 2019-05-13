@@ -25192,7 +25192,7 @@ return DataTable;
     // Update model queue links
     var preloadQueuedModels = function() {
         var modelsQueued = getModelsQueued();
-        console.log(modelsQueued);
+        // console.log(modelsQueued);
         $('.product-queue-link').each( function() {
             var modelNumber = $(this).data('model-number');
             if ( modelsQueued.indexOf( modelNumber ) > -1 ) {
@@ -25200,7 +25200,7 @@ return DataTable;
             } else {
                 $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );
             }
-            console.log(modelsQueued.indexOf( modelNumber ));
+            // console.log(modelsQueued.indexOf( modelNumber ));
         });
         sendModelsToForm();
     }

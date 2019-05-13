@@ -92,7 +92,8 @@ $product_cats = get_categories( $product_cats_args );
                     <a href="#" class="product-request-all btn btn-lg btn-outline-gray" data-model-number="all"><?php _e( 'Request All', 'aethercomm' ); ?></a>
                 </div>
                 <div class="col-auto">
-                    <a href="#share" class="product-share share-link"><?php _e( 'Share', 'aethercomm' ); ?></a>
+                    <!-- <a href="#share" class="product-share share-link"><?php _e( 'Share', 'aethercomm' ); ?></a> -->
+                    <a tabindex="0" class="product-share share-link" role="button" data-toggle="popover" data-trigger="focus" title="Link added." data-content="The page link has been copied to your clipboard."><?php _e( 'Share', 'aethercomm' ); ?></a>
                 </div>
             </div>
 
@@ -158,8 +159,8 @@ $product_cats = get_categories( $product_cats_args );
 
 </article>
 
-<div aria-live="polite" aria-atomic="true" style="position: relative; min-height: 200px;">
-  <div class="toast" style="position: absolute; top: 0; right: 0;">
+<div aria-live="polite" aria-atomic="true" style="position: fixed; min-height: 200px; min-width: 600px;">
+  <div class="toast" style="position: absolute; bottom: 1rem; right: 1rem;">
     <div class="toast-header">
       <img src="..." class="rounded mr-2" alt="...">
       <strong class="mr-auto">Bootstrap</strong>
