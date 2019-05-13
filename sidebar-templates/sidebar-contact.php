@@ -21,8 +21,6 @@ global $post;
 
         <div class="<?php echo esc_attr( $container ); ?>">
 
-            <h2 class="section-header">Contact <strong>Us</strong></h2>
-
             <?php dynamic_sidebar( 'contact' ); ?>
 
             <span class="crosshairs-white crosshairs-top-left"></span>

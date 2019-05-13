@@ -161,14 +161,14 @@
     var sendModelsToForm = function() {
         var modelsQueued = getModelsQueued();
         var modelsQueuedString = modelsQueued.join();
-        $('.gfield.gform_hidden input').val( modelsQueuedString );
+        $('.gfield.products-requested-field input, .gfield.products-requested-field textarea').val( modelsQueuedString );
         $('form.contact-form')[0].scrollIntoView();
     }
 
     // Send all models to Form
     var sendAllModelsToForm = function() {
-        var modelsQueuedString = 'all';
-        $('.gfield.gform_hidden input').val( modelsQueuedString );
+        var modelsQueuedString = 'All';
+        $('.gfield.products-requested-field input, .gfield.products-requested-field textarea').val( modelsQueuedString );
         $('form.contact-form')[0].scrollIntoView();
     }
 
@@ -362,4 +362,5 @@
         }
     });
 
+    /* END Timeline */
 })(jQuery);
