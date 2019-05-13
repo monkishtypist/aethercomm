@@ -267,7 +267,7 @@
         var arrayLength = modelsQueued.length;
         $('.product-queue-link').each( function() {
             var modelNumber = $(this).data('model-number');
-            if ( modelNumber.indexOf( $(this).data( 'model-number' ) ) ) {
+            if ( modelsQueued.indexOf( modelNumber ) ) {
                 $(this).data( 'queued', true ).attr( 'data-queued', true ).html( "Queued" );
             } else {
                 $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );
