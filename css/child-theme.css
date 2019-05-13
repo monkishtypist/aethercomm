@@ -17361,23 +17361,25 @@ table.dataTable thead .sorting_desc_disabled:before {
 #timeline_section {
   overflow: hidden; }
   #timeline_section .timeline-wrapper {
-    height: auto;
+    height: 1446px;
     left: 50%;
     margin-left: -723px;
-    padding-top: 232px;
+    padding: 0;
     position: relative;
     top: 0;
     width: 1446px; }
     #timeline_section .timeline-wrapper .timeline-wrapper-dial-image {
       height: 982px;
-      width: 982px; }
+      width: 982px;
+      margin: 232px auto; }
     #timeline_section .timeline-wrapper .timeline-dial {
       bottom: 0;
+      height: 1446px;
       left: 0;
       position: absolute;
       right: 0;
       top: 0;
-      width: 100%; }
+      width: 1446px; }
     #timeline_section .timeline-wrapper .timeline-element {
       height: 723px;
       left: 50%;

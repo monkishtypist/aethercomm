@@ -1267,8 +1267,10 @@ table.dataTable {
 /* Timeline */
 $timeline-dial-width:         982px !default;
 $timeline-offset:             232px !default;
+$timeline-height:             $timeline-dial-width + ($timeline-offset * 2) !default;
+$timeline-width:              $timeline-height !default;
 $timeline-elem-width:         220px !default;
-$timeline-elem-height:        ($timeline-dial-width * .5) + $timeline-offset !default;
+$timeline-elem-height:        $timeline-height * .5 !default;
 $timeline-rotation-increment: 34.5 !default;
 #timeline_section {
     // background-image: url(../images/timeline-bg.png);
@@ -1279,24 +1281,26 @@ $timeline-rotation-increment: 34.5 !default;
     overflow: hidden;
     .timeline-wrapper {
         // position: absolute;
-        height: auto;
+        height: $timeline-height;
         left: 50%;
-        margin-left: -#{( $timeline-dial-width + ( $timeline-offset * 2 ) ) * .5};
-        padding-top: $timeline-offset;
+        margin-left: -#{($timeline-dial-width + ($timeline-offset * 2)) * .5};
+        padding: 0;
         position: relative;
         top: 0;
-        width: #{$timeline-dial-width + ( $timeline-offset * 2 )};
+        width: $timeline-width;
         .timeline-wrapper-dial-image {
             height: $timeline-dial-width;
             width: $timeline-dial-width;
+            margin: $timeline-offset auto;
         }
         .timeline-dial {
             bottom: 0;
+            height: $timeline-height;
             left: 0;
             position: absolute;
             right: 0;
             top: 0;
-            width: 100%;
+            width: $timeline-width;
         }
         .timeline-element {
             height: $timeline-elem-height;
