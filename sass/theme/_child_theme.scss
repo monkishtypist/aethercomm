@@ -1735,6 +1735,16 @@ $timeline-rotation-increment: 34.5 !default;
 
 #what-we-do_page-wrapper {
     #what-we-do_header {
+        .section-overlay-image-desktop {
+            @include media-breakpoint-down('sm') {
+                display: none;
+            }
+        }
+        .section-overlay-image-mobile {
+            @include media-breakpoint-up('md') {
+                display: none;
+            }
+        }
     }
     #what-we-do_tabs {
         @include skewed-tabs( $black, $dark, $white, $white );

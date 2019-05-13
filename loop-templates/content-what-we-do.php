@@ -18,14 +18,14 @@ $container = get_theme_mod( 'understrap_container_type' );
 // Header image overlay
 if ( has_acf_field( 'page_header_background' ) ) {
     $section_header_image_id = get_acf_field( 'page_header_background', true );
-    $section_header_image = wp_get_attachment_image( $section_header_image_id, 'full', false, array( 'class' => 'section-overlay-image img-fluid' ) );
+    $section_header_image = wp_get_attachment_image( $section_header_image_id, 'full', false, array( 'class' => 'section-overlay-image section-overlay-image-desktop img-fluid' ) );
 } elseif ( has_post_thumbnail() ) {
-    $section_header_image = get_the_post_thumbnail( get_the_ID(), 'full', array( 'class' => 'section-overlay-image img-fluid' ) );
+    $section_header_image = get_the_post_thumbnail( get_the_ID(), 'full', array( 'class' => 'section-overlay-image section-overlay-image-desktop img-fluid' ) );
 } else {
     $section_header_image = false;
 }
 if ( has_post_thumbnail() ) {
-    $section_header_image_mobile = get_the_post_thumbnail( get_the_ID(), 'full', array( 'class' => 'section-overlay-image-mobile img-fluid' ) );
+    $section_header_image_mobile = get_the_post_thumbnail( get_the_ID(), 'full', array( 'class' => 'section-overlay-image section-overlay-image-mobile img-fluid' ) );
 }
 $overlay_color = ( has_acf_field( 'page_header_overlay' ) ? get_acf_field( 'page_header_overlay', true ) : 'black' );
 
