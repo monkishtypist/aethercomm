@@ -72,19 +72,22 @@ $terms = get_terms( array(
                 $query = new WP_Query( $args );
                 ?>
                 <?php if ( $query->have_posts() ) : ?>
-                    <?php while ( $query->have_posts() ) : $query->the_post(); ?>
-                        <div class="timeline-element">
-                            <?php if ( has_post_thumbnail() ) { ?>
-                                <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid timeline-image' ) ); ?>
-                            <?php } ?>
-                            <div class="timeline-content">
-                                <?php the_content(); ?>
+                    <div class="timeline-dial">
+                        <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/timeline-bg.png" class="timeline-dial-bg-image">
+                        <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                            <div class="timeline-element">
+                                <?php if ( has_post_thumbnail() ) { ?>
+                                    <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid timeline-image' ) ); ?>
+                                <?php } ?>
+                                <div class="timeline-content">
+                                    <?php the_content(); ?>
+                                </div>
+                                <div class="timeline-date">
+                                    <?php the_date( 'Y' ); ?>
+                                </div>
                             </div>
-                            <div class="timeline-date">
-                                <?php the_date( 'Y' ); ?>
-                            </div>
-                        </div>
-                    <?php endwhile; ?>
+                        <?php endwhile; ?>
+                    </div>
                 <?php endif; wp_reset_query(); ?>
             </div>
         <?php } ?>
