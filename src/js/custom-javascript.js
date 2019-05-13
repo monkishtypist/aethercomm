@@ -56,9 +56,26 @@
     // Video Button
     $('.play-video-button').on('click', function(event){
         event.preventDefault();
+        var embedCode = $(this).data('embed-code');
+        drawVideoModal( embedCode );
         var theModal = $('#video-modal');
         theModal.modal('show');
     });
+
+    var drawVideoModal = function( embedCode ) {
+        var html = '<!-- Modal -->' +
+            '<div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal-title" aria-hidden="true">' +
+                '<div class="modal-dialog modal-dialog-centered" role="document">' +
+                    '<div class="modal-content">' +
+                        '<button type="button" class="close" data-dismiss="modal" aria-label="Close">' +
+                            '<span aria-hidden="true"><i class="fal fa-times"></i></span>' +
+                        '</button>' +
+                        '<div class="modal-body">' + embedCode + '</div>' +
+                    '</div>' +
+                '</div>' +
+            '</div>';
+        $('#page').after( html );
+    }
 
     /**
      * Datatables

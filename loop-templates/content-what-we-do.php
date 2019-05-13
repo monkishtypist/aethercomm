@@ -107,7 +107,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 <div class="header-video-wrapper">
                     <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aethercomm-logo-colorful_white.png" class="img-fluid aethercomm-logo" alt="Aethercomm Logo" />
                     <?php if ( $video_embed_code ) { ?>
-                        <a href="#play-video" class="play-video-button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play-video.png" alt="Play Video" /></a>
+                        <a href="#play-video" class="play-video-button" data-embed-code='<?php echo $video_embed_code; ?>'><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play-video.png" alt="Play Video" /></a>
                     <?php } ?>
                 </div>
             </div>
@@ -115,22 +115,6 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
             <?php echo $section_crosshairs; ?>
 
         </div>
-
-        <?php if ( $video_embed_code ) { ?>
-            <!-- Modal -->
-            <div class="modal fade" id="video-modal" tabindex="-1" role="dialog" aria-labelledby="video-modal-title" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                    <div class="modal-content">
-                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true"><i class="fal fa-times"></i></span>
-                        </button>
-                        <div class="modal-body">
-                            <?php echo $video_embed_code; ?>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        <?php } ?>
 
     </section>
 
