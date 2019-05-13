@@ -17360,7 +17360,7 @@ table.dataTable thead .sorting_desc_disabled:before {
 /* Timeline */
 #timeline_section {
   overflow: hidden; }
-  #timeline_section .timeline-dial {
+  #timeline_section .timeline-wrapper {
     height: auto;
     left: 50%;
     margin-left: -491px;
@@ -17368,10 +17368,17 @@ table.dataTable thead .sorting_desc_disabled:before {
     position: relative;
     top: 0;
     width: 982px; }
-    #timeline_section .timeline-dial .timeline-dial-bg-image {
+    #timeline_section .timeline-wrapper .timeline-wrapper-dial-image {
       height: 982px;
       width: 982px; }
-    #timeline_section .timeline-dial .timeline-element {
+    #timeline_section .timeline-wrapper .timeline-dial {
+      position: absolute;
+      top: 232px;
+      width: 100%;
+      left: 0;
+      right: 0;
+      bottom: 0; }
+    #timeline_section .timeline-wrapper .timeline-element {
       height: 723px;
       left: 50%;
       margin-left: -110px;
@@ -17386,35 +17393,26 @@ table.dataTable thead .sorting_desc_disabled:before {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
       width: 220px; }
-      #timeline_section .timeline-dial .timeline-element.timeline-previous {
-        opacity: 0;
-        -webkit-transform: rotate(-69deg);
-                transform: rotate(-69deg); }
-        #timeline_section .timeline-dial .timeline-element.timeline-previous:last-of-type {
-          opacity: 1;
-          -webkit-transform: rotate(-34.5deg);
-                  transform: rotate(-34.5deg); }
-      #timeline_section .timeline-dial .timeline-element.timeline-next {
-        opacity: 1;
-        -webkit-transform: rotate(34.5deg);
-                transform: rotate(34.5deg); }
-        #timeline_section .timeline-dial .timeline-element.timeline-next ~ .timeline-next {
-          opacity: 0;
-          -webkit-transform: rotate(69deg);
-                  transform: rotate(69deg); }
-      #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-date, #timeline_section .timeline-dial .timeline-element.timeline-next .timeline-date {
-        color: #707070; }
-      #timeline_section .timeline-dial .timeline-element.timeline-previous .timeline-content, #timeline_section .timeline-dial .timeline-element.timeline-next .timeline-content {
+      #timeline_section .timeline-wrapper .timeline-element[data-focus="near"] {
+        opacity: 1; }
+        #timeline_section .timeline-wrapper .timeline-element[data-focus="near"] .timeline-image {
+          opacity: 0; }
+        #timeline_section .timeline-wrapper .timeline-element[data-focus="near"] .timeline-date {
+          color: #707070; }
+        #timeline_section .timeline-wrapper .timeline-element[data-focus="near"] .timeline-content {
+          opacity: 0; }
+      #timeline_section .timeline-wrapper .timeline-element[data-focus="false"] {
         opacity: 0; }
-      #timeline_section .timeline-dial .timeline-element .timeline-image {
+      #timeline_section .timeline-wrapper .timeline-element .timeline-image {
         height: 186px;
         margin-top: 1.5rem;
+        opacity: 0;
         width: auto; }
-      #timeline_section .timeline-dial .timeline-element .timeline-date {
+      #timeline_section .timeline-wrapper .timeline-element .timeline-date {
         color: #222222;
         font-weight: 700;
         margin-top: 3.7rem; }
-      #timeline_section .timeline-dial .timeline-element .timeline-content {
+      #timeline_section .timeline-wrapper .timeline-element .timeline-content {
         color: #fff;
         font-size: 1.125rem;
         font-weight: 300;

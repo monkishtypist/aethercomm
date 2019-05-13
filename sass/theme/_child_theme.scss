@@ -1277,18 +1277,26 @@ $timeline-rotation-increment: 34.5 !default;
     // background-size: auto;
     // height: 578px;
     overflow: hidden;
-    .timeline-dial {
+    .timeline-wrapper {
         // position: absolute;
         height: auto;
         left: 50%;
         margin-left: -#{$timeline-width * .5};
-        padding-top: 232px;
+        padding-top: $timeline-height-offset;
         position: relative;
         top: 0;
         width: $timeline-width;
-        .timeline-dial-bg-image {
+        .timeline-wrapper-dial-image {
             height: $timeline-width;
             width: $timeline-width;
+        }
+        .timeline-dial {
+            position: absolute;
+            top: $timeline-height-offset;
+            width: 100%;
+            left: 0;
+            right: 0;
+            bottom: 0;
         }
         .timeline-element {
             height: $timeline-elem-height;
@@ -1302,27 +1310,11 @@ $timeline-rotation-increment: 34.5 !default;
             transform: rotate(0deg);
             transition: $transition-base;
             width: $timeline-elem-width;
-            &:not(:first-of-type) {
-                // display: none; // temp hide while working on layout
-            }
-            &.timeline-previous {
-                opacity: 0;
-                transform: rotate(-#{$timeline-rotation-increment * 2deg});
-                &:last-of-type {
-                    opacity: 1;
-                    transform: rotate(-#{$timeline-rotation-increment * 1deg});
-                }
-            }
-            &.timeline-next {
+            &[data-focus="near"] {
                 opacity: 1;
-                transform: rotate(#{$timeline-rotation-increment * 1deg});
-                ~ .timeline-next {
+                .timeline-image {
                     opacity: 0;
-                    transform: rotate(#{$timeline-rotation-increment * 2deg});
                 }
-            }
-            &.timeline-previous,
-            &.timeline-next {
                 .timeline-date {
                     color: $gray-600;
                 }
@@ -1330,9 +1322,13 @@ $timeline-rotation-increment: 34.5 !default;
                     opacity: 0;
                 }
             }
+            &[data-focus="false"] {
+                opacity: 0;
+            }
             .timeline-image {
                 height: 186px;
                 margin-top: #{$spacer * 1.5};
+                opacity: 0;
                 width: auto;
             }
             .timeline-date {
