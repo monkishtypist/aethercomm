@@ -77,7 +77,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				<?php wp_nav_menu(
 					array(
 						'theme_location'  => 'primary-mobile',
-						'container_class' => 'collapse navbar-collapse d-block d-md-none',
+						'container_class' => 'collapse navbar-collapse',
 						'container_id'    => 'container-main-menu-mobile',
 						'menu_class'      => 'navbar-nav ml-auto',
 						'fallback_cb'     => '',
