@@ -25045,6 +25045,7 @@ return DataTable;
         // modify queued state
         queued = ! queued;
         $(this).data( 'queued', queued ).attr( 'data-queued', queued );
+        sendModelsToForm();
     });
 
     // Load models in form
@@ -25062,6 +25063,7 @@ return DataTable;
         $(this).siblings('.product-queue-link').data( 'queued', queued ).attr( 'data-queued', queued );
         // send data to form
         sendModelsToForm();
+        gottoForm();
     });
 
     // Load models in form
@@ -25071,6 +25073,7 @@ return DataTable;
         modelNumbersRemoveAll();
         preloadQueuedModels();
         sendAllModelsToForm();
+        gottoForm();
     });
 
     // unique()
@@ -25091,7 +25094,6 @@ return DataTable;
         var modelsQueuedString = modelsQueued.join();
         $('.gfield.products-requested-field input').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').append( modelsQueuedString );
-        $('form.contact-form')[0].scrollIntoView().find('li.gfield:first-of-type input').focus();
     }
 
     // Send all models to Form
@@ -25099,7 +25101,12 @@ return DataTable;
         var modelsQueuedString = 'All';
         $('.gfield.products-requested-field input').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').append( modelsQueuedString );
-        $('form.contact-form')[0].scrollIntoView().find('li.gfield:first-of-type input').focus();
+    }
+
+    // Go to the form
+    var gottoForm = function() {
+        $('form.contact-form')[0].scrollIntoView();
+        $('form.contact-form').find('li.gfield:first-of-type input').focus();
     }
 
     // Get Models Queued
@@ -25168,6 +25175,8 @@ return DataTable;
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
     }
+
+    // Update Products Queued field textarea
 
     // Update model queue links
     var preloadQueuedModels = function() {
