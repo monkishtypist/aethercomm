@@ -1746,6 +1746,11 @@ $timeline-rotation-increment: 34.5 !default;
 
 #what-we-do_page-wrapper {
     #what-we-do_header {
+        .section-overlay-image {
+            min-width: auto;
+            max-width: 75%;
+            float: right;
+        }
         .section-overlay-image-desktop {
             @include media-breakpoint-down('sm') {
                 display: none;

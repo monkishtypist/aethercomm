@@ -105,9 +105,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <?php echo $page_header_copy; ?>
                 </header>
                 <div class="header-video-wrapper">
-                    <?php if ( has_custom_logo() ) { ?>
-                        <?php the_custom_logo(); ?><!-- <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/logo-colorful.png" alt="Aethercomm Logo" /> -->
-                    <?php } ?>
+                    <img src="<?php echo get_stylesheet_directory_uri(); ?>/images/aethercomm-logo-colorful_white.png" alt="Aethercomm Logo" />
                     <?php if ( $video_embed_code ) { ?>
                         <a href="#play-video" class="play-video-button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play-video.png" alt="Play Video" /></a>
                     <?php } ?>

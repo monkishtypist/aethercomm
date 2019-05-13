@@ -17876,6 +17876,11 @@ table.dataTable thead .sorting_desc_disabled:before {
     #who-we-are_page-wrapper #who-we-are_team #team-members-cards .card {
       max-width: 100%; } }
 
+#what-we-do_page-wrapper #what-we-do_header .section-overlay-image {
+  min-width: auto;
+  max-width: 75%;
+  float: right; }
+
 @media (max-width: 768.98px) {
   #what-we-do_page-wrapper #what-we-do_header .section-overlay-image-desktop {
     display: none; } }
