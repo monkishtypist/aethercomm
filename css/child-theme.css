@@ -17388,7 +17388,6 @@ table.dataTable thead .sorting_desc_disabled:before {
       height: 723px;
       left: 50%;
       margin-left: -110px;
-      opacity: 1;
       position: absolute;
       text-align: center;
       top: 0;
@@ -17399,6 +17398,14 @@ table.dataTable thead .sorting_desc_disabled:before {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out;
       width: 220px; }
+      #timeline_section .timeline-wrapper .timeline-element[data-focus="focus"] {
+        opacity: 1; }
+        #timeline_section .timeline-wrapper .timeline-element[data-focus="focus"] .timeline-image {
+          opacity: 1; }
+        #timeline_section .timeline-wrapper .timeline-element[data-focus="focus"] .timeline-date {
+          color: #222222; }
+        #timeline_section .timeline-wrapper .timeline-element[data-focus="focus"] .timeline-content {
+          opacity: 1; }
       #timeline_section .timeline-wrapper .timeline-element[data-focus="near"] {
         opacity: 1; }
         #timeline_section .timeline-wrapper .timeline-element[data-focus="near"] .timeline-image {
@@ -17412,7 +17419,6 @@ table.dataTable thead .sorting_desc_disabled:before {
       #timeline_section .timeline-wrapper .timeline-element .timeline-image {
         height: 186px;
         margin-top: 1.5rem;
-        opacity: 0;
         width: auto; }
       #timeline_section .timeline-wrapper .timeline-element .timeline-date {
         color: #222222;
@@ -17423,7 +17429,6 @@ table.dataTable thead .sorting_desc_disabled:before {
         font-size: 1.125rem;
         font-weight: 300;
         margin-top: 6rem;
-        opacity: 1;
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out; }
