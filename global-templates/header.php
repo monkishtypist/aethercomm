@@ -78,9 +78,12 @@ endif;
 
 $section_classes = sprintf( 'section_header %1$s_header ',
     $template_slug );
+$section_crosshairs = '<span class="crosshairs-gray crosshairs-sm-gray crosshairs-top-left"></span><span class="crosshairs-gray crosshairs-top-right"></span>';
+
 if ( $section_header_image ) {
     $section_classes .= sprintf( 'section-header-overlay section-header-overlay_',
         $overlay_color );
+    $section_crosshairs = '<span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span><span class="crosshairs-white crosshairs-top-right"></span>';
 }
 
 ?>
@@ -104,8 +107,7 @@ if ( $section_header_image ) {
             <?php echo $page_header_copy; ?>
         </header>
 
-        <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
-        <span class="crosshairs-gray crosshairs-top-right"></span>
+        <?php echo $section_crosshairs; ?>
 
     </div>
 
