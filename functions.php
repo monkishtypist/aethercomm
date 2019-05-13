@@ -767,16 +767,20 @@ add_filter( 'gform_confirmation_anchor', '__return_true' );
 
 // Allow the Gravity form to stay on the page when confirmation displays.
 add_filter( 'gform_pre_submission_filter', 'aethercomm_show_confirmation_and_form' );
-function aethercomm_show_confirmation_and_form( $form ) {
-	$shortcode = '[gravityform id="' . $form['id'] . '" title="false    " description="false"]';
+if ( ! function_exists( 'aethercomm_show_confirmation_and_form' ) ) {
+    function aethercomm_show_confirmation_and_form( $form ) {
+        $shortcode = '[gravityform id="' . $form['id'] . '" title="false" description="false" ajax="true"]';
 
-	if ( array_key_exists( 'confirmations', $form ) ) {
-		foreach ( $form['confirmations'] as $key => $confirmation ) {
-            $form['confirmations'][ $key ]['message'] = sprintf( '%1$s<div class="alert alert-success alert-dismissible fade show mt-5" role="alert">%2$s<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>',
-                $shortcode,
-                $form['confirmations'][ $key ]['message'] );
-		}
-	}
+        if ( array_key_exists( 'confirmations', $form ) ) {
+            foreach ( $form['confirmations'] as $key => $confirmation ) {
+                $form['confirmations'][ $key ]['message'] = sprintf( '%1$s%2$s',
+                    sprintf( '<div class="alert alert-success alert-dismissible fade show mt-5" role="alert">%1$s<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button></div>',
+                        $form['confirmations'][ $key ]['message'] ),
+                    $shortcode
+                );
+            }
+        }
 
-	return $form;
+        return $form;
+    }
 }

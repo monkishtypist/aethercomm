@@ -25129,16 +25129,6 @@ return DataTable;
         $('.gfield.products-requested-field textarea').append( modelsQueuedString );
     }
 
-    // Send all models to Form
-    var sendAllModelsToForm = function() {
-        $('.gfield.products-requested-field input').val( '' );
-        $('.gfield.products-requested-field textarea').val( '' );
-        var modelsQueuedString = 'All';
-        $('.gfield.products-requested-field input').val( modelsQueuedString );
-        $('.gfield.products-requested-field textarea').val( modelsQueuedString );
-        $('.gfield.products-requested-field textarea').append( modelsQueuedString );
-    }
-
     // Go to the form
     var goToForm = function() {
         $('form.contact-form')[0].scrollIntoView();
