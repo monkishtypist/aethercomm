@@ -1157,7 +1157,8 @@ li {
 textarea {
     max-height: #{$spacer * 6.875};
 }
-.section-contact-form {
+.section-contact-form,
+.section-request-product-form {
     background-image: url(../images/path3.png),
         url(../images/path1.png),
         url(../images/swoosh_bg.png),
@@ -1169,7 +1170,8 @@ textarea {
     background-repeat: no-repeat;
     background-size: auto, auto, auto, cover;
     text-align: center;
-    .contact-widget {
+    .contact-widget,
+    .request-product-widget {
         @extend .col-12;
         @extend .col-md-6;
         @extend .offset-md-3;
@@ -1178,7 +1180,8 @@ textarea {
     .crosshairs-top-right {
         top: #{(($h2-font-size * $h2-line-height) - ($spacer * 1.375)) / 2};
     }
-    form.contact-form {
+    form.contact-form,
+    form.request-product-form {
         margin-top: -#{$spacer * 15};
         padding-top: #{$spacer * 15};
         @include media-breakpoint-down('xs') {

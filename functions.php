@@ -737,6 +737,18 @@ if ( ! function_exists( 'understrap_widgets_init' ) ) {
 
 		register_sidebar(
 			array(
+				'name'          => __( 'Request Product Form', 'aethercomm' ),
+				'id'            => 'request-product',
+				'description'   => __( 'Request Product form section', 'aethercomm' ),
+				'before_widget' => '<div id="%1$s" class="request-product-widget %2$s">',
+				'after_widget'  => '</div><!-- .request-product-widget -->',
+				'before_title'  => '<h3 class="widget-title sr-only">',
+				'after_title'   => '</h3>',
+			)
+		);
+
+		register_sidebar(
+			array(
 				'name'          => __( 'Blog Sidebar', 'aethercomm' ),
 				'id'            => 'blog',
 				'description'   => __( 'Left sidebar on blog pages', 'aethercomm' ),
