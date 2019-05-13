@@ -15291,6 +15291,8 @@ section {
   @media (max-width: 768.98px) {
     section.default-page-content {
       padding-top: 0; } }
+  .section_header:not(.section-header-overlay) + section.default-page-content {
+    padding-top: 0; }
 
 .section-dark {
   background-color: #222222;
