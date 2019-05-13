@@ -273,6 +273,7 @@
                 $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );
             }
         });
+        sendModelsToForm();
     }
     preloadQueuedModels();
 
