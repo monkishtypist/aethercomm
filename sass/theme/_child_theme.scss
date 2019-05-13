@@ -1200,6 +1200,13 @@ textarea {
     }
 }
 
+/* Modals */
+.modal-dialog {
+    @include media-breakpoint-up('md') {
+        width: 80%;
+    }
+}
+
 /* Pagination */
 .pagination {
     margin-top: #{$spacer * 3.25};

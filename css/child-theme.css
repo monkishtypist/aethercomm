@@ -17306,6 +17306,11 @@ textarea {
     .child-page-content .rev-slider-outer {
       margin-bottom: 4rem !important; } }
 
+/* Modals */
+@media (min-width: 769px) {
+  .modal-dialog {
+    width: 80%; } }
+
 /* Pagination */
 .pagination {
   margin-top: 3.25rem; }
