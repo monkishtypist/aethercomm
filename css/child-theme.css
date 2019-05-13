@@ -17447,7 +17447,7 @@ table.dataTable thead .sorting_desc_disabled:before {
         opacity: 0;
         -webkit-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
-        width: auto; }
+        width: 100%; }
       #timeline_section .timeline-wrapper .timeline-element .timeline-date {
         color: #222222;
         font-weight: 700;

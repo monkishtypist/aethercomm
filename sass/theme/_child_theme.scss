@@ -1371,7 +1371,7 @@ $timeline-rotation-increment: 34.5 !default;
                 margin-top: #{$spacer * 1.5};
                 opacity: 0;
                 transition: $transition-base;
-                width: auto;
+                width: 100%;
             }
             .timeline-date {
                 color: $dark;

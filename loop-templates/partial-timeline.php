@@ -62,9 +62,11 @@ $terms = get_terms( array(
                         <div class="timeline-dial" data-focus="0" data-rotate="0">
                             <?php while ( $query->have_posts() ) : $query->the_post(); ?>
                                 <div class="timeline-element">
-                                    <?php if ( has_post_thumbnail() ) { ?>
-                                        <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid timeline-image' ) ); ?>
-                                    <?php } ?>
+                                    <div class="timeline-image">
+                                        <?php if ( has_post_thumbnail() ) { ?>
+                                            <?php the_post_thumbnail( 'full', array( 'class' => 'img-fluid' ) ); ?>
+                                        <?php } ?>
+                                    </div>
                                     <div class="timeline-date">
                                         <?php the_date( 'Y' ); ?>
                                     </div>
