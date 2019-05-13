@@ -1201,9 +1201,20 @@ textarea {
 }
 
 /* Modals */
+.modal {
+    z-index: 99999;
+    .close {
+        color: #{$white};
+        opacity: 1;
+        position: absolute;
+        right: -1.4rem;
+        top: -2rem;
+    }
+}
 .modal-dialog {
     @include media-breakpoint-up('md') {
-        width: 80%;
+        width: 60%;
+        max-width: 80% !important;
     }
 }
 
