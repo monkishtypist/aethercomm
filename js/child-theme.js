@@ -25135,6 +25135,7 @@ return DataTable;
     var sendModelsToForm = function( model ) {
         $('.gfield.products-requested-field input').val( '' );
         $('.gfield.products-requested-field textarea').val( '' );
+        $('.gfield.products-requested-field textarea').text( '' );
         if ( model ) {
             var modelsQueued = model;
         } else {
@@ -25147,7 +25148,7 @@ return DataTable;
         }
         $('.gfield.products-requested-field input').val( modelsQueuedString );
         $('.gfield.products-requested-field textarea').val( modelsQueuedString );
-        $('.gfield.products-requested-field textarea').append( modelsQueuedString );
+        $('.gfield.products-requested-field textarea').text( modelsQueuedString );
     }
 
     // Go to the form
