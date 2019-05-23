@@ -27,7 +27,7 @@ $model_number = get_acf_field( 'product_specs_model_number', true );
         <div class="row no-gutters">
             <?php if ( has_post_thumbnail() ) { ?>
                 <div class="col-12 col-md-3 pr-md-1">
-                    <?php the_post_thumbnail( 'thumbnail', array( 'class' => 'img-fluid' ) ); ?>
+                    <?php the_post_thumbnail( 'medium', array( 'class' => 'img-fluid' ) ); ?>
                 </div>
             <?php } ?>
             <div class="col">
