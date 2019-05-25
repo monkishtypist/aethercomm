@@ -25118,14 +25118,17 @@ return DataTable;
         // get model number and queue
         var modelNumber = $(this).data('model-number');
         var modelsQueued = getModelsQueued();
+        console.log( modelsQueued );
 
         // check if model already in queue
         if ( modelsQueued.indexOf( modelNumber ) ) {
+            console.log( 'indexOf' );
             // send dueued data to form
             sendModelsToForm();
         } else {
             // send just this model to the form
             sendModelsToForm( modelNumber );
+            console.log( 'noindex' );
         }
 
         // scroll to the form
