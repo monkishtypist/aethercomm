@@ -166,7 +166,7 @@
         sendModelsToForm();
     });
 
-    // Load models in form
+    // Load models in form on product request click
     $(document).on( 'click', '.product-request', function( event ) {
         event.preventDefault();
         // add model number to queue
@@ -181,6 +181,26 @@
         $(this).siblings('.product-queue-link').data( 'queued', queued ).attr( 'data-queued', queued );
         // send data to form
         sendModelsToForm();
+        goToForm();
+    });
+
+    // Load single model in form on product request click
+    $(document).on( 'click', '.product-request-single', function( event ) {
+        event.preventDefault();
+        // get model number and queue
+        var modelNumber = $(this).data('model-number');
+        var modelsQueued = getModelsQueued();
+
+        // check if model already in queue
+        if ( modelsQueued.indexOf( modelNumber ) ) {
+            // send dueued data to form
+            sendModelsToForm();
+        } else {
+            // send just this model to the form
+            sendModelsToForm( modelNumber );
+        }
+
+        // scroll to the form
         goToForm();
     });
 

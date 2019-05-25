@@ -58,7 +58,10 @@ $model_number = get_acf_field( 'product_specs_model_number', true );
                             __( 'Data Sheet', 'aethercomm' )
                         ); ?>
                         <?php the_content(); ?>
-                        <p><a href="#" class="product-request btn btn-lg btn-secondary" data-model-number="<?php echo $model_number; ?>"><?php _e( 'Request Details', 'aethercomm' ); ?></a></p>
+                        <p>
+                            <a href="#" class="product-request-single btn btn-lg btn-secondary" data-model-number="<?php echo $model_number; ?>"><?php _e( 'Request Details', 'aethercomm' ); ?></a>
+                            <a href="#" class="product-queue-link" data-model-number="<?php echo $model_number; ?>" data-queued="false"><?php _e( 'Add to queue', 'aethercomm' ); ?></a>
+                        </p>
                     </header>
 
                 </div>
