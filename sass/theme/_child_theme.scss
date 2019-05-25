@@ -273,6 +273,27 @@ $container-padding-sm: 2.25rem;
         }
     }
 }
+@mixin product-queue-link-styles() {
+    color: #{$blue};
+    font-size: #{$font-size-base * 0.625};
+    font-weight: #{$font-weight-bold};
+    letter-spacing: .025em;
+    text-align: center;
+    text-transform: uppercase;
+    &:active, &:hover {
+        text-decoration: none;
+    }
+    &::before {
+        content: "\f00c";
+        display: inline;
+        font-family: $font-family-fa;
+        font-weight: #{$font-weight-normal};
+        margin-right: #{$spacer * .25};
+    }
+    &[data-queued="true"] {
+        color: $green;
+    }
+}
 
 /**
  * Typography
@@ -2353,25 +2374,7 @@ $timeline-rotation-increment: 34.5 !default;
                 }
             }
             .product-queue-link {
-                color: #{$blue};
-                font-size: #{$font-size-base * 0.625};
-                font-weight: #{$font-weight-bold};
-                letter-spacing: .025em;
-                text-align: center;
-                text-transform: uppercase;
-                &:active, &:hover {
-                    text-decoration: none;
-                }
-                &::before {
-                    content: "\f00c";
-                    display: inline;
-                    font-family: $font-family-fa;
-                    font-weight: #{$font-weight-normal};
-                    margin-right: #{$spacer * .25};
-                }
-                &[data-queued="true"] {
-                    color: $green;
-                }
+                @include product-queue-link-styles();
             }
         }
     }
@@ -2421,6 +2424,9 @@ $timeline-rotation-increment: 34.5 !default;
                 }
             }
         }
+    }
+    .product-queue-link {
+        @include product-queue-link-styles();
     }
     #single-products_specifications {
         background-image: url(../images/path5.png), url(../images/products-specs-tab-bg.png);
