@@ -115,7 +115,7 @@
 
     $('#product-cats-nav').on( 'click', 'a', function( event ) {
         event.preventDefault();
-        if ( $(this).hasClass('active') ) {
+        if ( $(this).hasClass('active') || $(this).data('show-all') ) {
             table.columns( 5 ).search( '' ).draw();
             $(this).removeClass('active');
         } else {
@@ -225,8 +225,8 @@
 
     // Go to the form
     var goToForm = function() {
-        $('form.contact-form')[0].scrollIntoView();
-        $('form.contact-form').find('li.gfield:first-of-type input').focus();
+        $('form.request-product-form')[0].scrollIntoView();
+        $('form.request-product-form').find('li.gfield:first-of-type input').focus();
     }
 
     // Get Models Queued
@@ -305,7 +305,7 @@
         // console.log(modelsQueued);
         $('.product-queue-link').each( function() {
             var modelNumber = $(this).data('model-number');
-            if ( modelsQueued.indexOf( modelNumber ) > -1 ) {
+            if ( modelsQueued !== null && modelsQueued.indexOf( modelNumber ) > -1 ) {
                 $(this).data( 'queued', true ).attr( 'data-queued', true ).html( "Queued" );
             } else {
                 $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );

@@ -65,6 +65,13 @@ $product_cats = get_categories( $product_cats_args );
             <div class="<?php echo esc_attr( $container ); ?>">
 
                 <nav id="product-cats-nav" class="nav">
+                    <?php echo sprintf( '<a class="nav-link active" href="%1$s" data-show-all="true" data-cat-slug="%2$s" data-cat-count="%3$s">%4$s</a>',
+                        '#', // get_category_link( $product_cat ),
+                        __( 'all', 'aethercomm' ),
+                        '',
+                        sprintf( '<strong>%1$s</strong>',
+                            __( 'All', 'aethercomm' )
+                        ) ); ?>
                     <?php foreach ( $product_cats as $product_cat ) : ?>
                         <?php echo sprintf( '<a class="nav-link" href="%1$s" data-cat-slug="%2$s" data-cat-count="%3$s">%4$s</a>',
                             '#', // get_category_link( $product_cat ),
@@ -108,13 +115,13 @@ $product_cats = get_categories( $product_cats_args );
 
                 <thead>
                     <tr>
-                        <th>Filters</th>
-                        <th>Part Number</th>
-                        <th>Frequency Min</th>
-                        <th>Frequency Max</th>
-                        <th>Watts</th>
-                        <th class="col-hidden">Category</th>
-                        <th>Description</th>
+                        <th><?php _e( 'Filters', 'aethercomm' ); ?></th>
+                        <th><?php _e( 'Part Number', 'aethercomm' ); ?></th>
+                        <th><?php _e( 'Frequency Min', 'aethercomm' ); ?></th>
+                        <th><?php _e( 'Frequency Max', 'aethercomm' ); ?></th>
+                        <th><?php _e( 'Watts', 'aethercomm' ); ?></th>
+                        <th class="col-hidden"><?php _e( 'Category', 'aethercomm' ); ?></th>
+                        <th><?php _e( 'Description', 'aethercomm' ); ?></th>
                     </tr>
                 </thead>
 
