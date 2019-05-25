@@ -25122,7 +25122,7 @@ return DataTable;
 
         // check if model already in queue
         if ( modelsQueued.indexOf( modelNumber ) ) {
-            console.log( 'indexOf' );
+            console.log( 'indexOf: ' + modelsQueued.indexOf( modelNumber ) );
             // send dueued data to form
             sendModelsToForm();
         } else {
@@ -25266,7 +25266,7 @@ return DataTable;
             }
             // console.log(modelsQueued.indexOf( modelNumber ));
         });
-        sendModelsToForm();
+        // sendModelsToForm();
     }
     preloadQueuedModels();
 
