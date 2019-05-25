@@ -25121,7 +25121,7 @@ return DataTable;
         console.log( modelsQueued );
 
         // check if model already in queue
-        if ( modelsQueued.indexOf( modelNumber ) ) {
+        if ( modelsQueued !== null && modelsQueued.indexOf( modelNumber ) > -1 ) {
             console.log( 'indexOf: ' + modelsQueued.indexOf( modelNumber ) );
             // send dueued data to form
             sendModelsToForm();
