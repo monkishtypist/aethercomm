@@ -65,10 +65,8 @@ $product_cats = get_categories( $product_cats_args );
             <div class="<?php echo esc_attr( $container ); ?>">
 
                 <nav id="product-cats-nav" class="nav">
-                    <?php echo sprintf( '<a class="nav-link active" href="%1$s" data-show-all="true" data-cat-slug="%2$s" data-cat-count="%3$s">%4$s</a>',
+                    <?php echo sprintf( '<a class="nav-link active" href="%1$s" data-show-all="true" data-cat-slug="" data-cat-count="">%2$s</a>',
                         '#', // get_category_link( $product_cat ),
-                        __( 'all', 'aethercomm' ),
-                        '',
                         sprintf( '<strong>%1$s</strong>',
                             __( 'All', 'aethercomm' )
                         ) ); ?>

@@ -25043,9 +25043,12 @@ return DataTable;
 
     $('#product-cats-nav').on( 'click', 'a', function( event ) {
         event.preventDefault();
-        if ( $(this).hasClass('active') || $(this).data('show-all') ) {
+        if ( $(this).hasClass('active') ) {
             table.columns( 5 ).search( '' ).draw();
-            $(this).removeClass('active');
+            if ( ! $(this).data('show-all') ) {
+                $(this).removeClass('active');
+                $('#product-cats-nav').find('a[data-show-all]').addClass('active');
+            }
         } else {
             table.columns( 5 ).search( '^'+$(this).data('cat-slug')+'$', true, false ).draw();
             $(this).addClass('active').siblings().removeClass('active');
