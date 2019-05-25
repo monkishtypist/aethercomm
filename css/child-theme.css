@@ -18665,9 +18665,11 @@ table.dataTable thead .sorting_desc_disabled:before {
 
 #products_page-wrapper #products-table_wrapper #products-table .product-queue-link {
   color: #4A63AE;
+  display: block;
   font-size: 0.625rem;
   font-weight: 700;
   letter-spacing: .025em;
+  margin-top: 1em;
   text-align: center;
   text-transform: uppercase; }
   #products_page-wrapper #products-table_wrapper #products-table .product-queue-link:active, #products_page-wrapper #products-table_wrapper #products-table .product-queue-link:hover {
@@ -18722,11 +18724,14 @@ table.dataTable thead .sorting_desc_disabled:before {
 
 #single_products-wrapper .product-queue-link {
   color: #4A63AE;
+  display: block;
   font-size: 0.625rem;
   font-weight: 700;
   letter-spacing: .025em;
+  margin-top: 1em;
   text-align: center;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  text-align: left; }
   #single_products-wrapper .product-queue-link:active, #single_products-wrapper .product-queue-link:hover {
     text-decoration: none; }
   #single_products-wrapper .product-queue-link::before {

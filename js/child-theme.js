@@ -25138,10 +25138,11 @@ return DataTable;
     // Load models in form
     $(document).on( 'click', '.product-request-all', function( event ) {
         event.preventDefault();
+        $(this).removeClass('btn-outline-gray').addClass('btn-secondary');
         // add model number 'all' to queue
         modelNumbersRemoveAll();
         preloadQueuedModels();
-        sendModelsToForm( 'All' );
+        sendModelsToForm( 'All products' );
         goToForm();
     });
 
@@ -25213,6 +25214,7 @@ return DataTable;
             }
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
+        $('.product-request-all.btn-secondary').removeClass('btn-secondary').addClass('btn-outline-gray'); // cleanup All button styles
         sendModelsToForm();
     }
 

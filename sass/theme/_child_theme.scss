@@ -275,9 +275,11 @@ $container-padding-sm: 2.25rem;
 }
 @mixin product-queue-link-styles() {
     color: #{$blue};
+    display: block;
     font-size: #{$font-size-base * 0.625};
     font-weight: #{$font-weight-bold};
     letter-spacing: .025em;
+    margin-top: 1em;
     text-align: center;
     text-transform: uppercase;
     &:active, &:hover {
@@ -2427,6 +2429,7 @@ $timeline-rotation-increment: 34.5 !default;
     }
     .product-queue-link {
         @include product-queue-link-styles();
+        text-align: left;
     }
     #single-products_specifications {
         background-image: url(../images/path5.png), url(../images/products-specs-tab-bg.png);
