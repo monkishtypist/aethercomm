@@ -214,7 +214,7 @@
         // add model number 'all' to queue
         modelNumbersRemoveAll();
         preloadQueuedModels();
-        sendModelsToForm( 'All products' );
+        sendModelsToForm( 'I would like details for all products.' );
         goToForm();
     });
 

@@ -2340,7 +2340,7 @@ $timeline-rotation-increment: 34.5 !default;
     }
     #products_loop {
         .product-request-all {
-            color: $gray-500;
+            // color: $gray-500;
             font-weight: $font-weight-black;
             letter-spacing: .050em;
             padding-left: #{$spacer * 2};
