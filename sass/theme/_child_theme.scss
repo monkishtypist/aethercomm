@@ -1295,6 +1295,13 @@ textarea {
     }
 }
 
+/* Sitemaps */
+#site-map_content {
+    a {
+        color: $blue;
+    }
+}
+
 /* Data Tables */
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:before,

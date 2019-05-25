@@ -17434,6 +17434,10 @@ textarea {
   border-color: #4A63AE;
   color: #fff; }
 
+/* Sitemaps */
+#site-map_content a {
+  color: #4A63AE; }
+
 /* Data Tables */
 table.dataTable thead .sorting:before,
 table.dataTable thead .sorting_asc:before,
