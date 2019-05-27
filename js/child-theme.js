@@ -25389,9 +25389,9 @@ return DataTable;
      * closed.
      */
 	var navTimer;
-	var navRef; // li.dropdown
+	var navRef; // .dropdown
 
-	$(".nav-item")
+	$(".dropdown")
 		.on("mouseover", showDropdown)
 		.on("mouseleave", function(){
 			navTimer = setTimeout( hideDropdown, 250);

@@ -749,15 +749,30 @@ section {
                 color: $white;
                 background-color: transparent;
                 &:hover {
-                    color: $blue;
+                    color: rgba($white, .75);
                     background-color: transparent;
                     text-shadow: 0 0 3px $black;
+                }
+            }
+            .current_page_item {
+                .dropdown-item {
+                    &:hover {
+                        color: $blue;
+                    }
                 }
             }
         }
         &:hover {
             > .dropdown-menu {
                 display: block;
+            }
+        }
+    }
+    .btn-outline-primary {
+        a {
+            color: $white;
+            &:hover {
+                color: $white;
             }
         }
     }
@@ -778,22 +793,28 @@ section {
         &:last-of-type {
             margin-right: 0;
         }
+        > .nav-link { // <a>
+            font-size: #{$font-size-base * .875};
+            font-weight: #{$font-weight-bold};
+            text-transform: uppercase;
+        }
+    }
+    .nav-item {
         &.active,
         &.current-page-ancestor,
+        &.current-page-parent,
+        &.current-menu-item,
+        &.current_page_item,
         &.current_page_parent {
-            > .nav-link {
-                color: #{$blue};
+            > .nav-link,
+            > .dropdown-item {
+                color: $blue;
             }
             &.btn {
                 > .nav-link {
                     color: #{$white};
                 }
             }
-        }
-        > .nav-link { // <a>
-            font-size: #{$font-size-base * .875};
-            font-weight: #{$font-weight-bold};
-            text-transform: uppercase;
         }
     }
     #container-main-menu & {

@@ -3845,9 +3845,9 @@ input[type="button"].btn-block {
       color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand {
-  color: #4A63AE; }
+  color: rgba(255, 255, 255, 0.75); }
   .navbar-dark .navbar-brand:hover, .navbar-dark .navbar-brand:focus {
-    color: #4A63AE; }
+    color: rgba(255, 255, 255, 0.75); }
 
 .navbar-dark .navbar-nav .nav-link {
   color: #fff; }
@@ -3860,7 +3860,7 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-nav .active > .nav-link,
 .navbar-dark .navbar-nav .nav-link.show,
 .navbar-dark .navbar-nav .nav-link.active {
-  color: #4A63AE; }
+  color: rgba(255, 255, 255, 0.75); }
 
 .navbar-dark .navbar-toggler {
   color: #fff;
@@ -3872,9 +3872,9 @@ input[type="button"].btn-block {
 .navbar-dark .navbar-text {
   color: #fff; }
   .navbar-dark .navbar-text a {
-    color: #4A63AE; }
+    color: rgba(255, 255, 255, 0.75); }
     .navbar-dark .navbar-text a:hover, .navbar-dark .navbar-text a:focus {
-      color: #4A63AE; }
+      color: rgba(255, 255, 255, 0.75); }
 
 .card {
   position: relative;
@@ -8165,9 +8165,9 @@ a.skip-link {
     color: rgba(0, 0, 0, 0.9); }
 
 .navbar-dark .navbar-brand a {
-  color: #4A63AE; }
+  color: rgba(255, 255, 255, 0.75); }
   .navbar-dark .navbar-brand a:hover, .navbar-dark .navbar-brand a:focus {
-    color: #4A63AE; }
+    color: rgba(255, 255, 255, 0.75); }
 
 .navbar h1 {
   font-weight: 400; }
@@ -15518,11 +15518,17 @@ section {
       color: #fff;
       background-color: transparent; }
       #main-menu .dropdown > .dropdown-menu .dropdown-item:hover {
-        color: #4A63AE;
+        color: rgba(255, 255, 255, 0.75);
         background-color: transparent;
         text-shadow: 0 0 3px #000; }
+    #main-menu .dropdown > .dropdown-menu .current_page_item .dropdown-item:hover {
+      color: #4A63AE; }
   #main-menu .dropdown:hover > .dropdown-menu {
     display: block; }
+  #main-menu .btn-outline-primary a {
+    color: #fff; }
+    #main-menu .btn-outline-primary a:hover {
+      color: #fff; }
 
 #container-main-menu {
   width: 100%; }
@@ -15543,30 +15549,75 @@ section {
     #main-menu > .nav-item:last-of-type,
     #main-menu-mobile > .nav-item:last-of-type {
       margin-right: 0; }
-    #main-menu > .nav-item.active > .nav-link, #main-menu > .nav-item.current-page-ancestor > .nav-link, #main-menu > .nav-item.current_page_parent > .nav-link,
-    #main-menu-mobile > .nav-item.active > .nav-link,
-    #main-menu-mobile > .nav-item.current-page-ancestor > .nav-link,
-    #main-menu-mobile > .nav-item.current_page_parent > .nav-link {
-      color: #4A63AE; }
-    #main-menu > .nav-item.active.btn > .nav-link, #index-wrapper #main-menu > .nav-item.active.read-more-link > .nav-link, #archive-wrapper #main-menu > .nav-item.active.read-more-link > .nav-link, #search-wrapper #main-menu > .nav-item.active.read-more-link > .nav-link, #main-menu > .nav-item.current-page-ancestor.btn > .nav-link, #index-wrapper #main-menu > .nav-item.current-page-ancestor.read-more-link > .nav-link, #archive-wrapper #main-menu > .nav-item.current-page-ancestor.read-more-link > .nav-link, #search-wrapper #main-menu > .nav-item.current-page-ancestor.read-more-link > .nav-link, #main-menu > .nav-item.current_page_parent.btn > .nav-link, #index-wrapper #main-menu > .nav-item.current_page_parent.read-more-link > .nav-link, #archive-wrapper #main-menu > .nav-item.current_page_parent.read-more-link > .nav-link, #search-wrapper #main-menu > .nav-item.current_page_parent.read-more-link > .nav-link,
-    #main-menu-mobile > .nav-item.active.btn > .nav-link,
-    #index-wrapper #main-menu-mobile > .nav-item.active.read-more-link > .nav-link,
-    #archive-wrapper #main-menu-mobile > .nav-item.active.read-more-link > .nav-link,
-    #search-wrapper #main-menu-mobile > .nav-item.active.read-more-link > .nav-link,
-    #main-menu-mobile > .nav-item.current-page-ancestor.btn > .nav-link,
-    #index-wrapper #main-menu-mobile > .nav-item.current-page-ancestor.read-more-link > .nav-link,
-    #archive-wrapper #main-menu-mobile > .nav-item.current-page-ancestor.read-more-link > .nav-link,
-    #search-wrapper #main-menu-mobile > .nav-item.current-page-ancestor.read-more-link > .nav-link,
-    #main-menu-mobile > .nav-item.current_page_parent.btn > .nav-link,
-    #index-wrapper #main-menu-mobile > .nav-item.current_page_parent.read-more-link > .nav-link,
-    #archive-wrapper #main-menu-mobile > .nav-item.current_page_parent.read-more-link > .nav-link,
-    #search-wrapper #main-menu-mobile > .nav-item.current_page_parent.read-more-link > .nav-link {
-      color: #fff; }
     #main-menu > .nav-item > .nav-link,
     #main-menu-mobile > .nav-item > .nav-link {
       font-size: 0.875rem;
       font-weight: 700;
       text-transform: uppercase; }
+  #main-menu .nav-item.active > .nav-link,
+  #main-menu .nav-item.active > .dropdown-item, #main-menu .nav-item.current-page-ancestor > .nav-link,
+  #main-menu .nav-item.current-page-ancestor > .dropdown-item, #main-menu .nav-item.current-page-parent > .nav-link,
+  #main-menu .nav-item.current-page-parent > .dropdown-item, #main-menu .nav-item.current-menu-item > .nav-link,
+  #main-menu .nav-item.current-menu-item > .dropdown-item, #main-menu .nav-item.current_page_item > .nav-link,
+  #main-menu .nav-item.current_page_item > .dropdown-item, #main-menu .nav-item.current_page_parent > .nav-link,
+  #main-menu .nav-item.current_page_parent > .dropdown-item,
+  #main-menu-mobile .nav-item.active > .nav-link,
+  #main-menu-mobile .nav-item.active > .dropdown-item,
+  #main-menu-mobile .nav-item.current-page-ancestor > .nav-link,
+  #main-menu-mobile .nav-item.current-page-ancestor > .dropdown-item,
+  #main-menu-mobile .nav-item.current-page-parent > .nav-link,
+  #main-menu-mobile .nav-item.current-page-parent > .dropdown-item,
+  #main-menu-mobile .nav-item.current-menu-item > .nav-link,
+  #main-menu-mobile .nav-item.current-menu-item > .dropdown-item,
+  #main-menu-mobile .nav-item.current_page_item > .nav-link,
+  #main-menu-mobile .nav-item.current_page_item > .dropdown-item,
+  #main-menu-mobile .nav-item.current_page_parent > .nav-link,
+  #main-menu-mobile .nav-item.current_page_parent > .dropdown-item {
+    color: #4A63AE; }
+  #main-menu .nav-item.active.btn > .nav-link, #main-menu #index-wrapper .nav-item.active.read-more-link > .nav-link, #index-wrapper #main-menu .nav-item.active.read-more-link > .nav-link, #main-menu #archive-wrapper .nav-item.active.read-more-link > .nav-link, #archive-wrapper #main-menu .nav-item.active.read-more-link > .nav-link, #main-menu #search-wrapper .nav-item.active.read-more-link > .nav-link, #search-wrapper #main-menu .nav-item.active.read-more-link > .nav-link, #main-menu .nav-item.current-page-ancestor.btn > .nav-link, #main-menu #index-wrapper .nav-item.current-page-ancestor.read-more-link > .nav-link, #index-wrapper #main-menu .nav-item.current-page-ancestor.read-more-link > .nav-link, #main-menu #archive-wrapper .nav-item.current-page-ancestor.read-more-link > .nav-link, #archive-wrapper #main-menu .nav-item.current-page-ancestor.read-more-link > .nav-link, #main-menu #search-wrapper .nav-item.current-page-ancestor.read-more-link > .nav-link, #search-wrapper #main-menu .nav-item.current-page-ancestor.read-more-link > .nav-link, #main-menu .nav-item.current-page-parent.btn > .nav-link, #main-menu #index-wrapper .nav-item.current-page-parent.read-more-link > .nav-link, #index-wrapper #main-menu .nav-item.current-page-parent.read-more-link > .nav-link, #main-menu #archive-wrapper .nav-item.current-page-parent.read-more-link > .nav-link, #archive-wrapper #main-menu .nav-item.current-page-parent.read-more-link > .nav-link, #main-menu #search-wrapper .nav-item.current-page-parent.read-more-link > .nav-link, #search-wrapper #main-menu .nav-item.current-page-parent.read-more-link > .nav-link, #main-menu .nav-item.current-menu-item.btn > .nav-link, #main-menu #index-wrapper .nav-item.current-menu-item.read-more-link > .nav-link, #index-wrapper #main-menu .nav-item.current-menu-item.read-more-link > .nav-link, #main-menu #archive-wrapper .nav-item.current-menu-item.read-more-link > .nav-link, #archive-wrapper #main-menu .nav-item.current-menu-item.read-more-link > .nav-link, #main-menu #search-wrapper .nav-item.current-menu-item.read-more-link > .nav-link, #search-wrapper #main-menu .nav-item.current-menu-item.read-more-link > .nav-link, #main-menu .nav-item.current_page_item.btn > .nav-link, #main-menu #index-wrapper .nav-item.current_page_item.read-more-link > .nav-link, #index-wrapper #main-menu .nav-item.current_page_item.read-more-link > .nav-link, #main-menu #archive-wrapper .nav-item.current_page_item.read-more-link > .nav-link, #archive-wrapper #main-menu .nav-item.current_page_item.read-more-link > .nav-link, #main-menu #search-wrapper .nav-item.current_page_item.read-more-link > .nav-link, #search-wrapper #main-menu .nav-item.current_page_item.read-more-link > .nav-link, #main-menu .nav-item.current_page_parent.btn > .nav-link, #main-menu #index-wrapper .nav-item.current_page_parent.read-more-link > .nav-link, #index-wrapper #main-menu .nav-item.current_page_parent.read-more-link > .nav-link, #main-menu #archive-wrapper .nav-item.current_page_parent.read-more-link > .nav-link, #archive-wrapper #main-menu .nav-item.current_page_parent.read-more-link > .nav-link, #main-menu #search-wrapper .nav-item.current_page_parent.read-more-link > .nav-link, #search-wrapper #main-menu .nav-item.current_page_parent.read-more-link > .nav-link,
+  #main-menu-mobile .nav-item.active.btn > .nav-link,
+  #main-menu-mobile #index-wrapper .nav-item.active.read-more-link > .nav-link,
+  #index-wrapper #main-menu-mobile .nav-item.active.read-more-link > .nav-link,
+  #main-menu-mobile #archive-wrapper .nav-item.active.read-more-link > .nav-link,
+  #archive-wrapper #main-menu-mobile .nav-item.active.read-more-link > .nav-link,
+  #main-menu-mobile #search-wrapper .nav-item.active.read-more-link > .nav-link,
+  #search-wrapper #main-menu-mobile .nav-item.active.read-more-link > .nav-link,
+  #main-menu-mobile .nav-item.current-page-ancestor.btn > .nav-link,
+  #main-menu-mobile #index-wrapper .nav-item.current-page-ancestor.read-more-link > .nav-link,
+  #index-wrapper #main-menu-mobile .nav-item.current-page-ancestor.read-more-link > .nav-link,
+  #main-menu-mobile #archive-wrapper .nav-item.current-page-ancestor.read-more-link > .nav-link,
+  #archive-wrapper #main-menu-mobile .nav-item.current-page-ancestor.read-more-link > .nav-link,
+  #main-menu-mobile #search-wrapper .nav-item.current-page-ancestor.read-more-link > .nav-link,
+  #search-wrapper #main-menu-mobile .nav-item.current-page-ancestor.read-more-link > .nav-link,
+  #main-menu-mobile .nav-item.current-page-parent.btn > .nav-link,
+  #main-menu-mobile #index-wrapper .nav-item.current-page-parent.read-more-link > .nav-link,
+  #index-wrapper #main-menu-mobile .nav-item.current-page-parent.read-more-link > .nav-link,
+  #main-menu-mobile #archive-wrapper .nav-item.current-page-parent.read-more-link > .nav-link,
+  #archive-wrapper #main-menu-mobile .nav-item.current-page-parent.read-more-link > .nav-link,
+  #main-menu-mobile #search-wrapper .nav-item.current-page-parent.read-more-link > .nav-link,
+  #search-wrapper #main-menu-mobile .nav-item.current-page-parent.read-more-link > .nav-link,
+  #main-menu-mobile .nav-item.current-menu-item.btn > .nav-link,
+  #main-menu-mobile #index-wrapper .nav-item.current-menu-item.read-more-link > .nav-link,
+  #index-wrapper #main-menu-mobile .nav-item.current-menu-item.read-more-link > .nav-link,
+  #main-menu-mobile #archive-wrapper .nav-item.current-menu-item.read-more-link > .nav-link,
+  #archive-wrapper #main-menu-mobile .nav-item.current-menu-item.read-more-link > .nav-link,
+  #main-menu-mobile #search-wrapper .nav-item.current-menu-item.read-more-link > .nav-link,
+  #search-wrapper #main-menu-mobile .nav-item.current-menu-item.read-more-link > .nav-link,
+  #main-menu-mobile .nav-item.current_page_item.btn > .nav-link,
+  #main-menu-mobile #index-wrapper .nav-item.current_page_item.read-more-link > .nav-link,
+  #index-wrapper #main-menu-mobile .nav-item.current_page_item.read-more-link > .nav-link,
+  #main-menu-mobile #archive-wrapper .nav-item.current_page_item.read-more-link > .nav-link,
+  #archive-wrapper #main-menu-mobile .nav-item.current_page_item.read-more-link > .nav-link,
+  #main-menu-mobile #search-wrapper .nav-item.current_page_item.read-more-link > .nav-link,
+  #search-wrapper #main-menu-mobile .nav-item.current_page_item.read-more-link > .nav-link,
+  #main-menu-mobile .nav-item.current_page_parent.btn > .nav-link,
+  #main-menu-mobile #index-wrapper .nav-item.current_page_parent.read-more-link > .nav-link,
+  #index-wrapper #main-menu-mobile .nav-item.current_page_parent.read-more-link > .nav-link,
+  #main-menu-mobile #archive-wrapper .nav-item.current_page_parent.read-more-link > .nav-link,
+  #archive-wrapper #main-menu-mobile .nav-item.current_page_parent.read-more-link > .nav-link,
+  #main-menu-mobile #search-wrapper .nav-item.current_page_parent.read-more-link > .nav-link,
+  #search-wrapper #main-menu-mobile .nav-item.current_page_parent.read-more-link > .nav-link {
+    color: #fff; }
   @media (max-width: 768.98px) {
     #container-main-menu #main-menu, #container-main-menu
     #main-menu-mobile {
