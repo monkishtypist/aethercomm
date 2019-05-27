@@ -24932,9 +24932,9 @@ return DataTable;
  * Use this file to manage custom scripts for the child theme
  */
 (function($) {
+    'use strict';
 
     // Main Menu: transition background based on scroll position
-
     var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
 
     var scrollOffset = 100;
@@ -24954,7 +24954,6 @@ return DataTable;
     });
 
     // Search Form: open/close input field actions
-
     var searchform = $("#searchform");
     var searchinput = $("#s");
     var searchsubmit = $("#searchsubmit");
@@ -25012,7 +25011,6 @@ return DataTable;
     /**
      * Datatables
      */
-
     var table = $('#products-table').DataTable( {
         "responsive": true,
         "columnDefs": [
@@ -25379,6 +25377,40 @@ return DataTable;
             timelinePrev( timeline );
         }
     });
-
     /* END Timeline */
+
+    /**
+     * Nav Fix for Dropdown Gaps (Bootstrap)
+     *
+     * This jQuery fixes hover state issues when the menu dropdown
+     * has a gap from its parent nav item, thus closing the dropdown
+     * before the cursor can span the gap. This adds a slight delay
+     * to allow the cursor to cross the gap before the dropdown is
+     * closed.
+     */
+	var navTimer;
+	var navRef; // li.dropdown
+
+	$(".nav-item")
+		.on("mouseover", showDropdown)
+		.on("mouseleave", function(){
+			navTimer = setTimeout( hideDropdown, 250);
+		});
+
+	function showDropdown() {
+		clearTimeout(navTimer);
+		hideDropdown();
+		navRef = $(this);
+        navRef.addClass("show")
+            .children('.dropdown-toggle').attr('aria-expanded', "true")
+            .siblings('.dropdown-menu').addClass("show");
+        }
+
+    function hideDropdown() {
+        if (navRef)
+            navRef.removeClass("show")
+                .children('.dropdown-toggle').attr('aria-expanded', "true")
+                .siblings('.dropdown-menu').removeClass("show");
+	}
+
 })(jQuery);

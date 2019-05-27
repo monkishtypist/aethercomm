@@ -15400,7 +15400,7 @@ section {
     padding: 0; }
 
 /**
- * Navs
+ * Navs / navbars
  *
  * Styles for navigation bars
  */
@@ -15502,6 +15502,27 @@ section {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end; }
+  #main-menu .dropdown .dropdown-toggle:after {
+    display: none; }
+  #main-menu .dropdown > .dropdown-menu {
+    background-color: transparent;
+    background-image: url(../images/Nav_x2.png);
+    background-position: 100% 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0;
+    color: #fff;
+    padding-bottom: 1rem;
+    top: 3.95rem; }
+    #main-menu .dropdown > .dropdown-menu .dropdown-item {
+      color: #fff;
+      background-color: transparent; }
+      #main-menu .dropdown > .dropdown-menu .dropdown-item:hover {
+        color: #4A63AE;
+        background-color: transparent;
+        text-shadow: 0 0 3px #000; }
+  #main-menu .dropdown:hover > .dropdown-menu {
+    display: block; }
 
 #container-main-menu {
   width: 100%; }
