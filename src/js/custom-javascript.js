@@ -81,51 +81,6 @@
     }
 
     /**
-     * Datatables
-     */
-    var table = $('#products-table').DataTable( {
-        "responsive": true,
-        "columnDefs": [
-            {
-                "order": [[ 1, "asc" ]]
-            },
-            {
-                "targets": [ 0 ],
-                "orderable": false
-            },
-            {
-                "targets": [ 5 ],
-                "visible": false
-            },
-            {
-                "targets": [ 6 ],
-                "orderable": false
-            }
-        ],
-        "oSearch": {
-            "sSearch": $('#productsearch').val()
-        }
-    });
-
-    $('#productsearch').on( 'keyup', function () {
-        table.search( this.value ).draw();
-    } );
-
-    $('#product-cats-nav').on( 'click', 'a', function( event ) {
-        event.preventDefault();
-        if ( $(this).hasClass('active') ) {
-            table.columns( 5 ).search( '' ).draw();
-            if ( ! $(this).data('show-all') ) {
-                $(this).removeClass('active');
-                $('#product-cats-nav').find('a[data-show-all]').addClass('active');
-            }
-        } else {
-            table.columns( 5 ).search( '^'+$(this).data('cat-slug')+'$', true, false ).draw();
-            $(this).addClass('active').siblings().removeClass('active');
-        }
-    } );
-
-    /**
      * Share
      */
     $('.product-share.share-link').on( 'click', function( event ) {
@@ -354,6 +309,52 @@
     });
 
     /* END: RFQ */
+
+    /**
+     * Datatables
+     */
+    var table = $('#products-table').DataTable( {
+        "responsive": true,
+        "columnDefs": [
+            {
+                "order": [[ 1, "asc" ]]
+            },
+            {
+                "targets": [ 0 ],
+                "orderable": false
+            },
+            {
+                "targets": [ 5 ],
+                "visible": false
+            },
+            {
+                "targets": [ 6 ],
+                "orderable": false
+            }
+        ],
+        "oSearch": {
+            "sSearch": $('#productsearch').val()
+        },
+        "drawCallback": updateQueuedModels()
+    });
+
+    $('#productsearch').on( 'keyup', function () {
+        table.search( this.value ).draw();
+    } );
+
+    $('#product-cats-nav').on( 'click', 'a', function( event ) {
+        event.preventDefault();
+        if ( $(this).hasClass('active') ) {
+            table.columns( 5 ).search( '' ).draw();
+            if ( ! $(this).data('show-all') ) {
+                $(this).removeClass('active');
+                $('#product-cats-nav').find('a[data-show-all]').addClass('active');
+            }
+        } else {
+            table.columns( 5 ).search( '^'+$(this).data('cat-slug')+'$', true, false ).draw();
+            $(this).addClass('active').siblings().removeClass('active');
+        }
+    } );
 
     /**
      * Timeline
