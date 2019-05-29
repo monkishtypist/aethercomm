@@ -94,7 +94,7 @@ $product_cats = get_categories( $product_cats_args );
 
             <div class="row justify-content-end align-items-center d-none d-md-flex mb-4">
                 <div class="col-auto">
-                    <a href="#" class="product-request-all btn btn-lg btn-outline-gray" data-model-number="all"><?php _e( 'Request All', 'aethercomm' ); ?></a>
+                    <a href="#" class="product-request-all btn btn-lg btn-outline-gray"><?php _e( 'Request Queue', 'aethercomm' ); ?></a>
                 </div>
                 <div class="col-auto">
                     <a href="#share" class="product-share share-link" data-link="<?php echo get_permalink(); ?>"><?php _e( 'Share', 'aethercomm' ); ?></a>
