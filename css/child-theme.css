@@ -15112,6 +15112,20 @@ button.btn,
       #archive-wrapper button.btn-lg.read-more-link,
       #search-wrapper button.btn-lg.read-more-link {
         width: 100%; } }
+    a.btn.btn-lg::before, .btn-group-lg > a.btn::before, #index-wrapper .btn-group-lg > a.read-more-link::before,
+    #archive-wrapper .btn-group-lg > a.read-more-link::before,
+    #search-wrapper .btn-group-lg > a.read-more-link::before, #index-wrapper a.btn-lg.read-more-link::before,
+    #archive-wrapper a.btn-lg.read-more-link::before,
+    #search-wrapper a.btn-lg.read-more-link::before,
+    button.btn.btn-lg::before,
+    .btn-group-lg > button.btn::before,
+    #index-wrapper .btn-group-lg > button.read-more-link::before,
+    #archive-wrapper .btn-group-lg > button.read-more-link::before,
+    #search-wrapper .btn-group-lg > button.read-more-link::before,
+    #index-wrapper button.btn-lg.read-more-link::before,
+    #archive-wrapper button.btn-lg.read-more-link::before,
+    #search-wrapper button.btn-lg.read-more-link::before {
+      top: .65em; }
   a.btn::before, #index-wrapper a.read-more-link::before,
   #archive-wrapper a.read-more-link::before,
   #search-wrapper a.read-more-link::before,

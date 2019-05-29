@@ -152,15 +152,16 @@
         var queued = $(this).data('queued');
         // add/remove model number from queue
         if ( ! queued ) {
-            $(this).html( "Queued" );
+            // $(this).html( "Queued" );
             modelNumberAdd( modelNumber );
         } else {
-            $(this).html("Add to Queue");
+            // $(this).html("Add to Queue");
             modelNumberRemove( modelNumber );
         }
         // modify queued state
         queued = ! queued;
-        $(this).data( 'queued', queued ).attr( 'data-queued', queued );
+        // $(this).data( 'queued', queued ).attr( 'data-queued', queued );
+        updateQueuedModels();
         sendModelsToForm();
     });
 
@@ -171,12 +172,7 @@
         var modelNumber = $(this).data('model-number');
         modelNumberAdd( modelNumber );
         // updated the 'queued' status
-        var queued = $(this).siblings('.product-queue-link').data('queued');
-        if ( ! queued ) {
-            $(this).siblings('.product-queue-link').html( "Queued" );
-            queued = ! queued;
-        }
-        $(this).siblings('.product-queue-link').data( 'queued', queued ).attr( 'data-queued', queued );
+        updateQueuedModels();
         // send data to form
         sendModelsToForm();
         goToForm();
@@ -208,11 +204,8 @@
     // Load models in form
     $(document).on( 'click', '.product-request-all', function( event ) {
         event.preventDefault();
-        $(this).removeClass('btn-outline-gray').addClass('btn-secondary');
-        // add model number 'all' to queue
-        modelNumbersRemoveAll();
-        preloadQueuedModels();
-        sendModelsToForm( 'I would like details for all products.' );
+        updateQueuedModels();
+        sendModelsToForm();
         goToForm();
     });
 
@@ -269,7 +262,7 @@
         var modelsArray = [ modelNumber ];
         if ( localStorage ) {
             var modelsQueued = JSON.parse( localStorage.getItem( 'modelsQueued' ) );
-            if ( modelsQueued ) {
+            if ( modelsQueued !== null ) {
                 var newModelsQueued = modelsQueued.concat( modelsArray ).unique();
             } else {
                 var newModelsQueued = modelsArray;
@@ -277,14 +270,13 @@
             localStorage.setItem( 'modelsQueued' , JSON.stringify( newModelsQueued ) );
         } else {
             var modelsQueued = JSON.parse( $('body').data( 'modelsQueued' ) );
-            if ( modelsQueued ) {
+            if ( modelsQueued !== null ) {
                 var newModelsQueued = modelsQueued.concat( modelsArray ).unique();
             } else {
                 var newModelsQueued = modelsArray;
             }
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
-        $('.product-request-all.btn-secondary').removeClass('btn-secondary').addClass('btn-outline-gray'); // cleanup All button styles
         sendModelsToForm();
     }
 
@@ -311,6 +303,7 @@
             }
             $('body').data( 'modelsQueued', JSON.stringify( newModelsQueued ) );
         }
+        var modelsQueued = getModelsQueued();
         sendModelsToForm();
     }
 
@@ -326,9 +319,8 @@
     }
 
     // Update model queue links
-    var preloadQueuedModels = function() {
+    var updateQueuedModels = function() {
         var modelsQueued = getModelsQueued();
-        // console.log(modelsQueued);
         $('.product-queue-link').each( function() {
             var modelNumber = $(this).data('model-number');
             if ( modelsQueued !== null && modelsQueued.indexOf( modelNumber ) > -1 ) {
@@ -336,17 +328,28 @@
             } else {
                 $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );
             }
-            // console.log(modelsQueued.indexOf( modelNumber ));
         });
+        updateRequestAllButton();
         // sendModelsToForm();
     }
-    preloadQueuedModels();
+
+    // Update the Request All button styles based on queue
+    var updateRequestAllButton = function() {
+        var thebutton = $('.product-request-all');
+        var modelsQueued = getModelsQueued();
+        // console.log(modelsQueued);
+        if ( modelsQueued !== null && modelsQueued.length > 0 ) {
+            thebutton.removeClass('btn-outline-gray').addClass('btn-secondary');
+        } else {
+            thebutton.removeClass('btn-secondary').addClass('btn-outline-gray');
+        }
+    }
 
     // After GForm submit success
     $(document).on("gform_confirmation_loaded", function (e, form_id) {
         if ( form_id === 3 ) {
             modelNumbersRemoveAll();
-            preloadQueuedModels();
+            updateQueuedModels();
         }
     });
 
@@ -484,5 +487,10 @@
                 .children('.dropdown-toggle').attr('aria-expanded', "true")
                 .siblings('.dropdown-menu').removeClass("show");
 	}
+
+    /**
+     * PAGE INIT
+     */
+    updateQueuedModels(); // set the default queued products on page load
 
 })(jQuery);

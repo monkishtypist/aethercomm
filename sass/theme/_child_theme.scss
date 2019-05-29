@@ -425,6 +425,9 @@ button.btn {
         @include media-breakpoint-down('sm') {
             width: 100%;
         }
+        &::before {
+            top: .65em;
+        }
     }
     &::before {
         content: " ";
