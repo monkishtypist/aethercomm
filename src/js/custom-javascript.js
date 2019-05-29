@@ -318,10 +318,8 @@
      */
     var table = $('#products-table').DataTable( {
         "responsive": true,
+        "order": [[ 2, "asc" ]],
         "columnDefs": [
-            {
-                "order": [[ 1, "asc" ]]
-            },
             {
                 "targets": [ 5 ],
                 "visible": false
