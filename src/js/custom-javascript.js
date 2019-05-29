@@ -320,10 +320,6 @@
                 "order": [[ 1, "asc" ]]
             },
             {
-                "targets": [ 0 ],
-                "orderable": false
-            },
-            {
                 "targets": [ 5 ],
                 "visible": false
             },

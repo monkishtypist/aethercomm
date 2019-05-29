@@ -113,7 +113,7 @@ $product_cats = get_categories( $product_cats_args );
 
                 <thead>
                     <tr>
-                        <th><?php _e( 'Filters', 'aethercomm' ); ?></th>
+                        <th><?php _e( 'Queue', 'aethercomm' ); ?></th>
                         <th><?php _e( 'Part Number', 'aethercomm' ); ?></th>
                         <th><?php _e( 'Frequency Min', 'aethercomm' ); ?></th>
                         <th><?php _e( 'Frequency Max', 'aethercomm' ); ?></th>
