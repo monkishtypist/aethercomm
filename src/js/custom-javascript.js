@@ -283,6 +283,9 @@
             } else {
                 $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );
             }
+            if ( table ) {
+                table.cell( $(this) ).invalidate().draw();
+            }
         });
         updateRequestAllButton();
         // sendModelsToForm();
