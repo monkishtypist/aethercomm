@@ -25047,7 +25047,7 @@ return DataTable;
         updateQueuedModels();
         if ( table ) {
             console.log(table);
-            table.cell( $(this) ).invalidate().draw();
+            table.cell( $(this) ).invalidate().draw( false );
         }
         sendModelsToForm();
     });
