@@ -25045,6 +25045,10 @@ return DataTable;
         queued = ! queued;
         // $(this).data( 'queued', queued ).attr( 'data-queued', queued );
         updateQueuedModels();
+        if ( table ) {
+            console.log(table);
+            table.cell( $(this) ).invalidate().draw();
+        }
         sendModelsToForm();
     });
 
@@ -25211,9 +25215,6 @@ return DataTable;
             } else {
                 $(this).data( 'queued', false ).attr( 'data-queued', false ).html( "Add to Queue" );
             }
-            if ( table ) {
-                table.cell( $(this) ).invalidate().draw();
-            }
         });
         updateRequestAllButton();
         // sendModelsToForm();
@@ -25246,7 +25247,7 @@ return DataTable;
      */
     var table = $('#products-table').DataTable( {
         "responsive": true,
-        "order": [[ 2, "asc" ]],
+        "order": [[ 1, "asc" ]],
         "columnDefs": [
             {
                 "targets": [ 5 ],
