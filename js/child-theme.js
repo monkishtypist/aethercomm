@@ -25046,8 +25046,8 @@ return DataTable;
         // $(this).data( 'queued', queued ).attr( 'data-queued', queued );
         updateQueuedModels();
         if ( table ) {
-            console.log(table);
-            table.cell( $(this) ).invalidate().draw( false );
+            // console.log(table);
+            table.cell( $(this).parent('td') ).invalidate().draw( 'page' );
         }
         sendModelsToForm();
     });
