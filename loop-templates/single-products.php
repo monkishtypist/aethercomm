@@ -91,7 +91,9 @@ $model_number = get_acf_field( 'product_specs_model_number', true );
                 </div>
                 <div class="col-12 col-md-5 offset-md-1 specs-table">
 
-                    <?php get_template_part( 'global-templates/products', 'specifications-table' ); ?>
+                    <?php echo apply_filters( 'the_content', get_acf_field( 'product_bullets', true ) ); ?>
+
+                    <?php // get_template_part( 'global-templates/products', 'specifications-table' ); ?>
 
                 </div>
             </div>
