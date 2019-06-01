@@ -18869,6 +18869,8 @@ table.dataTable thead .sorting_desc_disabled:before {
     #single_products-wrapper #single-products_specifications .specs-table ul li {
       padding: 1rem 0;
       border-bottom: 1px solid #676767; }
+      #single_products-wrapper #single-products_specifications .specs-table ul li:first-of-type {
+        padding-top: 0; }
       #single_products-wrapper #single-products_specifications .specs-table ul li:last-of-type {
         border-bottom-color: transparent; }
   #single_products-wrapper #single-products_specifications table.table tbody tr:first-of-type td {
