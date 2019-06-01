@@ -2525,6 +2525,19 @@ $timeline-rotation-increment: 34.5 !default;
             letter-spacing: 0;
             margin-bottom: .5em;
         }
+        .specs-table {
+            ul {
+                list-style: none;
+                padding: 0;
+                li {
+                    padding: $spacer 0;
+                    border-bottom: $border-width solid $gray;
+                    &:last-of-type {
+                        border-bottom-color: transparent;
+                    }
+                }
+            }
+        }
         table.table {
             tbody {
                 tr {

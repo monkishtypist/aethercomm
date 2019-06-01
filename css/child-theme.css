@@ -18863,6 +18863,14 @@ table.dataTable thead .sorting_desc_disabled:before {
     font-weight: 300;
     letter-spacing: 0;
     margin-bottom: .5em; }
+  #single_products-wrapper #single-products_specifications .specs-table ul {
+    list-style: none;
+    padding: 0; }
+    #single_products-wrapper #single-products_specifications .specs-table ul li {
+      padding: 1rem 0;
+      border-bottom: 1px solid #676767; }
+      #single_products-wrapper #single-products_specifications .specs-table ul li:last-of-type {
+        border-bottom-color: transparent; }
   #single_products-wrapper #single-products_specifications table.table tbody tr:first-of-type td {
     border-top: 0; }
 
