@@ -15551,8 +15551,7 @@ section {
 #main-menu-mobile {
   -webkit-box-align: center;
       -ms-flex-align: center;
-          align-items: center;
-  padding-bottom: 1rem; }
+          align-items: center; }
   #main-menu > .nav-item,
   #main-menu-mobile > .nav-item {
     margin-left: 0.5rem;
@@ -15676,6 +15675,9 @@ section {
     #container-main-menu-mobile #main-menu-mobile #archive-wrapper .read-more-link, #archive-wrapper #container-main-menu-mobile #main-menu-mobile .read-more-link,
     #container-main-menu-mobile #main-menu-mobile #search-wrapper .read-more-link, #search-wrapper #container-main-menu-mobile #main-menu-mobile .read-more-link {
       padding: 0.25rem 2rem; }
+
+#main-menu-mobile {
+  padding-bottom: 1rem; }
 
 #footer-menu {
   -webkit-box-pack: justify;

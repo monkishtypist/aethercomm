@@ -786,7 +786,6 @@ section {
 #main-menu, // <ul>
 #main-menu-mobile { // <ul>
     align-items: center;
-    padding-bottom: $spacer;
     > .nav-item { // <li>
         margin-left: #{$spacer * .5};
         margin-right: #{$spacer * .5};
@@ -856,6 +855,9 @@ section {
             padding: #{$spacer * .25} #{$spacer * 2};
         }
     }
+}
+#main-menu-mobile { // <ul>
+    padding-bottom: $spacer;
 }
 #footer-menu { // <ul>
     @extend .row;
