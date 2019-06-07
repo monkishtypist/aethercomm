@@ -74,6 +74,90 @@ if ( ! function_exists( 'aethercomm_wp_loaded' ) ) {
     function aethercomm_wp_loaded() {
     }
 }
+if ( ! function_exists( 'wpbs_button' ) ) {
+    /**
+     * Custom Button
+     *
+     * Add an inline button to content, with customizeable CSS classes, and
+     * link to a page by `page-id` or URL.
+     *
+     * [button class="btn-primary"]My Button Text[/button]
+     *
+     * @param array $atts Button attributes
+     * @param string $content Button text content
+     *
+     * @return string Button HTML
+     */
+    function wpbs_button( $atts, $content ) {
+        if ( function_exists( 'openssl_random_pseudo_bytes' ) && function_exists( 'bin2hex' ) ) {
+            $rand = bin2hex( openssl_random_pseudo_bytes( 8 ) );;
+        } else {
+            $rand = rand( 1000, 9999 );
+        }
+
+        $a = shortcode_atts( array(
+            'attr'      => false,               // Additional attributes as Key:Value pairs, comma separated
+            'class'     => 'btn-primary',       // CSS classes for button element
+            'hash'      => false,               // #string
+            'icon'      => false,               // not used
+            'icon-url'  => false,               // not used
+            'id'        => 'button-' . $rand,   // button id
+            'logged-in' => false,               // is user logged in?
+            'modal'     => false,               // Bootstrap modal target
+            'page-id'   => false,               // Page ID of linked page
+            'query'     => false,               // URL query params
+            'target'    => '',                  // Attr: target="_blank"
+            'url'       => '#'                  // Linked page URL
+        ), $atts );
+
+        $attributes_array = array();
+        if ( $a['attr'] ) {
+            $attribs = explode( ",", $a['attr'] );
+            foreach ($attribs as $attrib) {
+            if ( strpos( $attrib, ':' ) !== false ) {
+                $arr = explode( ":", $attrib );
+                $attributes_array[ $arr[0] ] = $arr[1];
+            }
+            }
+        }
+        $attributes_string = null;
+        foreach ($attributes_array as $key => $value) {
+            $attributes_string .= sprintf( '%1$s="%2$s" ', $key, $value );
+        }
+
+        $target = null;
+        if ( in_array( $a['target'], array( 'blank', '_blank' ) ) )
+            $target = 'target="_blank"';
+
+        if ( $a['modal'] )
+            $target = 'data-toggle="modal" data-target="' . $a['modal'] . '"';
+
+        // if page-id attribute is set, use that instead of link, otherwise, use link attribute.
+        $url = ( $a['page-id'] && 'publish' === get_post_status( $a['page-id'] ) ? get_permalink( $a['page-id'] ) : esc_html( $a['url'] ) );
+
+        $hash = null;
+        if ( $a['hash'] ) {
+            $hash .= '#' . rawurlencode( $a['hash'] );
+        }
+
+        $query = null;
+        if ( $a['query'] ) {
+            $query .= '?' . rawurlencode( $a['query'] );
+        }
+
+        // Build the button HTML
+
+        $button_html = sprintf( '<a href="%1$s" id="%2$s" class="btn %3$s" %4$s>%5$s</a>',
+            $url . $hash . $query,                                // build the URL
+            esc_html( $a['id'] ),
+            esc_html( $a['class'] ),
+            $attributes_string . ' ' . $target,                   // build attributes
+            sprintf( '<span>%1$s</span>', esc_html( $content ) )
+        );
+
+        return $button_html;
+    }
+}
 
 /* 3. Bootstrap Image classes */
 add_filter( 'image_send_to_editor', 'aethercomm_add_bootstrap_class_to_images', 10, 3 );
