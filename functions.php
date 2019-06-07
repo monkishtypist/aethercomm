@@ -74,7 +74,7 @@ if ( ! function_exists( 'aethercomm_wp_loaded' ) ) {
     function aethercomm_wp_loaded() {
     }
 }
-if ( ! function_exists( 'wpbs_button' ) ) {
+if ( ! function_exists( 'aethercomm_button' ) ) {
     /**
      * Custom Button
      *
@@ -88,7 +88,7 @@ if ( ! function_exists( 'wpbs_button' ) ) {
      *
      * @return string Button HTML
      */
-    function wpbs_button( $atts, $content ) {
+    function aethercomm_button( $atts, $content ) {
         if ( function_exists( 'openssl_random_pseudo_bytes' ) && function_exists( 'bin2hex' ) ) {
             $rand = bin2hex( openssl_random_pseudo_bytes( 8 ) );;
         } else {
