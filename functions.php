@@ -74,21 +74,23 @@ if ( ! function_exists( 'aethercomm_wp_loaded' ) ) {
     function aethercomm_wp_loaded() {
     }
 }
-if ( ! function_exists( 'aethercomm_button' ) ) {
-    /**
-     * Custom Button
-     *
-     * Add an inline button to content, with customizeable CSS classes, and
-     * link to a page by `page-id` or URL.
-     *
-     * [button class="btn-primary"]My Button Text[/button]
-     *
-     * @param array $atts Button attributes
-     * @param string $content Button text content
-     *
-     * @return string Button HTML
-     */
-    function aethercomm_button( $atts, $content ) {
+
+/**
+ * Custom Button
+ *
+ * Add an inline button to content, with customizeable CSS classes, and
+ * link to a page by `page-id` or URL.
+ *
+ * [button class="btn-primary"]My Button Text[/button]
+ *
+ * @param array $atts Button attributes
+ * @param string $content Button text content
+ *
+ * @return string Button HTML
+ */
+add_shortcode( 'button', 'aethercomm_button_shortcode', 10, 2 );
+if ( ! function_exists( 'aethercomm_button_shortcode' ) ) {
+    function aethercomm_button_shortcode( $atts, $content ) {
         if ( function_exists( 'openssl_random_pseudo_bytes' ) && function_exists( 'bin2hex' ) ) {
             $rand = bin2hex( openssl_random_pseudo_bytes( 8 ) );;
         } else {
