@@ -91,6 +91,7 @@ if ( ! function_exists( 'aethercomm_wp_loaded' ) ) {
 add_shortcode( 'button', 'aethercomm_button_shortcode', 10, 2 );
 if ( ! function_exists( 'aethercomm_button_shortcode' ) ) {
     function aethercomm_button_shortcode( $atts, $content ) {
+
         if ( function_exists( 'openssl_random_pseudo_bytes' ) && function_exists( 'bin2hex' ) ) {
             $rand = bin2hex( openssl_random_pseudo_bytes( 8 ) );;
         } else {
@@ -98,28 +99,28 @@ if ( ! function_exists( 'aethercomm_button_shortcode' ) ) {
         }
 
         $a = shortcode_atts( array(
-            'attr'      => false,               // Additional attributes as Key:Value pairs, comma separated
-            'class'     => 'btn-primary',       // CSS classes for button element
-            'hash'      => false,               // #string
-            'icon'      => false,               // not used
-            'icon-url'  => false,               // not used
-            'id'        => 'button-' . $rand,   // button id
-            'logged-in' => false,               // is user logged in?
-            'modal'     => false,               // Bootstrap modal target
-            'page-id'   => false,               // Page ID of linked page
-            'query'     => false,               // URL query params
-            'target'    => '',                  // Attr: target="_blank"
-            'url'       => '#'                  // Linked page URL
+            'attr'      => false,                   // Additional attributes as Key:Value pairs, comma separated
+            'class'     => 'btn-primary d-block',   // CSS classes for button element
+            'hash'      => false,                   // #string
+            'icon'      => false,                   // not used
+            'icon-url'  => false,                   // not used
+            'id'        => 'button-' . $rand,       // button id
+            'logged-in' => false,                   // is user logged in?
+            'modal'     => false,                   // Bootstrap modal target
+            'page-id'   => false,                   // Page ID of linked page
+            'query'     => false,                   // URL query params
+            'target'    => '',                      // Attr: target="_blank"
+            'url'       => '#'                      // Linked page URL
         ), $atts );
 
         $attributes_array = array();
         if ( $a['attr'] ) {
             $attribs = explode( ",", $a['attr'] );
             foreach ($attribs as $attrib) {
-            if ( strpos( $attrib, ':' ) !== false ) {
-                $arr = explode( ":", $attrib );
-                $attributes_array[ $arr[0] ] = $arr[1];
-            }
+                if ( strpos( $attrib, ':' ) !== false ) {
+                    $arr = explode( ":", $attrib );
+                    $attributes_array[ $arr[0] ] = $arr[1];
+                }
             }
         }
         $attributes_string = null;
