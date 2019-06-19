@@ -25006,6 +25006,7 @@ return DataTable;
     });
 
     repSearchFilterReset.click(function(){
+        console.log('click');
         repSearchFilterInput.val('');
 		$.ajax({
 			url:repSearchFilter.attr('action'),
