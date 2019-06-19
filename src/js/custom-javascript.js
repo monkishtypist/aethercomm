@@ -56,6 +56,7 @@
     $('#rep-filter-input').keyup(function(){
         var filter = $('#reps-filter');
         var searchText = filter.find('button').text();
+        console.log(searchText);
 		$.ajax({
 			url:filter.attr('action'),
 			data:filter.serialize(), // form data
