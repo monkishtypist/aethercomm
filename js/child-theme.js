@@ -25016,7 +25016,7 @@ return DataTable;
 			}
 		});
 		return false;
-    }, 500));
+    }, 250));
 
     repSearchFilterReset.click(function(){
         repSearchFilterInput.val('');
