@@ -15187,6 +15187,14 @@ button.btn,
     #archive-wrapper button.btn-sm.read-more-link::before,
     #search-wrapper button.btn-sm.read-more-link::before {
       display: none; }
+  a.btn.btn-narrow, #index-wrapper a.btn-narrow.read-more-link,
+  #archive-wrapper a.btn-narrow.read-more-link,
+  #search-wrapper a.btn-narrow.read-more-link,
+  button.btn.btn-narrow,
+  #index-wrapper button.btn-narrow.read-more-link,
+  #archive-wrapper button.btn-narrow.read-more-link,
+  #search-wrapper button.btn-narrow.read-more-link {
+    width: auto; }
   @media (max-width: 768.98px) {
     a.btn, #index-wrapper a.read-more-link,
     #archive-wrapper a.read-more-link,
