@@ -18358,6 +18358,13 @@ table.dataTable thead .sorting_desc_disabled:before {
   #register_page-wrapper #register_header .gform_button {
     width: 100%; }
 
+#rep-listing_page-wrapper #rep-listing_reps #reps-card-deck {
+  opacity: 1;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out; }
+  #rep-listing_page-wrapper #rep-listing_reps #reps-card-deck.searching {
+    opacity: .33; }
+
 #index-wrapper .read-more-link,
 #archive-wrapper .read-more-link,
 #search-wrapper .read-more-link {
