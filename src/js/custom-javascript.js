@@ -88,7 +88,7 @@
 			}
 		});
 		return false;
-    }, 250));
+    }, 200));
 
     repSearchFilterReset.click(function(){
         repSearchFilterInput.val('');
