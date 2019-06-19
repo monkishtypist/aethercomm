@@ -54,16 +54,17 @@
 
     // Reps filter form
     $('#rep-filter-input').keyup(function(){
-		var filter = $('#reps-filter');
+        var filter = $('#reps-filter');
+        var searchText = filter.find('button').text();
 		$.ajax({
 			url:filter.attr('action'),
 			data:filter.serialize(), // form data
 			type:filter.attr('method'), // POST
 			beforeSend:function(xhr){
-				filter.find('button').text('Processing...'); // changing the button label
+				filter.find('button').text('Searching...'); // changing the button label
 			},
 			success:function(data){
-				filter.find('button').text('Search'); // changing the button label back
+				filter.find('button').text(searchText); // changing the button label back
 				$('#reps-card-deck').html(data); // insert data
 			}
 		});

@@ -324,7 +324,7 @@ if ( ! function_exists( 'aethercomm_filter_representatives_function' ) ) {
 
         if( $query->have_posts() ) :
             while( $query->have_posts() ): $query->the_post();
-                echo '<h2>' . $query->post->post_title . '</h2>';
+                get_template_part( 'loop-templates/content', 'card' );
             endwhile;
             wp_reset_postdata();
         else :
