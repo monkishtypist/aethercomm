@@ -305,6 +305,36 @@ if ( ! function_exists( 'aethercomm_add_site_info' ) ) {
 	}
 }
 
+add_action('wp_ajax_filter_representatives', 'aethercomm_filter_representatives_function'); // wp_ajax_{ACTION HERE}
+add_action('wp_ajax_nopriv_filter_representatives', 'aethercomm_filter_representatives_function');
+if ( ! function_exists( 'aethercomm_filter_representatives_function' ) ) {
+    function aethercomm_filter_representatives_function(){
+        $args = array(
+            'post_type' => 'representatives',
+            'post_status' => 'publish',
+            'posts_per_page' => -1
+        );
+
+        // if post thumbnail is set
+        if ( isset( $_POST['rep-filter-input'] ) ) {
+            $args['s'] = $_POST['rep-filter-input'];
+        }
+
+        $query = new WP_Query( $args );
+
+        if( $query->have_posts() ) :
+            while( $query->have_posts() ): $query->the_post();
+                echo '<h2>' . $query->post->post_title . '</h2>';
+            endwhile;
+            wp_reset_postdata();
+        else :
+            echo 'No posts found';
+        endif;
+
+        die();
+    }
+}
+
 /* 7. Custom Post Types */
 // CPT products
 add_action( 'init', 'aethercomm_products_post_type' );

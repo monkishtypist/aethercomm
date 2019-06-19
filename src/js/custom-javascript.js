@@ -64,7 +64,7 @@
 			},
 			success:function(data){
 				filter.find('button').text('Search'); // changing the button label back
-				$('#response').html(data); // insert data
+				$('#reps-card-deck').html(data); // insert data
 			}
 		});
 		return false;
