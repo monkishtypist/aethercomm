@@ -1204,6 +1204,7 @@ form {
                     font-family: #{$font-family-sans-serif};
                     font-size: #{$font-size-base * .875};
                     font-weight: #{$font-weight-bold};
+                    letter-spacing: 1px;
                     text-transform: uppercase;
                 }
                 &::-moz-placeholder {
@@ -1211,6 +1212,7 @@ form {
                     font-family: #{$font-family-sans-serif};
                     font-size: #{$font-size-base * .875};
                     font-weight: #{$font-weight-bold};
+                    letter-spacing: 1px;
                     text-transform: uppercase;
                 }
                 &:-ms-input-placeholder {
@@ -1218,6 +1220,7 @@ form {
                     font-family: #{$font-family-sans-serif};
                     font-size: #{$font-size-base * .875};
                     font-weight: #{$font-weight-bold};
+                    letter-spacing: 1px;
                     text-transform: uppercase;
                 }
                 &::placeholder {
@@ -1225,6 +1228,7 @@ form {
                     font-family: #{$font-family-sans-serif};
                     font-size: #{$font-size-base * .875};
                     font-weight: #{$font-weight-bold};
+                    letter-spacing: 1px;
                     text-transform: uppercase;
                 }
             }

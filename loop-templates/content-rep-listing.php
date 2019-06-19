@@ -48,7 +48,6 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <input type="text" class="form-control" id="rep-filter-input" name="rep-filter-input" value="" placeholder="<?php _e( 'Search Representatives', 'aethercomm' ); ?>">
                 </div>
                 <button type="submit" id="rep-filter-submit" class="btn btn-primary btn-narrow"><?php _e( 'Search', 'aethercomm' ); ?></button>
-                <button type="submit" class="btn btn-secondary btn-narrow"><?php _e( 'Clear', 'aethercomm' ); ?></button>
                 <input type="hidden" name="action" value="filter_representatives">
             </form>
 
