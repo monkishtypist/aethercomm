@@ -24980,6 +24980,24 @@ return DataTable;
         }
     });
 
+    // Reps filter form
+    $('#rep-filter-input').keyup(function(){
+		var filter = $('#reps-filter');
+		$.ajax({
+			url:filter.attr('action'),
+			data:filter.serialize(), // form data
+			type:filter.attr('method'), // POST
+			beforeSend:function(xhr){
+				filter.find('button').text('Processing...'); // changing the button label
+			},
+			success:function(data){
+				filter.find('button').text('Search'); // changing the button label back
+				$('#response').html(data); // insert data
+			}
+		});
+		return false;
+	});
+
     // Video Button
     $('.play-video-button').on('click', function(event){
         event.preventDefault();
