@@ -24982,12 +24982,12 @@ return DataTable;
 
     // Reps filter form
     var repSearchFilter = $('#reps-filter');
+    var repSearchResult = $('#reps-card-deck');
     var repSearchFilterInput = repSearchFilter.find('#rep-filter-input');
     // var repSearchFilterSubmit = repSearchFilter.find('#rep-filter-submit');
     // var repSearchFilterSubmitText = repSearchFilterSubmit.text();
     var repSearchFilterReset = repSearchFilter.find('#rep-filter-reset');
     var repSearchFilterResetText = repSearchFilterReset.text();
-    console.log(repSearchFilterResetText);
 
     repSearchFilterInput.keyup(function(){
 		$.ajax({
@@ -24995,26 +24995,32 @@ return DataTable;
 			data:repSearchFilter.serialize(), // form data
 			type:repSearchFilter.attr('method'), // POST
 			beforeSend:function(xhr){
-				repSearchFilterReset.text('Searching...'); // changing the button label
+                repSearchFilterReset.text('Searching...'); // changing the button label
+                repSearchResult.toggleClass('searching');
 			},
 			success:function(data){
-				repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
-				$('#reps-card-deck').html(data); // insert data
+                repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
+				repSearchResult.html(data); // insert data
+                repSearchResult.toggleClass('searching');
 			}
 		});
 		return false;
     });
 
     repSearchFilterReset.click(function(){
-        console.log('click');
         repSearchFilterInput.val('');
 		$.ajax({
-			url:repSearchFilter.attr('action'),
+            url:repSearchFilter.attr('action'),
 			data:repSearchFilter.serialize(), // form data
 			type:repSearchFilter.attr('method'), // POST
+            beforeSend:function(xhr){
+                repSearchFilterReset.text('Clearing...'); // changing the button label
+                repSearchResult.toggleClass('searching');
+            },
 			success:function(data){
-				repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
-				$('#reps-card-deck').html(data); // insert data
+                repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
+				repSearchResult.html(data); // insert data
+                repSearchResult.toggleClass('searching');
 			}
 		});
 		return false;
