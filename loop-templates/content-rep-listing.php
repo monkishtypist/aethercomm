@@ -47,7 +47,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <label for="rep-filter-input" class="sr-only"><?php _e( 'Search Representatives', 'aethercomm' ); ?></label>
                     <input type="text" class="form-control" id="rep-filter-input" name="rep-filter-input" value="" placeholder="<?php _e( 'Search Representatives', 'aethercomm' ); ?>">
                 </div>
-                <button type="submit" id="rep-filter-submit" class="btn btn-primary btn-narrow"><?php _e( 'Search', 'aethercomm' ); ?></button>
+                <button type="reset" id="rep-filter-reset" class="btn btn-primary btn-narrow"><?php _e( 'Clear Search', 'aethercomm' ); ?></button>
                 <input type="hidden" name="action" value="filter_representatives">
             </form>
 

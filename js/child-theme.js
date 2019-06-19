@@ -24983,9 +24983,11 @@ return DataTable;
     // Reps filter form
     var repSearchFilter = $('#reps-filter');
     var repSearchFilterInput = repSearchFilter.find('#rep-filter-input');
-    var repSearchFilterSubmit = repSearchFilter.find('#rep-filter-submit');
-    var repSearchFilterSubmitText = repSearchFilterSubmit.text();
-    console.log(repSearchFilterSubmitText);
+    // var repSearchFilterSubmit = repSearchFilter.find('#rep-filter-submit');
+    // var repSearchFilterSubmitText = repSearchFilterSubmit.text();
+    var repSearchFilterReset = repSearchFilter.find('#rep-filter-reset');
+    var repSearchFilterResetText = repSearchFilterReset.text();
+    console.log(repSearchFilterResetText);
 
     repSearchFilterInput.keyup(function(){
 		$.ajax({
@@ -24993,10 +24995,10 @@ return DataTable;
 			data:repSearchFilter.serialize(), // form data
 			type:repSearchFilter.attr('method'), // POST
 			beforeSend:function(xhr){
-				repSearchFilterSubmit.text('Searching...'); // changing the button label
+				repSearchFilterReset.text('Searching...'); // changing the button label
 			},
 			success:function(data){
-				repSearchFilterSubmit.text(repSearchFilterSubmitText); // changing the button label back
+				repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
 				$('#reps-card-deck').html(data); // insert data
 			}
 		});
