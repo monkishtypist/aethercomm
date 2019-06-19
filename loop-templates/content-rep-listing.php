@@ -42,15 +42,13 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 ); ?>
             <?php } ?>
 
-            <?php /* <!-- Search by State -->
-            <form class="form-inline reps-filter-form">
+            <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="reps-filter" class="form-inline reps-filter-form">
                 <div class="form-group">
-                    <label for="rep-filter-input" class="sr-only"><?php _e( 'Search by state', 'aethercomm' ); ?></label>
-                    <input type="text" class="form-control" id="rep-filter-input" value="" placeholder="<?php _e( 'Search by state', 'aethercomm' ); ?>">
+                    <label for="rep-filter-input" class="sr-only"><?php _e( 'Search Representatives', 'aethercomm' ); ?></label>
+                    <input type="text" class="form-control" id="rep-filter-input" value="" placeholder="<?php _e( 'Search Representatives', 'aethercomm' ); ?>">
                 </div>
                 <button type="submit" class="btn btn-primary"><?php _e( 'Search', 'aethercomm' ); ?></button>
             </form>
-            */ ?>
 
             <?php
             $args = array(
