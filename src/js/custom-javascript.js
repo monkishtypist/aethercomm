@@ -53,19 +53,22 @@
     });
 
     // Reps filter form
-    $('#rep-filter-input').keyup(function(){
-        var filter = $('#reps-filter');
-        var searchText = filter.find('button').text();
-        console.log(searchText);
+    var repSearchFilter = $('#reps-filter');
+    var repSearchFilterInput = repSearchFilter.find('#rep-filter-input');
+    var repSearchFilterSubmit = repSearchFilter.find('#rep-filter-submit');
+    var repSearchFilterSubmitText = repSearchFilterSubmit.text();
+    console.log(repSearchFilterSubmitText);
+
+    repSearchFilterInput.keyup(function(){
 		$.ajax({
-			url:filter.attr('action'),
-			data:filter.serialize(), // form data
-			type:filter.attr('method'), // POST
+			url:repSearchFilter.attr('action'),
+			data:repSearchFilter.serialize(), // form data
+			type:repSearchFilter.attr('method'), // POST
 			beforeSend:function(xhr){
-				filter.find('button').text('Searching...'); // changing the button label
+				repSearchFilterSubmit.text('Searching...'); // changing the button label
 			},
 			success:function(data){
-				filter.find('button').text(searchText); // changing the button label back
+				repSearchFilterSubmit.text(repSearchFilterSubmitText); // changing the button label back
 				$('#reps-card-deck').html(data); // insert data
 			}
 		});
