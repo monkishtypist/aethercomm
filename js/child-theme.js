@@ -24934,6 +24934,17 @@ return DataTable;
 (function($) {
     'use strict';
 
+    var delay = function(callback, ms) {
+        var timer = 0;
+        return function() {
+            var context = this, args = arguments;
+            clearTimeout(timer);
+            timer = setTimeout(function () {
+                callback.apply(context, args);
+            }, ms || 0);
+        };
+    }
+
     // Main Menu: transition background based on scroll position
     var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
 
@@ -24989,7 +25000,7 @@ return DataTable;
     var repSearchFilterReset = repSearchFilter.find('#rep-filter-reset');
     var repSearchFilterResetText = repSearchFilterReset.text();
 
-    repSearchFilterInput.keyup(function(){
+    repSearchFilterInput.keyup(delay(function(event){
 		$.ajax({
 			url:repSearchFilter.attr('action'),
 			data:repSearchFilter.serialize(), // form data
@@ -25005,7 +25016,7 @@ return DataTable;
 			}
 		});
 		return false;
-    });
+    }, 500));
 
     repSearchFilterReset.click(function(){
         repSearchFilterInput.val('');
