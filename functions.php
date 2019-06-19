@@ -328,7 +328,7 @@ if ( ! function_exists( 'aethercomm_filter_representatives_function' ) ) {
             endwhile;
             wp_reset_postdata();
         else :
-            echo 'No posts found';
+            echo '<div class="card">No results found</div>';
         endif;
 
         die();
