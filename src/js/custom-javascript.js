@@ -75,7 +75,21 @@
 			}
 		});
 		return false;
-	});
+    });
+
+    repSearchFilterReset.click(function(){
+        repSearchFilterInput.val('');
+		$.ajax({
+			url:repSearchFilter.attr('action'),
+			data:repSearchFilter.serialize(), // form data
+			type:repSearchFilter.attr('method'), // POST
+			success:function(data){
+				repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
+				$('#reps-card-deck').html(data); // insert data
+			}
+		});
+		return false;
+    });
 
     // Video Button
     $('.play-video-button').on('click', function(event){
