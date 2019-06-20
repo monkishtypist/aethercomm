@@ -90,7 +90,8 @@
 		return false;
     }, 200));
 
-    repSearchFilterReset.click(function(){
+    repSearchFilterReset.click(function(e){
+        e.preventDefault();
         repSearchFilterInput.val('');
 		$.ajax({
             url:repSearchFilter.attr('action'),
