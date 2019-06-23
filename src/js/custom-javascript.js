@@ -93,6 +93,7 @@
             },
             error:function(XMLHttpRequest, textStatus, errorThrown) {
                 repSearchResult.html(repNoResult); // insert default
+                repSearchResult.toggleClass('searching');
             }
 		});
 		return false;
