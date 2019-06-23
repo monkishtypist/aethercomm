@@ -315,7 +315,7 @@ if ( ! function_exists( 'aethercomm_filter_representatives_function' ) ) {
             'posts_per_page' => -1
         );
 
-        if ( isset( $_POST['rep-filter-input'] ) ) {
+        if ( isset( $_POST['rep-filter-input'] ) && ! empty( $_POST['rep-filter-input'] ) ) {
             $args['s'] = $_POST['rep-filter-input'];
 
             $query = new WP_Query( $args );
