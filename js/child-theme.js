@@ -25012,10 +25012,14 @@ return DataTable;
 			},
 			success:function(data) {
                 repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
-				repSearchResult.html(data); // insert data
+                if(data){
+                    repSearchResult.html(data); // insert data
+                } else {
+                    repSearchResult.html(repNoResult); // insert default
+                }
                 repSearchResult.toggleClass('searching');
             },
-            error: function(XMLHttpRequest, textStatus, errorThrown) {
+            error:function(XMLHttpRequest, textStatus, errorThrown) {
                 repSearchResult.html(repNoResult); // insert default
             }
 		});
