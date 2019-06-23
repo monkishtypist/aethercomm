@@ -315,21 +315,22 @@ if ( ! function_exists( 'aethercomm_filter_representatives_function' ) ) {
             'posts_per_page' => -1
         );
 
-        // if post thumbnail is set
         if ( isset( $_POST['rep-filter-input'] ) ) {
             $args['s'] = $_POST['rep-filter-input'];
+
+            $query = new WP_Query( $args );
+
+            if( $query->have_posts() ) :
+                while( $query->have_posts() ): $query->the_post();
+                    get_template_part( 'loop-templates/content', 'card' );
+                endwhile;
+                wp_reset_postdata();
+            endif;
+        } else {
+            return false;
         }
 
-        $query = new WP_Query( $args );
-
-        if( $query->have_posts() ) :
-            while( $query->have_posts() ): $query->the_post();
-                get_template_part( 'loop-templates/content', 'card' );
-            endwhile;
-            wp_reset_postdata();
-        else :
-            echo '<div class="card card-representatives " data-post-type="representatives"><div class="card-body"><h3 class="card-title">Aethercomm</h3><div class="card-text"><p>Address: 3205 Linshead Ave<br />Carlsbad, CA 92010</p></div><div class="card-text"></div></div><div class="card-footer"><a href="' . get_permalink( 25 ) . '" class="btn btn-gray">Contact</a></div></div>';
-        endif;
+        // echo '<div class="card card-representatives " data-post-type="representatives"><div class="card-body"><h3 class="card-title">Aethercomm</h3><div class="card-text"><p>Address: 3205 Linshead Ave<br />Carlsbad, CA 92010</p></div><div class="card-text"></div></div><div class="card-footer"><a href="' . get_permalink( 25 ) . '" class="btn btn-gray">Contact</a></div></div>';
 
         die();
     }
