@@ -327,7 +327,7 @@ if ( ! function_exists( 'aethercomm_filter_representatives_function' ) ) {
                 wp_reset_postdata();
             endif;
         } else {
-            return false;
+            return new HttpStatusCodeResult(410, "Search returned no result.");
         }
 
         // echo '<div class="card card-representatives " data-post-type="representatives"><div class="card-body"><h3 class="card-title">Aethercomm</h3><div class="card-text"><p>Address: 3205 Linshead Ave<br />Carlsbad, CA 92010</p></div><div class="card-text"></div></div><div class="card-footer"><a href="' . get_permalink( 25 ) . '" class="btn btn-gray">Contact</a></div></div>';
