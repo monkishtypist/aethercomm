@@ -66,11 +66,29 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
 
                 <div id="reps-card-deck" class="card-deck">
 
+                    <?php /* ?>
+
                     <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
                         <?php get_template_part( 'loop-templates/content', 'card' ); ?>
 
                     <?php endwhile; ?>
+
+                    <?php */ ?>
+
+                    <div class="card card-representatives " data-post-type="representatives">
+                        <div class="card-body">
+                            <h3 class="card-title">Aethercomm</h3>
+                            <div class="card-text">
+                                <p>Address: 3205 Linshead Ave<br />Carlsbad, CA 92010</p>
+                            </div>
+                            <div class="card-text">
+                            </div>
+                        </div>
+                        <div class="card-footer">
+                            <a href="<?php echo get_permalink( 25 ); ?>" class="btn btn-gray">Contact</a>
+                        </div>
+                    </div>
 
                 </div>
 
