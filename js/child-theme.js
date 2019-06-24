@@ -25007,6 +25007,7 @@ return DataTable;
         var keyCode = e.keyCode || e.which;
         if (!repSearchFilterInput.val()){
             e.preventDefault();
+            repSearchResult.html(repNoResult); // insert default
             return false;
         }
         // console.log(keyCode);
