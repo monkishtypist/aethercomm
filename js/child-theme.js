@@ -25003,7 +25003,7 @@ return DataTable;
 
     repSearchFilterInput.on('keyup keypress',delay(function(e){
         var keyCode = e.keyCode || e.which;
-        if (keyCode === 13) {
+        if (keyCode === 13){
             e.preventDefault();
             return false;
         }
@@ -25011,11 +25011,11 @@ return DataTable;
 			url:repSearchFilter.attr('action'),
 			data:repSearchFilter.serialize(), // form data
 			type:repSearchFilter.attr('method'), // POST
-			beforeSend:function(xhr) {
+			beforeSend:function(xhr){
                 repSearchFilterReset.text('Searching...'); // changing the button label
                 repSearchResult.toggleClass('searching');
 			},
-			success:function(data) {
+			success:function(data){
                 repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
                 if(data){
                     repSearchResult.html(data); // insert data
