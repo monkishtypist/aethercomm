@@ -21,11 +21,6 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 $cats = get_categories();
 
-$current_cats = get_the_category();
-$current_cat_id = $current_cats[0]->cat_ID;
-
-var_dump($current_cats);
-
 ?>
 
 <div class="wrapper" id="index-wrapper" class="index-wrapper">
@@ -47,8 +42,10 @@ var_dump($current_cats);
 
                     <header>
                         <h1 class="page-title"><?php echo( sprintf( '%1$s &amp; %2$s', __( 'News', 'aethercomm' ), __( 'Articles', 'aethercomm' ) ) ); ?></h1>
-                        <div class="page-lede"><?php _e( 'Lorem ipsum that <strong>saves lives.</strong>', 'aethercomm' ); ?></div>
-                        <div class="page-lede"><?php echo category_description( $current_cat_id ); ?></div>
+                        <div class="page-lede">
+                            <?php // _e( 'Lorem ipsum that <strong>saves lives.</strong>', 'aethercomm' ); ?>
+                            <?php echo category_description( 1 ); ?>
+                        </div>
                     </header>
 
                     <span class="crosshairs-white crosshairs-sm-gray crosshairs-top-left"></span>
