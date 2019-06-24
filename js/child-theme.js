@@ -25005,6 +25005,10 @@ return DataTable;
 
     repSearchFilter.on('keyup keypress keydown',repSearchFilterInput,delay(function(e){
         var keyCode = e.keyCode || e.which;
+        if (!repSearchFilterInput.val()){
+            e.preventDefault();
+            return false;
+        }
         // console.log(keyCode);
         if (keyCode === 13){
             e.preventDefault();
