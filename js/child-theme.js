@@ -25001,7 +25001,7 @@ return DataTable;
     var repSearchFilterReset = repSearchFilter.find('#rep-filter-reset');
     var repSearchFilterResetText = repSearchFilterReset.text();
 
-    repSearchFilterInput.on('keyup keypress keydown',delay(function(e){
+    repSearchFilter.on('keyup keypress keydown',repSearchFilterInput,delay(function(e){
         var keyCode = e.keyCode || e.which;
         console.log(keyCode);
         if (keyCode === 13){
