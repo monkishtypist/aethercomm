@@ -25003,6 +25003,7 @@ return DataTable;
 
     repSearchFilterInput.on('keyup keypress keydown',delay(function(e){
         var keyCode = e.keyCode || e.which;
+        console.log(keyCode);
         if (keyCode === 13){
             e.preventDefault();
             return false;
