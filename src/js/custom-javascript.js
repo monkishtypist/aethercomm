@@ -73,7 +73,12 @@
     var repSearchFilterReset = repSearchFilter.find('#rep-filter-reset');
     var repSearchFilterResetText = repSearchFilterReset.text();
 
-    repSearchFilterInput.keyup(delay(function(event){
+    repSearchFilterInput.on('keyup keypress',delay(function(e){
+        var keyCode = e.keyCode || e.which;
+        if (keyCode === 13) {
+            e.preventDefault();
+            return false;
+        }
 		$.ajax({
 			url:repSearchFilter.attr('action'),
 			data:repSearchFilter.serialize(), // form data
