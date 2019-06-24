@@ -76,12 +76,12 @@
     repSearchFilterInput.on('keyup keypress keydown',delay(function(e){
         var keyCode = e.keyCode || e.which;
         console.log(keyCode);
-        if (keyCode == 13){
+        if (keyCode === 13){
             e.preventDefault();
             return false;
         }
 		$.ajax({
-			url:repSearchFilter.attr('action'),
+			url:repSearchFilter.attr('ajax-url'),
 			data:repSearchFilter.serialize(), // form data
 			type:repSearchFilter.attr('method'), // POST
 			beforeSend:function(xhr){

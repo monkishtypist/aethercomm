@@ -42,7 +42,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                 ); ?>
             <?php } ?>
 
-            <form action="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="reps-filter" class="form-inline reps-filter-form">
+            <form ajax-url="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="reps-filter" class="form-inline reps-filter-form">
                 <div class="form-group">
                     <label for="rep-filter-input" class="sr-only"><?php _e( 'Search Representatives', 'aethercomm' ); ?></label>
                     <input type="text" class="form-control" id="rep-filter-input" name="rep-filter-input" value="" placeholder="<?php _e( 'Type here to search for a location', 'aethercomm' ); ?>">
