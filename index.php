@@ -24,6 +24,8 @@ $cats = get_categories();
 $current_cats = get_the_category();
 $current_cat_id = $current_cats[0]->cat_ID;
 
+var_dump($current_cats);
+
 ?>
 
 <div class="wrapper" id="index-wrapper" class="index-wrapper">
