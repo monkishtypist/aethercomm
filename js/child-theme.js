@@ -25347,10 +25347,15 @@ return DataTable;
 
     $('#products-table').scroll(function(e){
         var maxScrollLeft = $(this).get(0).scrollWidth - $(this).get(0).clientWidth;
-        if ( $(this).scrollLeft() >= maxScrollLeft ) {
-            $(this).addClass('scrolled').removeClass('scroll');
+        if ( $(this).scrollLeft() <= 0 ) {
+            $(this).addClass('scrollStart');
         } else {
-            $(this).removeClass('scrolled').addClass('scroll');
+            $(this).removeClass('scrollStart');
+        }
+        if ( $(this).scrollLeft() >= maxScrollLeft ) {
+            $(this).addClass('scrollEnd');
+        } else {
+            $(this).removeClass('scrollEnd');
         }
     });
 

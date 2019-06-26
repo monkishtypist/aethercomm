@@ -18786,7 +18786,7 @@ table.dataTable thead .sorting_desc_disabled:before {
   #products_page-wrapper #products-table_wrapper #products-table .product-queue-link[data-queued="true"] {
     color: #28a745; }
 
-#products_page-wrapper #products-table_wrapper #products-table:before {
+#products_page-wrapper #products-table_wrapper #products-table.scroll:before, #products_page-wrapper #products-table_wrapper #products-table.scroll:after {
   content: "";
   background: transparent;
   -webkit-transition: background .5s;
@@ -18799,6 +18799,21 @@ table.dataTable thead .sorting_desc_disabled:before {
   z-index: 1; }
 
 #products_page-wrapper #products-table_wrapper #products-table.scroll:before {
+  left: 9px; }
+
+#products_page-wrapper #products-table_wrapper #products-table.scroll:after {
+  right: 9px; }
+
+#products_page-wrapper #products-table_wrapper #products-table.scroll:not(.scrollStart):before {
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, right top, left top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
+  background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.2) 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#00000000',GradientType=1 );
+  /* IE6-9 */ }
+
+#products_page-wrapper #products-table_wrapper #products-table.scroll:not(.scrollEnd):after {
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
   background: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0)), color-stop(50%, rgba(0, 0, 0, 0.05)), to(rgba(0, 0, 0, 0.2)));
