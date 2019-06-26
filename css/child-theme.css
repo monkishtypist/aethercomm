@@ -18786,7 +18786,12 @@ table.dataTable thead .sorting_desc_disabled:before {
   #products_page-wrapper #products-table_wrapper #products-table .product-queue-link[data-queued="true"] {
     color: #28a745; }
 
-#products_page-wrapper #products-table_wrapper #products-table.swipeable:before {
+#products_page-wrapper #products-table_wrapper #products-table:before {
+  background: transparent;
+  -webkit-transition: background .5s;
+  transition: background .5s; }
+
+#products_page-wrapper #products-table_wrapper #products-table.scroll:before {
   content: "";
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */

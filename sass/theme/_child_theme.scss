@@ -2451,7 +2451,11 @@ $timeline-rotation-increment: 34.5 !default;
             .product-queue-link {
                 @include product-queue-link-styles();
             }
-            &.swipeable:before {
+            &:before {
+                background: transparent;
+                transition: background .5s;
+            }
+            &.scroll:before {
                 content: "";
 
                 background: -moz-linear-gradient(left,  rgba(255,255,255,0) 0%, rgba(255,255,255,1) 100%); /* FF3.6-15 */
