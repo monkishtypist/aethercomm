@@ -101,6 +101,12 @@ $product_cats = get_categories( $product_cats_args );
                 </div>
             </div>
 
+            <div class="row justify-content-center align-items-center d-flex d-md-none mb-1">
+                <div class="col-auto">
+                    <?php _e( 'Scroll left / right for more information', 'aethercomm' ); ?>
+                </div>
+            </div>
+
             <?php
             $args = array(
                 'post_type' => 'products',
