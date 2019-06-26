@@ -25345,6 +25345,15 @@ return DataTable;
         "drawCallback": updateQueuedModels()
     });
 
+    $('#products-table').scroll(function(e){
+        var maxScrollLeft = $(this).get(0).scrollWidth - $(this).get(0).clientWidth;
+        if ( $(this).scrollLeft() >= maxScrollLeft ) {
+            $(this).addClass('scrolt');
+        } else {
+            $(this).removeClass('scrolt');
+        }
+    });
+
     $('#productsearch').on( 'keyup', function () {
         table.search( this.value ).draw();
     } );

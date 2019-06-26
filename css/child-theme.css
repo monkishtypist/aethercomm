@@ -18786,6 +18786,22 @@ table.dataTable thead .sorting_desc_disabled:before {
   #products_page-wrapper #products-table_wrapper #products-table .product-queue-link[data-queued="true"] {
     color: #28a745; }
 
+#products_page-wrapper #products-table_wrapper #products-table.swipeable:before {
+  content: "";
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(rgba(255, 255, 255, 0)), to(white));
+  background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, white 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00ffffff', endColorstr='#ffffff',GradientType=1 );
+  /* IE6-9 */
+  display: block;
+  height: 100%;
+  position: absolute;
+  right: 0;
+  width: 2rem;
+  z-index: 1; }
+
 @media (max-width: 768.98px) {
   #single_products-wrapper #single_products-header {
     padding-top: 9.325rem; } }
