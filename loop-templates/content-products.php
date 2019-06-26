@@ -103,7 +103,7 @@ $product_cats = get_categories( $product_cats_args );
 
             <div class="row justify-content-center align-items-center d-flex d-md-none mb-1">
                 <div class="col-auto">
-                    <?php _e( 'Scroll left / right for more information', 'aethercomm' ); ?>
+                    <i class="far fa-chevron-left"></i><?php _e( 'Scroll left / right for more information', 'aethercomm' ); ?><i class="far fa-chevron-right"></i>
                 </div>
             </div>
 
