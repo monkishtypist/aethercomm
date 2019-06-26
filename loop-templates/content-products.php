@@ -101,9 +101,15 @@ $product_cats = get_categories( $product_cats_args );
                 </div>
             </div>
 
-            <div class="row justify-content-center align-items-center d-flex d-md-none mb-1">
+            <div class="row justify-content-between align-items-center d-flex d-md-none mb-4">
                 <div class="col-auto">
-                    <i class="far fa-chevron-left"></i><?php _e( 'Scroll left / right for more information', 'aethercomm' ); ?><i class="far fa-chevron-right"></i>
+                    <i class="far fa-chevron-left"></i>
+                </div>
+                <div class="col-auto">
+                    <strong><?php _e( 'Scroll left / right for more information', 'aethercomm' ); ?></strong>
+                </div>
+                <div class="col-auto">
+                    <i class="far fa-chevron-right"></i>
                 </div>
             </div>
 
