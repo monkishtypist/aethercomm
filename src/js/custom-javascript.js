@@ -36,6 +36,10 @@
         }
     });
 
+    $(".navbar-toggler").click(function(){
+        $(this).closest("nav").toggleClass("expanded");
+    });
+
     // Search Form: open/close input field actions
     var searchform = $("#searchform");
     var searchinput = $("#s");
