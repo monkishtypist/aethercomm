@@ -122,7 +122,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
         <div class="row no-gutters">
             <?php if ( $video_embed_code ) { ?>
                 <div class="col-12">
-                    <a href="#play-video" class="play-video-button"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play-video.png" alt="Play Video" /></a>
+                    <a href="#play-video" class="play-video-button" data-embed-code='<?php echo $video_embed_code; ?>'><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/play-video.png" alt="Play Video" /></a>
                 </div>
             <?php } ?>
             <div class="col-12">
