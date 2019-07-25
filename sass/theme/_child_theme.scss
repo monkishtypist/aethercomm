@@ -674,6 +674,12 @@ section {
         &.nav-transparency {
             > nav.navbar-dark {
                 background-color: rgba($black, .5);
+                transition: $transition-base;
+                @include media-breakpoint-down('md') {
+                    &.expanded {
+                        background-color: rgba($black, 1);
+                    }
+                }
             }
         }
     }

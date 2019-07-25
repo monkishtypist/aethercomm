@@ -15469,7 +15469,12 @@ section {
       -webkit-transition: all 0.2s ease-in-out;
       transition: all 0.2s ease-in-out; }
   .home #wrapper-navbar.nav-transparency > nav.navbar-dark {
-    background-color: rgba(0, 0, 0, 0.5); }
+    background-color: rgba(0, 0, 0, 0.5);
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    @media (max-width: 991.98px) {
+      .home #wrapper-navbar.nav-transparency > nav.navbar-dark.expanded {
+        background-color: black; } }
   #wrapper-navbar .sub-navbar {
     background-color: transparent;
     background-image: url(../images/utility-nav-bg.png);
