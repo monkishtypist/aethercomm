@@ -18768,6 +18768,11 @@ table.dataTable thead .sorting_desc_disabled:before {
   #products_page-wrapper #products-table_wrapper #products-table thead tr th:nth-child(2), #products_page-wrapper #products-table_wrapper #products-table thead tr td:nth-child(2) {
     min-width: 16.5rem; }
 
+@media (max-width: 991.98px) {
+  #products_page-wrapper #products-table_wrapper #products-table tbody tr td .wp-post-image {
+    height: auto;
+    width: 150px; } }
+
 #products_page-wrapper #products-table_wrapper #products-table tbody tr td:first-of-type {
   text-align: center; }
 

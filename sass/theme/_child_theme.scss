@@ -2448,6 +2448,12 @@ $timeline-rotation-increment: 34.5 !default;
             tbody {
                 tr {
                     td {
+                        .wp-post-image {
+                            @include media-breakpoint-down('md') {
+                                height: auto;
+                                width: 150px;
+                            }
+                        }
                         &:first-of-type {
                             text-align: center;
                         }
