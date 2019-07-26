@@ -448,7 +448,11 @@
                 $('#product-cats-nav').find('a[data-show-all]').addClass('active');
             }
         } else {
-            table.columns( 5 ).search( '^'+$(this).data('cat-slug')+'$', true, false ).draw();
+            if ( $(this).data('show-all') || ! $(this).data('cat-slug') ) {
+                table.columns( 5 ).search( '' ).draw();
+            } else {
+                table.columns( 5 ).search( '^'+$(this).data('cat-slug')+'$', true, false ).draw();
+            }
             $(this).addClass('active').siblings().removeClass('active');
         }
     } );
