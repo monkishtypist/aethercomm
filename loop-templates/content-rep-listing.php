@@ -87,7 +87,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
                     <div class="card-body">
                         <h3 class="card-title">Aethercomm</h3>
                         <div class="card-text">
-                            <p>Address: 3205 Linshead Ave<br />Carlsbad, CA 92010</p>
+                            <p>Address: 3205 Lionshead Ave<br />Carlsbad, CA 92010</p>
                         </div>
                         <div class="card-text">
                         </div>
