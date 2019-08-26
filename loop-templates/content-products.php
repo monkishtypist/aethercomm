@@ -121,39 +121,41 @@ $product_cats = get_categories( $product_cats_args );
             $query = new WP_Query( $args );
             ?>
 
-            <table id="products-table" class="products-table table tablehover table-responsive scroll scrollStart">
+            <div class="products-table-wrapper">
+                <table id="products-table" class="products-table table tablehover table-responsive scroll scrollStart">
 
-                <thead>
-                    <tr>
-                        <th><?php _e( 'Queue', 'aethercomm' ); ?></th>
-                        <th><?php _e( 'Part Number', 'aethercomm' ); ?></th>
-                        <th><?php _e( 'Frequency Min', 'aethercomm' ); ?></th>
-                        <th><?php _e( 'Frequency Max', 'aethercomm' ); ?></th>
-                        <th><?php _e( 'Watts', 'aethercomm' ); ?></th>
-                        <th class="col-hidden"><?php _e( 'Category', 'aethercomm' ); ?></th>
-                        <th><?php _e( 'Description', 'aethercomm' ); ?></th>
-                    </tr>
-                </thead>
+                    <thead>
+                        <tr>
+                            <th><?php _e( 'Queue', 'aethercomm' ); ?></th>
+                            <th><?php _e( 'Part Number', 'aethercomm' ); ?></th>
+                            <th><?php _e( 'Frequency Min', 'aethercomm' ); ?></th>
+                            <th><?php _e( 'Frequency Max', 'aethercomm' ); ?></th>
+                            <th><?php _e( 'Watts', 'aethercomm' ); ?></th>
+                            <th class="col-hidden"><?php _e( 'Category', 'aethercomm' ); ?></th>
+                            <th><?php _e( 'Description', 'aethercomm' ); ?></th>
+                        </tr>
+                    </thead>
 
-                <tbody>
+                    <tbody>
 
-                    <?php if ( $query->have_posts() ) : ?>
+                        <?php if ( $query->have_posts() ) : ?>
 
-                        <?php ob_start(); ?>
+                            <?php ob_start(); ?>
 
-                            <?php while ( $query->have_posts() ) : $query->the_post(); ?>
+                                <?php while ( $query->have_posts() ) : $query->the_post(); ?>
 
-                                <?php get_template_part( 'loop-templates/content', 'product-row' ); ?>
+                                    <?php get_template_part( 'loop-templates/content', 'product-row' ); ?>
 
-                            <?php endwhile; ?>
+                                <?php endwhile; ?>
 
-                        <?php echo ob_get_clean(); ?>
+                            <?php echo ob_get_clean(); ?>
 
-                    <?php endif; wp_reset_query(); ?>
+                        <?php endif; wp_reset_query(); ?>
 
-                </tbody>
+                    </tbody>
 
-            </table>
+                </table>
+            </div>
 
         </div>
 
