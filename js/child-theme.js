@@ -24934,8 +24934,6 @@ return DataTable;
 (function($) {
     'use strict';
 
-    var scroll = $(window).scrollTop();
-
     var delay = function(callback, ms) {
         var timer = 0;
         return function() {
@@ -24946,6 +24944,32 @@ return DataTable;
             }, ms || 0);
         };
     }
+
+    // Main Menu: transition background based on scroll position
+    var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
+
+    var scrollOffset = 100;
+    var scrollOffsetProductsAlert = $("#products-scroll-alert").offset().top;
+    var scrollOffsetProductsAlertEnd = $("#product-page-slider").offset().top - 150;
+    var scroll = $(window).scrollTop();
+
+    if (scroll < scrollOffset) {
+        wrapperNavbar.addClass("nav-transparency");
+    }
+
+    $(window).scroll(function() {
+        scroll = $(window).scrollTop();
+        if (scroll >= scrollOffset) {
+            wrapperNavbar.removeClass("nav-transparency");
+        } else {
+            wrapperNavbar.addClass("nav-transparency");
+        }
+        if (scroll >= scrollOffsetProductsAlert && scroll < scrollOffsetProductsAlertEnd) {
+            $("#products-scroll-alert").addClass("fixed");
+        } else {
+            $("#products-scroll-alert").removeClass("fixed");
+        }
+    });
 
     $(".navbar-toggler").click(function(){
         $(this).closest("nav").toggleClass("expanded");
@@ -25509,30 +25533,5 @@ return DataTable;
      * PAGE INIT
      */
     updateQueuedModels(); // set the default queued products on page load
-
-    // Main Menu: transition background based on scroll position
-    var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
-
-    var scrollOffset = 100;
-    var scrollOffsetProductsAlert = $("#products-scroll-alert").offset().top;
-    var scrollOffsetProductsAlertEnd = $("#products-page-slider").offset().top - 150;
-
-    if (scroll < scrollOffset) {
-        wrapperNavbar.addClass("nav-transparency");
-    }
-
-    $(window).scroll(function() {
-        scroll = $(window).scrollTop();
-        if (scroll >= scrollOffset) {
-            wrapperNavbar.removeClass("nav-transparency");
-        } else {
-            wrapperNavbar.addClass("nav-transparency");
-        }
-        if (scroll >= scrollOffsetProductsAlert && scroll < scrollOffsetProductsAlertEnd) {
-            $("#products-scroll-alert").addClass("fixed");
-        } else {
-            $("#products-scroll-alert").removeClass("fixed");
-        }
-    });
 
 })(jQuery);
