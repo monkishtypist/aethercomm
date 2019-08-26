@@ -435,6 +435,10 @@
         }
     });
 
+    $('#productsearchform').on( 'submit', function(e){
+        e.preventDefault();
+    });
+
     $('#productsearch').on( 'keyup', function () {
         table.search( this.value ).draw();
     } );
