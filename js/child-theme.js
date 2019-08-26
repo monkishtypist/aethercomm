@@ -24949,6 +24949,8 @@ return DataTable;
     var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
 
     var scrollOffset = 100;
+    var scrollOffsetProductsAlert = $("#products-scroll-alert").offset().top;
+    var scrollOffsetProductsAlertEnd = $("#products-page-slider").offset().top - 150;
     var scroll = $(window).scrollTop();
 
     if (scroll < scrollOffset) {
@@ -24961,6 +24963,11 @@ return DataTable;
             wrapperNavbar.removeClass("nav-transparency");
         } else {
             wrapperNavbar.addClass("nav-transparency");
+        }
+        if (scroll >= scrollOffsetProductsAlert && scroll < scrollOffsetProductsAlertEnd) {
+            $("#products-scroll-alert").addClass("fixed");
+        } else {
+            $("#products-scroll-alert").removeClass("fixed");
         }
     });
 

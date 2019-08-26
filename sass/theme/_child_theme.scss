@@ -2432,8 +2432,17 @@ $timeline-rotation-increment: 34.5 !default;
                 display: none;
             }
         }
+        #products-scroll-alert {
+            &.fixed {
+                background: $white;
+                position: fixed;
+                top: 120px;
+                z-index: 2;
+            }
+        }
     }
     #products-table_wrapper {
+        overflow: hidden;
         #products-table_filter {
             display: none;
         }
