@@ -15428,6 +15428,7 @@ section {
  */
 #wrapper-navbar {
   left: 0;
+  pointer-events: none;
   position: fixed;
   right: 0;
   top: 0;
@@ -15438,7 +15439,8 @@ section {
       .admin-bar #wrapper-navbar {
         top: 46px; } }
   #wrapper-navbar > nav {
-    border-bottom: 1px solid #707070; }
+    border-bottom: 1px solid #707070;
+    pointer-events: auto; }
     @media (max-width: 575.98px) {
       #wrapper-navbar > nav {
         padding: 0; }
@@ -15481,6 +15483,7 @@ section {
     background-position: 0 0;
     background-size: cover;
     float: right;
+    pointer-events: auto;
     position: relative; }
     #wrapper-navbar .sub-navbar .sub-navbar-inner {
       background-color: transparen;

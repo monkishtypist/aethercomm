@@ -623,6 +623,7 @@ section {
  */
 #wrapper-navbar {
     left: 0;
+    pointer-events: none;
     position: fixed;
     right: 0;
     top: 0;
@@ -635,6 +636,7 @@ section {
     }
     > nav {
         border-bottom: 1px solid #{$gray-600};
+        pointer-events: auto;
         @include media-breakpoint-down('xs') {
             padding: 0;
             .navbar-brand {
@@ -692,6 +694,7 @@ section {
         background-size: cover;
         // display: inline-block;
         float: right;
+        pointer-events: auto;
         position: relative;
         .sub-navbar-inner {
             background-color: transparen; // #{$black};
