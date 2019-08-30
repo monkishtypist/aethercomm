@@ -2433,7 +2433,7 @@ $timeline-rotation-increment: 34.5 !default;
             }
         }
         #products-scroll-alert {
-            &.fixed {
+            &.alertFixed {
                 background: $white;
                 position: fixed;
                 top: 120px;

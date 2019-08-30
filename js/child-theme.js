@@ -24949,7 +24949,7 @@ return DataTable;
     var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
 
     var scrollOffset = 100;
-    var scrollOffsetProductsAlert = $("#products-scroll-alert").offset().top;
+    var scrollOffsetProductsAlert = $("#products-loop").offset().top;
     var scrollOffsetProductsAlertEnd = $("#product-page-slider").offset().top - 150;
     var scroll = $(window).scrollTop();
 
@@ -24966,10 +24966,10 @@ return DataTable;
         }
         /* products swipe alert */
         if (scroll >= scrollOffsetProductsAlert && scroll < scrollOffsetProductsAlertEnd) {
-            $("#products-scroll-alert").addClass("fixed");
+            $("#products-scroll-alert").addClass("alertFixed");
             console.log("fixed");
         } else {
-            $("#products-scroll-alert").removeClass("fixed");
+            $("#products-scroll-alert").removeClass("alertFixed");
             console.log("unfixed");
         }
     });
