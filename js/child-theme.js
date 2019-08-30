@@ -24949,7 +24949,7 @@ return DataTable;
     var wrapperNavbar = $("#wrapper-navbar"); //caches a jQuery object containing the header element
 
     var scrollOffset = 100;
-    var scrollOffsetProductsAlert = $("#products-loop").offset().top;
+    var scrollOffsetProductsAlert = $("#products_loop").offset().top;
     var scrollOffsetProductsAlertEnd = $("#product-page-slider").offset().top - 150;
     var scroll = $(window).scrollTop();
 
