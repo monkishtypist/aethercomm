@@ -24964,10 +24964,13 @@ return DataTable;
         } else {
             wrapperNavbar.addClass("nav-transparency");
         }
+        /* products swipe alert */
         if (scroll >= scrollOffsetProductsAlert && scroll < scrollOffsetProductsAlertEnd) {
             $("#products-scroll-alert").addClass("fixed");
+            console.log("fixed");
         } else {
             $("#products-scroll-alert").removeClass("fixed");
+            console.log("unfixed");
         }
     });
 
