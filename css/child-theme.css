@@ -18766,7 +18766,7 @@ table.dataTable thead .sorting_desc_disabled:before {
 #products_page-wrapper #products_loop #products-scroll-alert.alertFixed {
   background: #fff;
   position: fixed;
-  top: 120px;
+  top: 74px;
   z-index: 2; }
 
 #products_page-wrapper #products-table_wrapper {

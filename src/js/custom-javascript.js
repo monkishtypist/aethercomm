@@ -22,7 +22,7 @@
 
     var scrollOffset = 100;
     var scrollOffsetProductsAlert = $("#products_loop").offset().top;
-    var scrollOffsetProductsAlertEnd = $("#product-page-slider").offset().top - 150;
+    var scrollOffsetProductsAlertEnd = $("#product-page-slider").offset().top;
     var scroll = $(window).scrollTop();
 
     if (scroll < scrollOffset) {
@@ -37,7 +37,7 @@
             wrapperNavbar.addClass("nav-transparency");
         }
         /* products swipe alert */
-        if (scroll >= scrollOffsetProductsAlert && scroll < scrollOffsetProductsAlertEnd) {
+        if ((scroll >= scrollOffsetProductsAlert) && (scroll < scrollOffsetProductsAlertEnd)) {
             $("#products-scroll-alert").addClass("alertFixed");
             console.log("fixed");
         } else {
