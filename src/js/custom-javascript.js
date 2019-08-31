@@ -31,6 +31,7 @@
 
     $(window).scroll(function() {
         scroll = $(window).scrollTop();
+        scrollOffsetProductsAlertEnd = $("#product-page-slider").offset().top;
         if (scroll >= scrollOffset) {
             wrapperNavbar.removeClass("nav-transparency");
         } else {
