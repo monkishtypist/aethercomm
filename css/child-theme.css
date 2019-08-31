@@ -18763,11 +18763,14 @@ table.dataTable thead .sorting_desc_disabled:before {
   #products_page-wrapper #products_loop .product-request-all::before {
     display: none; }
 
-#products_page-wrapper #products_loop #products-scroll-alert.alertFixed {
-  background: #fff;
-  position: fixed;
-  top: 74px;
-  z-index: 2; }
+#products_page-wrapper #products_loop #products-scroll-alert {
+  position: absolute;
+  top: -2rem; }
+  #products_page-wrapper #products_loop #products-scroll-alert.alertFixed {
+    background: #fff;
+    position: fixed;
+    top: 74px;
+    z-index: 2; }
 
 #products_page-wrapper #products-table_wrapper {
   overflow: hidden; }
