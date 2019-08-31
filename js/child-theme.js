@@ -24965,7 +24965,7 @@ return DataTable;
             wrapperNavbar.addClass("nav-transparency");
         }
         /* products swipe alert */
-        if ((scroll >= scrollOffsetProductsAlert) && (scroll < scrollOffsetProductsAlertEnd)) {
+        if ((scroll >= scrollOffsetProductsAlert) && (scroll <= scrollOffsetProductsAlertEnd)) {
             $("#products-scroll-alert").addClass("alertFixed");
             console.log("fixed");
         } else {
