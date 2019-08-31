@@ -24967,11 +24967,10 @@ return DataTable;
         /* products swipe alert */
         if ((scroll >= scrollOffsetProductsAlert) && (scroll <= scrollOffsetProductsAlertEnd)) {
             $("#products-scroll-alert").addClass("alertFixed");
-            console.log("fixed");
         } else {
             $("#products-scroll-alert").removeClass("alertFixed");
-            console.log("unfixed");
         }
+        console.log(scrollOffsetProductsAlert + ':' + scroll + ':' + scrollOffsetProductsAlertEnd);
     });
 
     $(".navbar-toggler").click(function(){
