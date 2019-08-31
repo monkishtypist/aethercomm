@@ -24965,8 +24965,8 @@ return DataTable;
         }
         /* products swipe alert */
         if ($("#products-scroll-alert").length) {
-            scrollOffsetProductsAlert = $("#products_loop").offset().top;
-            scrollOffsetProductsAlertEnd = $("#product-page-slider").offset().top - 150;
+            var scrollOffsetProductsAlert = $("#products_loop").offset().top;
+            var scrollOffsetProductsAlertEnd = $("#product-page-slider").offset().top - 150;
             if ((scroll >= scrollOffsetProductsAlert) && (scroll <= scrollOffsetProductsAlertEnd)) {
                 $("#products-scroll-alert").addClass("alertFixed");
             } else {
