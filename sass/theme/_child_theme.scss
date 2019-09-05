@@ -2380,6 +2380,7 @@ $timeline-rotation-increment: 34.5 !default;
         padding-bottom: #{$spacer * 1.25};
         padding-top: #{$spacer * 1.5};
         nav {
+            justify-content: space-between;
             margin-bottom: 0;
             // margin-left: -#{$nav-link-padding-x};
             // margin-right: -#{$nav-link-padding-x};
@@ -2393,8 +2394,8 @@ $timeline-rotation-increment: 34.5 !default;
                 font-size: #{$font-size-base * .875};
                 // font-weight: #{$font-weight-bold};
                 line-height: 1.625;
-                margin-left: #{$spacer * 1.75};
-                margin-right: #{$spacer * 1.75};
+                // margin-left: #{$spacer * 1.75};
+                // margin-right: #{$spacer * 1.75};
                 padding-left: 0;
                 padding-right: 0;
                 text-transform: uppercase;
