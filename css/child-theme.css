@@ -18810,7 +18810,7 @@ table.dataTable thead .sorting_desc_disabled:before {
     background: transparent;
     -webkit-transition: background .5s;
     transition: background .5s;
-    display: block;
+    display: none;
     height: 100%;
     position: absolute;
     top: 0;
