@@ -101,7 +101,7 @@ $product_cats = get_categories( $product_cats_args );
                 </div>
             </div>
 
-            <div id="products-scroll-alert" class="row justify-content-between align-items-center d-flex d-md-none mb-4">
+            <div id="products-scroll-alert" class="row justify-content-between align-items-center d-flex d-lg-none mb-4">
                 <div class="col-auto">
                     <i class="far fa-chevron-left"></i>
                 </div>
