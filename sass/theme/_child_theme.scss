@@ -2343,6 +2343,7 @@ $timeline-rotation-increment: 34.5 !default;
 
 #products_page-wrapper {
     #products_search {
+        display: none;
         .section-title {
             margin-bottom: #{$spacer * .5};
         }

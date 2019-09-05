@@ -18686,20 +18686,20 @@ table.dataTable thead .sorting_desc_disabled:before {
         #search-wrapper #the-posts_section .posts-articles article .post-content-wrapper .read-more-link {
           width: 100%; } }
 
-#products_page-wrapper #products_search .section-title {
-  margin-bottom: 0.5rem; }
-
-#products_page-wrapper #products_search #productsearchform #productsearch {
-  height: 50px;
-  border-color: #222222; }
-
-#products_page-wrapper #products_search #productsearchform #productsearchsubmit {
-  background-color: #222222;
-  border: 0;
-  color: #fff;
-  font-size: 1.5rem;
-  height: 50px;
-  width: 50px; }
+#products_page-wrapper #products_search {
+  display: none; }
+  #products_page-wrapper #products_search .section-title {
+    margin-bottom: 0.5rem; }
+  #products_page-wrapper #products_search #productsearchform #productsearch {
+    height: 50px;
+    border-color: #222222; }
+  #products_page-wrapper #products_search #productsearchform #productsearchsubmit {
+    background-color: #222222;
+    border: 0;
+    color: #fff;
+    font-size: 1.5rem;
+    height: 50px;
+    width: 50px; }
 
 #products_page-wrapper #product-share-alert {
   -webkit-box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.125);
