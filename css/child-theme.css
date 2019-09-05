@@ -18764,6 +18764,8 @@ table.dataTable thead .sorting_desc_disabled:before {
     display: none; }
 
 #products_page-wrapper #products_loop #products-scroll-alert {
+  left: 50%;
+  margin-left: -177px;
   position: absolute;
   top: -2rem; }
   #products_page-wrapper #products_loop #products-scroll-alert.alertFixed {
