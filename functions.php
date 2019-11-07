@@ -20,6 +20,7 @@ if ( ! defined( 'ABSPATH' ) ) {
  * 8. Modify the Query
  * 9. Pagination
  * 10. Widgets
+ * 11. Gravity Forms
  */
 
 /* 0. Defines... */

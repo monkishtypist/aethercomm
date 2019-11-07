@@ -50,10 +50,13 @@
     "merge2": "^1.2.1",
     "popper.js": "^1.12.9",
     "run-sequence": "^2.2.1",
-    "understrap": "^0.9.1",
     "undescores-for-npm": "^1.0.0"
   },
   "devDependencies": {
-    "@fortawesome/fontawesome-free": "^5.8.1"
+    "@babel/core": "^7.7.2",
+    "@babel/preset-env": "^7.7.1",
+    "@fortawesome/fontawesome-free": "^5.8.1",
+    "gulp-babel": "^8.0.0",
+    "gulp-postcss": "^8.0.0"
   }
 }
