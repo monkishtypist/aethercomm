@@ -64,6 +64,10 @@ switch ( $post->post_type ) { // modify the defaults
             get_acf_field( 'cpt_rep_email', true ),
             get_acf_field( 'cpt_rep_email', true )
         );
+        // $card_text .= sprintf( '<div class="card-text">Start: %1$s<br>End: %2$s</div>',
+        //     get_acf_field( 'cpt_rep_coverage_area_postal_code_start', true ),
+        //     get_acf_field( 'cpt_rep_coverage_area_postal_code_end', true )
+        // );
         $card_footer = sprintf( '<div class="card-footer">%1$s</div>',
             sprintf( '<a href="mailto:%1$s" class="btn btn-gray">%2$s</a>',
                 get_acf_field( 'cpt_rep_email', true ),

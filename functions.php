@@ -310,23 +310,109 @@ if ( ! function_exists( 'aethercomm_add_site_info' ) ) {
 	}
 }
 
-add_action('wp_ajax_filter_representatives', 'aethercomm_filter_representatives_function'); // wp_ajax_{ACTION HERE}
-add_action('wp_ajax_nopriv_filter_representatives', 'aethercomm_filter_representatives_function');
-if ( ! function_exists( 'aethercomm_filter_representatives_function' ) ) {
-    function aethercomm_filter_representatives_function(){
+if ( ! function_exists( 'get_representative_by_keyword' ) ) {
+    function get_representative_by_keyword( $search_string = false ) {
+
+        if ( ! $search_string ) return false;
+
+        // Q1: Search by keyword
         $args = array(
             'post_type' => 'representatives',
             'post_status' => 'publish',
-            'posts_per_page' => -1
+            'posts_per_page' => -1,
+            's' => $search_string
         );
 
+        $query = new WP_Query( $args );
+
+        // echo( '<pre style="color: #fff;">' );
+        // print_r( $query->query );
+        // print_r( $query->posts );
+        // echo( '</pre>' );
+
+        return $query;
+    }
+}
+
+if ( ! function_exists( 'get_representative_by_postal_code' ) ) {
+    function get_representative_by_postal_code( $search_string = false ) {
+
+        $args = array(
+            'post_type' => 'representatives',
+            'post_status' => 'publish',
+            'posts_per_page' => -1,
+            'meta_query' => array(
+                'relation' => 'AND',
+                array(
+                    'key' => 'cpt_rep_coverage_area_postal_code_start',
+                    'value' => $search_string,
+                    'compare' => '<=',
+                    'type' => 'NUMERIC'
+                ),
+                array(
+                    'key' => 'cpt_rep_coverage_area_postal_code_end',
+                    'value' => $search_string,
+                    'compare' => '>=',
+                    'type' => 'NUMERIC'
+                )
+            )
+        );
+
+        $query = new WP_Query( $args );
+
+        // echo( '<pre style="color: #fff;">' );
+        // print_r( $query->query );
+        // print_r( $query->posts );
+        // echo( '</pre>' );
+
+        return $query;
+    }
+}
+
+if ( ! function_exists( 'get_representative_by_email' ) ) {
+    function get_representative_by_email( $search_string = false ) {
+
+        $args = array(
+            'post_type' => 'representatives',
+            'post_status' => 'publish',
+            'posts_per_page' => -1,
+            'meta_query' => array(
+                array(
+                    'key' => 'cpt_rep_email',
+                    'value' => $search_string,
+                    'compare' => 'LIKE'
+                )
+            )
+        );
+
+        $query = new WP_Query( $args );
+
+        // echo( '<pre style="color: #fff;">' );
+        // print_r( $query->query );
+        // print_r( $query->posts );
+        // echo( '</pre>' );
+
+        return $query;
+    }
+}
+
+add_action('wp_ajax_filter_representatives', 'aethercomm_filter_representatives_function'); // wp_ajax_{ACTION HERE}
+add_action('wp_ajax_nopriv_filter_representatives', 'aethercomm_filter_representatives_function');
+if ( ! function_exists( 'aethercomm_filter_representatives_function' ) ) {
+    function aethercomm_filter_representatives_function() {
+
         if ( isset( $_POST['rep-filter-input'] ) && ! empty( $_POST['rep-filter-input'] ) ) {
-            $args['s'] = $_POST['rep-filter-input'];
 
-            $query = new WP_Query( $args );
+            $query1 = get_representative_by_keyword( $_POST['rep-filter-input'] );
+            $query2 = get_representative_by_postal_code( $_POST['rep-filter-input'] );
+            $query3 = get_representative_by_email( $_POST['rep-filter-input'] );
 
-            if( $query->have_posts() ) :
-                while( $query->have_posts() ): $query->the_post();
+            $merged_query = new WP_Query();
+            $merged_query->posts = array_unique( array_merge( $query1->posts, $query2->posts, $query3->posts ), SORT_REGULAR );
+            $merged_query->post_count = count( $merged_query->posts );
+
+            if( $merged_query->have_posts() ) :
+                while( $merged_query->have_posts() ): $merged_query->the_post();
                     get_template_part( 'loop-templates/content', 'card' );
                 endwhile;
                 wp_reset_postdata();

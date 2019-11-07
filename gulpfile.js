@@ -195,21 +195,21 @@ gulp.task( 'copy-assets', function() {
     // gulp.src( paths.node + '@fortawesome/fontawesome-free/scss/*.scss' )
     //     .pipe( gulp.dest( paths.dev + '/sass/fontawesome' ) );
 
-// // Copy all Font Awesome Fonts
-//     gulp.src( paths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eot,svg}' )
-//         .pipe( gulp.dest( './fonts' ) );
+// Copy all Font Awesome Fonts
+    gulp.src( paths.node + 'font-awesome/fonts/**/*.{ttf,woff,woff2,eot,svg}' )
+        .pipe( gulp.dest( './fonts' ) );
 
-// // Copy all Font Awesome SCSS files
-//     gulp.src( paths.node + 'font-awesome/scss/*.scss' )
-//         .pipe( gulp.dest( paths.dev + '/sass/fontawesome' ) );
+// Copy all Font Awesome SCSS files
+    gulp.src( paths.node + 'font-awesome/scss/*.scss' )
+        .pipe( gulp.dest( paths.dev + '/sass/fontawesome' ) );
 
-// // _s SCSS files
-//     gulp.src( paths.node + 'undescores-for-npm/sass/media/*.scss' )
-//         .pipe( gulp.dest( paths.dev + '/sass/underscores' ) );
+// _s SCSS files
+    gulp.src( paths.node + 'undescores-for-npm/sass/media/*.scss' )
+        .pipe( gulp.dest( paths.dev + '/sass/underscores' ) );
 
-// // _s JS files into /src/js
-//     gulp.src( paths.node + 'undescores-for-npm/js/skip-link-focus-fix.js', { allowEmpty: true } )
-//         .pipe( gulp.dest( paths.dev + '/js' ) );
+// _s JS files into /src/js
+    gulp.src( paths.node + 'undescores-for-npm/js/skip-link-focus-fix.js', { allowEmpty: true } )
+        .pipe( gulp.dest( paths.dev + '/js' ) );
 
 // Copy Popper JS files
     gulp.src( paths.node + 'popper.js/dist/umd/popper.min.js' )
@@ -217,9 +217,9 @@ gulp.task( 'copy-assets', function() {
     gulp.src( paths.node + 'popper.js/dist/umd/popper.js' )
         .pipe( gulp.dest( paths.js + paths.vendor ) );
 
-// // UnderStrap SCSS files
-//     gulp.src( paths.node + 'understrap/sass/**/*.scss' )
-//         .pipe( gulp.dest( paths.dev + '/sass/understrap' ) );
+// UnderStrap SCSS files
+    gulp.src( paths.understrap + 'sass/**/*.scss' )
+        .pipe( gulp.dest( paths.dev + '/sass/understrap' ) );
 
 // DataTables JS files into /src/js
     gulp.src( paths.node + 'datatables.net/js/jquery.dataTables.js' )

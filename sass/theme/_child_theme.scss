@@ -998,6 +998,15 @@ section {
             flex-basis: calc(100% - #{$card-group-margin * 2});
             max-width: 100%;
         }
+        .card-body {
+            display: flex;
+            flex-direction: column;
+            .card-text {
+                &:last-child {
+                    margin-top: auto;
+                }
+            }
+        }
         .card-footer {
             background-color: transparent;
             .btn {

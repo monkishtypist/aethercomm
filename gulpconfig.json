@@ -9,16 +9,17 @@
     "./**/*.php"
   ],
   "paths" : {
-    "js": "./js",
-    "css": "./css",
-    "img": "./img",
-		"imgsrc": "./src/img",
-    "sass": "./sass",
-    "node": "./node_modules/",
     "bower": "./bower_components/",
+    "css": "./css",
     "dev": "./src",
     "dist": "./dist",
     "distprod": "./dist-product",
+    "img": "./img",
+		"imgsrc": "./src/img",
+    "js": "./js",
+    "node": "./node_modules/",
+    "sass": "./sass",
+    "understrap": "../understrap/",
     "vendor": ""
   }
 }
