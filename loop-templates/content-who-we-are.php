@@ -33,7 +33,15 @@ $section_mission_styles = sprintf( 'style="%1$s"',
 
     <?php get_template_part( 'global-templates/header' ); ?>
 
-    <?php get_template_part( 'loop-templates/partial', 'timeline' ); ?>
+    <?php // get_template_part( 'loop-templates/partial', 'timeline' ); ?>
+
+    <section id="timeline_section" class="section-timeline section-unpadded">
+        <div class="container">
+            <?php
+            echo do_shortcode( '[cool-timeline layout="horizontal" designs="design-6" skin="default" category="timeline-milestones" order="ASC" show-posts="99" icons="YES" date-format="Y" story-content="full" based="default" autoplay="false" autoplay-speed="3000" start-on="0"]' );
+            ?>
+        </div>
+    </section>
 
     <section id="<?php echo $post->post_name; ?>_mission" class="section-black section-path1" <?php // echo $section_mission_styles; ?> >
 

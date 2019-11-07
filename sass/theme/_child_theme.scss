@@ -1487,136 +1487,136 @@ $timeline-width:              $timeline-height !default;
 $timeline-elem-width:         220px !default;
 $timeline-elem-height:        $timeline-height * .5 !default;
 $timeline-rotation-increment: 34.5 !default;
-#timeline_section {
-    // height: 578px;
-    overflow: hidden;
-    .timeline-arrow {
-        width: 37px;
-        height: 137px;
-        background: rgba(34, 34, 34, 1);
-        cursor: pointer;
-        position: absolute;
-        display: block;
-        z-index: 1000;
-        top: 50%;
-        margin-top: -68px;
-        &.timeline-prev {
-            left: 0;
-        }
-        &.timeline-next {
-            right: 0;
-        }
-        i {
-            color: $white;
-            display: block;
-            font-size: 40px;
-            margin-top: -20px;
-            position: relative;
-            text-align: center;
-            top: 50%;
-        }
-    }
-    .timeline-wrapper {
-        // height: $timeline-height;
-        height: 510px;
-        left: 50%;
-        margin-left: -#{$timeline-width * .5};
-        overflow: hidden;
-        padding: 0;
-        position: relative;
-        top: 0;
-        width: $timeline-width;
-        .timeline-wrapper-dial-image {
-            display: block;
-            height: $timeline-dial-width;
-            left: 50%;
-            margin-left: -#{$timeline-dial-width * .5};
-            position: absolute;
-            top: $timeline-offset;
-            width: $timeline-dial-width;
-        }
-        .timeline-dial {
-            bottom: 0;
-            height: $timeline-height;
-            left: 0;
-            position: absolute;
-            right: 0;
-            top: 0;
-            transform-origin: center center;
-            transition: $transition-base;
-            width: $timeline-width;
-        }
-        .timeline-element {
-            height: $timeline-elem-height;
-            left: 50%;
-            margin-left: -#{$timeline-elem-width * .5};
-            opacity: 0;
-            position: absolute;
-            text-align: center;
-            top: 0;
-            transform-origin: bottom center;
-            transform: rotate(0deg);
-            transition: $transition-base;
-            width: $timeline-elem-width;
-            &.focus {
-                opacity: 1;
-                .timeline-image {
-                    opacity: 1;
-                }
-                .timeline-date {
-                    color: $dark;
-                }
-                .timeline-content {
-                    opacity: 1;
-                }
-            }
-            &.near {
-                opacity: 1;
-                .timeline-image {
-                    opacity: 0;
-                }
-                .timeline-date {
-                    color: $gray-600;
-                }
-                .timeline-content {
-                    opacity: 0;
-                }
-            }
-            .timeline-image {
-                height: 232px;
-                // margin-top: #{$spacer * 1.5};
-                opacity: 0;
-                overflow: hidden;
-                padding-bottom: $spacer;
-                padding-top: $spacer;
-                transition: $transition-base;
-                width: 100%;
-                img {
-                    // margin-top: $spacer;
-                    max-height: 100%;
-                    max-width: 100%;
-                    object-fit: contain;
-                }
-            }
-            .timeline-date {
-                color: $dark;
-                font-weight: $font-weight-bold;
-                height: 32px;
-                margin-top: #{$spacer * 2.5};
-                transition: $transition-base;
-            }
-            .timeline-content {
-                color: $white;
-                font-size: #{$font-size-base * 1.125};
-                font-weight: $font-weight-light;
-                margin-top: #{$spacer * 5};
-                opacity: 0;
-                text-shadow: 1px 1px 1px rgba($black,.5);
-                transition: $transition-base;
-            }
-        }
-    }
-}
+// #timeline_section {
+//     // height: 578px;
+//     overflow: hidden;
+//     .timeline-arrow {
+//         width: 37px;
+//         height: 137px;
+//         background: rgba(34, 34, 34, 1);
+//         cursor: pointer;
+//         position: absolute;
+//         display: block;
+//         z-index: 1000;
+//         top: 50%;
+//         margin-top: -68px;
+//         &.timeline-prev {
+//             left: 0;
+//         }
+//         &.timeline-next {
+//             right: 0;
+//         }
+//         i {
+//             color: $white;
+//             display: block;
+//             font-size: 40px;
+//             margin-top: -20px;
+//             position: relative;
+//             text-align: center;
+//             top: 50%;
+//         }
+//     }
+//     .timeline-wrapper {
+//         // height: $timeline-height;
+//         height: 510px;
+//         left: 50%;
+//         margin-left: -#{$timeline-width * .5};
+//         overflow: hidden;
+//         padding: 0;
+//         position: relative;
+//         top: 0;
+//         width: $timeline-width;
+//         .timeline-wrapper-dial-image {
+//             display: block;
+//             height: $timeline-dial-width;
+//             left: 50%;
+//             margin-left: -#{$timeline-dial-width * .5};
+//             position: absolute;
+//             top: $timeline-offset;
+//             width: $timeline-dial-width;
+//         }
+//         .timeline-dial {
+//             bottom: 0;
+//             height: $timeline-height;
+//             left: 0;
+//             position: absolute;
+//             right: 0;
+//             top: 0;
+//             transform-origin: center center;
+//             transition: $transition-base;
+//             width: $timeline-width;
+//         }
+//         .timeline-element {
+//             height: $timeline-elem-height;
+//             left: 50%;
+//             margin-left: -#{$timeline-elem-width * .5};
+//             opacity: 0;
+//             position: absolute;
+//             text-align: center;
+//             top: 0;
+//             transform-origin: bottom center;
+//             transform: rotate(0deg);
+//             transition: $transition-base;
+//             width: $timeline-elem-width;
+//             &.focus {
+//                 opacity: 1;
+//                 .timeline-image {
+//                     opacity: 1;
+//                 }
+//                 .timeline-date {
+//                     color: $dark;
+//                 }
+//                 .timeline-content {
+//                     opacity: 1;
+//                 }
+//             }
+//             &.near {
+//                 opacity: 1;
+//                 .timeline-image {
+//                     opacity: 0;
+//                 }
+//                 .timeline-date {
+//                     color: $gray-600;
+//                 }
+//                 .timeline-content {
+//                     opacity: 0;
+//                 }
+//             }
+//             .timeline-image {
+//                 height: 232px;
+//                 // margin-top: #{$spacer * 1.5};
+//                 opacity: 0;
+//                 overflow: hidden;
+//                 padding-bottom: $spacer;
+//                 padding-top: $spacer;
+//                 transition: $transition-base;
+//                 width: 100%;
+//                 img {
+//                     // margin-top: $spacer;
+//                     max-height: 100%;
+//                     max-width: 100%;
+//                     object-fit: contain;
+//                 }
+//             }
+//             .timeline-date {
+//                 color: $dark;
+//                 font-weight: $font-weight-bold;
+//                 height: 32px;
+//                 margin-top: #{$spacer * 2.5};
+//                 transition: $transition-base;
+//             }
+//             .timeline-content {
+//                 color: $white;
+//                 font-size: #{$font-size-base * 1.125};
+//                 font-weight: $font-weight-light;
+//                 margin-top: #{$spacer * 5};
+//                 opacity: 0;
+//                 text-shadow: 1px 1px 1px rgba($black,.5);
+//                 transition: $transition-base;
+//             }
+//         }
+//     }
+// }
 
 /**
  * Footer
