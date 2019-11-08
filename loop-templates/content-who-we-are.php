@@ -37,6 +37,7 @@ $section_mission_styles = sprintf( 'style="%1$s"',
 
     <section id="timeline_section" class="section-timeline section-unpadded">
         <div class="container">
+            <h2 class="section-title"><?php _e( 'Milestones', 'aethercomm' ); ?></h2>
             <?php
             echo do_shortcode( '[cool-timeline layout="horizontal" designs="design-6" skin="default" category="timeline-milestones" order="ASC" show-posts="99" icons="YES" date-format="Y" story-content="full" based="default" autoplay="false" autoplay-speed="3000" start-on="0"]' );
             ?>

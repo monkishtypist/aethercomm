@@ -1480,13 +1480,106 @@ table.dataTable {
 }
 
 /* Timeline */
-$timeline-dial-width:         982px !default;
-$timeline-offset:             232px !default;
-$timeline-height:             $timeline-dial-width + ($timeline-offset * 2) !default;
-$timeline-width:              $timeline-height !default;
-$timeline-elem-width:         220px !default;
-$timeline-elem-height:        $timeline-height * .5 !default;
-$timeline-rotation-increment: 34.5 !default;
+.cool-timeline-horizontal.white-timeline.ht-design-6 {
+    .clt_carousel_slider {
+        .slick-track {
+            .slick-slide {
+                .icon-placeholder {
+                    align-items: center;
+                    background-color: $white !important;
+                    color: $black !important;
+                    border: 3px solid rgba($black, 1);
+                    display: flex;
+                    justify-content: center;
+                    img {
+                        max-width: 85%;
+                        max-width: calc(100% - 6px);
+                    }
+                }
+                .ctl-story-time {
+                    .ctl-tooltips {
+                        display: block;
+                        font-family: $font-family-sans-serif;
+                        font-size: #{$font-size-base * 1.875};
+                        font-weight: $font-weight-bold;
+                        span {
+                            background: transparent !important;
+                            color: rgba($body-color, .35) !important;
+                            &::after {
+                                display: none;
+                            }
+                        }
+                    }
+                }
+                &.slick-current {
+                    .ctl-story-time {
+                        .ctl-tooltips {
+                            font-size: #{$font-size-base * 2.625};
+                            span {
+                                color: $black !important;
+                                display: block;
+                                margin-top: 0;
+                            }
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+    .clt_caru_slider {
+        ul.slick-slider {
+            .slick-list {
+                .slick-track {
+                    li.slick-slide {
+                        display: flex;
+                        justify-content: center;
+                        .timeline-post {
+                            border-radius: 0;
+                            box-shadow: 0 3px 6px rgba($black, .16);
+                            width: 548px;
+                            .full-width {
+                                background: $white;
+                                display: flex;
+                                height: 180px;
+                                justify-content: center;
+                                padding: #{$spacer * 1.5};
+                                img.story-img {
+                                    margin: auto;
+                                    max-height: 100%;
+                                    width: auto;
+                                }
+                            }
+                            .content-details {
+                                background: $black;
+                                color: $white !important;
+                                font-size: #{$font-size-base * 1.25};
+                                font-weight: $font-weight-medium;
+                                padding: #{$spacer} #{$spacer * 1.5};
+                                h2.content-title-simple a {
+                                    color: $white !important;
+                                    font-weight: $font-weight-medium;
+                                    font-size: #{$font-size-base * 1.25};
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+/* Timeline OLD */
+
+// $timeline-dial-width:         982px !default;
+// $timeline-offset:             232px !default;
+// $timeline-height:             $timeline-dial-width + ($timeline-offset * 2) !default;
+// $timeline-width:              $timeline-height !default;
+// $timeline-elem-width:         220px !default;
+// $timeline-elem-height:        $timeline-height * .5 !default;
+// $timeline-rotation-increment: 34.5 !default;
 // #timeline_section {
 //     // height: 578px;
 //     overflow: hidden;
@@ -1860,9 +1953,20 @@ $timeline-rotation-increment: 34.5 !default;
 #who-we-are_page-wrapper {
     #who-we-are_header {
     }
-    #who-we-are_tabs,
+    // #who-we-are_tabs,
     #timeline_section {
-        @include skewed-tabs();
+        // @include skewed-tabs();
+        background-image: url(../images/timeline-bg-2.png);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        background-size: 100%;
+        min-height: 600px;;
+        padding-top: #{$spacer * 3};
+        padding-bottom: #{$spacer * 5.75};
+        .section-title {
+            font-weight: $font-weight-bold;
+        }
     }
     #who-we-are_mission {
         @include section-overlay( $black );
