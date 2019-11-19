@@ -1480,7 +1480,9 @@ table.dataTable {
 }
 
 /* Timeline */
-.cool-timeline-horizontal.white-timeline.ht-design-6 {
+.cool-timeline-horizontal
+.cool-timeline-horizontal.ht-design-5,
+.cool-timeline-horizontal.ht-design-6 {
     .clt_carousel_slider {
         .slick-track {
             .slick-slide {
@@ -1538,11 +1540,15 @@ table.dataTable {
                             border-radius: 0;
                             box-shadow: 0 3px 6px rgba($black, .16);
                             width: 548px;
+                            .content-title {
+                                display: none;
+                            }
                             .full-width {
                                 background: $white;
                                 display: flex;
                                 height: 180px;
                                 justify-content: center;
+                                margin: -0.2px;
                                 padding: #{$spacer * 1.5};
                                 img.story-img {
                                     margin: auto;
@@ -1557,7 +1563,7 @@ table.dataTable {
                                 font-weight: $font-weight-medium;
                                 padding: #{$spacer} #{$spacer * 1.5};
                                 h2.content-title-simple a {
-                                    color: $white !important;
+                                    // color: $white !important;
                                     font-weight: $font-weight-medium;
                                     font-size: #{$font-size-base * 1.25};
                                 }

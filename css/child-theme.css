@@ -17609,7 +17609,8 @@ table.dataTable thead .sorting_desc_disabled:before {
     text-transform: uppercase; }
 
 /* Timeline */
-.cool-timeline-horizontal.white-timeline.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .icon-placeholder {
+.cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_carousel_slider .slick-track .slick-slide .icon-placeholder,
+.cool-timeline-horizontal.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .icon-placeholder {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -17622,41 +17623,53 @@ table.dataTable thead .sorting_desc_disabled:before {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .icon-placeholder img {
+  .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_carousel_slider .slick-track .slick-slide .icon-placeholder img,
+  .cool-timeline-horizontal.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .icon-placeholder img {
     max-width: 85%;
     max-width: calc(100% - 6px); }
 
-.cool-timeline-horizontal.white-timeline.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips {
+.cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips,
+.cool-timeline-horizontal.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips {
   display: block;
   font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-size: 1.875rem;
   font-weight: 700; }
-  .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips span {
+  .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips span,
+  .cool-timeline-horizontal.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips span {
     background: transparent !important;
     color: rgba(34, 34, 34, 0.35) !important; }
-    .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips span::after {
+    .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips span::after,
+    .cool-timeline-horizontal.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .ctl-story-time .ctl-tooltips span::after {
       display: none; }
 
-.cool-timeline-horizontal.white-timeline.ht-design-6 .clt_carousel_slider .slick-track .slick-slide.slick-current .ctl-story-time .ctl-tooltips {
+.cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_carousel_slider .slick-track .slick-slide.slick-current .ctl-story-time .ctl-tooltips,
+.cool-timeline-horizontal.ht-design-6 .clt_carousel_slider .slick-track .slick-slide.slick-current .ctl-story-time .ctl-tooltips {
   font-size: 2.625rem; }
-  .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_carousel_slider .slick-track .slick-slide.slick-current .ctl-story-time .ctl-tooltips span {
+  .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_carousel_slider .slick-track .slick-slide.slick-current .ctl-story-time .ctl-tooltips span,
+  .cool-timeline-horizontal.ht-design-6 .clt_carousel_slider .slick-track .slick-slide.slick-current .ctl-story-time .ctl-tooltips span {
     color: #000 !important;
     display: block;
     margin-top: 0; }
 
-.cool-timeline-horizontal.white-timeline.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide {
+.cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide,
+.cool-timeline-horizontal.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post {
+  .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post,
+  .cool-timeline-horizontal.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post {
     border-radius: 0;
     -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
             box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
     width: 548px; }
-    .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .full-width {
+    .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .content-title,
+    .cool-timeline-horizontal.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .content-title {
+      display: none; }
+    .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .full-width,
+    .cool-timeline-horizontal.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .full-width {
       background: #fff;
       display: -webkit-box;
       display: -ms-flexbox;
@@ -17665,19 +17678,22 @@ table.dataTable thead .sorting_desc_disabled:before {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
+      margin: -0.2px;
       padding: 1.5rem; }
-      .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .full-width img.story-img {
+      .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .full-width img.story-img,
+      .cool-timeline-horizontal.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .full-width img.story-img {
         margin: auto;
         max-height: 100%;
         width: auto; }
-    .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .content-details {
+    .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .content-details,
+    .cool-timeline-horizontal.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .content-details {
       background: #000;
       color: #fff !important;
       font-size: 1.25rem;
       font-weight: 500;
       padding: 1rem 1.5rem; }
-      .cool-timeline-horizontal.white-timeline.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .content-details h2.content-title-simple a {
-        color: #fff !important;
+      .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .content-details h2.content-title-simple a,
+      .cool-timeline-horizontal.ht-design-6 .clt_caru_slider ul.slick-slider .slick-list .slick-track li.slick-slide .timeline-post .content-details h2.content-title-simple a {
         font-weight: 500;
         font-size: 1.25rem; }
 

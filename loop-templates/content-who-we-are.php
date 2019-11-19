@@ -39,7 +39,7 @@ $section_mission_styles = sprintf( 'style="%1$s"',
         <div class="container">
             <h2 class="section-title"><?php _e( 'Milestones', 'aethercomm' ); ?></h2>
             <?php
-            echo do_shortcode( '[cool-timeline layout="horizontal" designs="design-6" skin="default" category="timeline-milestones" order="ASC" show-posts="99" icons="YES" date-format="Y" story-content="full" based="default" autoplay="false" autoplay-speed="3000" start-on="0"]' );
+            echo do_shortcode( '[cool-timeline layout="horizontal" category="timeline-milestones" designs="design-6" order="ASC" show-posts="99" icons="YES" date-format="Y" story-content="full" autoplay="false" start-on="0"]' );
             ?>
         </div>
     </section>

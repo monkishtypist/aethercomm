@@ -45,7 +45,7 @@ $section_capabilities_styles = sprintf( 'style="%1$s"',
             <form ajax-url="<?php echo site_url() ?>/wp-admin/admin-ajax.php" method="POST" id="reps-filter" class="form-inline reps-filter-form">
                 <div class="form-group">
                     <label for="rep-filter-input" class="sr-only"><?php _e( 'Search Representatives', 'aethercomm' ); ?></label>
-                    <input type="text" class="form-control" id="rep-filter-input" name="rep-filter-input" value="" placeholder="<?php _e( 'Type here to search for a location', 'aethercomm' ); ?>">
+                    <input type="text" class="form-control" id="rep-filter-input" name="rep-filter-input" value="" placeholder="<?php _e( 'Type here to search for location by city/zip code', 'aethercomm' ); ?>">
                 </div>
                 <a href="<?php echo get_permalink(); ?>" id="rep-filter-reset" class="btn-link"><?php _e( 'Clear Search', 'aethercomm' ); ?></a>
                 <input type="hidden" name="action" value="filter_representatives">
