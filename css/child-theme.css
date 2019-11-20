@@ -18256,10 +18256,17 @@ table.dataTable thead .sorting_desc_disabled:before {
 
 #rep-listing_page-wrapper #rep-listing_reps #reps-card-deck {
   opacity: 1;
+  position: relative;
   -webkit-transition: all 0.2s ease-in-out;
   transition: all 0.2s ease-in-out; }
   #rep-listing_page-wrapper #rep-listing_reps #reps-card-deck.searching {
     opacity: .33; }
+  #rep-listing_page-wrapper #rep-listing_reps #reps-card-deck .no-result {
+    display: block;
+    margin-left: 18px;
+    position: absolute;
+    top: -2.8rem;
+    width: 100%; }
 
 #index-wrapper .read-more-link,
 #archive-wrapper .read-more-link,

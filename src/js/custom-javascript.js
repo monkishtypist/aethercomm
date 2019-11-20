@@ -81,7 +81,8 @@
     // Reps filter form
     var repSearchFilter = $('#reps-filter');
     var repSearchResult = $('#reps-card-deck');
-    var repNoResult = repSearchResult.html();
+    var repResultInit = repSearchResult.html();
+    var repNoResult = '<p class="no-result">No representatives available, please contact us:</p>' + repResultInit;
     var repSearchFilterInput = repSearchFilter.find('#rep-filter-input');
     // var repSearchFilterSubmit = repSearchFilter.find('#rep-filter-submit');
     // var repSearchFilterSubmitText = repSearchFilterSubmit.text();
@@ -109,20 +110,21 @@
 			beforeSend:function(xhr){
                 repSearchFilterReset.text('Searching...'); // changing the button label
                 repSearchResult.toggleClass('searching');
-			},
-			success:function(data){
-                repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
-                if(data){
-                    repSearchResult.html(data); // insert data
-                } else {
-                    repSearchResult.html(repNoResult); // insert default
-                }
-                repSearchResult.toggleClass('searching');
-            },
-            error:function(XMLHttpRequest, textStatus, errorThrown) {
-                repSearchResult.html(repNoResult); // insert default
-                repSearchResult.toggleClass('searching');
             }
+        })
+        .done(function(data){
+            repSearchFilterReset.text(repSearchFilterResetText); // changing the button label back
+            if(data){
+                repSearchResult.html(data); // insert data
+            } else {
+                repSearchResult.html(repNoResult); // insert default
+            }
+        })
+        .fail(function(XMLHttpRequest, textStatus, errorThrown) {
+            repSearchResult.html(repNoResult); // insert default
+        })
+        .always(function(){
+            repSearchResult.toggleClass('searching');
 		});
 		return false;
     }, 200));
