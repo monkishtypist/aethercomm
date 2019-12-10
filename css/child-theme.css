@@ -17609,6 +17609,9 @@ table.dataTable thead .sorting_desc_disabled:before {
     text-transform: uppercase; }
 
 /* Timeline */
+.clt_preloader {
+  display: none; }
+
 .cool-timeline-horizontal .cool-timeline-horizontal.ht-design-5 .clt_carousel_slider .slick-track .slick-slide .icon-placeholder,
 .cool-timeline-horizontal.ht-design-6 .clt_carousel_slider .slick-track .slick-slide .icon-placeholder {
   -webkit-box-align: center;
